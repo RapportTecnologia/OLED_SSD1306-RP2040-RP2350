@@ -2,6 +2,7 @@
 #include "ssd1306.h"
 #include <string.h>
 #include "magnectostriccao.h"
+#include "oled/big_font.h"
 
 // Internal buffer and render area
 static uint8_t ssd_buffer[ssd1306_buffer_length];
@@ -53,6 +54,10 @@ void oled_draw_char(int x, int y, char c) {
 
 void oled_draw_string(int x, int y, const char *str) {
     ssd1306_draw_string(ssd_buffer, x, y, (char *)str);
+}
+
+void oled_draw_big_char(int x, int y, char c) {
+    ssd1306_draw_big_char(ssd_buffer, x, y, (uint8_t)c);
 }
 
 /**

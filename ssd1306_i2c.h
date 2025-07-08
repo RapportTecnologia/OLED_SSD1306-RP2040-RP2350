@@ -11,6 +11,9 @@
 #define max_text_columns 16
 #define ssd1306_line_height 8 // Define a altura de uma linha (8 pixels) - 
 
+void ssd1306_draw_string(uint8_t *ssd, int16_t x, int16_t y, char *string);
+void ssd1306_draw_big_char(uint8_t *ssd, int16_t x, int16_t y, uint8_t character);
+
 #define ssd1306_i2c_address _u(0x3C) // Define o endereço do i2c do display
 
 #define ssd1306_i2c_clock 400 // Define o tempo do clock (pode ser aumentado)

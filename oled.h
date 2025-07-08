@@ -25,6 +25,8 @@ void oled_draw_char(int x, int y, char c);
 
 /** Draw a string at (x,y) */
 void oled_draw_string(int x, int y, const char *str);
+void oled_draw_big_char(int x, int y, char c);
+void oled_draw_big_string(int x, int y, const char *str);
 
 /** Set a single line of text in the internal text buffer */
 void oled_set_text_line(uint8_t line, const char *text);

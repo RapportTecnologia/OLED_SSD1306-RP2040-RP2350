@@ -2,11 +2,14 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <assert.h>
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
 #include "hardware/i2c.h"
 #include "ssd1306_font.h"
+#include "big_font.h"
 #include "ssd1306_i2c.h"
+#include "big_font.h"
 
 // Calcular quanto do buffer será destinado à área de renderização
 void calculate_render_area_buffer_length(struct render_area *area) {
@@ -167,6 +170,35 @@ void ssd1306_draw_string(uint8_t *ssd, int16_t x, int16_t y, char *string) {
     while (*string) {
         ssd1306_draw_char(ssd, x, y, *string++);
         x += 8;
+    }
+}
+
+// Desenha um unico caractere grande no display
+void ssd1306_draw_big_char(uint8_t *ssd, int16_t x, int16_t y, uint8_t character) {
+    if (x > ssd1306_width - BIG_FONT_WIDTH || y > ssd1306_height - BIG_FONT_HEIGHT) {
+        return;
+    }
+
+    int char_index = -1;
+    if (character >= '0' && character <= '9') {
+        char_index = character - '0';
+    } else if (character >= 'A' && character <= 'Z') {
+        char_index = character - 'A' + 10;
+    }
+
+    if (char_index == -1) {
+        return; // Caractere não suportado
+    }
+
+    const uint8_t *font_ptr = big_font[char_index];
+
+    for (int page = 0; page < BIG_FONT_PAGES; page++) {
+        int fb_idx = ((y / 8) + page) * ssd1306_width + x;
+        for (int i = 0; i < BIG_FONT_WIDTH; i++) {
+            if ((fb_idx + i) < ssd1306_buffer_length) {
+                ssd[fb_idx + i] = font_ptr[page * BIG_FONT_WIDTH + i];
+            }
+        }
     }
 }
 
