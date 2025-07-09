@@ -15,7 +15,12 @@ static struct render_area area = {
 };
 
 /* Internal text buffer for facade text lines */
-static char text_buffer[max_text_lines][max_text_columns];
+typedef struct {
+    char text[max_text_columns];
+    oled_text_alignment_t alignment;
+} text_line_t;
+
+static text_line_t text_buffer[max_text_lines];
 
 void oled_init(void) {
     // Initialize I2C pins and bus is done by ssd1306_i2c.h includes
@@ -63,16 +68,50 @@ void oled_draw_big_char(int x, int y, char c) {
 /**
  * Set a single line of text in the internal text buffer
  */
-void oled_set_text_line(uint8_t line, const char *text) {
-    strncpy(text_buffer[line], text, max_text_columns);
+void oled_set_text_line(uint8_t line, const char *text, oled_text_alignment_t alignment) {
+    if (line < max_text_lines) {
+        strncpy(text_buffer[line].text, text, max_text_columns - 1);
+        text_buffer[line].text[max_text_columns - 1] = '\0';
+        text_buffer[line].alignment = alignment;
+    }
+}
+
+/**
+ * Clear a single line of text in the internal text buffer
+ */
+void oled_clear_text_line(uint8_t line) {
+    oled_set_text_line(line, "", OLED_ALIGN_LEFT);
 }
 
 /**
  * Render the internal text buffer lines to the display
  */
 void oled_render_text(void) {
+    oled_clear();
     for (uint8_t line = 0; line < max_text_lines; line++) {
-        oled_draw_string(5, line * ssd1306_line_height, text_buffer[line]);
+        int x = 0;
+        int text_len = strlen(text_buffer[line].text);
+        int text_width = text_len * font_width;
+
+        switch (text_buffer[line].alignment) {
+            case OLED_ALIGN_LEFT:
+                x = 0;
+                break;
+            case OLED_ALIGN_CENTER:
+                x = (ssd1306_width - text_width) / 2;
+                break;
+            case OLED_ALIGN_RIGHT:
+                x = ssd1306_width - text_width;
+                break;
+            case OLED_ALIGN_JUSTIFY: // Justify is complex, for now, we'll treat it as left-aligned.
+                x = 0;
+                // A proper implementation would calculate spacing between words.
+                break;
+        }
+
+        if (x < 0) x = 0; // Ensure text is not drawn off-screen to the left
+
+        oled_draw_string(x, line * ssd1306_line_height, text_buffer[line].text);
     }
     oled_render();
 }

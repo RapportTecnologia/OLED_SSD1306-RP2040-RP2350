@@ -8,7 +8,7 @@
 #define ssd1306_height 64 // Define a altura do display (32 pixels)
 #define ssd1306_width 128 // Define a largura do display (128 pixels)
 #define max_text_lines 8
-#define max_text_columns 16
+#define max_text_columns 17
 #define ssd1306_line_height 8 // Define a altura de uma linha (8 pixels) - 
 
 void ssd1306_draw_string(uint8_t *ssd, int16_t x, int16_t y, char *string);
