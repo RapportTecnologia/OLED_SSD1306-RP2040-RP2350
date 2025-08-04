@@ -44,4 +44,17 @@ void oled_clear_text_line(uint8_t line);
 /** Render the internal text buffer lines to the display */
 void oled_render_text(void);
 
+#ifndef font_width
+#define font_width 8
+#endif // font_width
+
+// Parâmetros e macros do I2C.
+#ifndef I2C_SDA
+#define I2C_SDA  14
+#endif // I2C_SDA
+
+#ifndef I2C_SCL
+#define I2C_SCL  15
+#endif // I2C_SCL
+
 #endif // OLED_H

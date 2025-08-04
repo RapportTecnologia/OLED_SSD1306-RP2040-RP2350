@@ -1,8 +1,8 @@
-#include "oled/oled.h"
+#include "oled.h"
 #include "ssd1306.h"
 #include <string.h>
-#include "magnectostriccao.h"
-#include "oled/big_font.h"
+#include <stdlib.h>
+#include "big_font.h"
 
 // Internal buffer and render area
 static uint8_t ssd_buffer[ssd1306_buffer_length];
