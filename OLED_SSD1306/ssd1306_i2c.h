@@ -2,8 +2,18 @@
 #define ssd1306_i2c_h
 
 #include <stdlib.h>
+#include <stdbool.h>
 #include "pico/stdlib.h"
+#include "pico/platform.h"
 #include "hardware/i2c.h"
+
+// Fallbacks for IDEs without full Pico headers context
+#ifndef _u
+#define _u(x) (x)
+#endif
+#ifndef count_of
+#define count_of(a) (sizeof(a) / sizeof((a)[0]))
+#endif
 
 #define ssd1306_height 64 // Define a altura do display (32 pixels)
 #define ssd1306_width 128 // Define a largura do display (128 pixels)
