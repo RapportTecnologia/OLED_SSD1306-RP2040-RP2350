@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro ssd1306_i2c.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('ssd1306__i2c_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro ssd1306_i2c.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;pico/stdlib.h&quot;</code><br />
+<code>#include &quot;pico/binary_info.h&quot;</code><br />
+<code>#include &quot;hardware/i2c.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ssd1306__font_8h_source.html">ssd1306_font.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="big__font_8h_source.html">big_font.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ssd1306__i2c_8h_source.html">ssd1306_i2c.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para ssd1306_i2c.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="ssd1306__i2c_8c__incl.svg" width="1079" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae5932cd62770dbfc045462197e471e05" id="r_ae5932cd62770dbfc045462197e471e05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#ae5932cd62770dbfc045462197e471e05">calculate_render_area_buffer_length</a> (struct <a class="el" href="structrender__area.html">render_area</a> *area)</td></tr>
+<tr class="separator:ae5932cd62770dbfc045462197e471e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5a43ec9a35c7841e9f90761b9d7f7e" id="r_acc5a43ec9a35c7841e9f90761b9d7f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#acc5a43ec9a35c7841e9f90761b9d7f7e">render_on_display</a> (uint8_t *ssd, struct <a class="el" href="structrender__area.html">render_area</a> *area)</td></tr>
+<tr class="separator:acc5a43ec9a35c7841e9f90761b9d7f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ff8458e3b2dd7c441106df048d6284" id="r_a50ff8458e3b2dd7c441106df048d6284"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a50ff8458e3b2dd7c441106df048d6284">ssd1306_command</a> (<a class="el" href="structssd1306__t.html">ssd1306_t</a> *ssd, uint8_t command)</td></tr>
+<tr class="separator:a50ff8458e3b2dd7c441106df048d6284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e50a2b01dd8c9b30cd05e14d7daf331" id="r_a9e50a2b01dd8c9b30cd05e14d7daf331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a9e50a2b01dd8c9b30cd05e14d7daf331">ssd1306_config</a> (<a class="el" href="structssd1306__t.html">ssd1306_t</a> *ssd)</td></tr>
+<tr class="separator:a9e50a2b01dd8c9b30cd05e14d7daf331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f70f573aae30a15bbd91a83017496ba" id="r_a3f70f573aae30a15bbd91a83017496ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a3f70f573aae30a15bbd91a83017496ba">ssd1306_draw_big_char</a> (uint8_t *ssd, int16_t x, int16_t y, uint8_t character)</td></tr>
+<tr class="separator:a3f70f573aae30a15bbd91a83017496ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028efa52c1c2550dd072180d46dd3ea1" id="r_a028efa52c1c2550dd072180d46dd3ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a028efa52c1c2550dd072180d46dd3ea1">ssd1306_draw_bitmap</a> (<a class="el" href="structssd1306__t.html">ssd1306_t</a> *ssd, const uint8_t *bitmap)</td></tr>
+<tr class="separator:a028efa52c1c2550dd072180d46dd3ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5418dd7bdf136f08728e633cdfb2cd7d" id="r_a5418dd7bdf136f08728e633cdfb2cd7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a5418dd7bdf136f08728e633cdfb2cd7d">ssd1306_draw_char</a> (uint8_t *ssd, int16_t x, int16_t y, uint8_t character)</td></tr>
+<tr class="separator:a5418dd7bdf136f08728e633cdfb2cd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95c49092eafe5014b35452300fe51b0" id="r_aa95c49092eafe5014b35452300fe51b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#aa95c49092eafe5014b35452300fe51b0">ssd1306_draw_line</a> (uint8_t *ssd, int x_0, int y_0, int x_1, int y_1, bool set)</td></tr>
+<tr class="separator:aa95c49092eafe5014b35452300fe51b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a273c38bc5db3ac5df358ebb34e80c9" id="r_a9a273c38bc5db3ac5df358ebb34e80c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a9a273c38bc5db3ac5df358ebb34e80c9">ssd1306_draw_string</a> (uint8_t *ssd, int16_t x, int16_t y, char *string)</td></tr>
+<tr class="separator:a9a273c38bc5db3ac5df358ebb34e80c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64114fa2a37affebcc48180aab38bb2" id="r_ae64114fa2a37affebcc48180aab38bb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#ae64114fa2a37affebcc48180aab38bb2">ssd1306_get_font</a> (uint8_t character)</td></tr>
+<tr class="separator:ae64114fa2a37affebcc48180aab38bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83a732f28055bd6835d031e13986f0b" id="r_ab83a732f28055bd6835d031e13986f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#ab83a732f28055bd6835d031e13986f0b">ssd1306_init</a> ()</td></tr>
+<tr class="separator:ab83a732f28055bd6835d031e13986f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b043ccdfcac74d8b05cf4e5dc04c21f" id="r_a3b043ccdfcac74d8b05cf4e5dc04c21f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a3b043ccdfcac74d8b05cf4e5dc04c21f">ssd1306_init_bm</a> (<a class="el" href="structssd1306__t.html">ssd1306_t</a> *ssd, uint8_t width, uint8_t height, bool external_vcc, uint8_t address, i2c_inst_t *i2c)</td></tr>
+<tr class="separator:a3b043ccdfcac74d8b05cf4e5dc04c21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0235b4eac85ec2c85361cf4ba4a4fef" id="r_ab0235b4eac85ec2c85361cf4ba4a4fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#ab0235b4eac85ec2c85361cf4ba4a4fef">ssd1306_scroll</a> (bool set)</td></tr>
+<tr class="separator:ab0235b4eac85ec2c85361cf4ba4a4fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e18a42742d08329312e5f45a7608baa" id="r_a7e18a42742d08329312e5f45a7608baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a7e18a42742d08329312e5f45a7608baa">ssd1306_send_buffer</a> (uint8_t ssd[], int buffer_length)</td></tr>
+<tr class="separator:a7e18a42742d08329312e5f45a7608baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc806c43bddcc51a8624cca4dfb0a73" id="r_a2cc806c43bddcc51a8624cca4dfb0a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a2cc806c43bddcc51a8624cca4dfb0a73">ssd1306_send_command</a> (uint8_t command)</td></tr>
+<tr class="separator:a2cc806c43bddcc51a8624cca4dfb0a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030c7955bd0f952a30e95e121b068738" id="r_a030c7955bd0f952a30e95e121b068738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a030c7955bd0f952a30e95e121b068738">ssd1306_send_command_list</a> (uint8_t *ssd, int number)</td></tr>
+<tr class="separator:a030c7955bd0f952a30e95e121b068738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d68611599dbced339a73b42c6444f1e" id="r_a2d68611599dbced339a73b42c6444f1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a2d68611599dbced339a73b42c6444f1e">ssd1306_send_data</a> (<a class="el" href="structssd1306__t.html">ssd1306_t</a> *ssd)</td></tr>
+<tr class="separator:a2d68611599dbced339a73b42c6444f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457b8673ed0abdc7f6f9fc349db11f7e" id="r_a457b8673ed0abdc7f6f9fc349db11f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8c.html#a457b8673ed0abdc7f6f9fc349db11f7e">ssd1306_set_pixel</a> (uint8_t *ssd, int x, int y, bool set)</td></tr>
+<tr class="separator:a457b8673ed0abdc7f6f9fc349db11f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ae5932cd62770dbfc045462197e471e05" name="ae5932cd62770dbfc045462197e471e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5932cd62770dbfc045462197e471e05">&#9670;&#160;</a></span>calculate_render_area_buffer_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calculate_render_area_buffer_length </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrender__area.html">render_area</a> *&#160;</td>
+          <td class="paramname"><em>area</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structrender__area.html#a9ce70008c8350bf2d2ce9bdbf667b931">render_area::buffer_length</a>, <a class="el" href="structrender__area.html#a15aacf5439d3ba9a3831bcda7079bf31">render_area::end_column</a>, <a class="el" href="structrender__area.html#a9e9850aa2ea329f1630da64e6f82513b">render_area::end_page</a>, <a class="el" href="structrender__area.html#a1825c1469d817e0db2856cfe9a547472">render_area::start_column</a> e <a class="el" href="structrender__area.html#accddc433e23d914a75d796f8552b6acc">render_area::start_page</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init()</a>.</p>
+
+</div>
+</div>
+<a id="acc5a43ec9a35c7841e9f90761b9d7f7e" name="acc5a43ec9a35c7841e9f90761b9d7f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5a43ec9a35c7841e9f90761b9d7f7e">&#9670;&#160;</a></span>render_on_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render_on_display </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structrender__area.html">render_area</a> *&#160;</td>
+          <td class="paramname"><em>area</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structrender__area.html#a9ce70008c8350bf2d2ce9bdbf667b931">render_area::buffer_length</a>, <a class="el" href="structrender__area.html#a15aacf5439d3ba9a3831bcda7079bf31">render_area::end_column</a>, <a class="el" href="structrender__area.html#a9e9850aa2ea329f1630da64e6f82513b">render_area::end_page</a>, <a class="el" href="ssd1306__i2c_8c.html#a7e18a42742d08329312e5f45a7608baa">ssd1306_send_buffer()</a>, <a class="el" href="ssd1306__i2c_8c.html#a030c7955bd0f952a30e95e121b068738">ssd1306_send_command_list()</a>, <a class="el" href="ssd1306__i2c_8h.html#a0303fcebe87c281a5fda7c7d3b32fa6f">ssd1306_set_column_address</a>, <a class="el" href="ssd1306__i2c_8h.html#a23e5f46f3207ad67646816fdef6510a1">ssd1306_set_page_address</a>, <a class="el" href="structrender__area.html#a1825c1469d817e0db2856cfe9a547472">render_area::start_column</a> e <a class="el" href="structrender__area.html#accddc433e23d914a75d796f8552b6acc">render_area::start_page</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear()</a>, <a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init()</a> e <a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render()</a>.</p>
+
+</div>
+</div>
+<a id="a50ff8458e3b2dd7c441106df048d6284" name="a50ff8458e3b2dd7c441106df048d6284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ff8458e3b2dd7c441106df048d6284">&#9670;&#160;</a></span>ssd1306_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structssd1306__t.html">ssd1306_t</a> *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>command</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structssd1306__t.html#ab889bd4c012a67785f381dce671badfd">ssd1306_t::address</a>, <a class="el" href="structssd1306__t.html#a960eb91c7395c50f223cf61578ad7a55">ssd1306_t::i2c_port</a> e <a class="el" href="structssd1306__t.html#a3814f9b7e3b317c59d3d778ff90b6b3b">ssd1306_t::port_buffer</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ssd1306_8h.html#a9e50a2b01dd8c9b30cd05e14d7daf331">ssd1306_config()</a> e <a class="el" href="ssd1306_8h.html#a2d68611599dbced339a73b42c6444f1e">ssd1306_send_data()</a>.</p>
+
+</div>
+</div>
+<a id="a9e50a2b01dd8c9b30cd05e14d7daf331" name="a9e50a2b01dd8c9b30cd05e14d7daf331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e50a2b01dd8c9b30cd05e14d7daf331">&#9670;&#160;</a></span>ssd1306_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_config </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structssd1306__t.html">ssd1306_t</a> *&#160;</td>
+          <td class="paramname"><em>ssd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8c.html#a50ff8458e3b2dd7c441106df048d6284">ssd1306_command()</a>, <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a>, <a class="el" href="ssd1306__i2c_8h.html#a19a6a2a27e5ca626ea1b3dcdd85b35b6">ssd1306_set_charge_pump</a>, <a class="el" href="ssd1306__i2c_8h.html#a490a9ba971406881908a0a9b27eb2c27">ssd1306_set_common_output_direction</a>, <a class="el" href="ssd1306__i2c_8h.html#a2c08312f217eff5d6246d6e745bc5df3">ssd1306_set_common_pin_configuration</a>, <a class="el" href="ssd1306__i2c_8h.html#a82687bd9bf6397529ab6a2dd7024a991">ssd1306_set_contrast</a>, <a class="el" href="ssd1306__i2c_8h.html#afedba6e77224d394dd08730f51bee586">ssd1306_set_display</a>, <a class="el" href="ssd1306__i2c_8h.html#a91d9b497cb652b721ca6b16477662c90">ssd1306_set_display_clock_divide_ratio</a>, <a class="el" href="ssd1306__i2c_8h.html#a8891791ec03d8c5bb43b4a57f4f8f3a8">ssd1306_set_display_offset</a>, <a class="el" href="ssd1306__i2c_8h.html#a3ec420da49bc71f7e266b4b6e3a2e27a">ssd1306_set_display_start_line</a>, <a class="el" href="ssd1306__i2c_8h.html#a177b092bbe234f35539e8570e6d54191">ssd1306_set_entire_on</a>, <a class="el" href="ssd1306__i2c_8h.html#a5f84bdf75dec6d2a57e1afe0d206e7b2">ssd1306_set_memory_mode</a>, <a class="el" href="ssd1306__i2c_8h.html#ab660cd23a8bce5310f8822c3060e25d7">ssd1306_set_mux_ratio</a>, <a class="el" href="ssd1306__i2c_8h.html#a5600fc561e322d05b22af6a60cb3d5fc">ssd1306_set_normal_display</a>, <a class="el" href="ssd1306__i2c_8h.html#a0a7733b3ef59cf2e50342d871e1fe055">ssd1306_set_precharge</a>, <a class="el" href="ssd1306__i2c_8h.html#a6fdfddd37ffafa6624583ddcb3e2c073">ssd1306_set_segment_remap</a> e <a class="el" href="ssd1306__i2c_8h.html#a6ff3c297045c92c2c7041c99cb2700fe">ssd1306_set_vcomh_deselect_level</a>.</p>
+
+</div>
+</div>
+<a id="a3f70f573aae30a15bbd91a83017496ba" name="a3f70f573aae30a15bbd91a83017496ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f70f573aae30a15bbd91a83017496ba">&#9670;&#160;</a></span>ssd1306_draw_big_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_draw_big_char </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>character</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="big__font_8h.html#a0eb2e7bd72a2d4add92c2dc7f3fd293f">BIG_FONT_HEIGHT</a>, <a class="el" href="big__font_8h.html#a9207ebda6462d47d78dba59e6641dfc3">BIG_FONT_PAGES</a>, <a class="el" href="big__font_8h.html#a6e0ebae18338caa3ed064c25641de03b">BIG_FONT_WIDTH</a>, <a class="el" href="ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87">ssd1306_buffer_length</a>, <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> e <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char()</a>.</p>
+
+</div>
+</div>
+<a id="a028efa52c1c2550dd072180d46dd3ea1" name="a028efa52c1c2550dd072180d46dd3ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028efa52c1c2550dd072180d46dd3ea1">&#9670;&#160;</a></span>ssd1306_draw_bitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_draw_bitmap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structssd1306__t.html">ssd1306_t</a> *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>bitmap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structssd1306__t.html#a2774df9383033b99d80b56552bba0464">ssd1306_t::bufsize</a>, <a class="el" href="structssd1306__t.html#a76ce0255085a5243a60a42804de64a09">ssd1306_t::ram_buffer</a> e <a class="el" href="ssd1306__i2c_8c.html#a2d68611599dbced339a73b42c6444f1e">ssd1306_send_data()</a>.</p>
+
+</div>
+</div>
+<a id="a5418dd7bdf136f08728e633cdfb2cd7d" name="a5418dd7bdf136f08728e633cdfb2cd7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5418dd7bdf136f08728e633cdfb2cd7d">&#9670;&#160;</a></span>ssd1306_draw_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_draw_char </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>character</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8c.html#ae64114fa2a37affebcc48180aab38bb2">ssd1306_get_font()</a>, <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> e <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#ae6e6696f947ba345d0a95ae94ce4b3df">oled_draw_char()</a> e <a class="el" href="ssd1306_8h.html#a9a273c38bc5db3ac5df358ebb34e80c9">ssd1306_draw_string()</a>.</p>
+
+</div>
+</div>
+<a id="aa95c49092eafe5014b35452300fe51b0" name="aa95c49092eafe5014b35452300fe51b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95c49092eafe5014b35452300fe51b0">&#9670;&#160;</a></span>ssd1306_draw_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_draw_line </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8c.html#a457b8673ed0abdc7f6f9fc349db11f7e">ssd1306_set_pixel()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line()</a>.</p>
+
+</div>
+</div>
+<a id="a9a273c38bc5db3ac5df358ebb34e80c9" name="a9a273c38bc5db3ac5df358ebb34e80c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a273c38bc5db3ac5df358ebb34e80c9">&#9670;&#160;</a></span>ssd1306_draw_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_draw_string </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8c.html#a5418dd7bdf136f08728e633cdfb2cd7d">ssd1306_draw_char()</a>, <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> e <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be">oled_draw_string()</a>.</p>
+
+</div>
+</div>
+<a id="ae64114fa2a37affebcc48180aab38bb2" name="ae64114fa2a37affebcc48180aab38bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64114fa2a37affebcc48180aab38bb2">&#9670;&#160;</a></span>ssd1306_get_font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ssd1306_get_font </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>character</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="ssd1306_8h.html#a5418dd7bdf136f08728e633cdfb2cd7d">ssd1306_draw_char()</a>.</p>
+
+</div>
+</div>
+<a id="ab83a732f28055bd6835d031e13986f0b" name="ab83a732f28055bd6835d031e13986f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83a732f28055bd6835d031e13986f0b">&#9670;&#160;</a></span>ssd1306_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a>, <a class="el" href="ssd1306__i2c_8c.html#a030c7955bd0f952a30e95e121b068738">ssd1306_send_command_list()</a>, <a class="el" href="ssd1306__i2c_8h.html#a19a6a2a27e5ca626ea1b3dcdd85b35b6">ssd1306_set_charge_pump</a>, <a class="el" href="ssd1306__i2c_8h.html#a490a9ba971406881908a0a9b27eb2c27">ssd1306_set_common_output_direction</a>, <a class="el" href="ssd1306__i2c_8h.html#a2c08312f217eff5d6246d6e745bc5df3">ssd1306_set_common_pin_configuration</a>, <a class="el" href="ssd1306__i2c_8h.html#a82687bd9bf6397529ab6a2dd7024a991">ssd1306_set_contrast</a>, <a class="el" href="ssd1306__i2c_8h.html#afedba6e77224d394dd08730f51bee586">ssd1306_set_display</a>, <a class="el" href="ssd1306__i2c_8h.html#a91d9b497cb652b721ca6b16477662c90">ssd1306_set_display_clock_divide_ratio</a>, <a class="el" href="ssd1306__i2c_8h.html#a8891791ec03d8c5bb43b4a57f4f8f3a8">ssd1306_set_display_offset</a>, <a class="el" href="ssd1306__i2c_8h.html#a3ec420da49bc71f7e266b4b6e3a2e27a">ssd1306_set_display_start_line</a>, <a class="el" href="ssd1306__i2c_8h.html#a177b092bbe234f35539e8570e6d54191">ssd1306_set_entire_on</a>, <a class="el" href="ssd1306__i2c_8h.html#a5f84bdf75dec6d2a57e1afe0d206e7b2">ssd1306_set_memory_mode</a>, <a class="el" href="ssd1306__i2c_8h.html#ab660cd23a8bce5310f8822c3060e25d7">ssd1306_set_mux_ratio</a>, <a class="el" href="ssd1306__i2c_8h.html#a5600fc561e322d05b22af6a60cb3d5fc">ssd1306_set_normal_display</a>, <a class="el" href="ssd1306__i2c_8h.html#a0a7733b3ef59cf2e50342d871e1fe055">ssd1306_set_precharge</a>, <a class="el" href="ssd1306__i2c_8h.html#aab209eb357f8898ec2ab2bd99046c408">ssd1306_set_scroll</a>, <a class="el" href="ssd1306__i2c_8h.html#a6fdfddd37ffafa6624583ddcb3e2c073">ssd1306_set_segment_remap</a> e <a class="el" href="ssd1306__i2c_8h.html#a6ff3c297045c92c2c7041c99cb2700fe">ssd1306_set_vcomh_deselect_level</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init()</a>.</p>
+
+</div>
+</div>
+<a id="a3b043ccdfcac74d8b05cf4e5dc04c21f" name="a3b043ccdfcac74d8b05cf4e5dc04c21f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b043ccdfcac74d8b05cf4e5dc04c21f">&#9670;&#160;</a></span>ssd1306_init_bm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_init_bm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structssd1306__t.html">ssd1306_t</a> *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>external_vcc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i2c_inst_t *&#160;</td>
+          <td class="paramname"><em>i2c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structssd1306__t.html#ab889bd4c012a67785f381dce671badfd">ssd1306_t::address</a>, <a class="el" href="structssd1306__t.html#a2774df9383033b99d80b56552bba0464">ssd1306_t::bufsize</a>, <a class="el" href="structssd1306__t.html#a966cf732ff8115ad6970853bdfed44a5">ssd1306_t::height</a>, <a class="el" href="structssd1306__t.html#a960eb91c7395c50f223cf61578ad7a55">ssd1306_t::i2c_port</a>, <a class="el" href="structssd1306__t.html#a1c182da834a4e266af77684a66b6e0b8">ssd1306_t::pages</a>, <a class="el" href="structssd1306__t.html#a3814f9b7e3b317c59d3d778ff90b6b3b">ssd1306_t::port_buffer</a>, <a class="el" href="structssd1306__t.html#a76ce0255085a5243a60a42804de64a09">ssd1306_t::ram_buffer</a> e <a class="el" href="structssd1306__t.html#a62a19e1b4abdecca7b98a28a3f8bf314">ssd1306_t::width</a>.</p>
+
+</div>
+</div>
+<a id="ab0235b4eac85ec2c85361cf4ba4a4fef" name="ab0235b4eac85ec2c85361cf4ba4a4fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0235b4eac85ec2c85361cf4ba4a4fef">&#9670;&#160;</a></span>ssd1306_scroll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_scroll </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8c.html#a030c7955bd0f952a30e95e121b068738">ssd1306_send_command_list()</a>, <a class="el" href="ssd1306__i2c_8h.html#aeb3a6449d3304b53222a3c1a4a6247a0">ssd1306_set_horizontal_scroll</a> e <a class="el" href="ssd1306__i2c_8h.html#aab209eb357f8898ec2ab2bd99046c408">ssd1306_set_scroll</a>.</p>
+
+</div>
+</div>
+<a id="a7e18a42742d08329312e5f45a7608baa" name="a7e18a42742d08329312e5f45a7608baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e18a42742d08329312e5f45a7608baa">&#9670;&#160;</a></span>ssd1306_send_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_send_buffer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ssd</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buffer_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8h.html#abc498bfdf848a37aa4e54bf5715a8c9f">ssd1306_i2c_address</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ssd1306_8h.html#acc5a43ec9a35c7841e9f90761b9d7f7e">render_on_display()</a>.</p>
+
+</div>
+</div>
+<a id="a2cc806c43bddcc51a8624cca4dfb0a73" name="a2cc806c43bddcc51a8624cca4dfb0a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc806c43bddcc51a8624cca4dfb0a73">&#9670;&#160;</a></span>ssd1306_send_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_send_command </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8h.html#abc498bfdf848a37aa4e54bf5715a8c9f">ssd1306_i2c_address</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ssd1306_8h.html#a030c7955bd0f952a30e95e121b068738">ssd1306_send_command_list()</a>.</p>
+
+</div>
+</div>
+<a id="a030c7955bd0f952a30e95e121b068738" name="a030c7955bd0f952a30e95e121b068738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030c7955bd0f952a30e95e121b068738">&#9670;&#160;</a></span>ssd1306_send_command_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_send_command_list </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8c.html#a2cc806c43bddcc51a8624cca4dfb0a73">ssd1306_send_command()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ssd1306_8h.html#acc5a43ec9a35c7841e9f90761b9d7f7e">render_on_display()</a>, <a class="el" href="ssd1306_8h.html#ab83a732f28055bd6835d031e13986f0b">ssd1306_init()</a> e <a class="el" href="ssd1306_8h.html#ab0235b4eac85ec2c85361cf4ba4a4fef">ssd1306_scroll()</a>.</p>
+
+</div>
+</div>
+<a id="a2d68611599dbced339a73b42c6444f1e" name="a2d68611599dbced339a73b42c6444f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d68611599dbced339a73b42c6444f1e">&#9670;&#160;</a></span>ssd1306_send_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_send_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structssd1306__t.html">ssd1306_t</a> *&#160;</td>
+          <td class="paramname"><em>ssd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structssd1306__t.html#ab889bd4c012a67785f381dce671badfd">ssd1306_t::address</a>, <a class="el" href="structssd1306__t.html#a2774df9383033b99d80b56552bba0464">ssd1306_t::bufsize</a>, <a class="el" href="structssd1306__t.html#a960eb91c7395c50f223cf61578ad7a55">ssd1306_t::i2c_port</a>, <a class="el" href="structssd1306__t.html#a1c182da834a4e266af77684a66b6e0b8">ssd1306_t::pages</a>, <a class="el" href="structssd1306__t.html#a76ce0255085a5243a60a42804de64a09">ssd1306_t::ram_buffer</a>, <a class="el" href="ssd1306__i2c_8c.html#a50ff8458e3b2dd7c441106df048d6284">ssd1306_command()</a>, <a class="el" href="ssd1306__i2c_8h.html#a0303fcebe87c281a5fda7c7d3b32fa6f">ssd1306_set_column_address</a>, <a class="el" href="ssd1306__i2c_8h.html#a23e5f46f3207ad67646816fdef6510a1">ssd1306_set_page_address</a> e <a class="el" href="structssd1306__t.html#a62a19e1b4abdecca7b98a28a3f8bf314">ssd1306_t::width</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ssd1306_8h.html#a028efa52c1c2550dd072180d46dd3ea1">ssd1306_draw_bitmap()</a>.</p>
+
+</div>
+</div>
+<a id="a457b8673ed0abdc7f6f9fc349db11f7e" name="a457b8673ed0abdc7f6f9fc349db11f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457b8673ed0abdc7f6f9fc349db11f7e">&#9670;&#160;</a></span>ssd1306_set_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ssd1306_set_pixel </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ssd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> e <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#a06e013499ceeb5183e46d95b0ab49c3f">oled_set_pixel()</a> e <a class="el" href="ssd1306_8h.html#aa95c49092eafe5014b35452300fe51b0">ssd1306_draw_line()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="ssd1306__i2c_8c.html">ssd1306_i2c.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

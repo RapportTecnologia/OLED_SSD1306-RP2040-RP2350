@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro oled.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('oled_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro oled.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="oled_8h_source.html">oled.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ssd1306_8h_source.html">ssd1306.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="big__font_8h_source.html">big_font.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para oled.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="oled_8c__incl.svg" width="451" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtext__line__t.html">text_line_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a66cdd05fb3a765535af54825cb9eb26c" id="r_a66cdd05fb3a765535af54825cb9eb26c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear</a> (void)</td></tr>
+<tr class="memdesc:a66cdd05fb3a765535af54825cb9eb26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the display buffer and refresh.  <br /></td></tr>
+<tr class="separator:a66cdd05fb3a765535af54825cb9eb26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac533da08441193dc1c6274e58348feb5" id="r_ac533da08441193dc1c6274e58348feb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#ac533da08441193dc1c6274e58348feb5">oled_clear_text_line</a> (uint8_t line)</td></tr>
+<tr class="memdesc:ac533da08441193dc1c6274e58348feb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a single line of text in the internal text buffer.  <br /></td></tr>
+<tr class="separator:ac533da08441193dc1c6274e58348feb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef19becab190e4a63b3ea566b8932996" id="r_aef19becab190e4a63b3ea566b8932996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a> (int x, int y, char c)</td></tr>
+<tr class="separator:aef19becab190e4a63b3ea566b8932996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e6696f947ba345d0a95ae94ce4b3df" id="r_ae6e6696f947ba345d0a95ae94ce4b3df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#ae6e6696f947ba345d0a95ae94ce4b3df">oled_draw_char</a> (int x, int y, char c)</td></tr>
+<tr class="memdesc:ae6e6696f947ba345d0a95ae94ce4b3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a single character at (x,y)  <br /></td></tr>
+<tr class="separator:ae6e6696f947ba345d0a95ae94ce4b3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac284f0bd4fdf2dd11175524b8d78b268" id="r_ac284f0bd4fdf2dd11175524b8d78b268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a> (int x0, int y0, int x1, int y1, bool on)</td></tr>
+<tr class="memdesc:ac284f0bd4fdf2dd11175524b8d78b268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a line from (x0,y0) to (x1,y1)  <br /></td></tr>
+<tr class="separator:ac284f0bd4fdf2dd11175524b8d78b268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f1c4779a919ec1623b7b5147c0c5be" id="r_a34f1c4779a919ec1623b7b5147c0c5be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be">oled_draw_string</a> (int x, int y, const char *str)</td></tr>
+<tr class="memdesc:a34f1c4779a919ec1623b7b5147c0c5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a string at (x,y)  <br /></td></tr>
+<tr class="separator:a34f1c4779a919ec1623b7b5147c0c5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95f850c4c6d949229270c8da88c02cb" id="r_ad95f850c4c6d949229270c8da88c02cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a> (void)</td></tr>
+<tr class="memdesc:ad95f850c4c6d949229270c8da88c02cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the OLED display.  <br /></td></tr>
+<tr class="separator:ad95f850c4c6d949229270c8da88c02cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a95395ba3445d3d5a9ba41324f9b5b4" id="r_a4a95395ba3445d3d5a9ba41324f9b5b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render</a> (void)</td></tr>
+<tr class="memdesc:a4a95395ba3445d3d5a9ba41324f9b5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the current buffer to the display.  <br /></td></tr>
+<tr class="separator:a4a95395ba3445d3d5a9ba41324f9b5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112b0ae9dc37e4d52be0acfacbd37689" id="r_a112b0ae9dc37e4d52be0acfacbd37689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text</a> (void)</td></tr>
+<tr class="memdesc:a112b0ae9dc37e4d52be0acfacbd37689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the internal text buffer lines to the display.  <br /></td></tr>
+<tr class="separator:a112b0ae9dc37e4d52be0acfacbd37689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e013499ceeb5183e46d95b0ab49c3f" id="r_a06e013499ceeb5183e46d95b0ab49c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#a06e013499ceeb5183e46d95b0ab49c3f">oled_set_pixel</a> (int x, int y, bool on)</td></tr>
+<tr class="memdesc:a06e013499ceeb5183e46d95b0ab49c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a pixel at (x,y) on or off.  <br /></td></tr>
+<tr class="separator:a06e013499ceeb5183e46d95b0ab49c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa415fc483d7246dd7d28a32a69f7a6ec" id="r_aa415fc483d7246dd7d28a32a69f7a6ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a> (uint8_t line, const char *text, <a class="el" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6">oled_text_alignment_t</a> alignment)</td></tr>
+<tr class="memdesc:aa415fc483d7246dd7d28a32a69f7a6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single line of text in the internal text buffer.  <br /></td></tr>
+<tr class="separator:aa415fc483d7246dd7d28a32a69f7a6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a66cdd05fb3a765535af54825cb9eb26c" name="a66cdd05fb3a765535af54825cb9eb26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66cdd05fb3a765535af54825cb9eb26c">&#9670;&#160;</a></span>oled_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_clear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the display buffer and refresh. </p>
+
+<p class="reference">Referências <a class="el" href="ssd1306_8h.html#acc5a43ec9a35c7841e9f90761b9d7f7e">render_on_display()</a> e <a class="el" href="ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87">ssd1306_buffer_length</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text()</a>.</p>
+
+</div>
+</div>
+<a id="ac533da08441193dc1c6274e58348feb5" name="ac533da08441193dc1c6274e58348feb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac533da08441193dc1c6274e58348feb5">&#9670;&#160;</a></span>oled_clear_text_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_clear_text_line </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear a single line of text in the internal text buffer. </p>
+
+<p class="reference">Referências <a class="el" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b">OLED_ALIGN_LEFT</a> e <a class="el" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line()</a>.</p>
+
+</div>
+</div>
+<a id="aef19becab190e4a63b3ea566b8932996" name="aef19becab190e4a63b3ea566b8932996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef19becab190e4a63b3ea566b8932996">&#9670;&#160;</a></span>oled_draw_big_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_draw_big_char </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="ssd1306__i2c_8c.html#a3f70f573aae30a15bbd91a83017496ba">ssd1306_draw_big_char()</a>.</p>
+
+</div>
+</div>
+<a id="ae6e6696f947ba345d0a95ae94ce4b3df" name="ae6e6696f947ba345d0a95ae94ce4b3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e6696f947ba345d0a95ae94ce4b3df">&#9670;&#160;</a></span>oled_draw_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_draw_char </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draw a single character at (x,y) </p>
+
+<p class="reference">Referências <a class="el" href="ssd1306_8h.html#a5418dd7bdf136f08728e633cdfb2cd7d">ssd1306_draw_char()</a>.</p>
+
+</div>
+</div>
+<a id="ac284f0bd4fdf2dd11175524b8d78b268" name="ac284f0bd4fdf2dd11175524b8d78b268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac284f0bd4fdf2dd11175524b8d78b268">&#9670;&#160;</a></span>oled_draw_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_draw_line </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draw a line from (x0,y0) to (x1,y1) </p>
+
+<p class="reference">Referências <a class="el" href="ssd1306_8h.html#aa95c49092eafe5014b35452300fe51b0">ssd1306_draw_line()</a>.</p>
+
+</div>
+</div>
+<a id="a34f1c4779a919ec1623b7b5147c0c5be" name="a34f1c4779a919ec1623b7b5147c0c5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f1c4779a919ec1623b7b5147c0c5be">&#9670;&#160;</a></span>oled_draw_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_draw_string </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draw a string at (x,y) </p>
+
+<p class="reference">Referências <a class="el" href="ssd1306_8h.html#a9a273c38bc5db3ac5df358ebb34e80c9">ssd1306_draw_string()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text()</a>.</p>
+
+</div>
+</div>
+<a id="ad95f850c4c6d949229270c8da88c02cb" name="ad95f850c4c6d949229270c8da88c02cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95f850c4c6d949229270c8da88c02cb">&#9670;&#160;</a></span>oled_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the OLED display. </p>
+
+<p class="reference">Referências <a class="el" href="ssd1306_8h.html#ae5932cd62770dbfc045462197e471e05">calculate_render_area_buffer_length()</a>, <a class="el" href="oled_8h.html#a212ca328a6409c98f8c3dfbbe1ba561d">I2C_SCL</a>, <a class="el" href="oled_8h.html#a18aefd12ad84d4c33dc97923cb821e47">I2C_SDA</a>, <a class="el" href="ssd1306_8h.html#acc5a43ec9a35c7841e9f90761b9d7f7e">render_on_display()</a>, <a class="el" href="ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87">ssd1306_buffer_length</a>, <a class="el" href="ssd1306__i2c_8h.html#a64833b2cc1cf64918bed0dcf5bf2c221">ssd1306_i2c_clock</a> e <a class="el" href="ssd1306_8h.html#ab83a732f28055bd6835d031e13986f0b">ssd1306_init()</a>.</p>
+
+</div>
+</div>
+<a id="a4a95395ba3445d3d5a9ba41324f9b5b4" name="a4a95395ba3445d3d5a9ba41324f9b5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a95395ba3445d3d5a9ba41324f9b5b4">&#9670;&#160;</a></span>oled_render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_render </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render the current buffer to the display. </p>
+
+<p class="reference">Referências <a class="el" href="ssd1306_8h.html#acc5a43ec9a35c7841e9f90761b9d7f7e">render_on_display()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text()</a>.</p>
+
+</div>
+</div>
+<a id="a112b0ae9dc37e4d52be0acfacbd37689" name="a112b0ae9dc37e4d52be0acfacbd37689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112b0ae9dc37e4d52be0acfacbd37689">&#9670;&#160;</a></span>oled_render_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_render_text </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render the internal text buffer lines to the display. </p>
+
+<p class="reference">Referências <a class="el" href="oled_8h.html#a7e8baadc9147363c8bb243b1ef40020b">font_width</a>, <a class="el" href="ssd1306__i2c_8h.html#afe0c35b2c6fdd7e94d1e6e0960448d07">max_text_lines</a>, <a class="el" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5">OLED_ALIGN_CENTER</a>, <a class="el" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb">OLED_ALIGN_JUSTIFY</a>, <a class="el" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b">OLED_ALIGN_LEFT</a>, <a class="el" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831">OLED_ALIGN_RIGHT</a>, <a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear()</a>, <a class="el" href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be">oled_draw_string()</a>, <a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render()</a>, <a class="el" href="ssd1306__i2c_8h.html#aa721492c3a769369602a1f28a82a83fd">ssd1306_line_height</a> e <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>.</p>
+
+</div>
+</div>
+<a id="a06e013499ceeb5183e46d95b0ab49c3f" name="a06e013499ceeb5183e46d95b0ab49c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e013499ceeb5183e46d95b0ab49c3f">&#9670;&#160;</a></span>oled_set_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_set_pixel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a pixel at (x,y) on or off. </p>
+
+<p class="reference">Referências <a class="el" href="ssd1306_8h.html#a457b8673ed0abdc7f6f9fc349db11f7e">ssd1306_set_pixel()</a>.</p>
+
+</div>
+</div>
+<a id="aa415fc483d7246dd7d28a32a69f7a6ec" name="aa415fc483d7246dd7d28a32a69f7a6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa415fc483d7246dd7d28a32a69f7a6ec">&#9670;&#160;</a></span>oled_set_text_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oled_set_text_line </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6">oled_text_alignment_t</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a single line of text in the internal text buffer. </p>
+
+<p class="reference">Referências <a class="el" href="structtext__line__t.html#a0d011705c6b637323c57aca33a8a49f2">text_line_t::alignment</a>, <a class="el" href="ssd1306__i2c_8h.html#abe2b8a2431d0df962a7fe66e9281e6f5">max_text_columns</a>, <a class="el" href="ssd1306__i2c_8h.html#afe0c35b2c6fdd7e94d1e6e0960448d07">max_text_lines</a> e <a class="el" href="structtext__line__t.html#a09612f3c357a15fbfb2d10dbb04d1b75">text_line_t::text</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#ac533da08441193dc1c6274e58348feb5">oled_clear_text_line()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="oled_8c.html">oled.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

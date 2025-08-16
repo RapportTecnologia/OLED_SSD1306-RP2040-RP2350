@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: OLED SSD1306 (Proxy &lt;tt&gt;oled.h/.c&lt;/tt&gt;)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">OLED SSD1306 (Proxy <code><a class="el" href="oled_8h.html">oled.h</a>/.c</code>) </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> Projeto para uso do display OLED SSD1306 via I2C no Raspberry Pi Pico (ou compatíveis), oferecendo uma camada de alto nível (proxy/fachada) em <code><a class="el" href="oled_8h.html">oled.h</a></code>/<code><a class="el" href="oled_8c.html">oled.c</a></code> sobre o driver de baixo nível em <code>ssd1306_*</code>. Essa camada simplifica operações comuns como inicialização, limpeza, desenho de pixels/linhas, e renderização de textos (com alinhamento e fonte grande).</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Visão Geral</h1>
+<ul>
+<li><b>Objetivo</b>: disponibilizar uma API simples para desenhar e compor telas sem lidar diretamente com comandos do SSD1306.</li>
+<li><b>Abordagem</b>: o proxy mantém um buffer de vídeo em RAM e só envia ao display quando você chama <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a></code> (ou utiliza <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code> para o modo de texto).</li>
+<li><b>Display suportado</b>: 128x64, I2C endereço padrão <code>0x3C</code>.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Estrutura do Projeto</h1>
+<ul>
+<li><code><a class="el" href="oled_8h.html">oled.h</a></code> / <code><a class="el" href="oled_8c.html">oled.c</a></code>: proxy/fachada de alto nível (API pública recomendada).</li>
+<li><code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code> / <code><a class="el" href="ssd1306__i2c_8c.html">ssd1306_i2c.c</a></code>: driver e primitivas de desenho/transferência I2C.</li>
+<li><code><a class="el" href="ssd1306_8h.html">ssd1306.h</a></code>: protótipos e integração com o driver.</li>
+<li><code><a class="el" href="ssd1306__font_8h.html">ssd1306_font.h</a></code>: fonte padrão (8x8) e utilitários.</li>
+<li><code><a class="el" href="big__font_8h.html">big_font.h</a></code>: fonte grande para números e caracteres destacados.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Requisitos e Hardware</h1>
+<ul>
+<li><b>SDK</b>: Raspberry Pi Pico SDK (Pico SDK) e toolchain C/C++ configurados.</li>
+<li><b>I2C</b>: clock padrão 400 kHz (<code>ssd1306_i2c_clock 400</code>).</li>
+<li><b>Pinos I2C padrão</b> (podem ser alterados em <code><a class="el" href="oled_8h.html">oled.h</a></code>):<ul>
+<li><code>I2C_SDA</code> = 14</li>
+<li><code>I2C_SCL</code> = 15</li>
+</ul>
+</li>
+<li><b>Endereço I2C</b>: <code>0x3C</code> (definido em <code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code> como <code>ssd1306_i2c_address</code>).</li>
+</ul>
+<p>Faça a ligação do módulo OLED (VCC, GND, SDA, SCL) aos pinos I2C do Pico. Se utilizar outros pinos, ajuste os <code>#define</code> em <code><a class="el" href="oled_8h.html">oled.h</a></code>.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)</h1>
+<ul>
+<li><code>void <a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb" title="Initialize the OLED display.">oled_init(void)</a>;</code><ul>
+<li>Inicializa I2C, configura o SSD1306 e limpa o buffer interno.</li>
+</ul>
+</li>
+<li><code>void <a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c" title="Clear the display buffer and refresh.">oled_clear(void)</a>;</code><ul>
+<li>Limpa o buffer de vídeo em RAM e atualiza o display imediatamente.</li>
+</ul>
+</li>
+<li><code>void <a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render(void)</a>;</code><ul>
+<li>Envia o conteúdo do buffer atual ao display (uso após desenhar).</li>
+</ul>
+</li>
+<li><code>void <a class="el" href="oled_8c.html#a06e013499ceeb5183e46d95b0ab49c3f" title="Set a pixel at (x,y) on or off.">oled_set_pixel(int x, int y, bool on)</a>;</code><ul>
+<li>Define um pixel no buffer (não envia automaticamente ao display).</li>
+</ul>
+</li>
+<li><code>void <a class="el" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268" title="Draw a line from (x0,y0) to (x1,y1)">oled_draw_line(int x0, int y0, int x1, int y1, bool on)</a>;</code><ul>
+<li>Desenha uma linha no buffer.</li>
+</ul>
+</li>
+<li><code>void <a class="el" href="oled_8c.html#ae6e6696f947ba345d0a95ae94ce4b3df" title="Draw a single character at (x,y)">oled_draw_char(int x, int y, char c)</a>;</code><ul>
+<li>Desenha um caractere (fonte padrão, largura 8).</li>
+</ul>
+</li>
+<li><code>void <a class="el" href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be" title="Draw a string at (x,y)">oled_draw_string(int x, int y, const char *str)</a>;</code><ul>
+<li>Desenha uma string (fonte padrão). Altura de linha: <code>ssd1306_line_height</code> (8 px).</li>
+</ul>
+</li>
+<li><code>void <a class="el" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char(int x, int y, char c)</a>;</code><ul>
+<li>Desenha caractere usando a fonte grande (<code><a class="el" href="big__font_8h.html">big_font.h</a></code>).</li>
+</ul>
+</li>
+<li>Modo de “buffer de texto” (linhas lógicas):<ul>
+<li><code>typedef enum { OLED_ALIGN_LEFT, OLED_ALIGN_CENTER, OLED_ALIGN_RIGHT, OLED_ALIGN_JUSTIFY } oled_text_alignment_t;</code></li>
+<li><code>void <a class="el" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec" title="Set a single line of text in the internal text buffer.">oled_set_text_line(uint8_t line, const char *text, oled_text_alignment_t alignment)</a>;</code></li>
+<li><code>void <a class="el" href="oled_8c.html#ac533da08441193dc1c6274e58348feb5" title="Clear a single line of text in the internal text buffer.">oled_clear_text_line(uint8_t line)</a>;</code></li>
+<li><code>void <a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text(void)</a>;</code></li>
+</ul>
+</li>
+</ul>
+<p>Parâmetros relevantes (em <code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code>):</p>
+<ul>
+<li><code>ssd1306_width = 128</code>, <code>ssd1306_height = 64</code>.</li>
+<li><code>ssd1306_line_height = 8</code>.</li>
+<li><code>max_text_lines = 8</code> e <code>max_text_columns = 17</code> (para o modo de texto do proxy).</li>
+<li><code>font_width = 8</code> (padrão, pode ser redefinido antes de incluir <code><a class="el" href="oled_8h.html">oled.h</a></code>).</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Fluxo de Uso Recomendado</h1>
+<ol type="1">
+<li><b>Inicialize</b>: <code><a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb" title="Initialize the OLED display.">oled_init()</a>;</code></li>
+<li><b>Desenhe no buffer</b>: use <code>oled_set_pixel</code>, <code>oled_draw_line</code>, <code>oled_draw_char</code>/<code>oled_draw_string</code>.</li>
+<li><b>Renderize</b>: chame <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a>;</code> para enviar ao display.</li>
+</ol>
+<p>Para o modo de texto por linhas:</p>
+<ol type="1">
+<li>Chame <code>oled_set_text_line(line, "texto", OLED_ALIGN_...);</code> para cada linha desejada (0 a <code>max_text_lines-1</code>).</li>
+<li>Chame uma única vez <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a>;</code> para compor e enviar o conteúdo.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Exemplo Rápido (Desenho livre)</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="oled_8h.html">oled.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Limpa tela</span></div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Desenha uma moldura</span></div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(0, 0, 127, 0, <span class="keyword">true</span>);</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(0, 63, 127, 63, <span class="keyword">true</span>);</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(0, 0, 0, 63, <span class="keyword">true</span>);</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(127, 0, 127, 63, <span class="keyword">true</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Escreve um texto</span></div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be">oled_draw_string</a>(8, 8, <span class="stringliteral">&quot;OLED SSD1306&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Renderiza</span></div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (1) { <span class="comment">/* loop */</span> }</div>
+<div class="line">}</div>
+<div class="ttc" id="aoled_8c_html_a34f1c4779a919ec1623b7b5147c0c5be"><div class="ttname"><a href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be">oled_draw_string</a></div><div class="ttdeci">void oled_draw_string(int x, int y, const char *str)</div><div class="ttdoc">Draw a string at (x,y)</div><div class="ttdef"><b>Definição</b> oled.c:60</div></div>
+<div class="ttc" id="aoled_8c_html_a4a95395ba3445d3d5a9ba41324f9b5b4"><div class="ttname"><a href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render</a></div><div class="ttdeci">void oled_render(void)</div><div class="ttdoc">Render the current buffer to the display.</div><div class="ttdef"><b>Definição</b> oled.c:44</div></div>
+<div class="ttc" id="aoled_8c_html_a66cdd05fb3a765535af54825cb9eb26c"><div class="ttname"><a href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear</a></div><div class="ttdeci">void oled_clear(void)</div><div class="ttdoc">Clear the display buffer and refresh.</div><div class="ttdef"><b>Definição</b> oled.c:39</div></div>
+<div class="ttc" id="aoled_8c_html_ac284f0bd4fdf2dd11175524b8d78b268"><div class="ttname"><a href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a></div><div class="ttdeci">void oled_draw_line(int x0, int y0, int x1, int y1, bool on)</div><div class="ttdoc">Draw a line from (x0,y0) to (x1,y1)</div><div class="ttdef"><b>Definição</b> oled.c:52</div></div>
+<div class="ttc" id="aoled_8c_html_ad95f850c4c6d949229270c8da88c02cb"><div class="ttname"><a href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a></div><div class="ttdeci">void oled_init(void)</div><div class="ttdoc">Initialize the OLED display.</div><div class="ttdef"><b>Definição</b> oled.c:25</div></div>
+<div class="ttc" id="aoled_8h_html"><div class="ttname"><a href="oled_8h.html">oled.h</a></div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
+Exemplo (Modo de texto com alinhamento)</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="oled_8h.html">oled.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a>();</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(0, <span class="stringliteral">&quot;Sistema&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b">OLED_ALIGN_LEFT</a>);</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(1, <span class="stringliteral">&quot;Pico + OLED&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5">OLED_ALIGN_CENTER</a>);</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(2, <span class="stringliteral">&quot;Status: OK&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831">OLED_ALIGN_RIGHT</a>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Justify é tratado como LEFT no momento</span></div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(3, <span class="stringliteral">&quot;Justify demo&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb">OLED_ALIGN_JUSTIFY</a>);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text</a>();</div>
+<div class="line">    <span class="keywordflow">while</span> (1) {}</div>
+<div class="line">}</div>
+<div class="ttc" id="aoled_8c_html_a112b0ae9dc37e4d52be0acfacbd37689"><div class="ttname"><a href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text</a></div><div class="ttdeci">void oled_render_text(void)</div><div class="ttdoc">Render the internal text buffer lines to the display.</div><div class="ttdef"><b>Definição</b> oled.c:89</div></div>
+<div class="ttc" id="aoled_8c_html_aa415fc483d7246dd7d28a32a69f7a6ec"><div class="ttname"><a href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a></div><div class="ttdeci">void oled_set_text_line(uint8_t line, const char *text, oled_text_alignment_t alignment)</div><div class="ttdoc">Set a single line of text in the internal text buffer.</div><div class="ttdef"><b>Definição</b> oled.c:71</div></div>
+<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5">OLED_ALIGN_CENTER</a></div><div class="ttdeci">@ OLED_ALIGN_CENTER</div><div class="ttdef"><b>Definição</b> oled.h:35</div></div>
+<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b">OLED_ALIGN_LEFT</a></div><div class="ttdeci">@ OLED_ALIGN_LEFT</div><div class="ttdef"><b>Definição</b> oled.h:34</div></div>
+<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831">OLED_ALIGN_RIGHT</a></div><div class="ttdeci">@ OLED_ALIGN_RIGHT</div><div class="ttdef"><b>Definição</b> oled.h:36</div></div>
+<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb">OLED_ALIGN_JUSTIFY</a></div><div class="ttdeci">@ OLED_ALIGN_JUSTIFY</div><div class="ttdef"><b>Definição</b> oled.h:37</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
+Exemplo (Fonte grande)</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="oled_8h.html">oled.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a>();</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear</a>();</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a>(0, 0, <span class="charliteral">&#39;2&#39;</span>);</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a>(20, 0, <span class="charliteral">&#39;5&#39;</span>);</div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a>(40, 0, <span class="charliteral">&#39;C&#39;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render</a>();</div>
+<div class="line">    <span class="keywordflow">while</span> (1) {}</div>
+<div class="line">}</div>
+<div class="ttc" id="aoled_8c_html_aef19becab190e4a63b3ea566b8932996"><div class="ttname"><a href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a></div><div class="ttdeci">void oled_draw_big_char(int x, int y, char c)</div><div class="ttdef"><b>Definição</b> oled.c:64</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+Boas Práticas para Melhor Resultado com o Proxy</h1>
+<ul>
+<li><b>Desenhe em lote, renderize uma vez</b>: acumule alterações no buffer e chame <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a></code> no final do quadro/tela. Evite renderizações parciais repetidas.</li>
+<li><b>Use o modo de texto quando fizer sentido</b>: <code><a class="el" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec" title="Set a single line of text in the internal text buffer.">oled_set_text_line()</a></code> + <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code> já cuidam do alinhamento e composição vertical por linhas de 8 px.</li>
+<li><b>Valide coordenadas</b>: mantenha <code>x</code> em <code>[0, 127]</code> e <code>y</code> em <code>[0, 63]</code> para evitar recortes inesperados.</li>
+<li><b>Fonte e limites</b>: no modo de texto, <code>max_text_columns</code> controla o truncamento; evite strings maiores que 17 caracteres ou ajuste o valor para seu caso.</li>
+<li><b>I2C estável</b>: mantenha o clock em 400 kHz para boa taxa de atualização. Se houver ruído, revisite fiação e pull-ups (o código aplica <code>gpio_pull_up</code>).</li>
+<li><b>Pinos customizados</b>: altere <code>I2C_SDA</code> e <code>I2C_SCL</code> em <code><a class="el" href="oled_8h.html">oled.h</a></code> conforme seu hardware.</li>
+<li><b>Limpeza eficiente</b>: <code><a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c" title="Clear the display buffer and refresh.">oled_clear()</a></code> zera o buffer e envia ao display; se estiver no modo de texto, <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code> já chama <code><a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c" title="Clear the display buffer and refresh.">oled_clear()</a></code> internamente antes de compor.</li>
+<li><b>JUSTIFY</b>: atualmente é tratado como LEFT; se precisar de justificação real entre palavras, considere implementar a distribuição de espaços no <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code>.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Limitações e Observações</h1>
+<ul>
+<li>Otimizações de renderização parcial não estão habilitadas; cada <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a></code> envia todo o buffer.</li>
+<li>O modo de texto usa <code>font_width = 8</code>. Se alterar a fonte, ajuste alinhamento e limites para evitar cortes.</li>
+<li><code>max_text_lines</code> e <code>max_text_columns</code> são definidos em <code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code>. Ajustes podem exigir revisitar o layout.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Licença</h1>
+<p>Consulte <code>LICENSE</code> neste diretório. </p>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
