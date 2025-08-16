@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de rtc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2040/hardware_regs/include/hardware/regs/rtc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : RTC</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : Register block to control RTC</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _HARDWARE_REGS_RTC_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _HARDWARE_REGS_RTC_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register    : RTC_CLKDIV_M1</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Description : Divider minus 1 for the 1 second counter. Safe to change the</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//               value when RTC is not enabled.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a96ff852619a7358c0afad48146a6249b">   20</a></span><span class="preprocessor">#define RTC_CLKDIV_M1_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ad7c29d143aca2bda63cf155779e13f60">   21</a></span><span class="preprocessor">#define RTC_CLKDIV_M1_BITS   _u(0x0000ffff)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4c7dd8de2ae74e0712e814299ebcf039">   22</a></span><span class="preprocessor">#define RTC_CLKDIV_M1_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a96301c6a9248e09cd797f0183dd60da4">   23</a></span><span class="preprocessor">#define RTC_CLKDIV_M1_MSB    _u(15)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a0f1324e6264c64c4456149c791660dfa">   24</a></span><span class="preprocessor">#define RTC_CLKDIV_M1_LSB    _u(0)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a1d71dc6f2f804659d44ac78625f37d9b">   25</a></span><span class="preprocessor">#define RTC_CLKDIV_M1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Register    : RTC_SETUP_0</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Description : RTC setup register 0</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4fa5ceb035314ca890477db6adb49d32">   29</a></span><span class="preprocessor">#define RTC_SETUP_0_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a943b90e2adc636ffcab0ed36b61f2a04">   30</a></span><span class="preprocessor">#define RTC_SETUP_0_BITS   _u(0x00ffff1f)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa1c518fe868f60788ce2cdeeaf2c5125">   31</a></span><span class="preprocessor">#define RTC_SETUP_0_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Field       : RTC_SETUP_0_YEAR</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Description : Year</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abe824c707ddc8cc052e4e94c5641a732">   35</a></span><span class="preprocessor">#define RTC_SETUP_0_YEAR_RESET  _u(0x000)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a968d4aa13769f63b02fafcc5c9418bef">   36</a></span><span class="preprocessor">#define RTC_SETUP_0_YEAR_BITS   _u(0x00fff000)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aedba22589de0900f8604623faec04303">   37</a></span><span class="preprocessor">#define RTC_SETUP_0_YEAR_MSB    _u(23)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abdb4130c08a0129c6789b7c4631d0708">   38</a></span><span class="preprocessor">#define RTC_SETUP_0_YEAR_LSB    _u(12)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a55294ac3d414d846bf8576b1bf8d792f">   39</a></span><span class="preprocessor">#define RTC_SETUP_0_YEAR_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// Field       : RTC_SETUP_0_MONTH</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// Description : Month (1..12)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ac58389ea55ede02a83d916d4640fb7f5">   43</a></span><span class="preprocessor">#define RTC_SETUP_0_MONTH_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a214cfaa69511d35b98b5f8a0967f1696">   44</a></span><span class="preprocessor">#define RTC_SETUP_0_MONTH_BITS   _u(0x00000f00)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9edf5710cf7ca6ac6f3117a6e7748693">   45</a></span><span class="preprocessor">#define RTC_SETUP_0_MONTH_MSB    _u(11)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a6c2a5df91a7724786220727bae8cc0ab">   46</a></span><span class="preprocessor">#define RTC_SETUP_0_MONTH_LSB    _u(8)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a041a0b19e70a35c059d21ef5060b313e">   47</a></span><span class="preprocessor">#define RTC_SETUP_0_MONTH_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// Field       : RTC_SETUP_0_DAY</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// Description : Day of the month (1..31)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a7112a3741d0d3246abe7bd31e444e60a">   51</a></span><span class="preprocessor">#define RTC_SETUP_0_DAY_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a415d33a8cf0c68b6c815a1d635021a1c">   52</a></span><span class="preprocessor">#define RTC_SETUP_0_DAY_BITS   _u(0x0000001f)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4ec2051e23028162b5d6fe4d77875d33">   53</a></span><span class="preprocessor">#define RTC_SETUP_0_DAY_MSB    _u(4)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a692a08672394bb0a64a751f9d3bb3c47">   54</a></span><span class="preprocessor">#define RTC_SETUP_0_DAY_LSB    _u(0)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a6b5ab998cf4caa9d472246cc8fdf3dda">   55</a></span><span class="preprocessor">#define RTC_SETUP_0_DAY_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Register    : RTC_SETUP_1</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// Description : RTC setup register 1</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a77211662cf824af3a2ac8d35af79ca03">   59</a></span><span class="preprocessor">#define RTC_SETUP_1_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a68ef2061f68979b5e1c08454dd809fd6">   60</a></span><span class="preprocessor">#define RTC_SETUP_1_BITS   _u(0x071f3f3f)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a60c2bfc538aa469a9c9a4c4eb59c4e21">   61</a></span><span class="preprocessor">#define RTC_SETUP_1_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// Field       : RTC_SETUP_1_DOTW</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// Description : Day of the week: 1-Monday...0-Sunday ISO 8601 mod 7</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a13cb19a48b78021d05732eb4f7530449">   65</a></span><span class="preprocessor">#define RTC_SETUP_1_DOTW_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a86c387a10ba30e0a7775c2f1d4382175">   66</a></span><span class="preprocessor">#define RTC_SETUP_1_DOTW_BITS   _u(0x07000000)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa401ee228377d76842ce1aa62aa4d2d8">   67</a></span><span class="preprocessor">#define RTC_SETUP_1_DOTW_MSB    _u(26)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a006dce00a5d8e0b33839612cd39b20b4">   68</a></span><span class="preprocessor">#define RTC_SETUP_1_DOTW_LSB    _u(24)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#adfc6494305945fbe6f0388d5d8d537a6">   69</a></span><span class="preprocessor">#define RTC_SETUP_1_DOTW_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">// Field       : RTC_SETUP_1_HOUR</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// Description : Hours</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab6cf8971c866c2b72119ea7836bef888">   73</a></span><span class="preprocessor">#define RTC_SETUP_1_HOUR_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a38318b9288c4b93c1a6f972ca2ee09de">   74</a></span><span class="preprocessor">#define RTC_SETUP_1_HOUR_BITS   _u(0x001f0000)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a406caefee24ff2119b158d8dc27e73d8">   75</a></span><span class="preprocessor">#define RTC_SETUP_1_HOUR_MSB    _u(20)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a5e1181026caaf95fa628a54111d2dda0">   76</a></span><span class="preprocessor">#define RTC_SETUP_1_HOUR_LSB    _u(16)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#acdc9d36ba7ec02281d074567628bcea7">   77</a></span><span class="preprocessor">#define RTC_SETUP_1_HOUR_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// Field       : RTC_SETUP_1_MIN</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// Description : Minutes</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a09e58b3680585827f0eaa001aae725bd">   81</a></span><span class="preprocessor">#define RTC_SETUP_1_MIN_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a0068a4410fed42d5ef509bde325090e4">   82</a></span><span class="preprocessor">#define RTC_SETUP_1_MIN_BITS   _u(0x00003f00)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a73b8feaa7a132a13172c666bb722cb84">   83</a></span><span class="preprocessor">#define RTC_SETUP_1_MIN_MSB    _u(13)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a2efac3c66f8b21c2361993eb78acd476">   84</a></span><span class="preprocessor">#define RTC_SETUP_1_MIN_LSB    _u(8)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a8029c47a56c426da4bc925313d919413">   85</a></span><span class="preprocessor">#define RTC_SETUP_1_MIN_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">// Field       : RTC_SETUP_1_SEC</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// Description : Seconds</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af4a811dc4f422d934b96f9434efb1b02">   89</a></span><span class="preprocessor">#define RTC_SETUP_1_SEC_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab7b666b57ef181c7f3a860a0838efcbd">   90</a></span><span class="preprocessor">#define RTC_SETUP_1_SEC_BITS   _u(0x0000003f)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abc2ea23e6130826ad82c8e15f5213f45">   91</a></span><span class="preprocessor">#define RTC_SETUP_1_SEC_MSB    _u(5)</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a660f4de5e2df96db94b0af9825ed3770">   92</a></span><span class="preprocessor">#define RTC_SETUP_1_SEC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aeb00a2e24bde5e6d0fe15237138deb3d">   93</a></span><span class="preprocessor">#define RTC_SETUP_1_SEC_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// Register    : RTC_CTRL</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// Description : RTC Control and status</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab880887d7f4277e5fdc84bef47cdbeee">   97</a></span><span class="preprocessor">#define RTC_CTRL_OFFSET _u(0x0000000c)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a18928dd61c1562cc3ab370dd75fcbf89">   98</a></span><span class="preprocessor">#define RTC_CTRL_BITS   _u(0x00000113)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a030400f12ae41c124199b628dcb35dba">   99</a></span><span class="preprocessor">#define RTC_CTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// Field       : RTC_CTRL_FORCE_NOTLEAPYEAR</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">// Description : If set, leapyear is forced off.</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">//               Useful for years divisible by 100 but not by 400</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a00922af73325784b0c9ba3b1570ddf44">  104</a></span><span class="preprocessor">#define RTC_CTRL_FORCE_NOTLEAPYEAR_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae95b280e00282f6c44ea2978ab4ec891">  105</a></span><span class="preprocessor">#define RTC_CTRL_FORCE_NOTLEAPYEAR_BITS   _u(0x00000100)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ad7ba6c7bc9b789fa25c75cda4226f92b">  106</a></span><span class="preprocessor">#define RTC_CTRL_FORCE_NOTLEAPYEAR_MSB    _u(8)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4a7837e6520e75a211a615164de937fc">  107</a></span><span class="preprocessor">#define RTC_CTRL_FORCE_NOTLEAPYEAR_LSB    _u(8)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ad58c213846645c7afc63bb96f35dcbd6">  108</a></span><span class="preprocessor">#define RTC_CTRL_FORCE_NOTLEAPYEAR_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// Field       : RTC_CTRL_LOAD</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// Description : Load RTC</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a35f483958178f73ae9447589c935ce2f">  112</a></span><span class="preprocessor">#define RTC_CTRL_LOAD_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aed592369d2501c610c7e05c7a8be53fa">  113</a></span><span class="preprocessor">#define RTC_CTRL_LOAD_BITS   _u(0x00000010)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae83ac324380560d8bad962ce05c6f035">  114</a></span><span class="preprocessor">#define RTC_CTRL_LOAD_MSB    _u(4)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a8fd6dc3eccb01d61b0469f71666d9425">  115</a></span><span class="preprocessor">#define RTC_CTRL_LOAD_LSB    _u(4)</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae6576a067c61a5b7e2f642364651fea6">  116</a></span><span class="preprocessor">#define RTC_CTRL_LOAD_ACCESS &quot;SC&quot;</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">// Field       : RTC_CTRL_RTC_ACTIVE</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// Description : RTC enabled (running)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a2a417c4be5d64d7f6a4ba868568e1cdb">  120</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ACTIVE_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab9dd55b23a243ef7bd143197526a303b">  121</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ACTIVE_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ac607e189d6e5e32dbd2e0c0ef45c9da9">  122</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ACTIVE_MSB    _u(1)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a0cf1647fda99bb7d15a3478f49424fb0">  123</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ACTIVE_LSB    _u(1)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa3e807711837db2051f29ed2ec2a8cdb">  124</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ACTIVE_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// Field       : RTC_CTRL_RTC_ENABLE</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// Description : Enable RTC</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a42c1763a733a9c5b8f685a3936bd0dc9">  128</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ENABLE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aef8fec4073fb9270095b4f6ef1d901dd">  129</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ENABLE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a813904e1c25b3ef1c22657f284d188c0">  130</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ENABLE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ac9358bdf41479a0645da9c9217607cb8">  131</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ENABLE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a31ac91f67f0946fd15b9bcea9d0c383b">  132</a></span><span class="preprocessor">#define RTC_CTRL_RTC_ENABLE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">// Register    : RTC_IRQ_SETUP_0</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">// Description : Interrupt setup register 0</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a03149a1ece0972dd24b5a8ff69ad0660">  136</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_OFFSET _u(0x00000010)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a28a36e38fa7408a5f1e4d6775ddc6a05">  137</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_BITS   _u(0x37ffff1f)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a1b897467c81f6b4df6c67a58bf3e0dd0">  138</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_MATCH_ACTIVE</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a16e170c5cf5fa88a9bd146ca3d7543c8">  141</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ACTIVE_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4d4174a8645a109cabb73279acc25ce4">  142</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ACTIVE_BITS   _u(0x20000000)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a65ce68319b1daeff65b25662ad2ea646">  143</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ACTIVE_MSB    _u(29)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aff64075080de53dfe6f85751a2cd51e7">  144</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ACTIVE_LSB    _u(29)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9280d2fcb5f3f37fb177f8fa3a2a2bf3">  145</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ACTIVE_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_MATCH_ENA</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">// Description : Global match enable. Don&#39;t change any other value while this</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">//               one is enabled</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ad030e4918955ecbb0217cfcd239008eb">  150</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab709d1ab68102b22c435a8308da44d89">  151</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ENA_BITS   _u(0x10000000)</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#adb34922ea3cdfe519c6de94012a510ce">  152</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ENA_MSB    _u(28)</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a07b96af12b9ea3cb0cd661ff73fc0b67">  153</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ENA_LSB    _u(28)</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae1e280d30d346640ea456ef4bbf9f1af">  154</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MATCH_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_YEAR_ENA</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">// Description : Enable year matching</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a8e46accf08f4a0f716e0a64715edf433">  158</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a8d92b6729df7acb3b51adc7358da132e">  159</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_ENA_BITS   _u(0x04000000)</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a1ba70049ca3d836bcbeb711d2295a1da">  160</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_ENA_MSB    _u(26)</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a01c07c8dacd53df0e409b617abf06e81">  161</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_ENA_LSB    _u(26)</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aed41b86ffd3f11831ef27ddaef2ac396">  162</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_MONTH_ENA</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">// Description : Enable month matching</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a52dd0af5384e72a3690dbef7101034e6">  166</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a303b47151668202b4d5317f8039e62fd">  167</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_ENA_BITS   _u(0x02000000)</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab6a79c8fbf3a1646988cd59ecccfdca0">  168</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_ENA_MSB    _u(25)</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a20eaabbbb35bf889cfbe2d4af76d5337">  169</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_ENA_LSB    _u(25)</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a28495b20b945f7eefd0a28f05f4a7692">  170</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_DAY_ENA</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">// Description : Enable day matching</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a6ef46301bbd9fdd38fb6b95cd9cac41a">  174</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a684587aeb2600aeb0f6df26a9030e2d7">  175</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_ENA_BITS   _u(0x01000000)</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a19eda58580f7873dae8ec9233fa5caec">  176</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_ENA_MSB    _u(24)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a136d26385584af2980bbb2473415e48d">  177</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_ENA_LSB    _u(24)</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a23c5124b6929d6fa1bc41ac8aa561945">  178</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_YEAR</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">// Description : Year</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a789229a41a8488ed6ea00e487d5965a1">  182</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_RESET  _u(0x000)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3fe86bc141a2b81a5424607ded2157a0">  183</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_BITS   _u(0x00fff000)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aabc1a20df6da95a4c9c84742a31f1fb2">  184</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_MSB    _u(23)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a7255a49d26615fc7c906681d14e2bb73">  185</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_LSB    _u(12)</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af37a695cb19e224752279169a20e389b">  186</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_YEAR_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_MONTH</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">// Description : Month (1..12)</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4589085b4fd056b7144e2f3c5ff96a4e">  190</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a74b3888eb1b2e30669b29d3b3526a63d">  191</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_BITS   _u(0x00000f00)</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa94252ee904fb869b6a3802157f42cee">  192</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_MSB    _u(11)</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a349cb57a2dfd7c24e512affe0e91bab0">  193</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_LSB    _u(8)</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9cc47f3fa764c5f0f54adfd9d8afcb77">  194</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_MONTH_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">// Field       : RTC_IRQ_SETUP_0_DAY</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">// Description : Day of the month (1..31)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a42681f2b479f7bb4fa1053f2efab2b49">  198</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9e4641ac91bc88b2147ae1be355faf02">  199</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_BITS   _u(0x0000001f)</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a2a61efefb6922d353f2c9eabd4798039">  200</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_MSB    _u(4)</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a782d89b84e240128e52e88842aff1fe7">  201</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_LSB    _u(0)</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae1a10161d28b5c3a3f860b584c7e6122">  202</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_0_DAY_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">// Register    : RTC_IRQ_SETUP_1</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">// Description : Interrupt setup register 1</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9718c74350b7ebdf41c8f5624a01136a">  206</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_OFFSET _u(0x00000014)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3cca2e0a4f8c47d30e7aa5bf9c2227f5">  207</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_BITS   _u(0xf71f3f3f)</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae8bda160cc49f5a153a5bfd9f12f9a97">  208</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_DOTW_ENA</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">// Description : Enable day of the week matching</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a8aa1b85daf5fcd6e824cd0ab14929d57">  212</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a85bac6956fd2d624282eaadd90bc42d5">  213</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_ENA_BITS   _u(0x80000000)</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af7ed96fe7ac4c0bda36589727cc73452">  214</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_ENA_MSB    _u(31)</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a5f6cddb9fefeea3f90ef4d98bfa03c60">  215</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_ENA_LSB    _u(31)</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab1ef3c9160c515b292dbb934c8531210">  216</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_HOUR_ENA</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">// Description : Enable hour matching</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae8deaa85b37fc9c18f80cf2183b6e49d">  220</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a7529cd36046d66dace33bd2fa76103d6">  221</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_ENA_BITS   _u(0x40000000)</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a29f4dda3652ca1d03caa4d3bd2083498">  222</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_ENA_MSB    _u(30)</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a438f432079a72b1ca8fb26ade496138b">  223</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_ENA_LSB    _u(30)</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a699348d5a159d42af74d84c5322efd22">  224</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_MIN_ENA</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">// Description : Enable minute matching</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af9bb3289e25efeacba5b46b84854ad85">  228</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a07ae9a46b055e13fa562aa53c67e67b8">  229</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_ENA_BITS   _u(0x20000000)</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a6683aaa77f8a2d0fe85a68a9a9e6294c">  230</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_ENA_MSB    _u(29)</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a6dcb156727b31c32aaad598448be0004">  231</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_ENA_LSB    _u(29)</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a7608a316e27c1a09034938cbc21d7c7e">  232</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_SEC_ENA</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// Description : Enable second matching</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aeb8ff8586523d0622dda5990716c8a21">  236</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_ENA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a425a53414501133f1348488d70fe80cd">  237</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_ENA_BITS   _u(0x10000000)</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae046519fa0055c3ae33e0f9fb98a82a4">  238</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_ENA_MSB    _u(28)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a5f679f211c4ea23c5679343388fb584b">  239</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_ENA_LSB    _u(28)</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a01da88b3bd64f8facd333e7513b523ce">  240</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_ENA_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_DOTW</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">// Description : Day of the week</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a68c46d98469eaf3dfec5c6f583d0d5bc">  244</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abd69c32bb0ea86b2f264997ab2a7a970">  245</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_BITS   _u(0x07000000)</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a217443c126a888292e102361aef9bd15">  246</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_MSB    _u(26)</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a55df74b02fcb45c785c9c3949c596b0a">  247</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_LSB    _u(24)</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a67ae9a9b132641875eeb59c29fff9a0f">  248</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_DOTW_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_HOUR</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">// Description : Hours</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a99150b689c794330f16b2c915dcd0421">  252</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3e134ff06fa3493c3f56acd0939bdda3">  253</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_BITS   _u(0x001f0000)</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a69dfe5f7fb404fb50162f0b600b47180">  254</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_MSB    _u(20)</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a30ee9b43c37d18c915cc0ca470477d38">  255</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_LSB    _u(16)</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a04ca19b6c5b95390c88c2566073fec36">  256</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_HOUR_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_MIN</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">// Description : Minutes</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a115b22ce19fa51b24c27b3d876b84e3c">  260</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9318435ca99dd128c7200bf4331f1c32">  261</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_BITS   _u(0x00003f00)</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae5f4b06366af0eb62c39222ba1e32577">  262</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_MSB    _u(13)</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#afafd0ef968a2024ab30dd60ea8aa7e02">  263</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_LSB    _u(8)</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa966e0e619592366bafa0cf01397232f">  264</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_MIN_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">// Field       : RTC_IRQ_SETUP_1_SEC</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">// Description : Seconds</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a152b6349358fdb1bf5d575d8d87c59a7">  268</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af9e2e8914b18a2189947b00930bd758c">  269</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_BITS   _u(0x0000003f)</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4536da58f23bf3aca0cc18d95e12a953">  270</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_MSB    _u(5)</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a1fc1aac2c9459ad948495683a1b75b84">  271</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3c4723c70da07b1509def3df3803e538">  272</a></span><span class="preprocessor">#define RTC_IRQ_SETUP_1_SEC_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">// Register    : RTC_RTC_1</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">// Description : RTC register 1.</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab68adceffa6af80ebbe2d90d6bcd70ec">  276</a></span><span class="preprocessor">#define RTC_RTC_1_OFFSET _u(0x00000018)</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9d8cfffc896e90ec2b60eefecafe3506">  277</a></span><span class="preprocessor">#define RTC_RTC_1_BITS   _u(0x00ffff1f)</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aef0f428e2d3c4b58b490ceb06a2121c6">  278</a></span><span class="preprocessor">#define RTC_RTC_1_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">// Field       : RTC_RTC_1_YEAR</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">// Description : Year</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a070ba4310a857e7f95f651a3302b40e5">  282</a></span><span class="preprocessor">#define RTC_RTC_1_YEAR_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aca79e4ac33a11eff1c1e85c5555bb44e">  283</a></span><span class="preprocessor">#define RTC_RTC_1_YEAR_BITS   _u(0x00fff000)</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a982f43ac5012e0cbe89b38ef8c6e91d0">  284</a></span><span class="preprocessor">#define RTC_RTC_1_YEAR_MSB    _u(23)</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a92ee8c13fe1b6d50dfc9340694ddde72">  285</a></span><span class="preprocessor">#define RTC_RTC_1_YEAR_LSB    _u(12)</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a5990bc0b477c23c08fa63a48725cda30">  286</a></span><span class="preprocessor">#define RTC_RTC_1_YEAR_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">// Field       : RTC_RTC_1_MONTH</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">// Description : Month (1..12)</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa687d23893c1b9b3fb99a4150b59d54e">  290</a></span><span class="preprocessor">#define RTC_RTC_1_MONTH_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a8ffa70154d2feab940de79f4fc84f002">  291</a></span><span class="preprocessor">#define RTC_RTC_1_MONTH_BITS   _u(0x00000f00)</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aff0aac8d53ddc39c2e2b5f4231e26954">  292</a></span><span class="preprocessor">#define RTC_RTC_1_MONTH_MSB    _u(11)</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af879061cc1b245e83a93a4cb7d643482">  293</a></span><span class="preprocessor">#define RTC_RTC_1_MONTH_LSB    _u(8)</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af621d9c639e0149cfc40110deee55f3f">  294</a></span><span class="preprocessor">#define RTC_RTC_1_MONTH_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">// Field       : RTC_RTC_1_DAY</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment">// Description : Day of the month (1..31)</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abe77ccec038634a6c5eb6c4b74406072">  298</a></span><span class="preprocessor">#define RTC_RTC_1_DAY_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ade6883c3e061cabdc905cdf3b45fbefd">  299</a></span><span class="preprocessor">#define RTC_RTC_1_DAY_BITS   _u(0x0000001f)</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a055263bb076e67637585f7bbe80fa2a6">  300</a></span><span class="preprocessor">#define RTC_RTC_1_DAY_MSB    _u(4)</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae6d1b93262e0e9117035ae9e7b6a12d6">  301</a></span><span class="preprocessor">#define RTC_RTC_1_DAY_LSB    _u(0)</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#afbbd56ffb05a423087a458726d595b2c">  302</a></span><span class="preprocessor">#define RTC_RTC_1_DAY_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">// Register    : RTC_RTC_0</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">// Description : RTC register 0</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="comment">//               Read this before RTC 1!</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ac957fa873e5ca91282a1cf9bf8a8386b">  307</a></span><span class="preprocessor">#define RTC_RTC_0_OFFSET _u(0x0000001c)</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a40b1509e439022132c3472b95f7dc2aa">  308</a></span><span class="preprocessor">#define RTC_RTC_0_BITS   _u(0x071f3f3f)</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a723be555664d3ea3c7f6dfb675a87c2a">  309</a></span><span class="preprocessor">#define RTC_RTC_0_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">// Field       : RTC_RTC_0_DOTW</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">// Description : Day of the week</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4b785dc67ada83ce2c623b836d70140f">  313</a></span><span class="preprocessor">#define RTC_RTC_0_DOTW_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a20bbc9e37eeb21306ab879c6fd5f81d3">  314</a></span><span class="preprocessor">#define RTC_RTC_0_DOTW_BITS   _u(0x07000000)</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa13ede208c35d3e4386f9bb5d2af3afa">  315</a></span><span class="preprocessor">#define RTC_RTC_0_DOTW_MSB    _u(26)</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a54d942d315e20ddee2e97ac33e2651cc">  316</a></span><span class="preprocessor">#define RTC_RTC_0_DOTW_LSB    _u(24)</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#afd4ee546787160aeffd7c89a1db910ad">  317</a></span><span class="preprocessor">#define RTC_RTC_0_DOTW_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment">// Field       : RTC_RTC_0_HOUR</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment">// Description : Hours</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a46727de3657f7da62f459b5e5b12fb90">  321</a></span><span class="preprocessor">#define RTC_RTC_0_HOUR_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aba72a75dbf3644edc2cffc2ab210daff">  322</a></span><span class="preprocessor">#define RTC_RTC_0_HOUR_BITS   _u(0x001f0000)</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a82762f3bb5c49734848a6674f2748088">  323</a></span><span class="preprocessor">#define RTC_RTC_0_HOUR_MSB    _u(20)</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a92cf71230b8953f19c4ccf539afbdf15">  324</a></span><span class="preprocessor">#define RTC_RTC_0_HOUR_LSB    _u(16)</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aaf22e0c43a455fa40800fea8fb992724">  325</a></span><span class="preprocessor">#define RTC_RTC_0_HOUR_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">// Field       : RTC_RTC_0_MIN</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">// Description : Minutes</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae95409ac40e439b47731c193cce5dad1">  329</a></span><span class="preprocessor">#define RTC_RTC_0_MIN_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aef21a8abbaf57bad159cfb394c222b59">  330</a></span><span class="preprocessor">#define RTC_RTC_0_MIN_BITS   _u(0x00003f00)</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a50a323e2983c7b8a1ce6ec5ba9e7378c">  331</a></span><span class="preprocessor">#define RTC_RTC_0_MIN_MSB    _u(13)</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af336ea8a0d36610bd713f667b9d907de">  332</a></span><span class="preprocessor">#define RTC_RTC_0_MIN_LSB    _u(8)</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aad8af441ae53766b11818c1b8071bcb9">  333</a></span><span class="preprocessor">#define RTC_RTC_0_MIN_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">// Field       : RTC_RTC_0_SEC</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">// Description : Seconds</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3190e9a8f57bafccfdf35d0dd76dadcb">  337</a></span><span class="preprocessor">#define RTC_RTC_0_SEC_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a44a69ddff994e1cd420e445471bb9264">  338</a></span><span class="preprocessor">#define RTC_RTC_0_SEC_BITS   _u(0x0000003f)</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a2b5f817b6ef8201cfdda5ca3d345cdb4">  339</a></span><span class="preprocessor">#define RTC_RTC_0_SEC_MSB    _u(5)</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ac4beee6fc912ca7823716bbbf3b73534">  340</a></span><span class="preprocessor">#define RTC_RTC_0_SEC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a593939e02860e284e953029b36d61bee">  341</a></span><span class="preprocessor">#define RTC_RTC_0_SEC_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="comment">// Register    : RTC_INTR</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="comment">// Description : Raw Interrupts</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae6a321c158b1992261a834d26f14dab3">  345</a></span><span class="preprocessor">#define RTC_INTR_OFFSET _u(0x00000020)</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a96bd9c0b427db659e12000f81e36d979">  346</a></span><span class="preprocessor">#define RTC_INTR_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae8372d5b07310b13f6b5001cfb135665">  347</a></span><span class="preprocessor">#define RTC_INTR_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="comment">// Field       : RTC_INTR_RTC</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa19e616eaee639b02d38cf7aa22d941f">  350</a></span><span class="preprocessor">#define RTC_INTR_RTC_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9cb0cf4b9fca7cbcbacf08cd5f8a8f2c">  351</a></span><span class="preprocessor">#define RTC_INTR_RTC_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ad876a65f2ea7a7850cc62164af99114c">  352</a></span><span class="preprocessor">#define RTC_INTR_RTC_MSB    _u(0)</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abc809733ff77f47ab4ff971f32594bfe">  353</a></span><span class="preprocessor">#define RTC_INTR_RTC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#afbbcd18743669d750e348a005f93fdbe">  354</a></span><span class="preprocessor">#define RTC_INTR_RTC_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment">// Register    : RTC_INTE</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">// Description : Interrupt Enable</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ad92407386fb42433464fa65f57ae081d">  358</a></span><span class="preprocessor">#define RTC_INTE_OFFSET _u(0x00000024)</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abcb07229ad693c06f41300a3e6469901">  359</a></span><span class="preprocessor">#define RTC_INTE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a2a62fd3b7707a6349155168ccb1dd2e1">  360</a></span><span class="preprocessor">#define RTC_INTE_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">// Field       : RTC_INTE_RTC</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a76c21df4ec3b662b81c04b38df33eebb">  363</a></span><span class="preprocessor">#define RTC_INTE_RTC_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a51c61b9dfeff62130472a79b5ec4ac46">  364</a></span><span class="preprocessor">#define RTC_INTE_RTC_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#afb26fae3c862a8f787a4e65cd166b1d6">  365</a></span><span class="preprocessor">#define RTC_INTE_RTC_MSB    _u(0)</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af67071b5f48f7bb1b2cd75651253954c">  366</a></span><span class="preprocessor">#define RTC_INTE_RTC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#af81d6fc180a8612c3f494631396c88eb">  367</a></span><span class="preprocessor">#define RTC_INTE_RTC_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment">// Register    : RTC_INTF</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment">// Description : Interrupt Force</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3a8abe0bdf9c7c4ff405a767c576f5f4">  371</a></span><span class="preprocessor">#define RTC_INTF_OFFSET _u(0x00000028)</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#abc044de5dd22214925def254e43c29d0">  372</a></span><span class="preprocessor">#define RTC_INTF_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9478a4cffebbbc6dac3d3531a2c0c919">  373</a></span><span class="preprocessor">#define RTC_INTF_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="comment">// Field       : RTC_INTF_RTC</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ac4efbeb9091859352afb62f674f64ac0">  376</a></span><span class="preprocessor">#define RTC_INTF_RTC_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ae61b45ef065648ddd9a7291450e839ae">  377</a></span><span class="preprocessor">#define RTC_INTF_RTC_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4a2c2e6c2373ee5b9e8ef71932bb47c6">  378</a></span><span class="preprocessor">#define RTC_INTF_RTC_MSB    _u(0)</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#afddd2765fe0ee2d77cc1d2444b6d5a51">  379</a></span><span class="preprocessor">#define RTC_INTF_RTC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a78310e2db2041c1903f1cdd41ac327df">  380</a></span><span class="preprocessor">#define RTC_INTF_RTC_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="comment">// Register    : RTC_INTS</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="comment">// Description : Interrupt status after masking &amp; forcing</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a4fdbccbc4cb787f814ce29d9f15b7d11">  384</a></span><span class="preprocessor">#define RTC_INTS_OFFSET _u(0x0000002c)</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3d9b4a582b88e7c8619a6a1c67b03415">  385</a></span><span class="preprocessor">#define RTC_INTS_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab6dac84e5566c6ed42d6643c27cdd610">  386</a></span><span class="preprocessor">#define RTC_INTS_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="comment">// Field       : RTC_INTS_RTC</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a2fa3e5af0100394d7e014ff32752c99e">  389</a></span><span class="preprocessor">#define RTC_INTS_RTC_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a9ce5eca518a632c4aa8be6d834150ea7">  390</a></span><span class="preprocessor">#define RTC_INTS_RTC_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#aa9ff1b7066dabaccda758fe7583291bb">  391</a></span><span class="preprocessor">#define RTC_INTS_RTC_MSB    _u(0)</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#a3f18c68899fc3e295b3baa5e1e57e6fe">  392</a></span><span class="preprocessor">#define RTC_INTS_RTC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html#ab43a0123b4ce4b057e1edcbf7e9e7327">  393</a></span><span class="preprocessor">#define RTC_INTS_RTC_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_RTC_H</span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_06354e3bf814a9a205e28ace252ee3f5.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_7bd6dad2f73c9497ac05e0910d6eaf47.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe2fde58e5940b473d8ed5d59c5a430.html">hardware</a></li><li class="navelem"><a class="el" href="dir_92a0b393fa4e0be08b4ff2e0195a4834.html">regs</a></li><li class="navelem"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2rtc_8h.html">rtc.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

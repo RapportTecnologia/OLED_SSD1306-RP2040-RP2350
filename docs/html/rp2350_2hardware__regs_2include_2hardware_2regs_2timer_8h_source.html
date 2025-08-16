@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de timer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2350/hardware_regs/include/hardware/regs/timer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : TIMER</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : Controls time and alarms</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//                  time is a 64 bit value indicating the time since power-on</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//                  timeh is the top 32 bits of time &amp; timel is the bottom 32</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//                  bits to change time write to timelw before timehw to read</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//                  time read from timelr before timehr</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//                  An alarm is set by setting alarm_enable and writing to the</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//                  corresponding alarm register When an alarm is pending, the</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//                  corresponding alarm_running signal will be high An alarm can</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//                  be cancelled before it has finished by clearing the</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//                  alarm_enable When an alarm fires, the corresponding</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//                  alarm_irq is set and alarm_running is cleared To clear the</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//                  interrupt write a 1 to the corresponding alarm_irq The timer</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//                  can be locked to prevent writing</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#ifndef _HARDWARE_REGS_TIMER_H</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define _HARDWARE_REGS_TIMER_H</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// Register    : TIMER_TIMEHW</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Description : Write to bits 63:32 of time always write timelw before timehw</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a42abc83afbc293c26703f5c54e9494c7">   34</a></span><span class="preprocessor">#define TIMER_TIMEHW_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a57839b53745a592282046b0e7f9175dd">   35</a></span><span class="preprocessor">#define TIMER_TIMEHW_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a0b63f74314b0267110263731234ab587">   36</a></span><span class="preprocessor">#define TIMER_TIMEHW_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aff489881686052be1bba02366d0bc9f8">   37</a></span><span class="preprocessor">#define TIMER_TIMEHW_MSB    _u(31)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a71c04c9f1295265e0f21d7aa574fba0e">   38</a></span><span class="preprocessor">#define TIMER_TIMEHW_LSB    _u(0)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2469f00b648a20e08b925ad5f94b453e">   39</a></span><span class="preprocessor">#define TIMER_TIMEHW_ACCESS &quot;WF&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// Register    : TIMER_TIMELW</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// Description : Write to bits 31:0 of time writes do not get copied to time</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//               until timehw is written</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acb9a0d57ae7d337ca1899d2dacf0ed59">   44</a></span><span class="preprocessor">#define TIMER_TIMELW_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#afc60d2013fe3283a4d03bcb1cc0b6472">   45</a></span><span class="preprocessor">#define TIMER_TIMELW_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae4f5a1095ba126d889753989e39f31dd">   46</a></span><span class="preprocessor">#define TIMER_TIMELW_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a96f681a30a7356a5668104531f75ead6">   47</a></span><span class="preprocessor">#define TIMER_TIMELW_MSB    _u(31)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae537b0d16112a8b8743857fcba7ebda6">   48</a></span><span class="preprocessor">#define TIMER_TIMELW_LSB    _u(0)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#afc16cae9d23b6d8a8189d6bc69779d78">   49</a></span><span class="preprocessor">#define TIMER_TIMELW_ACCESS &quot;WF&quot;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Register    : TIMER_TIMEHR</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// Description : Read from bits 63:32 of time always read timelr before timehr</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a4e5a738f856820c0443deb7d10637fb4">   53</a></span><span class="preprocessor">#define TIMER_TIMEHR_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#abb1d69d1e02bace1befef9e7a0b50adb">   54</a></span><span class="preprocessor">#define TIMER_TIMEHR_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5f96e00b91b802f42d3996254ef5cea8">   55</a></span><span class="preprocessor">#define TIMER_TIMEHR_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a1a815f48a591fd20d2c35a85f2dd2c14">   56</a></span><span class="preprocessor">#define TIMER_TIMEHR_MSB    _u(31)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af7191a358be68763d374139633e46f7e">   57</a></span><span class="preprocessor">#define TIMER_TIMEHR_LSB    _u(0)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7866fb9bed5dc59b3cb7f8a2679b61b8">   58</a></span><span class="preprocessor">#define TIMER_TIMEHR_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// Register    : TIMER_TIMELR</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// Description : Read from bits 31:0 of time</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5bc2196f8042402a68fcedb7a2736d5c">   62</a></span><span class="preprocessor">#define TIMER_TIMELR_OFFSET _u(0x0000000c)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a8ca304052f2bda612d7f76998d220f8d">   63</a></span><span class="preprocessor">#define TIMER_TIMELR_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a15bd8d0d8c0587b6804cfce795436dc3">   64</a></span><span class="preprocessor">#define TIMER_TIMELR_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ad079185dd765c49422fa6e1770441e49">   65</a></span><span class="preprocessor">#define TIMER_TIMELR_MSB    _u(31)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a0c4cf72f64822bfb0673084690731864">   66</a></span><span class="preprocessor">#define TIMER_TIMELR_LSB    _u(0)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a1715c828a7431be6f9781326aeca0420">   67</a></span><span class="preprocessor">#define TIMER_TIMELR_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// Register    : TIMER_ALARM0</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// Description : Arm alarm 0, and configure the time it will fire. Once armed,</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">//               the alarm fires when TIMER_ALARM0 == TIMELR. The alarm will</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//               disarm itself once it fires, and can be disarmed early using</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//               the ARMED status register.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aa15528e78e7bf137c0f9debb1831a6ee">   74</a></span><span class="preprocessor">#define TIMER_ALARM0_OFFSET _u(0x00000010)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ac0483565c2d8f2b208fe83f45e20b854">   75</a></span><span class="preprocessor">#define TIMER_ALARM0_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a79799c985e715c8471b484616995379d">   76</a></span><span class="preprocessor">#define TIMER_ALARM0_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ac3dccdab4c78fc9036d5d9d00d7353fc">   77</a></span><span class="preprocessor">#define TIMER_ALARM0_MSB    _u(31)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a15ea4e13b699edb8c31ef921953544c7">   78</a></span><span class="preprocessor">#define TIMER_ALARM0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae8e88cd28c7daf00863c64cb4f2fe27a">   79</a></span><span class="preprocessor">#define TIMER_ALARM0_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// Register    : TIMER_ALARM1</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// Description : Arm alarm 1, and configure the time it will fire. Once armed,</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">//               the alarm fires when TIMER_ALARM1 == TIMELR. The alarm will</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">//               disarm itself once it fires, and can be disarmed early using</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">//               the ARMED status register.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af52bfb18a8413ab17dd621c382474419">   86</a></span><span class="preprocessor">#define TIMER_ALARM1_OFFSET _u(0x00000014)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a48fdf3a89ca7ba3eef03fc6dc355443c">   87</a></span><span class="preprocessor">#define TIMER_ALARM1_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae8157e165c0d0aadebd62a641a43bbed">   88</a></span><span class="preprocessor">#define TIMER_ALARM1_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af314e8b663fdb7d93a0511c4cf5c82c9">   89</a></span><span class="preprocessor">#define TIMER_ALARM1_MSB    _u(31)</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ab9fd17e77c7fdbf24c5cb5b386cf383d">   90</a></span><span class="preprocessor">#define TIMER_ALARM1_LSB    _u(0)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af88985f0ba8241f5556ae3446bbf4980">   91</a></span><span class="preprocessor">#define TIMER_ALARM1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// Register    : TIMER_ALARM2</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// Description : Arm alarm 2, and configure the time it will fire. Once armed,</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">//               the alarm fires when TIMER_ALARM2 == TIMELR. The alarm will</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">//               disarm itself once it fires, and can be disarmed early using</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">//               the ARMED status register.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ac3141bc14ac5a638ae7a49d813b023f3">   98</a></span><span class="preprocessor">#define TIMER_ALARM2_OFFSET _u(0x00000018)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a1b5be0d08b7f824acc5b0c2278db5e98">   99</a></span><span class="preprocessor">#define TIMER_ALARM2_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a9861d9dfcf9fc0c42664d9b70763b578">  100</a></span><span class="preprocessor">#define TIMER_ALARM2_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af9c8442d5ad1a03b46323982816c7d48">  101</a></span><span class="preprocessor">#define TIMER_ALARM2_MSB    _u(31)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a1ba0c5a9bae153dc7812f3eed8cebe19">  102</a></span><span class="preprocessor">#define TIMER_ALARM2_LSB    _u(0)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af24a9021fe1826e8914332b3337c75c7">  103</a></span><span class="preprocessor">#define TIMER_ALARM2_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// Register    : TIMER_ALARM3</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">// Description : Arm alarm 3, and configure the time it will fire. Once armed,</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">//               the alarm fires when TIMER_ALARM3 == TIMELR. The alarm will</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">//               disarm itself once it fires, and can be disarmed early using</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">//               the ARMED status register.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aa63dbc81aee8497c95eaa16b0cb6f17d">  110</a></span><span class="preprocessor">#define TIMER_ALARM3_OFFSET _u(0x0000001c)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ac5f96d71163658e99afa6b9e8f404088">  111</a></span><span class="preprocessor">#define TIMER_ALARM3_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a67aabe2bcd3b452ad49321c756643dc6">  112</a></span><span class="preprocessor">#define TIMER_ALARM3_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a40e7dcfd59f85bc0bf63945d626f8cbb">  113</a></span><span class="preprocessor">#define TIMER_ALARM3_MSB    _u(31)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#afd3d3d3f32297c00ef2d0dd3bf3d66ed">  114</a></span><span class="preprocessor">#define TIMER_ALARM3_LSB    _u(0)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a26c22dc7ca0b6c1f27c58f14da60c72a">  115</a></span><span class="preprocessor">#define TIMER_ALARM3_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Register    : TIMER_ARMED</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">// Description : Indicates the armed/disarmed status of each alarm. A write to</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">//               the corresponding ALARMx register arms the alarm. Alarms</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">//               automatically disarm upon firing, but writing ones here will</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">//               disarm immediately without waiting to fire.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae231f896bfe6fedec0154f9258b00b1a">  122</a></span><span class="preprocessor">#define TIMER_ARMED_OFFSET _u(0x00000020)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae4fd40178ffbc5efae23328414fbc835">  123</a></span><span class="preprocessor">#define TIMER_ARMED_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a47ef3751746e65dc13353f0db868c086">  124</a></span><span class="preprocessor">#define TIMER_ARMED_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a4f1ea331a6d0ac3d2fcd31d619798f8d">  125</a></span><span class="preprocessor">#define TIMER_ARMED_MSB    _u(3)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a86538640a97cb47905da53f77b107e76">  126</a></span><span class="preprocessor">#define TIMER_ARMED_LSB    _u(0)</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af24c07415a3b13d3ae569c57b2161040">  127</a></span><span class="preprocessor">#define TIMER_ARMED_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// Register    : TIMER_TIMERAWH</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// Description : Raw read from bits 63:32 of time (no side effects)</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a6dff825a6fdae99dee1a5507952fa452">  131</a></span><span class="preprocessor">#define TIMER_TIMERAWH_OFFSET _u(0x00000024)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aae79f95b1ffcfe423d2ef34aee9bbeac">  132</a></span><span class="preprocessor">#define TIMER_TIMERAWH_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a0f8664e7dd1e017128551c470b8f4965">  133</a></span><span class="preprocessor">#define TIMER_TIMERAWH_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a3916b1803c9e763de7905c22ef44ccc1">  134</a></span><span class="preprocessor">#define TIMER_TIMERAWH_MSB    _u(31)</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae013f0f86a69adc87f67d12f1eca284f">  135</a></span><span class="preprocessor">#define TIMER_TIMERAWH_LSB    _u(0)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a0d9bcf229f1364b05ea52d2144afe1f9">  136</a></span><span class="preprocessor">#define TIMER_TIMERAWH_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// Register    : TIMER_TIMERAWL</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">// Description : Raw read from bits 31:0 of time (no side effects)</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aa60db7c716ff7ecc469b3900e7407046">  140</a></span><span class="preprocessor">#define TIMER_TIMERAWL_OFFSET _u(0x00000028)</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a90e287d6c3e7e99751305cfd82f0fcd9">  141</a></span><span class="preprocessor">#define TIMER_TIMERAWL_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2a8500d6259631decb33bde46c9c9f78">  142</a></span><span class="preprocessor">#define TIMER_TIMERAWL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#adc0000c50b6417ed6ec49b4c70b088e0">  143</a></span><span class="preprocessor">#define TIMER_TIMERAWL_MSB    _u(31)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a84fd3d00e500cf0996887db27fbe8545">  144</a></span><span class="preprocessor">#define TIMER_TIMERAWL_LSB    _u(0)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7abdc8e0ba13bcb229e8708ec01d34e0">  145</a></span><span class="preprocessor">#define TIMER_TIMERAWL_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">// Register    : TIMER_DBGPAUSE</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">// Description : Set bits high to enable pause when the corresponding debug</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">//               ports are active</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a333710113e42a207fe42ebc773d0f47e">  150</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_OFFSET _u(0x0000002c)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#adc68786f72a60eae76b33bbfffe4a4e1">  151</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_BITS   _u(0x00000006)</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a25f2d260c2974b14e98e92e99c88d6f3">  152</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_RESET  _u(0x00000007)</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">// Field       : TIMER_DBGPAUSE_DBG1</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">// Description : Pause when processor 1 is in debug mode</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a907a0db04d119079d5d25cdf6980cdf0">  156</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG1_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a88138a26fb02cecd02acad190eee7caf">  157</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG1_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7554a67ca8a9f3e433b84b82af2816e0">  158</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG1_MSB    _u(2)</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a38ba9f797cd322c8bf8859c45a3af706">  159</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG1_LSB    _u(2)</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a4819fc057f28dc80cc6aa1bc05b7a1cc">  160</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">// Field       : TIMER_DBGPAUSE_DBG0</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">// Description : Pause when processor 0 is in debug mode</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a1ada8a45c815578ef05be0055888802c">  164</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG0_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#add4f4614cd8fb1f42456d62ff85edc68">  165</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG0_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a8c1838cd828a4d17bb64e4af35cf6975">  166</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG0_MSB    _u(1)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a0855c9e729173506a5f58d6a6a63a0a6">  167</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG0_LSB    _u(1)</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a90c87cc00d43bea42070d73d03336b96">  168</a></span><span class="preprocessor">#define TIMER_DBGPAUSE_DBG0_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">// Register    : TIMER_PAUSE</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">// Description : Set high to pause the timer</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a4345f980903284d353c4c6f0cdb01642">  172</a></span><span class="preprocessor">#define TIMER_PAUSE_OFFSET _u(0x00000030)</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a10ef6d128963cb4efdedbae0e29e2c96">  173</a></span><span class="preprocessor">#define TIMER_PAUSE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af9561fb35fad4f5c829ee2bba565f041">  174</a></span><span class="preprocessor">#define TIMER_PAUSE_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a72bcc629d4ea0cd206aad1a00579ec13">  175</a></span><span class="preprocessor">#define TIMER_PAUSE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5967fee29106ef85d91f8b879042affc">  176</a></span><span class="preprocessor">#define TIMER_PAUSE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a512b8b336ab5de78d2b5119056002139">  177</a></span><span class="preprocessor">#define TIMER_PAUSE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// Register    : TIMER_LOCKED</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">// Description : Set locked bit to disable write access to timer Once set,</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">//               cannot be cleared (without a reset)</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a4f55090f74d08a40384f00d388303a6b">  182</a></span><span class="preprocessor">#define TIMER_LOCKED_OFFSET _u(0x00000034)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aeff86c053f201ae6c874adce199f00a3">  183</a></span><span class="preprocessor">#define TIMER_LOCKED_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a528f7b066c527c7354185ee3945c9652">  184</a></span><span class="preprocessor">#define TIMER_LOCKED_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a74663f63d6c3f821f42120f59b81aae4">  185</a></span><span class="preprocessor">#define TIMER_LOCKED_MSB    _u(0)</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ac45847fc6d6c22bcb50d24cef547cd93">  186</a></span><span class="preprocessor">#define TIMER_LOCKED_LSB    _u(0)</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a0c063fb351d36670a977e08243d3853d">  187</a></span><span class="preprocessor">#define TIMER_LOCKED_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">// Register    : TIMER_SOURCE</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">// Description : Selects the source for the timer. Defaults to the normal tick</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">//               configured in the ticks block (typically configured to 1</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">//               microsecond). Writing to 1 will ignore the tick and count</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">//               clk_sys cycles instead.</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a53b231d88fa467bb651b7906a2b66e42">  194</a></span><span class="preprocessor">#define TIMER_SOURCE_OFFSET _u(0x00000038)</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7210f5fcaf2c9e3e7a06b06bff492d2d">  195</a></span><span class="preprocessor">#define TIMER_SOURCE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a8a9712b44c94bd10080f10085e9f31e5">  196</a></span><span class="preprocessor">#define TIMER_SOURCE_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">// Field       : TIMER_SOURCE_CLK_SYS</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">//               0x0 -&gt; TICK</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">//               0x1 -&gt; CLK_SYS</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af9ff843f5ec319222c99f28c6405de08">  201</a></span><span class="preprocessor">#define TIMER_SOURCE_CLK_SYS_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a3601c5bb5eff49b576216f9b27c94510">  202</a></span><span class="preprocessor">#define TIMER_SOURCE_CLK_SYS_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a114c1c940df75a9c885064e384433084">  203</a></span><span class="preprocessor">#define TIMER_SOURCE_CLK_SYS_MSB    _u(0)</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2e00527596eebb026215c624e63b61d2">  204</a></span><span class="preprocessor">#define TIMER_SOURCE_CLK_SYS_LSB    _u(0)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae4adce8f4b6756d524dd2385aa13053b">  205</a></span><span class="preprocessor">#define TIMER_SOURCE_CLK_SYS_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a619ebe27dc8f62fa8754471f5d0d8684">  206</a></span><span class="preprocessor">#define TIMER_SOURCE_CLK_SYS_VALUE_TICK _u(0x0)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ade7244ca6613801bd54cdecf259f84b2">  207</a></span><span class="preprocessor">#define TIMER_SOURCE_CLK_SYS_VALUE_CLK_SYS _u(0x1)</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">// Register    : TIMER_INTR</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">// Description : Raw Interrupts</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a1a4824a7ced39008ff36476f75359fba">  211</a></span><span class="preprocessor">#define TIMER_INTR_OFFSET _u(0x0000003c)</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a82ef078310227ea5ff03717312d2daa3">  212</a></span><span class="preprocessor">#define TIMER_INTR_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ab35ce3205a24e96e0da94ebf2b6341f5">  213</a></span><span class="preprocessor">#define TIMER_INTR_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">// Field       : TIMER_INTR_ALARM_3</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a3ab36222a23308205ab182a3d436b3ce">  216</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_3_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a601e0366db32a309f065a4896e154b5f">  217</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_3_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#add614babc44a54c0af628594d251bf90">  218</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_3_MSB    _u(3)</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ac94d4de4e53c7f703886d831fe7e7ab5">  219</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_3_LSB    _u(3)</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aab85a925ae50ecade57edc7e21f4b6ba">  220</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_3_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">// Field       : TIMER_INTR_ALARM_2</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af373d67bed71202be4eea394a05d468c">  223</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_2_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a03661939dbc0d52940e2655105df32ff">  224</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_2_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acac0c9403ba5afe17dc5bc3d6bebed0d">  225</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_2_MSB    _u(2)</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aae433d806d0cde17cb1b563c0997935b">  226</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_2_LSB    _u(2)</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a3a6fec0c15f5153eec3eccee663b352a">  227</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_2_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">// Field       : TIMER_INTR_ALARM_1</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a8a0dc25175acc46347b98f794bdf49ab">  230</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_1_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a066af0bbff3aa426a36ea6081b36e9a3">  231</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_1_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af67be734629d06a887e88b61e2fa6cc8">  232</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_1_MSB    _u(1)</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2beee867c1081d7a007176d76bc290ca">  233</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_1_LSB    _u(1)</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7c565e411167917d623c70881844b7c3">  234</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_1_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">// Field       : TIMER_INTR_ALARM_0</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7fa8c0d2670010d781bf33924a43afae">  237</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_0_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ab1a3941f844a733c4cd050a916237444">  238</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_0_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a91bdf28989cf3bef8e6f0d854237c3e3">  239</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_0_MSB    _u(0)</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a46eb868f351e7a3e201b409f1b2c748a">  240</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a99e54343a619f31c127f9195f8bf29b4">  241</a></span><span class="preprocessor">#define TIMER_INTR_ALARM_0_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">// Register    : TIMER_INTE</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">// Description : Interrupt Enable</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aba80253899b7da72a8ac29b10b973292">  245</a></span><span class="preprocessor">#define TIMER_INTE_OFFSET _u(0x00000040)</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acfb79ac5a6bf6ff940be6de5086ae78f">  246</a></span><span class="preprocessor">#define TIMER_INTE_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#accfbd68886bc58531cfd293189d8bc76">  247</a></span><span class="preprocessor">#define TIMER_INTE_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">// Field       : TIMER_INTE_ALARM_3</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aaa20efba3fb08b8564c6766380996c5b">  250</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_3_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a9c062bab3a4d1e39052f28815a16d7ce">  251</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_3_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae81a29361d5aa752f97241419808e163">  252</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_3_MSB    _u(3)</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a9e53428d2b92f31b73f4c8e980e39944">  253</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_3_LSB    _u(3)</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5b20d473ffc74e0e24d9822649700561">  254</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_3_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">// Field       : TIMER_INTE_ALARM_2</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aa1ae88a18dd4d532620637bd7ad208a4">  257</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_2_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ad06781aa3c1d63c1e4312526e8a76603">  258</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_2_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af29b79c9be65145a40fb4799938192d7">  259</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_2_MSB    _u(2)</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae2ec015864ada255fe10d4e6484cc313">  260</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_2_LSB    _u(2)</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a69e67655b9a4121cdae21f80b5632b3b">  261</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_2_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">// Field       : TIMER_INTE_ALARM_1</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a8b554e01e2904b951b693f5a56ea7b1d">  264</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_1_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a0e946a4313de3249d9e89313e88bb413">  265</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_1_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a94db137198dd0b2364b18bd0e0beff64">  266</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_1_MSB    _u(1)</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acd9fa92f2099152c5c5b59e1367204dd">  267</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_1_LSB    _u(1)</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ac3f366ee2d79f0bcc3a934616fe21d1b">  268</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">// Field       : TIMER_INTE_ALARM_0</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2487f3fb50e339666709fb6fc727d642">  271</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_0_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acc9a08f63ba54aada2bab1384c0d9a44">  272</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_0_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#abe206e3317f36d3ea0b61c065516f537">  273</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_0_MSB    _u(0)</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a62d7f0dd7ddc5d0842bbcac2365018ed">  274</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a11b8dadf91b9d3706de89a7a16f48256">  275</a></span><span class="preprocessor">#define TIMER_INTE_ALARM_0_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">// Register    : TIMER_INTF</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">// Description : Interrupt Force</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a11b3d2fae98d20d92d581caf63b31cb8">  279</a></span><span class="preprocessor">#define TIMER_INTF_OFFSET _u(0x00000044)</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2c27e0b42a6fc1c62c44170d947f24cb">  280</a></span><span class="preprocessor">#define TIMER_INTF_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae7be3f7db9b4327895fa7f61a5e09a0a">  281</a></span><span class="preprocessor">#define TIMER_INTF_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">// Field       : TIMER_INTF_ALARM_3</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2cb2a958548af5e28afc72790ddaf6e4">  284</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_3_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acb0ffbbd427dcf20042ea4f79694bf55">  285</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_3_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a3fc2ff05a227d43982bc6c4c8e3d52c6">  286</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_3_MSB    _u(3)</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ad3449cef64dcb7b29411411413c81464">  287</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_3_LSB    _u(3)</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ad945105e87369db9cd837952bf092021">  288</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_3_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">// Field       : TIMER_INTF_ALARM_2</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a76b07fe27dad624447ddecc727b264b4">  291</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_2_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aeabb960799092453922cb2e3a7983caa">  292</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_2_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a67618bf764f961ce2a40e3bc34bcddfc">  293</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_2_MSB    _u(2)</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a12f0ac5d661e6b03c4b3b8cd983eec79">  294</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_2_LSB    _u(2)</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ab11b82680266c29a032da731defd4d6d">  295</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_2_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment">// Field       : TIMER_INTF_ALARM_1</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ad54d45414b2b56ecfa44e9e8af1c5e22">  298</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_1_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7cf14df60a6051195e91be22c26d16a3">  299</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_1_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a2ea393bc2092bac98aeda9bf4fd03700">  300</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_1_MSB    _u(1)</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ab6ab6578d3f98b6f245a6108c389fbe8">  301</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_1_LSB    _u(1)</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a961d121482854144d1e305f46b38917e">  302</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">// Field       : TIMER_INTF_ALARM_0</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5bba8f41594a6594fb26196cd31cf9af">  305</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_0_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a977491f7478f8a60deca4c14bfa773a2">  306</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_0_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5f8e9cc412725f48fc8593982885f867">  307</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_0_MSB    _u(0)</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#aaa887192f3796c076c877e540412c2e8">  308</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ade328967030b2f5e38c821b77765c4e9">  309</a></span><span class="preprocessor">#define TIMER_INTF_ALARM_0_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">// Register    : TIMER_INTS</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">// Description : Interrupt status after masking &amp; forcing</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acd5bfd4022cd2a4a26624733ee7fdacd">  313</a></span><span class="preprocessor">#define TIMER_INTS_OFFSET _u(0x00000048)</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7488f5284c99f934b5ae15e0717939d1">  314</a></span><span class="preprocessor">#define TIMER_INTS_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a13c4960b046982ca8290b1fc87406901">  315</a></span><span class="preprocessor">#define TIMER_INTS_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">// Field       : TIMER_INTS_ALARM_3</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ad8ec7fb3811daf511ea4e5d3aad87db9">  318</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_3_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af98c3be5d471f6f1ca6c09cd925c4fb3">  319</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_3_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a7273c37bbad089956d7b587626d98b06">  320</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_3_MSB    _u(3)</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#af22320cefa973dcd4dd087a97e391a65">  321</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_3_LSB    _u(3)</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a40bd964e6a1cf5f461dd5490c217c983">  322</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_3_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">// Field       : TIMER_INTS_ALARM_2</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5168201761b63834579d7118e1bd1a03">  325</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_2_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#afa8ee8280c2e3ff03366c82ffd476f7c">  326</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_2_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#acd94ff828c132889b6077f53bdb6dd0e">  327</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_2_MSB    _u(2)</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a23157e3850ac8d8d018568724575be1d">  328</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_2_LSB    _u(2)</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a6f50c171a3105c956a3bc69127051795">  329</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_2_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">// Field       : TIMER_INTS_ALARM_1</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a6a5b8e979dc456c21d9e5ef6dc3dcebd">  332</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_1_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a477b4872f70a97e5131da7d5d2bba5ab">  333</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_1_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5918f35fdb31a147f27d796cfb63d9d0">  334</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_1_MSB    _u(1)</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a5ce55342b63ac6d1828975df7c922237">  335</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_1_LSB    _u(1)</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a112e7d8f06ada59a4295b27d84625415">  336</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_1_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="comment">// Field       : TIMER_INTS_ALARM_0</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#ae252e4e571c461e17191c3e02f024ecb">  339</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_0_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a163f10e5d0ceb33fd73f67d83ba419d1">  340</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_0_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a804df0538f419a92f85206ca5b5b3e8c">  341</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_0_MSB    _u(0)</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a25870bd9dbcdc7f0f54f57c4e886472f">  342</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html#a8af489e7b7f401697a561470617fc682">  343</a></span><span class="preprocessor">#define TIMER_INTS_ALARM_0_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_TIMER_H</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2timer_8h.html">timer.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

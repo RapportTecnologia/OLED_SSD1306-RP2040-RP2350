@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro flash.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__flash_2flash_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro flash.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="hardware__flash_2include_2hardware_2flash_8h_source.html">hardware/flash.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bootrom_8h_source.html">pico/bootrom.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hardware__structs_2include_2hardware_2structs_2qmi_8h_source.html">hardware/structs/qmi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="otp__data_8h_source.html">hardware/regs/otp_data.h</a>&quot;</code><br />
+<code>#include &quot;hardware/structs/pads_qspi.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="xip__cache_8h_source.html">hardware/xip_cache.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para hardware_flash/flash.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="hardware__flash_2flash_8c__incl.svg" width="1327" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structflash__hardware__save__state.html">flash_hardware_save_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structflash__rp2350__qmi__save__state.html">flash_rp2350_qmi_save_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a93487c8bfa1e9d8989a08373f94a4463" id="r_a93487c8bfa1e9d8989a08373f94a4463"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#a93487c8bfa1e9d8989a08373f94a4463">BOOT2_SIZE_WORDS</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a93487c8bfa1e9d8989a08373f94a4463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ffcf8fb18f5bfdb6b7da0f4536681d" id="r_a38ffcf8fb18f5bfdb6b7da0f4536681d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#a38ffcf8fb18f5bfdb6b7da0f4536681d">FLASH_BLOCK_ERASE_CMD</a>&#160;&#160;&#160;0xd8</td></tr>
+<tr class="separator:a38ffcf8fb18f5bfdb6b7da0f4536681d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf736d2e8b4ba912b9d37af98571a1ac" id="r_adf736d2e8b4ba912b9d37af98571a1ac"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#adf736d2e8b4ba912b9d37af98571a1ac">FLASH_RUID_CMD</a>&#160;&#160;&#160;0x4b</td></tr>
+<tr class="separator:adf736d2e8b4ba912b9d37af98571a1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2017fe745aba4ab35389a266509442ed" id="r_a2017fe745aba4ab35389a266509442ed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#a2017fe745aba4ab35389a266509442ed">FLASH_RUID_DATA_BYTES</a>&#160;&#160;&#160;<a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#a3912c5d8d8f29b4fafd4a45ecf7cfbd6">FLASH_UNIQUE_ID_SIZE_BYTES</a></td></tr>
+<tr class="separator:a2017fe745aba4ab35389a266509442ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945b748aea3a10e7e94e0ee38397ae3c" id="r_a945b748aea3a10e7e94e0ee38397ae3c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#a945b748aea3a10e7e94e0ee38397ae3c">FLASH_RUID_DUMMY_BYTES</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a945b748aea3a10e7e94e0ee38397ae3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa515dd6012dfee887e1e271a2830e158" id="r_aa515dd6012dfee887e1e271a2830e158"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#aa515dd6012dfee887e1e271a2830e158">FLASH_RUID_TOTAL_BYTES</a>&#160;&#160;&#160;(1 + <a class="el" href="hardware__flash_2flash_8c.html#a945b748aea3a10e7e94e0ee38397ae3c">FLASH_RUID_DUMMY_BYTES</a> + <a class="el" href="hardware__flash_2flash_8c.html#a2017fe745aba4ab35389a266509442ed">FLASH_RUID_DATA_BYTES</a>)</td></tr>
+<tr class="separator:aa515dd6012dfee887e1e271a2830e158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:af915903d72861db100ca2238af668a7f" id="r_af915903d72861db100ca2238af668a7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structflash__hardware__save__state.html">flash_hardware_save_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#af915903d72861db100ca2238af668a7f">flash_hardware_save_state_t</a></td></tr>
+<tr class="separator:af915903d72861db100ca2238af668a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b80ba67f63b3d29e87df7d05a86908e" id="r_a0b80ba67f63b3d29e87df7d05a86908e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structflash__rp2350__qmi__save__state.html">flash_rp2350_qmi_save_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#a0b80ba67f63b3d29e87df7d05a86908e">flash_rp2350_qmi_save_state_t</a></td></tr>
+<tr class="separator:a0b80ba67f63b3d29e87df7d05a86908e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga73bb4b757747bb16efe3e1ad211b6bb3" id="r_ga73bb4b757747bb16efe3e1ad211b6bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga73bb4b757747bb16efe3e1ad211b6bb3">flash_devinfo_get_cs_gpio</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs)</td></tr>
+<tr class="memdesc:ga73bb4b757747bb16efe3e1ad211b6bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the GPIO allocated for each chip select, according to FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga73bb4b757747bb16efe3e1ad211b6bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a6358b716ddf5a83488b80b3b06ca4d" id="r_ga2a6358b716ddf5a83488b80b3b06ca4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bff">flash_devinfo_size_t</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#ab0a62a05e265778b37a61cdf7adb4920">__no_inline_not_in_flash_func</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga2a6358b716ddf5a83488b80b3b06ca4d">flash_devinfo_get_cs_size</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs)</td></tr>
+<tr class="memdesc:ga2a6358b716ddf5a83488b80b3b06ca4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the QSPI device attached to chip select cs, according to FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga2a6358b716ddf5a83488b80b3b06ca4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7c9f1af0692f4fea45e5077075501d8" id="r_gad7c9f1af0692f4fea45e5077075501d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#gad7c9f1af0692f4fea45e5077075501d8">flash_devinfo_get_d8h_erase_supported</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gad7c9f1af0692f4fea45e5077075501d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether all attached devices support D8h block erase with 64k size, according to FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:gad7c9f1af0692f4fea45e5077075501d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6d14a5018cc9d9a934c650b29c0e649" id="r_gad6d14a5018cc9d9a934c650b29c0e649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#gad6d14a5018cc9d9a934c650b29c0e649">flash_devinfo_set_cs_gpio</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:gad6d14a5018cc9d9a934c650b29c0e649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the GPIO allocated for each chip select in the runtime copy of FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:gad6d14a5018cc9d9a934c650b29c0e649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31356cdc4542e13c7ca690ed3a1e49b2" id="r_ga31356cdc4542e13c7ca690ed3a1e49b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga31356cdc4542e13c7ca690ed3a1e49b2">flash_devinfo_set_cs_size</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bff">flash_devinfo_size_t</a> size)</td></tr>
+<tr class="memdesc:ga31356cdc4542e13c7ca690ed3a1e49b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the size of the QSPI device attached to chip select cs in the runtime copy of FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga31356cdc4542e13c7ca690ed3a1e49b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e681e2cc33dba8ba6cfab236f9941b5" id="r_ga6e681e2cc33dba8ba6cfab236f9941b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga6e681e2cc33dba8ba6cfab236f9941b5">flash_devinfo_set_d8h_erase_supported</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">supported</a>)</td></tr>
+<tr class="memdesc:ga6e681e2cc33dba8ba6cfab236f9941b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether all attached devices support D8h block erase with 64k size, in the runtime copy of FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga6e681e2cc33dba8ba6cfab236f9941b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e352de7ea62ffebc579f6449b5b44d3" id="r_ga9e352de7ea62ffebc579f6449b5b44d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#ab0a62a05e265778b37a61cdf7adb4920">__no_inline_not_in_flash_func</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga9e352de7ea62ffebc579f6449b5b44d3">flash_do_cmd</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">txbuf</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rxbuf</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga9e352de7ea62ffebc579f6449b5b44d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute bidirectional flash command.  <br /></td></tr>
+<tr class="separator:ga9e352de7ea62ffebc579f6449b5b44d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57ac168d7952b15985c92b5adcec080" id="r_aa57ac168d7952b15985c92b5adcec080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#ab0a62a05e265778b37a61cdf7adb4920">__no_inline_not_in_flash_func</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__flash_2flash_8c.html#aa57ac168d7952b15985c92b5adcec080">flash_flush_cache</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:aa57ac168d7952b15985c92b5adcec080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c6452005ad28f1e444698b0b97194d2" id="r_ga5c6452005ad28f1e444698b0b97194d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga5c6452005ad28f1e444698b0b97194d2">flash_get_unique_id</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">id_out</a>)</td></tr>
+<tr class="memdesc:ga5c6452005ad28f1e444698b0b97194d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get flash unique 64 bit identifier.  <br /></td></tr>
+<tr class="separator:ga5c6452005ad28f1e444698b0b97194d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b88461b126b1c226121146c87d5abe2" id="r_ga5b88461b126b1c226121146c87d5abe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#ab0a62a05e265778b37a61cdf7adb4920">__no_inline_not_in_flash_func</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga5b88461b126b1c226121146c87d5abe2">flash_range_erase</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_offs</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga5b88461b126b1c226121146c87d5abe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase areas of flash.  <br /></td></tr>
+<tr class="separator:ga5b88461b126b1c226121146c87d5abe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga345513fba0951661d012fa20a6441c5f" id="r_ga345513fba0951661d012fa20a6441c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#ab0a62a05e265778b37a61cdf7adb4920">__no_inline_not_in_flash_func</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga345513fba0951661d012fa20a6441c5f">flash_range_program</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_offs</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *data, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga345513fba0951661d012fa20a6441c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program flash.  <br /></td></tr>
+<tr class="separator:ga345513fba0951661d012fa20a6441c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf481d0955483111d1769cb84c8fc0969" id="r_gaf481d0955483111d1769cb84c8fc0969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#ab0a62a05e265778b37a61cdf7adb4920">__no_inline_not_in_flash_func</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#gaf481d0955483111d1769cb84c8fc0969">flash_start_xip</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gaf481d0955483111d1769cb84c8fc0969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise QSPI interface and external QSPI devices for execute-in-place.  <br /></td></tr>
+<tr class="separator:gaf481d0955483111d1769cb84c8fc0969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a93487c8bfa1e9d8989a08373f94a4463" name="a93487c8bfa1e9d8989a08373f94a4463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93487c8bfa1e9d8989a08373f94a4463">&#9670;&#160;</a></span>BOOT2_SIZE_WORDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> BOOT2_SIZE_WORDS&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38ffcf8fb18f5bfdb6b7da0f4536681d" name="a38ffcf8fb18f5bfdb6b7da0f4536681d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ffcf8fb18f5bfdb6b7da0f4536681d">&#9670;&#160;</a></span>FLASH_BLOCK_ERASE_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FLASH_BLOCK_ERASE_CMD&#160;&#160;&#160;0xd8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf736d2e8b4ba912b9d37af98571a1ac" name="adf736d2e8b4ba912b9d37af98571a1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf736d2e8b4ba912b9d37af98571a1ac">&#9670;&#160;</a></span>FLASH_RUID_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FLASH_RUID_CMD&#160;&#160;&#160;0x4b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2017fe745aba4ab35389a266509442ed" name="a2017fe745aba4ab35389a266509442ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2017fe745aba4ab35389a266509442ed">&#9670;&#160;</a></span>FLASH_RUID_DATA_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FLASH_RUID_DATA_BYTES&#160;&#160;&#160;<a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#a3912c5d8d8f29b4fafd4a45ecf7cfbd6">FLASH_UNIQUE_ID_SIZE_BYTES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a945b748aea3a10e7e94e0ee38397ae3c" name="a945b748aea3a10e7e94e0ee38397ae3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945b748aea3a10e7e94e0ee38397ae3c">&#9670;&#160;</a></span>FLASH_RUID_DUMMY_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FLASH_RUID_DUMMY_BYTES&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa515dd6012dfee887e1e271a2830e158" name="aa515dd6012dfee887e1e271a2830e158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa515dd6012dfee887e1e271a2830e158">&#9670;&#160;</a></span>FLASH_RUID_TOTAL_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FLASH_RUID_TOTAL_BYTES&#160;&#160;&#160;(1 + <a class="el" href="hardware__flash_2flash_8c.html#a945b748aea3a10e7e94e0ee38397ae3c">FLASH_RUID_DUMMY_BYTES</a> + <a class="el" href="hardware__flash_2flash_8c.html#a2017fe745aba4ab35389a266509442ed">FLASH_RUID_DATA_BYTES</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="af915903d72861db100ca2238af668a7f" name="af915903d72861db100ca2238af668a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af915903d72861db100ca2238af668a7f">&#9670;&#160;</a></span>flash_hardware_save_state_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structflash__hardware__save__state.html">flash_hardware_save_state</a> <a class="el" href="hardware__flash_2flash_8c.html#af915903d72861db100ca2238af668a7f">flash_hardware_save_state_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b80ba67f63b3d29e87df7d05a86908e" name="a0b80ba67f63b3d29e87df7d05a86908e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b80ba67f63b3d29e87df7d05a86908e">&#9670;&#160;</a></span>flash_rp2350_qmi_save_state_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structflash__rp2350__qmi__save__state.html">flash_rp2350_qmi_save_state</a> <a class="el" href="hardware__flash_2flash_8c.html#a0b80ba67f63b3d29e87df7d05a86908e">flash_rp2350_qmi_save_state_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="aa57ac168d7952b15985c92b5adcec080" name="aa57ac168d7952b15985c92b5adcec080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57ac168d7952b15985c92b5adcec080">&#9670;&#160;</a></span>flash_flush_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#ab0a62a05e265778b37a61cdf7adb4920">__no_inline_not_in_flash_func</a>() flash_flush_cache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a47512a8bdbf7077085ae63b11af381c0">ROM_FUNC_FLASH_FLUSH_CACHE</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_77dc1187a2296de9b46c32ff9e899a07.html">hardware_flash</a></li><li class="navelem"><a class="el" href="hardware__flash_2flash_8c.html">flash.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

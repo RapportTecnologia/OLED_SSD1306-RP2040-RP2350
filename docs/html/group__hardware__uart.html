@@ -1,0 +1,770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: hardware_uart</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__hardware__uart.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">hardware_uart</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Hardware UART API.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga8b4f387572a62cc839eb004ce7c02e3f" id="r_ga8b4f387572a62cc839eb004ce7c02e3f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga8b4f387572a62cc839eb004ce7c02e3f">UART_CLOCK_NUM</a>(uart)</td></tr>
+<tr class="memdesc:ga8b4f387572a62cc839eb004ce7c02e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="group__hardware__clocks.html#gae5b3d4a25ed3bb4916782746a6279507">clock_num_t</a> of the clock for the given UART instance.  <br /></td></tr>
+<tr class="separator:ga8b4f387572a62cc839eb004ce7c02e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10472af6afab1cb220b5fbd4aee63a16" id="r_ga10472af6afab1cb220b5fbd4aee63a16"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga10472af6afab1cb220b5fbd4aee63a16">UART_DREQ_NUM</a>(uart,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">is_tx</a>)</td></tr>
+<tr class="memdesc:ga10472af6afab1cb220b5fbd4aee63a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__hardware__dma.html#ga8def0ea481095c94f3a0dd0b4fed999e">dreq_num_t</a> used for pacing DMA transfers to or from this UART instance.  <br /></td></tr>
+<tr class="separator:ga10472af6afab1cb220b5fbd4aee63a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bceb145d3739e3923f64584eff6db59" id="r_ga7bceb145d3739e3923f64584eff6db59"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga7bceb145d3739e3923f64584eff6db59">UART_FUNCSEL_NUM</a>(uart,  gpio)</td></tr>
+<tr class="memdesc:ga7bceb145d3739e3923f64584eff6db59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="group__hardware__gpio.html#ga1339fecb25e263eee2a6b9d362c3a946">gpio_function_t</a> needed to select the UART function for the given UART instance on the given GPIO number.  <br /></td></tr>
+<tr class="separator:ga7bceb145d3739e3923f64584eff6db59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc5c5947dc577aac3d448fdb37647927" id="r_gadc5c5947dc577aac3d448fdb37647927"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gadc5c5947dc577aac3d448fdb37647927">UART_INSTANCE</a>(num)</td></tr>
+<tr class="memdesc:gadc5c5947dc577aac3d448fdb37647927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the UART instance with the given UART number.  <br /></td></tr>
+<tr class="separator:gadc5c5947dc577aac3d448fdb37647927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8697ddad82a2cd5d889ce819d83783e3" id="r_ga8697ddad82a2cd5d889ce819d83783e3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga8697ddad82a2cd5d889ce819d83783e3">UART_IRQ_NUM</a>(uart)</td></tr>
+<tr class="memdesc:ga8697ddad82a2cd5d889ce819d83783e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__hardware__irq.html#gaf30862f51b5994ffd5863176a185d137">irq_num_t</a> for processor interrupts from the given UART instance.  <br /></td></tr>
+<tr class="separator:ga8697ddad82a2cd5d889ce819d83783e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12815b6262573d95c8a749f64cc85284" id="r_ga12815b6262573d95c8a749f64cc85284"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga12815b6262573d95c8a749f64cc85284">UART_NUM</a>(uart)</td></tr>
+<tr class="memdesc:ga12815b6262573d95c8a749f64cc85284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the UART number for a UART instance.  <br /></td></tr>
+<tr class="separator:ga12815b6262573d95c8a749f64cc85284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffef755f98d8fcec5f7b5147924fb4f9" id="r_gaffef755f98d8fcec5f7b5147924fb4f9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gaffef755f98d8fcec5f7b5147924fb4f9">UART_RESET_NUM</a>(uart)</td></tr>
+<tr class="memdesc:gaffef755f98d8fcec5f7b5147924fb4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__hardware__resets.html#ga329b703b37e2e7506c74f7eaa19468e4">reset_num_t</a> used to reset a given UART instance.  <br /></td></tr>
+<tr class="separator:gaffef755f98d8fcec5f7b5147924fb4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:ga6bcc37e31dd40c204b4ac6f6189e8878" id="r_ga6bcc37e31dd40c204b4ac6f6189e8878"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a> { <a class="el" href="group__hardware__uart.html#gga6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d">UART_PARITY_NONE</a>
+, <a class="el" href="group__hardware__uart.html#gga6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8">UART_PARITY_EVEN</a>
+, <a class="el" href="group__hardware__uart.html#gga6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2">UART_PARITY_ODD</a>
+ }</td></tr>
+<tr class="memdesc:ga6bcc37e31dd40c204b4ac6f6189e8878"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART Parity enumeration.  <a href="group__hardware__uart.html#ga6bcc37e31dd40c204b4ac6f6189e8878">Mais...</a><br /></td></tr>
+<tr class="separator:ga6bcc37e31dd40c204b4ac6f6189e8878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga85b12f7d19f5087b22f26473039d2c4f" id="r_ga85b12f7d19f5087b22f26473039d2c4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga85b12f7d19f5087b22f26473039d2c4f">uart_deinit</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart)</td></tr>
+<tr class="memdesc:ga85b12f7d19f5087b22f26473039d2c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">DeInitialise a UART.  <br /></td></tr>
+<tr class="separator:ga85b12f7d19f5087b22f26473039d2c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a55924eff530aff6db3b15fd872cda4" id="r_ga5a55924eff530aff6db3b15fd872cda4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga5a55924eff530aff6db3b15fd872cda4">uart_init</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>)</td></tr>
+<tr class="memdesc:ga5a55924eff530aff6db3b15fd872cda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise a UART.  <br /></td></tr>
+<tr class="separator:ga5a55924eff530aff6db3b15fd872cda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga026539f355b6c6f5a044a5f4ee051f0e" id="r_ga026539f355b6c6f5a044a5f4ee051f0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga026539f355b6c6f5a044a5f4ee051f0e">uart_is_readable_within_us</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">us</a>)</td></tr>
+<tr class="memdesc:ga026539f355b6c6f5a044a5f4ee051f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for up to a certain number of microseconds for the RX FIFO to be non empty.  <br /></td></tr>
+<tr class="separator:ga026539f355b6c6f5a044a5f4ee051f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7f2ad3380a44597d8dda42b2d2ddef9" id="r_gab7f2ad3380a44597d8dda42b2d2ddef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gab7f2ad3380a44597d8dda42b2d2ddef9">uart_set_baudrate</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>)</td></tr>
+<tr class="memdesc:gab7f2ad3380a44597d8dda42b2d2ddef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set UART baud rate.  <br /></td></tr>
+<tr class="separator:gab7f2ad3380a44597d8dda42b2d2ddef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddb01507886acab5604a2eecc014b388" id="r_gaddb01507886acab5604a2eecc014b388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gaddb01507886acab5604a2eecc014b388">uart_set_break</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> en)</td></tr>
+<tr class="memdesc:gaddb01507886acab5604a2eecc014b388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assert a break condition on the UART transmission.  <br /></td></tr>
+<tr class="separator:gaddb01507886acab5604a2eecc014b388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3daee9514dacfb76f3c04b131e2e41a" id="r_gac3daee9514dacfb76f3c04b131e2e41a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gac3daee9514dacfb76f3c04b131e2e41a">uart_set_fifo_enabled</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> enabled)</td></tr>
+<tr class="memdesc:gac3daee9514dacfb76f3c04b131e2e41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/Disable the FIFOs on specified UART.  <br /></td></tr>
+<tr class="separator:gac3daee9514dacfb76f3c04b131e2e41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07e3c6ce7c1abf5e875b62964b8f841e" id="r_ga07e3c6ce7c1abf5e875b62964b8f841e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga07e3c6ce7c1abf5e875b62964b8f841e">uart_set_format</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">data_bits</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">stop_bits</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">parity</a>)</td></tr>
+<tr class="memdesc:ga07e3c6ce7c1abf5e875b62964b8f841e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set UART data format.  <br /></td></tr>
+<tr class="separator:ga07e3c6ce7c1abf5e875b62964b8f841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ea0b7b9252cd22e2395ca6070000f7a" id="r_ga4ea0b7b9252cd22e2395ca6070000f7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga4ea0b7b9252cd22e2395ca6070000f7a">uart_set_translate_crlf</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">translate</a>)</td></tr>
+<tr class="memdesc:ga4ea0b7b9252cd22e2395ca6070000f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set CR/LF conversion on UART.  <br /></td></tr>
+<tr class="separator:ga4ea0b7b9252cd22e2395ca6070000f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c45ff280c79aa60358d8241b7e5824b" id="r_ga4c45ff280c79aa60358d8241b7e5824b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a>&#160;&#160;&#160;((<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *)<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2uart_8h.html#ac410df39c08ef0c7b9c2849c557e7d27">uart0_hw</a>)</td></tr>
+<tr class="memdesc:ga4c45ff280c79aa60358d8241b7e5824b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UART identifiers for use in UART functions.  <br /></td></tr>
+<tr class="separator:ga4c45ff280c79aa60358d8241b7e5824b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad94ac6d5e345a1f794174d9bb7c6f69c" id="r_gad94ac6d5e345a1f794174d9bb7c6f69c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a>&#160;&#160;&#160;((<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *)<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2uart_8h.html#ab27616c608503e3a72a2f78fb8594645">uart1_hw</a>)</td></tr>
+<tr class="memdesc:gad94ac6d5e345a1f794174d9bb7c6f69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier for UART instance 1.  <br /></td></tr>
+<tr class="separator:gad94ac6d5e345a1f794174d9bb7c6f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Hardware UART API. </p>
+<p>RP-series microcontrollers have 2 identical instances of a UART peripheral, based on the ARM PL011. Each UART can be connected to a number of GPIO pins as defined in the GPIO muxing.</p>
+<p>Only the TX, RX, RTS, and CTS signals are connected, meaning that the modem mode and IrDA mode of the PL011 are not supported.</p>
+<h2><a class="anchor" id="uart_example"></a>
+Example</h2>
+<div class="fragment"><div class="line"> <span class="keywordtype">int</span> <a class="code hl_function" href="boot__stage2_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Set the GPIO pin mux to the UART - pin 0 is TX, 1 is RX; note use of UART_FUNCSEL_NUM for the general</span></div>
+<div class="line">    <span class="comment">// case where the func sel used for UART depends on the pin number</span></div>
+<div class="line">    <span class="comment">// Do this before calling uart_init to avoid losing data</span></div>
+<div class="line">    <a class="code hl_function" href="host_2hardware__gpio_2gpio_8c.html#aacde9174277ca40aa7b6fdd341bb2b8c">gpio_set_function</a>(0, <a class="code hl_define" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a7bceb145d3739e3923f64584eff6db59">UART_FUNCSEL_NUM</a>(<a class="code hl_define" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a>, 0));</div>
+<div class="line">    <a class="code hl_function" href="host_2hardware__gpio_2gpio_8c.html#aacde9174277ca40aa7b6fdd341bb2b8c">gpio_set_function</a>(1, <a class="code hl_define" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a7bceb145d3739e3923f64584eff6db59">UART_FUNCSEL_NUM</a>(<a class="code hl_define" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a>, 1));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Initialise UART 0</span></div>
+<div class="line">    <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a5a55924eff530aff6db3b15fd872cda4">uart_init</a>(<a class="code hl_define" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a>, 115200);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a56760f58dfa531e4706005b92a4853b3">uart_puts</a>(<a class="code hl_define" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a>, <span class="stringliteral">&quot;Hello world!&quot;</span>);</div>
+<div class="line">}</div>
+<div class="ttc" id="aboot__stage2_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="boot__stage2_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definição</b> boot_stage2.c:1</div></div>
+<div class="ttc" id="agroup__hardware__uart_html_ga4c45ff280c79aa60358d8241b7e5824b"><div class="ttname"><a href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a></div><div class="ttdeci">#define uart0</div><div class="ttdoc">The UART identifiers for use in UART functions.</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_uart/include/hardware/uart.h:86</div></div>
+<div class="ttc" id="ahost_2hardware__gpio_2gpio_8c_html_aacde9174277ca40aa7b6fdd341bb2b8c"><div class="ttname"><a href="host_2hardware__gpio_2gpio_8c.html#aacde9174277ca40aa7b6fdd341bb2b8c">gpio_set_function</a></div><div class="ttdeci">void gpio_set_function(uint gpio, enum gpio_function fn)</div><div class="ttdef"><b>Definição</b> host/hardware_gpio/gpio.c:10</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a56760f58dfa531e4706005b92a4853b3"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a56760f58dfa531e4706005b92a4853b3">uart_puts</a></div><div class="ttdeci">void uart_puts(uart_inst_t *uart, const char *s)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:115</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a5a55924eff530aff6db3b15fd872cda4"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a5a55924eff530aff6db3b15fd872cda4">uart_init</a></div><div class="ttdeci">uint uart_init(uart_inst_t *uart, uint baudrate)</div><div class="ttdoc">\enduart_reset[]</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:75</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a7bceb145d3739e3923f64584eff6db59"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a7bceb145d3739e3923f64584eff6db59">UART_FUNCSEL_NUM</a></div><div class="ttdeci">#define UART_FUNCSEL_NUM(uart, gpio)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/include/hardware/uart.h:94</div></div>
+</div><!-- fragment --> <h2 class="groupheader">Documentação das macros</h2>
+<a id="ga4c45ff280c79aa60358d8241b7e5824b" name="ga4c45ff280c79aa60358d8241b7e5824b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c45ff280c79aa60358d8241b7e5824b">&#9670;&#160;</a></span>uart0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> uart0&#160;&#160;&#160;((<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *)<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2uart_8h.html#ac410df39c08ef0c7b9c2849c557e7d27">uart0_hw</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The UART identifiers for use in UART functions. </p>
+<p>e.g. uart_init(uart1, 48000) Identifier for UART instance 0 </p>
+
+</div>
+</div>
+<a id="gad94ac6d5e345a1f794174d9bb7c6f69c" name="gad94ac6d5e345a1f794174d9bb7c6f69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad94ac6d5e345a1f794174d9bb7c6f69c">&#9670;&#160;</a></span>uart1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> uart1&#160;&#160;&#160;((<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *)<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2uart_8h.html#ab27616c608503e3a72a2f78fb8594645">uart1_hw</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identifier for UART instance 1. </p>
+
+</div>
+</div>
+<a id="ga8b4f387572a62cc839eb004ce7c02e3f" name="ga8b4f387572a62cc839eb004ce7c02e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b4f387572a62cc839eb004ce7c02e3f">&#9670;&#160;</a></span>UART_CLOCK_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> UART_CLOCK_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uart</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <a class="el" href="group__hardware__clocks.html#gae5b3d4a25ed3bb4916782746a6279507">clock_num_t</a> of the clock for the given UART instance. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="ga10472af6afab1cb220b5fbd4aee63a16" name="ga10472af6afab1cb220b5fbd4aee63a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10472af6afab1cb220b5fbd4aee63a16">&#9670;&#160;</a></span>UART_DREQ_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> UART_DREQ_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uart, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">is_tx</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the <a class="el" href="group__hardware__dma.html#ga8def0ea481095c94f3a0dd0b4fed999e">dreq_num_t</a> used for pacing DMA transfers to or from this UART instance. </p>
+<p>If is_tx is true, then it is for transfers to the UART else for transfers from the UART.</p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="ga7bceb145d3739e3923f64584eff6db59" name="ga7bceb145d3739e3923f64584eff6db59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7bceb145d3739e3923f64584eff6db59">&#9670;&#160;</a></span>UART_FUNCSEL_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> UART_FUNCSEL_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uart, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">gpio&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns <a class="el" href="group__hardware__gpio.html#ga1339fecb25e263eee2a6b9d362c3a946">gpio_function_t</a> needed to select the UART function for the given UART instance on the given GPIO number. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="gadc5c5947dc577aac3d448fdb37647927" name="gadc5c5947dc577aac3d448fdb37647927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc5c5947dc577aac3d448fdb37647927">&#9670;&#160;</a></span>UART_INSTANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> UART_INSTANCE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">num</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the UART instance with the given UART number. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="ga8697ddad82a2cd5d889ce819d83783e3" name="ga8697ddad82a2cd5d889ce819d83783e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8697ddad82a2cd5d889ce819d83783e3">&#9670;&#160;</a></span>UART_IRQ_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> UART_IRQ_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uart</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the <a class="el" href="group__hardware__irq.html#gaf30862f51b5994ffd5863176a185d137">irq_num_t</a> for processor interrupts from the given UART instance. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="ga12815b6262573d95c8a749f64cc85284" name="ga12815b6262573d95c8a749f64cc85284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12815b6262573d95c8a749f64cc85284">&#9670;&#160;</a></span>UART_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> UART_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uart</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the UART number for a UART instance. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="gaffef755f98d8fcec5f7b5147924fb4f9" name="gaffef755f98d8fcec5f7b5147924fb4f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffef755f98d8fcec5f7b5147924fb4f9">&#9670;&#160;</a></span>UART_RESET_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> UART_RESET_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uart</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the <a class="el" href="group__hardware__resets.html#ga329b703b37e2e7506c74f7eaa19468e4">reset_num_t</a> used to reset a given UART instance. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos valores da enumeração</h2>
+<a id="ga6bcc37e31dd40c204b4ac6f6189e8878" name="ga6bcc37e31dd40c204b4ac6f6189e8878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6bcc37e31dd40c204b4ac6f6189e8878">&#9670;&#160;</a></span>uart_parity_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UART Parity enumeration. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="gga6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d" name="gga6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d"></a>UART_PARITY_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8" name="gga6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8"></a>UART_PARITY_EVEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2" name="gga6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2"></a>UART_PARITY_ODD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ga85b12f7d19f5087b22f26473039d2c4f" name="ga85b12f7d19f5087b22f26473039d2c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85b12f7d19f5087b22f26473039d2c4f">&#9670;&#160;</a></span>uart_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> uart_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DeInitialise a UART. </p>
+<p>Disable the UART if it is no longer used. Must be reinitialised before being used again.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>DeInitialise a UART. </p>
+
+</div>
+</div>
+<a id="ga5a55924eff530aff6db3b15fd872cda4" name="ga5a55924eff530aff6db3b15fd872cda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a55924eff530aff6db3b15fd872cda4">&#9670;&#160;</a></span>uart_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> uart_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>baudrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise a UART. </p>
+<p>Put the UART into a known state, and enable it. Must be called before other functions.</p>
+<p>This function always enables the FIFOs, and configures the UART for the following default line format:</p>
+<ul>
+<li>8 data bits</li>
+<li>No parity bit</li>
+<li>One stop bit</li>
+</ul>
+<dl class="section note"><dt>Nota</dt><dd>There is no guarantee that the baudrate requested will be possible, the nearest will be chosen, and this function will return the configured baud rate.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a> </td></tr>
+    <tr><td class="paramname">baudrate</td><td>Baudrate of UART in Hz </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Actual set baudrate</dd></dl>
+<p>Initialise a UART.</p>
+<p>\tag<a class="el" href="group__hardware__uart.html#ga5a55924eff530aff6db3b15fd872cda4" title="Initialise a UART.">uart_init</a>[] </p>
+
+<p class="reference">Referências <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a84ae5932ab20ab715c8396c8da4c76a7">bool_to_bit</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>, <a class="el" href="rp2__common_2hardware__uart_2include_2hardware_2uart_8h.html#a3e9be3b2fecc2ac01f9686b4339184ad">PICO_UART_DEFAULT_CRLF</a>, <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a>, <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8">UART_PARITY_EVEN</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d">UART_PARITY_NONE</a>, <a class="el" href="group__hardware__uart.html#gab7f2ad3380a44597d8dda42b2d2ddef9">uart_set_baudrate()</a>, <a class="el" href="group__hardware__uart.html#ga07e3c6ce7c1abf5e875b62964b8f841e">uart_set_format()</a>, <a class="el" href="group__hardware__uart.html#ga4ea0b7b9252cd22e2395ca6070000f7a">uart_set_translate_crlf()</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a8faab03a96f4ee7c42b4458e8cf4e0f6">UART_UARTCR_RXE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a1d0341d397b5f24d36869046905f2799">UART_UARTCR_TXE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a326c25e9216a0599e66572635e3a2bc7">UART_UARTCR_UARTEN_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a5db3c5fcbff416cef24407413cf357a5">UART_UARTDMACR_RXDMAE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a591f7715a14402e0d1d4c982ea2a9e44">UART_UARTDMACR_TXDMAE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#aa1d970c9b5d437aca76363a20f7290cb">UART_UARTLCR_H_EPS_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a8a0305623c342c0579b967c285dcb80c">UART_UARTLCR_H_EPS_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a6a72d9d0ae6f6d24a1866e3801c55b0e">UART_UARTLCR_H_FEN_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a1424403510f250866ece96c0de6c44bb">UART_UARTLCR_H_PEN_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a866442383296c5db139b7a8917b88983">UART_UARTLCR_H_PEN_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a11d3bf4c0a682e165dd9f9fc0d9bcc65">UART_UARTLCR_H_STP2_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#aca514f7726f3686722f6eceda6ececad">UART_UARTLCR_H_STP2_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a0f57d99ec805ac26f2cecca0d044805b">UART_UARTLCR_H_WLEN_BITS</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#afbbd7f038f19b4e00e715a2ab396fdcd">UART_UARTLCR_H_WLEN_LSB</a>.</p>
+
+</div>
+</div>
+<a id="ga026539f355b6c6f5a044a5f4ee051f0e" name="ga026539f355b6c6f5a044a5f4ee051f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga026539f355b6c6f5a044a5f4ee051f0e">&#9670;&#160;</a></span>uart_is_readable_within_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> uart_is_readable_within_us </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for up to a certain number of microseconds for the RX FIFO to be non empty. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a> </td></tr>
+    <tr><td class="paramname">us</td><td>the number of microseconds to wait at most (may be 0 for an instantaneous check) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the RX FIFO became non empty before the timeout, false otherwise </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="host_2hardware__timer_2include_2hardware_2timer_8h.html#a7780e2510dfb1c35b705d3b19832d4bb">time_us_32()</a> e <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a73916efbad1c71ba36f5543e9fbba753">uart_is_readable()</a>.</p>
+
+</div>
+</div>
+<a id="gab7f2ad3380a44597d8dda42b2d2ddef9" name="gab7f2ad3380a44597d8dda42b2d2ddef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab7f2ad3380a44597d8dda42b2d2ddef9">&#9670;&#160;</a></span>uart_set_baudrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> uart_set_baudrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>baudrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set UART baud rate. </p>
+<p>Set baud rate as close as possible to requested, and return actual rate selected.</p>
+<p>The UART is paused for around two character periods whilst the settings are changed. Data received during this time may be dropped by the UART.</p>
+<p>Any characters still in the transmit buffer will be sent using the new updated baud rate. uart_tx_wait_blocking() can be called before this function to ensure all characters at the old baud rate have been sent before the rate is changed.</p>
+<p>This function should not be called from an interrupt context, and the UART interrupt should be disabled before calling this function.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a> </td></tr>
+    <tr><td class="paramname">baudrate</td><td>Baudrate in Hz </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Actual set baudrate</dd></dl>
+<p>Set UART baud rate. </p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__uart.html#ga5a55924eff530aff6db3b15fd872cda4">uart_init()</a>.</p>
+
+</div>
+</div>
+<a id="gaddb01507886acab5604a2eecc014b388" name="gaddb01507886acab5604a2eecc014b388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddb01507886acab5604a2eecc014b388">&#9670;&#160;</a></span>uart_set_break()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> uart_set_break </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>en</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assert a break condition on the UART transmission. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a> </td></tr>
+    <tr><td class="paramname">en</td><td>Assert break condition (TX held low) if true. Clear break condition if false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac3daee9514dacfb76f3c04b131e2e41a" name="gac3daee9514dacfb76f3c04b131e2e41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac3daee9514dacfb76f3c04b131e2e41a">&#9670;&#160;</a></span>uart_set_fifo_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> uart_set_fifo_enabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/Disable the FIFOs on specified UART. </p>
+<p>The UART is paused for around two character periods whilst the settings are changed. Data received during this time may be dropped by the UART.</p>
+<p>Any characters still in the transmit FIFO will be lost if the FIFO is disabled. uart_tx_wait_blocking() can be called before this function to avoid this.</p>
+<p>This function should not be called from an interrupt context, and the UART interrupt should be disabled when calling this function.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a> </td></tr>
+    <tr><td class="paramname">enabled</td><td>true to enable FIFO (default), false to disable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#a6a72d9d0ae6f6d24a1866e3801c55b0e">UART_UARTLCR_H_FEN_BITS</a>.</p>
+
+</div>
+</div>
+<a id="ga07e3c6ce7c1abf5e875b62964b8f841e" name="ga07e3c6ce7c1abf5e875b62964b8f841e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07e3c6ce7c1abf5e875b62964b8f841e">&#9670;&#160;</a></span>uart_set_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> uart_set_format </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>data_bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>stop_bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a>&#160;</td>
+          <td class="paramname"><em>parity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set UART data format. </p>
+<p>Configure the data format (bits etc) for the UART.</p>
+<p>The UART is paused for around two character periods whilst the settings are changed. Data received during this time may be dropped by the UART.</p>
+<p>Any characters still in the transmit buffer will be sent using the new updated data format. uart_tx_wait_blocking() can be called before this function to ensure all characters needing the old format have been sent before the format is changed.</p>
+<p>This function should not be called from an interrupt context, and the UART interrupt should be disabled before calling this function.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a> </td></tr>
+    <tr><td class="paramname">data_bits</td><td>Number of bits of data. 5..8 </td></tr>
+    <tr><td class="paramname">stop_bits</td><td>Number of stop bits 1..2 </td></tr>
+    <tr><td class="paramname">parity</td><td>Parity option.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Set UART data format. </p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__uart.html#ga5a55924eff530aff6db3b15fd872cda4">uart_init()</a>.</p>
+
+</div>
+</div>
+<a id="ga4ea0b7b9252cd22e2395ca6070000f7a" name="ga4ea0b7b9252cd22e2395ca6070000f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ea0b7b9252cd22e2395ca6070000f7a">&#9670;&#160;</a></span>uart_set_translate_crlf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> uart_set_translate_crlf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>translate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set CR/LF conversion on UART. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>UART instance. <a class="el" href="group__hardware__uart.html#ga4c45ff280c79aa60358d8241b7e5824b">uart0</a> or <a class="el" href="group__hardware__uart.html#gad94ac6d5e345a1f794174d9bb7c6f69c">uart1</a> </td></tr>
+    <tr><td class="paramname">translate</td><td>If true, convert line feeds to carriage return on transmissions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__uart.html#ga5a55924eff530aff6db3b15fd872cda4">uart_init()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura pwm_hw_t</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structpwm__hw__t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structpwm__hw__t-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura pwm_hw_t</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2pwm_8h_source.html">pwm.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para pwm_hw_t:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structpwm__hw__t__coll__graph.svg" width="294" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a2be1fea9953e2daec83761653ba7f4c8" id="r_a2be1fea9953e2daec83761653ba7f4c8"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb206a561e9a3fb995f436fa1cbb03a9" id="r_afb206a561e9a3fb995f436fa1cbb03a9"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e82d76a9f65cc82acf1c2ba7f9dffe" id="r_ad4e82d76a9f65cc82acf1c2ba7f9dffe"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#ad395a84eeb94d7acbe942b8d159dbd3b">inte</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ad4e82d76a9f65cc82acf1c2ba7f9dffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f61847eb47e7d3ab8afc683cb31f06" id="r_af1f61847eb47e7d3ab8afc683cb31f06"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#ad7d918244417ef38ef65d5ee0ae4becc">intf</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af1f61847eb47e7d3ab8afc683cb31f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef60d5c8f85d4464a4d31afcf34c3949" id="r_aef60d5c8f85d4464a4d31afcf34c3949"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#a16f79ff8c54273a7c0d3f8a8c7297eab">ints</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aef60d5c8f85d4464a4d31afcf34c3949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb206a561e9a3fb995f436fa1cbb03a9" id="r_afb206a561e9a3fb995f436fa1cbb03a9"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:afb206a561e9a3fb995f436fa1cbb03a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11546acabc33bbb90d3ce3d20ed85537" id="r_a11546acabc33bbb90d3ce3d20ed85537"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structpwm__irq__ctrl__hw__t.html">pwm_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#a1c5be38799e84a97233b97317db5e701">irq_ctrl</a> [1]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a11546acabc33bbb90d3ce3d20ed85537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be1fea9953e2daec83761653ba7f4c8" id="r_a2be1fea9953e2daec83761653ba7f4c8"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2be1fea9953e2daec83761653ba7f4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b01aa7c56e567c374ce06eb04bf8f68" id="r_a8b01aa7c56e567c374ce06eb04bf8f68"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cb00892d00561eef7b90ea3433708e" id="r_a12cb00892d00561eef7b90ea3433708e"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e0a6190b79575a91b02736e45c5427" id="r_a23e0a6190b79575a91b02736e45c5427"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#ad395a84eeb94d7acbe942b8d159dbd3b">inte</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a23e0a6190b79575a91b02736e45c5427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85549b47663db863e75b518de824400b" id="r_a85549b47663db863e75b518de824400b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#af25a63b1483be6d4715a12a480ae4909">inte1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a85549b47663db863e75b518de824400b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921a38afa07b519ac06fbd4e14abe1f2" id="r_a921a38afa07b519ac06fbd4e14abe1f2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#ad7d918244417ef38ef65d5ee0ae4becc">intf</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a921a38afa07b519ac06fbd4e14abe1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262575dbaffbeda39455b6c6ba6a034d" id="r_a262575dbaffbeda39455b6c6ba6a034d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#a7d9f1a0a9ca6a7c3cb8c6c6935036df5">intf1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a262575dbaffbeda39455b6c6ba6a034d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b22b597188cff6ee9adb9a30ff4effa" id="r_a3b22b597188cff6ee9adb9a30ff4effa"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#a16f79ff8c54273a7c0d3f8a8c7297eab">ints</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3b22b597188cff6ee9adb9a30ff4effa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e6ca5ea17a4f6e91549ca1cbbb8df1" id="r_ac8e6ca5ea17a4f6e91549ca1cbbb8df1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#a6b45e543aef128682fa51db55a4c54ab">ints1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac8e6ca5ea17a4f6e91549ca1cbbb8df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cb00892d00561eef7b90ea3433708e" id="r_a12cb00892d00561eef7b90ea3433708e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a12cb00892d00561eef7b90ea3433708e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577eec82cd863d0a5f73c1285afe2131" id="r_a577eec82cd863d0a5f73c1285afe2131"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structpwm__irq__ctrl__hw__t.html">pwm_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structpwm__hw__t.html#a1c5be38799e84a97233b97317db5e701">irq_ctrl</a> [2]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a577eec82cd863d0a5f73c1285afe2131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b01aa7c56e567c374ce06eb04bf8f68" id="r_a8b01aa7c56e567c374ce06eb04bf8f68"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a8b01aa7c56e567c374ce06eb04bf8f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351e31db976a55caebf460e6bde03cc5" id="r_a351e31db976a55caebf460e6bde03cc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpwm__hw__t.html#a351e31db976a55caebf460e6bde03cc5">en</a></td></tr>
+<tr class="separator:a351e31db976a55caebf460e6bde03cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b19214f01953f6dc906a9a84778790" id="r_a57b19214f01953f6dc906a9a84778790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpwm__hw__t.html#a57b19214f01953f6dc906a9a84778790">intr</a></td></tr>
+<tr class="separator:a57b19214f01953f6dc906a9a84778790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8e0fef4d70f2187c79f1c3fd7f4b4b" id="r_afc8e0fef4d70f2187c79f1c3fd7f4b4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpwm__slice__hw__t.html">pwm_slice_hw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpwm__hw__t.html#afc8e0fef4d70f2187c79f1c3fd7f4b4b">slice</a> [8]</td></tr>
+<tr class="separator:afc8e0fef4d70f2187c79f1c3fd7f4b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a2be1fea9953e2daec83761653ba7f4c8" name="a2be1fea9953e2daec83761653ba7f4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be1fea9953e2daec83761653ba7f4c8">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structpwm__hw__t.html">pwm_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b01aa7c56e567c374ce06eb04bf8f68" name="a8b01aa7c56e567c374ce06eb04bf8f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b01aa7c56e567c374ce06eb04bf8f68">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structpwm__hw__t.html">pwm_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a351e31db976a55caebf460e6bde03cc5" name="a351e31db976a55caebf460e6bde03cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351e31db976a55caebf460e6bde03cc5">&#9670;&#160;</a></span>en</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::en</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad395a84eeb94d7acbe942b8d159dbd3b" name="ad395a84eeb94d7acbe942b8d159dbd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad395a84eeb94d7acbe942b8d159dbd3b">&#9670;&#160;</a></span>inte</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::inte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af25a63b1483be6d4715a12a480ae4909" name="af25a63b1483be6d4715a12a480ae4909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af25a63b1483be6d4715a12a480ae4909">&#9670;&#160;</a></span>inte1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::inte1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7d918244417ef38ef65d5ee0ae4becc" name="ad7d918244417ef38ef65d5ee0ae4becc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d918244417ef38ef65d5ee0ae4becc">&#9670;&#160;</a></span>intf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::intf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d9f1a0a9ca6a7c3cb8c6c6935036df5" name="a7d9f1a0a9ca6a7c3cb8c6c6935036df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9f1a0a9ca6a7c3cb8c6c6935036df5">&#9670;&#160;</a></span>intf1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::intf1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57b19214f01953f6dc906a9a84778790" name="a57b19214f01953f6dc906a9a84778790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b19214f01953f6dc906a9a84778790">&#9670;&#160;</a></span>intr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::intr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16f79ff8c54273a7c0d3f8a8c7297eab" name="a16f79ff8c54273a7c0d3f8a8c7297eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f79ff8c54273a7c0d3f8a8c7297eab">&#9670;&#160;</a></span>ints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::ints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b45e543aef128682fa51db55a4c54ab" name="a6b45e543aef128682fa51db55a4c54ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b45e543aef128682fa51db55a4c54ab">&#9670;&#160;</a></span>ints1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> pwm_hw_t::ints1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c5be38799e84a97233b97317db5e701" name="a1c5be38799e84a97233b97317db5e701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5be38799e84a97233b97317db5e701">&#9670;&#160;</a></span>irq_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpwm__irq__ctrl__hw__t.html">pwm_irq_ctrl_hw_t</a> pwm_hw_t::irq_ctrl[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc8e0fef4d70f2187c79f1c3fd7f4b4b" name="afc8e0fef4d70f2187c79f1c3fd7f4b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8e0fef4d70f2187c79f1c3fd7f4b4b">&#9670;&#160;</a></span>slice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpwm__slice__hw__t.html">pwm_slice_hw_t</a> pwm_hw_t::slice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2pwm_8h_source.html">rp2040/hardware_structs/include/hardware/structs/pwm.h</a></li>
+<li><a class="el" href="rp2350_2hardware__structs_2include_2hardware_2structs_2pwm_8h_source.html">rp2350/hardware_structs/include/hardware/structs/pwm.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structpwm__hw__t.html">pwm_hw_t</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

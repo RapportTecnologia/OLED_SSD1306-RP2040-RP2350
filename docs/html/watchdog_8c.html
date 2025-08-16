@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro watchdog.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('watchdog_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro watchdog.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__watchdog_2include_2hardware_2watchdog_8h_source.html">hardware/watchdog.h</a>&quot;</code><br />
+<code>#include &quot;hardware/structs/watchdog.h&quot;</code><br />
+<code>#include &quot;hardware/structs/psm.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__ticks_2include_2hardware_2ticks_8h_source.html">hardware/ticks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bootrom_8h_source.html">pico/bootrom.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para watchdog.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="watchdog_8c__incl.svg" width="1322" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afe273d75c031a563c8355a15d2a11ec9" id="r_afe273d75c031a563c8355a15d2a11ec9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8c.html#afe273d75c031a563c8355a15d2a11ec9">WATCHDOG_NON_REBOOT_MAGIC</a>&#160;&#160;&#160;0x6ab73121</td></tr>
+<tr class="separator:afe273d75c031a563c8355a15d2a11ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda96262949916f27c86e1971bce6443" id="r_adda96262949916f27c86e1971bce6443"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8c.html#adda96262949916f27c86e1971bce6443">WATCHDOG_XFACTOR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:adda96262949916f27c86e1971bce6443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a4a9677d9f77330cca548b33f6597d531" id="r_a4a9677d9f77330cca548b33f6597d531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="watchdog_8c.html#a4a9677d9f77330cca548b33f6597d531">_watchdog_enable</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">delay_ms</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pause_on_debug</a>)</td></tr>
+<tr class="separator:a4a9677d9f77330cca548b33f6597d531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65f5d24169045b8c7dc709e572535d94" id="r_ga65f5d24169045b8c7dc709e572535d94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#ga65f5d24169045b8c7dc709e572535d94">watchdog_caused_reboot</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga65f5d24169045b8c7dc709e572535d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Did the watchdog cause the last reboot?  <br /></td></tr>
+<tr class="separator:ga65f5d24169045b8c7dc709e572535d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad627aed933db1187ad21853494dbe18d" id="r_gad627aed933db1187ad21853494dbe18d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#gad627aed933db1187ad21853494dbe18d">watchdog_disable</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gad627aed933db1187ad21853494dbe18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the watchdog.  <br /></td></tr>
+<tr class="separator:gad627aed933db1187ad21853494dbe18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87042933bd6c335c21131991c83c161d" id="r_ga87042933bd6c335c21131991c83c161d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#ga87042933bd6c335c21131991c83c161d">watchdog_enable</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">delay_ms</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pause_on_debug</a>)</td></tr>
+<tr class="memdesc:ga87042933bd6c335c21131991c83c161d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the watchdog.  <br /></td></tr>
+<tr class="separator:ga87042933bd6c335c21131991c83c161d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga455aa48ca6f11298e184d2ae0e81a085" id="r_ga455aa48ca6f11298e184d2ae0e81a085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#ga455aa48ca6f11298e184d2ae0e81a085">watchdog_enable_caused_reboot</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga455aa48ca6f11298e184d2ae0e81a085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Did watchdog_enable cause the last reboot?  <br /></td></tr>
+<tr class="separator:ga455aa48ca6f11298e184d2ae0e81a085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga536c4f5fbb5a967852b4fc8c4d2020bb" id="r_ga536c4f5fbb5a967852b4fc8c4d2020bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#ga536c4f5fbb5a967852b4fc8c4d2020bb">watchdog_get_time_remaining_ms</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga536c4f5fbb5a967852b4fc8c4d2020bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of milliseconds before the watchdog will reboot the chip.  <br /></td></tr>
+<tr class="separator:ga536c4f5fbb5a967852b4fc8c4d2020bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabba4e8fa01f2ff2e5a9fbba4e9d2d86d" id="r_gabba4e8fa01f2ff2e5a9fbba4e9d2d86d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#gabba4e8fa01f2ff2e5a9fbba4e9d2d86d">watchdog_get_time_remaining_us</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gabba4e8fa01f2ff2e5a9fbba4e9d2d86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of microseconds before the watchdog will reboot the chip.  <br /></td></tr>
+<tr class="separator:gabba4e8fa01f2ff2e5a9fbba4e9d2d86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa73ccd43d6d755817e71bc3d7eb1fda6" id="r_gaa73ccd43d6d755817e71bc3d7eb1fda6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#gaa73ccd43d6d755817e71bc3d7eb1fda6">watchdog_reboot</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44abc54f4d60f1cec0f9a6cb70e13f2127a">pc</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sp</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">delay_ms</a>)</td></tr>
+<tr class="memdesc:gaa73ccd43d6d755817e71bc3d7eb1fda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define actions to perform at watchdog timeout.  <br /></td></tr>
+<tr class="separator:gaa73ccd43d6d755817e71bc3d7eb1fda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab9cfb964649bc7928c72335d964e425" id="r_gaab9cfb964649bc7928c72335d964e425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#gaab9cfb964649bc7928c72335d964e425">watchdog_start_tick</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cycles)</td></tr>
+<tr class="memdesc:gaab9cfb964649bc7928c72335d964e425"><td class="mdescLeft">&#160;</td><td class="mdescRight">\tag<a class="el" href="group__hardware__watchdog.html#gaab9cfb964649bc7928c72335d964e425" title="\tagwatchdog_start_tick[]">watchdog_start_tick</a>[]  <br /></td></tr>
+<tr class="separator:gaab9cfb964649bc7928c72335d964e425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga329b748919954f8b48c58049115a5c54" id="r_ga329b748919954f8b48c58049115a5c54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__watchdog.html#ga329b748919954f8b48c58049115a5c54">watchdog_update</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga329b748919954f8b48c58049115a5c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the watchdog counter with the amount of time set in watchdog_enable.  <br /></td></tr>
+<tr class="separator:ga329b748919954f8b48c58049115a5c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="afe273d75c031a563c8355a15d2a11ec9" name="afe273d75c031a563c8355a15d2a11ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe273d75c031a563c8355a15d2a11ec9">&#9670;&#160;</a></span>WATCHDOG_NON_REBOOT_MAGIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> WATCHDOG_NON_REBOOT_MAGIC&#160;&#160;&#160;0x6ab73121</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adda96262949916f27c86e1971bce6443" name="adda96262949916f27c86e1971bce6443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda96262949916f27c86e1971bce6443">&#9670;&#160;</a></span>WATCHDOG_XFACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> WATCHDOG_XFACTOR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a4a9677d9f77330cca548b33f6597d531" name="a4a9677d9f77330cca548b33f6597d531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9677d9f77330cca548b33f6597d531">&#9670;&#160;</a></span>_watchdog_enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> _watchdog_enable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>delay_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>pause_on_debug</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2psm_8h.html#a4fdd14b97b777949c68c65096c9630d0">psm_hw</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2psm_8h.html#aa75864153e018b534630ce581f6fb319">PSM_WDSEL_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2psm_8h.html#afddc386409ea3fa258975579752e438a">PSM_WDSEL_ROSC_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2psm_8h.html#a2086f1f50fc58de328063eccaf1f6886">PSM_WDSEL_XOSC_BITS</a>, <a class="el" href="assert_8h.html#adf669ab8de596b281dcdf29560d10bfa">valid_params_if</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2watchdog_8h.html#af779cf310a8dc9a3346331c50083d252">WATCHDOG_CTRL_ENABLE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2watchdog_8h.html#a8487643b97578876c4c75fd5226a45ac">WATCHDOG_CTRL_PAUSE_DBG0_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2watchdog_8h.html#a7eafaf6a9b63414bb283171dd4a77226">WATCHDOG_CTRL_PAUSE_DBG1_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2watchdog_8h.html#a72329e62d8d65dcf41da9e274d0a5a31">WATCHDOG_CTRL_PAUSE_JTAG_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2watchdog_8h.html#a11f08c39d7760ac7c76e27c385b2af5e">WATCHDOG_CTRL_TRIGGER_BITS</a>, <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2watchdog_8h.html#a3c40c3f45c4ce2ee6183686319f787d3">watchdog_hw</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2watchdog_8h.html#a909c7912e3f149f5679db8701345d09f">WATCHDOG_LOAD_BITS</a>, <a class="el" href="group__hardware__watchdog.html#ga329b748919954f8b48c58049115a5c54">watchdog_update()</a> e <a class="el" href="watchdog_8c.html#adda96262949916f27c86e1971bce6443">WATCHDOG_XFACTOR</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__watchdog.html#ga87042933bd6c335c21131991c83c161d">watchdog_enable()</a> e <a class="el" href="group__hardware__watchdog.html#gaa73ccd43d6d755817e71bc3d7eb1fda6">watchdog_reboot()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_e9cf701d2a7fa95ac062f04ca9b4e1ab.html">hardware_watchdog</a></li><li class="navelem"><a class="el" href="watchdog_8c.html">watchdog.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

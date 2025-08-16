@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de uart.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('host_2hardware__uart_2include_2hardware_2uart_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">host/hardware_uart/include/hardware/uart.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="host_2hardware__uart_2include_2hardware_2uart_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _HARDWARE_UART_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _HARDWARE_UART_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;pico.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// PICO_CONFIG: PARAM_ASSERTIONS_ENABLED_HARDWARE_UART, Enable/disable assertions in the hardware_uart module, type=bool, default=0, group=hardware_uart</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef PARAM_ASSERTIONS_ENABLED_HARDWARE_UART</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef PARAM_ASSERTIONS_ENABLED_UART </span><span class="comment">// backwards compatibility with SDK &lt; 2.0.0</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define PARAM_ASSERTIONS_ENABLED_HARDWARE_UART PARAM_ASSERTIONS_ENABLED_UART</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a69d974c662aaef2a2dcc0bec15b578c4">   17</a></span><span class="preprocessor">#define PARAM_ASSERTIONS_ENABLED_HARDWARE_UART 0</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uart_inst</a> <a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">extern</span> <a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> * <span class="keyword">const</span> <a class="code hl_variable" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a5277463e5537379a772b4994fbc15d4f">uart0</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">extern</span> <a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> * <span class="keyword">const</span> <a class="code hl_variable" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#afb8048f5ba0ae8b6a570239361a3fac3">uart1</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a052549d4414084cf63d06897f4d81a90">   29</a></span><span class="preprocessor">#define uart_default uart0</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">   31</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d">   32</a></span>    <a class="code hl_enumvalue" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d">UART_PARITY_NONE</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8">   33</a></span>    <a class="code hl_enumvalue" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8">UART_PARITY_EVEN</a>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_enumvalue" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2">UART_PARITY_ODD</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2">   35</a></span>} <a class="code hl_enumeration" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a>;</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// Setup</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Put the UART into a known state, and enable it. Must be called before other</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// functions.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a5a55924eff530aff6db3b15fd872cda4">uart_init</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// Disable the UART if it is no longer used. Must be reinitialised before</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// being used again.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a85b12f7d19f5087b22f26473039d2c4f">uart_deinit</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// Set baud rate as close as possible to requested, and return actual rate.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#ab7f2ad3380a44597d8dda42b2d2ddef9">uart_set_baudrate</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// cts: enable flow control of TX by clear-to-send input</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// rts: enable assertion of request-to-send output by RX flow control</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a0ed67638f67ea45c4a9ed5760b4367dc">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a0ed67638f67ea45c4a9ed5760b4367dc">uart_set_hw_flow</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">cts</a>, <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rts</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Configure how the UART serialises and deserialises data on the wire</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a07e3c6ce7c1abf5e875b62964b8f841e">uart_set_format</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">data_bits</a>, <a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">stop_bits</a>, <a class="code hl_enumeration" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">parity</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// Enable the UART&#39;s interrupt output. Need to install an interrupt handler first.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#acd2cf06c37f79a8551d6da2fc76992c9">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#acd2cf06c37f79a8551d6da2fc76992c9">uart_set_irqs_enabled</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rx_has_data</a>, <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tx_needs_data</a>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// Generic input/output</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// If returns 0, no space is available in the UART to write more data.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// If returns nonzero, at least that many bytes can be written without blocking.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a427e9e9ec94951d34cf0a13f869866d0">uart_is_writable</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// If returns 0, no data is available to be read from UART.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// If returns nonzero, at least that many bytes can be written without blocking.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a73916efbad1c71ba36f5543e9fbba753">uart_is_readable</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// Write len bytes directly from src to the UART</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a354558f9b3e9ac5afe8af495b8e50df9">uart_write_blocking</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <span class="keyword">const</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *src, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// Read len bytes directly from the UART to dst</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a65d98c7062e27bd3ca39558f72bf6091">uart_read_blocking</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">dst</a>, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// UART-specific operations and aliases</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a10165d925d9079d871d65364d60e6f34">uart_putc</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a217228a8a319b9dd05cc1654464f7da6">uart_putc_raw</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <span class="keywordtype">char</span> c);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a56760f58dfa531e4706005b92a4853b3">uart_puts</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">s</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">char</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a76b7390ab4cf180ce883ad9732edbc72">uart_getc</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// en: assert break condition (TX held low) if true. Clear break condition if false.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#addb01507886acab5604a2eecc014b388">uart_set_break</a>(<a class="code hl_typedef" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <span class="keywordtype">bool</span> en);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#af728c84188788fe471395822eadf5eb3">uart_default_tx_wait_blocking</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a7bceb145d3739e3923f64584eff6db59">   94</a></span><span class="preprocessor">#define UART_FUNCSEL_NUM(uart, gpio) 0</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acommon_2pico__base__headers_2include_2pico_2types_8h_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definição</b> common/pico_base_headers/include/pico/types.h:18</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a07e3c6ce7c1abf5e875b62964b8f841e"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a07e3c6ce7c1abf5e875b62964b8f841e">uart_set_format</a></div><div class="ttdeci">void uart_set_format(uart_inst_t *uart, uint data_bits, uint stop_bits, uart_parity_t parity)</div><div class="ttdoc">\enduart_set_baudrate[]</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_uart/uart.c:183</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a0ed67638f67ea45c4a9ed5760b4367dc"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a0ed67638f67ea45c4a9ed5760b4367dc">uart_set_hw_flow</a></div><div class="ttdeci">void uart_set_hw_flow(uart_inst_t *uart, bool cts, bool rts)</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a10165d925d9079d871d65364d60e6f34"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a10165d925d9079d871d65364d60e6f34">uart_putc</a></div><div class="ttdeci">void uart_putc(uart_inst_t *uart, char c)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:107</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a217228a8a319b9dd05cc1654464f7da6"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a217228a8a319b9dd05cc1654464f7da6">uart_putc_raw</a></div><div class="ttdeci">void uart_putc_raw(uart_inst_t *uart, char c)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:111</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a354558f9b3e9ac5afe8af495b8e50df9"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a354558f9b3e9ac5afe8af495b8e50df9">uart_write_blocking</a></div><div class="ttdeci">void uart_write_blocking(uart_inst_t *uart, const uint8_t *src, size_t len)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:91</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a3920e2bf2b198420bbaa5a758a4001aa"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a></div><div class="ttdeci">struct uart_inst uart_inst_t</div><div class="ttdef"><b>Definição</b> host/hardware_uart/include/hardware/uart.h:25</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a427e9e9ec94951d34cf0a13f869866d0"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a427e9e9ec94951d34cf0a13f869866d0">uart_is_writable</a></div><div class="ttdeci">bool uart_is_writable(uart_inst_t *uart)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:80</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a5277463e5537379a772b4994fbc15d4f"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a5277463e5537379a772b4994fbc15d4f">uart0</a></div><div class="ttdeci">uart_inst_t *const uart0</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:63</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a56760f58dfa531e4706005b92a4853b3"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a56760f58dfa531e4706005b92a4853b3">uart_puts</a></div><div class="ttdeci">void uart_puts(uart_inst_t *uart, const char *s)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:115</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a5a55924eff530aff6db3b15fd872cda4"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a5a55924eff530aff6db3b15fd872cda4">uart_init</a></div><div class="ttdeci">uint uart_init(uart_inst_t *uart, uint baudrate)</div><div class="ttdoc">\enduart_reset[]</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:75</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a65d98c7062e27bd3ca39558f72bf6091"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a65d98c7062e27bd3ca39558f72bf6091">uart_read_blocking</a></div><div class="ttdeci">void uart_read_blocking(uart_inst_t *uart, uint8_t *dst, size_t len)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:98</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a6bcc37e31dd40c204b4ac6f6189e8878"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a></div><div class="ttdeci">uart_parity_t</div><div class="ttdef"><b>Definição</b> host/hardware_uart/include/hardware/uart.h:31</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d">UART_PARITY_NONE</a></div><div class="ttdeci">@ UART_PARITY_NONE</div><div class="ttdef"><b>Definição</b> host/hardware_uart/include/hardware/uart.h:32</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8">UART_PARITY_EVEN</a></div><div class="ttdeci">@ UART_PARITY_EVEN</div><div class="ttdef"><b>Definição</b> host/hardware_uart/include/hardware/uart.h:33</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2">UART_PARITY_ODD</a></div><div class="ttdeci">@ UART_PARITY_ODD</div><div class="ttdef"><b>Definição</b> host/hardware_uart/include/hardware/uart.h:34</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a73916efbad1c71ba36f5543e9fbba753"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a73916efbad1c71ba36f5543e9fbba753">uart_is_readable</a></div><div class="ttdeci">bool uart_is_readable(uart_inst_t *uart)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:86</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a76b7390ab4cf180ce883ad9732edbc72"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a76b7390ab4cf180ce883ad9732edbc72">uart_getc</a></div><div class="ttdeci">char uart_getc(uart_inst_t *uart)</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:119</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_a85b12f7d19f5087b22f26473039d2c4f"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a85b12f7d19f5087b22f26473039d2c4f">uart_deinit</a></div><div class="ttdeci">void uart_deinit(uart_inst_t *uart)</div><div class="ttdoc">\enduart_init[]</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_uart/uart.c:95</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_ab7f2ad3380a44597d8dda42b2d2ddef9"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#ab7f2ad3380a44597d8dda42b2d2ddef9">uart_set_baudrate</a></div><div class="ttdeci">uint uart_set_baudrate(uart_inst_t *uart, uint baudrate)</div><div class="ttdoc">\taguart_set_baudrate[]</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_uart/uart.c:155</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_acd2cf06c37f79a8551d6da2fc76992c9"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#acd2cf06c37f79a8551d6da2fc76992c9">uart_set_irqs_enabled</a></div><div class="ttdeci">void uart_set_irqs_enabled(uart_inst_t *uart, bool rx_has_data, bool tx_needs_data)</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_addb01507886acab5604a2eecc014b388"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#addb01507886acab5604a2eecc014b388">uart_set_break</a></div><div class="ttdeci">void uart_set_break(uart_inst_t *uart, bool en)</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_uart/uart.c:210</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_af728c84188788fe471395822eadf5eb3"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#af728c84188788fe471395822eadf5eb3">uart_default_tx_wait_blocking</a></div><div class="ttdeci">void uart_default_tx_wait_blocking()</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:128</div></div>
+<div class="ttc" id="ahost_2hardware__uart_2include_2hardware_2uart_8h_html_afb8048f5ba0ae8b6a570239361a3fac3"><div class="ttname"><a href="host_2hardware__uart_2include_2hardware_2uart_8h.html#afb8048f5ba0ae8b6a570239361a3fac3">uart1</a></div><div class="ttdeci">uart_inst_t *const uart1</div><div class="ttdef"><b>Definição</b> host/hardware_uart/uart.c:64</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_807b6346a9c18472135e047d65c02b1e.html">host</a></li><li class="navelem"><a class="el" href="dir_df49784b59096429b65a0c27f6dd7fdf.html">hardware_uart</a></li><li class="navelem"><a class="el" href="dir_2fd34659c1de58a2d20af9fd78bcbcac.html">include</a></li><li class="navelem"><a class="el" href="dir_b444b72ec17be9206422124a76f9baa9.html">hardware</a></li><li class="navelem"><a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html">uart.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

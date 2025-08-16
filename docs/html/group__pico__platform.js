@@ -1,0 +1,25 @@
+var group__pico__platform =
+[
+    [ "common.h", "common_8h.html", null ],
+    [ "compiler.h", "compiler_8h.html", null ],
+    [ "__after_data", "group__pico__platform.html#ga88c6891ab226690c883f3396611d8dc9", null ],
+    [ "__check_type_compatible", "group__pico__platform.html#ga2d0b8227d9981a22692d5ef6aa1a386f", null ],
+    [ "__fast_mul", "group__pico__platform.html#ga1f7eafa00361375ec15412f634ad67b7", null ],
+    [ "__fast_mul", "group__pico__platform.html#ga1f7eafa00361375ec15412f634ad67b7", null ],
+    [ "__force_inline", "group__pico__platform.html#ga23eadd8d1642fb8fe4600708c36e116a", null ],
+    [ "__in_flash", "group__pico__platform.html#ga0f27b5a18b17ef82ff103825a3b7322d", null ],
+    [ "__isr", "group__pico__platform.html#ga7a3538bc029b0e60c2f308008fc095c6", null ],
+    [ "__no_inline_not_in_flash_func", "group__pico__platform.html#gad9ab05c9a8f0ab455a5e11773d610787", null ],
+    [ "__not_in_flash", "group__pico__platform.html#ga98947648f4fd8b22f9cccc4c2f0d64fd", null ],
+    [ "__not_in_flash_func", "group__pico__platform.html#ga7ea262771f71b22e4e720bc2ca31d936", null ],
+    [ "__scratch_x", "group__pico__platform.html#gad8b78e068558946081789ce1935528bf", null ],
+    [ "__scratch_y", "group__pico__platform.html#ga699cabffc3896ece6ec696e841146b3c", null ],
+    [ "__time_critical_func", "group__pico__platform.html#ga27ef91000958320e25ff481d16786ebf", null ],
+    [ "__uninitialized_ram", "group__pico__platform.html#ga118d39a4ebb425b8bef29e7a1f8731c2", null ],
+    [ "count_of", "group__pico__platform.html#ga29022c0c92a05cf88ca5046c59d6f629", null ],
+    [ "MAX", "group__pico__platform.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f", null ],
+    [ "MIN", "group__pico__platform.html#ga3acffbd305ee72dcd4593c0d8af64a4f", null ],
+    [ "__attribute__", "group__pico__platform.html#ga6bcadac4406f49441ad8754777b9e942", null ],
+    [ "rp2040_chip_version", "group__pico__platform.html#gac157772e2fa6f4c64e1c3e4d761089d9", null ],
+    [ "rp2350_chip_version", "group__pico__platform.html#ga21200eb89a299a9b121d028ad1725fe3", null ]
+];

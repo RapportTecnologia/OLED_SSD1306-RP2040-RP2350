@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro hardware_irq_test.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__irq__test_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro hardware_irq_test.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="stdlib_8h_source.html">pico/stdlib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="test_8h_source.html">pico/test.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_2pico__time_2include_2pico_2time_8h_source.html">pico/time.h</a>&quot;</code><br />
+<code>#include &quot;hardware/irq.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h_source.html">hardware/dma.h</a>&quot;</code><br />
+<code>#include &quot;hardware/structs/scb.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para hardware_irq_test.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="hardware__irq__test_8c__incl.svg" width="1434" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af3708f2e22ee276d4437b746d2317e69" id="r_af3708f2e22ee276d4437b746d2317e69"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#af3708f2e22ee276d4437b746d2317e69">MAX_FIRE_COUNT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:af3708f2e22ee276d4437b746d2317e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97bf5c1c352d9a35845f64520e79c93f" id="r_a97bf5c1c352d9a35845f64520e79c93f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#a97bf5c1c352d9a35845f64520e79c93f">SLOT_LINK_OFFSET</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a97bf5c1c352d9a35845f64520e79c93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6432f82ec9266d706cd6751e29c7a0c1" id="r_a6432f82ec9266d706cd6751e29c7a0c1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#a6432f82ec9266d706cd6751e29c7a0c1">SLOT_SIZE</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a6432f82ec9266d706cd6751e29c7a0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a885faaaaca76aba8551cec66e34a14dc" id="r_a885faaaaca76aba8551cec66e34a14dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#a885faaaaca76aba8551cec66e34a14dc">__unhandled_user_irq</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a885faaaaca76aba8551cec66e34a14dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76492ccb2331718b2a488c9313951462" id="r_a76492ccb2331718b2a488c9313951462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#a76492ccb2331718b2a488c9313951462">dma_check</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">expected</a>,...)</td></tr>
+<tr class="separator:a76492ccb2331718b2a488c9313951462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ec49c6c96a97d5957c4c721105222f" id="r_ab8ec49c6c96a97d5957c4c721105222f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="group__pico__platform.html#ga7a3538bc029b0e60c2f308008fc095c6">__isr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#ab8ec49c6c96a97d5957c4c721105222f">handler1</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ab8ec49c6c96a97d5957c4c721105222f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e33d3f2d25dd8c5fb6c0060a78acb9" id="r_ad3e33d3f2d25dd8c5fb6c0060a78acb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="group__pico__platform.html#ga7a3538bc029b0e60c2f308008fc095c6">__isr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#ad3e33d3f2d25dd8c5fb6c0060a78acb9">handler2</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ad3e33d3f2d25dd8c5fb6c0060a78acb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1700bc94da6cd21faa1b0060b2c37bc" id="r_ab1700bc94da6cd21faa1b0060b2c37bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="group__pico__platform.html#ga7a3538bc029b0e60c2f308008fc095c6">__isr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#ab1700bc94da6cd21faa1b0060b2c37bc">handler3</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ab1700bc94da6cd21faa1b0060b2c37bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8321ec1bd636965f5583d37402c694" id="r_a0a8321ec1bd636965f5583d37402c694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#a0a8321ec1bd636965f5583d37402c694">PICOTEST_MODULE_NAME</a> (&quot;IRQ&quot;, &quot;IRQ <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Handler</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">test&quot;</a>)</td></tr>
+<tr class="memdesc:a0a8321ec1bd636965f5583d37402c694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) 2020 Raspberry Pi (Trading) Ltd.  <br /></td></tr>
+<tr class="separator:a0a8321ec1bd636965f5583d37402c694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3c05183ebd21aeff5196cf2d5e3482" id="r_aec3c05183ebd21aeff5196cf2d5e3482"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#aec3c05183ebd21aeff5196cf2d5e3482">record_fire</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">which</a>)</td></tr>
+<tr class="separator:aec3c05183ebd21aeff5196cf2d5e3482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a0f4e80bac4065aea074c0f1843fcd67b" id="r_a0f4e80bac4065aea074c0f1843fcd67b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__irq__test_8c.html#a0f4e80bac4065aea074c0f1843fcd67b">irq_handler_chain_slots</a> [<a class="el" href="hardware__irq__test_8c.html#a6432f82ec9266d706cd6751e29c7a0c1">SLOT_SIZE</a> *<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#afcfe7753c83a84ede150f1e882cc6908">PICO_MAX_SHARED_IRQ_HANDLERS</a>]</td></tr>
+<tr class="separator:a0f4e80bac4065aea074c0f1843fcd67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="af3708f2e22ee276d4437b746d2317e69" name="af3708f2e22ee276d4437b746d2317e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3708f2e22ee276d4437b746d2317e69">&#9670;&#160;</a></span>MAX_FIRE_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> MAX_FIRE_COUNT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97bf5c1c352d9a35845f64520e79c93f" name="a97bf5c1c352d9a35845f64520e79c93f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bf5c1c352d9a35845f64520e79c93f">&#9670;&#160;</a></span>SLOT_LINK_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SLOT_LINK_OFFSET&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6432f82ec9266d706cd6751e29c7a0c1" name="a6432f82ec9266d706cd6751e29c7a0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6432f82ec9266d706cd6751e29c7a0c1">&#9670;&#160;</a></span>SLOT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SLOT_SIZE&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a885faaaaca76aba8551cec66e34a14dc" name="a885faaaaca76aba8551cec66e34a14dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885faaaaca76aba8551cec66e34a14dc">&#9670;&#160;</a></span>__unhandled_user_irq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __unhandled_user_irq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="hardware__irq__test_8c.html#a76492ccb2331718b2a488c9313951462">dma_check()</a>.</p>
+
+</div>
+</div>
+<a id="a76492ccb2331718b2a488c9313951462" name="a76492ccb2331718b2a488c9313951462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76492ccb2331718b2a488c9313951462">&#9670;&#160;</a></span>dma_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> dma_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="hardware__irq__test_8c.html#a885faaaaca76aba8551cec66e34a14dc">__unhandled_user_irq()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="group__hardware__irq.html#ggaf4bf6b287c1a8445fce49ccaa711b3c3a27c81947202be1166b90cd5fb6f482a0">DMA_IRQ_0</a>, <a class="el" href="hardware__irq__test_8c.html#ab8ec49c6c96a97d5957c4c721105222f">handler1()</a>, <a class="el" href="hardware__irq__test_8c.html#ad3e33d3f2d25dd8c5fb6c0060a78acb9">handler2()</a>, <a class="el" href="hardware__irq__test_8c.html#ab1700bc94da6cd21faa1b0060b2c37bc">handler3()</a>, <a class="el" href="hardware__irq__test_8c.html#a0f4e80bac4065aea074c0f1843fcd67b">irq_handler_chain_slots</a>, <a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#afcfe7753c83a84ede150f1e882cc6908">PICO_MAX_SHARED_IRQ_HANDLERS</a>, <a class="el" href="test_8h.html#a7311f3de9b095b66e81a84d0cf4d1121">PICOTEST_CHECK</a>, <a class="el" href="test_8h.html#a80a4c9b1a560b3ad9ed3e95f63807559">PICOTEST_CHECK_AND_ABORT</a>, <a class="el" href="group__sleep.html#gae617a6842d4f3a192064c4354b88fcff">sleep_ms()</a>, <a class="el" href="hardware__irq__test_8c.html#a97bf5c1c352d9a35845f64520e79c93f">SLOT_LINK_OFFSET</a>, <a class="el" href="hardware__irq__test_8c.html#a6432f82ec9266d706cd6751e29c7a0c1">SLOT_SIZE</a> e <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#ace0ee762a2cd56e76294cecb7de3ccc2">VTABLE_FIRST_IRQ</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="hardware__irq__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ab8ec49c6c96a97d5957c4c721105222f" name="ab8ec49c6c96a97d5957c4c721105222f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ec49c6c96a97d5957c4c721105222f">&#9670;&#160;</a></span>handler1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="group__pico__platform.html#ga7a3538bc029b0e60c2f308008fc095c6">__isr</a> handler1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="group__hardware__irq.html#ggaf4bf6b287c1a8445fce49ccaa711b3c3a27c81947202be1166b90cd5fb6f482a0">DMA_IRQ_0</a>, <a class="el" href="hardware__irq__test_8c.html#ab8ec49c6c96a97d5957c4c721105222f">handler1()</a>, <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a> e <a class="el" href="hardware__irq__test_8c.html#aec3c05183ebd21aeff5196cf2d5e3482">record_fire()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="hardware__irq__test_8c.html#a76492ccb2331718b2a488c9313951462">dma_check()</a>, <a class="el" href="hardware__irq__test_8c.html#ab8ec49c6c96a97d5957c4c721105222f">handler1()</a> e <a class="el" href="hardware__irq__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ad3e33d3f2d25dd8c5fb6c0060a78acb9" name="ad3e33d3f2d25dd8c5fb6c0060a78acb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e33d3f2d25dd8c5fb6c0060a78acb9">&#9670;&#160;</a></span>handler2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="group__pico__platform.html#ga7a3538bc029b0e60c2f308008fc095c6">__isr</a> handler2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="group__hardware__irq.html#ggaf4bf6b287c1a8445fce49ccaa711b3c3a27c81947202be1166b90cd5fb6f482a0">DMA_IRQ_0</a>, <a class="el" href="hardware__irq__test_8c.html#ad3e33d3f2d25dd8c5fb6c0060a78acb9">handler2()</a>, <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a> e <a class="el" href="hardware__irq__test_8c.html#aec3c05183ebd21aeff5196cf2d5e3482">record_fire()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="hardware__irq__test_8c.html#a76492ccb2331718b2a488c9313951462">dma_check()</a>, <a class="el" href="hardware__irq__test_8c.html#ad3e33d3f2d25dd8c5fb6c0060a78acb9">handler2()</a> e <a class="el" href="hardware__irq__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ab1700bc94da6cd21faa1b0060b2c37bc" name="ab1700bc94da6cd21faa1b0060b2c37bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1700bc94da6cd21faa1b0060b2c37bc">&#9670;&#160;</a></span>handler3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="group__pico__platform.html#ga7a3538bc029b0e60c2f308008fc095c6">__isr</a> handler3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="group__hardware__irq.html#ggaf4bf6b287c1a8445fce49ccaa711b3c3a27c81947202be1166b90cd5fb6f482a0">DMA_IRQ_0</a>, <a class="el" href="hardware__irq__test_8c.html#ab1700bc94da6cd21faa1b0060b2c37bc">handler3()</a>, <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a> e <a class="el" href="hardware__irq__test_8c.html#aec3c05183ebd21aeff5196cf2d5e3482">record_fire()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="hardware__irq__test_8c.html#a76492ccb2331718b2a488c9313951462">dma_check()</a>, <a class="el" href="hardware__irq__test_8c.html#ab1700bc94da6cd21faa1b0060b2c37bc">handler3()</a> e <a class="el" href="hardware__irq__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="hardware__irq__test_8c.html#a76492ccb2331718b2a488c9313951462">dma_check()</a>, <a class="el" href="group__hardware__irq.html#ggaf4bf6b287c1a8445fce49ccaa711b3c3a27c81947202be1166b90cd5fb6f482a0">DMA_IRQ_0</a>, <a class="el" href="hardware__irq__test_8c.html#ab8ec49c6c96a97d5957c4c721105222f">handler1()</a>, <a class="el" href="hardware__irq__test_8c.html#ad3e33d3f2d25dd8c5fb6c0060a78acb9">handler2()</a>, <a class="el" href="hardware__irq__test_8c.html#ab1700bc94da6cd21faa1b0060b2c37bc">handler3()</a>, <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>, <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a>, <a class="el" href="group__hardware__irq.html#ga7c7167f643c6898b758340ce59d333d9">irq_set_enabled()</a>, <a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a767bbb33ddb413551944b144d1960c77">PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY</a>, <a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a71cc3affa66475083e9e2ba462776415">PICO_SHARED_IRQ_HANDLER_HIGHEST_ORDER_PRIORITY</a>, <a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a35fae10151154433571c1b149e0b1200">PICO_SHARED_IRQ_HANDLER_LOWEST_ORDER_PRIORITY</a>, <a class="el" href="test_8h.html#aaa2b43e9b197f078bcd2042e953d5935">PICOTEST_END_SECTION</a>, <a class="el" href="test_8h.html#a0a887529c4aa55c3d1938919cb4f5ffe">PICOTEST_END_TEST</a>, <a class="el" href="test_8h.html#ad9c576df6edb6c893cb2fb5fa46e3ce9">PICOTEST_START</a>, <a class="el" href="test_8h.html#aa944cbf5e0e5820d019d90609a73de11">PICOTEST_START_SECTION</a> e <a class="el" href="group__pico__stdio.html#ga0e604311fb226dae91ff4eb17a19d67a">stdio_init_all()</a>.</p>
+
+</div>
+</div>
+<a id="a0a8321ec1bd636965f5583d37402c694" name="a0a8321ec1bd636965f5583d37402c694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8321ec1bd636965f5583d37402c694">&#9670;&#160;</a></span>PICOTEST_MODULE_NAME()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICOTEST_MODULE_NAME </td>
+          <td>(</td>
+          <td class="paramtype">&quot;IRQ&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;IRQ <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Handler</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">test&quot;</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copyright (c) 2020 Raspberry Pi (Trading) Ltd. </p>
+<p>SPDX-License-Identifier: BSD-3-Clause </p>
+
+</div>
+</div>
+<a id="aec3c05183ebd21aeff5196cf2d5e3482" name="aec3c05183ebd21aeff5196cf2d5e3482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3c05183ebd21aeff5196cf2d5e3482">&#9670;&#160;</a></span>record_fire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> record_fire </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>which</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="hardware__irq__test_8c.html#af3708f2e22ee276d4437b746d2317e69">MAX_FIRE_COUNT</a> e <a class="el" href="test_8h.html#a7311f3de9b095b66e81a84d0cf4d1121">PICOTEST_CHECK</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="hardware__irq__test_8c.html#ab8ec49c6c96a97d5957c4c721105222f">handler1()</a>, <a class="el" href="hardware__irq__test_8c.html#ad3e33d3f2d25dd8c5fb6c0060a78acb9">handler2()</a> e <a class="el" href="hardware__irq__test_8c.html#ab1700bc94da6cd21faa1b0060b2c37bc">handler3()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a0f4e80bac4065aea074c0f1843fcd67b" name="a0f4e80bac4065aea074c0f1843fcd67b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f4e80bac4065aea074c0f1843fcd67b">&#9670;&#160;</a></span>irq_handler_chain_slots</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> irq_handler_chain_slots[<a class="el" href="hardware__irq__test_8c.html#a6432f82ec9266d706cd6751e29c7a0c1">SLOT_SIZE</a> *<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#afcfe7753c83a84ede150f1e882cc6908">PICO_MAX_SHARED_IRQ_HANDLERS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="hardware__irq__test_8c.html#a76492ccb2331718b2a488c9313951462">dma_check()</a>, <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>, <a class="el" href="rp2__common_2hardware__irq_2irq_8c.html#a6f07b7bb7cde52b312e33355f80da516">irq_add_tail_to_free_list()</a> e <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_4b97774b20923cf06c558e66efce829f.html">test</a></li><li class="navelem"><a class="el" href="dir_df6695f36c12736076a26dff97b48d3b.html">hardware_irq_test</a></li><li class="navelem"><a class="el" href="hardware__irq__test_8c.html">hardware_irq_test.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

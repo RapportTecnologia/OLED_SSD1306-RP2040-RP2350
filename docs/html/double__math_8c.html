@@ -1,0 +1,1322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro double_math.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('double__math_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro double_math.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="double_8h_source.html">pico/double.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para double_math.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="double__math_8c__incl.svg" width="366" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aa8ce48a2766389929af0a6c31b4fceed" id="r_aa8ce48a2766389929af0a6c31b4fceed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td></tr>
+<tr class="separator:aa8ce48a2766389929af0a6c31b4fceed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3bc020f68963b4685eca50f3bba889" id="r_a9e3bc020f68963b4685eca50f3bba889"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>,  <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td></tr>
+<tr class="separator:a9e3bc020f68963b4685eca50f3bba889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9a0d09d07b16398a64a19b80e92026" id="r_abd9a0d09d07b16398a64a19b80e92026"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#abd9a0d09d07b16398a64a19b80e92026">DUNPACK</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>,  m)&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>=((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&gt;&gt;52)&amp;0x7ff,m=((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&amp;0x000fffffffffffffULL)|0x0010000000000000ULL</td></tr>
+<tr class="separator:abd9a0d09d07b16398a64a19b80e92026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57473e921cd6f0447142123560ff3a9" id="r_af57473e921cd6f0447142123560ff3a9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#af57473e921cd6f0447142123560ff3a9">DUNPACKS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">s</a>,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>,  m)&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">s</a>=((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&gt;&gt;63),<a class="el" href="double__math_8c.html#abd9a0d09d07b16398a64a19b80e92026">DUNPACK</a>((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>),(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>),(m))</td></tr>
+<tr class="separator:af57473e921cd6f0447142123560ff3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386bc1bec332d5809e3c5e5be1f47a5d" id="r_a386bc1bec332d5809e3c5e5be1f47a5d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a386bc1bec332d5809e3c5e5be1f47a5d">LOG10</a>&#160;&#160;&#160;2.30258509299404568401</td></tr>
+<tr class="separator:a386bc1bec332d5809e3c5e5be1f47a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00cb4518cc65a90d92694d2b7f1418f8" id="r_a00cb4518cc65a90d92694d2b7f1418f8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a00cb4518cc65a90d92694d2b7f1418f8">LOG10E</a>&#160;&#160;&#160;0.43429448190325182765</td></tr>
+<tr class="separator:a00cb4518cc65a90d92694d2b7f1418f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a393782f53baef502843797b57882b" id="r_a66a393782f53baef502843797b57882b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a66a393782f53baef502843797b57882b">LOG10Ef</a>&#160;&#160;&#160;0.43429448190325182765<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td></tr>
+<tr class="separator:a66a393782f53baef502843797b57882b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07267dcd6834194cfed517197ab1e2ad" id="r_a07267dcd6834194cfed517197ab1e2ad"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a07267dcd6834194cfed517197ab1e2ad">LOG2</a>&#160;&#160;&#160;0.69314718055994530941</td></tr>
+<tr class="separator:a07267dcd6834194cfed517197ab1e2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9724cb2c110586821361664db9dc55ad" id="r_a9724cb2c110586821361664db9dc55ad"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a9724cb2c110586821361664db9dc55ad">LOG2E</a>&#160;&#160;&#160;1.44269504088896340737</td></tr>
+<tr class="separator:a9724cb2c110586821361664db9dc55ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fced47266e02e707d16ff27e1380904" id="r_a8fced47266e02e707d16ff27e1380904"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a8fced47266e02e707d16ff27e1380904">LOG2Ef</a>&#160;&#160;&#160;1.44269504088896340737<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td></tr>
+<tr class="separator:a8fced47266e02e707d16ff27e1380904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fda584c0c7822ffa8182d625d450ea2" id="r_a5fda584c0c7822ffa8182d625d450ea2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a5fda584c0c7822ffa8182d625d450ea2">LOG2f</a>&#160;&#160;&#160;0.69314718055994530941<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td></tr>
+<tr class="separator:a5fda584c0c7822ffa8182d625d450ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fca73ec0aeff99662a055435f007d56" id="r_a1fca73ec0aeff99662a055435f007d56"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a1fca73ec0aeff99662a055435f007d56">MINF</a>&#160;&#160;&#160;(-<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">HUGE_VAL</a>)</td></tr>
+<tr class="separator:a1fca73ec0aeff99662a055435f007d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98aa3ad3c21a58462506e662ee0c6e45" id="r_a98aa3ad3c21a58462506e662ee0c6e45"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a98aa3ad3c21a58462506e662ee0c6e45">MZERO</a>&#160;&#160;&#160;(-0.0)</td></tr>
+<tr class="separator:a98aa3ad3c21a58462506e662ee0c6e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40061ef4251d0b68cfee09c54d7b91ab" id="r_a40061ef4251d0b68cfee09c54d7b91ab"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a40061ef4251d0b68cfee09c54d7b91ab">ONETHIRD</a>&#160;&#160;&#160;0.33333333333333333333</td></tr>
+<tr class="separator:a40061ef4251d0b68cfee09c54d7b91ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0854922895c7584f22be0e5962239145" id="r_a0854922895c7584f22be0e5962239145"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a0854922895c7584f22be0e5962239145">ONETHIRDf</a>&#160;&#160;&#160;0.33333333333333333333<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td></tr>
+<tr class="separator:a0854922895c7584f22be0e5962239145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598a3330b3c21701223ee0ca14316eca" id="r_a598a3330b3c21701223ee0ca14316eca"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a598a3330b3c21701223ee0ca14316eca">PI</a>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="separator:a598a3330b3c21701223ee0ca14316eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabd73f43f6144d18f41ea63f10af488" id="r_acabd73f43f6144d18f41ea63f10af488"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#acabd73f43f6144d18f41ea63f10af488">PIf</a>&#160;&#160;&#160;3.14159265358979323846<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td></tr>
+<tr class="separator:acabd73f43f6144d18f41ea63f10af488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3f2dfe47783d255b13d5ec537e731b" id="r_a1a3f2dfe47783d255b13d5ec537e731b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a>&#160;&#160;&#160;( <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">HUGE_VAL</a>)</td></tr>
+<tr class="separator:a1a3f2dfe47783d255b13d5ec537e731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5290c1877f54953731dac1ff8e86c4a6" id="r_a5290c1877f54953731dac1ff8e86c4a6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a5290c1877f54953731dac1ff8e86c4a6">PZERO</a>&#160;&#160;&#160;(+0.0)</td></tr>
+<tr class="separator:a5290c1877f54953731dac1ff8e86c4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:aac70a30d0d829f0e24aafde4bd5d6a37" id="r_aac70a30d0d829f0e24aafde4bd5d6a37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#aac70a30d0d829f0e24aafde4bd5d6a37">acos</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:aac70a30d0d829f0e24aafde4bd5d6a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258289a6363f2435c90a987da6b0d0e2" id="r_a258289a6363f2435c90a987da6b0d0e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a258289a6363f2435c90a987da6b0d0e2">acosh</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a258289a6363f2435c90a987da6b0d0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1502f4525c0934a977fd11b2c64706d" id="r_ab1502f4525c0934a977fd11b2c64706d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ab1502f4525c0934a977fd11b2c64706d">asin</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:ab1502f4525c0934a977fd11b2c64706d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6204e6875bbbc0624c6d1c9f3576f31f" id="r_a6204e6875bbbc0624c6d1c9f3576f31f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a6204e6875bbbc0624c6d1c9f3576f31f">asinh</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a6204e6875bbbc0624c6d1c9f3576f31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb83d60ec5ceec14f88228718029e04" id="r_a9fb83d60ec5ceec14f88228718029e04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a9fb83d60ec5ceec14f88228718029e04">atan</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a9fb83d60ec5ceec14f88228718029e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af371d709478576bff9d852175dd123d6" id="r_af371d709478576bff9d852175dd123d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#af371d709478576bff9d852175dd123d6">atanh</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:af371d709478576bff9d852175dd123d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42183e626be9ebb1e80d925b74bddcce" id="r_a42183e626be9ebb1e80d925b74bddcce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a42183e626be9ebb1e80d925b74bddcce">cbrt</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a42183e626be9ebb1e80d925b74bddcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46842af6ae3cf03eec826c972c95e1f" id="r_ad46842af6ae3cf03eec826c972c95e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ad46842af6ae3cf03eec826c972c95e1f">ceil</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:ad46842af6ae3cf03eec826c972c95e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b04d37af4c53215b03d06b001b1b59" id="r_af8b04d37af4c53215b03d06b001b1b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#af8b04d37af4c53215b03d06b001b1b59">copysign</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="separator:af8b04d37af4c53215b03d06b001b1b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8d9b54e8bc4ee3bc6a7c8a6ec6df75" id="r_a1c8d9b54e8bc4ee3bc6a7c8a6ec6df75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a1c8d9b54e8bc4ee3bc6a7c8a6ec6df75">cosh</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a1c8d9b54e8bc4ee3bc6a7c8a6ec6df75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84a6423520cdd1c7899b31d478470c1" id="r_ae84a6423520cdd1c7899b31d478470c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ae84a6423520cdd1c7899b31d478470c1">drem</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="separator:ae84a6423520cdd1c7899b31d478470c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce532a1ddadd9f7185125596f380e9e" id="r_acce532a1ddadd9f7185125596f380e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#acce532a1ddadd9f7185125596f380e9e">exp10</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:acce532a1ddadd9f7185125596f380e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e41995f27b4d484481315caeb46568" id="r_ab9e41995f27b4d484481315caeb46568"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ab9e41995f27b4d484481315caeb46568">exp2</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:ab9e41995f27b4d484481315caeb46568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf52127a8fa81231d10832e3e03ee54" id="r_aabf52127a8fa81231d10832e3e03ee54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#aabf52127a8fa81231d10832e3e03ee54">expm1</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:aabf52127a8fa81231d10832e3e03ee54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d36bad362e6633d4335f21ea9e0c349" id="r_a1d36bad362e6633d4335f21ea9e0c349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a1d36bad362e6633d4335f21ea9e0c349">floor</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a1d36bad362e6633d4335f21ea9e0c349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2f4dddef210b11c36f342ae501b7b8" id="r_aad2f4dddef210b11c36f342ae501b7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#aad2f4dddef210b11c36f342ae501b7b8">fma</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> z)</td></tr>
+<tr class="separator:aad2f4dddef210b11c36f342ae501b7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0548eac670bc8d7b94cd15d18da9fb4" id="r_ae0548eac670bc8d7b94cd15d18da9fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ae0548eac670bc8d7b94cd15d18da9fb4">fmod</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="separator:ae0548eac670bc8d7b94cd15d18da9fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc965a94bcc1280f1b220d163159289" id="r_a4bc965a94bcc1280f1b220d163159289"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a4bc965a94bcc1280f1b220d163159289">GCC_Pragma</a> (&quot;GCC <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">diagnostic</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">push&quot;</a>)</td></tr>
+<tr class="separator:a4bc965a94bcc1280f1b220d163159289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9abdb71060b7adcd9365f1b3ce9ac4" id="r_ace9abdb71060b7adcd9365f1b3ce9ac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ace9abdb71060b7adcd9365f1b3ce9ac4">hypot</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="separator:ace9abdb71060b7adcd9365f1b3ce9ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752c8f84c8e5928fc41a956e381ff70f" id="r_a752c8f84c8e5928fc41a956e381ff70f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a752c8f84c8e5928fc41a956e381ff70f">ldexp</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">de</a>)</td></tr>
+<tr class="separator:a752c8f84c8e5928fc41a956e381ff70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ba8f7b0c2eb8635626432ad454d77c" id="r_a13ba8f7b0c2eb8635626432ad454d77c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a13ba8f7b0c2eb8635626432ad454d77c">log10</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a13ba8f7b0c2eb8635626432ad454d77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50afa6f7e78b95ae0dc32bd24de6d37" id="r_ac50afa6f7e78b95ae0dc32bd24de6d37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ac50afa6f7e78b95ae0dc32bd24de6d37">log1p</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:ac50afa6f7e78b95ae0dc32bd24de6d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a8e894e66d471e51ebc3d68b44e221" id="r_ab5a8e894e66d471e51ebc3d68b44e221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#ab5a8e894e66d471e51ebc3d68b44e221">log2</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:ab5a8e894e66d471e51ebc3d68b44e221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e504d8041ea3f3a67d8c2d3edca933c" id="r_a1e504d8041ea3f3a67d8c2d3edca933c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a1e504d8041ea3f3a67d8c2d3edca933c">pow</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="separator:a1e504d8041ea3f3a67d8c2d3edca933c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7a5859a7ca38ebf21b668652f31e3e" id="r_aff7a5859a7ca38ebf21b668652f31e3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#aff7a5859a7ca38ebf21b668652f31e3e">powint</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="separator:aff7a5859a7ca38ebf21b668652f31e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7697911873a70c9fb3e9c3ce862f98a0" id="r_a7697911873a70c9fb3e9c3ce862f98a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a7697911873a70c9fb3e9c3ce862f98a0">remainder</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="separator:a7697911873a70c9fb3e9c3ce862f98a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d754cf920f9783b937c10ffdd79aa5e" id="r_a9d754cf920f9783b937c10ffdd79aa5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a9d754cf920f9783b937c10ffdd79aa5e">remquo</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">quo</a>)</td></tr>
+<tr class="separator:a9d754cf920f9783b937c10ffdd79aa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078c1fb7126023849adefb525a810b16" id="r_a078c1fb7126023849adefb525a810b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a078c1fb7126023849adefb525a810b16">round</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a078c1fb7126023849adefb525a810b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21213921e1471a726c7f7edcf5489974" id="r_a21213921e1471a726c7f7edcf5489974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a21213921e1471a726c7f7edcf5489974">sinh</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a21213921e1471a726c7f7edcf5489974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac367c41150ec2e9ea9a292d56efe758" id="r_aac367c41150ec2e9ea9a292d56efe758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#aac367c41150ec2e9ea9a292d56efe758">tanh</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:aac367c41150ec2e9ea9a292d56efe758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d5b4f1951750b0aa11d22b3f5224da" id="r_a89d5b4f1951750b0aa11d22b3f5224da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a89d5b4f1951750b0aa11d22b3f5224da">trunc</a> (<a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a89d5b4f1951750b0aa11d22b3f5224da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a465332776424db778594879c0dcaf3a6" id="r_a465332776424db778594879c0dcaf3a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__math_8c.html#a465332776424db778594879c0dcaf3a6">double_ui64</a></td></tr>
+<tr class="separator:a465332776424db778594879c0dcaf3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="aa8ce48a2766389929af0a6c31b4fceed" name="aa8ce48a2766389929af0a6c31b4fceed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ce48a2766389929af0a6c31b4fceed">&#9670;&#160;</a></span>check_nan_d1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> check_nan_d1</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e3bc020f68963b4685eca50f3bba889" name="a9e3bc020f68963b4685eca50f3bba889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e3bc020f68963b4685eca50f3bba889">&#9670;&#160;</a></span>check_nan_d2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> check_nan_d2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd9a0d09d07b16398a64a19b80e92026" name="abd9a0d09d07b16398a64a19b80e92026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd9a0d09d07b16398a64a19b80e92026">&#9670;&#160;</a></span>DUNPACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DUNPACK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>=((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&gt;&gt;52)&amp;0x7ff,m=((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&amp;0x000fffffffffffffULL)|0x0010000000000000ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af57473e921cd6f0447142123560ff3a9" name="af57473e921cd6f0447142123560ff3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57473e921cd6f0447142123560ff3a9">&#9670;&#160;</a></span>DUNPACKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DUNPACKS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">s</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">s</a>=((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&gt;&gt;63),<a class="el" href="double__math_8c.html#abd9a0d09d07b16398a64a19b80e92026">DUNPACK</a>((<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>),(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">e</a>),(m))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a386bc1bec332d5809e3c5e5be1f47a5d" name="a386bc1bec332d5809e3c5e5be1f47a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386bc1bec332d5809e3c5e5be1f47a5d">&#9670;&#160;</a></span>LOG10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOG10&#160;&#160;&#160;2.30258509299404568401</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00cb4518cc65a90d92694d2b7f1418f8" name="a00cb4518cc65a90d92694d2b7f1418f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00cb4518cc65a90d92694d2b7f1418f8">&#9670;&#160;</a></span>LOG10E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOG10E&#160;&#160;&#160;0.43429448190325182765</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66a393782f53baef502843797b57882b" name="a66a393782f53baef502843797b57882b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a393782f53baef502843797b57882b">&#9670;&#160;</a></span>LOG10Ef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOG10Ef&#160;&#160;&#160;0.43429448190325182765<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07267dcd6834194cfed517197ab1e2ad" name="a07267dcd6834194cfed517197ab1e2ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07267dcd6834194cfed517197ab1e2ad">&#9670;&#160;</a></span>LOG2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOG2&#160;&#160;&#160;0.69314718055994530941</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9724cb2c110586821361664db9dc55ad" name="a9724cb2c110586821361664db9dc55ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9724cb2c110586821361664db9dc55ad">&#9670;&#160;</a></span>LOG2E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOG2E&#160;&#160;&#160;1.44269504088896340737</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fced47266e02e707d16ff27e1380904" name="a8fced47266e02e707d16ff27e1380904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fced47266e02e707d16ff27e1380904">&#9670;&#160;</a></span>LOG2Ef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOG2Ef&#160;&#160;&#160;1.44269504088896340737<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fda584c0c7822ffa8182d625d450ea2" name="a5fda584c0c7822ffa8182d625d450ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fda584c0c7822ffa8182d625d450ea2">&#9670;&#160;</a></span>LOG2f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOG2f&#160;&#160;&#160;0.69314718055994530941<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fca73ec0aeff99662a055435f007d56" name="a1fca73ec0aeff99662a055435f007d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fca73ec0aeff99662a055435f007d56">&#9670;&#160;</a></span>MINF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> MINF&#160;&#160;&#160;(-<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">HUGE_VAL</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98aa3ad3c21a58462506e662ee0c6e45" name="a98aa3ad3c21a58462506e662ee0c6e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98aa3ad3c21a58462506e662ee0c6e45">&#9670;&#160;</a></span>MZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> MZERO&#160;&#160;&#160;(-0.0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40061ef4251d0b68cfee09c54d7b91ab" name="a40061ef4251d0b68cfee09c54d7b91ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40061ef4251d0b68cfee09c54d7b91ab">&#9670;&#160;</a></span>ONETHIRD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ONETHIRD&#160;&#160;&#160;0.33333333333333333333</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0854922895c7584f22be0e5962239145" name="a0854922895c7584f22be0e5962239145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0854922895c7584f22be0e5962239145">&#9670;&#160;</a></span>ONETHIRDf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ONETHIRDf&#160;&#160;&#160;0.33333333333333333333<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a598a3330b3c21701223ee0ca14316eca" name="a598a3330b3c21701223ee0ca14316eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598a3330b3c21701223ee0ca14316eca">&#9670;&#160;</a></span>PI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PI&#160;&#160;&#160;3.14159265358979323846</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acabd73f43f6144d18f41ea63f10af488" name="acabd73f43f6144d18f41ea63f10af488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabd73f43f6144d18f41ea63f10af488">&#9670;&#160;</a></span>PIf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PIf&#160;&#160;&#160;3.14159265358979323846<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a3f2dfe47783d255b13d5ec537e731b" name="a1a3f2dfe47783d255b13d5ec537e731b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a3f2dfe47783d255b13d5ec537e731b">&#9670;&#160;</a></span>PINF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PINF&#160;&#160;&#160;( <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">HUGE_VAL</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5290c1877f54953731dac1ff8e86c4a6" name="a5290c1877f54953731dac1ff8e86c4a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5290c1877f54953731dac1ff8e86c4a6">&#9670;&#160;</a></span>PZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PZERO&#160;&#160;&#160;(+0.0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="aac70a30d0d829f0e24aafde4bd5d6a37" name="aac70a30d0d829f0e24aafde4bd5d6a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac70a30d0d829f0e24aafde4bd5d6a37">&#9670;&#160;</a></span>acos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() acos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="a258289a6363f2435c90a987da6b0d0e2" name="a258289a6363f2435c90a987da6b0d0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258289a6363f2435c90a987da6b0d0e2">&#9670;&#160;</a></span>acosh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() acosh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a07267dcd6834194cfed517197ab1e2ad">LOG2</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="ab1502f4525c0934a977fd11b2c64706d" name="ab1502f4525c0934a977fd11b2c64706d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1502f4525c0934a977fd11b2c64706d">&#9670;&#160;</a></span>asin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() asin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="a6204e6875bbbc0624c6d1c9f3576f31f" name="a6204e6875bbbc0624c6d1c9f3576f31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6204e6875bbbc0624c6d1c9f3576f31f">&#9670;&#160;</a></span>asinh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() asinh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a07267dcd6834194cfed517197ab1e2ad">LOG2</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="a9fb83d60ec5ceec14f88228718029e04" name="a9fb83d60ec5ceec14f88228718029e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb83d60ec5ceec14f88228718029e04">&#9670;&#160;</a></span>atan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() atan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a598a3330b3c21701223ee0ca14316eca">PI</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="af371d709478576bff9d852175dd123d6" name="af371d709478576bff9d852175dd123d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af371d709478576bff9d852175dd123d6">&#9670;&#160;</a></span>atanh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() atanh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="a42183e626be9ebb1e80d925b74bddcce" name="a42183e626be9ebb1e80d925b74bddcce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42183e626be9ebb1e80d925b74bddcce">&#9670;&#160;</a></span>cbrt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() cbrt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a42183e626be9ebb1e80d925b74bddcce">cbrt()</a>, <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a40061ef4251d0b68cfee09c54d7b91ab">ONETHIRD</a>, <a class="el" href="double__math_8c.html#a5290c1877f54953731dac1ff8e86c4a6">PZERO</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="double__math_8c.html#a42183e626be9ebb1e80d925b74bddcce">cbrt()</a>.</p>
+
+</div>
+</div>
+<a id="ad46842af6ae3cf03eec826c972c95e1f" name="ad46842af6ae3cf03eec826c972c95e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46842af6ae3cf03eec826c972c95e1f">&#9670;&#160;</a></span>ceil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() ceil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a98aa3ad3c21a58462506e662ee0c6e45">MZERO</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="af8b04d37af4c53215b03d06b001b1b59" name="af8b04d37af4c53215b03d06b001b1b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b04d37af4c53215b03d06b001b1b59">&#9670;&#160;</a></span>copysign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() copysign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+</div>
+</div>
+<a id="a1c8d9b54e8bc4ee3bc6a7c8a6ec6df75" name="a1c8d9b54e8bc4ee3bc6a7c8a6ec6df75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8d9b54e8bc4ee3bc6a7c8a6ec6df75">&#9670;&#160;</a></span>cosh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() cosh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="ae84a6423520cdd1c7899b31d478470c1" name="ae84a6423520cdd1c7899b31d478470c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84a6423520cdd1c7899b31d478470c1">&#9670;&#160;</a></span>drem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() drem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>, <a class="el" href="double__math_8c.html#a9d754cf920f9783b937c10ffdd79aa5e">remquo()</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+</div>
+</div>
+<a id="acce532a1ddadd9f7185125596f380e9e" name="acce532a1ddadd9f7185125596f380e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce532a1ddadd9f7185125596f380e9e">&#9670;&#160;</a></span>exp10()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() exp10 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="double__math_8c.html#a1e504d8041ea3f3a67d8c2d3edca933c">pow()</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="ab9e41995f27b4d484481315caeb46568" name="ab9e41995f27b4d484481315caeb46568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e41995f27b4d484481315caeb46568">&#9670;&#160;</a></span>exp2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() exp2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a07267dcd6834194cfed517197ab1e2ad">LOG2</a>, <a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a>, <a class="el" href="double__math_8c.html#a078c1fb7126023849adefb525a810b16">round()</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="aabf52127a8fa81231d10832e3e03ee54" name="aabf52127a8fa81231d10832e3e03ee54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf52127a8fa81231d10832e3e03ee54">&#9670;&#160;</a></span>expm1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() expm1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="a1d36bad362e6633d4335f21ea9e0c349" name="a1d36bad362e6633d4335f21ea9e0c349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d36bad362e6633d4335f21ea9e0c349">&#9670;&#160;</a></span>floor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() floor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a5290c1877f54953731dac1ff8e86c4a6">PZERO</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="aad2f4dddef210b11c36f342ae501b7b8" name="aad2f4dddef210b11c36f342ae501b7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad2f4dddef210b11c36f342ae501b7b8">&#9670;&#160;</a></span>fma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() fma </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+</div>
+</div>
+<a id="ae0548eac670bc8d7b94cd15d18da9fb4" name="ae0548eac670bc8d7b94cd15d18da9fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0548eac670bc8d7b94cd15d18da9fb4">&#9670;&#160;</a></span>fmod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() fmod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#abd9a0d09d07b16398a64a19b80e92026">DUNPACK</a>, <a class="el" href="double__math_8c.html#af57473e921cd6f0447142123560ff3a9">DUNPACKS</a>, <a class="el" href="double_8h.html#a85c65543e8632b7fcbfef8ea87a0e993">fix642double()</a>, <a class="el" href="double__math_8c.html#a98aa3ad3c21a58462506e662ee0c6e45">MZERO</a>, <a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a>, <a class="el" href="double__math_8c.html#a5290c1877f54953731dac1ff8e86c4a6">PZERO</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="pico__double__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="a4bc965a94bcc1280f1b220d163159289" name="a4bc965a94bcc1280f1b220d163159289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc965a94bcc1280f1b220d163159289">&#9670;&#160;</a></span>GCC_Pragma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GCC_Pragma </td>
+          <td>(</td>
+          <td class="paramtype">&quot;GCC <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">diagnostic</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">push&quot;</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ace9abdb71060b7adcd9365f1b3ce9ac4" name="ace9abdb71060b7adcd9365f1b3ce9ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9abdb71060b7adcd9365f1b3ce9ac4">&#9670;&#160;</a></span>hypot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() hypot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+</div>
+</div>
+<a id="a752c8f84c8e5928fc41a956e381ff70f" name="a752c8f84c8e5928fc41a956e381ff70f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752c8f84c8e5928fc41a956e381ff70f">&#9670;&#160;</a></span>ldexp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() ldexp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>de</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="pico__double__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="a13ba8f7b0c2eb8635626432ad454d77c" name="a13ba8f7b0c2eb8635626432ad454d77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ba8f7b0c2eb8635626432ad454d77c">&#9670;&#160;</a></span>log10()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() log10 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a00cb4518cc65a90d92694d2b7f1418f8">LOG10E</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="ac50afa6f7e78b95ae0dc32bd24de6d37" name="ac50afa6f7e78b95ae0dc32bd24de6d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50afa6f7e78b95ae0dc32bd24de6d37">&#9670;&#160;</a></span>log1p()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() log1p </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="ab5a8e894e66d471e51ebc3d68b44e221" name="ab5a8e894e66d471e51ebc3d68b44e221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a8e894e66d471e51ebc3d68b44e221">&#9670;&#160;</a></span>log2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() log2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#a9724cb2c110586821361664db9dc55ad">LOG2E</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="a1e504d8041ea3f3a67d8c2d3edca933c" name="a1e504d8041ea3f3a67d8c2d3edca933c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e504d8041ea3f3a67d8c2d3edca933c">&#9670;&#160;</a></span>pow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() pow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>, <a class="el" href="compiler_8h.html#a600ecaa6ed26612e3aea52c7c0538ad9">GCC_Like_Pragma</a>, <a class="el" href="double__math_8c.html#a1fca73ec0aeff99662a055435f007d56">MINF</a>, <a class="el" href="double__math_8c.html#a98aa3ad3c21a58462506e662ee0c6e45">MZERO</a>, <a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a>, <a class="el" href="double__math_8c.html#a5290c1877f54953731dac1ff8e86c4a6">PZERO</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="double__math_8c.html#acce532a1ddadd9f7185125596f380e9e">exp10()</a> e <a class="el" href="pico__double__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="aff7a5859a7ca38ebf21b668652f31e3e" name="aff7a5859a7ca38ebf21b668652f31e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7a5859a7ca38ebf21b668652f31e3e">&#9670;&#160;</a></span>powint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() powint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="compiler_8h.html#a600ecaa6ed26612e3aea52c7c0538ad9">GCC_Like_Pragma</a>, <a class="el" href="double__math_8c.html#a1fca73ec0aeff99662a055435f007d56">MINF</a>, <a class="el" href="double__math_8c.html#a98aa3ad3c21a58462506e662ee0c6e45">MZERO</a>, <a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a>, <a class="el" href="double__math_8c.html#a5290c1877f54953731dac1ff8e86c4a6">PZERO</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+</div>
+</div>
+<a id="a7697911873a70c9fb3e9c3ce862f98a0" name="a7697911873a70c9fb3e9c3ce862f98a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7697911873a70c9fb3e9c3ce862f98a0">&#9670;&#160;</a></span>remainder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() remainder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>, <a class="el" href="double__math_8c.html#a9d754cf920f9783b937c10ffdd79aa5e">remquo()</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+</div>
+</div>
+<a id="a9d754cf920f9783b937c10ffdd79aa5e" name="a9d754cf920f9783b937c10ffdd79aa5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d754cf920f9783b937c10ffdd79aa5e">&#9670;&#160;</a></span>remquo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() remquo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> *&#160;</td>
+          <td class="paramname"><em>quo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#a9e3bc020f68963b4685eca50f3bba889">check_nan_d2</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="double__math_8c.html#af57473e921cd6f0447142123560ff3a9">DUNPACKS</a>, <a class="el" href="double_8h.html#a85c65543e8632b7fcbfef8ea87a0e993">fix642double()</a>, <a class="el" href="double__math_8c.html#a1a3f2dfe47783d255b13d5ec537e731b">PINF</a>, <a class="el" href="double__math_8c.html#a5290c1877f54953731dac1ff8e86c4a6">PZERO</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="double__math_8c.html#ae84a6423520cdd1c7899b31d478470c1">drem()</a> e <a class="el" href="double__math_8c.html#a7697911873a70c9fb3e9c3ce862f98a0">remainder()</a>.</p>
+
+</div>
+</div>
+<a id="a078c1fb7126023849adefb525a810b16" name="a078c1fb7126023849adefb525a810b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078c1fb7126023849adefb525a810b16">&#9670;&#160;</a></span>round()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() round </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="double__math_8c.html#ab9e41995f27b4d484481315caeb46568">exp2()</a>.</p>
+
+</div>
+</div>
+<a id="a21213921e1471a726c7f7edcf5489974" name="a21213921e1471a726c7f7edcf5489974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21213921e1471a726c7f7edcf5489974">&#9670;&#160;</a></span>sinh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() sinh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="aac367c41150ec2e9ea9a292d56efe758" name="aac367c41150ec2e9ea9a292d56efe758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac367c41150ec2e9ea9a292d56efe758">&#9670;&#160;</a></span>tanh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() tanh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+</div>
+</div>
+<a id="a89d5b4f1951750b0aa11d22b3f5224da" name="a89d5b4f1951750b0aa11d22b3f5224da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d5b4f1951750b0aa11d22b3f5224da">&#9670;&#160;</a></span>trunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a> <a class="el" href="compiler_8h.html#a0cd5fb62a4a8b344853eaad1e35687d9">WRAPPER_FUNC</a>() trunc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="call__apsr_8h.html#a3adcffbeb25d990def71033256168b45">double</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="double__math_8c.html#aa8ce48a2766389929af0a6c31b4fceed">check_nan_d1</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="pico__double__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a465332776424db778594879c0dcaf3a6" name="a465332776424db778594879c0dcaf3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465332776424db778594879c0dcaf3a6">&#9670;&#160;</a></span>double_ui64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double_ui64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_a8ad63106a66d09ecb1a19a23aeec812.html">pico_double</a></li><li class="navelem"><a class="el" href="double__math_8c.html">double_math.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

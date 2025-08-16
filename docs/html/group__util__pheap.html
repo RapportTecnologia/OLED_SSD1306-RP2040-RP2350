@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: pheap</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__util__pheap.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">pheap<div class="ingroups"><a class="el" href="group__pico__util.html">pico_util</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Pairing Heap Implementation.  
+<a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para pheap:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__util__pheap.svg" width="199" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga9b69785185d58a5f82204c9ee3c2a2d5" id="r_ga9b69785185d58a5f82204c9ee3c2a2d5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#ga9b69785185d58a5f82204c9ee3c2a2d5">PHEAP_DEFINE_STATIC</a>(name,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_max_nodes</a>)</td></tr>
+<tr class="memdesc:ga9b69785185d58a5f82204c9ee3c2a2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a statically allocated pairing heap.  <br /></td></tr>
+<tr class="separator:ga9b69785185d58a5f82204c9ee3c2a2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:ga0656dff462e9c9b41b60b7c86ba39f09" id="r_ga0656dff462e9c9b41b60b7c86ba39f09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#ga0656dff462e9c9b41b60b7c86ba39f09">pheap_comparator</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data, <a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>, <a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> <a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>)</td></tr>
+<tr class="memdesc:ga0656dff462e9c9b41b60b7c86ba39f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user comparator function for nodes in a pairing heap.  <br /></td></tr>
+<tr class="separator:ga0656dff462e9c9b41b60b7c86ba39f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga1fe718acebd018d31cab37071a65c61b" id="r_ga1fe718acebd018d31cab37071a65c61b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#ga1fe718acebd018d31cab37071a65c61b">ph_clear</a> (<a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">heap</a>)</td></tr>
+<tr class="memdesc:ga1fe718acebd018d31cab37071a65c61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all nodes from the pairing heap.  <br /></td></tr>
+<tr class="separator:ga1fe718acebd018d31cab37071a65c61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacde2f3fabd67330b56dbb8473387b272" id="r_gacde2f3fabd67330b56dbb8473387b272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#gacde2f3fabd67330b56dbb8473387b272">ph_create</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> max_nodes, <a class="el" href="group__util__pheap.html#ga0656dff462e9c9b41b60b7c86ba39f09">pheap_comparator</a> comparator, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data)</td></tr>
+<tr class="memdesc:gacde2f3fabd67330b56dbb8473387b272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pairing heap, which effectively maintains an efficient sorted ordering of nodes.  <br /></td></tr>
+<tr class="separator:gacde2f3fabd67330b56dbb8473387b272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ad42a7be2446ffcdbce6c9c3590eb8e" id="r_ga0ad42a7be2446ffcdbce6c9c3590eb8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#ga0ad42a7be2446ffcdbce6c9c3590eb8e">ph_destroy</a> (<a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">heap</a>)</td></tr>
+<tr class="memdesc:ga0ad42a7be2446ffcdbce6c9c3590eb8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-allocates a pairing heap.  <br /></td></tr>
+<tr class="separator:ga0ad42a7be2446ffcdbce6c9c3590eb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaac9dd2a264364a16a5753ba08c268cf" id="r_gaaac9dd2a264364a16a5753ba08c268cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#gaaac9dd2a264364a16a5753ba08c268cf">ph_dump</a> (<a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">heap</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">dump_key</a>)(<a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> id, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data), <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data)</td></tr>
+<tr class="memdesc:gaaac9dd2a264364a16a5753ba08c268cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a representation of the heap for debugging.  <br /></td></tr>
+<tr class="separator:gaaac9dd2a264364a16a5753ba08c268cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f8a3b950288b90310216126750ae0ef" id="r_ga5f8a3b950288b90310216126750ae0ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#ga5f8a3b950288b90310216126750ae0ef">ph_post_alloc_init</a> (<a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">heap</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> max_nodes, <a class="el" href="group__util__pheap.html#ga0656dff462e9c9b41b60b7c86ba39f09">pheap_comparator</a> comparator, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data)</td></tr>
+<tr class="memdesc:ga5f8a3b950288b90310216126750ae0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a statically allocated heap (<a class="el" href="group__util__pheap.html#gacde2f3fabd67330b56dbb8473387b272" title="Create a pairing heap, which effectively maintains an efficient sorted ordering of nodes.">ph_create()</a> using the C heap).  <br /></td></tr>
+<tr class="separator:ga5f8a3b950288b90310216126750ae0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga852301ee2d8d4c3985dd61c14eb820a8" id="r_ga852301ee2d8d4c3985dd61c14eb820a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#ga852301ee2d8d4c3985dd61c14eb820a8">ph_remove_and_free_node</a> (<a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">heap</a>, <a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> id)</td></tr>
+<tr class="memdesc:ga852301ee2d8d4c3985dd61c14eb820a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove and free an arbitrary node from the pairing heap.  <br /></td></tr>
+<tr class="separator:ga852301ee2d8d4c3985dd61c14eb820a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ebc494b4ad703fe080bee5f18775fec" id="r_ga8ebc494b4ad703fe080bee5f18775fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util__pheap.html#ga8ebc494b4ad703fe080bee5f18775fec">ph_remove_head</a> (<a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">heap</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free</a>)</td></tr>
+<tr class="memdesc:ga8ebc494b4ad703fe080bee5f18775fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the head node from the pairing heap.  <br /></td></tr>
+<tr class="separator:ga8ebc494b4ad703fe080bee5f18775fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Pairing Heap Implementation. </p>
+<p>pheap defines a simple pairing heap. The implementation simply tracks array indexes, it is up to the user to provide storage for heap entries and a comparison function.</p>
+<p>NOTE: This class is not safe for concurrent usage. It should be externally protected. Furthermore if used concurrently, the caller needs to protect around their use of the returned id. For example, ph_remove_and_free_head returns the id of an element that is no longer in the heap. The user can still use this to look at the data in their companion array, however obviously further operations on the heap may cause them to overwrite that data as the id may be reused on subsequent operations </p>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ga9b69785185d58a5f82204c9ee3c2a2d5" name="ga9b69785185d58a5f82204c9ee3c2a2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b69785185d58a5f82204c9ee3c2a2d5">&#9670;&#160;</a></span>PHEAP_DEFINE_STATIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PHEAP_DEFINE_STATIC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_max_nodes</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">    <span class="keyword">static_assert</span>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_max_nodes</a> &amp;&amp; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_max_nodes</a> &lt; (1u &lt;&lt; (8 * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a>))), <span class="stringliteral">&quot;&quot;</span>); \</div>
+<div class="line">    <span class="keyword">static</span> <a class="code hl_struct" href="structpheap__node.html">pheap_node_t</a> name ## <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_nodes</a>[<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_max_nodes</a>]; \</div>
+<div class="line">    <span class="keyword">static</span> <a class="code hl_struct" href="structpheap.html">pheap_t</a> name = { \</div>
+<div class="line">            .<a class="code hl_variable" href="structpheap.html#ad0e74f06d047cc033d400ffa7f6eb23c">nodes</a> = name ## <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_nodes</a>, \</div>
+<div class="line">            .<a class="code hl_variable" href="structpheap.html#aa13316020ead98532dd628ce44a17013">max_nodes</a> = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_max_nodes</a> \</div>
+<div class="line">    };</div>
+<div class="ttc" id="apheap_8h_html_a0692045973f15c3302c72f623244ed70"><div class="ttname"><a href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a></div><div class="ttdeci">uint8_t pheap_node_id_t</div><div class="ttdef"><b>Definição</b> pheap.h:44</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="astructpheap__node_html"><div class="ttname"><a href="structpheap__node.html">pheap_node</a></div><div class="ttdef"><b>Definição</b> pheap.h:51</div></div>
+<div class="ttc" id="astructpheap_html"><div class="ttname"><a href="structpheap.html">pheap</a></div><div class="ttdef"><b>Definição</b> pheap.h:63</div></div>
+<div class="ttc" id="astructpheap_html_aa13316020ead98532dd628ce44a17013"><div class="ttname"><a href="structpheap.html#aa13316020ead98532dd628ce44a17013">pheap::max_nodes</a></div><div class="ttdeci">pheap_node_id_t max_nodes</div><div class="ttdef"><b>Definição</b> pheap.h:67</div></div>
+<div class="ttc" id="astructpheap_html_ad0e74f06d047cc033d400ffa7f6eb23c"><div class="ttname"><a href="structpheap.html#ad0e74f06d047cc033d400ffa7f6eb23c">pheap::nodes</a></div><div class="ttdeci">pheap_node_t * nodes</div><div class="ttdef"><b>Definição</b> pheap.h:64</div></div>
+</div><!-- fragment -->
+<p>Define a statically allocated pairing heap. </p>
+<p>This must be initialized by ph_post_alloc_init </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="ga0656dff462e9c9b41b60b7c86ba39f09" name="ga0656dff462e9c9b41b60b7c86ba39f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0656dff462e9c9b41b60b7c86ba39f09">&#9670;&#160;</a></span>pheap_comparator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>(* pheap_comparator) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data, <a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>, <a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> <a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A user comparator function for nodes in a pairing heap. </p>
+<dl class="section return"><dt>Retorna</dt><dd>true if a &lt; b in natural order. Note this relative ordering must be stable from call to call. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ga1fe718acebd018d31cab37071a65c61b" name="ga1fe718acebd018d31cab37071a65c61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1fe718acebd018d31cab37071a65c61b">&#9670;&#160;</a></span>ph_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> ph_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *&#160;</td>
+          <td class="paramname"><em>heap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all nodes from the pairing heap. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>the heap </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__util__pheap.html#ga5f8a3b950288b90310216126750ae0ef">ph_post_alloc_init()</a>.</p>
+
+</div>
+</div>
+<a id="gacde2f3fabd67330b56dbb8473387b272" name="gacde2f3fabd67330b56dbb8473387b272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacde2f3fabd67330b56dbb8473387b272">&#9670;&#160;</a></span>ph_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> * ph_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>max_nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__util__pheap.html#ga0656dff462e9c9b41b60b7c86ba39f09">pheap_comparator</a>&#160;</td>
+          <td class="paramname"><em>comparator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a pairing heap, which effectively maintains an efficient sorted ordering of nodes. </p>
+<p>The heap itself stores no user per-node state, it is expected that the user maintains a companion array. A comparator function must be provided so that the heap implementation can determine the relative ordering of nodes</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_nodes</td><td>the maximum number of nodes that may be in the heap (this is bounded by PICO_PHEAP_MAX_ENTRIES which defaults to 255 to be able to store indexes in a single byte). </td></tr>
+    <tr><td class="paramname">comparator</td><td>the node comparison function </td></tr>
+    <tr><td class="paramname">user_data</td><td>a user data pointer associated with the heap that is provided in callbacks </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>a newly allocated and initialized heap </dd></dl>
+
+<p class="reference">Referências <a class="el" href="malloc_8c.html#a175874e1634f0cd69ede77f62a5d329a">calloc()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a> e <a class="el" href="group__util__pheap.html#ga5f8a3b950288b90310216126750ae0ef">ph_post_alloc_init()</a>.</p>
+
+</div>
+</div>
+<a id="ga0ad42a7be2446ffcdbce6c9c3590eb8e" name="ga0ad42a7be2446ffcdbce6c9c3590eb8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ad42a7be2446ffcdbce6c9c3590eb8e">&#9670;&#160;</a></span>ph_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> ph_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *&#160;</td>
+          <td class="paramname"><em>heap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-allocates a pairing heap. </p>
+<p>Note this method must <em>ONLY</em> be called on heaps created by <a class="el" href="group__util__pheap.html#gacde2f3fabd67330b56dbb8473387b272" title="Create a pairing heap, which effectively maintains an efficient sorted ordering of nodes.">ph_create()</a> </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>the heap </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free()</a>.</p>
+
+</div>
+</div>
+<a id="gaaac9dd2a264364a16a5753ba08c268cf" name="gaaac9dd2a264364a16a5753ba08c268cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaac9dd2a264364a16a5753ba08c268cf">&#9670;&#160;</a></span>ph_dump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> ph_dump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*)(<a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> id, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data)&#160;</td>
+          <td class="paramname"><em>dump_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print a representation of the heap for debugging. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>the heap </td></tr>
+    <tr><td class="paramname">dump_key</td><td>a method to print a node value </td></tr>
+    <tr><td class="paramname">user_data</td><td>the user data to pass to the dump_key method </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5f8a3b950288b90310216126750ae0ef" name="ga5f8a3b950288b90310216126750ae0ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f8a3b950288b90310216126750ae0ef">&#9670;&#160;</a></span>ph_post_alloc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> ph_post_alloc_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>max_nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__util__pheap.html#ga0656dff462e9c9b41b60b7c86ba39f09">pheap_comparator</a>&#160;</td>
+          <td class="paramname"><em>comparator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a statically allocated heap (<a class="el" href="group__util__pheap.html#gacde2f3fabd67330b56dbb8473387b272" title="Create a pairing heap, which effectively maintains an efficient sorted ordering of nodes.">ph_create()</a> using the C heap). </p>
+<p>The heap member <code>nodes</code> must be allocated of size max_nodes.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>the heap </td></tr>
+    <tr><td class="paramname">max_nodes</td><td>the max number of nodes in the heap (matching the size of the heap's nodes array) </td></tr>
+    <tr><td class="paramname">comparator</td><td>the comparator for the heap </td></tr>
+    <tr><td class="paramname">user_data</td><td>the user data for the heap. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a> e <a class="el" href="group__util__pheap.html#ga1fe718acebd018d31cab37071a65c61b">ph_clear()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__util__pheap.html#gacde2f3fabd67330b56dbb8473387b272">ph_create()</a>.</p>
+
+</div>
+</div>
+<a id="ga852301ee2d8d4c3985dd61c14eb820a8" name="ga852301ee2d8d4c3985dd61c14eb820a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga852301ee2d8d4c3985dd61c14eb820a8">&#9670;&#160;</a></span>ph_remove_and_free_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> ph_remove_and_free_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a>&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove and free an arbitrary node from the pairing heap. </p>
+<p>This is a more costly operation than removing the head via ph_remove_and_free_head()</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>the heap </td></tr>
+    <tr><td class="paramname">id</td><td>the id of the node to free </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the the node was in the heap, false otherwise </dd></dl>
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a>, <a class="el" href="structpheap__node.html#ad50edeb7b6ae2f1c4cab75cf54e28c65">pheap_node::child</a> e <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ga8ebc494b4ad703fe080bee5f18775fec" name="ga8ebc494b4ad703fe080bee5f18775fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ebc494b4ad703fe080bee5f18775fec">&#9670;&#160;</a></span>ph_remove_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pheap_8h.html#a0692045973f15c3302c72f623244ed70">pheap_node_id_t</a> ph_remove_head </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pheap_8h.html#a08712072a1b1a0c405e0c1807357888f">pheap_t</a> *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>free</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the head node from the pairing heap. </p>
+<p>This head node is the node which compares first in the logical ordering provided by the comparator.</p>
+<p>Note that in the case of free == true, the returned id is no longer allocated and may be re-used by future node allocations, so the caller should retrieve any per node state from the companion array before modifying the heap further.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heap</td><td>the heap </td></tr>
+    <tr><td class="paramname">free</td><td>true if the id is also to be freed; false if not - useful if the caller may wish to re-insert an item with the same id) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>the old head node id. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

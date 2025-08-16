@@ -1,0 +1,1344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura CLOCKS_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structCLOCKS__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structCLOCKS__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura CLOCKS_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>CLOCKS (CLOCKS)  
+ <a href="structCLOCKS__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para CLOCKS_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structCLOCKS__Type__coll__graph.svg" width="199" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a8176c9bf1d47abed69bbd32cb81b0fa0" id="r_a8176c9bf1d47abed69bbd32cb81b0fa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a8176c9bf1d47abed69bbd32cb81b0fa0">CLK_ADC_CTRL</a></td></tr>
+<tr class="memdesc:a8176c9bf1d47abed69bbd32cb81b0fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:a8176c9bf1d47abed69bbd32cb81b0fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a6e46fa929669dea7834853ec9d47c" id="r_ab1a6e46fa929669dea7834853ec9d47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ab1a6e46fa929669dea7834853ec9d47c">CLK_ADC_DIV</a></td></tr>
+<tr class="memdesc:ab1a6e46fa929669dea7834853ec9d47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:ab1a6e46fa929669dea7834853ec9d47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addcb3eb969fff23b4ebf23bb248b28ad" id="r_addcb3eb969fff23b4ebf23bb248b28ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#addcb3eb969fff23b4ebf23bb248b28ad">CLK_ADC_SELECTED</a></td></tr>
+<tr class="memdesc:addcb3eb969fff23b4ebf23bb248b28ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:addcb3eb969fff23b4ebf23bb248b28ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455a18571eea49076b41d838e144f7cf" id="r_a455a18571eea49076b41d838e144f7cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a455a18571eea49076b41d838e144f7cf">CLK_GPOUT0_CTRL</a></td></tr>
+<tr class="memdesc:a455a18571eea49076b41d838e144f7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; CLOCKS Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a455a18571eea49076b41d838e144f7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ebbe9747f5d03239369f170b4fdcdb" id="r_af7ebbe9747f5d03239369f170b4fdcdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#af7ebbe9747f5d03239369f170b4fdcdb">CLK_GPOUT0_DIV</a></td></tr>
+<tr class="memdesc:af7ebbe9747f5d03239369f170b4fdcdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:af7ebbe9747f5d03239369f170b4fdcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf657673b48db6a879b755da3e3b530a" id="r_abf657673b48db6a879b755da3e3b530a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#abf657673b48db6a879b755da3e3b530a">CLK_GPOUT0_SELECTED</a></td></tr>
+<tr class="memdesc:abf657673b48db6a879b755da3e3b530a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:abf657673b48db6a879b755da3e3b530a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ebb8f5812462a48306a1e57b882337" id="r_a01ebb8f5812462a48306a1e57b882337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a01ebb8f5812462a48306a1e57b882337">CLK_GPOUT1_CTRL</a></td></tr>
+<tr class="memdesc:a01ebb8f5812462a48306a1e57b882337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:a01ebb8f5812462a48306a1e57b882337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c17123b4d409cf0173a298e1b4ca50c" id="r_a0c17123b4d409cf0173a298e1b4ca50c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a0c17123b4d409cf0173a298e1b4ca50c">CLK_GPOUT1_DIV</a></td></tr>
+<tr class="memdesc:a0c17123b4d409cf0173a298e1b4ca50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:a0c17123b4d409cf0173a298e1b4ca50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fbcf688e246a26abde546718d8d0b5" id="r_ae6fbcf688e246a26abde546718d8d0b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ae6fbcf688e246a26abde546718d8d0b5">CLK_GPOUT1_SELECTED</a></td></tr>
+<tr class="memdesc:ae6fbcf688e246a26abde546718d8d0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:ae6fbcf688e246a26abde546718d8d0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b33894f91e8094620707545cfbbf217" id="r_a6b33894f91e8094620707545cfbbf217"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a6b33894f91e8094620707545cfbbf217">CLK_GPOUT2_CTRL</a></td></tr>
+<tr class="memdesc:a6b33894f91e8094620707545cfbbf217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:a6b33894f91e8094620707545cfbbf217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a373a1901dc18a8cfa98c6d60c4525" id="r_a05a373a1901dc18a8cfa98c6d60c4525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a05a373a1901dc18a8cfa98c6d60c4525">CLK_GPOUT2_DIV</a></td></tr>
+<tr class="memdesc:a05a373a1901dc18a8cfa98c6d60c4525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:a05a373a1901dc18a8cfa98c6d60c4525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0454f7505818bce2d92c99085e760f16" id="r_a0454f7505818bce2d92c99085e760f16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a0454f7505818bce2d92c99085e760f16">CLK_GPOUT2_SELECTED</a></td></tr>
+<tr class="memdesc:a0454f7505818bce2d92c99085e760f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:a0454f7505818bce2d92c99085e760f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5bcd361a5db25d446578e4d454129d" id="r_aab5bcd361a5db25d446578e4d454129d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#aab5bcd361a5db25d446578e4d454129d">CLK_GPOUT3_CTRL</a></td></tr>
+<tr class="memdesc:aab5bcd361a5db25d446578e4d454129d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:aab5bcd361a5db25d446578e4d454129d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4388ab2e6f1a5a06414b56cc1bc48d07" id="r_a4388ab2e6f1a5a06414b56cc1bc48d07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a4388ab2e6f1a5a06414b56cc1bc48d07">CLK_GPOUT3_DIV</a></td></tr>
+<tr class="memdesc:a4388ab2e6f1a5a06414b56cc1bc48d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:a4388ab2e6f1a5a06414b56cc1bc48d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780255cdee5b0cb039f4ae05ee131819" id="r_a780255cdee5b0cb039f4ae05ee131819"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a780255cdee5b0cb039f4ae05ee131819">CLK_GPOUT3_SELECTED</a></td></tr>
+<tr class="memdesc:a780255cdee5b0cb039f4ae05ee131819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:a780255cdee5b0cb039f4ae05ee131819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ac838e713937a0e0f43bef279187c1" id="r_ad6ac838e713937a0e0f43bef279187c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ad6ac838e713937a0e0f43bef279187c1">CLK_HSTX_CTRL</a></td></tr>
+<tr class="memdesc:ad6ac838e713937a0e0f43bef279187c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:ad6ac838e713937a0e0f43bef279187c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554af7ed2c94100c577ce1124a2ccce1" id="r_a554af7ed2c94100c577ce1124a2ccce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a554af7ed2c94100c577ce1124a2ccce1">CLK_HSTX_DIV</a></td></tr>
+<tr class="memdesc:a554af7ed2c94100c577ce1124a2ccce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CLK_HSTX_DIV <br  />
+  <br /></td></tr>
+<tr class="separator:a554af7ed2c94100c577ce1124a2ccce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945883c74b226870fd00aa3353914344" id="r_a945883c74b226870fd00aa3353914344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a945883c74b226870fd00aa3353914344">CLK_HSTX_SELECTED</a></td></tr>
+<tr class="memdesc:a945883c74b226870fd00aa3353914344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which src is currently selected (one-hot) <br  />
+  <br /></td></tr>
+<tr class="separator:a945883c74b226870fd00aa3353914344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60abb73bb1e34174b69f474defd5693b" id="r_a60abb73bb1e34174b69f474defd5693b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a60abb73bb1e34174b69f474defd5693b">CLK_PERI_CTRL</a></td></tr>
+<tr class="memdesc:a60abb73bb1e34174b69f474defd5693b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:a60abb73bb1e34174b69f474defd5693b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103955a9fc19192437a92749793e72f9" id="r_a103955a9fc19192437a92749793e72f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a103955a9fc19192437a92749793e72f9">CLK_PERI_DIV</a></td></tr>
+<tr class="memdesc:a103955a9fc19192437a92749793e72f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:a103955a9fc19192437a92749793e72f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55e9942c4a6e463f81c790ff749e56f" id="r_ad55e9942c4a6e463f81c790ff749e56f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ad55e9942c4a6e463f81c790ff749e56f">CLK_PERI_SELECTED</a></td></tr>
+<tr class="memdesc:ad55e9942c4a6e463f81c790ff749e56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:ad55e9942c4a6e463f81c790ff749e56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75ec81673295797b7a94dfa018e4cea" id="r_af75ec81673295797b7a94dfa018e4cea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#af75ec81673295797b7a94dfa018e4cea">CLK_REF_CTRL</a></td></tr>
+<tr class="memdesc:af75ec81673295797b7a94dfa018e4cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:af75ec81673295797b7a94dfa018e4cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe769cca1e94b8b2163093b5992a7c18" id="r_abe769cca1e94b8b2163093b5992a7c18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#abe769cca1e94b8b2163093b5992a7c18">CLK_REF_DIV</a></td></tr>
+<tr class="memdesc:abe769cca1e94b8b2163093b5992a7c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:abe769cca1e94b8b2163093b5992a7c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d34b4908c0e95c8e4fa7efd1de28258" id="r_a8d34b4908c0e95c8e4fa7efd1de28258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a8d34b4908c0e95c8e4fa7efd1de28258">CLK_REF_SELECTED</a></td></tr>
+<tr class="memdesc:a8d34b4908c0e95c8e4fa7efd1de28258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:a8d34b4908c0e95c8e4fa7efd1de28258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4532ca779d0bf3c16331103f6cc6f6f4" id="r_a4532ca779d0bf3c16331103f6cc6f6f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a4532ca779d0bf3c16331103f6cc6f6f4">CLK_RTC_CTRL</a></td></tr>
+<tr class="memdesc:a4532ca779d0bf3c16331103f6cc6f6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:a4532ca779d0bf3c16331103f6cc6f6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6519b29a14c5276d1f08815c759af4" id="r_afe6519b29a14c5276d1f08815c759af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#afe6519b29a14c5276d1f08815c759af4">CLK_RTC_DIV</a></td></tr>
+<tr class="memdesc:afe6519b29a14c5276d1f08815c759af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:afe6519b29a14c5276d1f08815c759af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d76b745e657730bcf3af914f6b3661" id="r_a59d76b745e657730bcf3af914f6b3661"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a59d76b745e657730bcf3af914f6b3661">CLK_RTC_SELECTED</a></td></tr>
+<tr class="memdesc:a59d76b745e657730bcf3af914f6b3661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:a59d76b745e657730bcf3af914f6b3661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42ee5390797cb59ecf1244481775aca" id="r_ab42ee5390797cb59ecf1244481775aca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ab42ee5390797cb59ecf1244481775aca">CLK_SYS_CTRL</a></td></tr>
+<tr class="memdesc:ab42ee5390797cb59ecf1244481775aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:ab42ee5390797cb59ecf1244481775aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080660b88f4b9190be517fc00055e74f" id="r_a080660b88f4b9190be517fc00055e74f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a080660b88f4b9190be517fc00055e74f">CLK_SYS_DIV</a></td></tr>
+<tr class="memdesc:a080660b88f4b9190be517fc00055e74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:a080660b88f4b9190be517fc00055e74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c80acf9248bf79982f52b74cd6336b" id="r_af8c80acf9248bf79982f52b74cd6336b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#af8c80acf9248bf79982f52b74cd6336b">CLK_SYS_RESUS_CTRL</a></td></tr>
+<tr class="memdesc:af8c80acf9248bf79982f52b74cd6336b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CLK_SYS_RESUS_CTRL <br  />
+  <br /></td></tr>
+<tr class="separator:af8c80acf9248bf79982f52b74cd6336b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d57816be9457cd57de4726fd5310dc" id="r_a14d57816be9457cd57de4726fd5310dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a14d57816be9457cd57de4726fd5310dc">CLK_SYS_RESUS_STATUS</a></td></tr>
+<tr class="memdesc:a14d57816be9457cd57de4726fd5310dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">CLK_SYS_RESUS_STATUS <br  />
+  <br /></td></tr>
+<tr class="separator:a14d57816be9457cd57de4726fd5310dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9823b61316c2571aaaaaafcfed17154" id="r_ae9823b61316c2571aaaaaafcfed17154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ae9823b61316c2571aaaaaafcfed17154">CLK_SYS_SELECTED</a></td></tr>
+<tr class="memdesc:ae9823b61316c2571aaaaaafcfed17154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:ae9823b61316c2571aaaaaafcfed17154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8729e2a33e0b4abe6f5df16eab977af1" id="r_a8729e2a33e0b4abe6f5df16eab977af1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a8729e2a33e0b4abe6f5df16eab977af1">CLK_USB_CTRL</a></td></tr>
+<tr class="memdesc:a8729e2a33e0b4abe6f5df16eab977af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+  <br /></td></tr>
+<tr class="separator:a8729e2a33e0b4abe6f5df16eab977af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c26951260420bae0e4203b005079dad" id="r_a2c26951260420bae0e4203b005079dad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a2c26951260420bae0e4203b005079dad">CLK_USB_DIV</a></td></tr>
+<tr class="memdesc:a2c26951260420bae0e4203b005079dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor, can be changed on-the-fly <br  />
+  <br /></td></tr>
+<tr class="separator:a2c26951260420bae0e4203b005079dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7e067f49dc30d3f923d9823724b6b6" id="r_a0b7e067f49dc30d3f923d9823724b6b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a0b7e067f49dc30d3f923d9823724b6b6">CLK_USB_SELECTED</a></td></tr>
+<tr class="memdesc:a0b7e067f49dc30d3f923d9823724b6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which SRC is currently selected by the glitchless mux (one-hot).  <br /></td></tr>
+<tr class="separator:a0b7e067f49dc30d3f923d9823724b6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7827704549a21bdbfee441ea94780f6" id="r_ae7827704549a21bdbfee441ea94780f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ae7827704549a21bdbfee441ea94780f6">DFTCLK_LPOSC_CTRL</a></td></tr>
+<tr class="memdesc:ae7827704549a21bdbfee441ea94780f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFTCLK_LPOSC_CTRL <br  />
+  <br /></td></tr>
+<tr class="separator:ae7827704549a21bdbfee441ea94780f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd94931e7bcc1a7fec89c709aaba8e5" id="r_a9bd94931e7bcc1a7fec89c709aaba8e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a9bd94931e7bcc1a7fec89c709aaba8e5">DFTCLK_ROSC_CTRL</a></td></tr>
+<tr class="memdesc:a9bd94931e7bcc1a7fec89c709aaba8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFTCLK_ROSC_CTRL <br  />
+  <br /></td></tr>
+<tr class="separator:a9bd94931e7bcc1a7fec89c709aaba8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a7de71159ce4a7cd843d7144bcd5a7" id="r_a75a7de71159ce4a7cd843d7144bcd5a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a75a7de71159ce4a7cd843d7144bcd5a7">DFTCLK_XOSC_CTRL</a></td></tr>
+<tr class="memdesc:a75a7de71159ce4a7cd843d7144bcd5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">DFTCLK_XOSC_CTRL <br  />
+  <br /></td></tr>
+<tr class="separator:a75a7de71159ce4a7cd843d7144bcd5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2c3d43de15c1c829f67a7f29f0cd08" id="r_aed2c3d43de15c1c829f67a7f29f0cd08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#aed2c3d43de15c1c829f67a7f29f0cd08">ENABLED0</a></td></tr>
+<tr class="memdesc:aed2c3d43de15c1c829f67a7f29f0cd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicates the state of the clock enable <br  />
+  <br /></td></tr>
+<tr class="separator:aed2c3d43de15c1c829f67a7f29f0cd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d282eb7592547c7a2efdafffcd558a" id="r_a81d282eb7592547c7a2efdafffcd558a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a81d282eb7592547c7a2efdafffcd558a">ENABLED1</a></td></tr>
+<tr class="memdesc:a81d282eb7592547c7a2efdafffcd558a"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicates the state of the clock enable <br  />
+  <br /></td></tr>
+<tr class="separator:a81d282eb7592547c7a2efdafffcd558a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0dba7794f5f59ae02d721f4ff664717" id="r_ae0dba7794f5f59ae02d721f4ff664717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ae0dba7794f5f59ae02d721f4ff664717">FC0_DELAY</a></td></tr>
+<tr class="memdesc:ae0dba7794f5f59ae02d721f4ff664717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delays the start of frequency counting to allow the mux to settle Delay is measured in multiples of the reference clock period <br  />
+  <br /></td></tr>
+<tr class="separator:ae0dba7794f5f59ae02d721f4ff664717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d6674e1b0904be0a2c631a6e8b3f5a" id="r_a25d6674e1b0904be0a2c631a6e8b3f5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a25d6674e1b0904be0a2c631a6e8b3f5a">FC0_INTERVAL</a></td></tr>
+<tr class="memdesc:a25d6674e1b0904be0a2c631a6e8b3f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The test interval is 0.98us * 2**interval, but let's call it 1us * 2**interval The default gives a test interval of 250us <br  />
+  <br /></td></tr>
+<tr class="separator:a25d6674e1b0904be0a2c631a6e8b3f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7152ddc9e9eab1e8687ae4de23f4212a" id="r_a7152ddc9e9eab1e8687ae4de23f4212a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a7152ddc9e9eab1e8687ae4de23f4212a">FC0_MAX_KHZ</a></td></tr>
+<tr class="memdesc:a7152ddc9e9eab1e8687ae4de23f4212a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum pass frequency in kHz.  <br /></td></tr>
+<tr class="separator:a7152ddc9e9eab1e8687ae4de23f4212a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7715bc55596afd52a6eb3bcbb6d49b6" id="r_ac7715bc55596afd52a6eb3bcbb6d49b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ac7715bc55596afd52a6eb3bcbb6d49b6">FC0_MIN_KHZ</a></td></tr>
+<tr class="memdesc:ac7715bc55596afd52a6eb3bcbb6d49b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum pass frequency in kHz.  <br /></td></tr>
+<tr class="separator:ac7715bc55596afd52a6eb3bcbb6d49b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34802e9aa5c3ed4b1e38f2019ec75f8" id="r_ad34802e9aa5c3ed4b1e38f2019ec75f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ad34802e9aa5c3ed4b1e38f2019ec75f8">FC0_REF_KHZ</a></td></tr>
+<tr class="memdesc:ad34802e9aa5c3ed4b1e38f2019ec75f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference clock frequency in kHz <br  />
+  <br /></td></tr>
+<tr class="separator:ad34802e9aa5c3ed4b1e38f2019ec75f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55cbe8dcec7e22e8e79da639f0b18b8" id="r_ac55cbe8dcec7e22e8e79da639f0b18b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ac55cbe8dcec7e22e8e79da639f0b18b8">FC0_RESULT</a></td></tr>
+<tr class="memdesc:ac55cbe8dcec7e22e8e79da639f0b18b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of frequency measurement, only valid when status_done=1 <br  />
+  <br /></td></tr>
+<tr class="separator:ac55cbe8dcec7e22e8e79da639f0b18b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26f4550c4bcadae533a55301bf36335" id="r_ac26f4550c4bcadae533a55301bf36335"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#ac26f4550c4bcadae533a55301bf36335">FC0_SRC</a></td></tr>
+<tr class="memdesc:ac26f4550c4bcadae533a55301bf36335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock sent to frequency counter, set to 0 when not required Writing to this register initiates the frequency count <br  />
+  <br /></td></tr>
+<tr class="separator:ac26f4550c4bcadae533a55301bf36335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05dd01002aa2235dbb2d76bedaf261b8" id="r_a05dd01002aa2235dbb2d76bedaf261b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a05dd01002aa2235dbb2d76bedaf261b8">FC0_STATUS</a></td></tr>
+<tr class="memdesc:a05dd01002aa2235dbb2d76bedaf261b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequency counter status <br  />
+  <br /></td></tr>
+<tr class="separator:a05dd01002aa2235dbb2d76bedaf261b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a1bb6a17fc3b27f7653052a62f1c69" id="r_a86a1bb6a17fc3b27f7653052a62f1c69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a86a1bb6a17fc3b27f7653052a62f1c69">INTE</a></td></tr>
+<tr class="memdesc:a86a1bb6a17fc3b27f7653052a62f1c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable <br  />
+  <br /></td></tr>
+<tr class="separator:a86a1bb6a17fc3b27f7653052a62f1c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713e43b4c6bdc15960368d789d6157f0" id="r_a713e43b4c6bdc15960368d789d6157f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a713e43b4c6bdc15960368d789d6157f0">INTF</a></td></tr>
+<tr class="memdesc:a713e43b4c6bdc15960368d789d6157f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force <br  />
+  <br /></td></tr>
+<tr class="separator:a713e43b4c6bdc15960368d789d6157f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef54c6a65e04da18de6e2033a0d4267a" id="r_aef54c6a65e04da18de6e2033a0d4267a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#aef54c6a65e04da18de6e2033a0d4267a">INTR</a></td></tr>
+<tr class="memdesc:aef54c6a65e04da18de6e2033a0d4267a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupts <br  />
+  <br /></td></tr>
+<tr class="separator:aef54c6a65e04da18de6e2033a0d4267a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f6ed788541eadbce429d28ad63e5cc" id="r_a54f6ed788541eadbce429d28ad63e5cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a54f6ed788541eadbce429d28ad63e5cc">INTS</a></td></tr>
+<tr class="memdesc:a54f6ed788541eadbce429d28ad63e5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing <br  />
+  <br /></td></tr>
+<tr class="separator:a54f6ed788541eadbce429d28ad63e5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1ab1eec620848924138ff11b1b1ba7" id="r_a2d1ab1eec620848924138ff11b1b1ba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a2d1ab1eec620848924138ff11b1b1ba7">SLEEP_EN0</a></td></tr>
+<tr class="memdesc:a2d1ab1eec620848924138ff11b1b1ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable clock in sleep mode <br  />
+  <br /></td></tr>
+<tr class="separator:a2d1ab1eec620848924138ff11b1b1ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13028dc0b1c7c7260fc8d331203b8343" id="r_a13028dc0b1c7c7260fc8d331203b8343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a13028dc0b1c7c7260fc8d331203b8343">SLEEP_EN1</a></td></tr>
+<tr class="memdesc:a13028dc0b1c7c7260fc8d331203b8343"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable clock in sleep mode <br  />
+  <br /></td></tr>
+<tr class="separator:a13028dc0b1c7c7260fc8d331203b8343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53389e82a5c33e9d7b75271b3444a5ec" id="r_a53389e82a5c33e9d7b75271b3444a5ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#a53389e82a5c33e9d7b75271b3444a5ec">WAKE_EN0</a></td></tr>
+<tr class="memdesc:a53389e82a5c33e9d7b75271b3444a5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable clock in wake mode <br  />
+  <br /></td></tr>
+<tr class="separator:a53389e82a5c33e9d7b75271b3444a5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe333acb07890dcd14c0fff121c967eb" id="r_afe333acb07890dcd14c0fff121c967eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCLOCKS__Type.html#afe333acb07890dcd14c0fff121c967eb">WAKE_EN1</a></td></tr>
+<tr class="memdesc:afe333acb07890dcd14c0fff121c967eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable clock in wake mode <br  />
+  <br /></td></tr>
+<tr class="separator:afe333acb07890dcd14c0fff121c967eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>CLOCKS (CLOCKS) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a8176c9bf1d47abed69bbd32cb81b0fa0" name="a8176c9bf1d47abed69bbd32cb81b0fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8176c9bf1d47abed69bbd32cb81b0fa0">&#9670;&#160;</a></span>CLK_ADC_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_ADC_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab1a6e46fa929669dea7834853ec9d47c" name="ab1a6e46fa929669dea7834853ec9d47c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a6e46fa929669dea7834853ec9d47c">&#9670;&#160;</a></span>CLK_ADC_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_ADC_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_ADC_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="addcb3eb969fff23b4ebf23bb248b28ad" name="addcb3eb969fff23b4ebf23bb248b28ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addcb3eb969fff23b4ebf23bb248b28ad">&#9670;&#160;</a></span>CLK_ADC_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_ADC_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a455a18571eea49076b41d838e144f7cf" name="a455a18571eea49076b41d838e144f7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a455a18571eea49076b41d838e144f7cf">&#9670;&#160;</a></span>CLK_GPOUT0_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT0_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; CLOCKS Structure <br  />
+ </p>
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="af7ebbe9747f5d03239369f170b4fdcdb" name="af7ebbe9747f5d03239369f170b4fdcdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ebbe9747f5d03239369f170b4fdcdb">&#9670;&#160;</a></span>CLK_GPOUT0_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT0_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_GPOUT0_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="abf657673b48db6a879b755da3e3b530a" name="abf657673b48db6a879b755da3e3b530a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf657673b48db6a879b755da3e3b530a">&#9670;&#160;</a></span>CLK_GPOUT0_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT0_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a01ebb8f5812462a48306a1e57b882337" name="a01ebb8f5812462a48306a1e57b882337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ebb8f5812462a48306a1e57b882337">&#9670;&#160;</a></span>CLK_GPOUT1_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT1_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0c17123b4d409cf0173a298e1b4ca50c" name="a0c17123b4d409cf0173a298e1b4ca50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c17123b4d409cf0173a298e1b4ca50c">&#9670;&#160;</a></span>CLK_GPOUT1_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT1_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_GPOUT1_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae6fbcf688e246a26abde546718d8d0b5" name="ae6fbcf688e246a26abde546718d8d0b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fbcf688e246a26abde546718d8d0b5">&#9670;&#160;</a></span>CLK_GPOUT1_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT1_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a6b33894f91e8094620707545cfbbf217" name="a6b33894f91e8094620707545cfbbf217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b33894f91e8094620707545cfbbf217">&#9670;&#160;</a></span>CLK_GPOUT2_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT2_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a05a373a1901dc18a8cfa98c6d60c4525" name="a05a373a1901dc18a8cfa98c6d60c4525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a373a1901dc18a8cfa98c6d60c4525">&#9670;&#160;</a></span>CLK_GPOUT2_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT2_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_GPOUT2_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0454f7505818bce2d92c99085e760f16" name="a0454f7505818bce2d92c99085e760f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0454f7505818bce2d92c99085e760f16">&#9670;&#160;</a></span>CLK_GPOUT2_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT2_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="aab5bcd361a5db25d446578e4d454129d" name="aab5bcd361a5db25d446578e4d454129d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5bcd361a5db25d446578e4d454129d">&#9670;&#160;</a></span>CLK_GPOUT3_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT3_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4388ab2e6f1a5a06414b56cc1bc48d07" name="a4388ab2e6f1a5a06414b56cc1bc48d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4388ab2e6f1a5a06414b56cc1bc48d07">&#9670;&#160;</a></span>CLK_GPOUT3_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT3_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_GPOUT3_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="a780255cdee5b0cb039f4ae05ee131819" name="a780255cdee5b0cb039f4ae05ee131819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780255cdee5b0cb039f4ae05ee131819">&#9670;&#160;</a></span>CLK_GPOUT3_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_GPOUT3_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ad6ac838e713937a0e0f43bef279187c1" name="ad6ac838e713937a0e0f43bef279187c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ac838e713937a0e0f43bef279187c1">&#9670;&#160;</a></span>CLK_HSTX_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_HSTX_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a554af7ed2c94100c577ce1124a2ccce1" name="a554af7ed2c94100c577ce1124a2ccce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554af7ed2c94100c577ce1124a2ccce1">&#9670;&#160;</a></span>CLK_HSTX_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_HSTX_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CLK_HSTX_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="a945883c74b226870fd00aa3353914344" name="a945883c74b226870fd00aa3353914344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945883c74b226870fd00aa3353914344">&#9670;&#160;</a></span>CLK_HSTX_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_HSTX_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which src is currently selected (one-hot) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a60abb73bb1e34174b69f474defd5693b" name="a60abb73bb1e34174b69f474defd5693b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60abb73bb1e34174b69f474defd5693b">&#9670;&#160;</a></span>CLK_PERI_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_PERI_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a103955a9fc19192437a92749793e72f9" name="a103955a9fc19192437a92749793e72f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103955a9fc19192437a92749793e72f9">&#9670;&#160;</a></span>CLK_PERI_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_PERI_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_PERI_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad55e9942c4a6e463f81c790ff749e56f" name="ad55e9942c4a6e463f81c790ff749e56f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55e9942c4a6e463f81c790ff749e56f">&#9670;&#160;</a></span>CLK_PERI_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_PERI_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="af75ec81673295797b7a94dfa018e4cea" name="af75ec81673295797b7a94dfa018e4cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75ec81673295797b7a94dfa018e4cea">&#9670;&#160;</a></span>CLK_REF_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_REF_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="abe769cca1e94b8b2163093b5992a7c18" name="abe769cca1e94b8b2163093b5992a7c18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe769cca1e94b8b2163093b5992a7c18">&#9670;&#160;</a></span>CLK_REF_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_REF_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_REF_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8d34b4908c0e95c8e4fa7efd1de28258" name="a8d34b4908c0e95c8e4fa7efd1de28258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d34b4908c0e95c8e4fa7efd1de28258">&#9670;&#160;</a></span>CLK_REF_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_REF_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a4532ca779d0bf3c16331103f6cc6f6f4" name="a4532ca779d0bf3c16331103f6cc6f6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4532ca779d0bf3c16331103f6cc6f6f4">&#9670;&#160;</a></span>CLK_RTC_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_RTC_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="afe6519b29a14c5276d1f08815c759af4" name="afe6519b29a14c5276d1f08815c759af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6519b29a14c5276d1f08815c759af4">&#9670;&#160;</a></span>CLK_RTC_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_RTC_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+
+</div>
+</div>
+<a id="a59d76b745e657730bcf3af914f6b3661" name="a59d76b745e657730bcf3af914f6b3661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d76b745e657730bcf3af914f6b3661">&#9670;&#160;</a></span>CLK_RTC_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_RTC_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ab42ee5390797cb59ecf1244481775aca" name="ab42ee5390797cb59ecf1244481775aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42ee5390797cb59ecf1244481775aca">&#9670;&#160;</a></span>CLK_SYS_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_SYS_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a080660b88f4b9190be517fc00055e74f" name="a080660b88f4b9190be517fc00055e74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a080660b88f4b9190be517fc00055e74f">&#9670;&#160;</a></span>CLK_SYS_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_SYS_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_SYS_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="af8c80acf9248bf79982f52b74cd6336b" name="af8c80acf9248bf79982f52b74cd6336b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c80acf9248bf79982f52b74cd6336b">&#9670;&#160;</a></span>CLK_SYS_RESUS_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_SYS_RESUS_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CLK_SYS_RESUS_CTRL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a14d57816be9457cd57de4726fd5310dc" name="a14d57816be9457cd57de4726fd5310dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d57816be9457cd57de4726fd5310dc">&#9670;&#160;</a></span>CLK_SYS_RESUS_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_SYS_RESUS_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CLK_SYS_RESUS_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae9823b61316c2571aaaaaafcfed17154" name="ae9823b61316c2571aaaaaafcfed17154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9823b61316c2571aaaaaafcfed17154">&#9670;&#160;</a></span>CLK_SYS_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_SYS_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a8729e2a33e0b4abe6f5df16eab977af1" name="a8729e2a33e0b4abe6f5df16eab977af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8729e2a33e0b4abe6f5df16eab977af1">&#9670;&#160;</a></span>CLK_USB_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_USB_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock control, can be changed on-the-fly (except for auxsrc) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2c26951260420bae0e4203b005079dad" name="a2c26951260420bae0e4203b005079dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c26951260420bae0e4203b005079dad">&#9670;&#160;</a></span>CLK_USB_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_USB_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor, can be changed on-the-fly <br  />
+ </p>
+<p>CLK_USB_DIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0b7e067f49dc30d3f923d9823724b6b6" name="a0b7e067f49dc30d3f923d9823724b6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7e067f49dc30d3f923d9823724b6b6">&#9670;&#160;</a></span>CLK_USB_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::CLK_USB_SELECTED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which SRC is currently selected by the glitchless mux (one-hot). </p>
+<p>Indicates which src is currently selected (one-hot) <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ae7827704549a21bdbfee441ea94780f6" name="ae7827704549a21bdbfee441ea94780f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7827704549a21bdbfee441ea94780f6">&#9670;&#160;</a></span>DFTCLK_LPOSC_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::DFTCLK_LPOSC_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DFTCLK_LPOSC_CTRL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9bd94931e7bcc1a7fec89c709aaba8e5" name="a9bd94931e7bcc1a7fec89c709aaba8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd94931e7bcc1a7fec89c709aaba8e5">&#9670;&#160;</a></span>DFTCLK_ROSC_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::DFTCLK_ROSC_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DFTCLK_ROSC_CTRL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a75a7de71159ce4a7cd843d7144bcd5a7" name="a75a7de71159ce4a7cd843d7144bcd5a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a7de71159ce4a7cd843d7144bcd5a7">&#9670;&#160;</a></span>DFTCLK_XOSC_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::DFTCLK_XOSC_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DFTCLK_XOSC_CTRL <br  />
+ </p>
+
+</div>
+</div>
+<a id="aed2c3d43de15c1c829f67a7f29f0cd08" name="aed2c3d43de15c1c829f67a7f29f0cd08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2c3d43de15c1c829f67a7f29f0cd08">&#9670;&#160;</a></span>ENABLED0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::ENABLED0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>indicates the state of the clock enable <br  />
+ </p>
+
+</div>
+</div>
+<a id="a81d282eb7592547c7a2efdafffcd558a" name="a81d282eb7592547c7a2efdafffcd558a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d282eb7592547c7a2efdafffcd558a">&#9670;&#160;</a></span>ENABLED1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::ENABLED1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>indicates the state of the clock enable <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae0dba7794f5f59ae02d721f4ff664717" name="ae0dba7794f5f59ae02d721f4ff664717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0dba7794f5f59ae02d721f4ff664717">&#9670;&#160;</a></span>FC0_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_DELAY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delays the start of frequency counting to allow the mux to settle Delay is measured in multiples of the reference clock period <br  />
+ </p>
+
+</div>
+</div>
+<a id="a25d6674e1b0904be0a2c631a6e8b3f5a" name="a25d6674e1b0904be0a2c631a6e8b3f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d6674e1b0904be0a2c631a6e8b3f5a">&#9670;&#160;</a></span>FC0_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_INTERVAL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The test interval is 0.98us * 2**interval, but let's call it 1us * 2**interval The default gives a test interval of 250us <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7152ddc9e9eab1e8687ae4de23f4212a" name="a7152ddc9e9eab1e8687ae4de23f4212a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7152ddc9e9eab1e8687ae4de23f4212a">&#9670;&#160;</a></span>FC0_MAX_KHZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_MAX_KHZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum pass frequency in kHz. </p>
+<p>This is optional. Set to 0x1ffffff if you are not using the pass/fail flags <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac7715bc55596afd52a6eb3bcbb6d49b6" name="ac7715bc55596afd52a6eb3bcbb6d49b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7715bc55596afd52a6eb3bcbb6d49b6">&#9670;&#160;</a></span>FC0_MIN_KHZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_MIN_KHZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimum pass frequency in kHz. </p>
+<p>This is optional. Set to 0 if you are not using the pass/fail flags <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad34802e9aa5c3ed4b1e38f2019ec75f8" name="ad34802e9aa5c3ed4b1e38f2019ec75f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34802e9aa5c3ed4b1e38f2019ec75f8">&#9670;&#160;</a></span>FC0_REF_KHZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_REF_KHZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference clock frequency in kHz <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac55cbe8dcec7e22e8e79da639f0b18b8" name="ac55cbe8dcec7e22e8e79da639f0b18b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55cbe8dcec7e22e8e79da639f0b18b8">&#9670;&#160;</a></span>FC0_RESULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_RESULT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Result of frequency measurement, only valid when status_done=1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac26f4550c4bcadae533a55301bf36335" name="ac26f4550c4bcadae533a55301bf36335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26f4550c4bcadae533a55301bf36335">&#9670;&#160;</a></span>FC0_SRC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_SRC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock sent to frequency counter, set to 0 when not required Writing to this register initiates the frequency count <br  />
+ </p>
+
+</div>
+</div>
+<a id="a05dd01002aa2235dbb2d76bedaf261b8" name="a05dd01002aa2235dbb2d76bedaf261b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05dd01002aa2235dbb2d76bedaf261b8">&#9670;&#160;</a></span>FC0_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::FC0_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frequency counter status <br  />
+ </p>
+
+</div>
+</div>
+<a id="a86a1bb6a17fc3b27f7653052a62f1c69" name="a86a1bb6a17fc3b27f7653052a62f1c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a1bb6a17fc3b27f7653052a62f1c69">&#9670;&#160;</a></span>INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable <br  />
+ </p>
+
+</div>
+</div>
+<a id="a713e43b4c6bdc15960368d789d6157f0" name="a713e43b4c6bdc15960368d789d6157f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713e43b4c6bdc15960368d789d6157f0">&#9670;&#160;</a></span>INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force <br  />
+ </p>
+
+</div>
+</div>
+<a id="aef54c6a65e04da18de6e2033a0d4267a" name="aef54c6a65e04da18de6e2033a0d4267a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef54c6a65e04da18de6e2033a0d4267a">&#9670;&#160;</a></span>INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupts <br  />
+ </p>
+
+</div>
+</div>
+<a id="a54f6ed788541eadbce429d28ad63e5cc" name="a54f6ed788541eadbce429d28ad63e5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f6ed788541eadbce429d28ad63e5cc">&#9670;&#160;</a></span>INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2d1ab1eec620848924138ff11b1b1ba7" name="a2d1ab1eec620848924138ff11b1b1ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1ab1eec620848924138ff11b1b1ba7">&#9670;&#160;</a></span>SLEEP_EN0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::SLEEP_EN0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable clock in sleep mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a13028dc0b1c7c7260fc8d331203b8343" name="a13028dc0b1c7c7260fc8d331203b8343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13028dc0b1c7c7260fc8d331203b8343">&#9670;&#160;</a></span>SLEEP_EN1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::SLEEP_EN1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable clock in sleep mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a53389e82a5c33e9d7b75271b3444a5ec" name="a53389e82a5c33e9d7b75271b3444a5ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53389e82a5c33e9d7b75271b3444a5ec">&#9670;&#160;</a></span>WAKE_EN0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::WAKE_EN0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable clock in wake mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="afe333acb07890dcd14c0fff121c967eb" name="afe333acb07890dcd14c0fff121c967eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe333acb07890dcd14c0fff121c967eb">&#9670;&#160;</a></span>WAKE_EN1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> CLOCKS_Type::WAKE_EN1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable clock in wake mode <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structCLOCKS__Type.html">CLOCKS_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

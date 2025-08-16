@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de pio_assembler.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('pio__assembler_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">pio_assembler.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="pio__assembler_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _PIO_ASSEMBLER_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _PIO_ASSEMBLER_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="parser_8hpp.html">parser.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="output__format_8h.html">output_format.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// Give Flex the prototype of yylex we want ...</span></div>
+<div class="foldopen" id="foldopen00015" data-start="" data-end="">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="pio__assembler_8h.html#ae5b01ac2fa5a6ad5fb97559638abe686">   15</a></span><span class="preprocessor"># define YY_DECL \</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">  yy::parser::symbol_type yylex (pio_assembler&amp; pioasm)</span></div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// ... and declare it for the parser&#39;s sake.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="pio__assembler_8h.html#abcefb20c54ce0f92452cfbb9cf657670">   18</a></span><a class="code hl_define" href="pio__assembler_8h.html#ae5b01ac2fa5a6ad5fb97559638abe686">YY_DECL</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structpio__assembler.html">   20</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structpio__assembler.html">pio_assembler</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ad8286076cf750305a413fb4b30dd92ca">   22</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="structyy_1_1parser_1_1syntax__error.html">syntax_error</a> = <a class="code hl_struct" href="structyy_1_1parser_1_1syntax__error.html">yy::parser::syntax_error</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ab8016631d1eba556aaca734c22c2c9b0">   23</a></span>    <span class="keyword">using </span><a class="code hl_class" href="classyy_1_1location.html">location_type</a> = <a class="code hl_typedef" href="classyy_1_1parser.html#a6cee0517f5ed9774dd68ee189b62e454">yy::parser::location_type</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a9a447b56b0cff5d3d952b82bfab8cf73">   24</a></span>    <span class="keyword">using </span><a class="code hl_class" href="classyy_1_1position.html">position</a> = <a class="code hl_class" href="classyy_1_1position.html">yy::position</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a55561925fac1aaccb9762c8363e02953">   26</a></span>    std::shared_ptr&lt;program&gt; <a class="code hl_variable" href="structpio__assembler.html#a55561925fac1aaccb9762c8363e02953">dummy_global_program</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">   27</a></span>    std::vector&lt;program&gt; <a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a2154ec1834449caea0ad3e97a9799f55">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structpio__assembler.html#a2154ec1834449caea0ad3e97a9799f55">error_count</a> = 0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="structpio__assembler.html#ae2670fe354e40cd556d80badb28f8c58">pio_assembler</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ae9c74a29926e63fc6fb070571417bfdc">   32</a></span>    std::shared_ptr&lt;output_format&gt; <a class="code hl_variable" href="structpio__assembler.html#ae9c74a29926e63fc6fb070571417bfdc">format</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// The name of the file being parsed.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a26cbd52dffbda4c77d6455074755bba7">   34</a></span>    std::string <a class="code hl_variable" href="structpio__assembler.html#a26cbd52dffbda4c77d6455074755bba7">source</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// name of the output file or &quot;-&quot; for stdout</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a9a98efc9fe11303c296f286472604853">   36</a></span>    std::string <a class="code hl_variable" href="structpio__assembler.html#a9a98efc9fe11303c296f286472604853">dest</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ac5a0a73056b8b3c4fa8544873a86be70">   37</a></span>    std::vector&lt;std::string&gt; <a class="code hl_variable" href="structpio__assembler.html#ac5a0a73056b8b3c4fa8544873a86be70">options</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a16823fb61a5e7f66bbb26ec274f43a15">   38</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structpio__assembler.html#a16823fb61a5e7f66bbb26ec274f43a15">default_pio_version</a> = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structpio__assembler.html#a97a8ea8de4a9383290d6ec35d9077b06">write_output</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ab5288befceaab7eebe2cc82bef3286c5">   42</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structpio__assembler.html#ab5288befceaab7eebe2cc82bef3286c5">add_program</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyy_1_1location.html">yy::location</a> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">l</a>, <span class="keyword">const</span> std::string &amp;name) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">if</span> (std::find_if(<a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.begin(), <a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.end(), [&amp;](<span class="keyword">const</span> <a class="code hl_struct" href="structprogram.html">program</a> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>) { return p.name == name; }) ==</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.end()) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.emplace_back(<span class="keyword">this</span>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">l</a>, name);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>[<a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.size()-1].pio_version = <a class="code hl_function" href="structpio__assembler.html#a0f22417c5024563de3e0e0166d830ec0">get_default_pio_version</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a396c46b107ef74d3fc5712cae0f0d173">   53</a></span>    <a class="code hl_struct" href="structprogram.html">program</a> &amp;<a class="code hl_function" href="structpio__assembler.html#a396c46b107ef74d3fc5712cae0f0d173">get_dummy_global_program</a>() {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="structpio__assembler.html#a55561925fac1aaccb9762c8363e02953">dummy_global_program</a>) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="structpio__assembler.html#a55561925fac1aaccb9762c8363e02953">dummy_global_program</a> = std::shared_ptr&lt;program&gt;(<span class="keyword">new</span> <a class="code hl_struct" href="structprogram.html">program</a>(<span class="keyword">this</span>, <a class="code hl_class" href="classyy_1_1location.html">yy::location</a>(&amp;<a class="code hl_variable" href="structpio__assembler.html#a26cbd52dffbda4c77d6455074755bba7">source</a>), <span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="structpio__assembler.html#a55561925fac1aaccb9762c8363e02953">dummy_global_program</a>-&gt;pio_version = <a class="code hl_variable" href="structpio__assembler.html#a16823fb61a5e7f66bbb26ec274f43a15">default_pio_version</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> *<a class="code hl_variable" href="structpio__assembler.html#a55561925fac1aaccb9762c8363e02953">dummy_global_program</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ae9b9ebf12bc734fd41a44355ad3be3ef">   61</a></span>    <a class="code hl_struct" href="structprogram.html">program</a> &amp;<a class="code hl_function" href="structpio__assembler.html#ae9b9ebf12bc734fd41a44355ad3be3ef">get_current_program</a>(<span class="keyword">const</span> <a class="code hl_class" href="classyy_1_1location.html">location_type</a> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">l</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">requiring_program</a>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                                 <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">before_any_instructions</a> = <span class="keyword">false</span>, <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">disallow_global</a> = <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.empty()) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">disallow_global</a>) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                std::stringstream <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a> &lt;&lt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">requiring_program</a> &lt;&lt; <span class="stringliteral">&quot; is invalid outside of a program&quot;</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">throw</span> <a class="code hl_typedef" href="structpio__assembler.html#ad8286076cf750305a413fb4b30dd92ca">syntax_error</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">l</a>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a>.str());</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="structpio__assembler.html#a396c46b107ef74d3fc5712cae0f0d173">get_dummy_global_program</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">auto</span> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a> = <a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>[<a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.size() - 1];</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">before_any_instructions</a> &amp;&amp; !<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>.instructions.empty()) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            std::stringstream <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a> &lt;&lt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">requiring_program</a> &lt;&lt; <span class="stringliteral">&quot; must precede any program instructions&quot;</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">throw</span> <a class="code hl_typedef" href="structpio__assembler.html#ad8286076cf750305a413fb4b30dd92ca">syntax_error</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">l</a>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a>.str());</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a0f22417c5024563de3e0e0166d830ec0">   80</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structpio__assembler.html#a0f22417c5024563de3e0e0166d830ec0">get_default_pio_version</a>() {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structpio__assembler.html#a396c46b107ef74d3fc5712cae0f0d173">get_dummy_global_program</a>().<a class="code hl_variable" href="structprogram.html#adb143efc4704a1d8b851a07ba9db6773">pio_version</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a133370e4a9a721d74931222b5fd2379d">   84</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structpio__assembler.html#a133370e4a9a721d74931222b5fd2379d">get_current_pio_version</a>() {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.empty()) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keyword">auto</span> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a> = <a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>[<a class="code hl_variable" href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">programs</a>.size() - 1];</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>.pio_version;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structpio__assembler.html#a0f22417c5024563de3e0e0166d830ec0">get_default_pio_version</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// note p may be null for global symbols only</span></div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ab2bfd15780628e71b3d05d3719c31905">   93</a></span>    std::shared_ptr&lt;symbol&gt; <a class="code hl_function" href="structpio__assembler.html#ab2bfd15780628e71b3d05d3719c31905">get_symbol</a>(<span class="keyword">const</span> std::string &amp;name, <span class="keyword">const</span> <a class="code hl_struct" href="structprogram.html">program</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">i</a> = <a class="code hl_function" href="structpio__assembler.html#a396c46b107ef74d3fc5712cae0f0d173">get_dummy_global_program</a>().<a class="code hl_variable" href="structprogram.html#a698273e9ec35c4782a79cb7ac452496a">symbols</a>.find(name);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">i</a> != <a class="code hl_function" href="structpio__assembler.html#a396c46b107ef74d3fc5712cae0f0d173">get_dummy_global_program</a>().symbols.end())</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">i</a>-&gt;second;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">i2</a> = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>-&gt;symbols.find(name);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">i2</a> != <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>-&gt;symbols.end())</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">i2</a>-&gt;second;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="structpio__assembler.html#ae73e14c077c6121a02da297b9030a004">  106</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structpio__assembler.html#ae73e14c077c6121a02da297b9030a004">check_version</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min_version</a>, <span class="keyword">const</span> <a class="code hl_class" href="classyy_1_1location.html">location_type</a> &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">l</a>, std::string <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">feature</a>) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="structpio__assembler.html#a133370e4a9a721d74931222b5fd2379d">get_current_pio_version</a>() &lt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min_version</a>) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            std::stringstream <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a> &lt;&lt; <span class="stringliteral">&quot;PIO version &quot;</span> &lt;&lt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min_version</a> &lt;&lt; <span class="stringliteral">&quot; is required for &#39;&quot;</span> &lt;&lt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">feature</a> &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">throw</span> <a class="code hl_typedef" href="structpio__assembler.html#ad8286076cf750305a413fb4b30dd92ca">syntax_error</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">l</a>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">msg</a>.str());</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structpio__assembler.html#a77dc562c40f8aa8bc2a557f96e7d8683">  114</a></span>    std::string <a class="code hl_function" href="structpio__assembler.html#a77dc562c40f8aa8bc2a557f96e7d8683">version_string</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min_version</a>, std::string <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>, std::string <a class="code hl_variable" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structpio__assembler.html#a133370e4a9a721d74931222b5fd2379d">get_current_pio_version</a>() &gt;= <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min_version</a> ? <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a> : <a class="code hl_variable" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    std::vector&lt;compiled_source::symbol&gt; <a class="code hl_function" href="structpio__assembler.html#ae21487ea13994bca8745fb9326945656">public_symbols</a>(<a class="code hl_struct" href="structprogram.html">program</a> &amp;<a class="code hl_struct" href="structprogram.html">program</a>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="structpio__assembler.html#a45497569074ee35beefaaded201ad9db">generate</a>(std::shared_ptr&lt;output_format&gt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_format</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_source</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_dest</a>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                 <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_options</a> = std::vector&lt;std::string&gt;());</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">// Handling the scanner.</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structpio__assembler.html#a5387345f235c690e4468fe1f7187a127">scan_begin</a>();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structpio__assembler.html#a229a60ffcf8c8fe57830aa84f6ca8f4e">scan_end</a>();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// The token&#39;s location used by the scanner.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="structpio__assembler.html#aad069135a6def881d9cdd9cfdd1d4654">  127</a></span>    <a class="code hl_class" href="classyy_1_1location.html">yy::location</a> <a class="code hl_variable" href="structpio__assembler.html#aad069135a6def881d9cdd9cfdd1d4654">location</a>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>};</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acall__apsr_8h_html_a1510a66dacf9cf3586de5fc89ae2a073"><div class="ttname"><a href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definição</b> call_apsr.h:35</div></div>
+<div class="ttc" id="aclassyy_1_1location_html"><div class="ttname"><a href="classyy_1_1location.html">yy::location</a></div><div class="ttdoc">Two points in a source file.</div><div class="ttdef"><b>Definição</b> location.h:165</div></div>
+<div class="ttc" id="aclassyy_1_1parser_html_a6cee0517f5ed9774dd68ee189b62e454"><div class="ttname"><a href="classyy_1_1parser.html#a6cee0517f5ed9774dd68ee189b62e454">yy::parser::location_type</a></div><div class="ttdeci">location location_type</div><div class="ttdoc">Symbol locations.</div><div class="ttdef"><b>Definição</b> parser.hpp:464</div></div>
+<div class="ttc" id="aclassyy_1_1position_html"><div class="ttname"><a href="classyy_1_1position.html">yy::position</a></div><div class="ttdoc">A point in a source file.</div><div class="ttdef"><b>Definição</b> location.h:60</div></div>
+<div class="ttc" id="aoutput__format_8h_html"><div class="ttname"><a href="output__format_8h.html">output_format.h</a></div></div>
+<div class="ttc" id="aparser_8hpp_html"><div class="ttname"><a href="parser_8hpp.html">parser.hpp</a></div><div class="ttdoc">Define the yy::parser class.</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="apio__assembler_8h_html_ae5b01ac2fa5a6ad5fb97559638abe686"><div class="ttname"><a href="pio__assembler_8h.html#ae5b01ac2fa5a6ad5fb97559638abe686">YY_DECL</a></div><div class="ttdeci">#define YY_DECL</div><div class="ttdef"><b>Definição</b> pio_assembler.h:15</div></div>
+<div class="ttc" id="astructpio__assembler_html"><div class="ttname"><a href="structpio__assembler.html">pio_assembler</a></div><div class="ttdef"><b>Definição</b> pio_assembler.h:20</div></div>
+<div class="ttc" id="astructpio__assembler_html_a0f22417c5024563de3e0e0166d830ec0"><div class="ttname"><a href="structpio__assembler.html#a0f22417c5024563de3e0e0166d830ec0">pio_assembler::get_default_pio_version</a></div><div class="ttdeci">int get_default_pio_version()</div><div class="ttdef"><b>Definição</b> pio_assembler.h:80</div></div>
+<div class="ttc" id="astructpio__assembler_html_a133370e4a9a721d74931222b5fd2379d"><div class="ttname"><a href="structpio__assembler.html#a133370e4a9a721d74931222b5fd2379d">pio_assembler::get_current_pio_version</a></div><div class="ttdeci">int get_current_pio_version()</div><div class="ttdef"><b>Definição</b> pio_assembler.h:84</div></div>
+<div class="ttc" id="astructpio__assembler_html_a16823fb61a5e7f66bbb26ec274f43a15"><div class="ttname"><a href="structpio__assembler.html#a16823fb61a5e7f66bbb26ec274f43a15">pio_assembler::default_pio_version</a></div><div class="ttdeci">int default_pio_version</div><div class="ttdef"><b>Definição</b> pio_assembler.h:38</div></div>
+<div class="ttc" id="astructpio__assembler_html_a2154ec1834449caea0ad3e97a9799f55"><div class="ttname"><a href="structpio__assembler.html#a2154ec1834449caea0ad3e97a9799f55">pio_assembler::error_count</a></div><div class="ttdeci">int error_count</div><div class="ttdef"><b>Definição</b> pio_assembler.h:28</div></div>
+<div class="ttc" id="astructpio__assembler_html_a229a60ffcf8c8fe57830aa84f6ca8f4e"><div class="ttname"><a href="structpio__assembler.html#a229a60ffcf8c8fe57830aa84f6ca8f4e">pio_assembler::scan_end</a></div><div class="ttdeci">void scan_end()</div><div class="ttdef"><b>Definição</b> lexer.cpp:2912</div></div>
+<div class="ttc" id="astructpio__assembler_html_a26cbd52dffbda4c77d6455074755bba7"><div class="ttname"><a href="structpio__assembler.html#a26cbd52dffbda4c77d6455074755bba7">pio_assembler::source</a></div><div class="ttdeci">std::string source</div><div class="ttdef"><b>Definição</b> pio_assembler.h:34</div></div>
+<div class="ttc" id="astructpio__assembler_html_a396c46b107ef74d3fc5712cae0f0d173"><div class="ttname"><a href="structpio__assembler.html#a396c46b107ef74d3fc5712cae0f0d173">pio_assembler::get_dummy_global_program</a></div><div class="ttdeci">program &amp; get_dummy_global_program()</div><div class="ttdef"><b>Definição</b> pio_assembler.h:53</div></div>
+<div class="ttc" id="astructpio__assembler_html_a45497569074ee35beefaaded201ad9db"><div class="ttname"><a href="structpio__assembler.html#a45497569074ee35beefaaded201ad9db">pio_assembler::generate</a></div><div class="ttdeci">int generate(std::shared_ptr&lt; output_format &gt; _format, const std::string &amp;_source, const std::string &amp;_dest, const std::vector&lt; std::string &gt; &amp;_options=std::vector&lt; std::string &gt;())</div><div class="ttdef"><b>Definição</b> pio_assembler.cpp:23</div></div>
+<div class="ttc" id="astructpio__assembler_html_a5387345f235c690e4468fe1f7187a127"><div class="ttname"><a href="structpio__assembler.html#a5387345f235c690e4468fe1f7187a127">pio_assembler::scan_begin</a></div><div class="ttdeci">void scan_begin()</div><div class="ttdef"><b>Definição</b> lexer.cpp:2900</div></div>
+<div class="ttc" id="astructpio__assembler_html_a55561925fac1aaccb9762c8363e02953"><div class="ttname"><a href="structpio__assembler.html#a55561925fac1aaccb9762c8363e02953">pio_assembler::dummy_global_program</a></div><div class="ttdeci">std::shared_ptr&lt; program &gt; dummy_global_program</div><div class="ttdef"><b>Definição</b> pio_assembler.h:26</div></div>
+<div class="ttc" id="astructpio__assembler_html_a77dc562c40f8aa8bc2a557f96e7d8683"><div class="ttname"><a href="structpio__assembler.html#a77dc562c40f8aa8bc2a557f96e7d8683">pio_assembler::version_string</a></div><div class="ttdeci">std::string version_string(int min_version, std::string a, std::string b)</div><div class="ttdef"><b>Definição</b> pio_assembler.h:114</div></div>
+<div class="ttc" id="astructpio__assembler_html_a97a8ea8de4a9383290d6ec35d9077b06"><div class="ttname"><a href="structpio__assembler.html#a97a8ea8de4a9383290d6ec35d9077b06">pio_assembler::write_output</a></div><div class="ttdeci">int write_output()</div><div class="ttdef"><b>Definição</b> pio_assembler.cpp:453</div></div>
+<div class="ttc" id="astructpio__assembler_html_a9a98efc9fe11303c296f286472604853"><div class="ttname"><a href="structpio__assembler.html#a9a98efc9fe11303c296f286472604853">pio_assembler::dest</a></div><div class="ttdeci">std::string dest</div><div class="ttdef"><b>Definição</b> pio_assembler.h:36</div></div>
+<div class="ttc" id="astructpio__assembler_html_aad069135a6def881d9cdd9cfdd1d4654"><div class="ttname"><a href="structpio__assembler.html#aad069135a6def881d9cdd9cfdd1d4654">pio_assembler::location</a></div><div class="ttdeci">yy::location location</div><div class="ttdef"><b>Definição</b> pio_assembler.h:127</div></div>
+<div class="ttc" id="astructpio__assembler_html_ab2bfd15780628e71b3d05d3719c31905"><div class="ttname"><a href="structpio__assembler.html#ab2bfd15780628e71b3d05d3719c31905">pio_assembler::get_symbol</a></div><div class="ttdeci">std::shared_ptr&lt; symbol &gt; get_symbol(const std::string &amp;name, const program *p)</div><div class="ttdef"><b>Definição</b> pio_assembler.h:93</div></div>
+<div class="ttc" id="astructpio__assembler_html_ab5288befceaab7eebe2cc82bef3286c5"><div class="ttname"><a href="structpio__assembler.html#ab5288befceaab7eebe2cc82bef3286c5">pio_assembler::add_program</a></div><div class="ttdeci">bool add_program(const yy::location &amp;l, const std::string &amp;name)</div><div class="ttdef"><b>Definição</b> pio_assembler.h:42</div></div>
+<div class="ttc" id="astructpio__assembler_html_ab78431541e1a5dae2ee3085d540504cf"><div class="ttname"><a href="structpio__assembler.html#ab78431541e1a5dae2ee3085d540504cf">pio_assembler::programs</a></div><div class="ttdeci">std::vector&lt; program &gt; programs</div><div class="ttdef"><b>Definição</b> pio_assembler.h:27</div></div>
+<div class="ttc" id="astructpio__assembler_html_ac5a0a73056b8b3c4fa8544873a86be70"><div class="ttname"><a href="structpio__assembler.html#ac5a0a73056b8b3c4fa8544873a86be70">pio_assembler::options</a></div><div class="ttdeci">std::vector&lt; std::string &gt; options</div><div class="ttdef"><b>Definição</b> pio_assembler.h:37</div></div>
+<div class="ttc" id="astructpio__assembler_html_ad8286076cf750305a413fb4b30dd92ca"><div class="ttname"><a href="structpio__assembler.html#ad8286076cf750305a413fb4b30dd92ca">pio_assembler::syntax_error</a></div><div class="ttdeci">yy::parser::syntax_error syntax_error</div><div class="ttdef"><b>Definição</b> pio_assembler.h:22</div></div>
+<div class="ttc" id="astructpio__assembler_html_ae21487ea13994bca8745fb9326945656"><div class="ttname"><a href="structpio__assembler.html#ae21487ea13994bca8745fb9326945656">pio_assembler::public_symbols</a></div><div class="ttdeci">std::vector&lt; compiled_source::symbol &gt; public_symbols(program &amp;program)</div><div class="ttdef"><b>Definição</b> pio_assembler.cpp:439</div></div>
+<div class="ttc" id="astructpio__assembler_html_ae2670fe354e40cd556d80badb28f8c58"><div class="ttname"><a href="structpio__assembler.html#ae2670fe354e40cd556d80badb28f8c58">pio_assembler::pio_assembler</a></div><div class="ttdeci">pio_assembler()</div><div class="ttdef"><b>Definição</b> pio_assembler.cpp:20</div></div>
+<div class="ttc" id="astructpio__assembler_html_ae73e14c077c6121a02da297b9030a004"><div class="ttname"><a href="structpio__assembler.html#ae73e14c077c6121a02da297b9030a004">pio_assembler::check_version</a></div><div class="ttdeci">void check_version(int min_version, const location_type &amp;l, std::string feature)</div><div class="ttdef"><b>Definição</b> pio_assembler.h:106</div></div>
+<div class="ttc" id="astructpio__assembler_html_ae9b9ebf12bc734fd41a44355ad3be3ef"><div class="ttname"><a href="structpio__assembler.html#ae9b9ebf12bc734fd41a44355ad3be3ef">pio_assembler::get_current_program</a></div><div class="ttdeci">program &amp; get_current_program(const location_type &amp;l, const std::string &amp;requiring_program, bool before_any_instructions=false, bool disallow_global=true)</div><div class="ttdef"><b>Definição</b> pio_assembler.h:61</div></div>
+<div class="ttc" id="astructpio__assembler_html_ae9c74a29926e63fc6fb070571417bfdc"><div class="ttname"><a href="structpio__assembler.html#ae9c74a29926e63fc6fb070571417bfdc">pio_assembler::format</a></div><div class="ttdeci">std::shared_ptr&lt; output_format &gt; format</div><div class="ttdef"><b>Definição</b> pio_assembler.h:32</div></div>
+<div class="ttc" id="astructprogram_html"><div class="ttname"><a href="structprogram.html">program</a></div><div class="ttdef"><b>Definição</b> pio_types.h:269</div></div>
+<div class="ttc" id="astructprogram_html_a698273e9ec35c4782a79cb7ac452496a"><div class="ttname"><a href="structprogram.html#a698273e9ec35c4782a79cb7ac452496a">program::symbols</a></div><div class="ttdeci">std::map&lt; std::string, std::shared_ptr&lt; symbol &gt; &gt; symbols</div><div class="ttdef"><b>Definição</b> pio_types.h:293</div></div>
+<div class="ttc" id="astructprogram_html_adb143efc4704a1d8b851a07ba9db6773"><div class="ttname"><a href="structprogram.html#adb143efc4704a1d8b851a07ba9db6773">program::pio_version</a></div><div class="ttdeci">int pio_version</div><div class="ttdef"><b>Definição</b> pio_types.h:285</div></div>
+<div class="ttc" id="astructyy_1_1parser_1_1syntax__error_html"><div class="ttname"><a href="structyy_1_1parser_1_1syntax__error.html">yy::parser::syntax_error</a></div><div class="ttdoc">Syntax errors thrown from user actions.</div><div class="ttdef"><b>Definição</b> parser.hpp:468</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_a25fbef06e3d6ed4030d7a61bb75fb11.html">tools</a></li><li class="navelem"><a class="el" href="dir_9cfd298afa064585445e3589eaae55bb.html">pioasm</a></li><li class="navelem"><a class="el" href="pio__assembler_8h.html">pio_assembler.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

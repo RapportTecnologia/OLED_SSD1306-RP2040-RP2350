@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de glitch_detector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__regs_2include_2hardware_2regs_2glitch__detector_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_regs/include/hardware/regs/glitch_detector.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : GLITCH_DETECTOR</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : Glitch detector controls</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _HARDWARE_REGS_GLITCH_DETECTOR_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _HARDWARE_REGS_GLITCH_DETECTOR_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register    : GLITCH_DETECTOR_ARM</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Description : Forcibly arm the glitch detectors, if they are not already</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//               armed by OTP. When armed, any individual detector trigger will</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//               cause a restart of the switched core power domain&#39;s power-on</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//               reset state machine.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//               Glitch detector triggers are recorded accumulatively in</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//               TRIG_STATUS. If the system is reset by a glitch detector</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//               trigger, this is recorded in POWMAN_CHIP_RESET.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//               This register is Secure read/write only.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//               0x5bad -&gt; Do not force the glitch detectors to be armed</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//               0x0000 -&gt; Force the glitch detectors to be armed. (Any value other than ARM_NO counts as YES)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a7a0b6aef63d6083ea25cc6a907bd8a26">   30</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a424f78d6d373682e057ac775b8f2fe46">   31</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_BITS   _u(0x0000ffff)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a6ccc8a022eaf1406d2c0558dac2ae176">   32</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_RESET  _u(0x00005bad)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ac89b6d21a4c80cc4da606a54f1994d73">   33</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_MSB    _u(15)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#adffa4b8395def653818b8c5da9abe9c3">   34</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_LSB    _u(0)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ac729e44fe995cbab5d206ee6cd50c2d2">   35</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aa981d8f736b5748ecfbd2a8650ee249c">   36</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_VALUE_NO _u(0x5bad)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aadb19ad30e96b1ab00f53450953079e6">   37</a></span><span class="preprocessor">#define GLITCH_DETECTOR_ARM_VALUE_YES _u(0x0000)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// Register    : GLITCH_DETECTOR_DISARM</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Description : Forcibly disarm the glitch detectors, if they are armed by OTP.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//               Ignored if ARM is YES.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//               This register is Secure read/write only.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//               0x0000 -&gt; Do not disarm the glitch detectors. (Any value other than DISARM_YES counts as NO)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//               0xdcaf -&gt; Disarm the glitch detectors</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afe3113d85035da4ef4f05d6ae57bb112">   46</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#abce7878661db3b47c1b54f873ef1197a">   47</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_BITS   _u(0x0000ffff)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a4763d82b48f4ede895ed7a3dead5ca27">   48</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afd1c507e239e2297a26a769b51c64e13">   49</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_MSB    _u(15)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ad0dbb2118ba14aaabed973b3d28afd1c">   50</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_LSB    _u(0)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afad71f8caa5980dc79d1eaf795f1c1d0">   51</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#af6d40d1bd9044f57e889753ce507f0a1">   52</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_VALUE_NO _u(0x0000)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a6bb5eb87f39e54a7c75c30fd26c2f9aa">   53</a></span><span class="preprocessor">#define GLITCH_DETECTOR_DISARM_VALUE_YES _u(0xdcaf)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Register    : GLITCH_DETECTOR_SENSITIVITY</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// Description : Adjust the sensitivity of glitch detectors to values other than</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//               their OTP-provided defaults.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">//</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">//               This register is Secure read/write only.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a23312943486a73f62867a1d366da04b8">   60</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#adabb304632e4adb189b2d29dd54e886e">   61</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_BITS   _u(0xff00ffff)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a06a35bd91cfb0322026edd0bfd55ee47">   62</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DEFAULT</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//               0x00 -&gt; Use the default sensitivity configured in OTP for all detectors. (Any value other than DEFAULT_NO counts as YES)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//               0xde -&gt; Do not use the default sensitivity configured in OTP. Instead use the value from this register.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ae4a53450e19ca03eb13f0f2502fc2c5f">   67</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DEFAULT_RESET  _u(0x00)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a3cee4af1d6a1447dccbea3ebb9033c3e">   68</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DEFAULT_BITS   _u(0xff000000)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a0a621d5503d52117fc406581df0e75ca">   69</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DEFAULT_MSB    _u(31)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a7720e659d64fd167b19617bd4ccf8cee">   70</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DEFAULT_LSB    _u(24)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a6c4328890260c5e201399c437f3a3d43">   71</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DEFAULT_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#abf2a215ab442e295a33fe08a04488881">   72</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DEFAULT_VALUE_YES _u(0x00)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a2387d248e93fdf114ab09e2b53f37297">   73</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DEFAULT_VALUE_NO _u(0xde)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET3_INV</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// Description : Must be the inverse of DET3, else the default value is used.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#af480747d1fd11fe03dfe9d51b728b007">   77</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_INV_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a4ca2478d58f3ec58cf1a162ab3c7d4d9">   78</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_INV_BITS   _u(0x0000c000)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aef394069c88fc0b8bce313e5e2284b38">   79</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_INV_MSB    _u(15)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a644dabedf79673ffbae959d2d735f433">   80</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_INV_LSB    _u(14)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aed0d971818bf795bdb4d41ffadc137e0">   81</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_INV_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET2_INV</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// Description : Must be the inverse of DET2, else the default value is used.</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aab9a832a33ee461aa4b6f02fff3cbf1b">   85</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_INV_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#af186e5205882c81da23e5fa011bc4126">   86</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_INV_BITS   _u(0x00003000)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a04c88759d24752d119427fc5b4d782b0">   87</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_INV_MSB    _u(13)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#abe792cbcb115fb3e9c0a0b39c8aa8973">   88</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_INV_LSB    _u(12)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a2994e3ab24ac75cc4902ac19a0a42723">   89</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_INV_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET1_INV</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// Description : Must be the inverse of DET1, else the default value is used.</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a27355674b8674b9723f6879f07da1823">   93</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_INV_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aab0e2db15b83b8052ca84acb50356854">   94</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_INV_BITS   _u(0x00000c00)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ae9abd1a7ae6d305c97b877d3f195a084">   95</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_INV_MSB    _u(11)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ab1f93d46cf02c92abcf1a8cc73608a21">   96</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_INV_LSB    _u(10)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ae43dfcef36c8253ee76096c87e252495">   97</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_INV_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET0_INV</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// Description : Must be the inverse of DET0, else the default value is used.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a9cb0e80034c7bc0c45bc8b397d7da95e">  101</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_INV_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a4b89967dbd83797bca2ad3d6d80a8ca0">  102</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_INV_BITS   _u(0x00000300)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aabb78831ec54bd66c07affec4f1fdc1a">  103</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_INV_MSB    _u(9)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#af723b5fc0f2f493fc1fd8d340b935d7f">  104</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_INV_LSB    _u(8)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ab6bf529a86eb5ef4b7116c981dc16d70">  105</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_INV_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET3</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">// Description : Set sensitivity for detector 3. Higher values are more</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">//               sensitive.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a1497672d4beacee149a6bbb23c61c9fd">  110</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#af27c2820ebe99816bb3774b7b72b5711">  111</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_BITS   _u(0x000000c0)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ab404fde2398f3ecadeaf118bccb8d35b">  112</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_MSB    _u(7)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ad10b6123df75c13cf773a1c816bebebd">  113</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_LSB    _u(6)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a7d6db802a2c3a244aabe250ef55ffbba">  114</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET3_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET2</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Description : Set sensitivity for detector 2. Higher values are more</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">//               sensitive.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a4a7d5bb3e0acb3b98485ccbf9ada4411">  119</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a103791ad37e1139820829cfce294b036">  120</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_BITS   _u(0x00000030)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aab98a424b0774762fb6a85ae12033653">  121</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_MSB    _u(5)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afe913522ae5cefd7f78ab6f8d6a2415b">  122</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_LSB    _u(4)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#af7386b6132aa7728cc2937f8f9507ab9">  123</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET2_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET1</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// Description : Set sensitivity for detector 1. Higher values are more</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">//               sensitive.</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aab1b9ab425c8839fe42d9a2aa7abe5a4">  128</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a3a616d1ee242608a97f957b29a0c700f">  129</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_BITS   _u(0x0000000c)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a9e99e9e559741eda51e8b8245a5126a5">  130</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_MSB    _u(3)</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ab06ffe0e5e4190e3a996f8c1f4c76621">  131</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_LSB    _u(2)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a51c31556b0b5e475152ee42a678d027a">  132</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">// Field       : GLITCH_DETECTOR_SENSITIVITY_DET0</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">// Description : Set sensitivity for detector 0. Higher values are more</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">//               sensitive.</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a0c4444d2f1bb22ecc355084a99cc587d">  137</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a02c8aa999e8b1ea729d46d4b266283af">  138</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ab4b2adb8bf5579da184d8cf628784c9c">  139</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_MSB    _u(1)</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a188dedb6f854870eded46e6619de5d84">  140</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a264e7d57aa896f6c0b848ba771f3756c">  141</a></span><span class="preprocessor">#define GLITCH_DETECTOR_SENSITIVITY_DET0_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">// Register    : GLITCH_DETECTOR_LOCK</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">// Description : Write any nonzero value to disable writes to ARM, DISARM,</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">//               SENSITIVITY and LOCK. This register is Secure read/write only.</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a1959d09dafad31651e0bcc4f9f3c48b2">  146</a></span><span class="preprocessor">#define GLITCH_DETECTOR_LOCK_OFFSET _u(0x0000000c)</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a87e8ff4dd88829d46e7fe254c2501798">  147</a></span><span class="preprocessor">#define GLITCH_DETECTOR_LOCK_BITS   _u(0x000000ff)</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a213f8a0cd0d137bf510fe9256d959970">  148</a></span><span class="preprocessor">#define GLITCH_DETECTOR_LOCK_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ac66b8becbd930a18f4cf7c0a07084a7c">  149</a></span><span class="preprocessor">#define GLITCH_DETECTOR_LOCK_MSB    _u(7)</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a97594f469897f8d84c9577712123f608">  150</a></span><span class="preprocessor">#define GLITCH_DETECTOR_LOCK_LSB    _u(0)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a0d4bd75006278bfcc8a5a308a3af6c17">  151</a></span><span class="preprocessor">#define GLITCH_DETECTOR_LOCK_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">// Register    : GLITCH_DETECTOR_TRIG_STATUS</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">// Description : Set when a detector output triggers. Write-1-clear.</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">//</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">//               (May immediately return high if the detector remains in a</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">//               failed state. Detectors can only be cleared by a full reset of</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">//               the switched core power domain.)</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">//</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">//               This register is Secure read/write only.</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a85895c8616d76923895a93d71eeafd5e">  161</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_OFFSET _u(0x00000010)</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afa3f6d42aaa953c0fa645d7553863e9f">  162</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a876cb11f12985823aa636616901ba9c8">  163</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">// Field       : GLITCH_DETECTOR_TRIG_STATUS_DET3</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#adce79e651690b04ea81716da3bea7d59">  166</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET3_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a00737e37c98b9e7147e1e0883130a848">  167</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET3_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a734ec0508d6e3e1943412a12bdcaaae0">  168</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET3_MSB    _u(3)</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a619663e600ee17674d280f79b5c4927e">  169</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET3_LSB    _u(3)</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ad69113b91e8984d82cece72e875ec7a2">  170</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET3_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">// Field       : GLITCH_DETECTOR_TRIG_STATUS_DET2</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aa8145f0f56bd990bd43d258942a68d64">  173</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET2_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a705a933bb789ba05731bcd20da7fd871">  174</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET2_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a04b15e612dc7d69536808e997b20dc29">  175</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET2_MSB    _u(2)</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a32f4b10be768d4b202e642cd847f55e4">  176</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET2_LSB    _u(2)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a45b00f14de6da01346a28803e46e8d5a">  177</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET2_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// Field       : GLITCH_DETECTOR_TRIG_STATUS_DET1</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a247ba561db0bbb086c1b892e5ed3b9b2">  180</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET1_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ae0371499b84faab9c9603b7fe7936d30">  181</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET1_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#ab764ccab7c351aeb1d32bacf7ab35fac">  182</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET1_MSB    _u(1)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#af85257d60e689b428822e5574d638c07">  183</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET1_LSB    _u(1)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a9d0531a062d033fd29e34d3733eaf4f1">  184</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET1_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">// Field       : GLITCH_DETECTOR_TRIG_STATUS_DET0</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aca6726467520f22bbea7548f9a97d635">  187</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET0_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a191f044ddadbb2cc85a5c3fd29ddef31">  188</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET0_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a2b6963cdd973b4b9420156e5c02e3254">  189</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET0_MSB    _u(0)</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a1ca9f4380997526666aff8f830d43c89">  190</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a3d581f08a0b621c327c396388f0e666f">  191</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_STATUS_DET0_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">// Register    : GLITCH_DETECTOR_TRIG_FORCE</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">// Description : Simulate the firing of one or more detectors. Writing ones to</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">//               this register will set the matching bits in STATUS_TRIG.</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">//</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">//               If the glitch detectors are currently armed, writing ones will</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">//               also immediately reset the switched core power domain, and set</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">//               the reset reason latches in POWMAN_CHIP_RESET to indicate a</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">//               glitch detector resets.</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">//</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">//               This register is Secure read/write only.</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a727a26fc3d942725e2462625057c8ebb">  203</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_FORCE_OFFSET _u(0x00000014)</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a4f3fdd3b2592951c7765775bc3475ce0">  204</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_FORCE_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afb1607810b1421bcd718b80a6b1624fd">  205</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_FORCE_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a28ac6e749e568e192e0cf62caa553ad7">  206</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_FORCE_MSB    _u(3)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a711f1213acda5d0699174f50ba885e4d">  207</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_FORCE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#aab503d1da3c1a7d6ac31a5cb03a2b8c1">  208</a></span><span class="preprocessor">#define GLITCH_DETECTOR_TRIG_FORCE_ACCESS &quot;SC&quot;</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_GLITCH_DETECTOR_H</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html">glitch_detector.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

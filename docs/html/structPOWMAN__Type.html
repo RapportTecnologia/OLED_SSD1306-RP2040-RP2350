@@ -1,0 +1,1391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura POWMAN_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structPOWMAN__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structPOWMAN__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura POWMAN_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Controls vreg, bor, lposc, chip resets &amp; xosc startup, powman and provides scratch register for general use and for bootcode use (POWMAN)  
+ <a href="structPOWMAN__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2350_8h_source.html">RP2350.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para POWMAN_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structPOWMAN__Type__coll__graph.svg" width="183" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a7ca2d3efbc4f64ff87d6a98c85c19c90" id="r_a7ca2d3efbc4f64ff87d6a98c85c19c90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a7ca2d3efbc4f64ff87d6a98c85c19c90">ALARM_TIME_15TO0</a></td></tr>
+<tr class="memdesc:a7ca2d3efbc4f64ff87d6a98c85c19c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">ALARM_TIME_15TO0 <br  />
+  <br /></td></tr>
+<tr class="separator:a7ca2d3efbc4f64ff87d6a98c85c19c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf03dd212d31f13b7d579a759b939050" id="r_acf03dd212d31f13b7d579a759b939050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#acf03dd212d31f13b7d579a759b939050">ALARM_TIME_31TO16</a></td></tr>
+<tr class="memdesc:acf03dd212d31f13b7d579a759b939050"><td class="mdescLeft">&#160;</td><td class="mdescRight">ALARM_TIME_31TO16 <br  />
+  <br /></td></tr>
+<tr class="separator:acf03dd212d31f13b7d579a759b939050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0332dc01afcda2790767b36c69cfb14" id="r_af0332dc01afcda2790767b36c69cfb14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#af0332dc01afcda2790767b36c69cfb14">ALARM_TIME_47TO32</a></td></tr>
+<tr class="memdesc:af0332dc01afcda2790767b36c69cfb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">ALARM_TIME_47TO32 <br  />
+  <br /></td></tr>
+<tr class="separator:af0332dc01afcda2790767b36c69cfb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25bb8baacb53dde0832f7691c560e0b" id="r_aa25bb8baacb53dde0832f7691c560e0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#aa25bb8baacb53dde0832f7691c560e0b">ALARM_TIME_63TO48</a></td></tr>
+<tr class="memdesc:aa25bb8baacb53dde0832f7691c560e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ALARM_TIME_63TO48 <br  />
+  <br /></td></tr>
+<tr class="separator:aa25bb8baacb53dde0832f7691c560e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d436b6a7ec7bce2415c84b129e85c1" id="r_ab0d436b6a7ec7bce2415c84b129e85c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ab0d436b6a7ec7bce2415c84b129e85c1">BADPASSWD</a></td></tr>
+<tr class="memdesc:ab0d436b6a7ec7bce2415c84b129e85c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; POWMAN Structure <br  />
+  <br /></td></tr>
+<tr class="separator:ab0d436b6a7ec7bce2415c84b129e85c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad844fb8b3ea2672b53b27c859775cf79" id="r_ad844fb8b3ea2672b53b27c859775cf79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ad844fb8b3ea2672b53b27c859775cf79">BOD</a></td></tr>
+<tr class="memdesc:ad844fb8b3ea2672b53b27c859775cf79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brown-out Detection Settings <br  />
+  <br /></td></tr>
+<tr class="separator:ad844fb8b3ea2672b53b27c859775cf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17222587a0e815c441579ba87cf7d495" id="r_a17222587a0e815c441579ba87cf7d495"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a17222587a0e815c441579ba87cf7d495">BOD_CTRL</a></td></tr>
+<tr class="memdesc:a17222587a0e815c441579ba87cf7d495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brown-out Detection Control <br  />
+  <br /></td></tr>
+<tr class="separator:a17222587a0e815c441579ba87cf7d495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf45bde140815e4109d53acf41a3841" id="r_aabf45bde140815e4109d53acf41a3841"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#aabf45bde140815e4109d53acf41a3841">BOD_LP_ENTRY</a></td></tr>
+<tr class="memdesc:aabf45bde140815e4109d53acf41a3841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brown-out Detection Low Power Entry Settings <br  />
+  <br /></td></tr>
+<tr class="separator:aabf45bde140815e4109d53acf41a3841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64c2e1359d0d37e3b9d2a42c7be07d3" id="r_ad64c2e1359d0d37e3b9d2a42c7be07d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ad64c2e1359d0d37e3b9d2a42c7be07d3">BOD_LP_EXIT</a></td></tr>
+<tr class="memdesc:ad64c2e1359d0d37e3b9d2a42c7be07d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brown-out Detection Low Power Exit Settings <br  />
+  <br /></td></tr>
+<tr class="separator:ad64c2e1359d0d37e3b9d2a42c7be07d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff15ce1e83aaa9dcb2dddfd3612e2ff" id="r_abff15ce1e83aaa9dcb2dddfd3612e2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#abff15ce1e83aaa9dcb2dddfd3612e2ff">BOOT0</a></td></tr>
+<tr class="memdesc:abff15ce1e83aaa9dcb2dddfd3612e2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:abff15ce1e83aaa9dcb2dddfd3612e2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76adb13be14f99d0addb1e85f511b46c" id="r_a76adb13be14f99d0addb1e85f511b46c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a76adb13be14f99d0addb1e85f511b46c">BOOT1</a></td></tr>
+<tr class="memdesc:a76adb13be14f99d0addb1e85f511b46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a76adb13be14f99d0addb1e85f511b46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06dd2122614a33c8a33eb4f9634358e9" id="r_a06dd2122614a33c8a33eb4f9634358e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a06dd2122614a33c8a33eb4f9634358e9">BOOT2</a></td></tr>
+<tr class="memdesc:a06dd2122614a33c8a33eb4f9634358e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a06dd2122614a33c8a33eb4f9634358e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ed9a8538d3ffc5aef9a3b916368ca0" id="r_a33ed9a8538d3ffc5aef9a3b916368ca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a33ed9a8538d3ffc5aef9a3b916368ca0">BOOT3</a></td></tr>
+<tr class="memdesc:a33ed9a8538d3ffc5aef9a3b916368ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a33ed9a8538d3ffc5aef9a3b916368ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62846bd250b7f10328c2ff4d35d37d07" id="r_a62846bd250b7f10328c2ff4d35d37d07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a62846bd250b7f10328c2ff4d35d37d07">BOOTDIS</a></td></tr>
+<tr class="memdesc:a62846bd250b7f10328c2ff4d35d37d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell the bootrom to ignore the BOOT0..3 registers following the next RSM reset (e.g.  <br /></td></tr>
+<tr class="separator:a62846bd250b7f10328c2ff4d35d37d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc664d882e84e51e8e8dd8c4d519e2d5" id="r_acc664d882e84e51e8e8dd8c4d519e2d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#acc664d882e84e51e8e8dd8c4d519e2d5">CHIP_RESET</a></td></tr>
+<tr class="memdesc:acc664d882e84e51e8e8dd8c4d519e2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chip reset control and status <br  />
+  <br /></td></tr>
+<tr class="separator:acc664d882e84e51e8e8dd8c4d519e2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c0b1b507ea30fd0e4f3f51827d76d8" id="r_aa9c0b1b507ea30fd0e4f3f51827d76d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#aa9c0b1b507ea30fd0e4f3f51827d76d8">CURRENT_PWRUP_REQ</a></td></tr>
+<tr class="memdesc:aa9c0b1b507ea30fd0e4f3f51827d76d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates current powerup request state pwrup events can be cleared by removing the enable from the pwrup register.  <br /></td></tr>
+<tr class="separator:aa9c0b1b507ea30fd0e4f3f51827d76d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e3ba1ae226fd71af325b8ee34393d3" id="r_ad6e3ba1ae226fd71af325b8ee34393d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ad6e3ba1ae226fd71af325b8ee34393d3">DBG_PWRCFG</a></td></tr>
+<tr class="memdesc:ad6e3ba1ae226fd71af325b8ee34393d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DBG_PWRCFG <br  />
+  <br /></td></tr>
+<tr class="separator:ad6e3ba1ae226fd71af325b8ee34393d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159f4f68a0a8732f7445f43810a4d7b6" id="r_a159f4f68a0a8732f7445f43810a4d7b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a159f4f68a0a8732f7445f43810a4d7b6">DBGCONFIG</a></td></tr>
+<tr class="memdesc:a159f4f68a0a8732f7445f43810a4d7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">DBGCONFIG <br  />
+  <br /></td></tr>
+<tr class="separator:a159f4f68a0a8732f7445f43810a4d7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48cb9f87074be47f4dbe2f5b158fb99" id="r_ac48cb9f87074be47f4dbe2f5b158fb99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ac48cb9f87074be47f4dbe2f5b158fb99">EXT_CTRL0</a></td></tr>
+<tr class="memdesc:ac48cb9f87074be47f4dbe2f5b158fb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a gpio as a power mode aware control output <br  />
+  <br /></td></tr>
+<tr class="separator:ac48cb9f87074be47f4dbe2f5b158fb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7c3dc5c3d44dae09e3e48d83dd7e9f" id="r_aae7c3dc5c3d44dae09e3e48d83dd7e9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#aae7c3dc5c3d44dae09e3e48d83dd7e9f">EXT_CTRL1</a></td></tr>
+<tr class="memdesc:aae7c3dc5c3d44dae09e3e48d83dd7e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a gpio as a power mode aware control output <br  />
+  <br /></td></tr>
+<tr class="separator:aae7c3dc5c3d44dae09e3e48d83dd7e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a102e1c5dab7561671e748afc706a3" id="r_a04a102e1c5dab7561671e748afc706a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a04a102e1c5dab7561671e748afc706a3">EXT_TIME_REF</a></td></tr>
+<tr class="memdesc:a04a102e1c5dab7561671e748afc706a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a GPIO to use as a time reference, the source can be used to drive the low power clock at 32kHz, or to provide a 1ms tick to the timer, or provide a 1Hz tick to the timer.  <br /></td></tr>
+<tr class="separator:a04a102e1c5dab7561671e748afc706a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4669163be209555a1af3beccf0d8a939" id="r_a4669163be209555a1af3beccf0d8a939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a4669163be209555a1af3beccf0d8a939">INTE</a></td></tr>
+<tr class="memdesc:a4669163be209555a1af3beccf0d8a939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable <br  />
+  <br /></td></tr>
+<tr class="separator:a4669163be209555a1af3beccf0d8a939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02cf5a0bca6caf1a621bebd20a33b6b1" id="r_a02cf5a0bca6caf1a621bebd20a33b6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a02cf5a0bca6caf1a621bebd20a33b6b1">INTF</a></td></tr>
+<tr class="memdesc:a02cf5a0bca6caf1a621bebd20a33b6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force <br  />
+  <br /></td></tr>
+<tr class="separator:a02cf5a0bca6caf1a621bebd20a33b6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abac0d3bb66c2ae2d5994eb9ca95b72" id="r_a8abac0d3bb66c2ae2d5994eb9ca95b72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a8abac0d3bb66c2ae2d5994eb9ca95b72">INTR</a></td></tr>
+<tr class="memdesc:a8abac0d3bb66c2ae2d5994eb9ca95b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupts <br  />
+  <br /></td></tr>
+<tr class="separator:a8abac0d3bb66c2ae2d5994eb9ca95b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163eca61681b8ef909599a1d797155d7" id="r_a163eca61681b8ef909599a1d797155d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a163eca61681b8ef909599a1d797155d7">INTS</a></td></tr>
+<tr class="memdesc:a163eca61681b8ef909599a1d797155d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing <br  />
+  <br /></td></tr>
+<tr class="separator:a163eca61681b8ef909599a1d797155d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dee01cde860b5cc0e420c0dbc44ec7c" id="r_a0dee01cde860b5cc0e420c0dbc44ec7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a0dee01cde860b5cc0e420c0dbc44ec7c">LAST_SWCORE_PWRUP</a></td></tr>
+<tr class="memdesc:a0dee01cde860b5cc0e420c0dbc44ec7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates which pwrup source triggered the last switched-core power up 0 = chip reset, for the source of the last reset see POWMAN_CHIP_RESET 1 = pwrup0 2 = pwrup1 3 = pwrup2 4 = pwrup3 5 = coresight_pwrup 6 = alarm_pwrup <br  />
+  <br /></td></tr>
+<tr class="separator:a0dee01cde860b5cc0e420c0dbc44ec7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91c70e648909ccb931c32f8f48ced0d" id="r_ab91c70e648909ccb931c32f8f48ced0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ab91c70e648909ccb931c32f8f48ced0d">LPOSC</a></td></tr>
+<tr class="memdesc:ab91c70e648909ccb931c32f8f48ced0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Low power oscillator control register.  <br /></td></tr>
+<tr class="separator:ab91c70e648909ccb931c32f8f48ced0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1214c7128020c0369b7b4a236f6bab68" id="r_a1214c7128020c0369b7b4a236f6bab68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a1214c7128020c0369b7b4a236f6bab68">LPOSC_FREQ_KHZ_FRAC</a></td></tr>
+<tr class="memdesc:a1214c7128020c0369b7b4a236f6bab68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the AON Timer of the fractional component of the clock frequency when running off the LPOSC.  <br /></td></tr>
+<tr class="separator:a1214c7128020c0369b7b4a236f6bab68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc13e2d332ac2c6dab9e8b6ab5dd3eec" id="r_afc13e2d332ac2c6dab9e8b6ab5dd3eec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#afc13e2d332ac2c6dab9e8b6ab5dd3eec">LPOSC_FREQ_KHZ_INT</a></td></tr>
+<tr class="memdesc:afc13e2d332ac2c6dab9e8b6ab5dd3eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the AON Timer of the integer component of the clock frequency when running off the LPOSC.  <br /></td></tr>
+<tr class="separator:afc13e2d332ac2c6dab9e8b6ab5dd3eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead6164e661187db4d61249b8df975b4" id="r_aead6164e661187db4d61249b8df975b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#aead6164e661187db4d61249b8df975b4">POW_DELAY</a></td></tr>
+<tr class="memdesc:aead6164e661187db4d61249b8df975b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">power state machine delays <br  />
+  <br /></td></tr>
+<tr class="separator:aead6164e661187db4d61249b8df975b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f096252df0731867330d58fa0a5590f" id="r_a4f096252df0731867330d58fa0a5590f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a4f096252df0731867330d58fa0a5590f">POW_FASTDIV</a></td></tr>
+<tr class="memdesc:a4f096252df0731867330d58fa0a5590f"><td class="mdescLeft">&#160;</td><td class="mdescRight">POW_FASTDIV <br  />
+  <br /></td></tr>
+<tr class="separator:a4f096252df0731867330d58fa0a5590f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184a12b7ba7f45e045c1d0fb66df4891" id="r_a184a12b7ba7f45e045c1d0fb66df4891"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a184a12b7ba7f45e045c1d0fb66df4891">PWRUP0</a></td></tr>
+<tr class="memdesc:a184a12b7ba7f45e045c1d0fb66df4891"><td class="mdescLeft">&#160;</td><td class="mdescRight">4 GPIO powerup events can be configured to wake the chip up from a low power state.  <br /></td></tr>
+<tr class="separator:a184a12b7ba7f45e045c1d0fb66df4891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2ee94672a6ce6a75db50959d7f01af" id="r_a2d2ee94672a6ce6a75db50959d7f01af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a2d2ee94672a6ce6a75db50959d7f01af">PWRUP1</a></td></tr>
+<tr class="memdesc:a2d2ee94672a6ce6a75db50959d7f01af"><td class="mdescLeft">&#160;</td><td class="mdescRight">4 GPIO powerup events can be configured to wake the chip up from a low power state.  <br /></td></tr>
+<tr class="separator:a2d2ee94672a6ce6a75db50959d7f01af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac323b91699030709a10b309d5dc3cf04" id="r_ac323b91699030709a10b309d5dc3cf04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ac323b91699030709a10b309d5dc3cf04">PWRUP2</a></td></tr>
+<tr class="memdesc:ac323b91699030709a10b309d5dc3cf04"><td class="mdescLeft">&#160;</td><td class="mdescRight">4 GPIO powerup events can be configured to wake the chip up from a low power state.  <br /></td></tr>
+<tr class="separator:ac323b91699030709a10b309d5dc3cf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1382c7e792ce2838b74b6fcc4c7495e" id="r_ae1382c7e792ce2838b74b6fcc4c7495e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ae1382c7e792ce2838b74b6fcc4c7495e">PWRUP3</a></td></tr>
+<tr class="memdesc:ae1382c7e792ce2838b74b6fcc4c7495e"><td class="mdescLeft">&#160;</td><td class="mdescRight">4 GPIO powerup events can be configured to wake the chip up from a low power state.  <br /></td></tr>
+<tr class="separator:ae1382c7e792ce2838b74b6fcc4c7495e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa081318b43a1c7d563cb3d060cf59cb5" id="r_aa081318b43a1c7d563cb3d060cf59cb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#aa081318b43a1c7d563cb3d060cf59cb5">READ_TIME_LOWER</a></td></tr>
+<tr class="memdesc:aa081318b43a1c7d563cb3d060cf59cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">READ_TIME_LOWER <br  />
+  <br /></td></tr>
+<tr class="separator:aa081318b43a1c7d563cb3d060cf59cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae666d0fbb21b4290fa852e172f323375" id="r_ae666d0fbb21b4290fa852e172f323375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ae666d0fbb21b4290fa852e172f323375">READ_TIME_UPPER</a></td></tr>
+<tr class="memdesc:ae666d0fbb21b4290fa852e172f323375"><td class="mdescLeft">&#160;</td><td class="mdescRight">READ_TIME_UPPER <br  />
+  <br /></td></tr>
+<tr class="separator:ae666d0fbb21b4290fa852e172f323375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585e28e90de658b2d6a478902dbbc37c" id="r_a585e28e90de658b2d6a478902dbbc37c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a585e28e90de658b2d6a478902dbbc37c">SCRATCH0</a></td></tr>
+<tr class="memdesc:a585e28e90de658b2d6a478902dbbc37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a585e28e90de658b2d6a478902dbbc37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0067ab261d9a655cd3f4c6affc814764" id="r_a0067ab261d9a655cd3f4c6affc814764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a0067ab261d9a655cd3f4c6affc814764">SCRATCH1</a></td></tr>
+<tr class="memdesc:a0067ab261d9a655cd3f4c6affc814764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a0067ab261d9a655cd3f4c6affc814764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24c8a09e589052dc9a9068f3592d25f" id="r_ae24c8a09e589052dc9a9068f3592d25f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ae24c8a09e589052dc9a9068f3592d25f">SCRATCH2</a></td></tr>
+<tr class="memdesc:ae24c8a09e589052dc9a9068f3592d25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:ae24c8a09e589052dc9a9068f3592d25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775d0bb6c602ad8b80c65db3970629cd" id="r_a775d0bb6c602ad8b80c65db3970629cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a775d0bb6c602ad8b80c65db3970629cd">SCRATCH3</a></td></tr>
+<tr class="memdesc:a775d0bb6c602ad8b80c65db3970629cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a775d0bb6c602ad8b80c65db3970629cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875a22a04927685cccc31c27551137b4" id="r_a875a22a04927685cccc31c27551137b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a875a22a04927685cccc31c27551137b4">SCRATCH4</a></td></tr>
+<tr class="memdesc:a875a22a04927685cccc31c27551137b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a875a22a04927685cccc31c27551137b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad180ca9f5156c81d06d9b9965da714c4" id="r_ad180ca9f5156c81d06d9b9965da714c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ad180ca9f5156c81d06d9b9965da714c4">SCRATCH5</a></td></tr>
+<tr class="memdesc:ad180ca9f5156c81d06d9b9965da714c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:ad180ca9f5156c81d06d9b9965da714c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd06450f6594be2a0ea617d37708c88" id="r_a5dd06450f6594be2a0ea617d37708c88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a5dd06450f6594be2a0ea617d37708c88">SCRATCH6</a></td></tr>
+<tr class="memdesc:a5dd06450f6594be2a0ea617d37708c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a5dd06450f6594be2a0ea617d37708c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad5ce47cd153fcaa4eb6a45c54dc9ff" id="r_aaad5ce47cd153fcaa4eb6a45c54dc9ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#aaad5ce47cd153fcaa4eb6a45c54dc9ff">SCRATCH7</a></td></tr>
+<tr class="memdesc:aaad5ce47cd153fcaa4eb6a45c54dc9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:aaad5ce47cd153fcaa4eb6a45c54dc9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742233f98b140965f9aa3a6f767bedfa" id="r_a742233f98b140965f9aa3a6f767bedfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a742233f98b140965f9aa3a6f767bedfa">SEQ_CFG</a></td></tr>
+<tr class="memdesc:a742233f98b140965f9aa3a6f767bedfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">For configuration of the power sequencer Writes are ignored while POWMAN_STATE_CHANGING=1 <br  />
+  <br /></td></tr>
+<tr class="separator:a742233f98b140965f9aa3a6f767bedfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adec427e41625d2cd593383e3f9a60d" id="r_a6adec427e41625d2cd593383e3f9a60d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a6adec427e41625d2cd593383e3f9a60d">SET_TIME_15TO0</a></td></tr>
+<tr class="memdesc:a6adec427e41625d2cd593383e3f9a60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SET_TIME_15TO0 <br  />
+  <br /></td></tr>
+<tr class="separator:a6adec427e41625d2cd593383e3f9a60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aec324a09999da9177f3a5e0909c855" id="r_a7aec324a09999da9177f3a5e0909c855"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a7aec324a09999da9177f3a5e0909c855">SET_TIME_31TO16</a></td></tr>
+<tr class="memdesc:a7aec324a09999da9177f3a5e0909c855"><td class="mdescLeft">&#160;</td><td class="mdescRight">SET_TIME_31TO16 <br  />
+  <br /></td></tr>
+<tr class="separator:a7aec324a09999da9177f3a5e0909c855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f9ab21ed5f2874fa35d123f0b72063" id="r_a15f9ab21ed5f2874fa35d123f0b72063"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a15f9ab21ed5f2874fa35d123f0b72063">SET_TIME_47TO32</a></td></tr>
+<tr class="memdesc:a15f9ab21ed5f2874fa35d123f0b72063"><td class="mdescLeft">&#160;</td><td class="mdescRight">SET_TIME_47TO32 <br  />
+  <br /></td></tr>
+<tr class="separator:a15f9ab21ed5f2874fa35d123f0b72063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f60d866db7b082b5992359035eb99d" id="r_a27f60d866db7b082b5992359035eb99d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a27f60d866db7b082b5992359035eb99d">SET_TIME_63TO48</a></td></tr>
+<tr class="memdesc:a27f60d866db7b082b5992359035eb99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SET_TIME_63TO48 <br  />
+  <br /></td></tr>
+<tr class="separator:a27f60d866db7b082b5992359035eb99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6fd0ed47088207defe04b863a31be5" id="r_acc6fd0ed47088207defe04b863a31be5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#acc6fd0ed47088207defe04b863a31be5">STATE</a></td></tr>
+<tr class="memdesc:acc6fd0ed47088207defe04b863a31be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This register controls the power state of the 4 power domains.  <br /></td></tr>
+<tr class="separator:acc6fd0ed47088207defe04b863a31be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b79fa27b69798206a7820eeb82ba1c0" id="r_a6b79fa27b69798206a7820eeb82ba1c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a6b79fa27b69798206a7820eeb82ba1c0">TIMER</a></td></tr>
+<tr class="memdesc:a6b79fa27b69798206a7820eeb82ba1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIMER <br  />
+  <br /></td></tr>
+<tr class="separator:a6b79fa27b69798206a7820eeb82ba1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f9ea72fb03c52b52367e98438d0db6" id="r_a70f9ea72fb03c52b52367e98438d0db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a70f9ea72fb03c52b52367e98438d0db6">VREG</a></td></tr>
+<tr class="memdesc:a70f9ea72fb03c52b52367e98438d0db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltage Regulator Settings <br  />
+  <br /></td></tr>
+<tr class="separator:a70f9ea72fb03c52b52367e98438d0db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae260dfbcb399c9e3620d8a3cd46d5601" id="r_ae260dfbcb399c9e3620d8a3cd46d5601"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ae260dfbcb399c9e3620d8a3cd46d5601">VREG_CTRL</a></td></tr>
+<tr class="memdesc:ae260dfbcb399c9e3620d8a3cd46d5601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltage Regulator Control <br  />
+  <br /></td></tr>
+<tr class="separator:ae260dfbcb399c9e3620d8a3cd46d5601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e58c52f800a0689e1f788d6a7dbec4" id="r_a08e58c52f800a0689e1f788d6a7dbec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a08e58c52f800a0689e1f788d6a7dbec4">VREG_LP_ENTRY</a></td></tr>
+<tr class="memdesc:a08e58c52f800a0689e1f788d6a7dbec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltage Regulator Low Power Entry Settings <br  />
+  <br /></td></tr>
+<tr class="separator:a08e58c52f800a0689e1f788d6a7dbec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43709040b93f450b48e12dfd429b7702" id="r_a43709040b93f450b48e12dfd429b7702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a43709040b93f450b48e12dfd429b7702">VREG_LP_EXIT</a></td></tr>
+<tr class="memdesc:a43709040b93f450b48e12dfd429b7702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltage Regulator Low Power Exit Settings <br  />
+  <br /></td></tr>
+<tr class="separator:a43709040b93f450b48e12dfd429b7702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814aeaa89b0bee8a5b8d640246ea43d4" id="r_a814aeaa89b0bee8a5b8d640246ea43d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a814aeaa89b0bee8a5b8d640246ea43d4">VREG_STS</a></td></tr>
+<tr class="memdesc:a814aeaa89b0bee8a5b8d640246ea43d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltage Regulator Status <br  />
+  <br /></td></tr>
+<tr class="separator:a814aeaa89b0bee8a5b8d640246ea43d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c1aed77c12d84ff8fcb4ef41bf1c97" id="r_a77c1aed77c12d84ff8fcb4ef41bf1c97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a77c1aed77c12d84ff8fcb4ef41bf1c97">WDSEL</a></td></tr>
+<tr class="memdesc:a77c1aed77c12d84ff8fcb4ef41bf1c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a watchdog reset to reset the internal state of powman in addition to the power-on state machine (PSM).  <br /></td></tr>
+<tr class="separator:a77c1aed77c12d84ff8fcb4ef41bf1c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927c1e09b467e9a422a4e7974310a2e9" id="r_a927c1e09b467e9a422a4e7974310a2e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#a927c1e09b467e9a422a4e7974310a2e9">XOSC_FREQ_KHZ_FRAC</a></td></tr>
+<tr class="memdesc:a927c1e09b467e9a422a4e7974310a2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the AON Timer of the fractional component of the clock frequency when running off the XOSC.  <br /></td></tr>
+<tr class="separator:a927c1e09b467e9a422a4e7974310a2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab245d7b11ffee072bdc375ceb707c890" id="r_ab245d7b11ffee072bdc375ceb707c890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPOWMAN__Type.html#ab245d7b11ffee072bdc375ceb707c890">XOSC_FREQ_KHZ_INT</a></td></tr>
+<tr class="memdesc:ab245d7b11ffee072bdc375ceb707c890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the AON Timer of the integer component of the clock frequency when running off the XOSC.  <br /></td></tr>
+<tr class="separator:ab245d7b11ffee072bdc375ceb707c890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Controls vreg, bor, lposc, chip resets &amp; xosc startup, powman and provides scratch register for general use and for bootcode use (POWMAN) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a7ca2d3efbc4f64ff87d6a98c85c19c90" name="a7ca2d3efbc4f64ff87d6a98c85c19c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca2d3efbc4f64ff87d6a98c85c19c90">&#9670;&#160;</a></span>ALARM_TIME_15TO0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::ALARM_TIME_15TO0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ALARM_TIME_15TO0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="acf03dd212d31f13b7d579a759b939050" name="acf03dd212d31f13b7d579a759b939050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf03dd212d31f13b7d579a759b939050">&#9670;&#160;</a></span>ALARM_TIME_31TO16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::ALARM_TIME_31TO16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ALARM_TIME_31TO16 <br  />
+ </p>
+
+</div>
+</div>
+<a id="af0332dc01afcda2790767b36c69cfb14" name="af0332dc01afcda2790767b36c69cfb14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0332dc01afcda2790767b36c69cfb14">&#9670;&#160;</a></span>ALARM_TIME_47TO32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::ALARM_TIME_47TO32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ALARM_TIME_47TO32 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa25bb8baacb53dde0832f7691c560e0b" name="aa25bb8baacb53dde0832f7691c560e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25bb8baacb53dde0832f7691c560e0b">&#9670;&#160;</a></span>ALARM_TIME_63TO48</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::ALARM_TIME_63TO48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ALARM_TIME_63TO48 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab0d436b6a7ec7bce2415c84b129e85c1" name="ab0d436b6a7ec7bce2415c84b129e85c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d436b6a7ec7bce2415c84b129e85c1">&#9670;&#160;</a></span>BADPASSWD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BADPASSWD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; POWMAN Structure <br  />
+ </p>
+<p>Indicates a bad password has been used <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad844fb8b3ea2672b53b27c859775cf79" name="ad844fb8b3ea2672b53b27c859775cf79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad844fb8b3ea2672b53b27c859775cf79">&#9670;&#160;</a></span>BOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Brown-out Detection Settings <br  />
+ </p>
+
+</div>
+</div>
+<a id="a17222587a0e815c441579ba87cf7d495" name="a17222587a0e815c441579ba87cf7d495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17222587a0e815c441579ba87cf7d495">&#9670;&#160;</a></span>BOD_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOD_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Brown-out Detection Control <br  />
+ </p>
+
+</div>
+</div>
+<a id="aabf45bde140815e4109d53acf41a3841" name="aabf45bde140815e4109d53acf41a3841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf45bde140815e4109d53acf41a3841">&#9670;&#160;</a></span>BOD_LP_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOD_LP_ENTRY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Brown-out Detection Low Power Entry Settings <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad64c2e1359d0d37e3b9d2a42c7be07d3" name="ad64c2e1359d0d37e3b9d2a42c7be07d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64c2e1359d0d37e3b9d2a42c7be07d3">&#9670;&#160;</a></span>BOD_LP_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOD_LP_EXIT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Brown-out Detection Low Power Exit Settings <br  />
+ </p>
+
+</div>
+</div>
+<a id="abff15ce1e83aaa9dcb2dddfd3612e2ff" name="abff15ce1e83aaa9dcb2dddfd3612e2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff15ce1e83aaa9dcb2dddfd3612e2ff">&#9670;&#160;</a></span>BOOT0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOOT0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a76adb13be14f99d0addb1e85f511b46c" name="a76adb13be14f99d0addb1e85f511b46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76adb13be14f99d0addb1e85f511b46c">&#9670;&#160;</a></span>BOOT1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOOT1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a06dd2122614a33c8a33eb4f9634358e9" name="a06dd2122614a33c8a33eb4f9634358e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06dd2122614a33c8a33eb4f9634358e9">&#9670;&#160;</a></span>BOOT2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOOT2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a33ed9a8538d3ffc5aef9a3b916368ca0" name="a33ed9a8538d3ffc5aef9a3b916368ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ed9a8538d3ffc5aef9a3b916368ca0">&#9670;&#160;</a></span>BOOT3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOOT3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a62846bd250b7f10328c2ff4d35d37d07" name="a62846bd250b7f10328c2ff4d35d37d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62846bd250b7f10328c2ff4d35d37d07">&#9670;&#160;</a></span>BOOTDIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::BOOTDIS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tell the bootrom to ignore the BOOT0..3 registers following the next RSM reset (e.g. </p>
+<p>the next core power down/up). If an early boot stage has soft-locked some OTP pages in order to protect their contents from later stages, there is a risk that Secure code running at a later stage can unlock the pages by powering the core up and down. This register can be used to ensure that the bootloader runs as normal on the next power up, preventing Secure code at a later stage from accessing OTP in its unlocked state. Should be used in conjunction with the OTP BOOTDIS register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="acc664d882e84e51e8e8dd8c4d519e2d5" name="acc664d882e84e51e8e8dd8c4d519e2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc664d882e84e51e8e8dd8c4d519e2d5">&#9670;&#160;</a></span>CHIP_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::CHIP_RESET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Chip reset control and status <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa9c0b1b507ea30fd0e4f3f51827d76d8" name="aa9c0b1b507ea30fd0e4f3f51827d76d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c0b1b507ea30fd0e4f3f51827d76d8">&#9670;&#160;</a></span>CURRENT_PWRUP_REQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::CURRENT_PWRUP_REQ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates current powerup request state pwrup events can be cleared by removing the enable from the pwrup register. </p>
+<p>The alarm pwrup req can be cleared by clearing timer.alarm_enab 0 = chip reset, for the source of the last reset see POWMAN_CHIP_RESET 1 = pwrup0 2 = pwrup1 3 = pwrup2 4 = pwrup3 5 = coresight_pwrup 6 = alarm_pwrup <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad6e3ba1ae226fd71af325b8ee34393d3" name="ad6e3ba1ae226fd71af325b8ee34393d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e3ba1ae226fd71af325b8ee34393d3">&#9670;&#160;</a></span>DBG_PWRCFG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::DBG_PWRCFG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DBG_PWRCFG <br  />
+ </p>
+
+</div>
+</div>
+<a id="a159f4f68a0a8732f7445f43810a4d7b6" name="a159f4f68a0a8732f7445f43810a4d7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159f4f68a0a8732f7445f43810a4d7b6">&#9670;&#160;</a></span>DBGCONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::DBGCONFIG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DBGCONFIG <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac48cb9f87074be47f4dbe2f5b158fb99" name="ac48cb9f87074be47f4dbe2f5b158fb99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48cb9f87074be47f4dbe2f5b158fb99">&#9670;&#160;</a></span>EXT_CTRL0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::EXT_CTRL0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures a gpio as a power mode aware control output <br  />
+ </p>
+
+</div>
+</div>
+<a id="aae7c3dc5c3d44dae09e3e48d83dd7e9f" name="aae7c3dc5c3d44dae09e3e48d83dd7e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7c3dc5c3d44dae09e3e48d83dd7e9f">&#9670;&#160;</a></span>EXT_CTRL1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::EXT_CTRL1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures a gpio as a power mode aware control output <br  />
+ </p>
+
+</div>
+</div>
+<a id="a04a102e1c5dab7561671e748afc706a3" name="a04a102e1c5dab7561671e748afc706a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a102e1c5dab7561671e748afc706a3">&#9670;&#160;</a></span>EXT_TIME_REF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::EXT_TIME_REF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select a GPIO to use as a time reference, the source can be used to drive the low power clock at 32kHz, or to provide a 1ms tick to the timer, or provide a 1Hz tick to the timer. </p>
+<p>The tick selection is controlled by the POWMAN_TIMER register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4669163be209555a1af3beccf0d8a939" name="a4669163be209555a1af3beccf0d8a939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4669163be209555a1af3beccf0d8a939">&#9670;&#160;</a></span>INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable <br  />
+ </p>
+
+</div>
+</div>
+<a id="a02cf5a0bca6caf1a621bebd20a33b6b1" name="a02cf5a0bca6caf1a621bebd20a33b6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02cf5a0bca6caf1a621bebd20a33b6b1">&#9670;&#160;</a></span>INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8abac0d3bb66c2ae2d5994eb9ca95b72" name="a8abac0d3bb66c2ae2d5994eb9ca95b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abac0d3bb66c2ae2d5994eb9ca95b72">&#9670;&#160;</a></span>INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupts <br  />
+ </p>
+
+</div>
+</div>
+<a id="a163eca61681b8ef909599a1d797155d7" name="a163eca61681b8ef909599a1d797155d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163eca61681b8ef909599a1d797155d7">&#9670;&#160;</a></span>INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0dee01cde860b5cc0e420c0dbc44ec7c" name="a0dee01cde860b5cc0e420c0dbc44ec7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dee01cde860b5cc0e420c0dbc44ec7c">&#9670;&#160;</a></span>LAST_SWCORE_PWRUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::LAST_SWCORE_PWRUP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates which pwrup source triggered the last switched-core power up 0 = chip reset, for the source of the last reset see POWMAN_CHIP_RESET 1 = pwrup0 2 = pwrup1 3 = pwrup2 4 = pwrup3 5 = coresight_pwrup 6 = alarm_pwrup <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab91c70e648909ccb931c32f8f48ced0d" name="ab91c70e648909ccb931c32f8f48ced0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91c70e648909ccb931c32f8f48ced0d">&#9670;&#160;</a></span>LPOSC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::LPOSC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Low power oscillator control register. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a1214c7128020c0369b7b4a236f6bab68" name="a1214c7128020c0369b7b4a236f6bab68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1214c7128020c0369b7b4a236f6bab68">&#9670;&#160;</a></span>LPOSC_FREQ_KHZ_FRAC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::LPOSC_FREQ_KHZ_FRAC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informs the AON Timer of the fractional component of the clock frequency when running off the LPOSC. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="afc13e2d332ac2c6dab9e8b6ab5dd3eec" name="afc13e2d332ac2c6dab9e8b6ab5dd3eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc13e2d332ac2c6dab9e8b6ab5dd3eec">&#9670;&#160;</a></span>LPOSC_FREQ_KHZ_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::LPOSC_FREQ_KHZ_INT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informs the AON Timer of the integer component of the clock frequency when running off the LPOSC. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="aead6164e661187db4d61249b8df975b4" name="aead6164e661187db4d61249b8df975b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead6164e661187db4d61249b8df975b4">&#9670;&#160;</a></span>POW_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::POW_DELAY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>power state machine delays <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4f096252df0731867330d58fa0a5590f" name="a4f096252df0731867330d58fa0a5590f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f096252df0731867330d58fa0a5590f">&#9670;&#160;</a></span>POW_FASTDIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::POW_FASTDIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>POW_FASTDIV <br  />
+ </p>
+
+</div>
+</div>
+<a id="a184a12b7ba7f45e045c1d0fb66df4891" name="a184a12b7ba7f45e045c1d0fb66df4891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184a12b7ba7f45e045c1d0fb66df4891">&#9670;&#160;</a></span>PWRUP0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::PWRUP0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4 GPIO powerup events can be configured to wake the chip up from a low power state. </p>
+<p>The pwrups are level/edge sensitive and can be set to trigger on a high/rising or low/falling event The number of gpios available depends on the package option. An invalid selection will be ignored source = 0 selects gpio0 . . source = 47 selects gpio47 source = 48 selects qspi_ss source = 49 selects qspi_sd0 source = 50 selects qspi_sd1 source = 51 selects qspi_sd2 source = 52 selects qspi_sd3 source = 53 selects qspi_sclk level = 0 triggers the pwrup when the source is low level = 1 triggers the pwrup when the source is high <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2d2ee94672a6ce6a75db50959d7f01af" name="a2d2ee94672a6ce6a75db50959d7f01af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2ee94672a6ce6a75db50959d7f01af">&#9670;&#160;</a></span>PWRUP1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::PWRUP1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4 GPIO powerup events can be configured to wake the chip up from a low power state. </p>
+<p>The pwrups are level/edge sensitive and can be set to trigger on a high/rising or low/falling event The number of gpios available depends on the package option. An invalid selection will be ignored source = 0 selects gpio0 . . source = 47 selects gpio47 source = 48 selects qspi_ss source = 49 selects qspi_sd0 source = 50 selects qspi_sd1 source = 51 selects qspi_sd2 source = 52 selects qspi_sd3 source = 53 selects qspi_sclk level = 0 triggers the pwrup when the source is low level = 1 triggers the pwrup when the source is high <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac323b91699030709a10b309d5dc3cf04" name="ac323b91699030709a10b309d5dc3cf04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac323b91699030709a10b309d5dc3cf04">&#9670;&#160;</a></span>PWRUP2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::PWRUP2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4 GPIO powerup events can be configured to wake the chip up from a low power state. </p>
+<p>The pwrups are level/edge sensitive and can be set to trigger on a high/rising or low/falling event The number of gpios available depends on the package option. An invalid selection will be ignored source = 0 selects gpio0 . . source = 47 selects gpio47 source = 48 selects qspi_ss source = 49 selects qspi_sd0 source = 50 selects qspi_sd1 source = 51 selects qspi_sd2 source = 52 selects qspi_sd3 source = 53 selects qspi_sclk level = 0 triggers the pwrup when the source is low level = 1 triggers the pwrup when the source is high <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae1382c7e792ce2838b74b6fcc4c7495e" name="ae1382c7e792ce2838b74b6fcc4c7495e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1382c7e792ce2838b74b6fcc4c7495e">&#9670;&#160;</a></span>PWRUP3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::PWRUP3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4 GPIO powerup events can be configured to wake the chip up from a low power state. </p>
+<p>The pwrups are level/edge sensitive and can be set to trigger on a high/rising or low/falling event The number of gpios available depends on the package option. An invalid selection will be ignored source = 0 selects gpio0 . . source = 47 selects gpio47 source = 48 selects qspi_ss source = 49 selects qspi_sd0 source = 50 selects qspi_sd1 source = 51 selects qspi_sd2 source = 52 selects qspi_sd3 source = 53 selects qspi_sclk level = 0 triggers the pwrup when the source is low level = 1 triggers the pwrup when the source is high <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa081318b43a1c7d563cb3d060cf59cb5" name="aa081318b43a1c7d563cb3d060cf59cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa081318b43a1c7d563cb3d060cf59cb5">&#9670;&#160;</a></span>READ_TIME_LOWER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::READ_TIME_LOWER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>READ_TIME_LOWER <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae666d0fbb21b4290fa852e172f323375" name="ae666d0fbb21b4290fa852e172f323375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae666d0fbb21b4290fa852e172f323375">&#9670;&#160;</a></span>READ_TIME_UPPER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::READ_TIME_UPPER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>READ_TIME_UPPER <br  />
+ </p>
+
+</div>
+</div>
+<a id="a585e28e90de658b2d6a478902dbbc37c" name="a585e28e90de658b2d6a478902dbbc37c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585e28e90de658b2d6a478902dbbc37c">&#9670;&#160;</a></span>SCRATCH0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0067ab261d9a655cd3f4c6affc814764" name="a0067ab261d9a655cd3f4c6affc814764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0067ab261d9a655cd3f4c6affc814764">&#9670;&#160;</a></span>SCRATCH1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae24c8a09e589052dc9a9068f3592d25f" name="ae24c8a09e589052dc9a9068f3592d25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24c8a09e589052dc9a9068f3592d25f">&#9670;&#160;</a></span>SCRATCH2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a775d0bb6c602ad8b80c65db3970629cd" name="a775d0bb6c602ad8b80c65db3970629cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775d0bb6c602ad8b80c65db3970629cd">&#9670;&#160;</a></span>SCRATCH3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a875a22a04927685cccc31c27551137b4" name="a875a22a04927685cccc31c27551137b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875a22a04927685cccc31c27551137b4">&#9670;&#160;</a></span>SCRATCH4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad180ca9f5156c81d06d9b9965da714c4" name="ad180ca9f5156c81d06d9b9965da714c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad180ca9f5156c81d06d9b9965da714c4">&#9670;&#160;</a></span>SCRATCH5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5dd06450f6594be2a0ea617d37708c88" name="a5dd06450f6594be2a0ea617d37708c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd06450f6594be2a0ea617d37708c88">&#9670;&#160;</a></span>SCRATCH6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaad5ce47cd153fcaa4eb6a45c54dc9ff" name="aaad5ce47cd153fcaa4eb6a45c54dc9ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad5ce47cd153fcaa4eb6a45c54dc9ff">&#9670;&#160;</a></span>SCRATCH7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SCRATCH7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists in low power mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a742233f98b140965f9aa3a6f767bedfa" name="a742233f98b140965f9aa3a6f767bedfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a742233f98b140965f9aa3a6f767bedfa">&#9670;&#160;</a></span>SEQ_CFG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SEQ_CFG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For configuration of the power sequencer Writes are ignored while POWMAN_STATE_CHANGING=1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6adec427e41625d2cd593383e3f9a60d" name="a6adec427e41625d2cd593383e3f9a60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6adec427e41625d2cd593383e3f9a60d">&#9670;&#160;</a></span>SET_TIME_15TO0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SET_TIME_15TO0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SET_TIME_15TO0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7aec324a09999da9177f3a5e0909c855" name="a7aec324a09999da9177f3a5e0909c855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aec324a09999da9177f3a5e0909c855">&#9670;&#160;</a></span>SET_TIME_31TO16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SET_TIME_31TO16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SET_TIME_31TO16 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a15f9ab21ed5f2874fa35d123f0b72063" name="a15f9ab21ed5f2874fa35d123f0b72063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f9ab21ed5f2874fa35d123f0b72063">&#9670;&#160;</a></span>SET_TIME_47TO32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SET_TIME_47TO32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SET_TIME_47TO32 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a27f60d866db7b082b5992359035eb99d" name="a27f60d866db7b082b5992359035eb99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f60d866db7b082b5992359035eb99d">&#9670;&#160;</a></span>SET_TIME_63TO48</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::SET_TIME_63TO48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SET_TIME_63TO48 <br  />
+ </p>
+
+</div>
+</div>
+<a id="acc6fd0ed47088207defe04b863a31be5" name="acc6fd0ed47088207defe04b863a31be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6fd0ed47088207defe04b863a31be5">&#9670;&#160;</a></span>STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::STATE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This register controls the power state of the 4 power domains. </p>
+<p>The current power state is indicated in POWMAN_STATE_CURRENT which is read-only. To change the state, write to POWMAN_STATE_REQ. The coding of POWMAN_STATE_CURRENT &amp; POWMAN_STATE_REQ corresponds to the power states defined in the datasheet: bit 3 = SWCORE bit 2 = XIP cache bit 1 = SRAM0 bit 0 = SRAM1 0 = powered up 1 = powered down When POWMAN_STATE_REQ is written, the POWMAN_STATE_WAITING flag is set while the Power Manager determines what is required. If an invalid transition is requested the Power Manager will still register the request in POWMAN_STATE_REQ but will also set the POWMAN_BAD_REQ flag. It will then implement the power-up requests and ignore the power down requests. To do nothing would risk entering an unrecoverable lock-up state. Invalid requests are: any combination of power up and power down requests any request that results in swcore being powered and xip unpowered If the request is to power down the switched-core domain then POWMAN_STATE_WAITING stays active until the processors halt. During this time the POWMAN_STATE_REQ field can be re-written to change or cancel the request. When the power state transition begins the POWMAN_STATE_WAITING_flag is cleared, the POWMAN_STATE_CHANGING flag is set and POWMAN register writes are ignored until the transition completes. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6b79fa27b69798206a7820eeb82ba1c0" name="a6b79fa27b69798206a7820eeb82ba1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b79fa27b69798206a7820eeb82ba1c0">&#9670;&#160;</a></span>TIMER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::TIMER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIMER <br  />
+ </p>
+
+</div>
+</div>
+<a id="a70f9ea72fb03c52b52367e98438d0db6" name="a70f9ea72fb03c52b52367e98438d0db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f9ea72fb03c52b52367e98438d0db6">&#9670;&#160;</a></span>VREG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::VREG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Voltage Regulator Settings <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae260dfbcb399c9e3620d8a3cd46d5601" name="ae260dfbcb399c9e3620d8a3cd46d5601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae260dfbcb399c9e3620d8a3cd46d5601">&#9670;&#160;</a></span>VREG_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::VREG_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Voltage Regulator Control <br  />
+ </p>
+
+</div>
+</div>
+<a id="a08e58c52f800a0689e1f788d6a7dbec4" name="a08e58c52f800a0689e1f788d6a7dbec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e58c52f800a0689e1f788d6a7dbec4">&#9670;&#160;</a></span>VREG_LP_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::VREG_LP_ENTRY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Voltage Regulator Low Power Entry Settings <br  />
+ </p>
+
+</div>
+</div>
+<a id="a43709040b93f450b48e12dfd429b7702" name="a43709040b93f450b48e12dfd429b7702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43709040b93f450b48e12dfd429b7702">&#9670;&#160;</a></span>VREG_LP_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::VREG_LP_EXIT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Voltage Regulator Low Power Exit Settings <br  />
+ </p>
+
+</div>
+</div>
+<a id="a814aeaa89b0bee8a5b8d640246ea43d4" name="a814aeaa89b0bee8a5b8d640246ea43d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814aeaa89b0bee8a5b8d640246ea43d4">&#9670;&#160;</a></span>VREG_STS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::VREG_STS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Voltage Regulator Status <br  />
+ </p>
+
+</div>
+</div>
+<a id="a77c1aed77c12d84ff8fcb4ef41bf1c97" name="a77c1aed77c12d84ff8fcb4ef41bf1c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c1aed77c12d84ff8fcb4ef41bf1c97">&#9670;&#160;</a></span>WDSEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::WDSEL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows a watchdog reset to reset the internal state of powman in addition to the power-on state machine (PSM). </p>
+<p>Note that powman ignores watchdog resets that do not select at least the CLOCKS stage or earlier stages in the PSM. If using these bits, it's recommended to set PSM_WDSEL to all-ones in addition to the desired bits in this register. Failing to select CLOCKS or earlier will result in the POWMAN_WDSEL register having no effect. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a927c1e09b467e9a422a4e7974310a2e9" name="a927c1e09b467e9a422a4e7974310a2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927c1e09b467e9a422a4e7974310a2e9">&#9670;&#160;</a></span>XOSC_FREQ_KHZ_FRAC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::XOSC_FREQ_KHZ_FRAC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informs the AON Timer of the fractional component of the clock frequency when running off the XOSC. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ab245d7b11ffee072bdc375ceb707c890" name="ab245d7b11ffee072bdc375ceb707c890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab245d7b11ffee072bdc375ceb707c890">&#9670;&#160;</a></span>XOSC_FREQ_KHZ_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> POWMAN_Type::XOSC_FREQ_KHZ_INT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informs the AON Timer of the integer component of the clock frequency when running off the XOSC. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structPOWMAN__Type.html">POWMAN_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

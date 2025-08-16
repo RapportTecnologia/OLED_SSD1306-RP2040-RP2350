@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de busctrl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2040/hardware_structs/include/hardware/structs/busctrl.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _HARDWARE_STRUCTS_BUSCTRL_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _HARDWARE_STRUCTS_BUSCTRL_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;hardware/regs/busctrl.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Reference to datasheet: https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#tab-registerlist_busctrl</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// The _REG_ macro is intended to help make the register navigable in your IDE (for example, using the &quot;Go to Definition&quot; feature)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// _REG_(x) will link to the corresponding register in hardware/regs/busctrl.h.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Bit-field descriptions are of the form:</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// BITMASK [BITRANGE] FIELDNAME (RESETVALUE) DESCRIPTION</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325">   28</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325">bus_ctrl_perf_counter_rp2040</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a6611551a649fa1ec67e3237491028529">   29</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a6611551a649fa1ec67e3237491028529">arbiter_rom_perf_event_access</a> = 19,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a6ea7f40beba6c12ce55a1533b022c32a">   30</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a6ea7f40beba6c12ce55a1533b022c32a">arbiter_rom_perf_event_access_contested</a> = 18,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325ab97404eb48e24ba4492f514e6cef575f">   31</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325ab97404eb48e24ba4492f514e6cef575f">arbiter_xip_main_perf_event_access</a> = 17,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a26a416d9d605e25d7421f9215fe6c094">   32</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a26a416d9d605e25d7421f9215fe6c094">arbiter_xip_main_perf_event_access_contested</a> = 16,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a504c5d18b0f4ac6238bc5fccb3d37e21">   33</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a504c5d18b0f4ac6238bc5fccb3d37e21">arbiter_sram0_perf_event_access</a> = 15,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a4e695e0ee9feb163299ffe729db23a5c">   34</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a4e695e0ee9feb163299ffe729db23a5c">arbiter_sram0_perf_event_access_contested</a> = 14,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a98a35b6048fe7d1447fb97d0c7e2a75c">   35</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a98a35b6048fe7d1447fb97d0c7e2a75c">arbiter_sram1_perf_event_access</a> = 13,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325afac75769dc21333db8b9a2cacd4b46d3">   36</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325afac75769dc21333db8b9a2cacd4b46d3">arbiter_sram1_perf_event_access_contested</a> = 12,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a322863ee091a8900980dde906e6ffeac">   37</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a322863ee091a8900980dde906e6ffeac">arbiter_sram2_perf_event_access</a> = 11,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a215fe6a8d36d97090e6e1d5554e6fc3f">   38</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a215fe6a8d36d97090e6e1d5554e6fc3f">arbiter_sram2_perf_event_access_contested</a> = 10,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325ab820be157c3c8741947f3c0cf04e996b">   39</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325ab820be157c3c8741947f3c0cf04e996b">arbiter_sram3_perf_event_access</a> = 9,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a81891477983a23ca7b63f359daabfc81">   40</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a81891477983a23ca7b63f359daabfc81">arbiter_sram3_perf_event_access_contested</a> = 8,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a7c6caed28007715c5a4fde264733a34c">   41</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a7c6caed28007715c5a4fde264733a34c">arbiter_sram4_perf_event_access</a> = 7,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a3c6460ec04698ab818c9c9027e477c8c">   42</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a3c6460ec04698ab818c9c9027e477c8c">arbiter_sram4_perf_event_access_contested</a> = 6,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a7fd7c1b7a6b0dd2f85b8a19123fb53a6">   43</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a7fd7c1b7a6b0dd2f85b8a19123fb53a6">arbiter_sram5_perf_event_access</a> = 5,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a4cab5ed7fcaa3e2724c3472937e9b2ac">   44</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a4cab5ed7fcaa3e2724c3472937e9b2ac">arbiter_sram5_perf_event_access_contested</a> = 4,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325aee6deac6892cf1aa9508f1cd6390f44d">   45</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325aee6deac6892cf1aa9508f1cd6390f44d">arbiter_fastperi_perf_event_access</a> = 3,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325aec55626bf6096ba05b59f1c3f9cca579">   46</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325aec55626bf6096ba05b59f1c3f9cca579">arbiter_fastperi_perf_event_access_contested</a> = 2,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a07b9601ae61070f685f5f6480eff8f9e">   47</a></span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a07b9601ae61070f685f5f6480eff8f9e">arbiter_apb_perf_event_access</a> = 1,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_enumvalue" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a32fbdab2a787be395316539b250cd85c">arbiter_apb_perf_event_access_contested</a> = 0</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a32fbdab2a787be395316539b250cd85c">   49</a></span>} <a class="code hl_typedef" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#ad05fb7b25aad483a8dde4babd5851a85">bus_ctrl_perf_counter_t</a>;</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structbus__ctrl__perf__hw__t.html">   51</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#a2c291dec07e1df138526aac8582bb380">BUSCTRL_PERFCTR0_OFFSET</a>) <span class="comment">// BUSCTRL_PERFCTR0</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// Bus fabric performance counter 0</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// 0x00ffffff [23:0]  PERFCTR0     (0x000000) Busfabric saturating performance counter 0 +</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structbus__ctrl__perf__hw__t.html#a451fb8bd785c5dc631f2f96f3d20dc19">   55</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> value;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#a274fe1cf78c322776a9ede9bb52f0b3b">BUSCTRL_PERFSEL0_OFFSET</a>) <span class="comment">// BUSCTRL_PERFSEL0</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// Bus fabric performance event select for PERFCTR0</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// 0x0000001f [4:0]   PERFSEL0     (0x1f) Select an event for PERFCTR0</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structbus__ctrl__perf__hw__t.html#af0d6d0da39a62a815efd80d65db8810b">   60</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> sel;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <a class="code hl_struct" href="structbus__ctrl__perf__hw__t.html">bus_ctrl_perf_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structbusctrl__hw__t.html">   63</a></span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#ae9b44d2697b11a32c5fd7174dfad4ecb">BUSCTRL_BUS_PRIORITY_OFFSET</a>) <span class="comment">// BUSCTRL_BUS_PRIORITY</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// Set the priority of each master for bus arbitration</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// 0x00001000 [12]    DMA_W        (0) 0 - low priority, 1 - high priority</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// 0x00000100 [8]     DMA_R        (0) 0 - low priority, 1 - high priority</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// 0x00000010 [4]     PROC1        (0) 0 - low priority, 1 - high priority</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// 0x00000001 [0]     PROC0        (0) 0 - low priority, 1 - high priority</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structbusctrl__hw__t.html#a32ad0714e95c8af89234685b02aa1b24">   70</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> priority;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#a85a19289f53f275c0480465296a878c4">BUSCTRL_BUS_PRIORITY_ACK_OFFSET</a>) <span class="comment">// BUSCTRL_BUS_PRIORITY_ACK</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// Bus priority acknowledge</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// 0x00000001 [0]     BUS_PRIORITY_ACK (0) Goes to 1 once all arbiters have registered the new...</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structbusctrl__hw__t.html#afeaad9c0cdfb7bf0bd74fc93ca175334">   75</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> priority_ack;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structbusctrl__hw__t.html#a15262d05ea053f4029ba1c43a50442b5">   77</a></span>    <a class="code hl_struct" href="structbus__ctrl__perf__hw__t.html">bus_ctrl_perf_hw_t</a> counter[4];</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>} <a class="code hl_struct" href="structbusctrl__hw__t.html">busctrl_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a65adfd027117f6f4e5c59743f0aebf1e">   80</a></span><span class="preprocessor">#define busctrl_hw ((busctrl_hw_t *)BUSCTRL_BASE)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span> (<a class="code hl_struct" href="structbusctrl__hw__t.html">busctrl_hw_t</a>) == 0x0028, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_STRUCTS_BUSCTRL_H</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_a5e9dd65c504214b8530a3ce63adf8375"><div class="ttname"><a href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a></div><div class="ttdeci">#define _REG_(x)</div><div class="ttdef"><b>Definição</b> address_mapped.h:84</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ab87d9fde36e04e9e65c9f16f56982eeb"><div class="ttname"><a href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a></div><div class="ttdeci">const volatile uint32_t io_ro_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:67</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ae7a3903ffe232108a65efc85970a5fdb"><div class="ttname"><a href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a></div><div class="ttdeci">volatile uint32_t io_rw_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:66</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="arp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h_html_a274fe1cf78c322776a9ede9bb52f0b3b"><div class="ttname"><a href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#a274fe1cf78c322776a9ede9bb52f0b3b">BUSCTRL_PERFSEL0_OFFSET</a></div><div class="ttdeci">#define BUSCTRL_PERFSEL0_OFFSET</div><div class="ttdef"><b>Definição</b> rp2040/hardware_regs/include/hardware/regs/busctrl.h:107</div></div>
+<div class="ttc" id="arp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h_html_a2c291dec07e1df138526aac8582bb380"><div class="ttname"><a href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#a2c291dec07e1df138526aac8582bb380">BUSCTRL_PERFCTR0_OFFSET</a></div><div class="ttdeci">#define BUSCTRL_PERFCTR0_OFFSET</div><div class="ttdef"><b>Definição</b> rp2040/hardware_regs/include/hardware/regs/busctrl.h:76</div></div>
+<div class="ttc" id="arp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h_html_a85a19289f53f275c0480465296a878c4"><div class="ttname"><a href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#a85a19289f53f275c0480465296a878c4">BUSCTRL_BUS_PRIORITY_ACK_OFFSET</a></div><div class="ttdeci">#define BUSCTRL_BUS_PRIORITY_ACK_OFFSET</div><div class="ttdef"><b>Definição</b> rp2040/hardware_regs/include/hardware/regs/busctrl.h:63</div></div>
+<div class="ttc" id="arp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h_html_ae9b44d2697b11a32c5fd7174dfad4ecb"><div class="ttname"><a href="rp2040_2hardware__regs_2include_2hardware_2regs_2busctrl_8h.html#ae9b44d2697b11a32c5fd7174dfad4ecb">BUSCTRL_BUS_PRIORITY_OFFSET</a></div><div class="ttdeci">#define BUSCTRL_BUS_PRIORITY_OFFSET</div><div class="ttdoc">Copyright (c) 2024 Raspberry Pi Ltd.</div><div class="ttdef"><b>Definição</b> rp2040/hardware_regs/include/hardware/regs/busctrl.h:20</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325">bus_ctrl_perf_counter_rp2040</a></div><div class="ttdeci">bus_ctrl_perf_counter_rp2040</div><div class="ttdoc">Bus fabric performance counters on RP2040 (used as typedef bus_ctrl_perf_counter_t)</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:28</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a07b9601ae61070f685f5f6480eff8f9e"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a07b9601ae61070f685f5f6480eff8f9e">arbiter_apb_perf_event_access</a></div><div class="ttdeci">@ arbiter_apb_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:47</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a215fe6a8d36d97090e6e1d5554e6fc3f"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a215fe6a8d36d97090e6e1d5554e6fc3f">arbiter_sram2_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_sram2_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:38</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a26a416d9d605e25d7421f9215fe6c094"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a26a416d9d605e25d7421f9215fe6c094">arbiter_xip_main_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_xip_main_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:32</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a322863ee091a8900980dde906e6ffeac"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a322863ee091a8900980dde906e6ffeac">arbiter_sram2_perf_event_access</a></div><div class="ttdeci">@ arbiter_sram2_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:37</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a32fbdab2a787be395316539b250cd85c"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a32fbdab2a787be395316539b250cd85c">arbiter_apb_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_apb_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:48</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a3c6460ec04698ab818c9c9027e477c8c"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a3c6460ec04698ab818c9c9027e477c8c">arbiter_sram4_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_sram4_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:42</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a4cab5ed7fcaa3e2724c3472937e9b2ac"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a4cab5ed7fcaa3e2724c3472937e9b2ac">arbiter_sram5_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_sram5_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:44</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a4e695e0ee9feb163299ffe729db23a5c"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a4e695e0ee9feb163299ffe729db23a5c">arbiter_sram0_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_sram0_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:34</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a504c5d18b0f4ac6238bc5fccb3d37e21"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a504c5d18b0f4ac6238bc5fccb3d37e21">arbiter_sram0_perf_event_access</a></div><div class="ttdeci">@ arbiter_sram0_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:33</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a6611551a649fa1ec67e3237491028529"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a6611551a649fa1ec67e3237491028529">arbiter_rom_perf_event_access</a></div><div class="ttdeci">@ arbiter_rom_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:29</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a6ea7f40beba6c12ce55a1533b022c32a"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a6ea7f40beba6c12ce55a1533b022c32a">arbiter_rom_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_rom_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:30</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a7c6caed28007715c5a4fde264733a34c"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a7c6caed28007715c5a4fde264733a34c">arbiter_sram4_perf_event_access</a></div><div class="ttdeci">@ arbiter_sram4_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:41</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a7fd7c1b7a6b0dd2f85b8a19123fb53a6"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a7fd7c1b7a6b0dd2f85b8a19123fb53a6">arbiter_sram5_perf_event_access</a></div><div class="ttdeci">@ arbiter_sram5_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:43</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a81891477983a23ca7b63f359daabfc81"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a81891477983a23ca7b63f359daabfc81">arbiter_sram3_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_sram3_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:40</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325a98a35b6048fe7d1447fb97d0c7e2a75c"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325a98a35b6048fe7d1447fb97d0c7e2a75c">arbiter_sram1_perf_event_access</a></div><div class="ttdeci">@ arbiter_sram1_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:35</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325ab820be157c3c8741947f3c0cf04e996b"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325ab820be157c3c8741947f3c0cf04e996b">arbiter_sram3_perf_event_access</a></div><div class="ttdeci">@ arbiter_sram3_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:39</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325ab97404eb48e24ba4492f514e6cef575f"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325ab97404eb48e24ba4492f514e6cef575f">arbiter_xip_main_perf_event_access</a></div><div class="ttdeci">@ arbiter_xip_main_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:31</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325aec55626bf6096ba05b59f1c3f9cca579"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325aec55626bf6096ba05b59f1c3f9cca579">arbiter_fastperi_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_fastperi_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:46</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325aee6deac6892cf1aa9508f1cd6390f44d"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325aee6deac6892cf1aa9508f1cd6390f44d">arbiter_fastperi_perf_event_access</a></div><div class="ttdeci">@ arbiter_fastperi_perf_event_access</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:45</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_a012f195b865ad00c8a2de636073c1325afac75769dc21333db8b9a2cacd4b46d3"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#a012f195b865ad00c8a2de636073c1325afac75769dc21333db8b9a2cacd4b46d3">arbiter_sram1_perf_event_access_contested</a></div><div class="ttdeci">@ arbiter_sram1_perf_event_access_contested</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:36</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h_html_ad05fb7b25aad483a8dde4babd5851a85"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html#ad05fb7b25aad483a8dde4babd5851a85">bus_ctrl_perf_counter_t</a></div><div class="ttdeci">enum bus_ctrl_perf_counter_rp2040 bus_ctrl_perf_counter_t</div><div class="ttdoc">Bus fabric performance counters on RP2040 (used as typedef bus_ctrl_perf_counter_t)</div></div>
+<div class="ttc" id="astructbus__ctrl__perf__hw__t_html"><div class="ttname"><a href="structbus__ctrl__perf__hw__t.html">bus_ctrl_perf_hw_t</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:51</div></div>
+<div class="ttc" id="astructbusctrl__hw__t_html"><div class="ttname"><a href="structbusctrl__hw__t.html">busctrl_hw_t</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/busctrl.h:63</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_519578c92a94c221750fe2f676450158.html">hardware_structs</a></li><li class="navelem"><a class="el" href="dir_2ab73e23d05a66084d7e97c97400bbce.html">include</a></li><li class="navelem"><a class="el" href="dir_2ebfd2cfe85b5f65b8c479450ca76d68.html">hardware</a></li><li class="navelem"><a class="el" href="dir_50758e3d52fdfb177ad98847c6ec1efb.html">structs</a></li><li class="navelem"><a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2busctrl_8h.html">busctrl.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

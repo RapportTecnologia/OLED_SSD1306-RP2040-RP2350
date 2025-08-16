@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: hardware_claim</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__hardware__claim.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">hardware_claim</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Lightweight hardware resource management API.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga9291a012435d3efff22c592d47e82b4a" id="r_ga9291a012435d3efff22c592d47e82b4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__claim.html#ga9291a012435d3efff22c592d47e82b4a">hw_claim_clear</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bits</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bit_index</a>)</td></tr>
+<tr class="memdesc:ga9291a012435d3efff22c592d47e82b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically unclaim a resource.  <br /></td></tr>
+<tr class="separator:ga9291a012435d3efff22c592d47e82b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac322717d266403fac74aed5cef23eb95" id="r_gac322717d266403fac74aed5cef23eb95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95">hw_claim_lock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gac322717d266403fac74aed5cef23eb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire the runtime mutual exclusion lock provided by the <code>hardware_claim</code> library.  <br /></td></tr>
+<tr class="separator:gac322717d266403fac74aed5cef23eb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6487272cf1fa8d5b2e67f78bb5bdab4d" id="r_ga6487272cf1fa8d5b2e67f78bb5bdab4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__claim.html#ga6487272cf1fa8d5b2e67f78bb5bdab4d">hw_claim_or_assert</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bits</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bit_index</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">message</a>)</td></tr>
+<tr class="memdesc:ga6487272cf1fa8d5b2e67f78bb5bdab4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically claim a resource, panicking if it is already in use.  <br /></td></tr>
+<tr class="separator:ga6487272cf1fa8d5b2e67f78bb5bdab4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5ebb9e8ede55de49e6296953d731005" id="r_gae5ebb9e8ede55de49e6296953d731005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__claim.html#gae5ebb9e8ede55de49e6296953d731005">hw_claim_unlock</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> token)</td></tr>
+<tr class="memdesc:gae5ebb9e8ede55de49e6296953d731005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the runtime mutual exclusion lock provided by the <code>hardware_claim</code> library.  <br /></td></tr>
+<tr class="separator:gae5ebb9e8ede55de49e6296953d731005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc8b9324cd6f327e57c6dcb8cbef1745" id="r_gacc8b9324cd6f327e57c6dcb8cbef1745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__claim.html#gacc8b9324cd6f327e57c6dcb8cbef1745">hw_claim_unused_from_range</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bits</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bit_lsb</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bit_msb</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">message</a>)</td></tr>
+<tr class="memdesc:gacc8b9324cd6f327e57c6dcb8cbef1745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically claim one resource out of a range of resources, optionally asserting if none are free.  <br /></td></tr>
+<tr class="separator:gacc8b9324cd6f327e57c6dcb8cbef1745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3aa24c90859fbc4da40b8fce8852f6e" id="r_gab3aa24c90859fbc4da40b8fce8852f6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__claim.html#gab3aa24c90859fbc4da40b8fce8852f6e">hw_is_claimed</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bits</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bit_index</a>)</td></tr>
+<tr class="memdesc:gab3aa24c90859fbc4da40b8fce8852f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a resource is claimed at the time of the call.  <br /></td></tr>
+<tr class="separator:gab3aa24c90859fbc4da40b8fce8852f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Lightweight hardware resource management API. </p>
+<p><code>hardware_claim</code> provides a simple API for management of hardware resources at runtime.</p>
+<p>This API is usually called by other hardware specific <em>claiming</em> APIs and provides simple multi-core safe methods to manipulate compact bit-sets representing hardware resources.</p>
+<p>This API allows any other library to cooperatively participate in a scheme by which both compile time and runtime allocation of resources can co-exist, and conflicts can be avoided or detected (depending on the use case) without the libraries having any other knowledge of each other.</p>
+<p>Facilities are providing for:</p>
+<ol type="1">
+<li>Claiming resources (and asserting if they are already claimed)</li>
+<li>Freeing (unclaiming) resources</li>
+<li>Finding unused resources </li>
+</ol>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ga9291a012435d3efff22c592d47e82b4a" name="ga9291a012435d3efff22c592d47e82b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9291a012435d3efff22c592d47e82b4a">&#9670;&#160;</a></span>hw_claim_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> hw_claim_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>bit_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically unclaim a resource. </p>
+<p>The resource ownership is indicated by the bit_index bit in an array of bits.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bits</td><td>pointer to an array of bits (8 bits per byte) </td></tr>
+    <tr><td class="paramname">bit_index</td><td>resource to unclaim (bit index into array of bits) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95">hw_claim_lock()</a>, <a class="el" href="group__hardware__claim.html#gae5ebb9e8ede55de49e6296953d731005">hw_claim_unlock()</a> e <a class="el" href="group__hardware__claim.html#gab3aa24c90859fbc4da40b8fce8852f6e">hw_is_claimed()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__dma.html#gac50200739b88a2fd52316f4150533035">dma_channel_unclaim()</a>, <a class="el" href="group__hardware__dma.html#ga890490576d8806b8933aad0e34d09c5e">dma_timer_unclaim()</a>, <a class="el" href="group__hardware__interp.html#ga47d82417be5f875a1060384eada84147">interp_unclaim_lane()</a>, <a class="el" href="group__hardware__pio.html#ga62328112de918932e4ed0955ce0054ab">pio_sm_unclaim()</a>, <a class="el" href="group__hardware__sync.html#ga177efc085451e4eabfc726897a59ca57">spin_lock_unclaim()</a>, <a class="el" href="group__hardware__timer.html#gac8ff547eecf2fd3eb1124cd3a5afe85a">timer_hardware_alarm_unclaim()</a> e <a class="el" href="group__hardware__irq.html#ga14c041e05fbd5ee3c0b6b6341073a20a">user_irq_unclaim()</a>.</p>
+
+</div>
+</div>
+<a id="gac322717d266403fac74aed5cef23eb95" name="gac322717d266403fac74aed5cef23eb95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac322717d266403fac74aed5cef23eb95">&#9670;&#160;</a></span>hw_claim_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> hw_claim_lock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Acquire the runtime mutual exclusion lock provided by the <code>hardware_claim</code> library. </p>
+<p>This method is called automatically by the other <code>hw_claim_</code> methods, however it is provided as a convenience to code that might want to protect other hardware initialization code from concurrent use.</p>
+<dl class="section note"><dt>Nota</dt><dd><a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95" title="Acquire the runtime mutual exclusion lock provided by the hardware_claim library.">hw_claim_lock()</a> uses a spin lock internally, so disables interrupts on the calling core, and will deadlock if the calling core already owns the lock.</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>a token to pass to <a class="el" href="group__hardware__claim.html#gae5ebb9e8ede55de49e6296953d731005" title="Release the runtime mutual exclusion lock provided by the hardware_claim library.">hw_claim_unlock()</a> </dd></dl>
+
+<p class="reference">Referências <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a4a7a9493ccd69f41411e43b6c1ccab8d">PICO_SPINLOCK_ID_HARDWARE_CLAIM</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking()</a> e <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a19e225808b9ce7aeafb3b90e8e96754a">spin_lock_instance()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__claim.html#ga9291a012435d3efff22c592d47e82b4a">hw_claim_clear()</a>, <a class="el" href="group__hardware__claim.html#ga6487272cf1fa8d5b2e67f78bb5bdab4d">hw_claim_or_assert()</a>, <a class="el" href="group__hardware__claim.html#gacc8b9324cd6f327e57c6dcb8cbef1745">hw_claim_unused_from_range()</a>, <a class="el" href="group__hardware__pio.html#gaefbd086e8e96fee073438dac3c20334c">pio_add_program()</a>, <a class="el" href="group__hardware__pio.html#ga12948478935f817218b64e1db3a8ebad">pio_add_program_at_offset()</a>, <a class="el" href="group__hardware__pio.html#gaa8aafe966a46f4de9be59f73cae65a4b">pio_can_add_program()</a>, <a class="el" href="group__hardware__pio.html#gaafac789d94b0727bb02ea83a8786897f">pio_can_add_program_at_offset()</a>, <a class="el" href="group__hardware__pio.html#ga53c3bbe939b3c58585d0e19ffe91e18e">pio_claim_free_sm_and_add_program_for_gpio_range()</a>, <a class="el" href="group__hardware__pio.html#ga850396a2a2925bbcc97247a629ca5bd2">pio_clear_instruction_memory()</a>, <a class="el" href="group__hardware__pio.html#ga81c77d31aff72655977b658a9c37665e">pio_remove_program()</a> e <a class="el" href="group__hardware__pio.html#ga332210f0e594b24bf64f4bb1c8f49be3">pio_set_gpio_base()</a>.</p>
+
+</div>
+</div>
+<a id="ga6487272cf1fa8d5b2e67f78bb5bdab4d" name="ga6487272cf1fa8d5b2e67f78bb5bdab4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6487272cf1fa8d5b2e67f78bb5bdab4d">&#9670;&#160;</a></span>hw_claim_or_assert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> hw_claim_or_assert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>bit_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically claim a resource, panicking if it is already in use. </p>
+<p>The resource ownership is indicated by the bit_index bit in an array of bits.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bits</td><td>pointer to an array of bits (8 bits per byte) </td></tr>
+    <tr><td class="paramname">bit_index</td><td>resource to claim (bit index into array of bits) </td></tr>
+    <tr><td class="paramname">message</td><td>string to display if the bit cannot be claimed; note this may have a single printf format "%d" for the bit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95">hw_claim_lock()</a>, <a class="el" href="group__hardware__claim.html#gae5ebb9e8ede55de49e6296953d731005">hw_claim_unlock()</a>, <a class="el" href="group__hardware__claim.html#gab3aa24c90859fbc4da40b8fce8852f6e">hw_is_claimed()</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5ab702a49a3a316f49fa93232c54f9b4">panic()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__dma.html#gae1b3c916746b3d2052f21b7dda34aab9">dma_channel_claim()</a>, <a class="el" href="group__hardware__dma.html#ga08fc90c0064510e7a0a2cf8d1cd187bc">dma_timer_claim()</a>, <a class="el" href="group__hardware__interp.html#ga4bf868768cfc42e621211d9dea8cc9bf">interp_claim_lane()</a>, <a class="el" href="group__hardware__pio.html#gaa75bc8b2060929ec2b2599da8081a99b">pio_sm_claim()</a>, <a class="el" href="group__hardware__sync.html#ga50945cb4c33c3263b69e1fce81c474c7">spin_lock_claim()</a>, <a class="el" href="group__hardware__timer.html#gaa4e5b9946e1ce19788b46b8bf9987a4b">timer_hardware_alarm_claim()</a> e <a class="el" href="group__hardware__irq.html#gaa52ec9e5f572b3a0ef50707ab37233ef">user_irq_claim()</a>.</p>
+
+</div>
+</div>
+<a id="gae5ebb9e8ede55de49e6296953d731005" name="gae5ebb9e8ede55de49e6296953d731005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5ebb9e8ede55de49e6296953d731005">&#9670;&#160;</a></span>hw_claim_unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> hw_claim_unlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release the runtime mutual exclusion lock provided by the <code>hardware_claim</code> library. </p>
+<dl class="section note"><dt>Nota</dt><dd>This method MUST be called from the same core that call <a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95" title="Acquire the runtime mutual exclusion lock provided by the hardware_claim library.">hw_claim_lock()</a></dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">token</td><td>the token returned by the corresponding call to <a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95" title="Acquire the runtime mutual exclusion lock provided by the hardware_claim library.">hw_claim_lock()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a4a7a9493ccd69f41411e43b6c1ccab8d">PICO_SPINLOCK_ID_HARDWARE_CLAIM</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a19e225808b9ce7aeafb3b90e8e96754a">spin_lock_instance()</a> e <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__claim.html#ga9291a012435d3efff22c592d47e82b4a">hw_claim_clear()</a>, <a class="el" href="group__hardware__claim.html#ga6487272cf1fa8d5b2e67f78bb5bdab4d">hw_claim_or_assert()</a>, <a class="el" href="group__hardware__claim.html#gacc8b9324cd6f327e57c6dcb8cbef1745">hw_claim_unused_from_range()</a>, <a class="el" href="group__hardware__pio.html#gaefbd086e8e96fee073438dac3c20334c">pio_add_program()</a>, <a class="el" href="group__hardware__pio.html#ga12948478935f817218b64e1db3a8ebad">pio_add_program_at_offset()</a>, <a class="el" href="group__hardware__pio.html#gaa8aafe966a46f4de9be59f73cae65a4b">pio_can_add_program()</a>, <a class="el" href="group__hardware__pio.html#gaafac789d94b0727bb02ea83a8786897f">pio_can_add_program_at_offset()</a>, <a class="el" href="group__hardware__pio.html#ga53c3bbe939b3c58585d0e19ffe91e18e">pio_claim_free_sm_and_add_program_for_gpio_range()</a>, <a class="el" href="group__hardware__pio.html#ga850396a2a2925bbcc97247a629ca5bd2">pio_clear_instruction_memory()</a>, <a class="el" href="group__hardware__pio.html#ga81c77d31aff72655977b658a9c37665e">pio_remove_program()</a> e <a class="el" href="group__hardware__pio.html#ga332210f0e594b24bf64f4bb1c8f49be3">pio_set_gpio_base()</a>.</p>
+
+</div>
+</div>
+<a id="gacc8b9324cd6f327e57c6dcb8cbef1745" name="gacc8b9324cd6f327e57c6dcb8cbef1745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc8b9324cd6f327e57c6dcb8cbef1745">&#9670;&#160;</a></span>hw_claim_unused_from_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> hw_claim_unused_from_range </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>required</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>bit_lsb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>bit_msb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically claim one resource out of a range of resources, optionally asserting if none are free. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bits</td><td>pointer to an array of bits (8 bits per byte) </td></tr>
+    <tr><td class="paramname">required</td><td>true if this method should panic if the resource is not free </td></tr>
+    <tr><td class="paramname">bit_lsb</td><td>the lower bound (inclusive) of the resource range to claim from </td></tr>
+    <tr><td class="paramname">bit_msb</td><td>the upper bound (inclusive) of the resource range to claim from </td></tr>
+    <tr><td class="paramname">message</td><td>string to display if the bit cannot be claimed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>the bit index representing the claimed or -1 if none are available in the range, and required = false </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95">hw_claim_lock()</a>, <a class="el" href="group__hardware__claim.html#gae5ebb9e8ede55de49e6296953d731005">hw_claim_unlock()</a>, <a class="el" href="group__hardware__claim.html#gab3aa24c90859fbc4da40b8fce8852f6e">hw_is_claimed()</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5ab702a49a3a316f49fa93232c54f9b4">panic()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__dma.html#ga4b0a6680795b9c9ed787362a8a057206">dma_claim_unused_channel()</a>, <a class="el" href="group__hardware__dma.html#ga2f218b6acd97e09430afbb74172bd570">dma_claim_unused_timer()</a>, <a class="el" href="group__hardware__pio.html#ga604c071438065c46c9f4f21bdb61befd">pio_claim_unused_sm()</a>, <a class="el" href="group__hardware__sync.html#ga157bccb525bdfd90255490558cbeb9c0">spin_lock_claim_unused()</a>, <a class="el" href="group__hardware__timer.html#ga8942fc87edfb495a2dd75a4703700642">timer_hardware_alarm_claim_unused()</a> e <a class="el" href="group__hardware__irq.html#gace889ebb0bde6fc678dee915d4e3537e">user_irq_claim_unused()</a>.</p>
+
+</div>
+</div>
+<a id="gab3aa24c90859fbc4da40b8fce8852f6e" name="gab3aa24c90859fbc4da40b8fce8852f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3aa24c90859fbc4da40b8fce8852f6e">&#9670;&#160;</a></span>hw_is_claimed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> hw_is_claimed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>bit_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if a resource is claimed at the time of the call. </p>
+<p>The resource ownership is indicated by the bit_index bit in an array of bits.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bits</td><td>pointer to an array of bits (8 bits per byte) </td></tr>
+    <tr><td class="paramname">bit_index</td><td>resource to check (bit index into array of bits) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the resource is claimed </dd></dl>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__dma.html#ga9aadb81f53b979bde1c1a81164d1eff2">dma_channel_is_claimed()</a>, <a class="el" href="group__hardware__dma.html#ga9b45bfe6985f8c0894d34876eedc3090">dma_timer_is_claimed()</a>, <a class="el" href="group__hardware__claim.html#ga9291a012435d3efff22c592d47e82b4a">hw_claim_clear()</a>, <a class="el" href="group__hardware__claim.html#ga6487272cf1fa8d5b2e67f78bb5bdab4d">hw_claim_or_assert()</a>, <a class="el" href="group__hardware__claim.html#gacc8b9324cd6f327e57c6dcb8cbef1745">hw_claim_unused_from_range()</a>, <a class="el" href="group__hardware__interp.html#gaf5bfa88632de76db56f01e3f22d705e0">interp_lane_is_claimed()</a>, <a class="el" href="group__hardware__pio.html#ga699fb7272e3cb5ab76a84fbf3640325d">pio_sm_is_claimed()</a>, <a class="el" href="group__hardware__sync.html#ga9c66da8cbd0916461d6de2af4340ec4f">spin_lock_is_claimed()</a>, <a class="el" href="group__hardware__timer.html#ga46d3b463f5ea48b21e285fe06e2960fe">timer_hardware_alarm_is_claimed()</a> e <a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#ab908ddbef6c60743c46817c44b0e6008">user_irq_is_claimed()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

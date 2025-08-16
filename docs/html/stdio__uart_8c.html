@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro stdio_uart.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('stdio__uart_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro stdio_uart.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="driver_8h_source.html">pico/stdio/driver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stdio__uart_8h_source.html">pico/stdio_uart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="binary__info_8h_source.html">pico/binary_info.h</a>&quot;</code><br />
+<code>#include &quot;hardware/gpio.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para stdio_uart.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="stdio__uart_8c__incl.svg" width="728" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a22805356fd1f0555870e6ef999dc34f1" id="r_a22805356fd1f0555870e6ef999dc34f1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdio__uart_8c.html#a22805356fd1f0555870e6ef999dc34f1">stdio_bi_decl_if_func_used</a>&#160;&#160;&#160;<a class="el" href="group__pico__binary__info.html#ga448b6eaeefd68be7031086e7dfcaf96e">bi_decl_if_func_used</a></td></tr>
+<tr class="separator:a22805356fd1f0555870e6ef999dc34f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga83ea2a4916972e370b2faff60895611f" id="r_ga83ea2a4916972e370b2faff60895611f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__stdio__uart.html#ga83ea2a4916972e370b2faff60895611f">stdin_uart_deinit</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga83ea2a4916972e370b2faff60895611f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly deinitialize stdin only (no stdout) over UART and remove it from the current set of stdin drivers.  <br /></td></tr>
+<tr class="separator:ga83ea2a4916972e370b2faff60895611f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77fc28ecaf14439cdec18ac5a96d50f4" id="r_ga77fc28ecaf14439cdec18ac5a96d50f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__stdio__uart.html#ga77fc28ecaf14439cdec18ac5a96d50f4">stdin_uart_init</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga77fc28ecaf14439cdec18ac5a96d50f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly initialize stdin only (no stdout) over UART and add it to the current set of stdin drivers.  <br /></td></tr>
+<tr class="separator:ga77fc28ecaf14439cdec18ac5a96d50f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f1c7640efd0d3a9f60cf0581b3e5db3" id="r_ga3f1c7640efd0d3a9f60cf0581b3e5db3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__stdio__uart.html#ga3f1c7640efd0d3a9f60cf0581b3e5db3">stdio_uart_deinit</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga3f1c7640efd0d3a9f60cf0581b3e5db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly deinitialize stdin/stdout over UART and remove it from the current set of stdin/stdout drivers.  <br /></td></tr>
+<tr class="separator:ga3f1c7640efd0d3a9f60cf0581b3e5db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c0c22d5600e9873e4e1fc3e0b05d1e" id="r_ae5c0c22d5600e9873e4e1fc3e0b05d1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdio__uart_8c.html#ae5c0c22d5600e9873e4e1fc3e0b05d1e">stdio_uart_deinit_full</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uart_inst</a> *uart, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tx_pin</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rx_pin</a>)</td></tr>
+<tr class="separator:ae5c0c22d5600e9873e4e1fc3e0b05d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408baba885aa43ecb511bd8f9e2507ba" id="r_a408baba885aa43ecb511bd8f9e2507ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdio__uart_8c.html#a408baba885aa43ecb511bd8f9e2507ba">stdio_uart_in_chars</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *buf, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> length)</td></tr>
+<tr class="separator:a408baba885aa43ecb511bd8f9e2507ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcc9bb58b1eb66b8571a507589f66fc2" id="r_gafcc9bb58b1eb66b8571a507589f66fc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__stdio__uart.html#gafcc9bb58b1eb66b8571a507589f66fc2">stdio_uart_init</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gafcc9bb58b1eb66b8571a507589f66fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly initialize stdin/stdout over UART and add it to the current set of stdin/stdout drivers.  <br /></td></tr>
+<tr class="separator:gafcc9bb58b1eb66b8571a507589f66fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4ed46c759d6e15044262bddf467ed5" id="r_a2c4ed46c759d6e15044262bddf467ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdio__uart_8c.html#a2c4ed46c759d6e15044262bddf467ed5">stdio_uart_init_full</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uart_inst</a> *uart, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baud_rate</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tx_pin</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rx_pin</a>)</td></tr>
+<tr class="separator:a2c4ed46c759d6e15044262bddf467ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c07c9747cd1f6cca963e9ab1b827745" id="r_ga4c07c9747cd1f6cca963e9ab1b827745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__stdio__uart.html#ga4c07c9747cd1f6cca963e9ab1b827745">stdout_uart_deinit</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga4c07c9747cd1f6cca963e9ab1b827745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly deinitialize stdout only (no stdin) over UART and remove it from the current set of stdout drivers.  <br /></td></tr>
+<tr class="separator:ga4c07c9747cd1f6cca963e9ab1b827745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga265eeb67b5f1f4720dbe863e34d6acc4" id="r_ga265eeb67b5f1f4720dbe863e34d6acc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__stdio__uart.html#ga265eeb67b5f1f4720dbe863e34d6acc4">stdout_uart_init</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga265eeb67b5f1f4720dbe863e34d6acc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly initialize stdout only (no stdin) over UART and add it to the current set of stdout drivers.  <br /></td></tr>
+<tr class="separator:ga265eeb67b5f1f4720dbe863e34d6acc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a01311a2fef9e74fd3ce82e03fe859c6d" id="r_a01311a2fef9e74fd3ce82e03fe859c6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host_2pico__stdio_2include_2pico_2stdio_8h.html#a09a6f95ccf3b41981b1df3bdd3bb9bf8">stdio_driver_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stdio__uart_8c.html#a01311a2fef9e74fd3ce82e03fe859c6d">stdio_uart</a></td></tr>
+<tr class="separator:a01311a2fef9e74fd3ce82e03fe859c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a22805356fd1f0555870e6ef999dc34f1" name="a22805356fd1f0555870e6ef999dc34f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22805356fd1f0555870e6ef999dc34f1">&#9670;&#160;</a></span>stdio_bi_decl_if_func_used</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> stdio_bi_decl_if_func_used&#160;&#160;&#160;<a class="el" href="group__pico__binary__info.html#ga448b6eaeefd68be7031086e7dfcaf96e">bi_decl_if_func_used</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ae5c0c22d5600e9873e4e1fc3e0b05d1e" name="ae5c0c22d5600e9873e4e1fc3e0b05d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c0c22d5600e9873e4e1fc3e0b05d1e">&#9670;&#160;</a></span>stdio_uart_deinit_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> stdio_uart_deinit_full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uart_inst</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>tx_pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>rx_pin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2pads__bank0_8h.html#ad860b622a4116a17d382f9a83482b372">PADS_BANK0_GPIO0_ISO_BITS</a>, <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2pads__bank0_8h.html#aa827a7ce1883d4d75d9f2a7c230bdf2d">pads_bank0_hw</a>, <a class="el" href="group__pico__stdio.html#ga826d33ec05c3e33dbddf0cb09e329562">stdio_set_driver_enabled()</a>, <a class="el" href="stdio__uart_8c.html#a01311a2fef9e74fd3ce82e03fe859c6d">stdio_uart</a> e <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a85b12f7d19f5087b22f26473039d2c4f">uart_deinit()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__stdio__uart.html#ga83ea2a4916972e370b2faff60895611f">stdin_uart_deinit()</a>, <a class="el" href="group__pico__stdio__uart.html#ga3f1c7640efd0d3a9f60cf0581b3e5db3">stdio_uart_deinit()</a> e <a class="el" href="group__pico__stdio__uart.html#ga4c07c9747cd1f6cca963e9ab1b827745">stdout_uart_deinit()</a>.</p>
+
+</div>
+</div>
+<a id="a408baba885aa43ecb511bd8f9e2507ba" name="a408baba885aa43ecb511bd8f9e2507ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408baba885aa43ecb511bd8f9e2507ba">&#9670;&#160;</a></span>stdio_uart_in_chars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> stdio_uart_in_chars </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="group__pico__base.html#ggaddcb20bc9a61ceff479aa87369a862aaaac59a56712b4a417f0f6388b51ccba54">PICO_ERROR_NO_DATA</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a76b7390ab4cf180ce883ad9732edbc72">uart_getc()</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a73916efbad1c71ba36f5543e9fbba753">uart_is_readable()</a> e <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#acd2cf06c37f79a8551d6da2fc76992c9">uart_set_irqs_enabled()</a>.</p>
+
+</div>
+</div>
+<a id="a2c4ed46c759d6e15044262bddf467ed5" name="a2c4ed46c759d6e15044262bddf467ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4ed46c759d6e15044262bddf467ed5">&#9670;&#160;</a></span>stdio_uart_init_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> stdio_uart_init_full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uart_inst</a> *&#160;</td>
+          <td class="paramname"><em>uart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>baud_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>tx_pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>rx_pin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="host_2hardware__gpio_2gpio_8c.html#aacde9174277ca40aa7b6fdd341bb2b8c">gpio_set_function()</a>, <a class="el" href="group__pico__stdio.html#ga826d33ec05c3e33dbddf0cb09e329562">stdio_set_driver_enabled()</a>, <a class="el" href="stdio__uart_8c.html#a01311a2fef9e74fd3ce82e03fe859c6d">stdio_uart</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a7bceb145d3739e3923f64584eff6db59">UART_FUNCSEL_NUM</a> e <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a5a55924eff530aff6db3b15fd872cda4">uart_init()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__stdio__uart.html#ga77fc28ecaf14439cdec18ac5a96d50f4">stdin_uart_init()</a>, <a class="el" href="group__pico__stdio__uart.html#gafcc9bb58b1eb66b8571a507589f66fc2">stdio_uart_init()</a> e <a class="el" href="group__pico__stdio__uart.html#ga265eeb67b5f1f4720dbe863e34d6acc4">stdout_uart_init()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a01311a2fef9e74fd3ce82e03fe859c6d" name="a01311a2fef9e74fd3ce82e03fe859c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01311a2fef9e74fd3ce82e03fe859c6d">&#9670;&#160;</a></span>stdio_uart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="host_2pico__stdio_2include_2pico_2stdio_8h.html#a09a6f95ccf3b41981b1df3bdd3bb9bf8">stdio_driver_t</a> stdio_uart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    .out_chars = stdio_uart_out_chars,</div>
+<div class="line">    .out_flush = stdio_uart_out_flush,</div>
+<div class="line">    .in_chars = <a class="code hl_function" href="stdio__uart_8c.html#a408baba885aa43ecb511bd8f9e2507ba">stdio_uart_in_chars</a>,</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">}</div>
+<div class="ttc" id="astdio__uart_8c_html_a408baba885aa43ecb511bd8f9e2507ba"><div class="ttname"><a href="stdio__uart_8c.html#a408baba885aa43ecb511bd8f9e2507ba">stdio_uart_in_chars</a></div><div class="ttdeci">int stdio_uart_in_chars(char *buf, int length)</div><div class="ttdef"><b>Definição</b> stdio_uart.c:147</div></div>
+</div><!-- fragment -->
+<p class="reference">Referenciado por <a class="el" href="stdio__uart_8c.html#ae5c0c22d5600e9873e4e1fc3e0b05d1e">stdio_uart_deinit_full()</a> e <a class="el" href="stdio__uart_8c.html#a2c4ed46c759d6e15044262bddf467ed5">stdio_uart_init_full()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_1f3f40e229f3f71dbd3a8acb2ab973ff.html">pico_stdio_uart</a></li><li class="navelem"><a class="el" href="stdio__uart_8c.html">stdio_uart.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

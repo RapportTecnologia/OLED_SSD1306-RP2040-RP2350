@@ -1,0 +1,803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: hardware_i2c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__hardware__i2c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">hardware_i2c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>I2C Controller API.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga6e96753676145c21b2165f6fde8e0f2a" id="r_ga6e96753676145c21b2165f6fde8e0f2a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga6e96753676145c21b2165f6fde8e0f2a">I2C_DREQ_NUM</a>(i2c,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">is_tx</a>)</td></tr>
+<tr class="memdesc:ga6e96753676145c21b2165f6fde8e0f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__hardware__dma.html#ga8def0ea481095c94f3a0dd0b4fed999e">dreq_num_t</a> used for pacing DMA transfers to or from this I2C instance.  <br /></td></tr>
+<tr class="separator:ga6e96753676145c21b2165f6fde8e0f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa18845e47b403a6a54008a776f56b46" id="r_gaaa18845e47b403a6a54008a776f56b46"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#gaaa18845e47b403a6a54008a776f56b46">I2C_INSTANCE</a>(num)</td></tr>
+<tr class="memdesc:gaaa18845e47b403a6a54008a776f56b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the I2C instance with the given I2C number.  <br /></td></tr>
+<tr class="separator:gaaa18845e47b403a6a54008a776f56b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15780f5c76a6e85e6a9d91dc6ca754bc" id="r_ga15780f5c76a6e85e6a9d91dc6ca754bc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga15780f5c76a6e85e6a9d91dc6ca754bc">I2C_NUM</a>(i2c)</td></tr>
+<tr class="memdesc:ga15780f5c76a6e85e6a9d91dc6ca754bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the I2C number for a I2C instance.  <br /></td></tr>
+<tr class="separator:ga15780f5c76a6e85e6a9d91dc6ca754bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga2e2ac8f345157b0095fc463ac3e584ba" id="r_ga2e2ac8f345157b0095fc463ac3e584ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga2e2ac8f345157b0095fc463ac3e584ba">i2c_deinit</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c)</td></tr>
+<tr class="memdesc:ga2e2ac8f345157b0095fc463ac3e584ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the I2C HW block.  <br /></td></tr>
+<tr class="separator:ga2e2ac8f345157b0095fc463ac3e584ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad31793849a130033e94fa5b8e98a30a8" id="r_gad31793849a130033e94fa5b8e98a30a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#gad31793849a130033e94fa5b8e98a30a8">i2c_init</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>)</td></tr>
+<tr class="memdesc:gad31793849a130033e94fa5b8e98a30a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the I2C HW block.  <br /></td></tr>
+<tr class="separator:gad31793849a130033e94fa5b8e98a30a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba4ea440285edec58eba507308c568c6" id="r_gaba4ea440285edec58eba507308c568c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#gaba4ea440285edec58eba507308c568c6">i2c_read_blocking</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> addr, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">dst</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> len, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">nostop</a>)</td></tr>
+<tr class="memdesc:gaba4ea440285edec58eba507308c568c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to read specified number of bytes from address, blocking.  <br /></td></tr>
+<tr class="separator:gaba4ea440285edec58eba507308c568c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga186c30fab0a661586493c8d51a493850" id="r_ga186c30fab0a661586493c8d51a493850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga186c30fab0a661586493c8d51a493850">i2c_read_blocking_until</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> addr, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">dst</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> len, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">nostop</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>)</td></tr>
+<tr class="memdesc:ga186c30fab0a661586493c8d51a493850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to read specified number of bytes from address, blocking until the specified absolute time is reached.  <br /></td></tr>
+<tr class="separator:ga186c30fab0a661586493c8d51a493850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb20f515799c0a68ed597eed1ad9828a" id="r_gafb20f515799c0a68ed597eed1ad9828a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#gafb20f515799c0a68ed597eed1ad9828a">i2c_read_burst_blocking</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> addr, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">dst</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> len)</td></tr>
+<tr class="memdesc:gafb20f515799c0a68ed597eed1ad9828a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to read specified number of bytes from address, blocking in burst mode.  <br /></td></tr>
+<tr class="separator:gafb20f515799c0a68ed597eed1ad9828a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga615525cad9398b3ec37e8208523c73b4" id="r_ga615525cad9398b3ec37e8208523c73b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>)</td></tr>
+<tr class="memdesc:ga615525cad9398b3ec37e8208523c73b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set I2C baudrate.  <br /></td></tr>
+<tr class="separator:ga615525cad9398b3ec37e8208523c73b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42571b2db5d1ed0dc083385c230dc9e8" id="r_ga42571b2db5d1ed0dc083385c230dc9e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga42571b2db5d1ed0dc083385c230dc9e8">i2c_set_slave_mode</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">slave</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> addr)</td></tr>
+<tr class="memdesc:ga42571b2db5d1ed0dc083385c230dc9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set I2C port to slave mode.  <br /></td></tr>
+<tr class="separator:ga42571b2db5d1ed0dc083385c230dc9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5149e9af84926fa19db6677691ab2900" id="r_ga5149e9af84926fa19db6677691ab2900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga5149e9af84926fa19db6677691ab2900">i2c_write_blocking</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> addr, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *src, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> len, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">nostop</a>)</td></tr>
+<tr class="memdesc:ga5149e9af84926fa19db6677691ab2900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to write specified number of bytes to address, blocking.  <br /></td></tr>
+<tr class="separator:ga5149e9af84926fa19db6677691ab2900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbad5cc392c9c22618ff9fe3b0f20ea5" id="r_gafbad5cc392c9c22618ff9fe3b0f20ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#gafbad5cc392c9c22618ff9fe3b0f20ea5">i2c_write_blocking_until</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> addr, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *src, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> len, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">nostop</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>)</td></tr>
+<tr class="memdesc:gafbad5cc392c9c22618ff9fe3b0f20ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to write specified number of bytes to address, blocking until the specified absolute time is reached.  <br /></td></tr>
+<tr class="separator:gafbad5cc392c9c22618ff9fe3b0f20ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga550d01d4619f702db34355b9e570b1b1" id="r_ga550d01d4619f702db34355b9e570b1b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga550d01d4619f702db34355b9e570b1b1">i2c_write_burst_blocking</a> (<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *i2c, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> addr, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *src, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> len)</td></tr>
+<tr class="memdesc:ga550d01d4619f702db34355b9e570b1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to write specified number of bytes to address, blocking in burst mode.  <br /></td></tr>
+<tr class="separator:ga550d01d4619f702db34355b9e570b1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56c7844696c095a3ad088100df011fd2" id="r_ga56c7844696c095a3ad088100df011fd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__i2c.html#ga56c7844696c095a3ad088100df011fd2">i2c0_inst</a></td></tr>
+<tr class="memdesc:ga56c7844696c095a3ad088100df011fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The I2C identifiers for use in I2C functions.  <br /></td></tr>
+<tr class="separator:ga56c7844696c095a3ad088100df011fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>I2C Controller API. </p>
+<p>The I2C bus is a two-wire serial interface, consisting of a serial data line SDA and a serial clock SCL. These wires carry information between the devices connected to the bus. Each device is recognized by a unique 7-bit address and can operate as either a “transmitter” or “receiver”, depending on the function of the device. Devices can also be considered as masters or slaves when performing data transfers. A master is a device that initiates a data transfer on the bus and generates the clock signals to permit that transfer. The first byte in the data transfer always contains the 7-bit address and a read/write bit in the LSB position. This API takes care of toggling the read/write bit. After this, any device addressed is considered a slave.</p>
+<p>This API allows the controller to be set up as a master or a slave using the <a class="el" href="group__hardware__i2c.html#ga42571b2db5d1ed0dc083385c230dc9e8">i2c_set_slave_mode</a> function.</p>
+<p>The external pins of each controller are connected to GPIO pins as defined in the GPIO muxing table in the datasheet. The muxing options give some IO flexibility, but each controller external pin should be connected to only one GPIO.</p>
+<p>Note that the controller does NOT support High speed mode or Ultra-fast speed mode, the fastest operation being fast mode plus at up to 1000Kb/s.</p>
+<p>See the datasheet for more information on the I2C controller and its usage.</p>
+<h2><a class="anchor" id="i2c_example"></a>
+Example</h2>
+<div class="fragment"></div><!-- fragment --> <h2 class="groupheader">Documentação das macros</h2>
+<a id="ga6e96753676145c21b2165f6fde8e0f2a" name="ga6e96753676145c21b2165f6fde8e0f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e96753676145c21b2165f6fde8e0f2a">&#9670;&#160;</a></span>I2C_DREQ_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> I2C_DREQ_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i2c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">is_tx</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the <a class="el" href="group__hardware__dma.html#ga8def0ea481095c94f3a0dd0b4fed999e">dreq_num_t</a> used for pacing DMA transfers to or from this I2C instance. </p>
+<p>If is_tx is true, then it is for transfers to the I2C instance else for transfers from the I2C instance.</p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="gaaa18845e47b403a6a54008a776f56b46" name="gaaa18845e47b403a6a54008a776f56b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa18845e47b403a6a54008a776f56b46">&#9670;&#160;</a></span>I2C_INSTANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> I2C_INSTANCE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">num</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the I2C instance with the given I2C number. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<a id="ga15780f5c76a6e85e6a9d91dc6ca754bc" name="ga15780f5c76a6e85e6a9d91dc6ca754bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15780f5c76a6e85e6a9d91dc6ca754bc">&#9670;&#160;</a></span>I2C_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> I2C_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i2c</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the I2C number for a I2C instance. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ga2e2ac8f345157b0095fc463ac3e584ba" name="ga2e2ac8f345157b0095fc463ac3e584ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e2ac8f345157b0095fc463ac3e584ba">&#9670;&#160;</a></span>i2c_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> i2c_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable the I2C HW block. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Disable the I2C again if it is no longer used. Must be reinitialised before being used again. </p>
+
+</div>
+</div>
+<a id="gad31793849a130033e94fa5b8e98a30a8" name="gad31793849a130033e94fa5b8e98a30a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad31793849a130033e94fa5b8e98a30a8">&#9670;&#160;</a></span>i2c_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> i2c_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>baudrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise the I2C HW block. </p>
+<p>Put the I2C hardware into a known state, and enable it. Must be called before other functions. By default, the I2C is configured to operate as a master.</p>
+<p>The I2C bus frequency is set as close as possible to requested, and the actual rate set is returned</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">baudrate</td><td>Baudrate in Hz (e.g. 100kHz is 100000) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Actual set baudrate </dd></dl>
+
+<p class="reference">Referências <a class="el" href="structi2c__hw__t.html#a1f948293d38ad2d03e9e28979c53ee86">i2c_hw_t::con</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structi2c__hw__t.html#a06fab6dbb41416804825cee1bb5bccf0">i2c_hw_t::dma_cr</a>, <a class="el" href="structi2c__hw__t.html#ac5bc74f697d6f69c423a73a94d495616">i2c_hw_t::enable</a>, <a class="el" href="structi2c__inst.html#acf6d0d87f12e555d8037d4944d5163a4">i2c_inst::hw</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a1db0d26c70e621b2dffd526236d75ea8">I2C_IC_CON_IC_RESTART_EN_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a83bac959d6a3411b6ed7593ed364ec7f">I2C_IC_CON_IC_SLAVE_DISABLE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a025105905a7cb4b5db76525a5fc4dd5c">I2C_IC_CON_MASTER_MODE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#aa6e65824897fd3f734254e9aa0db6238">I2C_IC_CON_SPEED_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a4937a721d5b98beb201df7c88f68c0ee">I2C_IC_CON_SPEED_VALUE_FAST</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#abd2a738a82179933e8f2daf81402716e">I2C_IC_CON_TX_EMPTY_CTRL_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a0b7df402d8014c270450cf09ed4f3c8d">I2C_IC_DMA_CR_RDMAE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a78b3177c9184265a76e2817f0215729a">I2C_IC_DMA_CR_TDMAE_BITS</a>, <a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate()</a>, <a class="el" href="structi2c__inst.html#ad97528eac2e95d6e788941bff2aeb7e9">i2c_inst::restart_on_next</a>, <a class="el" href="structi2c__hw__t.html#a30f32d75a571a77e128de6c5e15fce1b">i2c_hw_t::rx_tl</a> e <a class="el" href="structi2c__hw__t.html#a3b50d7d07e61477e7e431eb0ae3ba152">i2c_hw_t::tx_tl</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init()</a>.</p>
+
+</div>
+</div>
+<a id="gaba4ea440285edec58eba507308c568c6" name="gaba4ea440285edec58eba507308c568c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba4ea440285edec58eba507308c568c6">&#9670;&#160;</a></span>i2c_read_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> i2c_read_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>nostop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to read specified number of bytes from address, blocking. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">addr</td><td>7-bit address of device to read from </td></tr>
+    <tr><td class="paramname">dst</td><td>Pointer to buffer to receive data </td></tr>
+    <tr><td class="paramname">len</td><td>Length of data in bytes to receive </td></tr>
+    <tr><td class="paramname">nostop</td><td>If true, master retains control of the bus at the end of the transfer (no Stop is issued), and the next transfer will begin with a Restart rather than a Start. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Number of bytes read, or PICO_ERROR_GENERIC if address not acknowledged or no device present. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>.</p>
+
+</div>
+</div>
+<a id="ga186c30fab0a661586493c8d51a493850" name="ga186c30fab0a661586493c8d51a493850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186c30fab0a661586493c8d51a493850">&#9670;&#160;</a></span>i2c_read_blocking_until()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> i2c_read_blocking_until </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>nostop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a>&#160;</td>
+          <td class="paramname"><em>until</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to read specified number of bytes from address, blocking until the specified absolute time is reached. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">addr</td><td>7-bit address of device to read from </td></tr>
+    <tr><td class="paramname">dst</td><td>Pointer to buffer to receive data </td></tr>
+    <tr><td class="paramname">len</td><td>Length of data in bytes to receive </td></tr>
+    <tr><td class="paramname">nostop</td><td>If true, master retains control of the bus at the end of the transfer (no Stop is issued), and the next transfer will begin with a Restart rather than a Start. </td></tr>
+    <tr><td class="paramname">until</td><td>The absolute time that the block will wait until the entire transaction is complete. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Number of bytes read, or PICO_ERROR_GENERIC if address not acknowledged, no device present, or PICO_ERROR_TIMEOUT if a timeout occurred. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="timeout__helper_8h.html#a958a726511fe0e390c8a6c1277999d6c">init_single_timeout_until()</a>.</p>
+
+</div>
+</div>
+<a id="gafb20f515799c0a68ed597eed1ad9828a" name="gafb20f515799c0a68ed597eed1ad9828a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb20f515799c0a68ed597eed1ad9828a">&#9670;&#160;</a></span>i2c_read_burst_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> i2c_read_burst_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to read specified number of bytes from address, blocking in burst mode. </p>
+<p>This version of the function will not issue a stop and will not restart on the next read. This allows you to read consecutive bytes of data without having to resend a stop bit and (for example) without having to send address <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">byte(s)</a> repeatedly</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">addr</td><td>7-bit address of device to read from </td></tr>
+    <tr><td class="paramname">dst</td><td>Pointer to buffer to receive data </td></tr>
+    <tr><td class="paramname">len</td><td>Length of data in bytes to receive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Number of bytes read, or PICO_ERROR_GENERIC if address not acknowledged or no device present. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> e <a class="el" href="structi2c__inst.html#ad97528eac2e95d6e788941bff2aeb7e9">i2c_inst::restart_on_next</a>.</p>
+
+</div>
+</div>
+<a id="ga615525cad9398b3ec37e8208523c73b4" name="ga615525cad9398b3ec37e8208523c73b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga615525cad9398b3ec37e8208523c73b4">&#9670;&#160;</a></span>i2c_set_baudrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> i2c_set_baudrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>baudrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set I2C baudrate. </p>
+<p>Set I2C bus frequency as close as possible to requested, and return actual rate set. Baudrate may not be as exactly requested due to clocking limitations.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">baudrate</td><td>Baudrate in Hz (e.g. 100kHz is 100000) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Actual set baudrate </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__hardware__clocks.html#ggacf8c8ac7970cacdec6c5f62a62926644ac1ad7b83e348265a82c8d234489d62ab">clk_sys</a>, <a class="el" href="group__hardware__clocks.html#gaa2e43d722ca3375f53cb65513275a625">clock_get_hz()</a>, <a class="el" href="structi2c__hw__t.html#a1f948293d38ad2d03e9e28979c53ee86">i2c_hw_t::con</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structi2c__hw__t.html#ac5bc74f697d6f69c423a73a94d495616">i2c_hw_t::enable</a>, <a class="el" href="structi2c__hw__t.html#a95acda52c695b8077b3c424da4bbb4fe">i2c_hw_t::fs_scl_hcnt</a>, <a class="el" href="structi2c__hw__t.html#ae6652f2ecf835fe05fd40e16d2438e73">i2c_hw_t::fs_scl_lcnt</a>, <a class="el" href="structi2c__hw__t.html#aa7d4f93c292d4157ef07eb689fdf33ca">i2c_hw_t::fs_spklen</a>, <a class="el" href="structi2c__inst.html#acf6d0d87f12e555d8037d4944d5163a4">i2c_inst::hw</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a3722f240ae182e7072509a6a203237d1">I2C_IC_CON_SPEED_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#aa6e65824897fd3f734254e9aa0db6238">I2C_IC_CON_SPEED_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a4937a721d5b98beb201df7c88f68c0ee">I2C_IC_CON_SPEED_VALUE_FAST</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a1d9ceaf79298eda5b5d621f2bdee3cbe">I2C_IC_FS_SCL_HCNT_IC_FS_SCL_HCNT_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a2cb667486c48d1381ee64be7264f6178">I2C_IC_FS_SCL_LCNT_IC_FS_SCL_LCNT_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a0533b15c6ff5c98d61f03f06b2cefbad">I2C_IC_SDA_HOLD_IC_SDA_TX_HOLD_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a629066090fd8c29d83caa221a92fcbbb">I2C_IC_SDA_HOLD_IC_SDA_TX_HOLD_LSB</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a> e <a class="el" href="structi2c__hw__t.html#a06f30169f71fb1f3cd3ac10d63e364c4">i2c_hw_t::sda_hold</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#gad31793849a130033e94fa5b8e98a30a8">i2c_init()</a>.</p>
+
+</div>
+</div>
+<a id="ga42571b2db5d1ed0dc083385c230dc9e8" name="ga42571b2db5d1ed0dc083385c230dc9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42571b2db5d1ed0dc083385c230dc9e8">&#9670;&#160;</a></span>i2c_set_slave_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> i2c_set_slave_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>slave</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set I2C port to slave mode. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">slave</td><td>true to use slave mode, false to use master mode </td></tr>
+    <tr><td class="paramname">addr</td><td>If <code>slave</code> is true, set the slave address to this value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="structi2c__hw__t.html#a1f948293d38ad2d03e9e28979c53ee86">i2c_hw_t::con</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structi2c__hw__t.html#ac5bc74f697d6f69c423a73a94d495616">i2c_hw_t::enable</a>, <a class="el" href="structi2c__inst.html#acf6d0d87f12e555d8037d4944d5163a4">i2c_inst::hw</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a83bac959d6a3411b6ed7593ed364ec7f">I2C_IC_CON_IC_SLAVE_DISABLE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a025105905a7cb4b5db76525a5fc4dd5c">I2C_IC_CON_MASTER_MODE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2i2c_8h.html#a4b410183091f5b011961a7d518536ca6">I2C_IC_CON_RX_FIFO_FULL_HLD_CTRL_BITS</a>, <a class="el" href="i2c_8c.html#aee24bca6ea5b91d9315307ef0cb1d7a2">i2c_reserved_addr</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a> e <a class="el" href="structi2c__hw__t.html#a82fb3edfc0bd758cf3a84d782c7a8973">i2c_hw_t::sar</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__i2c__slave.html#gaebbea8f5a707f23750ba3e0c8b5eb6ee">i2c_slave_deinit()</a> e <a class="el" href="group__pico__i2c__slave.html#ga2ecc43ff4a3c673a704d0c7bd7d91db4">i2c_slave_init()</a>.</p>
+
+</div>
+</div>
+<a id="ga5149e9af84926fa19db6677691ab2900" name="ga5149e9af84926fa19db6677691ab2900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5149e9af84926fa19db6677691ab2900">&#9670;&#160;</a></span>i2c_write_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> i2c_write_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>nostop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to write specified number of bytes to address, blocking. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">addr</td><td>7-bit address of device to write to </td></tr>
+    <tr><td class="paramname">src</td><td>Pointer to data to send </td></tr>
+    <tr><td class="paramname">len</td><td>Length of data in bytes to send </td></tr>
+    <tr><td class="paramname">nostop</td><td>If true, master retains control of the bus at the end of the transfer (no Stop is issued), and the next transfer will begin with a Restart rather than a Start. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Number of bytes written, or PICO_ERROR_GENERIC if address not acknowledged, no device present. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="ssd1306_8h.html#a50ff8458e3b2dd7c441106df048d6284">ssd1306_command()</a>, <a class="el" href="ssd1306_8h.html#a7e18a42742d08329312e5f45a7608baa">ssd1306_send_buffer()</a>, <a class="el" href="ssd1306_8h.html#a558049235d3e6a4a58db92a66fa5f054">ssd1306_send_command()</a> e <a class="el" href="ssd1306_8h.html#a2d68611599dbced339a73b42c6444f1e">ssd1306_send_data()</a>.</p>
+
+</div>
+</div>
+<a id="gafbad5cc392c9c22618ff9fe3b0f20ea5" name="gafbad5cc392c9c22618ff9fe3b0f20ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbad5cc392c9c22618ff9fe3b0f20ea5">&#9670;&#160;</a></span>i2c_write_blocking_until()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> i2c_write_blocking_until </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>nostop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a>&#160;</td>
+          <td class="paramname"><em>until</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to write specified number of bytes to address, blocking until the specified absolute time is reached. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">addr</td><td>7-bit address of device to write to </td></tr>
+    <tr><td class="paramname">src</td><td>Pointer to data to send </td></tr>
+    <tr><td class="paramname">len</td><td>Length of data in bytes to send </td></tr>
+    <tr><td class="paramname">nostop</td><td>If true, master retains control of the bus at the end of the transfer (no Stop is issued), and the next transfer will begin with a Restart rather than a Start. </td></tr>
+    <tr><td class="paramname">until</td><td>The absolute time that the block will wait until the entire transaction is complete. Note, an individual timeout of this value divided by the length of data is applied for each byte transfer, so if the first or subsequent bytes fails to transfer within that sub timeout, the function will return with an error.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Number of bytes written, or PICO_ERROR_GENERIC if address not acknowledged, no device present, or PICO_ERROR_TIMEOUT if a timeout occurred. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="timeout__helper_8h.html#a958a726511fe0e390c8a6c1277999d6c">init_single_timeout_until()</a>.</p>
+
+</div>
+</div>
+<a id="ga550d01d4619f702db34355b9e570b1b1" name="ga550d01d4619f702db34355b9e570b1b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga550d01d4619f702db34355b9e570b1b1">&#9670;&#160;</a></span>i2c_write_burst_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> i2c_write_burst_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt to write specified number of bytes to address, blocking in burst mode. </p>
+<p>This version of the function will not issue a stop and will not restart on the next write. This allows you to write consecutive bytes of data without having to resend a stop bit and (for example) without having to send address <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">byte(s)</a> repeatedly</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c</td><td>Either <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a46204d38a512926541fd8bac2b62c720">i2c0</a> or <a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#a87659b485d9e76dfc3bcef208ac4b573">i2c1</a> </td></tr>
+    <tr><td class="paramname">addr</td><td>7-bit address of device to write to </td></tr>
+    <tr><td class="paramname">src</td><td>Pointer to data to send </td></tr>
+    <tr><td class="paramname">len</td><td>Length of data in bytes to send </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Number of bytes written, or PICO_ERROR_GENERIC if address not acknowledged or no device present. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> e <a class="el" href="structi2c__inst.html#ad97528eac2e95d6e788941bff2aeb7e9">i2c_inst::restart_on_next</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="ga56c7844696c095a3ad088100df011fd2" name="ga56c7844696c095a3ad088100df011fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56c7844696c095a3ad088100df011fd2">&#9670;&#160;</a></span>i2c0_inst</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h.html#ad8f335db926d38694712398d3e03f317">i2c_inst_t</a> i2c0_inst</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The I2C identifiers for use in I2C functions. </p>
+<p>e.g. i2c_init(i2c0, 48000) </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

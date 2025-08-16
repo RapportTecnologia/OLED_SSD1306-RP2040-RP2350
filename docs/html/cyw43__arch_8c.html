@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro cyw43_arch.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('cyw43__arch_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro cyw43_arch.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="stdlib_8h_source.html">stdlib.h</a>&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="unique__id_8h_source.html">pico/unique_id.h</a>&quot;</code><br />
+<code>#include &quot;cyw43.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cyw43__arch_8h_source.html">pico/cyw43_arch.h</a>&quot;</code><br />
+<code>#include &quot;cyw43_ll.h&quot;</code><br />
+<code>#include &quot;cyw43_stats.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para cyw43_arch.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="cyw43__arch_8c__incl.svg" width="1018" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5b82651032f64167aa2c27ae292baffa" id="r_a5b82651032f64167aa2c27ae292baffa"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__arch_8c.html#a5b82651032f64167aa2c27ae292baffa">CYW43_ARCH_DEBUG</a>(...)&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td></tr>
+<tr class="separator:a5b82651032f64167aa2c27ae292baffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga092b97e879be5b9aa9121abda23e1337" id="r_ga092b97e879be5b9aa9121abda23e1337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga092b97e879be5b9aa9121abda23e1337">cyw43_arch_async_context</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga092b97e879be5b9aa9121abda23e1337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current <a class="el" href="structasync__context.html" title="Base structure type of all async_contexts.">async_context</a> currently in use by the cyw43_arch code.  <br /></td></tr>
+<tr class="separator:ga092b97e879be5b9aa9121abda23e1337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88bc0f9768bc9b877adb90b676514dac" id="r_ga88bc0f9768bc9b877adb90b676514dac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga88bc0f9768bc9b877adb90b676514dac">cyw43_arch_disable_ap_mode</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga88bc0f9768bc9b877adb90b676514dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables Wi-Fi AP (Access point) mode.  <br /></td></tr>
+<tr class="separator:ga88bc0f9768bc9b877adb90b676514dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8b4763c68c539c8a8d31400a83fd095" id="r_gab8b4763c68c539c8a8d31400a83fd095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gab8b4763c68c539c8a8d31400a83fd095">cyw43_arch_disable_sta_mode</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gab8b4763c68c539c8a8d31400a83fd095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables Wi-Fi STA (Station) mode.  <br /></td></tr>
+<tr class="separator:gab8b4763c68c539c8a8d31400a83fd095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c3d403f299743360ecab36108e4ca7b" id="r_ga1c3d403f299743360ecab36108e4ca7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga1c3d403f299743360ecab36108e4ca7b">cyw43_arch_enable_ap_mode</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">password</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auth</a>)</td></tr>
+<tr class="memdesc:ga1c3d403f299743360ecab36108e4ca7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables Wi-Fi AP (Access point) mode.  <br /></td></tr>
+<tr class="separator:ga1c3d403f299743360ecab36108e4ca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6796a9ab5ae2cc6c51c14ecdfcda0b96" id="r_ga6796a9ab5ae2cc6c51c14ecdfcda0b96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga6796a9ab5ae2cc6c51c14ecdfcda0b96">cyw43_arch_enable_sta_mode</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga6796a9ab5ae2cc6c51c14ecdfcda0b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables Wi-Fi STA (Station) mode.  <br /></td></tr>
+<tr class="separator:ga6796a9ab5ae2cc6c51c14ecdfcda0b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fc198cd8f76428160dfc66f58be29c4" id="r_ga5fc198cd8f76428160dfc66f58be29c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga5fc198cd8f76428160dfc66f58be29c4">cyw43_arch_get_country_code</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga5fc198cd8f76428160dfc66f58be29c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the country code used to initialize cyw43_arch.  <br /></td></tr>
+<tr class="separator:ga5fc198cd8f76428160dfc66f58be29c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac494fc808052b0e7411f945f50ebe6d5" id="r_gac494fc808052b0e7411f945f50ebe6d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gac494fc808052b0e7411f945f50ebe6d5">cyw43_arch_gpio_get</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">wl_gpio</a>)</td></tr>
+<tr class="memdesc:gac494fc808052b0e7411f945f50ebe6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of a GPIO pin on the wireless chip.  <br /></td></tr>
+<tr class="separator:gac494fc808052b0e7411f945f50ebe6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33cca1c95fc0d7512e7fef4a59fd7475" id="r_ga33cca1c95fc0d7512e7fef4a59fd7475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga33cca1c95fc0d7512e7fef4a59fd7475">cyw43_arch_gpio_put</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">wl_gpio</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> value)</td></tr>
+<tr class="memdesc:ga33cca1c95fc0d7512e7fef4a59fd7475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a GPIO pin on the wireless chip to a given value.  <br /></td></tr>
+<tr class="separator:ga33cca1c95fc0d7512e7fef4a59fd7475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3eb9816b2413128442e4adbfc5114c5" id="r_gaf3eb9816b2413128442e4adbfc5114c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gaf3eb9816b2413128442e4adbfc5114c5">cyw43_arch_init_with_country</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">country</a>)</td></tr>
+<tr class="memdesc:gaf3eb9816b2413128442e4adbfc5114c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the CYW43 architecture for use in a specific country.  <br /></td></tr>
+<tr class="separator:gaf3eb9816b2413128442e4adbfc5114c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb76fc7935c64b2a0cb32c0b8af94782" id="r_gacb76fc7935c64b2a0cb32c0b8af94782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gacb76fc7935c64b2a0cb32c0b8af94782">cyw43_arch_poll</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gacb76fc7935c64b2a0cb32c0b8af94782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any processing required by the <code>cyw43_driver</code> or the TCP/IP stack.  <br /></td></tr>
+<tr class="separator:gacb76fc7935c64b2a0cb32c0b8af94782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga546a36df25d7609b83bf6c4972440181" id="r_ga546a36df25d7609b83bf6c4972440181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga546a36df25d7609b83bf6c4972440181">cyw43_arch_set_async_context</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *context)</td></tr>
+<tr class="memdesc:ga546a36df25d7609b83bf6c4972440181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="structasync__context.html" title="Base structure type of all async_contexts.">async_context</a> to be used by the cyw43_arch_init.  <br /></td></tr>
+<tr class="separator:ga546a36df25d7609b83bf6c4972440181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8d40de29bb275e3b55f4f37ee4d3dc8" id="r_gad8d40de29bb275e3b55f4f37ee4d3dc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gad8d40de29bb275e3b55f4f37ee4d3dc8">cyw43_arch_wait_for_work_until</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>)</td></tr>
+<tr class="memdesc:gad8d40de29bb275e3b55f4f37ee4d3dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep until there is cyw43_driver work to be done.  <br /></td></tr>
+<tr class="separator:gad8d40de29bb275e3b55f4f37ee4d3dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga614a37dcffe6363fd6649684cac1c14e" id="r_ga614a37dcffe6363fd6649684cac1c14e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga614a37dcffe6363fd6649684cac1c14e">cyw43_arch_wifi_connect_async</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pw</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auth</a>)</td></tr>
+<tr class="memdesc:ga614a37dcffe6363fd6649684cac1c14e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start attempting to connect to a wireless access point.  <br /></td></tr>
+<tr class="separator:ga614a37dcffe6363fd6649684cac1c14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8be8a816a6f40ba30cf69dd112db9d4" id="r_gaa8be8a816a6f40ba30cf69dd112db9d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gaa8be8a816a6f40ba30cf69dd112db9d4">cyw43_arch_wifi_connect_blocking</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pw</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auth</a>)</td></tr>
+<tr class="memdesc:gaa8be8a816a6f40ba30cf69dd112db9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to connect to a wireless access point, blocking until the network is joined or a failure is detected.  <br /></td></tr>
+<tr class="separator:gaa8be8a816a6f40ba30cf69dd112db9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga471fd4a7626a27ae7e358a664a48c510" id="r_ga471fd4a7626a27ae7e358a664a48c510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#ga471fd4a7626a27ae7e358a664a48c510">cyw43_arch_wifi_connect_bssid_async</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pw</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auth</a>)</td></tr>
+<tr class="memdesc:ga471fd4a7626a27ae7e358a664a48c510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start attempting to connect to a wireless access point specified by SSID and BSSID.  <br /></td></tr>
+<tr class="separator:ga471fd4a7626a27ae7e358a664a48c510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2766c44297fb1fb7fe12dc67f044bdb" id="r_gab2766c44297fb1fb7fe12dc67f044bdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gab2766c44297fb1fb7fe12dc67f044bdb">cyw43_arch_wifi_connect_bssid_blocking</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pw</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auth</a>)</td></tr>
+<tr class="memdesc:gab2766c44297fb1fb7fe12dc67f044bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to connect to a wireless access point specified by SSID and BSSID, blocking until the network is joined or a failure is detected.  <br /></td></tr>
+<tr class="separator:gab2766c44297fb1fb7fe12dc67f044bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1aa260ffa68c0ee5dcdbbbf9af80286" id="r_gac1aa260ffa68c0ee5dcdbbbf9af80286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gac1aa260ffa68c0ee5dcdbbbf9af80286">cyw43_arch_wifi_connect_bssid_timeout_ms</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pw</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auth</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeout_ms</a>)</td></tr>
+<tr class="memdesc:gac1aa260ffa68c0ee5dcdbbbf9af80286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to connect to a wireless access point specified by SSID and BSSID, blocking until the network is joined, a failure is detected or a timeout occurs.  <br /></td></tr>
+<tr class="separator:gac1aa260ffa68c0ee5dcdbbbf9af80286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1237b71f7793ba603a4b39da37c7a71" id="r_gae1237b71f7793ba603a4b39da37c7a71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__arch.html#gae1237b71f7793ba603a4b39da37c7a71">cyw43_arch_wifi_connect_timeout_ms</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssid</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pw</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auth</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeout_ms</a>)</td></tr>
+<tr class="memdesc:gae1237b71f7793ba603a4b39da37c7a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to connect to a wireless access point, blocking until the network is joined, a failure is detected or a timeout occurs.  <br /></td></tr>
+<tr class="separator:gae1237b71f7793ba603a4b39da37c7a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a5b82651032f64167aa2c27ae292baffa" name="a5b82651032f64167aa2c27ae292baffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b82651032f64167aa2c27ae292baffa">&#9670;&#160;</a></span>CYW43_ARCH_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> CYW43_ARCH_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_0829e6dafbd3e138223b7d891cf2a16f.html">pico_cyw43_arch</a></li><li class="navelem"><a class="el" href="cyw43__arch_8c.html">cyw43_arch.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

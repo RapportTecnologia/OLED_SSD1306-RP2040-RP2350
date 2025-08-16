@@ -1,0 +1,1370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura ACCESSCTRL_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structACCESSCTRL__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structACCESSCTRL__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura ACCESSCTRL_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Hardware access control registers (ACCESSCTRL)  
+ <a href="structACCESSCTRL__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2350_8h_source.html">RP2350.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para ACCESSCTRL_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structACCESSCTRL__Type__coll__graph.svg" width="170" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a87cd6db346e051524b3e56683a152777" id="r_a87cd6db346e051524b3e56683a152777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a87cd6db346e051524b3e56683a152777">ADC0</a></td></tr>
+<tr class="memdesc:a87cd6db346e051524b3e56683a152777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access ADC0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a87cd6db346e051524b3e56683a152777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2144c33b8a7b9088509d01108ff23a4" id="r_ad2144c33b8a7b9088509d01108ff23a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ad2144c33b8a7b9088509d01108ff23a4">BUSCTRL</a></td></tr>
+<tr class="memdesc:ad2144c33b8a7b9088509d01108ff23a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access BUSCTRL, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ad2144c33b8a7b9088509d01108ff23a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa866b27c2be36290b0c64e102de65dae" id="r_aa866b27c2be36290b0c64e102de65dae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#aa866b27c2be36290b0c64e102de65dae">CFGRESET</a></td></tr>
+<tr class="memdesc:aa866b27c2be36290b0c64e102de65dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 1 to reset all ACCESSCTRL configuration, except for the LOCK and FORCE_CORE_NS registers.  <br /></td></tr>
+<tr class="separator:aa866b27c2be36290b0c64e102de65dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26499dd8ef8c91b09dd06c0d44a0fe7" id="r_ab26499dd8ef8c91b09dd06c0d44a0fe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ab26499dd8ef8c91b09dd06c0d44a0fe7">CLOCKS</a></td></tr>
+<tr class="memdesc:ab26499dd8ef8c91b09dd06c0d44a0fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access CLOCKS, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ab26499dd8ef8c91b09dd06c0d44a0fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb83bf94041c086aaac8b8f466584ed" id="r_afeb83bf94041c086aaac8b8f466584ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#afeb83bf94041c086aaac8b8f466584ed">CORESIGHT_PERIPH</a></td></tr>
+<tr class="memdesc:afeb83bf94041c086aaac8b8f466584ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access CORESIGHT_PERIPH, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:afeb83bf94041c086aaac8b8f466584ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9aff82664e9653ed9af58924a3e7914" id="r_aa9aff82664e9653ed9af58924a3e7914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#aa9aff82664e9653ed9af58924a3e7914">CORESIGHT_TRACE</a></td></tr>
+<tr class="memdesc:aa9aff82664e9653ed9af58924a3e7914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access CORESIGHT_TRACE, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:aa9aff82664e9653ed9af58924a3e7914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa054b7d1ef0197d252313ee7c01f488a" id="r_aa054b7d1ef0197d252313ee7c01f488a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#aa054b7d1ef0197d252313ee7c01f488a">DMA</a></td></tr>
+<tr class="memdesc:aa054b7d1ef0197d252313ee7c01f488a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access DMA, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:aa054b7d1ef0197d252313ee7c01f488a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b59f085fac1637ee000d498664c075" id="r_a07b59f085fac1637ee000d498664c075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a07b59f085fac1637ee000d498664c075">FORCE_CORE_NS</a></td></tr>
+<tr class="memdesc:a07b59f085fac1637ee000d498664c075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force core 1's bus accesses to always be Non-secure, no matter the core's internal state.  <br /></td></tr>
+<tr class="separator:a07b59f085fac1637ee000d498664c075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab278408560a099abf7b6d4f6333d31c5" id="r_ab278408560a099abf7b6d4f6333d31c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ab278408560a099abf7b6d4f6333d31c5">GPIO_NSMASK0</a></td></tr>
+<tr class="memdesc:ab278408560a099abf7b6d4f6333d31c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether GPIO0...31 are accessible to Non-secure code.  <br /></td></tr>
+<tr class="separator:ab278408560a099abf7b6d4f6333d31c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fd9762be3f29bd5e96541870f942f7" id="r_a47fd9762be3f29bd5e96541870f942f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a47fd9762be3f29bd5e96541870f942f7">GPIO_NSMASK1</a></td></tr>
+<tr class="memdesc:a47fd9762be3f29bd5e96541870f942f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether GPIO32..47 are accessible to Non-secure code, and whether QSPI and USB bitbang are accessible through the Non-secure SIO.  <br /></td></tr>
+<tr class="separator:a47fd9762be3f29bd5e96541870f942f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07451242fcb7ad137c9a5255f50bfd1" id="r_aa07451242fcb7ad137c9a5255f50bfd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#aa07451242fcb7ad137c9a5255f50bfd1">HSTX</a></td></tr>
+<tr class="memdesc:aa07451242fcb7ad137c9a5255f50bfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access HSTX, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:aa07451242fcb7ad137c9a5255f50bfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec596375a3152295a4ac700a7c4fe517" id="r_aec596375a3152295a4ac700a7c4fe517"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#aec596375a3152295a4ac700a7c4fe517">I2C0</a></td></tr>
+<tr class="memdesc:aec596375a3152295a4ac700a7c4fe517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access I2C0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:aec596375a3152295a4ac700a7c4fe517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac963123624ab0d7834f0375b92862b4f" id="r_ac963123624ab0d7834f0375b92862b4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ac963123624ab0d7834f0375b92862b4f">I2C1</a></td></tr>
+<tr class="memdesc:ac963123624ab0d7834f0375b92862b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access I2C1, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ac963123624ab0d7834f0375b92862b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ef0ef1aa94a011584696a367654f4b" id="r_a10ef0ef1aa94a011584696a367654f4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a10ef0ef1aa94a011584696a367654f4b">IO_BANK0</a></td></tr>
+<tr class="memdesc:a10ef0ef1aa94a011584696a367654f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access IO_BANK0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a10ef0ef1aa94a011584696a367654f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f65048844713c458fc58c844dc8c69b" id="r_a7f65048844713c458fc58c844dc8c69b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a7f65048844713c458fc58c844dc8c69b">IO_BANK1</a></td></tr>
+<tr class="memdesc:a7f65048844713c458fc58c844dc8c69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access IO_BANK1, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a7f65048844713c458fc58c844dc8c69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10047467c519983baebb8c7e1f8b42c3" id="r_a10047467c519983baebb8c7e1f8b42c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a10047467c519983baebb8c7e1f8b42c3">LOCK</a></td></tr>
+<tr class="memdesc:a10047467c519983baebb8c7e1f8b42c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; ACCESSCTRL Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a10047467c519983baebb8c7e1f8b42c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc3125663fa89241e5b368e29752dce" id="r_aabc3125663fa89241e5b368e29752dce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#aabc3125663fa89241e5b368e29752dce">OTP</a></td></tr>
+<tr class="memdesc:aabc3125663fa89241e5b368e29752dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access OTP, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:aabc3125663fa89241e5b368e29752dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcaf7e06e1e556ba6cf4f5a8c8593a47" id="r_afcaf7e06e1e556ba6cf4f5a8c8593a47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#afcaf7e06e1e556ba6cf4f5a8c8593a47">PADS_BANK0</a></td></tr>
+<tr class="memdesc:afcaf7e06e1e556ba6cf4f5a8c8593a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PADS_BANK0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:afcaf7e06e1e556ba6cf4f5a8c8593a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84342e4e8a13d3d6b48c9cdb40d88a6" id="r_ab84342e4e8a13d3d6b48c9cdb40d88a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ab84342e4e8a13d3d6b48c9cdb40d88a6">PADS_QSPI</a></td></tr>
+<tr class="memdesc:ab84342e4e8a13d3d6b48c9cdb40d88a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PADS_QSPI, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ab84342e4e8a13d3d6b48c9cdb40d88a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c88cc2359a064b1ffcc51505d41766" id="r_a11c88cc2359a064b1ffcc51505d41766"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a11c88cc2359a064b1ffcc51505d41766">PIO0</a></td></tr>
+<tr class="memdesc:a11c88cc2359a064b1ffcc51505d41766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PIO0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a11c88cc2359a064b1ffcc51505d41766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105fc9a72d507ed191fd467632f83727" id="r_a105fc9a72d507ed191fd467632f83727"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a105fc9a72d507ed191fd467632f83727">PIO1</a></td></tr>
+<tr class="memdesc:a105fc9a72d507ed191fd467632f83727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PIO1, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a105fc9a72d507ed191fd467632f83727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d7830a1aa634e4f1724c5dd1f93fed" id="r_a07d7830a1aa634e4f1724c5dd1f93fed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a07d7830a1aa634e4f1724c5dd1f93fed">PIO2</a></td></tr>
+<tr class="memdesc:a07d7830a1aa634e4f1724c5dd1f93fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PIO2, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a07d7830a1aa634e4f1724c5dd1f93fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922266b6afa5d32d68c982b87b7379cc" id="r_a922266b6afa5d32d68c982b87b7379cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a922266b6afa5d32d68c982b87b7379cc">PLL_SYS</a></td></tr>
+<tr class="memdesc:a922266b6afa5d32d68c982b87b7379cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PLL_SYS, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a922266b6afa5d32d68c982b87b7379cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253548e01e2d17e8b7991f1de61a65fb" id="r_a253548e01e2d17e8b7991f1de61a65fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a253548e01e2d17e8b7991f1de61a65fb">PLL_USB</a></td></tr>
+<tr class="memdesc:a253548e01e2d17e8b7991f1de61a65fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PLL_USB, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a253548e01e2d17e8b7991f1de61a65fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d70024a6c7470b62e478e90e9fb796f" id="r_a2d70024a6c7470b62e478e90e9fb796f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a2d70024a6c7470b62e478e90e9fb796f">POWMAN</a></td></tr>
+<tr class="memdesc:a2d70024a6c7470b62e478e90e9fb796f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access POWMAN, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a2d70024a6c7470b62e478e90e9fb796f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89976e352c68fd5e5bfa142484cc49bf" id="r_a89976e352c68fd5e5bfa142484cc49bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a89976e352c68fd5e5bfa142484cc49bf">PWM</a></td></tr>
+<tr class="memdesc:a89976e352c68fd5e5bfa142484cc49bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access PWM, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a89976e352c68fd5e5bfa142484cc49bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834decdbdeff94e1a107ef93e9299e4d" id="r_a834decdbdeff94e1a107ef93e9299e4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a834decdbdeff94e1a107ef93e9299e4d">RESETS</a></td></tr>
+<tr class="memdesc:a834decdbdeff94e1a107ef93e9299e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access RESETS, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a834decdbdeff94e1a107ef93e9299e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3a60b72a528dab2c406a1a410d50a3" id="r_a9c3a60b72a528dab2c406a1a410d50a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a9c3a60b72a528dab2c406a1a410d50a3">ROM</a></td></tr>
+<tr class="memdesc:a9c3a60b72a528dab2c406a1a410d50a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access ROM, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a9c3a60b72a528dab2c406a1a410d50a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542ba548976097146db9c82d6aa3fbda" id="r_a542ba548976097146db9c82d6aa3fbda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a542ba548976097146db9c82d6aa3fbda">ROSC</a></td></tr>
+<tr class="memdesc:a542ba548976097146db9c82d6aa3fbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access ROSC, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a542ba548976097146db9c82d6aa3fbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21ff9340666a101f8163afe40f7c89c" id="r_ab21ff9340666a101f8163afe40f7c89c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ab21ff9340666a101f8163afe40f7c89c">RSM</a></td></tr>
+<tr class="memdesc:ab21ff9340666a101f8163afe40f7c89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access RSM, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ab21ff9340666a101f8163afe40f7c89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82dd839abeb4bfd2cff8e0b9a93332d" id="r_ae82dd839abeb4bfd2cff8e0b9a93332d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ae82dd839abeb4bfd2cff8e0b9a93332d">SHA256</a></td></tr>
+<tr class="memdesc:ae82dd839abeb4bfd2cff8e0b9a93332d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SHA256, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ae82dd839abeb4bfd2cff8e0b9a93332d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fefa3c5fd43ec80a431cc858433e411" id="r_a0fefa3c5fd43ec80a431cc858433e411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a0fefa3c5fd43ec80a431cc858433e411">SPI0</a></td></tr>
+<tr class="memdesc:a0fefa3c5fd43ec80a431cc858433e411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SPI0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a0fefa3c5fd43ec80a431cc858433e411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad247bc4aaa4c331fef7d1e9311bda5e8" id="r_ad247bc4aaa4c331fef7d1e9311bda5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ad247bc4aaa4c331fef7d1e9311bda5e8">SPI1</a></td></tr>
+<tr class="memdesc:ad247bc4aaa4c331fef7d1e9311bda5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SPI1, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ad247bc4aaa4c331fef7d1e9311bda5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9920c067ffee7432cb08b2fe5cd78d1a" id="r_a9920c067ffee7432cb08b2fe5cd78d1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a9920c067ffee7432cb08b2fe5cd78d1a">SRAM0</a></td></tr>
+<tr class="memdesc:a9920c067ffee7432cb08b2fe5cd78d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a9920c067ffee7432cb08b2fe5cd78d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69dd243c79503e779d17decc7c68bdf" id="r_ae69dd243c79503e779d17decc7c68bdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ae69dd243c79503e779d17decc7c68bdf">SRAM1</a></td></tr>
+<tr class="memdesc:ae69dd243c79503e779d17decc7c68bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM1, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ae69dd243c79503e779d17decc7c68bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722cc88c0b2f72dfa38b5c056b3b1831" id="r_a722cc88c0b2f72dfa38b5c056b3b1831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a722cc88c0b2f72dfa38b5c056b3b1831">SRAM2</a></td></tr>
+<tr class="memdesc:a722cc88c0b2f72dfa38b5c056b3b1831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM2, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a722cc88c0b2f72dfa38b5c056b3b1831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437e9ecc4dd6d693ecc80700c74bbaef" id="r_a437e9ecc4dd6d693ecc80700c74bbaef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a437e9ecc4dd6d693ecc80700c74bbaef">SRAM3</a></td></tr>
+<tr class="memdesc:a437e9ecc4dd6d693ecc80700c74bbaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM3, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a437e9ecc4dd6d693ecc80700c74bbaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2cc600a59969d16230cda429f84518" id="r_a5f2cc600a59969d16230cda429f84518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a5f2cc600a59969d16230cda429f84518">SRAM4</a></td></tr>
+<tr class="memdesc:a5f2cc600a59969d16230cda429f84518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM4, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a5f2cc600a59969d16230cda429f84518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d5555435c1710087b8a02318035efb" id="r_a45d5555435c1710087b8a02318035efb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a45d5555435c1710087b8a02318035efb">SRAM5</a></td></tr>
+<tr class="memdesc:a45d5555435c1710087b8a02318035efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM5, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a45d5555435c1710087b8a02318035efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7846408899840e1b926e6bff940a4fa2" id="r_a7846408899840e1b926e6bff940a4fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a7846408899840e1b926e6bff940a4fa2">SRAM6</a></td></tr>
+<tr class="memdesc:a7846408899840e1b926e6bff940a4fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM6, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a7846408899840e1b926e6bff940a4fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a140f9e8856a793cf17e9d6a89be7edd6" id="r_a140f9e8856a793cf17e9d6a89be7edd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a140f9e8856a793cf17e9d6a89be7edd6">SRAM7</a></td></tr>
+<tr class="memdesc:a140f9e8856a793cf17e9d6a89be7edd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM7, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a140f9e8856a793cf17e9d6a89be7edd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e8ba2cfc2edfbeb3f445e646d22134" id="r_a64e8ba2cfc2edfbeb3f445e646d22134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a64e8ba2cfc2edfbeb3f445e646d22134">SRAM8</a></td></tr>
+<tr class="memdesc:a64e8ba2cfc2edfbeb3f445e646d22134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM8, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a64e8ba2cfc2edfbeb3f445e646d22134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96af041f29b0ebfaa9006dbdf9c5046e" id="r_a96af041f29b0ebfaa9006dbdf9c5046e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a96af041f29b0ebfaa9006dbdf9c5046e">SRAM9</a></td></tr>
+<tr class="memdesc:a96af041f29b0ebfaa9006dbdf9c5046e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SRAM9, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a96af041f29b0ebfaa9006dbdf9c5046e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba71a85ec5a13ea3877a8491511266bc" id="r_aba71a85ec5a13ea3877a8491511266bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#aba71a85ec5a13ea3877a8491511266bc">SYSCFG</a></td></tr>
+<tr class="memdesc:aba71a85ec5a13ea3877a8491511266bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SYSCFG, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:aba71a85ec5a13ea3877a8491511266bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f07214ce50b581ba41b8d84b46bbd3b" id="r_a9f07214ce50b581ba41b8d84b46bbd3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a9f07214ce50b581ba41b8d84b46bbd3b">SYSINFO</a></td></tr>
+<tr class="memdesc:a9f07214ce50b581ba41b8d84b46bbd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access SYSINFO, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a9f07214ce50b581ba41b8d84b46bbd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7387a1e65fb7cc3fc11ddd161bfff37" id="r_ac7387a1e65fb7cc3fc11ddd161bfff37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#ac7387a1e65fb7cc3fc11ddd161bfff37">TBMAN</a></td></tr>
+<tr class="memdesc:ac7387a1e65fb7cc3fc11ddd161bfff37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access TBMAN, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:ac7387a1e65fb7cc3fc11ddd161bfff37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcd20d2a875fe91c7e4224bf07610c3" id="r_a8dcd20d2a875fe91c7e4224bf07610c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a8dcd20d2a875fe91c7e4224bf07610c3">TICKS</a></td></tr>
+<tr class="memdesc:a8dcd20d2a875fe91c7e4224bf07610c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access TICKS, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a8dcd20d2a875fe91c7e4224bf07610c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24b145815a8b7d5153107f0054eaf7f" id="r_af24b145815a8b7d5153107f0054eaf7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#af24b145815a8b7d5153107f0054eaf7f">TIMER0</a></td></tr>
+<tr class="memdesc:af24b145815a8b7d5153107f0054eaf7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access TIMER0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:af24b145815a8b7d5153107f0054eaf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c623090bccc263350476ad5e4693f9a" id="r_a5c623090bccc263350476ad5e4693f9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a5c623090bccc263350476ad5e4693f9a">TIMER1</a></td></tr>
+<tr class="memdesc:a5c623090bccc263350476ad5e4693f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access TIMER1, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a5c623090bccc263350476ad5e4693f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93424e4dd4e29caaed636fbaa6958e5" id="r_af93424e4dd4e29caaed636fbaa6958e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#af93424e4dd4e29caaed636fbaa6958e5">TRNG</a></td></tr>
+<tr class="memdesc:af93424e4dd4e29caaed636fbaa6958e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access TRNG, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:af93424e4dd4e29caaed636fbaa6958e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d957847cbf907791ea004b69a58040" id="r_a34d957847cbf907791ea004b69a58040"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a34d957847cbf907791ea004b69a58040">UART0</a></td></tr>
+<tr class="memdesc:a34d957847cbf907791ea004b69a58040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access UART0, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a34d957847cbf907791ea004b69a58040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03652a0b5dbb569c7ea032b4b3ebc7c8" id="r_a03652a0b5dbb569c7ea032b4b3ebc7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a03652a0b5dbb569c7ea032b4b3ebc7c8">UART1</a></td></tr>
+<tr class="memdesc:a03652a0b5dbb569c7ea032b4b3ebc7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access UART1, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a03652a0b5dbb569c7ea032b4b3ebc7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7993c146157f29f2a42317ce0bc97e6c" id="r_a7993c146157f29f2a42317ce0bc97e6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a7993c146157f29f2a42317ce0bc97e6c">USBCTRL</a></td></tr>
+<tr class="memdesc:a7993c146157f29f2a42317ce0bc97e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access USBCTRL, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a7993c146157f29f2a42317ce0bc97e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb72ebb2812bd282a19483f1aa3ce34" id="r_a7eb72ebb2812bd282a19483f1aa3ce34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a7eb72ebb2812bd282a19483f1aa3ce34">WATCHDOG</a></td></tr>
+<tr class="memdesc:a7eb72ebb2812bd282a19483f1aa3ce34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access WATCHDOG, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a7eb72ebb2812bd282a19483f1aa3ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6a3cf471e10fea16b1c3a54443b8fc" id="r_adf6a3cf471e10fea16b1c3a54443b8fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#adf6a3cf471e10fea16b1c3a54443b8fc">XIP_AUX</a></td></tr>
+<tr class="memdesc:adf6a3cf471e10fea16b1c3a54443b8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access XIP_AUX, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:adf6a3cf471e10fea16b1c3a54443b8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca1cf8cbad3184b487e988d09e03a9a" id="r_a3ca1cf8cbad3184b487e988d09e03a9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a3ca1cf8cbad3184b487e988d09e03a9a">XIP_CTRL</a></td></tr>
+<tr class="memdesc:a3ca1cf8cbad3184b487e988d09e03a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access XIP_CTRL, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a3ca1cf8cbad3184b487e988d09e03a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c2d9eb9b4e600cad7f6c84a7a85e8d" id="r_a07c2d9eb9b4e600cad7f6c84a7a85e8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a07c2d9eb9b4e600cad7f6c84a7a85e8d">XIP_MAIN</a></td></tr>
+<tr class="memdesc:a07c2d9eb9b4e600cad7f6c84a7a85e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access XIP_MAIN, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a07c2d9eb9b4e600cad7f6c84a7a85e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee9cb662f28e87893026f8a7d2a7fe3" id="r_afee9cb662f28e87893026f8a7d2a7fe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#afee9cb662f28e87893026f8a7d2a7fe3">XIP_QMI</a></td></tr>
+<tr class="memdesc:afee9cb662f28e87893026f8a7d2a7fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access XIP_QMI, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:afee9cb662f28e87893026f8a7d2a7fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294d79be7bb302cb28e1e4154d9e729f" id="r_a294d79be7bb302cb28e1e4154d9e729f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structACCESSCTRL__Type.html#a294d79be7bb302cb28e1e4154d9e729f">XOSC</a></td></tr>
+<tr class="memdesc:a294d79be7bb302cb28e1e4154d9e729f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control whether debugger, DMA, core 0 and core 1 can access XOSC, and at what security/privilege levels they can do so.  <br /></td></tr>
+<tr class="separator:a294d79be7bb302cb28e1e4154d9e729f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Hardware access control registers (ACCESSCTRL) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a87cd6db346e051524b3e56683a152777" name="a87cd6db346e051524b3e56683a152777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87cd6db346e051524b3e56683a152777">&#9670;&#160;</a></span>ADC0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::ADC0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access ADC0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad2144c33b8a7b9088509d01108ff23a4" name="ad2144c33b8a7b9088509d01108ff23a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2144c33b8a7b9088509d01108ff23a4">&#9670;&#160;</a></span>BUSCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::BUSCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access BUSCTRL, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa866b27c2be36290b0c64e102de65dae" name="aa866b27c2be36290b0c64e102de65dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa866b27c2be36290b0c64e102de65dae">&#9670;&#160;</a></span>CFGRESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::CFGRESET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write 1 to reset all ACCESSCTRL configuration, except for the LOCK and FORCE_CORE_NS registers. </p>
+<p>This bit is used in the RP2350 bootrom to quickly restore ACCESSCTRL to a known state during the boot path. Note that, like all registers in ACCESSCTRL, this register is not writable when the writer's corresponding LOCK bit is set, therefore a master which has been locked out of ACCESSCTRL can not use the CFGRESET register to disturb its contents. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab26499dd8ef8c91b09dd06c0d44a0fe7" name="ab26499dd8ef8c91b09dd06c0d44a0fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26499dd8ef8c91b09dd06c0d44a0fe7">&#9670;&#160;</a></span>CLOCKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::CLOCKS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access CLOCKS, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="afeb83bf94041c086aaac8b8f466584ed" name="afeb83bf94041c086aaac8b8f466584ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb83bf94041c086aaac8b8f466584ed">&#9670;&#160;</a></span>CORESIGHT_PERIPH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::CORESIGHT_PERIPH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access CORESIGHT_PERIPH, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa9aff82664e9653ed9af58924a3e7914" name="aa9aff82664e9653ed9af58924a3e7914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9aff82664e9653ed9af58924a3e7914">&#9670;&#160;</a></span>CORESIGHT_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::CORESIGHT_TRACE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access CORESIGHT_TRACE, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa054b7d1ef0197d252313ee7c01f488a" name="aa054b7d1ef0197d252313ee7c01f488a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa054b7d1ef0197d252313ee7c01f488a">&#9670;&#160;</a></span>DMA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::DMA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access DMA, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a07b59f085fac1637ee000d498664c075" name="a07b59f085fac1637ee000d498664c075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b59f085fac1637ee000d498664c075">&#9670;&#160;</a></span>FORCE_CORE_NS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::FORCE_CORE_NS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force core 1's bus accesses to always be Non-secure, no matter the core's internal state. </p>
+<p>Useful for schemes where one core is designated as the Non-secure core, since some peripherals may filter individual registers internally based on security state but not on master ID. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab278408560a099abf7b6d4f6333d31c5" name="ab278408560a099abf7b6d4f6333d31c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab278408560a099abf7b6d4f6333d31c5">&#9670;&#160;</a></span>GPIO_NSMASK0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::GPIO_NSMASK0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether GPIO0...31 are accessible to Non-secure code. </p>
+<p>Writable only by a Secure, Privileged processor or debugger. 0 -&gt; Secure access only 1 -&gt; Secure + Non-secure access <br  />
+ </p>
+
+</div>
+</div>
+<a id="a47fd9762be3f29bd5e96541870f942f7" name="a47fd9762be3f29bd5e96541870f942f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fd9762be3f29bd5e96541870f942f7">&#9670;&#160;</a></span>GPIO_NSMASK1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::GPIO_NSMASK1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether GPIO32..47 are accessible to Non-secure code, and whether QSPI and USB bitbang are accessible through the Non-secure SIO. </p>
+<p>Writable only by a Secure, Privileged processor or debugger. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa07451242fcb7ad137c9a5255f50bfd1" name="aa07451242fcb7ad137c9a5255f50bfd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa07451242fcb7ad137c9a5255f50bfd1">&#9670;&#160;</a></span>HSTX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::HSTX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access HSTX, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aec596375a3152295a4ac700a7c4fe517" name="aec596375a3152295a4ac700a7c4fe517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec596375a3152295a4ac700a7c4fe517">&#9670;&#160;</a></span>I2C0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::I2C0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access I2C0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac963123624ab0d7834f0375b92862b4f" name="ac963123624ab0d7834f0375b92862b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac963123624ab0d7834f0375b92862b4f">&#9670;&#160;</a></span>I2C1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::I2C1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access I2C1, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a10ef0ef1aa94a011584696a367654f4b" name="a10ef0ef1aa94a011584696a367654f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ef0ef1aa94a011584696a367654f4b">&#9670;&#160;</a></span>IO_BANK0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::IO_BANK0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access IO_BANK0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7f65048844713c458fc58c844dc8c69b" name="a7f65048844713c458fc58c844dc8c69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f65048844713c458fc58c844dc8c69b">&#9670;&#160;</a></span>IO_BANK1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::IO_BANK1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access IO_BANK1, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a10047467c519983baebb8c7e1f8b42c3" name="a10047467c519983baebb8c7e1f8b42c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10047467c519983baebb8c7e1f8b42c3">&#9670;&#160;</a></span>LOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::LOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; ACCESSCTRL Structure <br  />
+ </p>
+<p>Once a LOCK bit is written to 1, ACCESSCTRL silently ignores writes from that master. LOCK is writable only by a Secure, Privileged processor or debugger. LOCK bits are only writable when their value is zero. Once set, they can never be cleared, except by a full reset of ACCESSCTRL Setting the LOCK bit does not affect whether an access raises a bus error. Unprivileged writes, or writes from the DMA, will continue to raise bus errors. All other accesses will continue not to. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aabc3125663fa89241e5b368e29752dce" name="aabc3125663fa89241e5b368e29752dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc3125663fa89241e5b368e29752dce">&#9670;&#160;</a></span>OTP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::OTP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access OTP, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="afcaf7e06e1e556ba6cf4f5a8c8593a47" name="afcaf7e06e1e556ba6cf4f5a8c8593a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcaf7e06e1e556ba6cf4f5a8c8593a47">&#9670;&#160;</a></span>PADS_BANK0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PADS_BANK0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PADS_BANK0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab84342e4e8a13d3d6b48c9cdb40d88a6" name="ab84342e4e8a13d3d6b48c9cdb40d88a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84342e4e8a13d3d6b48c9cdb40d88a6">&#9670;&#160;</a></span>PADS_QSPI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PADS_QSPI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PADS_QSPI, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a11c88cc2359a064b1ffcc51505d41766" name="a11c88cc2359a064b1ffcc51505d41766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c88cc2359a064b1ffcc51505d41766">&#9670;&#160;</a></span>PIO0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PIO0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PIO0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a105fc9a72d507ed191fd467632f83727" name="a105fc9a72d507ed191fd467632f83727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105fc9a72d507ed191fd467632f83727">&#9670;&#160;</a></span>PIO1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PIO1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PIO1, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a07d7830a1aa634e4f1724c5dd1f93fed" name="a07d7830a1aa634e4f1724c5dd1f93fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d7830a1aa634e4f1724c5dd1f93fed">&#9670;&#160;</a></span>PIO2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PIO2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PIO2, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a922266b6afa5d32d68c982b87b7379cc" name="a922266b6afa5d32d68c982b87b7379cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922266b6afa5d32d68c982b87b7379cc">&#9670;&#160;</a></span>PLL_SYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PLL_SYS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PLL_SYS, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a253548e01e2d17e8b7991f1de61a65fb" name="a253548e01e2d17e8b7991f1de61a65fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253548e01e2d17e8b7991f1de61a65fb">&#9670;&#160;</a></span>PLL_USB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PLL_USB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PLL_USB, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2d70024a6c7470b62e478e90e9fb796f" name="a2d70024a6c7470b62e478e90e9fb796f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d70024a6c7470b62e478e90e9fb796f">&#9670;&#160;</a></span>POWMAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::POWMAN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access POWMAN, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a89976e352c68fd5e5bfa142484cc49bf" name="a89976e352c68fd5e5bfa142484cc49bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89976e352c68fd5e5bfa142484cc49bf">&#9670;&#160;</a></span>PWM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::PWM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access PWM, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a834decdbdeff94e1a107ef93e9299e4d" name="a834decdbdeff94e1a107ef93e9299e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834decdbdeff94e1a107ef93e9299e4d">&#9670;&#160;</a></span>RESETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::RESETS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access RESETS, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9c3a60b72a528dab2c406a1a410d50a3" name="a9c3a60b72a528dab2c406a1a410d50a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3a60b72a528dab2c406a1a410d50a3">&#9670;&#160;</a></span>ROM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::ROM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access ROM, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a542ba548976097146db9c82d6aa3fbda" name="a542ba548976097146db9c82d6aa3fbda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542ba548976097146db9c82d6aa3fbda">&#9670;&#160;</a></span>ROSC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::ROSC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access ROSC, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab21ff9340666a101f8163afe40f7c89c" name="ab21ff9340666a101f8163afe40f7c89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21ff9340666a101f8163afe40f7c89c">&#9670;&#160;</a></span>RSM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::RSM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access RSM, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae82dd839abeb4bfd2cff8e0b9a93332d" name="ae82dd839abeb4bfd2cff8e0b9a93332d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82dd839abeb4bfd2cff8e0b9a93332d">&#9670;&#160;</a></span>SHA256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SHA256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SHA256, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0fefa3c5fd43ec80a431cc858433e411" name="a0fefa3c5fd43ec80a431cc858433e411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fefa3c5fd43ec80a431cc858433e411">&#9670;&#160;</a></span>SPI0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SPI0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SPI0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad247bc4aaa4c331fef7d1e9311bda5e8" name="ad247bc4aaa4c331fef7d1e9311bda5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad247bc4aaa4c331fef7d1e9311bda5e8">&#9670;&#160;</a></span>SPI1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SPI1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SPI1, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9920c067ffee7432cb08b2fe5cd78d1a" name="a9920c067ffee7432cb08b2fe5cd78d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9920c067ffee7432cb08b2fe5cd78d1a">&#9670;&#160;</a></span>SRAM0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae69dd243c79503e779d17decc7c68bdf" name="ae69dd243c79503e779d17decc7c68bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69dd243c79503e779d17decc7c68bdf">&#9670;&#160;</a></span>SRAM1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM1, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a722cc88c0b2f72dfa38b5c056b3b1831" name="a722cc88c0b2f72dfa38b5c056b3b1831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722cc88c0b2f72dfa38b5c056b3b1831">&#9670;&#160;</a></span>SRAM2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM2, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a437e9ecc4dd6d693ecc80700c74bbaef" name="a437e9ecc4dd6d693ecc80700c74bbaef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437e9ecc4dd6d693ecc80700c74bbaef">&#9670;&#160;</a></span>SRAM3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM3, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5f2cc600a59969d16230cda429f84518" name="a5f2cc600a59969d16230cda429f84518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f2cc600a59969d16230cda429f84518">&#9670;&#160;</a></span>SRAM4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM4, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a45d5555435c1710087b8a02318035efb" name="a45d5555435c1710087b8a02318035efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d5555435c1710087b8a02318035efb">&#9670;&#160;</a></span>SRAM5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM5, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7846408899840e1b926e6bff940a4fa2" name="a7846408899840e1b926e6bff940a4fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7846408899840e1b926e6bff940a4fa2">&#9670;&#160;</a></span>SRAM6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM6, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a140f9e8856a793cf17e9d6a89be7edd6" name="a140f9e8856a793cf17e9d6a89be7edd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140f9e8856a793cf17e9d6a89be7edd6">&#9670;&#160;</a></span>SRAM7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM7, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a64e8ba2cfc2edfbeb3f445e646d22134" name="a64e8ba2cfc2edfbeb3f445e646d22134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e8ba2cfc2edfbeb3f445e646d22134">&#9670;&#160;</a></span>SRAM8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM8, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a96af041f29b0ebfaa9006dbdf9c5046e" name="a96af041f29b0ebfaa9006dbdf9c5046e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96af041f29b0ebfaa9006dbdf9c5046e">&#9670;&#160;</a></span>SRAM9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SRAM9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SRAM9, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writabl when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aba71a85ec5a13ea3877a8491511266bc" name="aba71a85ec5a13ea3877a8491511266bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba71a85ec5a13ea3877a8491511266bc">&#9670;&#160;</a></span>SYSCFG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SYSCFG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SYSCFG, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9f07214ce50b581ba41b8d84b46bbd3b" name="a9f07214ce50b581ba41b8d84b46bbd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f07214ce50b581ba41b8d84b46bbd3b">&#9670;&#160;</a></span>SYSINFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::SYSINFO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access SYSINFO, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-wr table when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac7387a1e65fb7cc3fc11ddd161bfff37" name="ac7387a1e65fb7cc3fc11ddd161bfff37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7387a1e65fb7cc3fc11ddd161bfff37">&#9670;&#160;</a></span>TBMAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::TBMAN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access TBMAN, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8dcd20d2a875fe91c7e4224bf07610c3" name="a8dcd20d2a875fe91c7e4224bf07610c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dcd20d2a875fe91c7e4224bf07610c3">&#9670;&#160;</a></span>TICKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::TICKS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access TICKS, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af24b145815a8b7d5153107f0054eaf7f" name="af24b145815a8b7d5153107f0054eaf7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24b145815a8b7d5153107f0054eaf7f">&#9670;&#160;</a></span>TIMER0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::TIMER0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access TIMER0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5c623090bccc263350476ad5e4693f9a" name="a5c623090bccc263350476ad5e4693f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c623090bccc263350476ad5e4693f9a">&#9670;&#160;</a></span>TIMER1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::TIMER1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access TIMER1, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af93424e4dd4e29caaed636fbaa6958e5" name="af93424e4dd4e29caaed636fbaa6958e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93424e4dd4e29caaed636fbaa6958e5">&#9670;&#160;</a></span>TRNG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::TRNG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access TRNG, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a34d957847cbf907791ea004b69a58040" name="a34d957847cbf907791ea004b69a58040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d957847cbf907791ea004b69a58040">&#9670;&#160;</a></span>UART0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::UART0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access UART0, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a03652a0b5dbb569c7ea032b4b3ebc7c8" name="a03652a0b5dbb569c7ea032b4b3ebc7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03652a0b5dbb569c7ea032b4b3ebc7c8">&#9670;&#160;</a></span>UART1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::UART1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access UART1, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7993c146157f29f2a42317ce0bc97e6c" name="a7993c146157f29f2a42317ce0bc97e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7993c146157f29f2a42317ce0bc97e6c">&#9670;&#160;</a></span>USBCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::USBCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access USBCTRL, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure access from any master. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7eb72ebb2812bd282a19483f1aa3ce34" name="a7eb72ebb2812bd282a19483f1aa3ce34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb72ebb2812bd282a19483f1aa3ce34">&#9670;&#160;</a></span>WATCHDOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::WATCHDOG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access WATCHDOG, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="adf6a3cf471e10fea16b1c3a54443b8fc" name="adf6a3cf471e10fea16b1c3a54443b8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6a3cf471e10fea16b1c3a54443b8fc">&#9670;&#160;</a></span>XIP_AUX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::XIP_AUX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access XIP_AUX, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3ca1cf8cbad3184b487e988d09e03a9a" name="a3ca1cf8cbad3184b487e988d09e03a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca1cf8cbad3184b487e988d09e03a9a">&#9670;&#160;</a></span>XIP_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::XIP_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access XIP_CTRL, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a07c2d9eb9b4e600cad7f6c84a7a85e8d" name="a07c2d9eb9b4e600cad7f6c84a7a85e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c2d9eb9b4e600cad7f6c84a7a85e8d">&#9670;&#160;</a></span>XIP_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::XIP_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access XIP_MAIN, and at what security/privilege levels they can do so. </p>
+<p>Defaults to fully open access. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-wr table when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="afee9cb662f28e87893026f8a7d2a7fe3" name="afee9cb662f28e87893026f8a7d2a7fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee9cb662f28e87893026f8a7d2a7fe3">&#9670;&#160;</a></span>XIP_QMI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::XIP_QMI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access XIP_QMI, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a294d79be7bb302cb28e1e4154d9e729f" name="a294d79be7bb302cb28e1e4154d9e729f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294d79be7bb302cb28e1e4154d9e729f">&#9670;&#160;</a></span>XOSC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> ACCESSCTRL_Type::XOSC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control whether debugger, DMA, core 0 and core 1 can access XOSC, and at what security/privilege levels they can do so. </p>
+<p>Defaults to Secure, Privileged processor or debug access only. This register is writable only from a Secure, Privileged processor or debugger, with the exception of the NSU bit, which becomes Non-secure-Privileged-writable when the NSP bit is set. <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structACCESSCTRL__Type.html">ACCESSCTRL_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

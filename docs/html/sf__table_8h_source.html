@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de sf_table.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('sf__table_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">sf_table.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="sf__table_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _PICO_BOOTROM_SF_TABLE_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _PICO_BOOTROM_SF_TABLE_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// NOTE THESE FUNCTION IMPLEMENTATIONS MATCH THE BEHAVIOR DESCRIBED IN THE BOOTROM SECTION OF THE RP2040 DATASHEET</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="sf__table_8h.html#ac283148a369ef4ad1ecc2050390a27de">   12</a></span><span class="preprocessor">#define SF_TABLE_FADD               0x00</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a0d36a0b59f029503d00c30d8e4dcad79">   13</a></span><span class="preprocessor">#define SF_TABLE_FSUB               0x04</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a07ea559c9084a05f65d35318400bb969">   14</a></span><span class="preprocessor">#define SF_TABLE_FMUL               0x08</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a72247b8f4b0ee45fae18bc9bfd06ea73">   15</a></span><span class="preprocessor">#define SF_TABLE_FDIV               0x0c</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a804c6321a356bebfd1eaaed78e1a13ce">   16</a></span><span class="preprocessor">#define SF_TABLE_FCMP_FAST          0x10</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a927df10aa35bb493077972ba93658782">   17</a></span><span class="preprocessor">#define SF_TABLE_FCMP_FAST_FLAGS    0x14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="sf__table_8h.html#acacf2baccb38462e3f9fcbe9ac733490">   18</a></span><span class="preprocessor">#define SF_TABLE_FSQRT              0x18</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="sf__table_8h.html#af7b534f88745745565a31544a0970b01">   19</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2INT          0x1c</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a557a8960e5e3cc108bb957d5cf58c18d">   20</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2FIX          0x20</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a8bb02eaa227d79a02fa79c5f533b6054">   21</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2UINT         0x24</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a15306a8d060a5382d01e0831e22235cf">   22</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2UFIX         0x28</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a531d5b38d394eb211cb96a830cf309ce">   23</a></span><span class="preprocessor">#define SF_TABLE_INT2FLOAT          0x2c</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a1128be6ea8b2a41f6dc11e581f8b56dc">   24</a></span><span class="preprocessor">#define SF_TABLE_FIX2FLOAT          0x30</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a7fe396dbc04cbd72eda874151e771945">   25</a></span><span class="preprocessor">#define SF_TABLE_UINT2FLOAT         0x34</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a7be35dbf45368bcab0366030717e788c">   26</a></span><span class="preprocessor">#define SF_TABLE_UFIX2FLOAT         0x38</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a24a3d0f62836301c577ccf791f85f35d">   27</a></span><span class="preprocessor">#define SF_TABLE_FCOS               0x3c</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a616e95a5a9b88d0656f78cc8dc0ac7da">   28</a></span><span class="preprocessor">#define SF_TABLE_FSIN               0x40</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a1a3107d24c5c34741698848ade8092e3">   29</a></span><span class="preprocessor">#define SF_TABLE_FTAN               0x44</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a435521cd47ad4d46637b45f2b7b02ca1">   30</a></span><span class="preprocessor">#define SF_TABLE_V3_FSINCOS         0x48</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a8861cd8c2c8310d6aac8cae5c64e2d3f">   31</a></span><span class="preprocessor">#define SF_TABLE_FEXP               0x4c</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a1595c2233035c7878f5c56af865d4845">   32</a></span><span class="preprocessor">#define SF_TABLE_FLN                0x50</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="sf__table_8h.html#acfd7d8ba8955a572d6d9baf374183400">   34</a></span><span class="preprocessor">#define SF_TABLE_V1_SIZE            0x54</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a6a6da43d546e9738497a22f1fc090908">   36</a></span><span class="preprocessor">#define SF_TABLE_FCMP_BASIC         0x54</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="sf__table_8h.html#aa6aaa84fe40a49c1c333b790adb22ed8">   37</a></span><span class="preprocessor">#define SF_TABLE_FATAN2             0x58</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="sf__table_8h.html#af37d3c7d39b08e8e2aca9e044b4aa270">   38</a></span><span class="preprocessor">#define SF_TABLE_INT642FLOAT        0x5c</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a028d45b64c4bc4117f86bab868c793e4">   39</a></span><span class="preprocessor">#define SF_TABLE_FIX642FLOAT        0x60</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a4caa33aecf5aaabdf31e54e6dc90c0e9">   40</a></span><span class="preprocessor">#define SF_TABLE_UINT642FLOAT       0x64</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="sf__table_8h.html#abfcd32b3eb55a85b45b9ea7af4456304">   41</a></span><span class="preprocessor">#define SF_TABLE_UFIX642FLOAT       0x68</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a0cae54010bec6fbc67fb7f6e839bcbaf">   42</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2INT64        0x6c</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="sf__table_8h.html#ab7775267ce5695f94f4cf9194ee25272">   43</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2FIX64        0x70</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a8c7d75d385abd2eafe39aba555c6b349">   44</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2UINT64       0x74</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a34a566fa662030b9e79fad292c46c7f2">   45</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2UFIX64       0x78</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="sf__table_8h.html#a49b84c8714f839db93a2829edf744078">   46</a></span><span class="preprocessor">#define SF_TABLE_FLOAT2DOUBLE       0x7c</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="sf__table_8h.html#ad04ababc64fb3b55f46021ec9f0920bd">   48</a></span><span class="preprocessor">#define SF_TABLE_V2_SIZE            0x80</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_1686c45b041666fce3b490096f338b4d.html">pico_bootrom</a></li><li class="navelem"><a class="el" href="dir_e1b8500c7e2c0bc439ffdfc512d41e52.html">include</a></li><li class="navelem"><a class="el" href="dir_eddf11deabc7d493b55f5e5b53aad316.html">pico</a></li><li class="navelem"><a class="el" href="dir_3823f72fd740618338a50fdc9ccfca57.html">bootrom</a></li><li class="navelem"><a class="el" href="sf__table_8h.html">sf_table.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

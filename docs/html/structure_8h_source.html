@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de structure.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structure_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">structure.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="structure_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _PICO_BINARY_INFO_STRUCTURE_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _PICO_BINARY_INFO_STRUCTURE_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// NOTE: This file may be included by non SDK code, so does not use SDK includes</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// NOTE: ALL CHANGES MUST BE BACKWARDS COMPATIBLE</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef __packed</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">   21</a></span><span class="preprocessor">#define __packed __attribute__((packed))</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structure_8h.html#aa7a4ebb53c10f54650d5b4beb7bde11d">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> <a class="code hl_struct" href="struct__binary__info__core.html">binary_info_t</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structure_8h.html#a79046d41c464aa298d0b90580b50e691">   26</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_RAW_DATA 1</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structure_8h.html#ab9a0c2254d9a46adbbce0ab4873e1a72">   27</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_SIZED_DATA 2</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structure_8h.html#a37030a5736d0bfe8916ca8fa7f621610">   28</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_BINARY_INFO_LIST_ZERO_TERMINATED 3</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structure_8h.html#a3a0e2a353b0083ac8b67ce35d7c6d005">   29</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_BSON 4</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structure_8h.html#a26e537e06debabc46ad4e359604c9c6e">   30</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_ID_AND_INT 5</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structure_8h.html#a5cdd023d68bad25af442a7e8eb0b6d2d">   31</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_ID_AND_STRING 6</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// traditional block device</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structure_8h.html#ae91e82ae9f5219c54c2cbaa6e067b177">   33</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_BLOCK_DEVICE 7</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structure_8h.html#ab18545350022da54f0d48f469071439c">   34</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_PINS_WITH_FUNC 8</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structure_8h.html#a847b6672a003acfea90f3081711d1b2c">   35</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_PINS_WITH_NAME 9</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structure_8h.html#aa268609fd43aeb8685fcf88eacc20918">   36</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_NAMED_GROUP 10</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structure_8h.html#aeb746ffe5649c085321e0007887c5172">   37</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_PTR_INT32_WITH_NAME 11</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structure_8h.html#ac4401b22f3d49c6b64f9a9f413bcd2e3">   38</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_PTR_STRING_WITH_NAME 12</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structure_8h.html#a7414051c84ed916203ce6489b3a70ac8">   39</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_PINS64_WITH_FUNC 13</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structure_8h.html#aab566b5c8ad4374f3efd5e440fbaf512">   40</a></span><span class="preprocessor">#define BINARY_INFO_TYPE_PINS64_WITH_NAME 14</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// note plan is to reserve c1 = 0-&gt;31 for &quot;collision tags&quot;; i.e.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// for which you should always use random IDs with the binary_info,</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// giving you 4 + 8 + 32 = 44 bits to avoid collisions</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structure_8h.html#aa6fb8870022d2161e8215d4bfe6f9477">   45</a></span><span class="preprocessor">#define BINARY_INFO_MAKE_TAG(c1, c2) ((((uint)c2&amp;0xffu)&lt;&lt;8u)|((uint)c1&amp;0xffu))</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Raspberry Pi defined. do not use</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structure_8h.html#aad992403f9f09873c523d9eac22e2264">   48</a></span><span class="preprocessor">#define BINARY_INFO_TAG_RASPBERRY_PI BINARY_INFO_MAKE_TAG(&#39;R&#39;,&#39;P&#39;)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structure_8h.html#ac3fe91397193065646e1383c1a2946a6">   50</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PROGRAM_NAME 0x02031c86</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structure_8h.html#aa579b1141a85030587a4ab8d2a33f094">   51</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PROGRAM_VERSION_STRING 0x11a9bc3a</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structure_8h.html#ad5d53c04f02c8744cbf8c654d14049f4">   52</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PROGRAM_BUILD_DATE_STRING 0x9da22254</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structure_8h.html#a1edde881a331c45b87f5da5bdbc5bee8">   53</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_BINARY_END 0x68f465de</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structure_8h.html#a4eefa228636def6b7e0d19edf40b8ab8">   54</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PROGRAM_URL 0x1856239a</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structure_8h.html#a20c556ef416b82f64e92ef5659904a5e">   55</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PROGRAM_DESCRIPTION 0xb6a07c19</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structure_8h.html#a85732d1c355ffdc93f3029cadfe49265">   56</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PROGRAM_FEATURE 0xa1f4b453</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structure_8h.html#a8e54bfcc0c1277c553ef80d82d3ae90b">   57</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PROGRAM_BUILD_ATTRIBUTE 0x4275f0d3</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structure_8h.html#adb229f2761d517b50e866f5c16350b3e">   58</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_SDK_VERSION 0x5360b3ab</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structure_8h.html#a6bd41a978458a5fba4a6d64cd10409ee">   59</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_PICO_BOARD 0xb63cffbb</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structure_8h.html#a0f85cebc8235770002060ee3dc5b1cec">   60</a></span><span class="preprocessor">#define BINARY_INFO_ID_RP_BOOT2_NAME 0x7f8882e1</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#if PICO_ON_DEVICE</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#define bi_ptr_of(x) x *</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structure_8h.html#a405436bc884b220e79c6738a44a7cdba">   65</a></span><span class="preprocessor">#define bi_ptr_of(x) uint32_t</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="};">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct__binary__info__core.html">   67</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct__binary__info__core.html#af26ff90210d2326a5848671a869994c3">   68</a></span>        uint16_t <a class="code hl_variable" href="struct__binary__info__core.html#af26ff90210d2326a5848671a869994c3">type</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="struct__binary__info__core.html#a1044c43f41f618f130862a8cab14b278">   69</a></span>        uint16_t <a class="code hl_variable" href="struct__binary__info__core.html#a1044c43f41f618f130862a8cab14b278">tag</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structure_8h.html#ab23fbc941ca06b354f4360b02fe1d4f6">   70</a></span>} <a class="code hl_typedef" href="structure_8h.html#ab23fbc941ca06b354f4360b02fe1d4f6">binary_info_core_t</a>;</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct__binary__info__raw__data.html">   72</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__raw__data.html">_binary_info_raw_data</a> {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="struct__binary__info__raw__data.html#adf44f5aef5510be00b5b71438995128b">   73</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="struct__binary__info__raw__data.html#a409e3aee509dc62da3636a131aa5a420">   74</a></span>        uint8_t bytes[1];</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structure_8h.html#aac9dc3253f00da8aebaeff34fff7f825">   75</a></span>} <a class="code hl_typedef" href="structure_8h.html#aac9dc3253f00da8aebaeff34fff7f825">binary_info_raw_data_t</a>;</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="};">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="struct__binary__info__sized__data.html">   77</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__sized__data.html">_binary_info_sized_data</a> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="struct__binary__info__sized__data.html#a174066b9257f42ef7af54cf7a872dfab">   78</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="struct__binary__info__sized__data.html#ab6f0fd5f5b798bd0d1ee96985c722a36">   79</a></span>        <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__sized__data.html#ab6f0fd5f5b798bd0d1ee96985c722a36">length</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="struct__binary__info__sized__data.html#afbca1efe05568a384627395271c5efc9">   80</a></span>        uint8_t bytes[1];</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="structure_8h.html#abe21900fc3039ca33e062aa7ca41dbb4">   81</a></span>} <a class="code hl_typedef" href="structure_8h.html#abe21900fc3039ca33e062aa7ca41dbb4">binary_info_sized_data_t</a>;</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="struct__binary__info__list__zero__terminated.html">   83</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__list__zero__terminated.html">_binary_info_list_zero_terminated</a> {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="struct__binary__info__list__zero__terminated.html#afb1b00c015a7eaa3a139424ecb942163">   84</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="struct__binary__info__list__zero__terminated.html#ac8fae7611ed984d76bd855f5b5ae412c">   85</a></span>        <a class="code hl_function" href="struct__binary__info__list__zero__terminated.html#ac8fae7611ed984d76bd855f5b5ae412c">bi_ptr_of</a>(<a class="code hl_struct" href="struct__binary__info__core.html">binary_info_t</a>) list;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structure_8h.html#a4271206a181d5b2932c31544f8fe12b8">   86</a></span>} <a class="code hl_typedef" href="structure_8h.html#a4271206a181d5b2932c31544f8fe12b8">binary_info_list_zero_terminated_t</a>;</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__int.html">   88</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__id__and__int.html">_binary_info_id_and_int</a> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__int.html#a464fe4c793fb258d0d4416c1c05e4ab2">   89</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__int.html#a5d302cf4c6bbc21d8e3f646799e379fc">   90</a></span>        <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__id__and__int.html#a5d302cf4c6bbc21d8e3f646799e379fc">id</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__int.html#a794578cb64185ae85fc21e95b94c2717">   91</a></span>        int32_t <a class="code hl_variable" href="struct__binary__info__id__and__int.html#a794578cb64185ae85fc21e95b94c2717">value</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structure_8h.html#ac13d2e954693571b34155daa01a79496">   92</a></span>} <a class="code hl_typedef" href="structure_8h.html#ac13d2e954693571b34155daa01a79496">binary_info_id_and_int_t</a>;</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__string.html">   94</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__id__and__string.html">_binary_info_id_and_string</a> {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__string.html#afbfb9296367e55cc5727f9f51fd7db05">   95</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__string.html#a77f33691939b67f418577faf2cfed208">   96</a></span>        <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__id__and__string.html#a77f33691939b67f418577faf2cfed208">id</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="struct__binary__info__id__and__string.html#ac456cf8005b034419ea0137587859c81">   97</a></span>        <a class="code hl_function" href="struct__binary__info__id__and__string.html#ac456cf8005b034419ea0137587859c81">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) value;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="structure_8h.html#aa03ed11465dc6c0d0a5bd3e1cad47b70">   98</a></span>} <a class="code hl_typedef" href="structure_8h.html#aa03ed11465dc6c0d0a5bd3e1cad47b70">binary_info_id_and_string_t</a>;</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="};">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__int32__with__name.html">  100</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__ptr__int32__with__name.html">_binary_info_ptr_int32_with_name</a> {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__int32__with__name.html#ad068d646097008aec0b9c3275d71f408">  101</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__int32__with__name.html#ac4d4109cee66b377733dea615af99a39">  102</a></span>        int32_t <a class="code hl_variable" href="struct__binary__info__ptr__int32__with__name.html#ac4d4109cee66b377733dea615af99a39">id</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__int32__with__name.html#a27a844d4b8537e63cf0405f8b00ed92f">  103</a></span>        <a class="code hl_function" href="struct__binary__info__ptr__int32__with__name.html#a27a844d4b8537e63cf0405f8b00ed92f">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>) value;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__int32__with__name.html#a4d00a06859e8af12d2139df6b5596c26">  104</a></span>        <a class="code hl_function" href="struct__binary__info__ptr__int32__with__name.html#a4d00a06859e8af12d2139df6b5596c26">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) label;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="structure_8h.html#a8672b86fa22738b6949ef295c1274d6a">  105</a></span>} <a class="code hl_typedef" href="structure_8h.html#a8672b86fa22738b6949ef295c1274d6a">binary_info_ptr_int32_with_name_t</a>;</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="};">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__string__with__name.html">  107</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__ptr__string__with__name.html">_binary_info_ptr_string_with_name</a> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__string__with__name.html#aa1eb70ea913293837edac41a3a403bc2">  108</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__string__with__name.html#a4331f6cacc6562750cf845195550195e">  109</a></span>        int32_t <a class="code hl_variable" href="struct__binary__info__ptr__string__with__name.html#a4331f6cacc6562750cf845195550195e">id</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__string__with__name.html#a1aaa620eecfd7853f5e066a91a28a45c">  110</a></span>        <a class="code hl_function" href="struct__binary__info__ptr__string__with__name.html#a1aaa620eecfd7853f5e066a91a28a45c">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) value;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__string__with__name.html#a6ccb9ca0df710a9cbec3ac5f2616ca11">  111</a></span>        <a class="code hl_function" href="struct__binary__info__ptr__string__with__name.html#a6ccb9ca0df710a9cbec3ac5f2616ca11">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) label;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="struct__binary__info__ptr__string__with__name.html#ad8a288d6f0140ada2a1a7820ca15259f">  112</a></span>        <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__ptr__string__with__name.html#ad8a288d6f0140ada2a1a7820ca15259f">len</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="structure_8h.html#acc4457b4dd4398a6aaa8c815c03d0534">  113</a></span>} <a class="code hl_typedef" href="structure_8h.html#acc4457b4dd4398a6aaa8c815c03d0534">binary_info_ptr_string_with_name_t</a>;</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="};">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="struct__binary__info__block__device.html">  115</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__block__device.html">_binary_info_block_device</a> {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="struct__binary__info__block__device.html#a200b6971a17ea5e5eac5c824dcf4df87">  116</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="struct__binary__info__block__device.html#a32f851b0f5e29645c1f196fec5136d33">  117</a></span>        <a class="code hl_function" href="struct__binary__info__block__device.html#a32f851b0f5e29645c1f196fec5136d33">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) name; <span class="comment">// optional static name (independent of what is formatted)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="struct__binary__info__block__device.html#a23c1c687f49d2f73fd37f0bbaee604af">  118</a></span>        <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__block__device.html#a23c1c687f49d2f73fd37f0bbaee604af">address</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="struct__binary__info__block__device.html#a5ba86cdee219a12b6030cee017f0c7ff">  119</a></span>        <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__block__device.html#a5ba86cdee219a12b6030cee017f0c7ff">size</a>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="struct__binary__info__block__device.html#a497a7300ae38f52608b159a1c38cfdce">  120</a></span>        <a class="code hl_function" href="struct__binary__info__block__device.html#a497a7300ae38f52608b159a1c38cfdce">bi_ptr_of</a>(<a class="code hl_struct" href="struct__binary__info__core.html">binary_info_t</a>) extra; <span class="comment">// additional info</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="struct__binary__info__block__device.html#a51b573f0e870b3fbadeb4031390965fd">  121</a></span>        uint16_t <a class="code hl_variable" href="struct__binary__info__block__device.html#a51b573f0e870b3fbadeb4031390965fd">flags</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="structure_8h.html#a9ea1d78c5c6cc2a340345304d6e807d8">  122</a></span>} <a class="code hl_typedef" href="structure_8h.html#a9ea1d78c5c6cc2a340345304d6e807d8">binary_info_block_device_t</a>;</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="structure_8h.html#a882838c2943a84e3750dfa5077133a86">  124</a></span><span class="preprocessor">#define BI_PINS_ENCODING_RANGE 1</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="structure_8h.html#adcd62924105db7ff91fc90555a5220c2">  125</a></span><span class="preprocessor">#define BI_PINS_ENCODING_MULTI 2</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="};">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="struct__binary__info__pins__with__func.html">  127</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__pins__with__func.html">_binary_info_pins_with_func</a> {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="struct__binary__info__pins__with__func.html#a45280c250c7089e4d084ff87daa71097">  128</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">// p4_5 : p3_5 : p2_5 : p1_5 : p0_5 : func_4 : 010_3 //individual pins p0,p1,p2,p3,p4 ... if fewer than 5 then duplicate p</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">//                    phi_5 : plo_5 : func_4 : 001_3 // pin range plo-phi inclusive</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="struct__binary__info__pins__with__func.html#aed5df5ffaaf82571047f22f3ccc2a31b">  131</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__pins__with__func.html#aed5df5ffaaf82571047f22f3ccc2a31b">pin_encoding</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="structure_8h.html#a2f7ff5439b2aff066e00e6455f3659de">  132</a></span>} <a class="code hl_typedef" href="structure_8h.html#a2f7ff5439b2aff066e00e6455f3659de">binary_info_pins_with_func_t</a>;</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="};">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="struct__binary__info__pins64__with__func.html">  134</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__pins64__with__func.html">_binary_info_pins64_with_func</a> {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="struct__binary__info__pins64__with__func.html#a2c86a2611a80a3217ccb7a14484d8cb8">  135</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// p6_8 : p5_8 : p4_8 : p3_8 : p2_8 : p1_8 : p0_8 : func_5 : 010_3 //individual pins p0,p1,p2 ... if fewer than 7 then duplicate p</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">//                    phi_8 : plo_8 : func_5 : 001_3 // pin range plo-phi inclusive</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="struct__binary__info__pins64__with__func.html#ad29b18fb4e4da740e8d54a2a57287b3f">  138</a></span>    uint64_t <a class="code hl_variable" href="struct__binary__info__pins64__with__func.html#ad29b18fb4e4da740e8d54a2a57287b3f">pin_encoding</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="structure_8h.html#ae1158a3ad54e3b352c8870eb6e74e8b6">  139</a></span>} <a class="code hl_typedef" href="structure_8h.html#ae1158a3ad54e3b352c8870eb6e74e8b6">binary_info_pins64_with_func_t</a>;</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="foldopen" id="foldopen00141" data-start="{" data-end="};">
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="struct__binary__info__pins__with__name.html">  141</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__pins__with__name.html">_binary_info_pins_with_name</a> {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="struct__binary__info__pins__with__name.html#a1310efcb6497bade2758b642201f32d4">  142</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="struct__binary__info__pins__with__name.html#ae7052b4f350e6081d8ef32dc1c28d51d">  143</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__pins__with__name.html#ae7052b4f350e6081d8ef32dc1c28d51d">pin_mask</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="struct__binary__info__pins__with__name.html#a5621403ed8d36d8028e25363ec4d26f9">  144</a></span>    <a class="code hl_function" href="struct__binary__info__pins__with__name.html#a5621403ed8d36d8028e25363ec4d26f9">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) label;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="structure_8h.html#a51f6a8b78c44c401b14ccd5ece9f50ca">  145</a></span>} <a class="code hl_typedef" href="structure_8h.html#a51f6a8b78c44c401b14ccd5ece9f50ca">binary_info_pins_with_name_t</a>;</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="};">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="struct__binary__info__pins64__with__name.html">  147</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__pins64__with__name.html">_binary_info_pins64_with_name</a> {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="struct__binary__info__pins64__with__name.html#abaebe0859fa0e719b5e36e695bba9a19">  148</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="struct__binary__info__pins64__with__name.html#ae71fca505ea5acd7b5fe01a70d344b81">  149</a></span>    uint64_t <a class="code hl_variable" href="struct__binary__info__pins64__with__name.html#ae71fca505ea5acd7b5fe01a70d344b81">pin_mask</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="struct__binary__info__pins64__with__name.html#a303a6b180141c32e09575614c9a351fc">  150</a></span>    <a class="code hl_function" href="struct__binary__info__pins64__with__name.html#a303a6b180141c32e09575614c9a351fc">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) label;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="structure_8h.html#acf6cb04b55810ea1a2b8853f2c966e66">  151</a></span>} <a class="code hl_typedef" href="structure_8h.html#acf6cb04b55810ea1a2b8853f2c966e66">binary_info_pins64_with_name_t</a>;</div>
+</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="structure_8h.html#a9a7efa8912252daf82707832e1fb0272">  153</a></span><span class="preprocessor">#define BI_NAMED_GROUP_SHOW_IF_EMPTY   0x0001  </span><span class="comment">// default is to hide</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="structure_8h.html#aebe20c738da096c03815df8a3fb32bbe">  154</a></span><span class="preprocessor">#define BI_NAMED_GROUP_SEPARATE_COMMAS 0x0002  </span><span class="comment">// default is newlines</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="structure_8h.html#a3a5eed18b576be883e08623c5ec1ba53">  155</a></span><span class="preprocessor">#define BI_NAMED_GROUP_SORT_ALPHA      0x0004  </span><span class="comment">// default is no sort</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="structure_8h.html#a6070ddb26b2f4bc9297e84cb115c8d57">  156</a></span><span class="preprocessor">#define BI_NAMED_GROUP_ADVANCED        0x0008  </span><span class="comment">// if set, then only shown in say info -a</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="};">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="struct__binary__info__named__group.html">  158</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_define" href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a> <a class="code hl_struct" href="struct__binary__info__named__group.html">_binary_info_named_group</a> {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="struct__binary__info__named__group.html#af2fb51f6651843f7dcb14b1212e64e41">  159</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct__binary__info__core.html">_binary_info_core</a> core;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="struct__binary__info__named__group.html#aee23d5bee8bbb5fb93be0bb3f59da154">  160</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__named__group.html#aee23d5bee8bbb5fb93be0bb3f59da154">parent_id</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="struct__binary__info__named__group.html#ac219097c665208e88ef0883302c2ff41">  161</a></span>    uint16_t <a class="code hl_variable" href="struct__binary__info__named__group.html#ac219097c665208e88ef0883302c2ff41">flags</a>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="struct__binary__info__named__group.html#a74fe65d4484bd991d15ee24f39fce127">  162</a></span>    uint16_t <a class="code hl_variable" href="struct__binary__info__named__group.html#a74fe65d4484bd991d15ee24f39fce127">group_tag</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="struct__binary__info__named__group.html#a43185858c6d7079e4d054f0d95b16b6a">  163</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="struct__binary__info__named__group.html#a43185858c6d7079e4d054f0d95b16b6a">group_id</a>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="struct__binary__info__named__group.html#a8173fe46ffb2eeff889124d580328873">  164</a></span>    <a class="code hl_function" href="struct__binary__info__named__group.html#a8173fe46ffb2eeff889124d580328873">bi_ptr_of</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>) label;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="structure_8h.html#a260aea64b5cc3f2f0baa6ab88c475408">  165</a></span>} <a class="code hl_typedef" href="structure_8h.html#a260aea64b5cc3f2f0baa6ab88c475408">binary_info_named_group_t</a>;</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad3188882c880fe0369ac0182ae32fcce">  168</a></span>    <a class="code hl_enumvalue" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad3188882c880fe0369ac0182ae32fcce">BINARY_INFO_BLOCK_DEV_FLAG_READ</a> = 1 &lt;&lt; 0, <span class="comment">// if not readable, then it is basically hidden, but tools may choose to avoid overwriting it</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba920cef14b10a4705d4cc41ab31b7238b">  169</a></span>    <a class="code hl_enumvalue" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba920cef14b10a4705d4cc41ab31b7238b">BINARY_INFO_BLOCK_DEV_FLAG_WRITE</a> = 1 &lt;&lt; 1,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf0ed7bf631ebed5aa93e84d1202f33b9">  170</a></span>    <a class="code hl_enumvalue" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf0ed7bf631ebed5aa93e84d1202f33b9">BINARY_INFO_BLOCK_DEV_FLAG_REFORMAT</a> = 1 &lt;&lt; 2, <span class="comment">// may be reformatted..</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac9024b128fc84f8bd1ef8070579b3655">  172</a></span>    <a class="code hl_enumvalue" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac9024b128fc84f8bd1ef8070579b3655">BINARY_INFO_BLOCK_DEV_FLAG_PT_UNKNOWN</a> = 0 &lt;&lt; 4, <span class="comment">// unknown free to look</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab3f3c09f8f8ee5934d2594623e03c7a4">  173</a></span>    <a class="code hl_enumvalue" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab3f3c09f8f8ee5934d2594623e03c7a4">BINARY_INFO_BLOCK_DEV_FLAG_PT_MBR</a> = 1 &lt;&lt; 4, <span class="comment">// expect MBR</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba426dcbc9b619c744a1c15399017e20b5">  174</a></span>    <a class="code hl_enumvalue" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba426dcbc9b619c744a1c15399017e20b5">BINARY_INFO_BLOCK_DEV_FLAG_PT_GPT</a> = 2 &lt;&lt; 4, <span class="comment">// expect GPT</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6d96a52e6a1ada1a8a21269de0668e7b">  175</a></span>    <a class="code hl_enumvalue" href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6d96a52e6a1ada1a8a21269de0668e7b">BINARY_INFO_BLOCK_DEV_FLAG_PT_NONE</a> = 3 &lt;&lt; 4, <span class="comment">// no partition table</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>};</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>}</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="astruct__binary__info__block__device_html"><div class="ttname"><a href="struct__binary__info__block__device.html">_binary_info_block_device</a></div><div class="ttdef"><b>Definição</b> structure.h:115</div></div>
+<div class="ttc" id="astruct__binary__info__block__device_html_a23c1c687f49d2f73fd37f0bbaee604af"><div class="ttname"><a href="struct__binary__info__block__device.html#a23c1c687f49d2f73fd37f0bbaee604af">_binary_info_block_device::address</a></div><div class="ttdeci">uint32_t address</div><div class="ttdef"><b>Definição</b> structure.h:118</div></div>
+<div class="ttc" id="astruct__binary__info__block__device_html_a32f851b0f5e29645c1f196fec5136d33"><div class="ttname"><a href="struct__binary__info__block__device.html#a32f851b0f5e29645c1f196fec5136d33">_binary_info_block_device::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) name</div></div>
+<div class="ttc" id="astruct__binary__info__block__device_html_a497a7300ae38f52608b159a1c38cfdce"><div class="ttname"><a href="struct__binary__info__block__device.html#a497a7300ae38f52608b159a1c38cfdce">_binary_info_block_device::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(binary_info_t) extra</div></div>
+<div class="ttc" id="astruct__binary__info__block__device_html_a51b573f0e870b3fbadeb4031390965fd"><div class="ttname"><a href="struct__binary__info__block__device.html#a51b573f0e870b3fbadeb4031390965fd">_binary_info_block_device::flags</a></div><div class="ttdeci">uint16_t flags</div><div class="ttdef"><b>Definição</b> structure.h:121</div></div>
+<div class="ttc" id="astruct__binary__info__block__device_html_a5ba86cdee219a12b6030cee017f0c7ff"><div class="ttname"><a href="struct__binary__info__block__device.html#a5ba86cdee219a12b6030cee017f0c7ff">_binary_info_block_device::size</a></div><div class="ttdeci">uint32_t size</div><div class="ttdef"><b>Definição</b> structure.h:119</div></div>
+<div class="ttc" id="astruct__binary__info__core_html"><div class="ttname"><a href="struct__binary__info__core.html">_binary_info_core</a></div><div class="ttdef"><b>Definição</b> structure.h:67</div></div>
+<div class="ttc" id="astruct__binary__info__core_html_a1044c43f41f618f130862a8cab14b278"><div class="ttname"><a href="struct__binary__info__core.html#a1044c43f41f618f130862a8cab14b278">_binary_info_core::tag</a></div><div class="ttdeci">uint16_t tag</div><div class="ttdef"><b>Definição</b> structure.h:69</div></div>
+<div class="ttc" id="astruct__binary__info__core_html_af26ff90210d2326a5848671a869994c3"><div class="ttname"><a href="struct__binary__info__core.html#af26ff90210d2326a5848671a869994c3">_binary_info_core::type</a></div><div class="ttdeci">uint16_t type</div><div class="ttdef"><b>Definição</b> structure.h:68</div></div>
+<div class="ttc" id="astruct__binary__info__id__and__int_html"><div class="ttname"><a href="struct__binary__info__id__and__int.html">_binary_info_id_and_int</a></div><div class="ttdef"><b>Definição</b> structure.h:88</div></div>
+<div class="ttc" id="astruct__binary__info__id__and__int_html_a5d302cf4c6bbc21d8e3f646799e379fc"><div class="ttname"><a href="struct__binary__info__id__and__int.html#a5d302cf4c6bbc21d8e3f646799e379fc">_binary_info_id_and_int::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definição</b> structure.h:90</div></div>
+<div class="ttc" id="astruct__binary__info__id__and__int_html_a794578cb64185ae85fc21e95b94c2717"><div class="ttname"><a href="struct__binary__info__id__and__int.html#a794578cb64185ae85fc21e95b94c2717">_binary_info_id_and_int::value</a></div><div class="ttdeci">int32_t value</div><div class="ttdef"><b>Definição</b> structure.h:91</div></div>
+<div class="ttc" id="astruct__binary__info__id__and__string_html"><div class="ttname"><a href="struct__binary__info__id__and__string.html">_binary_info_id_and_string</a></div><div class="ttdef"><b>Definição</b> structure.h:94</div></div>
+<div class="ttc" id="astruct__binary__info__id__and__string_html_a77f33691939b67f418577faf2cfed208"><div class="ttname"><a href="struct__binary__info__id__and__string.html#a77f33691939b67f418577faf2cfed208">_binary_info_id_and_string::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definição</b> structure.h:96</div></div>
+<div class="ttc" id="astruct__binary__info__id__and__string_html_ac456cf8005b034419ea0137587859c81"><div class="ttname"><a href="struct__binary__info__id__and__string.html#ac456cf8005b034419ea0137587859c81">_binary_info_id_and_string::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) value</div></div>
+<div class="ttc" id="astruct__binary__info__list__zero__terminated_html"><div class="ttname"><a href="struct__binary__info__list__zero__terminated.html">_binary_info_list_zero_terminated</a></div><div class="ttdef"><b>Definição</b> structure.h:83</div></div>
+<div class="ttc" id="astruct__binary__info__list__zero__terminated_html_ac8fae7611ed984d76bd855f5b5ae412c"><div class="ttname"><a href="struct__binary__info__list__zero__terminated.html#ac8fae7611ed984d76bd855f5b5ae412c">_binary_info_list_zero_terminated::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(binary_info_t) list</div></div>
+<div class="ttc" id="astruct__binary__info__named__group_html"><div class="ttname"><a href="struct__binary__info__named__group.html">_binary_info_named_group</a></div><div class="ttdef"><b>Definição</b> structure.h:158</div></div>
+<div class="ttc" id="astruct__binary__info__named__group_html_a43185858c6d7079e4d054f0d95b16b6a"><div class="ttname"><a href="struct__binary__info__named__group.html#a43185858c6d7079e4d054f0d95b16b6a">_binary_info_named_group::group_id</a></div><div class="ttdeci">uint32_t group_id</div><div class="ttdef"><b>Definição</b> structure.h:163</div></div>
+<div class="ttc" id="astruct__binary__info__named__group_html_a74fe65d4484bd991d15ee24f39fce127"><div class="ttname"><a href="struct__binary__info__named__group.html#a74fe65d4484bd991d15ee24f39fce127">_binary_info_named_group::group_tag</a></div><div class="ttdeci">uint16_t group_tag</div><div class="ttdef"><b>Definição</b> structure.h:162</div></div>
+<div class="ttc" id="astruct__binary__info__named__group_html_a8173fe46ffb2eeff889124d580328873"><div class="ttname"><a href="struct__binary__info__named__group.html#a8173fe46ffb2eeff889124d580328873">_binary_info_named_group::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) label</div></div>
+<div class="ttc" id="astruct__binary__info__named__group_html_ac219097c665208e88ef0883302c2ff41"><div class="ttname"><a href="struct__binary__info__named__group.html#ac219097c665208e88ef0883302c2ff41">_binary_info_named_group::flags</a></div><div class="ttdeci">uint16_t flags</div><div class="ttdef"><b>Definição</b> structure.h:161</div></div>
+<div class="ttc" id="astruct__binary__info__named__group_html_aee23d5bee8bbb5fb93be0bb3f59da154"><div class="ttname"><a href="struct__binary__info__named__group.html#aee23d5bee8bbb5fb93be0bb3f59da154">_binary_info_named_group::parent_id</a></div><div class="ttdeci">uint32_t parent_id</div><div class="ttdef"><b>Definição</b> structure.h:160</div></div>
+<div class="ttc" id="astruct__binary__info__pins64__with__func_html"><div class="ttname"><a href="struct__binary__info__pins64__with__func.html">_binary_info_pins64_with_func</a></div><div class="ttdef"><b>Definição</b> structure.h:134</div></div>
+<div class="ttc" id="astruct__binary__info__pins64__with__func_html_ad29b18fb4e4da740e8d54a2a57287b3f"><div class="ttname"><a href="struct__binary__info__pins64__with__func.html#ad29b18fb4e4da740e8d54a2a57287b3f">_binary_info_pins64_with_func::pin_encoding</a></div><div class="ttdeci">uint64_t pin_encoding</div><div class="ttdef"><b>Definição</b> structure.h:138</div></div>
+<div class="ttc" id="astruct__binary__info__pins64__with__name_html"><div class="ttname"><a href="struct__binary__info__pins64__with__name.html">_binary_info_pins64_with_name</a></div><div class="ttdef"><b>Definição</b> structure.h:147</div></div>
+<div class="ttc" id="astruct__binary__info__pins64__with__name_html_a303a6b180141c32e09575614c9a351fc"><div class="ttname"><a href="struct__binary__info__pins64__with__name.html#a303a6b180141c32e09575614c9a351fc">_binary_info_pins64_with_name::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) label</div></div>
+<div class="ttc" id="astruct__binary__info__pins64__with__name_html_ae71fca505ea5acd7b5fe01a70d344b81"><div class="ttname"><a href="struct__binary__info__pins64__with__name.html#ae71fca505ea5acd7b5fe01a70d344b81">_binary_info_pins64_with_name::pin_mask</a></div><div class="ttdeci">uint64_t pin_mask</div><div class="ttdef"><b>Definição</b> structure.h:149</div></div>
+<div class="ttc" id="astruct__binary__info__pins__with__func_html"><div class="ttname"><a href="struct__binary__info__pins__with__func.html">_binary_info_pins_with_func</a></div><div class="ttdef"><b>Definição</b> structure.h:127</div></div>
+<div class="ttc" id="astruct__binary__info__pins__with__func_html_aed5df5ffaaf82571047f22f3ccc2a31b"><div class="ttname"><a href="struct__binary__info__pins__with__func.html#aed5df5ffaaf82571047f22f3ccc2a31b">_binary_info_pins_with_func::pin_encoding</a></div><div class="ttdeci">uint32_t pin_encoding</div><div class="ttdef"><b>Definição</b> structure.h:131</div></div>
+<div class="ttc" id="astruct__binary__info__pins__with__name_html"><div class="ttname"><a href="struct__binary__info__pins__with__name.html">_binary_info_pins_with_name</a></div><div class="ttdef"><b>Definição</b> structure.h:141</div></div>
+<div class="ttc" id="astruct__binary__info__pins__with__name_html_a5621403ed8d36d8028e25363ec4d26f9"><div class="ttname"><a href="struct__binary__info__pins__with__name.html#a5621403ed8d36d8028e25363ec4d26f9">_binary_info_pins_with_name::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) label</div></div>
+<div class="ttc" id="astruct__binary__info__pins__with__name_html_ae7052b4f350e6081d8ef32dc1c28d51d"><div class="ttname"><a href="struct__binary__info__pins__with__name.html#ae7052b4f350e6081d8ef32dc1c28d51d">_binary_info_pins_with_name::pin_mask</a></div><div class="ttdeci">uint32_t pin_mask</div><div class="ttdef"><b>Definição</b> structure.h:143</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__int32__with__name_html"><div class="ttname"><a href="struct__binary__info__ptr__int32__with__name.html">_binary_info_ptr_int32_with_name</a></div><div class="ttdef"><b>Definição</b> structure.h:100</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__int32__with__name_html_a27a844d4b8537e63cf0405f8b00ed92f"><div class="ttname"><a href="struct__binary__info__ptr__int32__with__name.html#a27a844d4b8537e63cf0405f8b00ed92f">_binary_info_ptr_int32_with_name::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const int) value</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__int32__with__name_html_a4d00a06859e8af12d2139df6b5596c26"><div class="ttname"><a href="struct__binary__info__ptr__int32__with__name.html#a4d00a06859e8af12d2139df6b5596c26">_binary_info_ptr_int32_with_name::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) label</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__int32__with__name_html_ac4d4109cee66b377733dea615af99a39"><div class="ttname"><a href="struct__binary__info__ptr__int32__with__name.html#ac4d4109cee66b377733dea615af99a39">_binary_info_ptr_int32_with_name::id</a></div><div class="ttdeci">int32_t id</div><div class="ttdef"><b>Definição</b> structure.h:102</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__string__with__name_html"><div class="ttname"><a href="struct__binary__info__ptr__string__with__name.html">_binary_info_ptr_string_with_name</a></div><div class="ttdef"><b>Definição</b> structure.h:107</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__string__with__name_html_a1aaa620eecfd7853f5e066a91a28a45c"><div class="ttname"><a href="struct__binary__info__ptr__string__with__name.html#a1aaa620eecfd7853f5e066a91a28a45c">_binary_info_ptr_string_with_name::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) value</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__string__with__name_html_a4331f6cacc6562750cf845195550195e"><div class="ttname"><a href="struct__binary__info__ptr__string__with__name.html#a4331f6cacc6562750cf845195550195e">_binary_info_ptr_string_with_name::id</a></div><div class="ttdeci">int32_t id</div><div class="ttdef"><b>Definição</b> structure.h:109</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__string__with__name_html_a6ccb9ca0df710a9cbec3ac5f2616ca11"><div class="ttname"><a href="struct__binary__info__ptr__string__with__name.html#a6ccb9ca0df710a9cbec3ac5f2616ca11">_binary_info_ptr_string_with_name::bi_ptr_of</a></div><div class="ttdeci">bi_ptr_of(const char) label</div></div>
+<div class="ttc" id="astruct__binary__info__ptr__string__with__name_html_ad8a288d6f0140ada2a1a7820ca15259f"><div class="ttname"><a href="struct__binary__info__ptr__string__with__name.html#ad8a288d6f0140ada2a1a7820ca15259f">_binary_info_ptr_string_with_name::len</a></div><div class="ttdeci">uint32_t len</div><div class="ttdef"><b>Definição</b> structure.h:112</div></div>
+<div class="ttc" id="astruct__binary__info__raw__data_html"><div class="ttname"><a href="struct__binary__info__raw__data.html">_binary_info_raw_data</a></div><div class="ttdef"><b>Definição</b> structure.h:72</div></div>
+<div class="ttc" id="astruct__binary__info__sized__data_html"><div class="ttname"><a href="struct__binary__info__sized__data.html">_binary_info_sized_data</a></div><div class="ttdef"><b>Definição</b> structure.h:77</div></div>
+<div class="ttc" id="astruct__binary__info__sized__data_html_ab6f0fd5f5b798bd0d1ee96985c722a36"><div class="ttname"><a href="struct__binary__info__sized__data.html#ab6f0fd5f5b798bd0d1ee96985c722a36">_binary_info_sized_data::length</a></div><div class="ttdeci">uint32_t length</div><div class="ttdef"><b>Definição</b> structure.h:79</div></div>
+<div class="ttc" id="astructure_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba426dcbc9b619c744a1c15399017e20b5"><div class="ttname"><a href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba426dcbc9b619c744a1c15399017e20b5">BINARY_INFO_BLOCK_DEV_FLAG_PT_GPT</a></div><div class="ttdeci">@ BINARY_INFO_BLOCK_DEV_FLAG_PT_GPT</div><div class="ttdef"><b>Definição</b> structure.h:174</div></div>
+<div class="ttc" id="astructure_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba6d96a52e6a1ada1a8a21269de0668e7b"><div class="ttname"><a href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6d96a52e6a1ada1a8a21269de0668e7b">BINARY_INFO_BLOCK_DEV_FLAG_PT_NONE</a></div><div class="ttdeci">@ BINARY_INFO_BLOCK_DEV_FLAG_PT_NONE</div><div class="ttdef"><b>Definição</b> structure.h:175</div></div>
+<div class="ttc" id="astructure_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba920cef14b10a4705d4cc41ab31b7238b"><div class="ttname"><a href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba920cef14b10a4705d4cc41ab31b7238b">BINARY_INFO_BLOCK_DEV_FLAG_WRITE</a></div><div class="ttdeci">@ BINARY_INFO_BLOCK_DEV_FLAG_WRITE</div><div class="ttdef"><b>Definição</b> structure.h:169</div></div>
+<div class="ttc" id="astructure_8h_html_a06fc87d81c62e9abb8790b6e5713c55bab3f3c09f8f8ee5934d2594623e03c7a4"><div class="ttname"><a href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab3f3c09f8f8ee5934d2594623e03c7a4">BINARY_INFO_BLOCK_DEV_FLAG_PT_MBR</a></div><div class="ttdeci">@ BINARY_INFO_BLOCK_DEV_FLAG_PT_MBR</div><div class="ttdef"><b>Definição</b> structure.h:173</div></div>
+<div class="ttc" id="astructure_8h_html_a06fc87d81c62e9abb8790b6e5713c55bac9024b128fc84f8bd1ef8070579b3655"><div class="ttname"><a href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac9024b128fc84f8bd1ef8070579b3655">BINARY_INFO_BLOCK_DEV_FLAG_PT_UNKNOWN</a></div><div class="ttdeci">@ BINARY_INFO_BLOCK_DEV_FLAG_PT_UNKNOWN</div><div class="ttdef"><b>Definição</b> structure.h:172</div></div>
+<div class="ttc" id="astructure_8h_html_a06fc87d81c62e9abb8790b6e5713c55bad3188882c880fe0369ac0182ae32fcce"><div class="ttname"><a href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad3188882c880fe0369ac0182ae32fcce">BINARY_INFO_BLOCK_DEV_FLAG_READ</a></div><div class="ttdeci">@ BINARY_INFO_BLOCK_DEV_FLAG_READ</div><div class="ttdef"><b>Definição</b> structure.h:168</div></div>
+<div class="ttc" id="astructure_8h_html_a06fc87d81c62e9abb8790b6e5713c55baf0ed7bf631ebed5aa93e84d1202f33b9"><div class="ttname"><a href="structure_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf0ed7bf631ebed5aa93e84d1202f33b9">BINARY_INFO_BLOCK_DEV_FLAG_REFORMAT</a></div><div class="ttdeci">@ BINARY_INFO_BLOCK_DEV_FLAG_REFORMAT</div><div class="ttdef"><b>Definição</b> structure.h:170</div></div>
+<div class="ttc" id="astructure_8h_html_a0fe7dde4488278fd739041b673efa525"><div class="ttname"><a href="structure_8h.html#a0fe7dde4488278fd739041b673efa525">__packed</a></div><div class="ttdeci">#define __packed</div><div class="ttdef"><b>Definição</b> structure.h:21</div></div>
+<div class="ttc" id="astructure_8h_html_a260aea64b5cc3f2f0baa6ab88c475408"><div class="ttname"><a href="structure_8h.html#a260aea64b5cc3f2f0baa6ab88c475408">binary_info_named_group_t</a></div><div class="ttdeci">struct __packed _binary_info_named_group binary_info_named_group_t</div></div>
+<div class="ttc" id="astructure_8h_html_a2f7ff5439b2aff066e00e6455f3659de"><div class="ttname"><a href="structure_8h.html#a2f7ff5439b2aff066e00e6455f3659de">binary_info_pins_with_func_t</a></div><div class="ttdeci">struct __packed _binary_info_pins_with_func binary_info_pins_with_func_t</div></div>
+<div class="ttc" id="astructure_8h_html_a4271206a181d5b2932c31544f8fe12b8"><div class="ttname"><a href="structure_8h.html#a4271206a181d5b2932c31544f8fe12b8">binary_info_list_zero_terminated_t</a></div><div class="ttdeci">struct __packed _binary_info_list_zero_terminated binary_info_list_zero_terminated_t</div></div>
+<div class="ttc" id="astructure_8h_html_a51f6a8b78c44c401b14ccd5ece9f50ca"><div class="ttname"><a href="structure_8h.html#a51f6a8b78c44c401b14ccd5ece9f50ca">binary_info_pins_with_name_t</a></div><div class="ttdeci">struct __packed _binary_info_pins_with_name binary_info_pins_with_name_t</div></div>
+<div class="ttc" id="astructure_8h_html_a8672b86fa22738b6949ef295c1274d6a"><div class="ttname"><a href="structure_8h.html#a8672b86fa22738b6949ef295c1274d6a">binary_info_ptr_int32_with_name_t</a></div><div class="ttdeci">struct __packed _binary_info_ptr_int32_with_name binary_info_ptr_int32_with_name_t</div></div>
+<div class="ttc" id="astructure_8h_html_a9ea1d78c5c6cc2a340345304d6e807d8"><div class="ttname"><a href="structure_8h.html#a9ea1d78c5c6cc2a340345304d6e807d8">binary_info_block_device_t</a></div><div class="ttdeci">struct __packed _binary_info_block_device binary_info_block_device_t</div></div>
+<div class="ttc" id="astructure_8h_html_aa03ed11465dc6c0d0a5bd3e1cad47b70"><div class="ttname"><a href="structure_8h.html#aa03ed11465dc6c0d0a5bd3e1cad47b70">binary_info_id_and_string_t</a></div><div class="ttdeci">struct __packed _binary_info_id_and_string binary_info_id_and_string_t</div></div>
+<div class="ttc" id="astructure_8h_html_aac9dc3253f00da8aebaeff34fff7f825"><div class="ttname"><a href="structure_8h.html#aac9dc3253f00da8aebaeff34fff7f825">binary_info_raw_data_t</a></div><div class="ttdeci">struct __packed _binary_info_raw_data binary_info_raw_data_t</div></div>
+<div class="ttc" id="astructure_8h_html_ab23fbc941ca06b354f4360b02fe1d4f6"><div class="ttname"><a href="structure_8h.html#ab23fbc941ca06b354f4360b02fe1d4f6">binary_info_core_t</a></div><div class="ttdeci">struct __packed _binary_info_core binary_info_core_t</div></div>
+<div class="ttc" id="astructure_8h_html_abe21900fc3039ca33e062aa7ca41dbb4"><div class="ttname"><a href="structure_8h.html#abe21900fc3039ca33e062aa7ca41dbb4">binary_info_sized_data_t</a></div><div class="ttdeci">struct __packed _binary_info_sized_data binary_info_sized_data_t</div></div>
+<div class="ttc" id="astructure_8h_html_ac13d2e954693571b34155daa01a79496"><div class="ttname"><a href="structure_8h.html#ac13d2e954693571b34155daa01a79496">binary_info_id_and_int_t</a></div><div class="ttdeci">struct __packed _binary_info_id_and_int binary_info_id_and_int_t</div></div>
+<div class="ttc" id="astructure_8h_html_acc4457b4dd4398a6aaa8c815c03d0534"><div class="ttname"><a href="structure_8h.html#acc4457b4dd4398a6aaa8c815c03d0534">binary_info_ptr_string_with_name_t</a></div><div class="ttdeci">struct __packed _binary_info_ptr_string_with_name binary_info_ptr_string_with_name_t</div></div>
+<div class="ttc" id="astructure_8h_html_acf6cb04b55810ea1a2b8853f2c966e66"><div class="ttname"><a href="structure_8h.html#acf6cb04b55810ea1a2b8853f2c966e66">binary_info_pins64_with_name_t</a></div><div class="ttdeci">struct __packed _binary_info_pins64_with_name binary_info_pins64_with_name_t</div></div>
+<div class="ttc" id="astructure_8h_html_ae1158a3ad54e3b352c8870eb6e74e8b6"><div class="ttname"><a href="structure_8h.html#ae1158a3ad54e3b352c8870eb6e74e8b6">binary_info_pins64_with_func_t</a></div><div class="ttdeci">struct __packed _binary_info_pins64_with_func binary_info_pins64_with_func_t</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_afd6173fcc80f68f3e45820d53e5d728.html">common</a></li><li class="navelem"><a class="el" href="dir_1b70a0f858df9307b75d211333703922.html">pico_binary_info</a></li><li class="navelem"><a class="el" href="dir_19de21a8c775ad868175e536b9747c55.html">include</a></li><li class="navelem"><a class="el" href="dir_a13d57ea7fd08d3a9658b7df37353399.html">pico</a></li><li class="navelem"><a class="el" href="dir_1edb4ef18c576d4c4e93e758d769de0d.html">binary_info</a></li><li class="navelem"><a class="el" href="structure_8h.html">structure.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro llvm_libc_interface.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('llvm__libc__interface_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro llvm_libc_interface.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="rp2__common_2pico__clib__interface_2include_2llvm__libc_2sys_2time_8h_source.html">sys/time.h</a>&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;llvm-libc-types/ssize_t.h&gt;</code><br />
+<code>#include &quot;pico/runtime_init.h&quot;</code><br />
+<code>#include &quot;pico/stdio.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_2pico__time_2include_2pico_2time_8h_source.html">pico/time.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para llvm_libc_interface.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="llvm__libc__interface_8c__incl.svg" width="1183" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____llvm__libc__stdio__cookie.html">__llvm_libc_stdio_cookie</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a93b9cf91f7623d6d8b100a3693d6d5e4" id="r_a93b9cf91f7623d6d8b100a3693d6d5e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a93b9cf91f7623d6d8b100a3693d6d5e4">__attribute__</a> ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">noreturn</a>))</td></tr>
+<tr class="separator:a93b9cf91f7623d6d8b100a3693d6d5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13ad5a208951817b6a7e0c7781b083e" id="r_ac13ad5a208951817b6a7e0c7781b083e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#ac13ad5a208951817b6a7e0c7781b083e">__cxa_finalize</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">dso</a>)</td></tr>
+<tr class="separator:ac13ad5a208951817b6a7e0c7781b083e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ffdde9709492a0fd5835269a70e1b2" id="r_a86ffdde9709492a0fd5835269a70e1b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a86ffdde9709492a0fd5835269a70e1b2">__llvm_libc_errno</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a86ffdde9709492a0fd5835269a70e1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793b8bf402710fddcd0d8d71bbbd8230" id="r_a793b8bf402710fddcd0d8d71bbbd8230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a793b8bf402710fddcd0d8d71bbbd8230">__llvm_libc_stdio_read</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">cookie</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *buf, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> size)</td></tr>
+<tr class="separator:a793b8bf402710fddcd0d8d71bbbd8230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115fb71b9625a77e797607242a5ee594" id="r_a115fb71b9625a77e797607242a5ee594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a115fb71b9625a77e797607242a5ee594">__llvm_libc_stdio_write</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">cookie</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *buf, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> size)</td></tr>
+<tr class="separator:a115fb71b9625a77e797607242a5ee594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a30ba47b3c7e9f7c8ab812dfd06f8d0" id="r_a0a30ba47b3c7e9f7c8ab812dfd06f8d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a0a30ba47b3c7e9f7c8ab812dfd06f8d0">__llvm_libc_timespec_get_utc</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timespec</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ts</a>)</td></tr>
+<tr class="separator:a0a30ba47b3c7e9f7c8ab812dfd06f8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31dcaff181eaa6a8cfb484e35f23fb5f" id="r_a31dcaff181eaa6a8cfb484e35f23fb5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a31dcaff181eaa6a8cfb484e35f23fb5f">_exit</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>)</td></tr>
+<tr class="separator:a31dcaff181eaa6a8cfb484e35f23fb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f90be85ab4910dd214d969267214bae" id="r_a4f90be85ab4910dd214d969267214bae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a4f90be85ab4910dd214d969267214bae">gettimeofday</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeval</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__restrict</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tv</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structtimezone.html">timezone</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__restrict</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tz</a>)</td></tr>
+<tr class="separator:a4f90be85ab4910dd214d969267214bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257793833e5dd091c17aee52afae5e1f" id="r_a257793833e5dd091c17aee52afae5e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a257793833e5dd091c17aee52afae5e1f">settimeofday</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeval</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tv</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structtimezone.html">timezone</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tz</a>)</td></tr>
+<tr class="separator:a257793833e5dd091c17aee52afae5e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:acf1b43ff99380fd81b14864732f5a190" id="r_acf1b43ff99380fd81b14864732f5a190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="struct____llvm__libc__stdio__cookie.html">__llvm_libc_stdio_cookie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#acf1b43ff99380fd81b14864732f5a190">__llvm_libc_stderr_cookie</a></td></tr>
+<tr class="separator:acf1b43ff99380fd81b14864732f5a190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa340b93e991fde18f2189af0381a7fd9" id="r_aa340b93e991fde18f2189af0381a7fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="struct____llvm__libc__stdio__cookie.html">__llvm_libc_stdio_cookie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#aa340b93e991fde18f2189af0381a7fd9">__llvm_libc_stdin_cookie</a></td></tr>
+<tr class="separator:aa340b93e991fde18f2189af0381a7fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81882ead6f09cc41042a0d487286fc3b" id="r_a81882ead6f09cc41042a0d487286fc3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="struct____llvm__libc__stdio__cookie.html">__llvm_libc_stdio_cookie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#a81882ead6f09cc41042a0d487286fc3b">__llvm_libc_stdout_cookie</a></td></tr>
+<tr class="separator:a81882ead6f09cc41042a0d487286fc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65a8842cc674e3ddf69355898c0ecbf" id="r_ad65a8842cc674e3ddf69355898c0ecbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llvm__libc__interface_8c.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a></td></tr>
+<tr class="separator:ad65a8842cc674e3ddf69355898c0ecbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a93b9cf91f7623d6d8b100a3693d6d5e4" name="a93b9cf91f7623d6d8b100a3693d6d5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b9cf91f7623d6d8b100a3693d6d5e4">&#9670;&#160;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">noreturn</a>)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a16704f06612fbc7c11730ca79ddb4444">__breakpoint()</a> e <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ac13ad5a208951817b6a7e0c7781b083e" name="ac13ad5a208951817b6a7e0c7781b083e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13ad5a208951817b6a7e0c7781b083e">&#9670;&#160;</a></span>__cxa_finalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __cxa_finalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>dso</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86ffdde9709492a0fd5835269a70e1b2" name="a86ffdde9709492a0fd5835269a70e1b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ffdde9709492a0fd5835269a70e1b2">&#9670;&#160;</a></span>__llvm_libc_errno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> * __llvm_libc_errno </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="llvm__libc__interface_8c.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a>.</p>
+
+</div>
+</div>
+<a id="a793b8bf402710fddcd0d8d71bbbd8230" name="a793b8bf402710fddcd0d8d71bbbd8230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793b8bf402710fddcd0d8d71bbbd8230">&#9670;&#160;</a></span>__llvm_libc_stdio_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssize_t</a> __llvm_libc_stdio_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>cookie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="host_2pico__stdio_2include_2pico_2stdio_8h.html#a9b10b3bc1a4750fcb0e691566bc868e8">getchar_timeout_us()</a>.</p>
+
+</div>
+</div>
+<a id="a115fb71b9625a77e797607242a5ee594" name="a115fb71b9625a77e797607242a5ee594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115fb71b9625a77e797607242a5ee594">&#9670;&#160;</a></span>__llvm_libc_stdio_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssize_t</a> __llvm_libc_stdio_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>cookie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="host_2pico__stdio_2include_2pico_2stdio_8h.html#aec434f23975c669885d25014e923d49a">putchar_raw</a>.</p>
+
+</div>
+</div>
+<a id="a0a30ba47b3c7e9f7c8ab812dfd06f8d0" name="a0a30ba47b3c7e9f7c8ab812dfd06f8d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a30ba47b3c7e9f7c8ab812dfd06f8d0">&#9670;&#160;</a></span>__llvm_libc_timespec_get_utc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> __llvm_libc_timespec_get_utc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timespec</a> *&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="a31dcaff181eaa6a8cfb484e35f23fb5f" name="a31dcaff181eaa6a8cfb484e35f23fb5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31dcaff181eaa6a8cfb484e35f23fb5f">&#9670;&#160;</a></span>_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> _exit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="picolibc__interface_8c.html#a8fa1c9865a85d1e13a9bcd10a7b78d7b">__assert_func()</a>, <a class="el" href="newlib__interface_8c.html#a55e99c539cf7723ec15e856b7e0a8cee">exit()</a> e <a class="el" href="newlib__interface_8c.html#a4bc965a94bcc1280f1b220d163159289">GCC_Pragma()</a>.</p>
+
+</div>
+</div>
+<a id="a4f90be85ab4910dd214d969267214bae" name="a4f90be85ab4910dd214d969267214bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f90be85ab4910dd214d969267214bae">&#9670;&#160;</a></span>gettimeofday()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> gettimeofday </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeval</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__restrict</a>&#160;</td>
+          <td class="paramname"><em>tv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structtimezone.html">timezone</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__restrict</a>&#160;</td>
+          <td class="paramname"><em>tz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="a257793833e5dd091c17aee52afae5e1f" name="a257793833e5dd091c17aee52afae5e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257793833e5dd091c17aee52afae5e1f">&#9670;&#160;</a></span>settimeofday()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> settimeofday </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeval</a> *&#160;</td>
+          <td class="paramname"><em>tv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structtimezone.html">timezone</a> *&#160;</td>
+          <td class="paramname"><em>tz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="acf1b43ff99380fd81b14864732f5a190" name="acf1b43ff99380fd81b14864732f5a190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1b43ff99380fd81b14864732f5a190">&#9670;&#160;</a></span>__llvm_libc_stderr_cookie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="struct____llvm__libc__stdio__cookie.html">__llvm_libc_stdio_cookie</a> __llvm_libc_stderr_cookie</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa340b93e991fde18f2189af0381a7fd9" name="aa340b93e991fde18f2189af0381a7fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa340b93e991fde18f2189af0381a7fd9">&#9670;&#160;</a></span>__llvm_libc_stdin_cookie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="struct____llvm__libc__stdio__cookie.html">__llvm_libc_stdio_cookie</a> __llvm_libc_stdin_cookie</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81882ead6f09cc41042a0d487286fc3b" name="a81882ead6f09cc41042a0d487286fc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81882ead6f09cc41042a0d487286fc3b">&#9670;&#160;</a></span>__llvm_libc_stdout_cookie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="struct____llvm__libc__stdio__cookie.html">__llvm_libc_stdio_cookie</a> __llvm_libc_stdout_cookie</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad65a8842cc674e3ddf69355898c0ecbf" name="ad65a8842cc674e3ddf69355898c0ecbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad65a8842cc674e3ddf69355898c0ecbf">&#9670;&#160;</a></span>errno</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> errno</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="llvm__libc__interface_8c.html#a86ffdde9709492a0fd5835269a70e1b2">__llvm_libc_errno()</a>, <a class="el" href="lexer_8cpp.html#ade9d35030726b67cdee1d5332df06d87">make_BINARY()</a>, <a class="el" href="lexer_8cpp.html#a983a5db114a6f7160b0ad2a52d0f2e1d">make_FLOAT()</a>, <a class="el" href="lexer_8cpp.html#a6afcde00391ffe28019cff08ccdad713">make_HEX()</a>, <a class="el" href="lexer_8cpp.html#ab8b1347d341d2985732ecedb34593e55">make_INT()</a> e <a class="el" href="structpio__assembler.html#a5387345f235c690e4468fe1f7187a127">pio_assembler::scan_begin()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_d60889a931509995b806074e88c7bfd4.html">pico_clib_interface</a></li><li class="navelem"><a class="el" href="llvm__libc__interface_8c.html">llvm_libc_interface.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

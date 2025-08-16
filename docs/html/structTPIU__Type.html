@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura TPIU_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structTPIU__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structTPIU__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura TPIU_Type<div class="ingroups"><a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &#124; <a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &raquo; <a class="el" href="group__CMSIS__SCnSCB.html">System Controls not in SCB (SCnSCB)</a> &raquo; <a class="el" href="group__CMSIS__SysTick.html">System Tick Timer (SysTick)</a> &raquo; <a class="el" href="group__CMSIS__ITM.html">Instrumentation Trace Macrocell (ITM)</a> &raquo; <a class="el" href="group__CMSIS__DWT.html">Data Watchpoint and Trace (DWT)</a> &raquo; <a class="el" href="group__CMSIS__TPIU.html">Trace Port Interface Unit (TPIU)</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Structure type to access the Trace Port Interface Unit Register (TPIU).  
+ <a href="structTPIU__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="core__cm33_8h_source.html">core_cm33.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para TPIU_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structTPIU__Type__coll__graph.svg" width="116" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ga7d6b32aac67b18ded927392a83245ace" id="r_ga7d6b32aac67b18ded927392a83245ace"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga7d6b32aac67b18ded927392a83245ace">ACPR</a></td></tr>
+<tr class="memdesc:ga7d6b32aac67b18ded927392a83245ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x010 (R/W) Asynchronous Clock Prescaler Register.  <br /></td></tr>
+<tr class="separator:ga7d6b32aac67b18ded927392a83245ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65a5db46df2d49e4b7d0cb2a91f362fc" id="r_ga65a5db46df2d49e4b7d0cb2a91f362fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga65a5db46df2d49e4b7d0cb2a91f362fc">CLAIMCLR</a></td></tr>
+<tr class="memdesc:ga65a5db46df2d49e4b7d0cb2a91f362fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xFA4 (R/W) Claim tag clear.  <br /></td></tr>
+<tr class="separator:ga65a5db46df2d49e4b7d0cb2a91f362fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc42ffa5fe661df6339dc3e9a61f57d7" id="r_gacc42ffa5fe661df6339dc3e9a61f57d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gacc42ffa5fe661df6339dc3e9a61f57d7">CLAIMSET</a></td></tr>
+<tr class="memdesc:gacc42ffa5fe661df6339dc3e9a61f57d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xFA0 (R/W) Claim tag set.  <br /></td></tr>
+<tr class="separator:gacc42ffa5fe661df6339dc3e9a61f57d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6362b723d89dd97aa71d72e3ce94465b" id="r_ga6362b723d89dd97aa71d72e3ce94465b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga6362b723d89dd97aa71d72e3ce94465b">CSPSR</a></td></tr>
+<tr class="memdesc:ga6362b723d89dd97aa71d72e3ce94465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x004 (R/W) Current Parallel Port Size Register.  <br /></td></tr>
+<tr class="separator:ga6362b723d89dd97aa71d72e3ce94465b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc5d82ae575c1437b46d7b3928357dc3" id="r_gafc5d82ae575c1437b46d7b3928357dc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gafc5d82ae575c1437b46d7b3928357dc3">DEVID</a></td></tr>
+<tr class="memdesc:gafc5d82ae575c1437b46d7b3928357dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xFC8 (R/ ) Device Configuration Register.  <br /></td></tr>
+<tr class="separator:gafc5d82ae575c1437b46d7b3928357dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06cd44ff1439b93aff76a8d155d7b465" id="r_ga06cd44ff1439b93aff76a8d155d7b465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga06cd44ff1439b93aff76a8d155d7b465">DEVTYPE</a></td></tr>
+<tr class="memdesc:ga06cd44ff1439b93aff76a8d155d7b465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xFCC (R/ ) Device Type Identifier Register.  <br /></td></tr>
+<tr class="separator:ga06cd44ff1439b93aff76a8d155d7b465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa151f4dedec63032b8d66830529bdbd4" id="r_gaa151f4dedec63032b8d66830529bdbd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gaa151f4dedec63032b8d66830529bdbd4">FFCR</a></td></tr>
+<tr class="memdesc:gaa151f4dedec63032b8d66830529bdbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x304 (R/W) Formatter and Flush Control Register.  <br /></td></tr>
+<tr class="separator:gaa151f4dedec63032b8d66830529bdbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72599d9a15ce1965a2df71d10817f5f8" id="r_ga72599d9a15ce1965a2df71d10817f5f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga72599d9a15ce1965a2df71d10817f5f8">FFSR</a></td></tr>
+<tr class="memdesc:ga72599d9a15ce1965a2df71d10817f5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x300 (R/ ) Formatter and Flush Status Register.  <br /></td></tr>
+<tr class="separator:ga72599d9a15ce1965a2df71d10817f5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5ad72117900f908adc6191a50b473c4" id="r_gaa5ad72117900f908adc6191a50b473c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gaa5ad72117900f908adc6191a50b473c4">ITATBCTR0</a></td></tr>
+<tr class="memdesc:gaa5ad72117900f908adc6191a50b473c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xEF8 (R/ ) Integration Test ATB Control Register 0.  <br /></td></tr>
+<tr class="separator:gaa5ad72117900f908adc6191a50b473c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d495c1cb0f507038115b139395f35fe" id="r_ga1d495c1cb0f507038115b139395f35fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga1d495c1cb0f507038115b139395f35fe">ITATBCTR2</a></td></tr>
+<tr class="memdesc:ga1d495c1cb0f507038115b139395f35fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xEF0 (R/W) Integration Test ATB Control Register 2.  <br /></td></tr>
+<tr class="separator:ga1d495c1cb0f507038115b139395f35fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b5bae5fdb65f5a9a40277872b140199" id="r_ga2b5bae5fdb65f5a9a40277872b140199"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga2b5bae5fdb65f5a9a40277872b140199">ITCTRL</a></td></tr>
+<tr class="memdesc:ga2b5bae5fdb65f5a9a40277872b140199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xF00 (R/W) Integration Mode Control.  <br /></td></tr>
+<tr class="separator:ga2b5bae5fdb65f5a9a40277872b140199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdb69ed78bf360ce7107d359a1e35e8b" id="r_gacdb69ed78bf360ce7107d359a1e35e8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gacdb69ed78bf360ce7107d359a1e35e8b">ITFTTD0</a></td></tr>
+<tr class="memdesc:gacdb69ed78bf360ce7107d359a1e35e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xEEC (R/ ) Integration Test FIFO Test Data 0 Register.  <br /></td></tr>
+<tr class="separator:gacdb69ed78bf360ce7107d359a1e35e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad465e0badea7361203f064b371739361" id="r_gad465e0badea7361203f064b371739361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gad465e0badea7361203f064b371739361">ITFTTD1</a></td></tr>
+<tr class="memdesc:gad465e0badea7361203f064b371739361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xEFC (R/ ) Integration Test FIFO Test Data 1 Register.  <br /></td></tr>
+<tr class="separator:gad465e0badea7361203f064b371739361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cafe63493a980fb3fefef896aa0e848" id="r_ga5cafe63493a980fb3fefef896aa0e848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga5cafe63493a980fb3fefef896aa0e848">PSCR</a></td></tr>
+<tr class="memdesc:ga5cafe63493a980fb3fefef896aa0e848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x308 (R/W) Periodic Synchronization Control Register.  <br /></td></tr>
+<tr class="separator:ga5cafe63493a980fb3fefef896aa0e848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70abb89e600402930c23eb197e6f4518" id="r_ga70abb89e600402930c23eb197e6f4518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga70abb89e600402930c23eb197e6f4518">RESERVED0</a> [2<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga70abb89e600402930c23eb197e6f4518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42643a53c204f16069bfed67492ed29b" id="r_ga42643a53c204f16069bfed67492ed29b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga42643a53c204f16069bfed67492ed29b">RESERVED1</a> [55<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga42643a53c204f16069bfed67492ed29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99f2ef462b2d3e2ce59e43912e166d93" id="r_ga99f2ef462b2d3e2ce59e43912e166d93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga99f2ef462b2d3e2ce59e43912e166d93">RESERVED2</a> [131<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga99f2ef462b2d3e2ce59e43912e166d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa05105de13f1bd5f1ff66a84634d78b9" id="r_gaa05105de13f1bd5f1ff66a84634d78b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gaa05105de13f1bd5f1ff66a84634d78b9">RESERVED3</a> [759<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:gaa05105de13f1bd5f1ff66a84634d78b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa53baac8b1f1f14a39ef815e1d9204ba" id="r_gaa53baac8b1f1f14a39ef815e1d9204ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gaa53baac8b1f1f14a39ef815e1d9204ba">RESERVED4</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:gaa53baac8b1f1f14a39ef815e1d9204ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4eb69fd981546b176a6eb9d5ec90ae2" id="r_gaa4eb69fd981546b176a6eb9d5ec90ae2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gaa4eb69fd981546b176a6eb9d5ec90ae2">RESERVED5</a> [39<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:gaa4eb69fd981546b176a6eb9d5ec90ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e47dd6e693bf72d6d901ea67d881540" id="r_ga1e47dd6e693bf72d6d901ea67d881540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga1e47dd6e693bf72d6d901ea67d881540">RESERVED7</a> [8<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga1e47dd6e693bf72d6d901ea67d881540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a1690d4e23b47430627cae1fdc73e5a" id="r_ga7a1690d4e23b47430627cae1fdc73e5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga7a1690d4e23b47430627cae1fdc73e5a">SPPR</a></td></tr>
+<tr class="memdesc:ga7a1690d4e23b47430627cae1fdc73e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x0F0 (R/W) Selected Pin Protocol Register.  <br /></td></tr>
+<tr class="separator:ga7a1690d4e23b47430627cae1fdc73e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75e749410e0a7213aed9249ec44f31bb" id="r_ga75e749410e0a7213aed9249ec44f31bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga75e749410e0a7213aed9249ec44f31bb">SSPSR</a></td></tr>
+<tr class="memdesc:ga75e749410e0a7213aed9249ec44f31bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x000 (R/ ) Supported Parallel Port Size Register.  <br /></td></tr>
+<tr class="separator:ga75e749410e0a7213aed9249ec44f31bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b6dc203a24b2d2ce46935cec1b073ec" id="r_ga2b6dc203a24b2d2ce46935cec1b073ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga2b6dc203a24b2d2ce46935cec1b073ec">TRIGGER</a></td></tr>
+<tr class="memdesc:ga2b6dc203a24b2d2ce46935cec1b073ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xEE8 (R/ ) TRIGGER Register.  <br /></td></tr>
+<tr class="separator:ga2b6dc203a24b2d2ce46935cec1b073ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Structure type to access the Trace Port Interface Unit Register (TPIU). </p>
+</div><hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="core__cm33_8h_source.html">core_cm33.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structTPIU__Type.html">TPIU_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de multicore.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('host_2pico__multicore_2include_2pico_2multicore_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">host/pico_multicore/include/pico/multicore.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="host_2pico__multicore_2include_2pico_2multicore_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _PICO_MULTICORE_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _PICO_MULTICORE_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="common_2pico__base__headers_2include_2pico_2types_8h.html">pico/types.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ad7a189a5f44f0124d74aa5b206f9a262">multicore_reset_core1</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a46ea5e2efc181aba1d4d1de06a375c59">multicore_launch_core1</a>(<span class="keywordtype">void</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">entry</a>)(<span class="keywordtype">void</span>));</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac1926bb2da43016e5d14eb52c8c123f4">multicore_launch_core1_with_stack</a>(<span class="keywordtype">void</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">entry</a>)(<span class="keywordtype">void</span>), <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">stack_bottom</a>, <span class="keywordtype">size_t</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">stack_size_bytes</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac3a24e275219229de49d1fb32e3c4ef0">multicore_launch_core1_raw</a>(<span class="keywordtype">void</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">entry</a>)(<span class="keywordtype">void</span>), <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sp</a>, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">vector_table</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a62bd62c2c49e426e9ca005a645e48ed8">   21</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a62bd62c2c49e426e9ca005a645e48ed8">multicore_fifo_rvalid</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#af939432b7ca11776d6706650d39f8f6d">   22</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#af939432b7ca11776d6706650d39f8f6d">multicore_fifo_wready</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a134933a693c53c4f94c9d3cd3cabfc79">multicore_fifo_push_blocking</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> data);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a0c32cfcd182d5f1d3a25b6fb503352b7">multicore_fifo_push_timeout_us</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> data, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeout_us</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#aa08fc8ab70980168329674077601f9c3">multicore_fifo_pop_blocking</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a27824f253c72ae50ae97e6f516220c60">multicore_fifo_pop_timeout_us</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeout_us</a>, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="code hl_enumvalue" href="pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275">out</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a130946322109238b568cf6a64a1c9c4b">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a130946322109238b568cf6a64a1c9c4b">multicore_fifo_drain</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ab2abd12b0911eae76499efe6cfbb3f44">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ab2abd12b0911eae76499efe6cfbb3f44">multicore_fifo_clear_irq</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac49fe14b3fc44ebed869542f192f8bb5">   29</a></span><a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac49fe14b3fc44ebed869542f192f8bb5">multicore_fifo_get_status</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// call this from the lockout victim thread</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a4e969086bda6851bc8ce8199113fd595">multicore_lockout_victim_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// start locking out the other core (it will be</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#aaf40bf0b8b3a704f3178e38977d292be">multicore_lockout_start_timeout_us</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeout_us</a>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a9a3f4df6b0e4140b0f40899a02c238d8">multicore_lockout_start_blocking</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ad61a822f1b135db1be62c19754694fe2">multicore_lockout_end_timeout_us</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeout_us</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ab1b7b6dc6f81ca9524467f5024681167">multicore_lockout_end_blocking</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="acommon_2pico__base__headers_2include_2pico_2types_8h_html"><div class="ttname"><a href="common_2pico__base__headers_2include_2pico_2types_8h.html">types.h</a></div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a0c32cfcd182d5f1d3a25b6fb503352b7"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a0c32cfcd182d5f1d3a25b6fb503352b7">multicore_fifo_push_timeout_us</a></div><div class="ttdeci">bool multicore_fifo_push_timeout_us(uint32_t data, uint64_t timeout_us)</div><div class="ttdef"><b>Definição</b> multicore.c:37</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a130946322109238b568cf6a64a1c9c4b"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a130946322109238b568cf6a64a1c9c4b">multicore_fifo_drain</a></div><div class="ttdeci">void multicore_fifo_drain(void)</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a134933a693c53c4f94c9d3cd3cabfc79"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a134933a693c53c4f94c9d3cd3cabfc79">multicore_fifo_push_blocking</a></div><div class="ttdeci">void multicore_fifo_push_blocking(uint32_t data)</div><div class="ttdef"><b>Definição</b> multicore.c:33</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a27824f253c72ae50ae97e6f516220c60"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a27824f253c72ae50ae97e6f516220c60">multicore_fifo_pop_timeout_us</a></div><div class="ttdeci">bool multicore_fifo_pop_timeout_us(uint64_t timeout_us, uint32_t *out)</div><div class="ttdef"><b>Definição</b> multicore.c:56</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a46ea5e2efc181aba1d4d1de06a375c59"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a46ea5e2efc181aba1d4d1de06a375c59">multicore_launch_core1</a></div><div class="ttdeci">void multicore_launch_core1(void(*entry)(void))</div><div class="ttdef"><b>Definição</b> multicore.c:164</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a4e969086bda6851bc8ce8199113fd595"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a4e969086bda6851bc8ce8199113fd595">multicore_lockout_victim_init</a></div><div class="ttdeci">void multicore_lockout_victim_init(void)</div><div class="ttdef"><b>Definição</b> multicore.c:244</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a62bd62c2c49e426e9ca005a645e48ed8"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a62bd62c2c49e426e9ca005a645e48ed8">multicore_fifo_rvalid</a></div><div class="ttdeci">bool multicore_fifo_rvalid(void)</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_a9a3f4df6b0e4140b0f40899a02c238d8"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a9a3f4df6b0e4140b0f40899a02c238d8">multicore_lockout_start_blocking</a></div><div class="ttdeci">void multicore_lockout_start_blocking(void)</div><div class="ttdef"><b>Definição</b> multicore.c:324</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_aa08fc8ab70980168329674077601f9c3"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#aa08fc8ab70980168329674077601f9c3">multicore_fifo_pop_blocking</a></div><div class="ttdeci">uint32_t multicore_fifo_pop_blocking()</div><div class="ttdef"><b>Definição</b> multicore.c:52</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_aaf40bf0b8b3a704f3178e38977d292be"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#aaf40bf0b8b3a704f3178e38977d292be">multicore_lockout_start_timeout_us</a></div><div class="ttdeci">bool multicore_lockout_start_timeout_us(uint64_t timeout_us)</div><div class="ttdef"><b>Definição</b> multicore.c:320</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_ab1b7b6dc6f81ca9524467f5024681167"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ab1b7b6dc6f81ca9524467f5024681167">multicore_lockout_end_blocking</a></div><div class="ttdeci">void multicore_lockout_end_blocking(void)</div><div class="ttdef"><b>Definição</b> multicore.c:343</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_ab2abd12b0911eae76499efe6cfbb3f44"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ab2abd12b0911eae76499efe6cfbb3f44">multicore_fifo_clear_irq</a></div><div class="ttdeci">void multicore_fifo_clear_irq(void)</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_ac1926bb2da43016e5d14eb52c8c123f4"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac1926bb2da43016e5d14eb52c8c123f4">multicore_launch_core1_with_stack</a></div><div class="ttdeci">void multicore_launch_core1_with_stack(void(*entry)(void), uint32_t *stack_bottom, size_t stack_size_bytes)</div><div class="ttdef"><b>Definição</b> multicore.c:141</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_ac3a24e275219229de49d1fb32e3c4ef0"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac3a24e275219229de49d1fb32e3c4ef0">multicore_launch_core1_raw</a></div><div class="ttdeci">void multicore_launch_core1_raw(void(*entry)(void), uint32_t *sp, uint32_t vector_table)</div><div class="ttdef"><b>Definição</b> multicore.c:176</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_ac49fe14b3fc44ebed869542f192f8bb5"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac49fe14b3fc44ebed869542f192f8bb5">multicore_fifo_get_status</a></div><div class="ttdeci">uint32_t multicore_fifo_get_status(void)</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_ad61a822f1b135db1be62c19754694fe2"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ad61a822f1b135db1be62c19754694fe2">multicore_lockout_end_timeout_us</a></div><div class="ttdeci">bool multicore_lockout_end_timeout_us(uint64_t timeout_us)</div><div class="ttdef"><b>Definição</b> multicore.c:339</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_ad7a189a5f44f0124d74aa5b206f9a262"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ad7a189a5f44f0124d74aa5b206f9a262">multicore_reset_core1</a></div><div class="ttdeci">void multicore_reset_core1(void)</div><div class="ttdef"><b>Definição</b> multicore.c:101</div></div>
+<div class="ttc" id="ahost_2pico__multicore_2include_2pico_2multicore_8h_html_af939432b7ca11776d6706650d39f8f6d"><div class="ttname"><a href="host_2pico__multicore_2include_2pico_2multicore_8h.html#af939432b7ca11776d6706650d39f8f6d">multicore_fifo_wready</a></div><div class="ttdeci">bool multicore_fifo_wready(void)</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="apio__types_8h_html_ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275"><div class="ttname"><a href="pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275">inst_type::out</a></div><div class="ttdeci">@ out</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_807b6346a9c18472135e047d65c02b1e.html">host</a></li><li class="navelem"><a class="el" href="dir_b54c9fc81d3a9da4f4ef3eba4dc0ab57.html">pico_multicore</a></li><li class="navelem"><a class="el" href="dir_27dd16e16a061413cfb5b2d64281935c.html">include</a></li><li class="navelem"><a class="el" href="dir_913cde0ebcffceeb988043247725191f.html">pico</a></li><li class="navelem"><a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html">multicore.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

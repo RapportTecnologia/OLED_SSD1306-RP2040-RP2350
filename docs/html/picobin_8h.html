@@ -1,0 +1,1543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro picobin.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('picobin_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro picobin.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico/platform.h&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para picobin.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="picobin_8h__incl.svg" width="240" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="picobin_8h__dep__incl.svg" width="328" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="picobin_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpicobin__load__map.html">picobin_load_map</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpicobin__load__map__entry.html">picobin_load_map_entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:abcd3ab723bb4e124385fb7eb3fd43a12" id="r_abcd3ab723bb4e124385fb7eb3fd43a12"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>,  <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> &lt;&lt; <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_LSB</a>)</td></tr>
+<tr class="separator:abcd3ab723bb4e124385fb7eb3fd43a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf267df83f8cc4d91e63588f3626ca5" id="r_a7cf267df83f8cc4d91e63588f3626ca5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a7cf267df83f8cc4d91e63588f3626ca5">PICOBIN_BLOCK_ITEM_1BS_ENTRY_POINT</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x44)</td></tr>
+<tr class="separator:a7cf267df83f8cc4d91e63588f3626ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8aa5dd104a0634bf0f772f4a8073eb0" id="r_ae8aa5dd104a0634bf0f772f4a8073eb0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ae8aa5dd104a0634bf0f772f4a8073eb0">PICOBIN_BLOCK_ITEM_1BS_HASH_DEF</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x47)</td></tr>
+<tr class="separator:ae8aa5dd104a0634bf0f772f4a8073eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35830b99760f3c744650facb042dd8d" id="r_aa35830b99760f3c744650facb042dd8d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#aa35830b99760f3c744650facb042dd8d">PICOBIN_BLOCK_ITEM_1BS_IMAGE_TYPE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x42)</td></tr>
+<tr class="separator:aa35830b99760f3c744650facb042dd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e8262db151a9dccd5904ccafb23103" id="r_a70e8262db151a9dccd5904ccafb23103"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a70e8262db151a9dccd5904ccafb23103">PICOBIN_BLOCK_ITEM_1BS_NEXT_BLOCK_OFFSET</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x41)</td></tr>
+<tr class="separator:a70e8262db151a9dccd5904ccafb23103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cd8b1f2cff509cce30dcc693542c7e" id="r_a23cd8b1f2cff509cce30dcc693542c7e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a23cd8b1f2cff509cce30dcc693542c7e">PICOBIN_BLOCK_ITEM_1BS_ROLLING_WINDOW_DELTA</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x05)</td></tr>
+<tr class="separator:a23cd8b1f2cff509cce30dcc693542c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a93e5ac4e764d28e77b2ebf05ab315" id="r_ad3a93e5ac4e764d28e77b2ebf05ab315"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ad3a93e5ac4e764d28e77b2ebf05ab315">PICOBIN_BLOCK_ITEM_1BS_VECTOR_TABLE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x03)</td></tr>
+<tr class="separator:ad3a93e5ac4e764d28e77b2ebf05ab315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9183c66346af3bbb38e204a5fcfc72e" id="r_ab9183c66346af3bbb38e204a5fcfc72e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ab9183c66346af3bbb38e204a5fcfc72e">PICOBIN_BLOCK_ITEM_1BS_VERSION</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x48)</td></tr>
+<tr class="separator:ab9183c66346af3bbb38e204a5fcfc72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3111fa3ac4585d9aa93e95cb2e7974e" id="r_ad3111fa3ac4585d9aa93e95cb2e7974e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ad3111fa3ac4585d9aa93e95cb2e7974e">PICOBIN_BLOCK_ITEM_2BS_IGNORED</a>&#160;&#160;&#160;(<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x80) | <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x7e))</td></tr>
+<tr class="separator:ad3111fa3ac4585d9aa93e95cb2e7974e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f60da09180c8025d621f20495cc84b" id="r_a48f60da09180c8025d621f20495cc84b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a48f60da09180c8025d621f20495cc84b">PICOBIN_BLOCK_ITEM_2BS_LAST</a>&#160;&#160;&#160;(<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x80) | <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x7f))</td></tr>
+<tr class="separator:a48f60da09180c8025d621f20495cc84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722bda87c729ec0437e9382a05574176" id="r_a722bda87c729ec0437e9382a05574176"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a722bda87c729ec0437e9382a05574176">PICOBIN_BLOCK_ITEM_HASH_VALUE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x4b)</td></tr>
+<tr class="separator:a722bda87c729ec0437e9382a05574176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd17ff044cf37a1253ab8fe4fec848d8" id="r_afd17ff044cf37a1253ab8fe4fec848d8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#afd17ff044cf37a1253ab8fe4fec848d8">PICOBIN_BLOCK_ITEM_LOAD_MAP</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x06)</td></tr>
+<tr class="separator:afd17ff044cf37a1253ab8fe4fec848d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab160d4d50db452496eb4b0b36f1adc06" id="r_ab160d4d50db452496eb4b0b36f1adc06"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ab160d4d50db452496eb4b0b36f1adc06">PICOBIN_BLOCK_ITEM_PARTITION_TABLE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0a)</td></tr>
+<tr class="separator:ab160d4d50db452496eb4b0b36f1adc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb09aaeff0ba1fefa576edbec13650e" id="r_a4cb09aaeff0ba1fefa576edbec13650e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a4cb09aaeff0ba1fefa576edbec13650e">PICOBIN_BLOCK_ITEM_SALT</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0c)</td></tr>
+<tr class="separator:a4cb09aaeff0ba1fefa576edbec13650e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89c8aba80d9abef0c13817473c578a9" id="r_af89c8aba80d9abef0c13817473c578a9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af89c8aba80d9abef0c13817473c578a9">PICOBIN_BLOCK_ITEM_SIGNATURE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x09)</td></tr>
+<tr class="separator:af89c8aba80d9abef0c13817473c578a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a10acfb8587b44ce4d89da1949f500" id="r_aa1a10acfb8587b44ce4d89da1949f500"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#aa1a10acfb8587b44ce4d89da1949f500">PICOBIN_BLOCK_MARKER_END</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xab123579)</td></tr>
+<tr class="separator:aa1a10acfb8587b44ce4d89da1949f500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe3d373f32007d1ed6950a6c3b4fa94" id="r_a3fe3d373f32007d1ed6950a6c3b4fa94"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a3fe3d373f32007d1ed6950a6c3b4fa94">PICOBIN_BLOCK_MARKER_START</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xffffded3)</td></tr>
+<tr class="separator:a3fe3d373f32007d1ed6950a6c3b4fa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381613075fe7bbd0f8b364f139566e35" id="r_a381613075fe7bbd0f8b364f139566e35"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a381613075fe7bbd0f8b364f139566e35">PICOBIN_HASH_SHA256</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x01)</td></tr>
+<tr class="separator:a381613075fe7bbd0f8b364f139566e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad414b1fb0b2f0294cdb1cc46e037731b" id="r_ad414b1fb0b2f0294cdb1cc46e037731b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ad414b1fb0b2f0294cdb1cc46e037731b">PICOBIN_IMAGE_TYPE_EXE_CHIP_AS_BITS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_EXE_CHIP</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:ad414b1fb0b2f0294cdb1cc46e037731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1393f4da28bd735d2fa5ade65fa77cb" id="r_af1393f4da28bd735d2fa5ade65fa77cb"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af1393f4da28bd735d2fa5ade65fa77cb">PICOBIN_IMAGE_TYPE_EXE_CHIP_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x7000)</td></tr>
+<tr class="separator:af1393f4da28bd735d2fa5ade65fa77cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2043bf993c564faca1959417f8ea8a15" id="r_a2043bf993c564faca1959417f8ea8a15"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a2043bf993c564faca1959417f8ea8a15">PICOBIN_IMAGE_TYPE_EXE_CHIP_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(12)</td></tr>
+<tr class="separator:a2043bf993c564faca1959417f8ea8a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bc63d844df82156206736bfd04eb96" id="r_a00bc63d844df82156206736bfd04eb96"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a00bc63d844df82156206736bfd04eb96">PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2040</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td></tr>
+<tr class="separator:a00bc63d844df82156206736bfd04eb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0589a8f44f408a7b5577614c903cb973" id="r_a0589a8f44f408a7b5577614c903cb973"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a0589a8f44f408a7b5577614c903cb973">PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2350</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td></tr>
+<tr class="separator:a0589a8f44f408a7b5577614c903cb973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406e117c0407b64b9801ffe8b796878b" id="r_a406e117c0407b64b9801ffe8b796878b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a406e117c0407b64b9801ffe8b796878b">PICOBIN_IMAGE_TYPE_EXE_CPU_ARM</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td></tr>
+<tr class="separator:a406e117c0407b64b9801ffe8b796878b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad536e40b323203cff8aef582773c736e" id="r_ad536e40b323203cff8aef582773c736e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ad536e40b323203cff8aef582773c736e">PICOBIN_IMAGE_TYPE_EXE_CPU_AS_BITS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_EXE_CPU</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:ad536e40b323203cff8aef582773c736e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9e85a7eef6698e9d09fb4515c01a9d" id="r_adc9e85a7eef6698e9d09fb4515c01a9d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#adc9e85a7eef6698e9d09fb4515c01a9d">PICOBIN_IMAGE_TYPE_EXE_CPU_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0700)</td></tr>
+<tr class="separator:adc9e85a7eef6698e9d09fb4515c01a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9004f5172dff477ac7bf4cbf0c38a188" id="r_a9004f5172dff477ac7bf4cbf0c38a188"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a9004f5172dff477ac7bf4cbf0c38a188">PICOBIN_IMAGE_TYPE_EXE_CPU_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(8)</td></tr>
+<tr class="separator:a9004f5172dff477ac7bf4cbf0c38a188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab30c742111187ba96a90b4e91bb581" id="r_acab30c742111187ba96a90b4e91bb581"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#acab30c742111187ba96a90b4e91bb581">PICOBIN_IMAGE_TYPE_EXE_CPU_RISCV</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td></tr>
+<tr class="separator:acab30c742111187ba96a90b4e91bb581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a64e5c39f1df124afddec7d042c3ce" id="r_a16a64e5c39f1df124afddec7d042c3ce"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a16a64e5c39f1df124afddec7d042c3ce">PICOBIN_IMAGE_TYPE_EXE_CPU_VARMULET</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(2)</td></tr>
+<tr class="separator:a16a64e5c39f1df124afddec7d042c3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f998334f0f6513db9842da5e5e3e6a2" id="r_a5f998334f0f6513db9842da5e5e3e6a2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a5f998334f0f6513db9842da5e5e3e6a2">PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0800)</td></tr>
+<tr class="separator:a5f998334f0f6513db9842da5e5e3e6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7fc0e0e5a187786b19fc5fe21d2994" id="r_a7e7fc0e0e5a187786b19fc5fe21d2994"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a7e7fc0e0e5a187786b19fc5fe21d2994">PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(11)</td></tr>
+<tr class="separator:a7e7fc0e0e5a187786b19fc5fe21d2994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a92ab21aff26e5449ee40449bd3f7d2" id="r_a5a92ab21aff26e5449ee40449bd3f7d2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a5a92ab21aff26e5449ee40449bd3f7d2">PICOBIN_IMAGE_TYPE_EXE_SECURITY_AS_BITS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_EXE_SECURITY</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a5a92ab21aff26e5449ee40449bd3f7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9742a81121aae2fa4234b18e312ab952" id="r_a9742a81121aae2fa4234b18e312ab952"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a9742a81121aae2fa4234b18e312ab952">PICOBIN_IMAGE_TYPE_EXE_SECURITY_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0030)</td></tr>
+<tr class="separator:a9742a81121aae2fa4234b18e312ab952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4feff349ad987185ffcb650866872ad" id="r_ad4feff349ad987185ffcb650866872ad"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ad4feff349ad987185ffcb650866872ad">PICOBIN_IMAGE_TYPE_EXE_SECURITY_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(4)</td></tr>
+<tr class="separator:ad4feff349ad987185ffcb650866872ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc56faddf154604108b2e2e96de7616" id="r_abbc56faddf154604108b2e2e96de7616"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#abbc56faddf154604108b2e2e96de7616">PICOBIN_IMAGE_TYPE_EXE_SECURITY_NS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x1)</td></tr>
+<tr class="separator:abbc56faddf154604108b2e2e96de7616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68dd3a5dd7322edeae017dfc3f5702dd" id="r_a68dd3a5dd7322edeae017dfc3f5702dd"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a68dd3a5dd7322edeae017dfc3f5702dd">PICOBIN_IMAGE_TYPE_EXE_SECURITY_S</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x2)</td></tr>
+<tr class="separator:a68dd3a5dd7322edeae017dfc3f5702dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94c5394c8d31d77521cd1dab171183c" id="r_ab94c5394c8d31d77521cd1dab171183c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ab94c5394c8d31d77521cd1dab171183c">PICOBIN_IMAGE_TYPE_EXE_SECURITY_UNSPECIFIED</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0)</td></tr>
+<tr class="separator:ab94c5394c8d31d77521cd1dab171183c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1249c7781a60c19a8ccb5f97b27c450" id="r_ab1249c7781a60c19a8ccb5f97b27c450"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ab1249c7781a60c19a8ccb5f97b27c450">PICOBIN_IMAGE_TYPE_EXE_TBYB_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x8000)</td></tr>
+<tr class="separator:ab1249c7781a60c19a8ccb5f97b27c450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41192735e5b950738799d7fc691820c2" id="r_a41192735e5b950738799d7fc691820c2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a41192735e5b950738799d7fc691820c2">PICOBIN_IMAGE_TYPE_IMAGE_TYPE_AS_BITS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_IMAGE_TYPE</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a41192735e5b950738799d7fc691820c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdaab5f14b45c3ee38516a0b5d2f78c" id="r_aabdaab5f14b45c3ee38516a0b5d2f78c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#aabdaab5f14b45c3ee38516a0b5d2f78c">PICOBIN_IMAGE_TYPE_IMAGE_TYPE_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x000f)</td></tr>
+<tr class="separator:aabdaab5f14b45c3ee38516a0b5d2f78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c949bffd2c5bb437c878e37b1fd695" id="r_a87c949bffd2c5bb437c878e37b1fd695"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a87c949bffd2c5bb437c878e37b1fd695">PICOBIN_IMAGE_TYPE_IMAGE_TYPE_DATA</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x2)</td></tr>
+<tr class="separator:a87c949bffd2c5bb437c878e37b1fd695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb41fb6a94bee46249876c22b48f6a05" id="r_acb41fb6a94bee46249876c22b48f6a05"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#acb41fb6a94bee46249876c22b48f6a05">PICOBIN_IMAGE_TYPE_IMAGE_TYPE_EXE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x1)</td></tr>
+<tr class="separator:acb41fb6a94bee46249876c22b48f6a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac890dd236e3b0189991f44d90511bc1e" id="r_ac890dd236e3b0189991f44d90511bc1e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ac890dd236e3b0189991f44d90511bc1e">PICOBIN_IMAGE_TYPE_IMAGE_TYPE_INVALID</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0)</td></tr>
+<tr class="separator:ac890dd236e3b0189991f44d90511bc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0de5fb4c17976652176d905201d5ea5" id="r_af0de5fb4c17976652176d905201d5ea5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af0de5fb4c17976652176d905201d5ea5">PICOBIN_IMAGE_TYPE_IMAGE_TYPE_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td></tr>
+<tr class="separator:af0de5fb4c17976652176d905201d5ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b3785e2f68456d518ef5803ad47592" id="r_a35b3785e2f68456d518ef5803ad47592"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a35b3785e2f68456d518ef5803ad47592">PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>,  <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> &lt;&lt; <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_LSB</a>)</td></tr>
+<tr class="separator:a35b3785e2f68456d518ef5803ad47592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767f359d3a4fa48e5b3fcf48a1047ac1" id="r_a767f359d3a4fa48e5b3fcf48a1047ac1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a767f359d3a4fa48e5b3fcf48a1047ac1">PICOBIN_MAX_BLOCK_SIZE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x280)</td></tr>
+<tr class="separator:a767f359d3a4fa48e5b3fcf48a1047ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab616bf0222252c7edbfe69fb77bf36dd" id="r_ab616bf0222252c7edbfe69fb77bf36dd"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ab616bf0222252c7edbfe69fb77bf36dd">PICOBIN_MAX_IMAGE_DEF_BLOCK_SIZE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x180)</td></tr>
+<tr class="separator:ab616bf0222252c7edbfe69fb77bf36dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6a7c3869458f06657ac6d107673331" id="r_a6b6a7c3869458f06657ac6d107673331"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a6b6a7c3869458f06657ac6d107673331">PICOBIN_MAX_PARTITION_TABLE_BLOCK_SIZE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x280)</td></tr>
+<tr class="separator:a6b6a7c3869458f06657ac6d107673331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e64ff3fc4c7396ddefb7778b324e1be" id="r_a0e64ff3fc4c7396ddefb7778b324e1be"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a0e64ff3fc4c7396ddefb7778b324e1be">PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILIES_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(14)</td></tr>
+<tr class="separator:a0e64ff3fc4c7396ddefb7778b324e1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9af2136a2bee512e4bcfecc23fea7e4" id="r_af9af2136a2bee512e4bcfecc23fea7e4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af9af2136a2bee512e4bcfecc23fea7e4">PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_ABSOLUTE_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00008000)</td></tr>
+<tr class="separator:af9af2136a2bee512e4bcfecc23fea7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42146522df9ed97e6bd8cb3ce4a35615" id="r_a42146522df9ed97e6bd8cb3ce4a35615"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a42146522df9ed97e6bd8cb3ce4a35615">PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_DATA_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00010000)</td></tr>
+<tr class="separator:a42146522df9ed97e6bd8cb3ce4a35615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac45bcf5acd2c479fd9b58316e315102a" id="r_ac45bcf5acd2c479fd9b58316e315102a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ac45bcf5acd2c479fd9b58316e315102a">PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2040_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00004000)</td></tr>
+<tr class="separator:ac45bcf5acd2c479fd9b58316e315102a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9358f6c09dcf29f39a9d5b36dec51d9" id="r_af9358f6c09dcf29f39a9d5b36dec51d9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af9358f6c09dcf29f39a9d5b36dec51d9">PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_NS_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00080000)</td></tr>
+<tr class="separator:af9358f6c09dcf29f39a9d5b36dec51d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4eff43fafd4804c0deac93957cb1925" id="r_ae4eff43fafd4804c0deac93957cb1925"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ae4eff43fafd4804c0deac93957cb1925">PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_S_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00020000)</td></tr>
+<tr class="separator:ae4eff43fafd4804c0deac93957cb1925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e742336693649272d710cd61c0bdc4" id="r_ac5e742336693649272d710cd61c0bdc4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ac5e742336693649272d710cd61c0bdc4">PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_RISCV_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00040000)</td></tr>
+<tr class="separator:ac5e742336693649272d710cd61c0bdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fedd6c7fd7ab054750a36c7f8033ced" id="r_a5fedd6c7fd7ab054750a36c7f8033ced"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a5fedd6c7fd7ab054750a36c7f8033ced">PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000180)</td></tr>
+<tr class="separator:a5fedd6c7fd7ab054750a36c7f8033ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9cb37fc38cb0cea627c6b38476c6b6" id="r_afc9cb37fc38cb0cea627c6b38476c6b6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#afc9cb37fc38cb0cea627c6b38476c6b6">PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(7)</td></tr>
+<tr class="separator:afc9cb37fc38cb0cea627c6b38476c6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d9bb20c28559303fd5bb3db7c49413" id="r_a91d9bb20c28559303fd5bb3db7c49413"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a91d9bb20c28559303fd5bb3db7c49413">PICOBIN_PARTITION_FLAGS_HAS_ID_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000001)</td></tr>
+<tr class="separator:a91d9bb20c28559303fd5bb3db7c49413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31023f50394b5703275be1e493eabb71" id="r_a31023f50394b5703275be1e493eabb71"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a31023f50394b5703275be1e493eabb71">PICOBIN_PARTITION_FLAGS_HAS_NAME_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00001000)</td></tr>
+<tr class="separator:a31023f50394b5703275be1e493eabb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea65528bc21481ebf78fb4589bd71e21" id="r_aea65528bc21481ebf78fb4589bd71e21"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#aea65528bc21481ebf78fb4589bd71e21">PICOBIN_PARTITION_FLAGS_IGNORED_DURING_ARM_BOOT_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000200)</td></tr>
+<tr class="separator:aea65528bc21481ebf78fb4589bd71e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ddfc7a59fd0052aaf1c785729ab0f0" id="r_a08ddfc7a59fd0052aaf1c785729ab0f0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a08ddfc7a59fd0052aaf1c785729ab0f0">PICOBIN_PARTITION_FLAGS_IGNORED_DURING_RISCV_BOOT_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000400)</td></tr>
+<tr class="separator:a08ddfc7a59fd0052aaf1c785729ab0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3dac703a5772ee9efc12c8df5854a4" id="r_afe3dac703a5772ee9efc12c8df5854a4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#afe3dac703a5772ee9efc12c8df5854a4">PICOBIN_PARTITION_FLAGS_LINK_TYPE_A_PARTITION</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td></tr>
+<tr class="separator:afe3dac703a5772ee9efc12c8df5854a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99386530689e72fc1119f8317c0047de" id="r_a99386530689e72fc1119f8317c0047de"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a99386530689e72fc1119f8317c0047de">PICOBIN_PARTITION_FLAGS_LINK_TYPE_AS_BITS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_PARTITION_FLAGS_LINK_TYPE</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a99386530689e72fc1119f8317c0047de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c04b322d4f71fc0a0343599f04d7c2" id="r_ad5c04b322d4f71fc0a0343599f04d7c2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ad5c04b322d4f71fc0a0343599f04d7c2">PICOBIN_PARTITION_FLAGS_LINK_TYPE_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000006)</td></tr>
+<tr class="separator:ad5c04b322d4f71fc0a0343599f04d7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26674de8ed5fa532e3bd1da6fe3c6a7b" id="r_a26674de8ed5fa532e3bd1da6fe3c6a7b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a26674de8ed5fa532e3bd1da6fe3c6a7b">PICOBIN_PARTITION_FLAGS_LINK_TYPE_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td></tr>
+<tr class="separator:a26674de8ed5fa532e3bd1da6fe3c6a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bc368e9391180ab63266e5dc91ed8b" id="r_a20bc368e9391180ab63266e5dc91ed8b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a20bc368e9391180ab63266e5dc91ed8b">PICOBIN_PARTITION_FLAGS_LINK_TYPE_NONE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td></tr>
+<tr class="separator:a20bc368e9391180ab63266e5dc91ed8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fba2c18134e9fdb0c36a2d863ccb30" id="r_a67fba2c18134e9fdb0c36a2d863ccb30"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a67fba2c18134e9fdb0c36a2d863ccb30">PICOBIN_PARTITION_FLAGS_LINK_TYPE_OWNER_PARTITION</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(2)</td></tr>
+<tr class="separator:a67fba2c18134e9fdb0c36a2d863ccb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df765cf60b2fd7ac150c5d72d1f8942" id="r_a4df765cf60b2fd7ac150c5d72d1f8942"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a4df765cf60b2fd7ac150c5d72d1f8942">PICOBIN_PARTITION_FLAGS_LINK_VALUE_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000078)</td></tr>
+<tr class="separator:a4df765cf60b2fd7ac150c5d72d1f8942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6417e49577724de0d355e8d4957fb434" id="r_a6417e49577724de0d355e8d4957fb434"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a6417e49577724de0d355e8d4957fb434">PICOBIN_PARTITION_FLAGS_LINK_VALUE_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(3)</td></tr>
+<tr class="separator:a6417e49577724de0d355e8d4957fb434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24621f70f1d158af4f0779eb33c9cd0" id="r_ae24621f70f1d158af4f0779eb33c9cd0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ae24621f70f1d158af4f0779eb33c9cd0">PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_AB_NON_BOOTABLE_OWNER_AFFINITY</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000800)</td></tr>
+<tr class="separator:ae24621f70f1d158af4f0779eb33c9cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a269a3c624161adfe85c4e917bbee4" id="r_af3a269a3c624161adfe85c4e917bbee4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af3a269a3c624161adfe85c4e917bbee4">PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_NO_REBOOT_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00002000)</td></tr>
+<tr class="separator:af3a269a3c624161adfe85c4e917bbee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4628b45d5f9f7adfb2f794095298f3" id="r_aed4628b45d5f9f7adfb2f794095298f3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#aed4628b45d5f9f7adfb2f794095298f3">PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00001fff)</td></tr>
+<tr class="separator:aed4628b45d5f9f7adfb2f794095298f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b7562c9f74f15861a4e1cb42217989" id="r_af7b7562c9f74f15861a4e1cb42217989"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af7b7562c9f74f15861a4e1cb42217989">PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td></tr>
+<tr class="separator:af7b7562c9f74f15861a4e1cb42217989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2801b4212f2273df1d6b395365da0581" id="r_a2801b4212f2273df1d6b395365da0581"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a2801b4212f2273df1d6b395365da0581">PICOBIN_PARTITION_LOCATION_LAST_SECTOR_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x03ffe000)</td></tr>
+<tr class="separator:a2801b4212f2273df1d6b395365da0581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e7df3ef5fc30da91dec392d3cd1aa1" id="r_a60e7df3ef5fc30da91dec392d3cd1aa1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a60e7df3ef5fc30da91dec392d3cd1aa1">PICOBIN_PARTITION_LOCATION_LAST_SECTOR_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(13)</td></tr>
+<tr class="separator:a60e7df3ef5fc30da91dec392d3cd1aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34cef162156bf5c23813aeee9221b67" id="r_af34cef162156bf5c23813aeee9221b67"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#af34cef162156bf5c23813aeee9221b67">PICOBIN_PARTITION_MAX_EXTRA_FAMILIES</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(3)</td></tr>
+<tr class="separator:af34cef162156bf5c23813aeee9221b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1989cf9234b170eb34b071a13c673dc0" id="r_a1989cf9234b170eb34b071a13c673dc0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a1989cf9234b170eb34b071a13c673dc0">PICOBIN_PARTITION_PERMISSION_NS_R_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x10000000)</td></tr>
+<tr class="separator:a1989cf9234b170eb34b071a13c673dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733d929f9e0d8b56ec0c150d6cd14da6" id="r_a733d929f9e0d8b56ec0c150d6cd14da6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a733d929f9e0d8b56ec0c150d6cd14da6">PICOBIN_PARTITION_PERMISSION_NS_W_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x20000000)</td></tr>
+<tr class="separator:a733d929f9e0d8b56ec0c150d6cd14da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e0f361a940109b1cb1999e984f5446" id="r_a93e0f361a940109b1cb1999e984f5446"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a93e0f361a940109b1cb1999e984f5446">PICOBIN_PARTITION_PERMISSION_NSBOOT_R_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x40000000)</td></tr>
+<tr class="separator:a93e0f361a940109b1cb1999e984f5446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d065089ab5d23d5ae4a920914d3b2e" id="r_a52d065089ab5d23d5ae4a920914d3b2e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a52d065089ab5d23d5ae4a920914d3b2e">PICOBIN_PARTITION_PERMISSION_NSBOOT_W_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x80000000)</td></tr>
+<tr class="separator:a52d065089ab5d23d5ae4a920914d3b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a6b54706cc331ca6fde23eac0176ed" id="r_ac6a6b54706cc331ca6fde23eac0176ed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ac6a6b54706cc331ca6fde23eac0176ed">PICOBIN_PARTITION_PERMISSION_S_R_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x04000000)</td></tr>
+<tr class="separator:ac6a6b54706cc331ca6fde23eac0176ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd285df91a674957fc4aa2886fd8fa4c" id="r_abd285df91a674957fc4aa2886fd8fa4c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#abd285df91a674957fc4aa2886fd8fa4c">PICOBIN_PARTITION_PERMISSION_S_W_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x08000000)</td></tr>
+<tr class="separator:abd285df91a674957fc4aa2886fd8fa4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadf95880a7b8bb10d6f59683c587068" id="r_adadf95880a7b8bb10d6f59683c587068"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#adadf95880a7b8bb10d6f59683c587068">PICOBIN_PARTITION_PERMISSIONS_BITS</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xfc000000)</td></tr>
+<tr class="separator:adadf95880a7b8bb10d6f59683c587068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3812f52ee5646c6b7b691e8024026e62" id="r_a3812f52ee5646c6b7b691e8024026e62"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#a3812f52ee5646c6b7b691e8024026e62">PICOBIN_PARTITION_PERMISSIONS_LSB</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(26)</td></tr>
+<tr class="separator:a3812f52ee5646c6b7b691e8024026e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada029406b4f98f02675e6d23c3b35e9c" id="r_ada029406b4f98f02675e6d23c3b35e9c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picobin_8h.html#ada029406b4f98f02675e6d23c3b35e9c">PICOBIN_SIGNATURE_SECP256K1</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x01)</td></tr>
+<tr class="separator:ada029406b4f98f02675e6d23c3b35e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="abcd3ab723bb4e124385fb7eb3fd43a12" name="abcd3ab723bb4e124385fb7eb3fd43a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd3ab723bb4e124385fb7eb3fd43a12">&#9670;&#160;</a></span>_PICOBIN_INDEX_TO_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> _PICOBIN_INDEX_TO_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> &lt;&lt; <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_LSB</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cf267df83f8cc4d91e63588f3626ca5" name="a7cf267df83f8cc4d91e63588f3626ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf267df83f8cc4d91e63588f3626ca5">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_1BS_ENTRY_POINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_1BS_ENTRY_POINT&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x44)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8aa5dd104a0634bf0f772f4a8073eb0" name="ae8aa5dd104a0634bf0f772f4a8073eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8aa5dd104a0634bf0f772f4a8073eb0">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_1BS_HASH_DEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_1BS_HASH_DEF&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x47)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa35830b99760f3c744650facb042dd8d" name="aa35830b99760f3c744650facb042dd8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35830b99760f3c744650facb042dd8d">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_1BS_IMAGE_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_1BS_IMAGE_TYPE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x42)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70e8262db151a9dccd5904ccafb23103" name="a70e8262db151a9dccd5904ccafb23103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e8262db151a9dccd5904ccafb23103">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_1BS_NEXT_BLOCK_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_1BS_NEXT_BLOCK_OFFSET&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x41)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23cd8b1f2cff509cce30dcc693542c7e" name="a23cd8b1f2cff509cce30dcc693542c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23cd8b1f2cff509cce30dcc693542c7e">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_1BS_ROLLING_WINDOW_DELTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_1BS_ROLLING_WINDOW_DELTA&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x05)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3a93e5ac4e764d28e77b2ebf05ab315" name="ad3a93e5ac4e764d28e77b2ebf05ab315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a93e5ac4e764d28e77b2ebf05ab315">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_1BS_VECTOR_TABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_1BS_VECTOR_TABLE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x03)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9183c66346af3bbb38e204a5fcfc72e" name="ab9183c66346af3bbb38e204a5fcfc72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9183c66346af3bbb38e204a5fcfc72e">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_1BS_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_1BS_VERSION&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x48)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3111fa3ac4585d9aa93e95cb2e7974e" name="ad3111fa3ac4585d9aa93e95cb2e7974e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3111fa3ac4585d9aa93e95cb2e7974e">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_2BS_IGNORED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_2BS_IGNORED&#160;&#160;&#160;(<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x80) | <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x7e))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48f60da09180c8025d621f20495cc84b" name="a48f60da09180c8025d621f20495cc84b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f60da09180c8025d621f20495cc84b">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_2BS_LAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_2BS_LAST&#160;&#160;&#160;(<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x80) | <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x7f))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a722bda87c729ec0437e9382a05574176" name="a722bda87c729ec0437e9382a05574176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722bda87c729ec0437e9382a05574176">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_HASH_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_HASH_VALUE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x4b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd17ff044cf37a1253ab8fe4fec848d8" name="afd17ff044cf37a1253ab8fe4fec848d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd17ff044cf37a1253ab8fe4fec848d8">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_LOAD_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_LOAD_MAP&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x06)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab160d4d50db452496eb4b0b36f1adc06" name="ab160d4d50db452496eb4b0b36f1adc06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab160d4d50db452496eb4b0b36f1adc06">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_PARTITION_TABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_PARTITION_TABLE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0a)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cb09aaeff0ba1fefa576edbec13650e" name="a4cb09aaeff0ba1fefa576edbec13650e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb09aaeff0ba1fefa576edbec13650e">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_SALT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_SALT&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0c)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af89c8aba80d9abef0c13817473c578a9" name="af89c8aba80d9abef0c13817473c578a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89c8aba80d9abef0c13817473c578a9">&#9670;&#160;</a></span>PICOBIN_BLOCK_ITEM_SIGNATURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_ITEM_SIGNATURE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x09)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1a10acfb8587b44ce4d89da1949f500" name="aa1a10acfb8587b44ce4d89da1949f500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a10acfb8587b44ce4d89da1949f500">&#9670;&#160;</a></span>PICOBIN_BLOCK_MARKER_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_MARKER_END&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xab123579)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fe3d373f32007d1ed6950a6c3b4fa94" name="a3fe3d373f32007d1ed6950a6c3b4fa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe3d373f32007d1ed6950a6c3b4fa94">&#9670;&#160;</a></span>PICOBIN_BLOCK_MARKER_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_BLOCK_MARKER_START&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xffffded3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a381613075fe7bbd0f8b364f139566e35" name="a381613075fe7bbd0f8b364f139566e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381613075fe7bbd0f8b364f139566e35">&#9670;&#160;</a></span>PICOBIN_HASH_SHA256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_HASH_SHA256&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x01)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad414b1fb0b2f0294cdb1cc46e037731b" name="ad414b1fb0b2f0294cdb1cc46e037731b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad414b1fb0b2f0294cdb1cc46e037731b">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CHIP_AS_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CHIP_AS_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_EXE_CHIP</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1393f4da28bd735d2fa5ade65fa77cb" name="af1393f4da28bd735d2fa5ade65fa77cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1393f4da28bd735d2fa5ade65fa77cb">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CHIP_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CHIP_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x7000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2043bf993c564faca1959417f8ea8a15" name="a2043bf993c564faca1959417f8ea8a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2043bf993c564faca1959417f8ea8a15">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CHIP_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CHIP_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00bc63d844df82156206736bfd04eb96" name="a00bc63d844df82156206736bfd04eb96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00bc63d844df82156206736bfd04eb96">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2040</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2040&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0589a8f44f408a7b5577614c903cb973" name="a0589a8f44f408a7b5577614c903cb973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0589a8f44f408a7b5577614c903cb973">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2350</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2350&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a406e117c0407b64b9801ffe8b796878b" name="a406e117c0407b64b9801ffe8b796878b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406e117c0407b64b9801ffe8b796878b">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CPU_ARM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CPU_ARM&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad536e40b323203cff8aef582773c736e" name="ad536e40b323203cff8aef582773c736e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad536e40b323203cff8aef582773c736e">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CPU_AS_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CPU_AS_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_EXE_CPU</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc9e85a7eef6698e9d09fb4515c01a9d" name="adc9e85a7eef6698e9d09fb4515c01a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9e85a7eef6698e9d09fb4515c01a9d">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CPU_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CPU_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0700)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9004f5172dff477ac7bf4cbf0c38a188" name="a9004f5172dff477ac7bf4cbf0c38a188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9004f5172dff477ac7bf4cbf0c38a188">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CPU_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CPU_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acab30c742111187ba96a90b4e91bb581" name="acab30c742111187ba96a90b4e91bb581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab30c742111187ba96a90b4e91bb581">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CPU_RISCV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CPU_RISCV&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16a64e5c39f1df124afddec7d042c3ce" name="a16a64e5c39f1df124afddec7d042c3ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a64e5c39f1df124afddec7d042c3ce">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_CPU_VARMULET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_CPU_VARMULET&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f998334f0f6513db9842da5e5e3e6a2" name="a5f998334f0f6513db9842da5e5e3e6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f998334f0f6513db9842da5e5e3e6a2">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0800)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e7fc0e0e5a187786b19fc5fe21d2994" name="a7e7fc0e0e5a187786b19fc5fe21d2994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7fc0e0e5a187786b19fc5fe21d2994">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(11)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a92ab21aff26e5449ee40449bd3f7d2" name="a5a92ab21aff26e5449ee40449bd3f7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a92ab21aff26e5449ee40449bd3f7d2">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_SECURITY_AS_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_SECURITY_AS_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_EXE_SECURITY</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9742a81121aae2fa4234b18e312ab952" name="a9742a81121aae2fa4234b18e312ab952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9742a81121aae2fa4234b18e312ab952">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_SECURITY_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_SECURITY_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0030)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4feff349ad987185ffcb650866872ad" name="ad4feff349ad987185ffcb650866872ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4feff349ad987185ffcb650866872ad">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_SECURITY_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_SECURITY_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbc56faddf154604108b2e2e96de7616" name="abbc56faddf154604108b2e2e96de7616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc56faddf154604108b2e2e96de7616">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_SECURITY_NS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_SECURITY_NS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68dd3a5dd7322edeae017dfc3f5702dd" name="a68dd3a5dd7322edeae017dfc3f5702dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68dd3a5dd7322edeae017dfc3f5702dd">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_SECURITY_S</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_SECURITY_S&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab94c5394c8d31d77521cd1dab171183c" name="ab94c5394c8d31d77521cd1dab171183c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94c5394c8d31d77521cd1dab171183c">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_SECURITY_UNSPECIFIED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_SECURITY_UNSPECIFIED&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1249c7781a60c19a8ccb5f97b27c450" name="ab1249c7781a60c19a8ccb5f97b27c450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1249c7781a60c19a8ccb5f97b27c450">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_EXE_TBYB_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_EXE_TBYB_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x8000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41192735e5b950738799d7fc691820c2" name="a41192735e5b950738799d7fc691820c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41192735e5b950738799d7fc691820c2">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_IMAGE_TYPE_AS_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_IMAGE_TYPE_AS_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_IMAGE_TYPE_IMAGE_TYPE</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabdaab5f14b45c3ee38516a0b5d2f78c" name="aabdaab5f14b45c3ee38516a0b5d2f78c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabdaab5f14b45c3ee38516a0b5d2f78c">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_IMAGE_TYPE_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_IMAGE_TYPE_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x000f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87c949bffd2c5bb437c878e37b1fd695" name="a87c949bffd2c5bb437c878e37b1fd695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c949bffd2c5bb437c878e37b1fd695">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_IMAGE_TYPE_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_IMAGE_TYPE_DATA&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb41fb6a94bee46249876c22b48f6a05" name="acb41fb6a94bee46249876c22b48f6a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb41fb6a94bee46249876c22b48f6a05">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_IMAGE_TYPE_EXE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_IMAGE_TYPE_EXE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac890dd236e3b0189991f44d90511bc1e" name="ac890dd236e3b0189991f44d90511bc1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac890dd236e3b0189991f44d90511bc1e">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_IMAGE_TYPE_INVALID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_IMAGE_TYPE_INVALID&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0de5fb4c17976652176d905201d5ea5" name="af0de5fb4c17976652176d905201d5ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0de5fb4c17976652176d905201d5ea5">&#9670;&#160;</a></span>PICOBIN_IMAGE_TYPE_IMAGE_TYPE_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_IMAGE_TYPE_IMAGE_TYPE_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35b3785e2f68456d518ef5803ad47592" name="a35b3785e2f68456d518ef5803ad47592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b3785e2f68456d518ef5803ad47592">&#9670;&#160;</a></span>PICOBIN_INDEX_TO_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_INDEX_TO_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> &lt;&lt; <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a> ## <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_LSB</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a767f359d3a4fa48e5b3fcf48a1047ac1" name="a767f359d3a4fa48e5b3fcf48a1047ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767f359d3a4fa48e5b3fcf48a1047ac1">&#9670;&#160;</a></span>PICOBIN_MAX_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_MAX_BLOCK_SIZE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x280)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab616bf0222252c7edbfe69fb77bf36dd" name="ab616bf0222252c7edbfe69fb77bf36dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab616bf0222252c7edbfe69fb77bf36dd">&#9670;&#160;</a></span>PICOBIN_MAX_IMAGE_DEF_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_MAX_IMAGE_DEF_BLOCK_SIZE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x180)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b6a7c3869458f06657ac6d107673331" name="a6b6a7c3869458f06657ac6d107673331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6a7c3869458f06657ac6d107673331">&#9670;&#160;</a></span>PICOBIN_MAX_PARTITION_TABLE_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_MAX_PARTITION_TABLE_BLOCK_SIZE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x280)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e64ff3fc4c7396ddefb7778b324e1be" name="a0e64ff3fc4c7396ddefb7778b324e1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e64ff3fc4c7396ddefb7778b324e1be">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILIES_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILIES_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(14)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9af2136a2bee512e4bcfecc23fea7e4" name="af9af2136a2bee512e4bcfecc23fea7e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9af2136a2bee512e4bcfecc23fea7e4">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_ABSOLUTE_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_ABSOLUTE_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00008000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42146522df9ed97e6bd8cb3ce4a35615" name="a42146522df9ed97e6bd8cb3ce4a35615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42146522df9ed97e6bd8cb3ce4a35615">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_DATA_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_DATA_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00010000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac45bcf5acd2c479fd9b58316e315102a" name="ac45bcf5acd2c479fd9b58316e315102a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac45bcf5acd2c479fd9b58316e315102a">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2040_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2040_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00004000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9358f6c09dcf29f39a9d5b36dec51d9" name="af9358f6c09dcf29f39a9d5b36dec51d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9358f6c09dcf29f39a9d5b36dec51d9">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_NS_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_NS_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00080000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4eff43fafd4804c0deac93957cb1925" name="ae4eff43fafd4804c0deac93957cb1925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4eff43fafd4804c0deac93957cb1925">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_S_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_S_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00020000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5e742336693649272d710cd61c0bdc4" name="ac5e742336693649272d710cd61c0bdc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e742336693649272d710cd61c0bdc4">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_RISCV_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_RISCV_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00040000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fedd6c7fd7ab054750a36c7f8033ced" name="a5fedd6c7fd7ab054750a36c7f8033ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fedd6c7fd7ab054750a36c7f8033ced">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000180)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc9cb37fc38cb0cea627c6b38476c6b6" name="afc9cb37fc38cb0cea627c6b38476c6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9cb37fc38cb0cea627c6b38476c6b6">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91d9bb20c28559303fd5bb3db7c49413" name="a91d9bb20c28559303fd5bb3db7c49413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d9bb20c28559303fd5bb3db7c49413">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_HAS_ID_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_HAS_ID_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000001)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31023f50394b5703275be1e493eabb71" name="a31023f50394b5703275be1e493eabb71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31023f50394b5703275be1e493eabb71">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_HAS_NAME_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_HAS_NAME_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00001000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea65528bc21481ebf78fb4589bd71e21" name="aea65528bc21481ebf78fb4589bd71e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea65528bc21481ebf78fb4589bd71e21">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_IGNORED_DURING_ARM_BOOT_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_IGNORED_DURING_ARM_BOOT_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000200)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08ddfc7a59fd0052aaf1c785729ab0f0" name="a08ddfc7a59fd0052aaf1c785729ab0f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ddfc7a59fd0052aaf1c785729ab0f0">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_IGNORED_DURING_RISCV_BOOT_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_IGNORED_DURING_RISCV_BOOT_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000400)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe3dac703a5772ee9efc12c8df5854a4" name="afe3dac703a5772ee9efc12c8df5854a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3dac703a5772ee9efc12c8df5854a4">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_TYPE_A_PARTITION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_TYPE_A_PARTITION&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99386530689e72fc1119f8317c0047de" name="a99386530689e72fc1119f8317c0047de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99386530689e72fc1119f8317c0047de">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_TYPE_AS_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_TYPE_AS_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">_PICOBIN_INDEX_TO_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PICOBIN_PARTITION_FLAGS_LINK_TYPE</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a> ## <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5c04b322d4f71fc0a0343599f04d7c2" name="ad5c04b322d4f71fc0a0343599f04d7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c04b322d4f71fc0a0343599f04d7c2">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_TYPE_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_TYPE_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000006)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26674de8ed5fa532e3bd1da6fe3c6a7b" name="a26674de8ed5fa532e3bd1da6fe3c6a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26674de8ed5fa532e3bd1da6fe3c6a7b">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_TYPE_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_TYPE_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20bc368e9391180ab63266e5dc91ed8b" name="a20bc368e9391180ab63266e5dc91ed8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bc368e9391180ab63266e5dc91ed8b">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_TYPE_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_TYPE_NONE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67fba2c18134e9fdb0c36a2d863ccb30" name="a67fba2c18134e9fdb0c36a2d863ccb30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67fba2c18134e9fdb0c36a2d863ccb30">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_TYPE_OWNER_PARTITION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_TYPE_OWNER_PARTITION&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4df765cf60b2fd7ac150c5d72d1f8942" name="a4df765cf60b2fd7ac150c5d72d1f8942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df765cf60b2fd7ac150c5d72d1f8942">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_VALUE_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_VALUE_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000078)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6417e49577724de0d355e8d4957fb434" name="a6417e49577724de0d355e8d4957fb434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6417e49577724de0d355e8d4957fb434">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_LINK_VALUE_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_LINK_VALUE_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae24621f70f1d158af4f0779eb33c9cd0" name="ae24621f70f1d158af4f0779eb33c9cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24621f70f1d158af4f0779eb33c9cd0">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_AB_NON_BOOTABLE_OWNER_AFFINITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_AB_NON_BOOTABLE_OWNER_AFFINITY&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00000800)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3a269a3c624161adfe85c4e917bbee4" name="af3a269a3c624161adfe85c4e917bbee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a269a3c624161adfe85c4e917bbee4">&#9670;&#160;</a></span>PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_NO_REBOOT_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_NO_REBOOT_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00002000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed4628b45d5f9f7adfb2f794095298f3" name="aed4628b45d5f9f7adfb2f794095298f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4628b45d5f9f7adfb2f794095298f3">&#9670;&#160;</a></span>PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x00001fff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7b7562c9f74f15861a4e1cb42217989" name="af7b7562c9f74f15861a4e1cb42217989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b7562c9f74f15861a4e1cb42217989">&#9670;&#160;</a></span>PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2801b4212f2273df1d6b395365da0581" name="a2801b4212f2273df1d6b395365da0581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2801b4212f2273df1d6b395365da0581">&#9670;&#160;</a></span>PICOBIN_PARTITION_LOCATION_LAST_SECTOR_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_LOCATION_LAST_SECTOR_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x03ffe000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60e7df3ef5fc30da91dec392d3cd1aa1" name="a60e7df3ef5fc30da91dec392d3cd1aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e7df3ef5fc30da91dec392d3cd1aa1">&#9670;&#160;</a></span>PICOBIN_PARTITION_LOCATION_LAST_SECTOR_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_LOCATION_LAST_SECTOR_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(13)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af34cef162156bf5c23813aeee9221b67" name="af34cef162156bf5c23813aeee9221b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34cef162156bf5c23813aeee9221b67">&#9670;&#160;</a></span>PICOBIN_PARTITION_MAX_EXTRA_FAMILIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_MAX_EXTRA_FAMILIES&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1989cf9234b170eb34b071a13c673dc0" name="a1989cf9234b170eb34b071a13c673dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1989cf9234b170eb34b071a13c673dc0">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSION_NS_R_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSION_NS_R_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x10000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a733d929f9e0d8b56ec0c150d6cd14da6" name="a733d929f9e0d8b56ec0c150d6cd14da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733d929f9e0d8b56ec0c150d6cd14da6">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSION_NS_W_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSION_NS_W_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x20000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93e0f361a940109b1cb1999e984f5446" name="a93e0f361a940109b1cb1999e984f5446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e0f361a940109b1cb1999e984f5446">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSION_NSBOOT_R_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSION_NSBOOT_R_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x40000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52d065089ab5d23d5ae4a920914d3b2e" name="a52d065089ab5d23d5ae4a920914d3b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d065089ab5d23d5ae4a920914d3b2e">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSION_NSBOOT_W_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSION_NSBOOT_W_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x80000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6a6b54706cc331ca6fde23eac0176ed" name="ac6a6b54706cc331ca6fde23eac0176ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a6b54706cc331ca6fde23eac0176ed">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSION_S_R_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSION_S_R_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x04000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd285df91a674957fc4aa2886fd8fa4c" name="abd285df91a674957fc4aa2886fd8fa4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd285df91a674957fc4aa2886fd8fa4c">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSION_S_W_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSION_S_W_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x08000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adadf95880a7b8bb10d6f59683c587068" name="adadf95880a7b8bb10d6f59683c587068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adadf95880a7b8bb10d6f59683c587068">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSIONS_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSIONS_BITS&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xfc000000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3812f52ee5646c6b7b691e8024026e62" name="a3812f52ee5646c6b7b691e8024026e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3812f52ee5646c6b7b691e8024026e62">&#9670;&#160;</a></span>PICOBIN_PARTITION_PERMISSIONS_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_PARTITION_PERMISSIONS_LSB&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(26)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada029406b4f98f02675e6d23c3b35e9c" name="ada029406b4f98f02675e6d23c3b35e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada029406b4f98f02675e6d23c3b35e9c">&#9670;&#160;</a></span>PICOBIN_SIGNATURE_SECP256K1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICOBIN_SIGNATURE_SECP256K1&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x01)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_afd6173fcc80f68f3e45820d53e5d728.html">common</a></li><li class="navelem"><a class="el" href="dir_89d175adaed816e4e820f58512b3e2cc.html">boot_picobin_headers</a></li><li class="navelem"><a class="el" href="dir_e8f4bac374ac261e5b336390f6f66678.html">include</a></li><li class="navelem"><a class="el" href="dir_600c1d2ab65b91d023a515c59005b1d2.html">boot</a></li><li class="navelem"><a class="el" href="picobin_8h.html">picobin.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

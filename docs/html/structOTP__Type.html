@@ -1,0 +1,2082 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura OTP_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structOTP__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structOTP__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura OTP_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SNPS OTP control IF (SBPI and RPi wrapper control) (OTP)  
+ <a href="structOTP__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2350_8h_source.html">RP2350.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para OTP_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structOTP__Type__coll__graph.svg" width="156" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a2508f5e65702dabd06215873e0436541" id="r_a2508f5e65702dabd06215873e0436541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a2508f5e65702dabd06215873e0436541">ARCHSEL</a></td></tr>
+<tr class="memdesc:a2508f5e65702dabd06215873e0436541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture select (Arm/RISC-V).  <br /></td></tr>
+<tr class="separator:a2508f5e65702dabd06215873e0436541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6811e908aa0e655022895d5a6fa0774a" id="r_a6811e908aa0e655022895d5a6fa0774a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a6811e908aa0e655022895d5a6fa0774a">ARCHSEL_STATUS</a></td></tr>
+<tr class="memdesc:a6811e908aa0e655022895d5a6fa0774a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current architecture select state of each core.  <br /></td></tr>
+<tr class="separator:a6811e908aa0e655022895d5a6fa0774a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80175aa4562debe360725e3141d9fbd2" id="r_a80175aa4562debe360725e3141d9fbd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a80175aa4562debe360725e3141d9fbd2">BIST</a></td></tr>
+<tr class="memdesc:a80175aa4562debe360725e3141d9fbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">During BIST, count address locations that have at least one leaky bit <br  />
+  <br /></td></tr>
+<tr class="separator:a80175aa4562debe360725e3141d9fbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb81e401fc4884e71b37a4a5df14f235" id="r_adb81e401fc4884e71b37a4a5df14f235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#adb81e401fc4884e71b37a4a5df14f235">BOOTDIS</a></td></tr>
+<tr class="memdesc:adb81e401fc4884e71b37a4a5df14f235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell the bootrom to ignore scratch register boot vectors (both power manager and watchdog) on the next power up.  <br /></td></tr>
+<tr class="separator:adb81e401fc4884e71b37a4a5df14f235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301190ac6dd675e9769bfe1c2624df83" id="r_a301190ac6dd675e9769bfe1c2624df83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a301190ac6dd675e9769bfe1c2624df83">CRITICAL</a></td></tr>
+<tr class="memdesc:a301190ac6dd675e9769bfe1c2624df83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quickly check values of critical flags read during boot up <br  />
+  <br /></td></tr>
+<tr class="separator:a301190ac6dd675e9769bfe1c2624df83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861a41255c98beff93cd052639bccf64" id="r_a861a41255c98beff93cd052639bccf64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a861a41255c98beff93cd052639bccf64">CRT_KEY_W0</a></td></tr>
+<tr class="memdesc:a861a41255c98beff93cd052639bccf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Word 0 (bits 31..0) of the key.  <br /></td></tr>
+<tr class="separator:a861a41255c98beff93cd052639bccf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee7c9d9cf96762842e96cd83d94ec17" id="r_a0ee7c9d9cf96762842e96cd83d94ec17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a0ee7c9d9cf96762842e96cd83d94ec17">CRT_KEY_W1</a></td></tr>
+<tr class="memdesc:a0ee7c9d9cf96762842e96cd83d94ec17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Word 1 (bits 63..32) of the key.  <br /></td></tr>
+<tr class="separator:a0ee7c9d9cf96762842e96cd83d94ec17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622eb9968a478e65c27121f85552bce2" id="r_a622eb9968a478e65c27121f85552bce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a622eb9968a478e65c27121f85552bce2">CRT_KEY_W2</a></td></tr>
+<tr class="memdesc:a622eb9968a478e65c27121f85552bce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Word 2 (bits 95..64) of the key.  <br /></td></tr>
+<tr class="separator:a622eb9968a478e65c27121f85552bce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1996a10f99492d979ac696c77c2edfee" id="r_a1996a10f99492d979ac696c77c2edfee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a1996a10f99492d979ac696c77c2edfee">CRT_KEY_W3</a></td></tr>
+<tr class="memdesc:a1996a10f99492d979ac696c77c2edfee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Word 3 (bits 127..96) of the key.  <br /></td></tr>
+<tr class="separator:a1996a10f99492d979ac696c77c2edfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54bf522b2a515d754fcdd9a20adeff26" id="r_a54bf522b2a515d754fcdd9a20adeff26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a54bf522b2a515d754fcdd9a20adeff26">DBG</a></td></tr>
+<tr class="memdesc:a54bf522b2a515d754fcdd9a20adeff26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug for OTP power-on state machine <br  />
+  <br /></td></tr>
+<tr class="separator:a54bf522b2a515d754fcdd9a20adeff26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e6016a8ef41f4b8aabf6370a806cfa" id="r_a25e6016a8ef41f4b8aabf6370a806cfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a25e6016a8ef41f4b8aabf6370a806cfa">DEBUGEN</a></td></tr>
+<tr class="memdesc:a25e6016a8ef41f4b8aabf6370a806cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a debug feature that has been disabled.  <br /></td></tr>
+<tr class="separator:a25e6016a8ef41f4b8aabf6370a806cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81602848f7d4fd18a9e66f2b52824782" id="r_a81602848f7d4fd18a9e66f2b52824782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a81602848f7d4fd18a9e66f2b52824782">DEBUGEN_LOCK</a></td></tr>
+<tr class="memdesc:a81602848f7d4fd18a9e66f2b52824782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 1s to lock corresponding bits in DEBUGEN.  <br /></td></tr>
+<tr class="separator:a81602848f7d4fd18a9e66f2b52824782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26337005d9f74fa9fb81961ab4c50a90" id="r_a26337005d9f74fa9fb81961ab4c50a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a26337005d9f74fa9fb81961ab4c50a90">INTE</a></td></tr>
+<tr class="memdesc:a26337005d9f74fa9fb81961ab4c50a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable <br  />
+  <br /></td></tr>
+<tr class="separator:a26337005d9f74fa9fb81961ab4c50a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6dfaea3b27f2294be4cd281ae1f292a" id="r_ad6dfaea3b27f2294be4cd281ae1f292a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ad6dfaea3b27f2294be4cd281ae1f292a">INTF</a></td></tr>
+<tr class="memdesc:ad6dfaea3b27f2294be4cd281ae1f292a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force <br  />
+  <br /></td></tr>
+<tr class="separator:ad6dfaea3b27f2294be4cd281ae1f292a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaaabc752d30b1178aba89f3708ee4fc" id="r_aaaaabc752d30b1178aba89f3708ee4fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aaaaabc752d30b1178aba89f3708ee4fc">INTR</a></td></tr>
+<tr class="memdesc:aaaaabc752d30b1178aba89f3708ee4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupts <br  />
+  <br /></td></tr>
+<tr class="separator:aaaaabc752d30b1178aba89f3708ee4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5054620186536da7fee299ae6d74dfde" id="r_a5054620186536da7fee299ae6d74dfde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a5054620186536da7fee299ae6d74dfde">INTS</a></td></tr>
+<tr class="memdesc:a5054620186536da7fee299ae6d74dfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing <br  />
+  <br /></td></tr>
+<tr class="separator:a5054620186536da7fee299ae6d74dfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311599cc4ea88324412a2fdfc432a169" id="r_a311599cc4ea88324412a2fdfc432a169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a311599cc4ea88324412a2fdfc432a169">KEY_VALID</a></td></tr>
+<tr class="memdesc:a311599cc4ea88324412a2fdfc432a169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which keys were valid (enrolled) at boot time <br  />
+  <br /></td></tr>
+<tr class="separator:a311599cc4ea88324412a2fdfc432a169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e46541517c500dcc40e33c8c472183" id="r_ae2e46541517c500dcc40e33c8c472183"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ae2e46541517c500dcc40e33c8c472183">RESERVED</a></td></tr>
+<tr class="separator:ae2e46541517c500dcc40e33c8c472183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282a96ce88eac131ceb6c5f670965474" id="r_a282a96ce88eac131ceb6c5f670965474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a282a96ce88eac131ceb6c5f670965474">SBPI_INSTR</a></td></tr>
+<tr class="memdesc:a282a96ce88eac131ceb6c5f670965474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch instructions to the SBPI interface, used for programming the OTP fuses.  <br /></td></tr>
+<tr class="separator:a282a96ce88eac131ceb6c5f670965474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74e7178eff0170421ca24588ff49e41" id="r_ab74e7178eff0170421ca24588ff49e41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ab74e7178eff0170421ca24588ff49e41">SBPI_RDATA_0</a></td></tr>
+<tr class="memdesc:ab74e7178eff0170421ca24588ff49e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read payload bytes 3..0.  <br /></td></tr>
+<tr class="separator:ab74e7178eff0170421ca24588ff49e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216bdc39e5918c7451447a0bbe7c3870" id="r_a216bdc39e5918c7451447a0bbe7c3870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a216bdc39e5918c7451447a0bbe7c3870">SBPI_RDATA_1</a></td></tr>
+<tr class="memdesc:a216bdc39e5918c7451447a0bbe7c3870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read payload bytes 7..4.  <br /></td></tr>
+<tr class="separator:a216bdc39e5918c7451447a0bbe7c3870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6319b6d34629c178d932b1cae96a75d" id="r_af6319b6d34629c178d932b1cae96a75d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#af6319b6d34629c178d932b1cae96a75d">SBPI_RDATA_2</a></td></tr>
+<tr class="memdesc:af6319b6d34629c178d932b1cae96a75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read payload bytes 11..8.  <br /></td></tr>
+<tr class="separator:af6319b6d34629c178d932b1cae96a75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b399f715c08b7c0f5594e1cf2e859f" id="r_a39b399f715c08b7c0f5594e1cf2e859f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a39b399f715c08b7c0f5594e1cf2e859f">SBPI_RDATA_3</a></td></tr>
+<tr class="memdesc:a39b399f715c08b7c0f5594e1cf2e859f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read payload bytes 15..12.  <br /></td></tr>
+<tr class="separator:a39b399f715c08b7c0f5594e1cf2e859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29bc13c2ea533d3aa8eef3fb28ac429" id="r_ac29bc13c2ea533d3aa8eef3fb28ac429"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ac29bc13c2ea533d3aa8eef3fb28ac429">SBPI_STATUS</a></td></tr>
+<tr class="memdesc:ac29bc13c2ea533d3aa8eef3fb28ac429"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBPI_STATUS <br  />
+  <br /></td></tr>
+<tr class="separator:ac29bc13c2ea533d3aa8eef3fb28ac429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261c78cb89c941290d147c1dafd31193" id="r_a261c78cb89c941290d147c1dafd31193"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a261c78cb89c941290d147c1dafd31193">SBPI_WDATA_0</a></td></tr>
+<tr class="memdesc:a261c78cb89c941290d147c1dafd31193"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBPI write payload bytes 3..0 <br  />
+  <br /></td></tr>
+<tr class="separator:a261c78cb89c941290d147c1dafd31193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c151cdcbdcd2174548d0170e9d4521" id="r_ae2c151cdcbdcd2174548d0170e9d4521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ae2c151cdcbdcd2174548d0170e9d4521">SBPI_WDATA_1</a></td></tr>
+<tr class="memdesc:ae2c151cdcbdcd2174548d0170e9d4521"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBPI write payload bytes 7..4 <br  />
+  <br /></td></tr>
+<tr class="separator:ae2c151cdcbdcd2174548d0170e9d4521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057c810b3c057d21707f6068161f0988" id="r_a057c810b3c057d21707f6068161f0988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a057c810b3c057d21707f6068161f0988">SBPI_WDATA_2</a></td></tr>
+<tr class="memdesc:a057c810b3c057d21707f6068161f0988"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBPI write payload bytes 11..8 <br  />
+  <br /></td></tr>
+<tr class="separator:a057c810b3c057d21707f6068161f0988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a0aeffb78de92209a86e8df055ec80" id="r_ae0a0aeffb78de92209a86e8df055ec80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ae0a0aeffb78de92209a86e8df055ec80">SBPI_WDATA_3</a></td></tr>
+<tr class="memdesc:ae0a0aeffb78de92209a86e8df055ec80"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBPI write payload bytes 15..12 <br  />
+  <br /></td></tr>
+<tr class="separator:ae0a0aeffb78de92209a86e8df055ec80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2e2ef2c2332a1a7dc4a60ba01a5064" id="r_a2e2e2ef2c2332a1a7dc4a60ba01a5064"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a2e2e2ef2c2332a1a7dc4a60ba01a5064">SW_LOCK0</a></td></tr>
+<tr class="memdesc:a2e2e2ef2c2332a1a7dc4a60ba01a5064"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; OTP Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a2e2e2ef2c2332a1a7dc4a60ba01a5064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270ec07f7149e6984fd7e836600f30a3" id="r_a270ec07f7149e6984fd7e836600f30a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a270ec07f7149e6984fd7e836600f30a3">SW_LOCK1</a></td></tr>
+<tr class="memdesc:a270ec07f7149e6984fd7e836600f30a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 1.  <br /></td></tr>
+<tr class="separator:a270ec07f7149e6984fd7e836600f30a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8d9412ae2a4355bef778fa7968843b" id="r_aea8d9412ae2a4355bef778fa7968843b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aea8d9412ae2a4355bef778fa7968843b">SW_LOCK10</a></td></tr>
+<tr class="memdesc:aea8d9412ae2a4355bef778fa7968843b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 10.  <br /></td></tr>
+<tr class="separator:aea8d9412ae2a4355bef778fa7968843b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b0df14e807141118adca34bb7ad87c" id="r_ac9b0df14e807141118adca34bb7ad87c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ac9b0df14e807141118adca34bb7ad87c">SW_LOCK11</a></td></tr>
+<tr class="memdesc:ac9b0df14e807141118adca34bb7ad87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 11.  <br /></td></tr>
+<tr class="separator:ac9b0df14e807141118adca34bb7ad87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2194e37bd266642500f17058ed4b74e0" id="r_a2194e37bd266642500f17058ed4b74e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a2194e37bd266642500f17058ed4b74e0">SW_LOCK12</a></td></tr>
+<tr class="memdesc:a2194e37bd266642500f17058ed4b74e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 12.  <br /></td></tr>
+<tr class="separator:a2194e37bd266642500f17058ed4b74e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4586f4f01d49d849e23690f67f03a48f" id="r_a4586f4f01d49d849e23690f67f03a48f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a4586f4f01d49d849e23690f67f03a48f">SW_LOCK13</a></td></tr>
+<tr class="memdesc:a4586f4f01d49d849e23690f67f03a48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 13.  <br /></td></tr>
+<tr class="separator:a4586f4f01d49d849e23690f67f03a48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98458e9039cc430bd9522f18ab42497" id="r_ad98458e9039cc430bd9522f18ab42497"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ad98458e9039cc430bd9522f18ab42497">SW_LOCK14</a></td></tr>
+<tr class="memdesc:ad98458e9039cc430bd9522f18ab42497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 14.  <br /></td></tr>
+<tr class="separator:ad98458e9039cc430bd9522f18ab42497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57139843231ecf4361c03ecf2de5c68" id="r_af57139843231ecf4361c03ecf2de5c68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#af57139843231ecf4361c03ecf2de5c68">SW_LOCK15</a></td></tr>
+<tr class="memdesc:af57139843231ecf4361c03ecf2de5c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 15.  <br /></td></tr>
+<tr class="separator:af57139843231ecf4361c03ecf2de5c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d31dd80c59952381f753d594f922e8" id="r_a49d31dd80c59952381f753d594f922e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a49d31dd80c59952381f753d594f922e8">SW_LOCK16</a></td></tr>
+<tr class="memdesc:a49d31dd80c59952381f753d594f922e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 16.  <br /></td></tr>
+<tr class="separator:a49d31dd80c59952381f753d594f922e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17355e4d39a9863feed15377b346f471" id="r_a17355e4d39a9863feed15377b346f471"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a17355e4d39a9863feed15377b346f471">SW_LOCK17</a></td></tr>
+<tr class="memdesc:a17355e4d39a9863feed15377b346f471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 17.  <br /></td></tr>
+<tr class="separator:a17355e4d39a9863feed15377b346f471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2327d64b08b7ce4056512c160e51c135" id="r_a2327d64b08b7ce4056512c160e51c135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a2327d64b08b7ce4056512c160e51c135">SW_LOCK18</a></td></tr>
+<tr class="memdesc:a2327d64b08b7ce4056512c160e51c135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 18.  <br /></td></tr>
+<tr class="separator:a2327d64b08b7ce4056512c160e51c135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d87648552956ecc55d749aa99d3ac34" id="r_a4d87648552956ecc55d749aa99d3ac34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a4d87648552956ecc55d749aa99d3ac34">SW_LOCK19</a></td></tr>
+<tr class="memdesc:a4d87648552956ecc55d749aa99d3ac34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 19.  <br /></td></tr>
+<tr class="separator:a4d87648552956ecc55d749aa99d3ac34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fb68c15ea882a45ce1bf24a54c1e30" id="r_a72fb68c15ea882a45ce1bf24a54c1e30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a72fb68c15ea882a45ce1bf24a54c1e30">SW_LOCK2</a></td></tr>
+<tr class="memdesc:a72fb68c15ea882a45ce1bf24a54c1e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 2.  <br /></td></tr>
+<tr class="separator:a72fb68c15ea882a45ce1bf24a54c1e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabf030c098fc3791f20857f13871b0a" id="r_aaabf030c098fc3791f20857f13871b0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aaabf030c098fc3791f20857f13871b0a">SW_LOCK20</a></td></tr>
+<tr class="memdesc:aaabf030c098fc3791f20857f13871b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 20.  <br /></td></tr>
+<tr class="separator:aaabf030c098fc3791f20857f13871b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c85238c63eac6fe3994d79f905884a8" id="r_a9c85238c63eac6fe3994d79f905884a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a9c85238c63eac6fe3994d79f905884a8">SW_LOCK21</a></td></tr>
+<tr class="memdesc:a9c85238c63eac6fe3994d79f905884a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 21.  <br /></td></tr>
+<tr class="separator:a9c85238c63eac6fe3994d79f905884a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8278b11a82c147ccadcad8883b03b800" id="r_a8278b11a82c147ccadcad8883b03b800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a8278b11a82c147ccadcad8883b03b800">SW_LOCK22</a></td></tr>
+<tr class="memdesc:a8278b11a82c147ccadcad8883b03b800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 22.  <br /></td></tr>
+<tr class="separator:a8278b11a82c147ccadcad8883b03b800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2d2d8280af6d072d5639c9f8e6c12c" id="r_abd2d2d8280af6d072d5639c9f8e6c12c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#abd2d2d8280af6d072d5639c9f8e6c12c">SW_LOCK23</a></td></tr>
+<tr class="memdesc:abd2d2d8280af6d072d5639c9f8e6c12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 23.  <br /></td></tr>
+<tr class="separator:abd2d2d8280af6d072d5639c9f8e6c12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834811c88fc416127f9281ce58b16153" id="r_a834811c88fc416127f9281ce58b16153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a834811c88fc416127f9281ce58b16153">SW_LOCK24</a></td></tr>
+<tr class="memdesc:a834811c88fc416127f9281ce58b16153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 24.  <br /></td></tr>
+<tr class="separator:a834811c88fc416127f9281ce58b16153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed620b745cfeadac482729101af8e939" id="r_aed620b745cfeadac482729101af8e939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aed620b745cfeadac482729101af8e939">SW_LOCK25</a></td></tr>
+<tr class="memdesc:aed620b745cfeadac482729101af8e939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 25.  <br /></td></tr>
+<tr class="separator:aed620b745cfeadac482729101af8e939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd7af28e5b17fd6d31fdb73bcc6b024" id="r_adfd7af28e5b17fd6d31fdb73bcc6b024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#adfd7af28e5b17fd6d31fdb73bcc6b024">SW_LOCK26</a></td></tr>
+<tr class="memdesc:adfd7af28e5b17fd6d31fdb73bcc6b024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 26.  <br /></td></tr>
+<tr class="separator:adfd7af28e5b17fd6d31fdb73bcc6b024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f4a28d9e8a72667fac7f9a2009e980" id="r_a61f4a28d9e8a72667fac7f9a2009e980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a61f4a28d9e8a72667fac7f9a2009e980">SW_LOCK27</a></td></tr>
+<tr class="memdesc:a61f4a28d9e8a72667fac7f9a2009e980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 27.  <br /></td></tr>
+<tr class="separator:a61f4a28d9e8a72667fac7f9a2009e980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2724a84946459d404ffb9e853c867c" id="r_a5a2724a84946459d404ffb9e853c867c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a5a2724a84946459d404ffb9e853c867c">SW_LOCK28</a></td></tr>
+<tr class="memdesc:a5a2724a84946459d404ffb9e853c867c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 28.  <br /></td></tr>
+<tr class="separator:a5a2724a84946459d404ffb9e853c867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5a0dac6ff9e314492810cbd9810963" id="r_a4d5a0dac6ff9e314492810cbd9810963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a4d5a0dac6ff9e314492810cbd9810963">SW_LOCK29</a></td></tr>
+<tr class="memdesc:a4d5a0dac6ff9e314492810cbd9810963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 29.  <br /></td></tr>
+<tr class="separator:a4d5a0dac6ff9e314492810cbd9810963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a8138d69c9769a2920b5b19b895030" id="r_a08a8138d69c9769a2920b5b19b895030"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a08a8138d69c9769a2920b5b19b895030">SW_LOCK3</a></td></tr>
+<tr class="memdesc:a08a8138d69c9769a2920b5b19b895030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 3.  <br /></td></tr>
+<tr class="separator:a08a8138d69c9769a2920b5b19b895030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af620246efb584dad40736642d83573fc" id="r_af620246efb584dad40736642d83573fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#af620246efb584dad40736642d83573fc">SW_LOCK30</a></td></tr>
+<tr class="memdesc:af620246efb584dad40736642d83573fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 30.  <br /></td></tr>
+<tr class="separator:af620246efb584dad40736642d83573fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e5705a476af39f668c2fe7a5c88827" id="r_af1e5705a476af39f668c2fe7a5c88827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#af1e5705a476af39f668c2fe7a5c88827">SW_LOCK31</a></td></tr>
+<tr class="memdesc:af1e5705a476af39f668c2fe7a5c88827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 31.  <br /></td></tr>
+<tr class="separator:af1e5705a476af39f668c2fe7a5c88827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf22b5e8dfe032aa1456f39feee7f78" id="r_a1cf22b5e8dfe032aa1456f39feee7f78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a1cf22b5e8dfe032aa1456f39feee7f78">SW_LOCK32</a></td></tr>
+<tr class="memdesc:a1cf22b5e8dfe032aa1456f39feee7f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 32.  <br /></td></tr>
+<tr class="separator:a1cf22b5e8dfe032aa1456f39feee7f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae521c1c1a5e7490f70479af08d73eecf" id="r_ae521c1c1a5e7490f70479af08d73eecf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ae521c1c1a5e7490f70479af08d73eecf">SW_LOCK33</a></td></tr>
+<tr class="memdesc:ae521c1c1a5e7490f70479af08d73eecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 33.  <br /></td></tr>
+<tr class="separator:ae521c1c1a5e7490f70479af08d73eecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0533fcb4b6ed34764592576bc55b90" id="r_acd0533fcb4b6ed34764592576bc55b90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#acd0533fcb4b6ed34764592576bc55b90">SW_LOCK34</a></td></tr>
+<tr class="memdesc:acd0533fcb4b6ed34764592576bc55b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 34.  <br /></td></tr>
+<tr class="separator:acd0533fcb4b6ed34764592576bc55b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1000cf38d7d0a432ac242d73e189a336" id="r_a1000cf38d7d0a432ac242d73e189a336"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a1000cf38d7d0a432ac242d73e189a336">SW_LOCK35</a></td></tr>
+<tr class="memdesc:a1000cf38d7d0a432ac242d73e189a336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 35.  <br /></td></tr>
+<tr class="separator:a1000cf38d7d0a432ac242d73e189a336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb3ba9274da81f0682d3317cb12589e" id="r_a6bb3ba9274da81f0682d3317cb12589e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a6bb3ba9274da81f0682d3317cb12589e">SW_LOCK36</a></td></tr>
+<tr class="memdesc:a6bb3ba9274da81f0682d3317cb12589e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 36.  <br /></td></tr>
+<tr class="separator:a6bb3ba9274da81f0682d3317cb12589e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4c2d97a8ae59086c873b6e280102b3" id="r_a9a4c2d97a8ae59086c873b6e280102b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a9a4c2d97a8ae59086c873b6e280102b3">SW_LOCK37</a></td></tr>
+<tr class="memdesc:a9a4c2d97a8ae59086c873b6e280102b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 37.  <br /></td></tr>
+<tr class="separator:a9a4c2d97a8ae59086c873b6e280102b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bab9a1c80f745df2dae21318b14026" id="r_a44bab9a1c80f745df2dae21318b14026"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a44bab9a1c80f745df2dae21318b14026">SW_LOCK38</a></td></tr>
+<tr class="memdesc:a44bab9a1c80f745df2dae21318b14026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 38.  <br /></td></tr>
+<tr class="separator:a44bab9a1c80f745df2dae21318b14026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1422069df91695e4cc2d2dab165451c" id="r_ad1422069df91695e4cc2d2dab165451c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ad1422069df91695e4cc2d2dab165451c">SW_LOCK39</a></td></tr>
+<tr class="memdesc:ad1422069df91695e4cc2d2dab165451c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 39.  <br /></td></tr>
+<tr class="separator:ad1422069df91695e4cc2d2dab165451c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428236fe7608a5ec52b86a39b197dc7c" id="r_a428236fe7608a5ec52b86a39b197dc7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a428236fe7608a5ec52b86a39b197dc7c">SW_LOCK4</a></td></tr>
+<tr class="memdesc:a428236fe7608a5ec52b86a39b197dc7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 4.  <br /></td></tr>
+<tr class="separator:a428236fe7608a5ec52b86a39b197dc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ad6a64eaff2805661b1c1aeecc36e6" id="r_ad6ad6a64eaff2805661b1c1aeecc36e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ad6ad6a64eaff2805661b1c1aeecc36e6">SW_LOCK40</a></td></tr>
+<tr class="memdesc:ad6ad6a64eaff2805661b1c1aeecc36e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 40.  <br /></td></tr>
+<tr class="separator:ad6ad6a64eaff2805661b1c1aeecc36e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89eb1eac81b059a63bfccdfdbfecaf49" id="r_a89eb1eac81b059a63bfccdfdbfecaf49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a89eb1eac81b059a63bfccdfdbfecaf49">SW_LOCK41</a></td></tr>
+<tr class="memdesc:a89eb1eac81b059a63bfccdfdbfecaf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 41.  <br /></td></tr>
+<tr class="separator:a89eb1eac81b059a63bfccdfdbfecaf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437fc29096873a453171050fc4567360" id="r_a437fc29096873a453171050fc4567360"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a437fc29096873a453171050fc4567360">SW_LOCK42</a></td></tr>
+<tr class="memdesc:a437fc29096873a453171050fc4567360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 42.  <br /></td></tr>
+<tr class="separator:a437fc29096873a453171050fc4567360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b58ddbb4a3568bdbf14ca5c074359e" id="r_ae0b58ddbb4a3568bdbf14ca5c074359e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ae0b58ddbb4a3568bdbf14ca5c074359e">SW_LOCK43</a></td></tr>
+<tr class="memdesc:ae0b58ddbb4a3568bdbf14ca5c074359e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 43.  <br /></td></tr>
+<tr class="separator:ae0b58ddbb4a3568bdbf14ca5c074359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a1671ef195562e49f5b62608af9406" id="r_ae2a1671ef195562e49f5b62608af9406"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ae2a1671ef195562e49f5b62608af9406">SW_LOCK44</a></td></tr>
+<tr class="memdesc:ae2a1671ef195562e49f5b62608af9406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 44.  <br /></td></tr>
+<tr class="separator:ae2a1671ef195562e49f5b62608af9406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76922585fb336f2b80b1e6583de6c143" id="r_a76922585fb336f2b80b1e6583de6c143"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a76922585fb336f2b80b1e6583de6c143">SW_LOCK45</a></td></tr>
+<tr class="memdesc:a76922585fb336f2b80b1e6583de6c143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 45.  <br /></td></tr>
+<tr class="separator:a76922585fb336f2b80b1e6583de6c143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3168a63ad5dacbd425f6fb7facffcb1" id="r_aa3168a63ad5dacbd425f6fb7facffcb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aa3168a63ad5dacbd425f6fb7facffcb1">SW_LOCK46</a></td></tr>
+<tr class="memdesc:aa3168a63ad5dacbd425f6fb7facffcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 46.  <br /></td></tr>
+<tr class="separator:aa3168a63ad5dacbd425f6fb7facffcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff01e5c32d5f901c2973a6e2db1ee884" id="r_aff01e5c32d5f901c2973a6e2db1ee884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aff01e5c32d5f901c2973a6e2db1ee884">SW_LOCK47</a></td></tr>
+<tr class="memdesc:aff01e5c32d5f901c2973a6e2db1ee884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 47.  <br /></td></tr>
+<tr class="separator:aff01e5c32d5f901c2973a6e2db1ee884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cba24a95badf40582b5451aaea2a377" id="r_a3cba24a95badf40582b5451aaea2a377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a3cba24a95badf40582b5451aaea2a377">SW_LOCK48</a></td></tr>
+<tr class="memdesc:a3cba24a95badf40582b5451aaea2a377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 48.  <br /></td></tr>
+<tr class="separator:a3cba24a95badf40582b5451aaea2a377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fc9805179612a174cd89743b588d64" id="r_a32fc9805179612a174cd89743b588d64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a32fc9805179612a174cd89743b588d64">SW_LOCK49</a></td></tr>
+<tr class="memdesc:a32fc9805179612a174cd89743b588d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 49.  <br /></td></tr>
+<tr class="separator:a32fc9805179612a174cd89743b588d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0466060fe6a2ea63cb65f6abf66e562d" id="r_a0466060fe6a2ea63cb65f6abf66e562d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a0466060fe6a2ea63cb65f6abf66e562d">SW_LOCK5</a></td></tr>
+<tr class="memdesc:a0466060fe6a2ea63cb65f6abf66e562d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 5.  <br /></td></tr>
+<tr class="separator:a0466060fe6a2ea63cb65f6abf66e562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15724aad10d55ab1c12f05e9ba295eeb" id="r_a15724aad10d55ab1c12f05e9ba295eeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a15724aad10d55ab1c12f05e9ba295eeb">SW_LOCK50</a></td></tr>
+<tr class="memdesc:a15724aad10d55ab1c12f05e9ba295eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 50.  <br /></td></tr>
+<tr class="separator:a15724aad10d55ab1c12f05e9ba295eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3246b470617e46c760c9ff28d838540" id="r_aa3246b470617e46c760c9ff28d838540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aa3246b470617e46c760c9ff28d838540">SW_LOCK51</a></td></tr>
+<tr class="memdesc:aa3246b470617e46c760c9ff28d838540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 51.  <br /></td></tr>
+<tr class="separator:aa3246b470617e46c760c9ff28d838540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3dfe4412bb4588ca196cde706f0fb05" id="r_ab3dfe4412bb4588ca196cde706f0fb05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ab3dfe4412bb4588ca196cde706f0fb05">SW_LOCK52</a></td></tr>
+<tr class="memdesc:ab3dfe4412bb4588ca196cde706f0fb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 52.  <br /></td></tr>
+<tr class="separator:ab3dfe4412bb4588ca196cde706f0fb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab345d184df723b2bd4d6b0fab709b875" id="r_ab345d184df723b2bd4d6b0fab709b875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ab345d184df723b2bd4d6b0fab709b875">SW_LOCK53</a></td></tr>
+<tr class="memdesc:ab345d184df723b2bd4d6b0fab709b875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 53.  <br /></td></tr>
+<tr class="separator:ab345d184df723b2bd4d6b0fab709b875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f4763c7c90b091fdb2b39799661af9" id="r_af3f4763c7c90b091fdb2b39799661af9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#af3f4763c7c90b091fdb2b39799661af9">SW_LOCK54</a></td></tr>
+<tr class="memdesc:af3f4763c7c90b091fdb2b39799661af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 54.  <br /></td></tr>
+<tr class="separator:af3f4763c7c90b091fdb2b39799661af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e47316a1303e863f781552d71fe9b8b" id="r_a0e47316a1303e863f781552d71fe9b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a0e47316a1303e863f781552d71fe9b8b">SW_LOCK55</a></td></tr>
+<tr class="memdesc:a0e47316a1303e863f781552d71fe9b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 55.  <br /></td></tr>
+<tr class="separator:a0e47316a1303e863f781552d71fe9b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac17199f8581000af363bea28a954741a" id="r_ac17199f8581000af363bea28a954741a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ac17199f8581000af363bea28a954741a">SW_LOCK56</a></td></tr>
+<tr class="memdesc:ac17199f8581000af363bea28a954741a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 56.  <br /></td></tr>
+<tr class="separator:ac17199f8581000af363bea28a954741a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fcb2c2236476537420598d16be8b04" id="r_a37fcb2c2236476537420598d16be8b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a37fcb2c2236476537420598d16be8b04">SW_LOCK57</a></td></tr>
+<tr class="memdesc:a37fcb2c2236476537420598d16be8b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 57.  <br /></td></tr>
+<tr class="separator:a37fcb2c2236476537420598d16be8b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c4237c49d199f40aeff0fbb2ee9472" id="r_ad6c4237c49d199f40aeff0fbb2ee9472"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#ad6c4237c49d199f40aeff0fbb2ee9472">SW_LOCK58</a></td></tr>
+<tr class="memdesc:ad6c4237c49d199f40aeff0fbb2ee9472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 58.  <br /></td></tr>
+<tr class="separator:ad6c4237c49d199f40aeff0fbb2ee9472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefadda8ae7fe0adab6d80308f739f9f" id="r_aaefadda8ae7fe0adab6d80308f739f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aaefadda8ae7fe0adab6d80308f739f9f">SW_LOCK59</a></td></tr>
+<tr class="memdesc:aaefadda8ae7fe0adab6d80308f739f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 59.  <br /></td></tr>
+<tr class="separator:aaefadda8ae7fe0adab6d80308f739f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5beb750c85b79d8efd42736ea53ab0d6" id="r_a5beb750c85b79d8efd42736ea53ab0d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a5beb750c85b79d8efd42736ea53ab0d6">SW_LOCK6</a></td></tr>
+<tr class="memdesc:a5beb750c85b79d8efd42736ea53ab0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 6.  <br /></td></tr>
+<tr class="separator:a5beb750c85b79d8efd42736ea53ab0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8408f31a45f9841bd1ed5e2bcd0cced1" id="r_a8408f31a45f9841bd1ed5e2bcd0cced1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a8408f31a45f9841bd1ed5e2bcd0cced1">SW_LOCK60</a></td></tr>
+<tr class="memdesc:a8408f31a45f9841bd1ed5e2bcd0cced1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 60.  <br /></td></tr>
+<tr class="separator:a8408f31a45f9841bd1ed5e2bcd0cced1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9bf8bd2a8d7b568ab37fec26908b98" id="r_a5c9bf8bd2a8d7b568ab37fec26908b98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a5c9bf8bd2a8d7b568ab37fec26908b98">SW_LOCK61</a></td></tr>
+<tr class="memdesc:a5c9bf8bd2a8d7b568ab37fec26908b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 61.  <br /></td></tr>
+<tr class="separator:a5c9bf8bd2a8d7b568ab37fec26908b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b54ebf9ff14a541c7a259e35d2432c8" id="r_a7b54ebf9ff14a541c7a259e35d2432c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a7b54ebf9ff14a541c7a259e35d2432c8">SW_LOCK62</a></td></tr>
+<tr class="memdesc:a7b54ebf9ff14a541c7a259e35d2432c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 62.  <br /></td></tr>
+<tr class="separator:a7b54ebf9ff14a541c7a259e35d2432c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5cc30d1712b1b2e913bdcd667755c6" id="r_a9b5cc30d1712b1b2e913bdcd667755c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a9b5cc30d1712b1b2e913bdcd667755c6">SW_LOCK63</a></td></tr>
+<tr class="memdesc:a9b5cc30d1712b1b2e913bdcd667755c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 63.  <br /></td></tr>
+<tr class="separator:a9b5cc30d1712b1b2e913bdcd667755c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1c4be6968a3b4029f6e0ec454ca49b" id="r_aff1c4be6968a3b4029f6e0ec454ca49b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#aff1c4be6968a3b4029f6e0ec454ca49b">SW_LOCK7</a></td></tr>
+<tr class="memdesc:aff1c4be6968a3b4029f6e0ec454ca49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 7.  <br /></td></tr>
+<tr class="separator:aff1c4be6968a3b4029f6e0ec454ca49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9731a19929b4ad6cea721fde15658321" id="r_a9731a19929b4ad6cea721fde15658321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a9731a19929b4ad6cea721fde15658321">SW_LOCK8</a></td></tr>
+<tr class="memdesc:a9731a19929b4ad6cea721fde15658321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 8.  <br /></td></tr>
+<tr class="separator:a9731a19929b4ad6cea721fde15658321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de109fdec9f9d7a447d36128af85589" id="r_a4de109fdec9f9d7a447d36128af85589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a4de109fdec9f9d7a447d36128af85589">SW_LOCK9</a></td></tr>
+<tr class="memdesc:a4de109fdec9f9d7a447d36128af85589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Software lock register for page 9.  <br /></td></tr>
+<tr class="separator:a4de109fdec9f9d7a447d36128af85589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086b0c8bde6a29f15e16a507e66e985b" id="r_a086b0c8bde6a29f15e16a507e66e985b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOTP__Type.html#a086b0c8bde6a29f15e16a507e66e985b">USR</a></td></tr>
+<tr class="memdesc:a086b0c8bde6a29f15e16a507e66e985b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls for APB data read interface (USER interface) <br  />
+  <br /></td></tr>
+<tr class="separator:a086b0c8bde6a29f15e16a507e66e985b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>SNPS OTP control IF (SBPI and RPi wrapper control) (OTP) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a2508f5e65702dabd06215873e0436541" name="a2508f5e65702dabd06215873e0436541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2508f5e65702dabd06215873e0436541">&#9670;&#160;</a></span>ARCHSEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::ARCHSEL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Architecture select (Arm/RISC-V). </p>
+<p>The default and allowable values of this register are constrained by the critical boot flags. This register is reset by the earliest reset in the switched core power domain (before a processor cold reset). Cores sample their architecture select signal on a warm reset. The source of the warm reset could be the system power-up state machine, the watchdog timer, Arm SYSRESETREQ or from RISC-V hartresetreq. Note that when an Arm core is deselected, its cold reset domain is also held in reset, since in particular the SYSRESETREQ bit becomes inaccessible once the core is deselected. Note also the RISC-V cores do not have a cold reset domain, since their corresponding controls are located in the Debug Module. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6811e908aa0e655022895d5a6fa0774a" name="a6811e908aa0e655022895d5a6fa0774a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6811e908aa0e655022895d5a6fa0774a">&#9670;&#160;</a></span>ARCHSEL_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::ARCHSEL_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current architecture select state of each core. </p>
+<p>Cores sample the current value of the ARCHSEL register when their warm reset is released, at which point the corresponding bit in this register will also update. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a80175aa4562debe360725e3141d9fbd2" name="a80175aa4562debe360725e3141d9fbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80175aa4562debe360725e3141d9fbd2">&#9670;&#160;</a></span>BIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::BIST</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>During BIST, count address locations that have at least one leaky bit <br  />
+ </p>
+
+</div>
+</div>
+<a id="adb81e401fc4884e71b37a4a5df14f235" name="adb81e401fc4884e71b37a4a5df14f235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb81e401fc4884e71b37a4a5df14f235">&#9670;&#160;</a></span>BOOTDIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::BOOTDIS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tell the bootrom to ignore scratch register boot vectors (both power manager and watchdog) on the next power up. </p>
+<p>If an early boot stage has soft-locked some OTP pages in order to protect their contents from later stages, there is a risk that Secure code running at a later stage can unlock the pages by performing a watchdog reset that resets the OTP. This register can be used to ensure that the bootloader runs as normal on the next power up, preventing Secure code at a later stage from accessing OTP in its unlocked state. Should be used in conjunction with the power manager BOOTDIS register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a301190ac6dd675e9769bfe1c2624df83" name="a301190ac6dd675e9769bfe1c2624df83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301190ac6dd675e9769bfe1c2624df83">&#9670;&#160;</a></span>CRITICAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::CRITICAL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Quickly check values of critical flags read during boot up <br  />
+ </p>
+
+</div>
+</div>
+<a id="a861a41255c98beff93cd052639bccf64" name="a861a41255c98beff93cd052639bccf64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a861a41255c98beff93cd052639bccf64">&#9670;&#160;</a></span>CRT_KEY_W0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::CRT_KEY_W0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Word 0 (bits 31..0) of the key. </p>
+<p>Write only, read returns 0x0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0ee7c9d9cf96762842e96cd83d94ec17" name="a0ee7c9d9cf96762842e96cd83d94ec17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee7c9d9cf96762842e96cd83d94ec17">&#9670;&#160;</a></span>CRT_KEY_W1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::CRT_KEY_W1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Word 1 (bits 63..32) of the key. </p>
+<p>Write only, read returns 0x0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a622eb9968a478e65c27121f85552bce2" name="a622eb9968a478e65c27121f85552bce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622eb9968a478e65c27121f85552bce2">&#9670;&#160;</a></span>CRT_KEY_W2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::CRT_KEY_W2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Word 2 (bits 95..64) of the key. </p>
+<p>Write only, read returns 0x0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1996a10f99492d979ac696c77c2edfee" name="a1996a10f99492d979ac696c77c2edfee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1996a10f99492d979ac696c77c2edfee">&#9670;&#160;</a></span>CRT_KEY_W3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::CRT_KEY_W3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Word 3 (bits 127..96) of the key. </p>
+<p>Write only, read returns 0x0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a54bf522b2a515d754fcdd9a20adeff26" name="a54bf522b2a515d754fcdd9a20adeff26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54bf522b2a515d754fcdd9a20adeff26">&#9670;&#160;</a></span>DBG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::DBG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debug for OTP power-on state machine <br  />
+ </p>
+
+</div>
+</div>
+<a id="a25e6016a8ef41f4b8aabf6370a806cfa" name="a25e6016a8ef41f4b8aabf6370a806cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e6016a8ef41f4b8aabf6370a806cfa">&#9670;&#160;</a></span>DEBUGEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::DEBUGEN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable a debug feature that has been disabled. </p>
+<p>Debug features are disabled if one of the relevant critical boot flags is set in OTP (DEBUG_DISABLE or SECURE_DEBUG_DISABLE), OR if a debug key is marked valid in OTP, and the matching key value has not been supplied over SWD. Specifically:</p><ul>
+<li>The DEBUG_DISABLE flag disables all debug features. This can be fully overridden by setting all bits of this register.</li>
+<li>The SECURE_DEBUG_DISABLE flag disables secure processor debug. This can be fully overridden by setting the PROC0_SECURE and PROC1_SECURE bits of this register. - If a single debug key has been registered, and no matching key value has been supplied over SWD, then all debug features are disabled. This can be fully overridden by setting all bits of this register. - If both debug keys have been registered, and the Non-secure key's value (key 6) has been supplied over SWD, secure processor debug is disabled. This can be fully overridden by setting the PROC0_SECURE and PROC1_SECURE bits of this register. - If both debug keys have been registered, and the Secure key's value (key 5) has been supplied over SWD, then no debug features are disabled by the key mechanism. However, note that in this case debug features may still be disabled by the critical boot flags. <br  />
+ </li>
+</ul>
+
+</div>
+</div>
+<a id="a81602848f7d4fd18a9e66f2b52824782" name="a81602848f7d4fd18a9e66f2b52824782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81602848f7d4fd18a9e66f2b52824782">&#9670;&#160;</a></span>DEBUGEN_LOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::DEBUGEN_LOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write 1s to lock corresponding bits in DEBUGEN. </p>
+<p>This register is reset by the processor cold reset. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a26337005d9f74fa9fb81961ab4c50a90" name="a26337005d9f74fa9fb81961ab4c50a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26337005d9f74fa9fb81961ab4c50a90">&#9670;&#160;</a></span>INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad6dfaea3b27f2294be4cd281ae1f292a" name="ad6dfaea3b27f2294be4cd281ae1f292a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6dfaea3b27f2294be4cd281ae1f292a">&#9670;&#160;</a></span>INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaaaabc752d30b1178aba89f3708ee4fc" name="aaaaabc752d30b1178aba89f3708ee4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaaabc752d30b1178aba89f3708ee4fc">&#9670;&#160;</a></span>INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupts <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5054620186536da7fee299ae6d74dfde" name="a5054620186536da7fee299ae6d74dfde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5054620186536da7fee299ae6d74dfde">&#9670;&#160;</a></span>INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing <br  />
+ </p>
+
+</div>
+</div>
+<a id="a311599cc4ea88324412a2fdfc432a169" name="a311599cc4ea88324412a2fdfc432a169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311599cc4ea88324412a2fdfc432a169">&#9670;&#160;</a></span>KEY_VALID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::KEY_VALID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Which keys were valid (enrolled) at boot time <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae2e46541517c500dcc40e33c8c472183" name="ae2e46541517c500dcc40e33c8c472183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e46541517c500dcc40e33c8c472183">&#9670;&#160;</a></span>RESERVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::RESERVED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a282a96ce88eac131ceb6c5f670965474" name="a282a96ce88eac131ceb6c5f670965474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282a96ce88eac131ceb6c5f670965474">&#9670;&#160;</a></span>SBPI_INSTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_INSTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dispatch instructions to the SBPI interface, used for programming the OTP fuses. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ab74e7178eff0170421ca24588ff49e41" name="ab74e7178eff0170421ca24588ff49e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74e7178eff0170421ca24588ff49e41">&#9670;&#160;</a></span>SBPI_RDATA_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_RDATA_0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read payload bytes 3..0. </p>
+<p>Once read, the data in the register will automatically clear to 0. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a216bdc39e5918c7451447a0bbe7c3870" name="a216bdc39e5918c7451447a0bbe7c3870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216bdc39e5918c7451447a0bbe7c3870">&#9670;&#160;</a></span>SBPI_RDATA_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_RDATA_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read payload bytes 7..4. </p>
+<p>Once read, the data in the register will automatically clear to 0. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af6319b6d34629c178d932b1cae96a75d" name="af6319b6d34629c178d932b1cae96a75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6319b6d34629c178d932b1cae96a75d">&#9670;&#160;</a></span>SBPI_RDATA_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_RDATA_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read payload bytes 11..8. </p>
+<p>Once read, the data in the register will automatically clear to 0. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a39b399f715c08b7c0f5594e1cf2e859f" name="a39b399f715c08b7c0f5594e1cf2e859f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b399f715c08b7c0f5594e1cf2e859f">&#9670;&#160;</a></span>SBPI_RDATA_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_RDATA_3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read payload bytes 15..12. </p>
+<p>Once read, the data in the register will automatically clear to 0. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac29bc13c2ea533d3aa8eef3fb28ac429" name="ac29bc13c2ea533d3aa8eef3fb28ac429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29bc13c2ea533d3aa8eef3fb28ac429">&#9670;&#160;</a></span>SBPI_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SBPI_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="a261c78cb89c941290d147c1dafd31193" name="a261c78cb89c941290d147c1dafd31193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261c78cb89c941290d147c1dafd31193">&#9670;&#160;</a></span>SBPI_WDATA_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_WDATA_0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SBPI write payload bytes 3..0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae2c151cdcbdcd2174548d0170e9d4521" name="ae2c151cdcbdcd2174548d0170e9d4521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c151cdcbdcd2174548d0170e9d4521">&#9670;&#160;</a></span>SBPI_WDATA_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_WDATA_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SBPI write payload bytes 7..4 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a057c810b3c057d21707f6068161f0988" name="a057c810b3c057d21707f6068161f0988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057c810b3c057d21707f6068161f0988">&#9670;&#160;</a></span>SBPI_WDATA_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_WDATA_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SBPI write payload bytes 11..8 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae0a0aeffb78de92209a86e8df055ec80" name="ae0a0aeffb78de92209a86e8df055ec80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a0aeffb78de92209a86e8df055ec80">&#9670;&#160;</a></span>SBPI_WDATA_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SBPI_WDATA_3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SBPI write payload bytes 15..12 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2e2e2ef2c2332a1a7dc4a60ba01a5064" name="a2e2e2ef2c2332a1a7dc4a60ba01a5064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2e2ef2c2332a1a7dc4a60ba01a5064">&#9670;&#160;</a></span>SW_LOCK0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; OTP Structure <br  />
+ </p>
+<p>Software lock register for page 0. Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a270ec07f7149e6984fd7e836600f30a3" name="a270ec07f7149e6984fd7e836600f30a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270ec07f7149e6984fd7e836600f30a3">&#9670;&#160;</a></span>SW_LOCK1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 1. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aea8d9412ae2a4355bef778fa7968843b" name="aea8d9412ae2a4355bef778fa7968843b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8d9412ae2a4355bef778fa7968843b">&#9670;&#160;</a></span>SW_LOCK10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 10. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac9b0df14e807141118adca34bb7ad87c" name="ac9b0df14e807141118adca34bb7ad87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b0df14e807141118adca34bb7ad87c">&#9670;&#160;</a></span>SW_LOCK11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 11. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2194e37bd266642500f17058ed4b74e0" name="a2194e37bd266642500f17058ed4b74e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2194e37bd266642500f17058ed4b74e0">&#9670;&#160;</a></span>SW_LOCK12</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 12. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4586f4f01d49d849e23690f67f03a48f" name="a4586f4f01d49d849e23690f67f03a48f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4586f4f01d49d849e23690f67f03a48f">&#9670;&#160;</a></span>SW_LOCK13</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 13. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad98458e9039cc430bd9522f18ab42497" name="ad98458e9039cc430bd9522f18ab42497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98458e9039cc430bd9522f18ab42497">&#9670;&#160;</a></span>SW_LOCK14</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 14. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af57139843231ecf4361c03ecf2de5c68" name="af57139843231ecf4361c03ecf2de5c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57139843231ecf4361c03ecf2de5c68">&#9670;&#160;</a></span>SW_LOCK15</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 15. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a49d31dd80c59952381f753d594f922e8" name="a49d31dd80c59952381f753d594f922e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d31dd80c59952381f753d594f922e8">&#9670;&#160;</a></span>SW_LOCK16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 16. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a17355e4d39a9863feed15377b346f471" name="a17355e4d39a9863feed15377b346f471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17355e4d39a9863feed15377b346f471">&#9670;&#160;</a></span>SW_LOCK17</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 17. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2327d64b08b7ce4056512c160e51c135" name="a2327d64b08b7ce4056512c160e51c135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2327d64b08b7ce4056512c160e51c135">&#9670;&#160;</a></span>SW_LOCK18</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 18. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4d87648552956ecc55d749aa99d3ac34" name="a4d87648552956ecc55d749aa99d3ac34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d87648552956ecc55d749aa99d3ac34">&#9670;&#160;</a></span>SW_LOCK19</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 19. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a72fb68c15ea882a45ce1bf24a54c1e30" name="a72fb68c15ea882a45ce1bf24a54c1e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fb68c15ea882a45ce1bf24a54c1e30">&#9670;&#160;</a></span>SW_LOCK2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 2. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaabf030c098fc3791f20857f13871b0a" name="aaabf030c098fc3791f20857f13871b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabf030c098fc3791f20857f13871b0a">&#9670;&#160;</a></span>SW_LOCK20</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 20. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9c85238c63eac6fe3994d79f905884a8" name="a9c85238c63eac6fe3994d79f905884a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c85238c63eac6fe3994d79f905884a8">&#9670;&#160;</a></span>SW_LOCK21</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 21. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8278b11a82c147ccadcad8883b03b800" name="a8278b11a82c147ccadcad8883b03b800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8278b11a82c147ccadcad8883b03b800">&#9670;&#160;</a></span>SW_LOCK22</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 22. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="abd2d2d8280af6d072d5639c9f8e6c12c" name="abd2d2d8280af6d072d5639c9f8e6c12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2d2d8280af6d072d5639c9f8e6c12c">&#9670;&#160;</a></span>SW_LOCK23</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 23. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a834811c88fc416127f9281ce58b16153" name="a834811c88fc416127f9281ce58b16153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834811c88fc416127f9281ce58b16153">&#9670;&#160;</a></span>SW_LOCK24</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 24. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aed620b745cfeadac482729101af8e939" name="aed620b745cfeadac482729101af8e939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed620b745cfeadac482729101af8e939">&#9670;&#160;</a></span>SW_LOCK25</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 25. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="adfd7af28e5b17fd6d31fdb73bcc6b024" name="adfd7af28e5b17fd6d31fdb73bcc6b024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd7af28e5b17fd6d31fdb73bcc6b024">&#9670;&#160;</a></span>SW_LOCK26</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 26. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a61f4a28d9e8a72667fac7f9a2009e980" name="a61f4a28d9e8a72667fac7f9a2009e980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f4a28d9e8a72667fac7f9a2009e980">&#9670;&#160;</a></span>SW_LOCK27</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 27. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5a2724a84946459d404ffb9e853c867c" name="a5a2724a84946459d404ffb9e853c867c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2724a84946459d404ffb9e853c867c">&#9670;&#160;</a></span>SW_LOCK28</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 28. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4d5a0dac6ff9e314492810cbd9810963" name="a4d5a0dac6ff9e314492810cbd9810963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5a0dac6ff9e314492810cbd9810963">&#9670;&#160;</a></span>SW_LOCK29</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 29. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a08a8138d69c9769a2920b5b19b895030" name="a08a8138d69c9769a2920b5b19b895030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a8138d69c9769a2920b5b19b895030">&#9670;&#160;</a></span>SW_LOCK3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 3. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af620246efb584dad40736642d83573fc" name="af620246efb584dad40736642d83573fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af620246efb584dad40736642d83573fc">&#9670;&#160;</a></span>SW_LOCK30</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 30. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af1e5705a476af39f668c2fe7a5c88827" name="af1e5705a476af39f668c2fe7a5c88827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e5705a476af39f668c2fe7a5c88827">&#9670;&#160;</a></span>SW_LOCK31</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 31. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1cf22b5e8dfe032aa1456f39feee7f78" name="a1cf22b5e8dfe032aa1456f39feee7f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf22b5e8dfe032aa1456f39feee7f78">&#9670;&#160;</a></span>SW_LOCK32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 32. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae521c1c1a5e7490f70479af08d73eecf" name="ae521c1c1a5e7490f70479af08d73eecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae521c1c1a5e7490f70479af08d73eecf">&#9670;&#160;</a></span>SW_LOCK33</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 33. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="acd0533fcb4b6ed34764592576bc55b90" name="acd0533fcb4b6ed34764592576bc55b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0533fcb4b6ed34764592576bc55b90">&#9670;&#160;</a></span>SW_LOCK34</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK34</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 34. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1000cf38d7d0a432ac242d73e189a336" name="a1000cf38d7d0a432ac242d73e189a336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1000cf38d7d0a432ac242d73e189a336">&#9670;&#160;</a></span>SW_LOCK35</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 35. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6bb3ba9274da81f0682d3317cb12589e" name="a6bb3ba9274da81f0682d3317cb12589e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb3ba9274da81f0682d3317cb12589e">&#9670;&#160;</a></span>SW_LOCK36</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK36</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 36. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9a4c2d97a8ae59086c873b6e280102b3" name="a9a4c2d97a8ae59086c873b6e280102b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4c2d97a8ae59086c873b6e280102b3">&#9670;&#160;</a></span>SW_LOCK37</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK37</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 37. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a44bab9a1c80f745df2dae21318b14026" name="a44bab9a1c80f745df2dae21318b14026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bab9a1c80f745df2dae21318b14026">&#9670;&#160;</a></span>SW_LOCK38</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK38</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 38. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad1422069df91695e4cc2d2dab165451c" name="ad1422069df91695e4cc2d2dab165451c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1422069df91695e4cc2d2dab165451c">&#9670;&#160;</a></span>SW_LOCK39</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK39</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 39. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a428236fe7608a5ec52b86a39b197dc7c" name="a428236fe7608a5ec52b86a39b197dc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428236fe7608a5ec52b86a39b197dc7c">&#9670;&#160;</a></span>SW_LOCK4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 4. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad6ad6a64eaff2805661b1c1aeecc36e6" name="ad6ad6a64eaff2805661b1c1aeecc36e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ad6a64eaff2805661b1c1aeecc36e6">&#9670;&#160;</a></span>SW_LOCK40</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 40. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a89eb1eac81b059a63bfccdfdbfecaf49" name="a89eb1eac81b059a63bfccdfdbfecaf49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89eb1eac81b059a63bfccdfdbfecaf49">&#9670;&#160;</a></span>SW_LOCK41</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK41</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 41. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a437fc29096873a453171050fc4567360" name="a437fc29096873a453171050fc4567360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437fc29096873a453171050fc4567360">&#9670;&#160;</a></span>SW_LOCK42</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK42</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 42. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae0b58ddbb4a3568bdbf14ca5c074359e" name="ae0b58ddbb4a3568bdbf14ca5c074359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b58ddbb4a3568bdbf14ca5c074359e">&#9670;&#160;</a></span>SW_LOCK43</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK43</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 43. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae2a1671ef195562e49f5b62608af9406" name="ae2a1671ef195562e49f5b62608af9406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a1671ef195562e49f5b62608af9406">&#9670;&#160;</a></span>SW_LOCK44</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK44</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 44. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a76922585fb336f2b80b1e6583de6c143" name="a76922585fb336f2b80b1e6583de6c143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76922585fb336f2b80b1e6583de6c143">&#9670;&#160;</a></span>SW_LOCK45</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK45</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 45. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa3168a63ad5dacbd425f6fb7facffcb1" name="aa3168a63ad5dacbd425f6fb7facffcb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3168a63ad5dacbd425f6fb7facffcb1">&#9670;&#160;</a></span>SW_LOCK46</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK46</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 46. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aff01e5c32d5f901c2973a6e2db1ee884" name="aff01e5c32d5f901c2973a6e2db1ee884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff01e5c32d5f901c2973a6e2db1ee884">&#9670;&#160;</a></span>SW_LOCK47</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK47</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 47. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3cba24a95badf40582b5451aaea2a377" name="a3cba24a95badf40582b5451aaea2a377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cba24a95badf40582b5451aaea2a377">&#9670;&#160;</a></span>SW_LOCK48</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 48. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a32fc9805179612a174cd89743b588d64" name="a32fc9805179612a174cd89743b588d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32fc9805179612a174cd89743b588d64">&#9670;&#160;</a></span>SW_LOCK49</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK49</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 49. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0466060fe6a2ea63cb65f6abf66e562d" name="a0466060fe6a2ea63cb65f6abf66e562d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0466060fe6a2ea63cb65f6abf66e562d">&#9670;&#160;</a></span>SW_LOCK5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 5. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a15724aad10d55ab1c12f05e9ba295eeb" name="a15724aad10d55ab1c12f05e9ba295eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15724aad10d55ab1c12f05e9ba295eeb">&#9670;&#160;</a></span>SW_LOCK50</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 50. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa3246b470617e46c760c9ff28d838540" name="aa3246b470617e46c760c9ff28d838540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3246b470617e46c760c9ff28d838540">&#9670;&#160;</a></span>SW_LOCK51</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK51</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 51. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab3dfe4412bb4588ca196cde706f0fb05" name="ab3dfe4412bb4588ca196cde706f0fb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3dfe4412bb4588ca196cde706f0fb05">&#9670;&#160;</a></span>SW_LOCK52</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK52</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 52. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab345d184df723b2bd4d6b0fab709b875" name="ab345d184df723b2bd4d6b0fab709b875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab345d184df723b2bd4d6b0fab709b875">&#9670;&#160;</a></span>SW_LOCK53</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 53. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af3f4763c7c90b091fdb2b39799661af9" name="af3f4763c7c90b091fdb2b39799661af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f4763c7c90b091fdb2b39799661af9">&#9670;&#160;</a></span>SW_LOCK54</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK54</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 54. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0e47316a1303e863f781552d71fe9b8b" name="a0e47316a1303e863f781552d71fe9b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e47316a1303e863f781552d71fe9b8b">&#9670;&#160;</a></span>SW_LOCK55</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 55. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac17199f8581000af363bea28a954741a" name="ac17199f8581000af363bea28a954741a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac17199f8581000af363bea28a954741a">&#9670;&#160;</a></span>SW_LOCK56</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK56</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 56. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a37fcb2c2236476537420598d16be8b04" name="a37fcb2c2236476537420598d16be8b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37fcb2c2236476537420598d16be8b04">&#9670;&#160;</a></span>SW_LOCK57</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK57</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 57. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad6c4237c49d199f40aeff0fbb2ee9472" name="ad6c4237c49d199f40aeff0fbb2ee9472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c4237c49d199f40aeff0fbb2ee9472">&#9670;&#160;</a></span>SW_LOCK58</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK58</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 58. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaefadda8ae7fe0adab6d80308f739f9f" name="aaefadda8ae7fe0adab6d80308f739f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefadda8ae7fe0adab6d80308f739f9f">&#9670;&#160;</a></span>SW_LOCK59</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK59</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 59. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5beb750c85b79d8efd42736ea53ab0d6" name="a5beb750c85b79d8efd42736ea53ab0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5beb750c85b79d8efd42736ea53ab0d6">&#9670;&#160;</a></span>SW_LOCK6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 6. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8408f31a45f9841bd1ed5e2bcd0cced1" name="a8408f31a45f9841bd1ed5e2bcd0cced1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8408f31a45f9841bd1ed5e2bcd0cced1">&#9670;&#160;</a></span>SW_LOCK60</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 60. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5c9bf8bd2a8d7b568ab37fec26908b98" name="a5c9bf8bd2a8d7b568ab37fec26908b98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9bf8bd2a8d7b568ab37fec26908b98">&#9670;&#160;</a></span>SW_LOCK61</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK61</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 61. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7b54ebf9ff14a541c7a259e35d2432c8" name="a7b54ebf9ff14a541c7a259e35d2432c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b54ebf9ff14a541c7a259e35d2432c8">&#9670;&#160;</a></span>SW_LOCK62</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK62</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 62. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9b5cc30d1712b1b2e913bdcd667755c6" name="a9b5cc30d1712b1b2e913bdcd667755c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b5cc30d1712b1b2e913bdcd667755c6">&#9670;&#160;</a></span>SW_LOCK63</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK63</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 63. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aff1c4be6968a3b4029f6e0ec454ca49b" name="aff1c4be6968a3b4029f6e0ec454ca49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1c4be6968a3b4029f6e0ec454ca49b">&#9670;&#160;</a></span>SW_LOCK7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 7. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9731a19929b4ad6cea721fde15658321" name="a9731a19929b4ad6cea721fde15658321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9731a19929b4ad6cea721fde15658321">&#9670;&#160;</a></span>SW_LOCK8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 8. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4de109fdec9f9d7a447d36128af85589" name="a4de109fdec9f9d7a447d36128af85589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de109fdec9f9d7a447d36128af85589">&#9670;&#160;</a></span>SW_LOCK9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::SW_LOCK9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Software lock register for page 9. </p>
+<p>Locks are initialised from the OTP lock pages at reset. This register can be written to further advance the lock state of each page (until next reset), and read to check the current lock state of a page. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a086b0c8bde6a29f15e16a507e66e985b" name="a086b0c8bde6a29f15e16a507e66e985b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086b0c8bde6a29f15e16a507e66e985b">&#9670;&#160;</a></span>USR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> OTP_Type::USR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Controls for APB data read interface (USER interface) <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structOTP__Type.html">OTP_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

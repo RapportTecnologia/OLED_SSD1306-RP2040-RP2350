@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: queue</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__queue.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">queue<div class="ingroups"><a class="el" href="group__pico__util.html">pico_util</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Multi-core and IRQ safe queue implementation.  
+<a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para queue:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__queue.svg" width="199" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gad01f5e5ddf3403416097f31acc2dbeca" id="r_gad01f5e5ddf3403416097f31acc2dbeca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#gad01f5e5ddf3403416097f31acc2dbeca">queue_add_blocking</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *data)</td></tr>
+<tr class="memdesc:gad01f5e5ddf3403416097f31acc2dbeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking add of value to queue.  <br /></td></tr>
+<tr class="separator:gad01f5e5ddf3403416097f31acc2dbeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa13034dd0decdb0faf1b863383560be2" id="r_gaa13034dd0decdb0faf1b863383560be2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#gaa13034dd0decdb0faf1b863383560be2">queue_free</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>)</td></tr>
+<tr class="memdesc:gaa13034dd0decdb0faf1b863383560be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the specified queue.  <br /></td></tr>
+<tr class="separator:gaa13034dd0decdb0faf1b863383560be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b379b09df9ac326e3c07a2727b7ca96" id="r_ga6b379b09df9ac326e3c07a2727b7ca96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#ga6b379b09df9ac326e3c07a2727b7ca96">queue_init_with_spinlock</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> element_size, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> element_count, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">spinlock_num</a>)</td></tr>
+<tr class="memdesc:ga6b379b09df9ac326e3c07a2727b7ca96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise a queue with a specific spinlock for concurrency protection.  <br /></td></tr>
+<tr class="separator:ga6b379b09df9ac326e3c07a2727b7ca96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga104ec5baa82c9635163a511df7abf124" id="r_ga104ec5baa82c9635163a511df7abf124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#ga104ec5baa82c9635163a511df7abf124">queue_peek_blocking</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *data)</td></tr>
+<tr class="memdesc:ga104ec5baa82c9635163a511df7abf124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking peek at next value to be removed from queue.  <br /></td></tr>
+<tr class="separator:ga104ec5baa82c9635163a511df7abf124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97fb187c127e26935b37785692d1776b" id="r_ga97fb187c127e26935b37785692d1776b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#ga97fb187c127e26935b37785692d1776b">queue_remove_blocking</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *data)</td></tr>
+<tr class="memdesc:ga97fb187c127e26935b37785692d1776b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking remove entry from queue.  <br /></td></tr>
+<tr class="separator:ga97fb187c127e26935b37785692d1776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42ddfda77fa6e9c6292deda62d993ae3" id="r_ga42ddfda77fa6e9c6292deda62d993ae3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#ga42ddfda77fa6e9c6292deda62d993ae3">queue_try_add</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *data)</td></tr>
+<tr class="memdesc:ga42ddfda77fa6e9c6292deda62d993ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking add value queue if not full.  <br /></td></tr>
+<tr class="separator:ga42ddfda77fa6e9c6292deda62d993ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2d65c218a1826243d64f6305417dcc0" id="r_gab2d65c218a1826243d64f6305417dcc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#gab2d65c218a1826243d64f6305417dcc0">queue_try_peek</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *data)</td></tr>
+<tr class="memdesc:gab2d65c218a1826243d64f6305417dcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking peek at the next item to be removed from the queue.  <br /></td></tr>
+<tr class="separator:gab2d65c218a1826243d64f6305417dcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31806423ac9c0b39ee7bb6473aa8d253" id="r_ga31806423ac9c0b39ee7bb6473aa8d253"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queue.html#ga31806423ac9c0b39ee7bb6473aa8d253">queue_try_remove</a> (<a class="el" href="structqueue__t.html">queue_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">q</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *data)</td></tr>
+<tr class="memdesc:ga31806423ac9c0b39ee7bb6473aa8d253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking removal of entry from the queue if non empty.  <br /></td></tr>
+<tr class="separator:ga31806423ac9c0b39ee7bb6473aa8d253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Multi-core and IRQ safe queue implementation. </p>
+<p>Note that this queue stores values of a specified size, and pushed values are copied into the queue </p>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="gad01f5e5ddf3403416097f31acc2dbeca" name="gad01f5e5ddf3403416097f31acc2dbeca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad01f5e5ddf3403416097f31acc2dbeca">&#9670;&#160;</a></span>queue_add_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> queue_add_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocking add of value to queue. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to value to be copied into the queue</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If the queue is full this function will block, until a removal happens on the queue </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="gaa13034dd0decdb0faf1b863383560be2" name="gaa13034dd0decdb0faf1b863383560be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa13034dd0decdb0faf1b863383560be2">&#9670;&#160;</a></span>queue_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> queue_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the specified queue. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Does not deallocate the <a class="el" href="structqueue__t.html">queue_t</a> structure itself. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free()</a>.</p>
+
+</div>
+</div>
+<a id="ga6b379b09df9ac326e3c07a2727b7ca96" name="ga6b379b09df9ac326e3c07a2727b7ca96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b379b09df9ac326e3c07a2727b7ca96">&#9670;&#160;</a></span>queue_init_with_spinlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> queue_init_with_spinlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>element_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>element_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>spinlock_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise a queue with a specific spinlock for concurrency protection. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle </td></tr>
+    <tr><td class="paramname">element_size</td><td>Size of each value in the queue </td></tr>
+    <tr><td class="paramname">element_count</td><td>Maximum number of entries in the queue </td></tr>
+    <tr><td class="paramname">spinlock_num</td><td>The spin ID used to protect the queue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="malloc_8c.html#a175874e1634f0cd69ede77f62a5d329a">calloc()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="group__lock__core.html#gabc062dfb52c8f7f17ec8427d1c4414d9">lock_init()</a>.</p>
+
+</div>
+</div>
+<a id="ga104ec5baa82c9635163a511df7abf124" name="ga104ec5baa82c9635163a511df7abf124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga104ec5baa82c9635163a511df7abf124">&#9670;&#160;</a></span>queue_peek_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> queue_peek_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocking peek at next value to be removed from queue. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the location to receive the peeked value, or NULL if the data isn't required</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If the queue is empty function will block until a value is added </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ga97fb187c127e26935b37785692d1776b" name="ga97fb187c127e26935b37785692d1776b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97fb187c127e26935b37785692d1776b">&#9670;&#160;</a></span>queue_remove_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> queue_remove_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocking remove entry from queue. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the location to receive the removed value, or NULL if the data isn't required</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If the queue is empty this function will block until a value is added. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ga42ddfda77fa6e9c6292deda62d993ae3" name="ga42ddfda77fa6e9c6292deda62d993ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42ddfda77fa6e9c6292deda62d993ae3">&#9670;&#160;</a></span>queue_try_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> queue_try_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-blocking add value queue if not full. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to value to be copied into the queue </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the value was added</dd></dl>
+<p>If the queue is full this function will return immediately with false, otherwise the data is copied into a new value added to the queue, and this function will return true. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="gab2d65c218a1826243d64f6305417dcc0" name="gab2d65c218a1826243d64f6305417dcc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2d65c218a1826243d64f6305417dcc0">&#9670;&#160;</a></span>queue_try_peek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> queue_try_peek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-blocking peek at the next item to be removed from the queue. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the location to receive the peeked value, or NULL if the data isn't required </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if there was a value to peek</dd></dl>
+<p>If the queue is not empty this function will return immediately with true with the peeked entry copied into the location specified by the data parameter, otherwise the function will return false. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ga31806423ac9c0b39ee7bb6473aa8d253" name="ga31806423ac9c0b39ee7bb6473aa8d253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31806423ac9c0b39ee7bb6473aa8d253">&#9670;&#160;</a></span>queue_try_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> queue_try_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structqueue__t.html">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-blocking removal of entry from the queue if non empty. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Pointer to a <a class="el" href="structqueue__t.html">queue_t</a> structure, used as a handle </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the location to receive the removed value, or NULL if the data isn't required </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if a value was removed</dd></dl>
+<p>If the queue is not empty function will copy the removed value into the location provided and return immediately with true, otherwise the function will return immediately with false. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

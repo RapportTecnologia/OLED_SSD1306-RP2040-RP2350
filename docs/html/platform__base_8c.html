@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro platform_base.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('platform__base_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro platform_base.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;pico.h&quot;</code><br />
+<code>#include &quot;hardware/timer.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para platform_base.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="platform__base_8c__incl.svg" width="422" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae4903d2c255f930c97b4c00a09a7958f" id="r_ae4903d2c255f930c97b4c00a09a7958f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform__base_8c.html#ae4903d2c255f930c97b4c00a09a7958f">__breakpoint</a> ()</td></tr>
+<tr class="separator:ae4903d2c255f930c97b4c00a09a7958f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4f4dcdc42b10a3a70eb1c292d82859" id="r_a2c4f4dcdc42b10a3a70eb1c292d82859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform__base_8c.html#a2c4f4dcdc42b10a3a70eb1c292d82859">busy_wait_at_least_cycles</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> cycles)</td></tr>
+<tr class="separator:a2c4f4dcdc42b10a3a70eb1c292d82859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ec77d502dfc63ed6468b3698d78db4" id="r_a73ec77d502dfc63ed6468b3698d78db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform__base_8c.html#a73ec77d502dfc63ed6468b3698d78db4">get_core_num</a> ()</td></tr>
+<tr class="separator:a73ec77d502dfc63ed6468b3698d78db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f1a1dc0581a11b597453f148106393" id="r_ad1f1a1dc0581a11b597453f148106393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform__base_8c.html#ad1f1a1dc0581a11b597453f148106393">panic</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fmt</a>,...)</td></tr>
+<tr class="separator:ad1f1a1dc0581a11b597453f148106393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5611d44c539e721af06fbad7d1312a" id="r_a3f5611d44c539e721af06fbad7d1312a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5b6df4fe38493e14648842364a76075f">__noreturn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform__base_8c.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported</a> ()</td></tr>
+<tr class="separator:a3f5611d44c539e721af06fbad7d1312a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b43d16f9b0566634a444aee3be523e8" id="r_a4b43d16f9b0566634a444aee3be523e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform__base_8c.html#a4b43d16f9b0566634a444aee3be523e8">tight_loop_contents</a> ()</td></tr>
+<tr class="separator:a4b43d16f9b0566634a444aee3be523e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ae4903d2c255f930c97b4c00a09a7958f" name="ae4903d2c255f930c97b4c00a09a7958f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4903d2c255f930c97b4c00a09a7958f">&#9670;&#160;</a></span>__breakpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __breakpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="llvm__libc__interface_8c.html#a93b9cf91f7623d6d8b100a3693d6d5e4">__attribute__()</a>, <a class="el" href="pico__double__test_8c.html#adde9f96d4a80b37e5d0a169f7e50d9f5">check_dcmpun()</a>, <a class="el" href="pico__float__test_8c.html#a9b250453ab03e9d6d572b07a0205d3c7">check_fcmpun()</a>, <a class="el" href="newlib__interface_8c.html#ab63065e67a9ff67a98f0078663252acc">GCC_Pragma()</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5ab702a49a3a316f49fa93232c54f9b4">panic()</a>, <a class="el" href="group__pico__runtime.html#gad27ee86dcd85855022a424f61b839d04">runtime_init()</a> e <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#ab18589c2e9bca4ec615c1b10ecc5b5d4">runtime_init_per_core_install_stack_guard()</a>.</p>
+
+</div>
+</div>
+<a id="a2c4f4dcdc42b10a3a70eb1c292d82859" name="a2c4f4dcdc42b10a3a70eb1c292d82859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4f4dcdc42b10a3a70eb1c292d82859">&#9670;&#160;</a></span>busy_wait_at_least_cycles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() busy_wait_at_least_cycles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>cycles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2hardware__timer_2include_2hardware_2timer_8h.html#ac089d1c42bb7658bb43c798454f66e2f">busy_wait_us()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="hardware__sync__spin__lock__test_8c.html#a8b969c22d5e048c64c1261cfc586850b">counter_test_per_core()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a7a4cd3697318cb43a564f8befa340507">counter_try_test_per_core()</a> e <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a3dd167ac601a4057aca2cc514795d7bf">runtime_init_clocks()</a>.</p>
+
+</div>
+</div>
+<a id="a73ec77d502dfc63ed6468b3698d78db4" name="a73ec77d502dfc63ed6468b3698d78db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ec77d502dfc63ed6468b3698d78db4">&#9670;&#160;</a></span>get_core_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() get_core_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__async__context__freertos.html#ga2deda7edb010962737d8b614fdf2f6da">async_context_freertos_init()</a>, <a class="el" href="group__async__context__poll.html#ga4ee772d4efa94ec03e2b2ae2f775837d">async_context_poll_init_with_defaults()</a>, <a class="el" href="async__context__threadsafe__background_8c.html#aeb528f429470b2ddd291081dcd718243">async_context_threadsafe_background_execute_sync()</a>, <a class="el" href="group__async__context__threadsafe__background.html#gabf48cafcbfa48c9fbef1aa7a18ded9e5">async_context_threadsafe_background_init()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a8b969c22d5e048c64c1261cfc586850b">counter_test_per_core()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a7a4cd3697318cb43a564f8befa340507">counter_try_test_per_core()</a>, <a class="el" href="cyw43__driver_8c.html#a9d708a80634f0d76e266a52c34973053">cyw43_irq_deinit()</a>, <a class="el" href="cyw43__driver_8c.html#ae643934af50fb8cdd268f1dcd6cbbcc5">cyw43_irq_init()</a>, <a class="el" href="cyw43__driver_8c.html#ae4e968f2c3f342e7b074a791a86ce224">cyw43_post_poll_hook()</a>, <a class="el" href="group__hardware__gpio.html#gaf43d2f09003804f535dc118688a9702c">gpio_add_raw_irq_handler_with_order_priority_masked()</a>, <a class="el" href="group__hardware__gpio.html#ga78f8d7c7c8fb66794f7c269311f145ae">gpio_add_raw_irq_handler_with_order_priority_masked64()</a>, <a class="el" href="group__hardware__gpio.html#ga25b1f0b4dc42144da4ed3acbed513095">gpio_remove_raw_irq_handler_masked()</a>, <a class="el" href="group__hardware__gpio.html#ga9310346a1f7b58ba6b6be82097980af6">gpio_remove_raw_irq_handler_masked64()</a>, <a class="el" href="group__hardware__gpio.html#ga37b23dea291af5926735b5e8c87b7dbb">gpio_set_irq_callback()</a>, <a class="el" href="group__hardware__gpio.html#ga08b1f920beba446c4d4385de999cf945">gpio_set_irq_enabled()</a>, <a class="el" href="group__multicore__lockout.html#ga61f1c839a270a49335f21a721ab00463">multicore_lockout_victim_deinit()</a> e <a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a4e969086bda6851bc8ce8199113fd595">multicore_lockout_victim_init()</a>.</p>
+
+</div>
+</div>
+<a id="ad1f1a1dc0581a11b597453f148106393" name="ad1f1a1dc0581a11b597453f148106393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f1a1dc0581a11b597453f148106393">&#9670;&#160;</a></span>panic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> panic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="platform__base_8c.html#ae4903d2c255f930c97b4c00a09a7958f">__breakpoint()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="rp2__common_2pico__stdio_2stdio_8c.html#ab8ea10f2c3c2ebf6afeb8ee20305fb2d">puts()</a> e <a class="el" href="rp2__common_2pico__stdio_2stdio_8c.html#a8d2bc076de08ee35a3781acbf586a04b">vprintf()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="float__init__rom__rp2040_8c.html#aa2197ad2d0a8aa6edde04a554cc31618">__aeabi_float_init()</a>, <a class="el" href="panic_8c.html#a93b9cf91f7623d6d8b100a3693d6d5e4">__attribute__()</a>, <a class="el" href="double__init__rom__rp2040_8c.html#a201468129b483039afc5a619e2d31097">__attribute__()</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a24af3fc4ad745cda57d3eb4b9eeec1f1">__wfi()</a>, <a class="el" href="cybt__shared__bus__driver_8c.html#a429f8260e4fa5a3018660af8c2cd51c7">cybt_toggle_bt_intr()</a>, <a class="el" href="host_2pico__runtime_2runtime_8c.html#a72df264159e6c91593051ad45b162693">hard_assertion_failure()</a>, <a class="el" href="group__hardware__claim.html#ga6487272cf1fa8d5b2e67f78bb5bdab4d">hw_claim_or_assert()</a>, <a class="el" href="group__hardware__claim.html#gacc8b9324cd6f327e57c6dcb8cbef1745">hw_claim_unused_from_range()</a>, <a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a46ea5e2efc181aba1d4d1de06a375c59">multicore_launch_core1()</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>, <a class="el" href="group__sleep.html#ga7abed28d3918fe2b15f8007ba6569172">sleep_until()</a>, <a class="el" href="group__pico__stdio__uart.html#ga77fc28ecaf14439cdec18ac5a96d50f4">stdin_uart_init()</a>, <a class="el" href="group__pico__stdio__uart.html#gafcc9bb58b1eb66b8571a507589f66fc2">stdio_uart_init()</a> e <a class="el" href="group__pico__stdio__uart.html#ga265eeb67b5f1f4720dbe863e34d6acc4">stdout_uart_init()</a>.</p>
+
+</div>
+</div>
+<a id="a3f5611d44c539e721af06fbad7d1312a" name="a3f5611d44c539e721af06fbad7d1312a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5611d44c539e721af06fbad7d1312a">&#9670;&#160;</a></span>panic_unsupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5b6df4fe38493e14648842364a76075f">__noreturn</a> panic_unsupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="platform__base_8c.html#ad1f1a1dc0581a11b597453f148106393">panic()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="bootrom_8c.html#a93b9cf91f7623d6d8b100a3693d6d5e4">__attribute__()</a>, <a class="el" href="group__pico__aon__timer.html#ga20cda0289aab2eb5fda914704a1fc2a7">aon_timer_disable_alarm()</a>, <a class="el" href="group__pico__aon__timer.html#ga39dab1da58c2f8178024b233e335d059">aon_timer_enable_alarm()</a>, <a class="el" href="group__pico__aon__timer.html#gabfecbe6df690a2a10194920ba7db8d3f">aon_timer_enable_alarm_calendar()</a>, <a class="el" href="group__pico__aon__timer.html#ga6e17d6adde0e3b25c70c04970116ccb8">aon_timer_get_resolution()</a>, <a class="el" href="group__pico__aon__timer.html#ga48246c7cd89f2f599f9d3405d1b62185">aon_timer_get_time()</a>, <a class="el" href="group__pico__aon__timer.html#ga5ed3f772e4fcab66dadb7654f1fa47ef">aon_timer_get_time_calendar()</a>, <a class="el" href="group__pico__aon__timer.html#ga134ec8ae2a5f2a9b29b9bc4fb6c87493">aon_timer_is_running()</a>, <a class="el" href="group__pico__aon__timer.html#gaa9503489fbd3c6afc1d4e67e3c3ae1dc">aon_timer_set_time()</a>, <a class="el" href="group__pico__aon__timer.html#gae3b326fe02569768b09f37080f0d85e3">aon_timer_set_time_calendar()</a>, <a class="el" href="group__pico__aon__timer.html#ga1d9876f6ebad5960e8d7928b87d6b8ca">aon_timer_start()</a>, <a class="el" href="group__pico__aon__timer.html#ga25e4ac9d9553d35646af544277ca9e4e">aon_timer_start_calendar()</a>, <a class="el" href="group__pico__aon__timer.html#gaad98990deb5ce061e3cac6ef7cc69fc5">aon_timer_stop()</a>, <a class="el" href="group__hardware__exception.html#gabd73e0f58d5d1149a77a521c0dceb9cb">exception_restore_handler()</a>, <a class="el" href="group__hardware__exception.html#ga0c49b97eb751230b3d77459e7bfe98f5">exception_set_exclusive_handler()</a>, <a class="el" href="group__hardware__flash.html#ga5c6452005ad28f1e444698b0b97194d2">flash_get_unique_id()</a>, <a class="el" href="host_2hardware__timer_2include_2hardware_2timer_8h.html#a5bc42f680998e4c30fb7389fee9aa59f">hardware_alarm_cancel()</a>, <a class="el" href="host_2hardware__timer_2include_2hardware_2timer_8h.html#a5182b9f67e7f878548460f6f57e22ec0">hardware_alarm_force_irq()</a>, <a class="el" href="host_2hardware__timer_2include_2hardware_2timer_8h.html#aa4c3c72008c100ca25f94b806f13f112">hardware_alarm_set_callback()</a>, <a class="el" href="host_2hardware__timer_2include_2hardware_2timer_8h.html#a62098633d173c24c56c359df2e886ed2">hardware_alarm_set_target()</a>, <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>, <a class="el" href="host_2hardware__irq_2irq_8c.html#ad95360534e4452f22e6ec2fa7456e35e">irq_clear()</a>, <a class="el" href="group__hardware__irq.html#ga42e9cdce7b82ef63c7b2416d32a42361">irq_get_exclusive_handler()</a>, <a class="el" href="group__hardware__irq.html#ga6bcde7d99ca71abe8dccfd13b4d80b29">irq_get_priority()</a>, <a class="el" href="group__hardware__irq.html#ga4f9772d9d1781c3a28371623886a0310">irq_get_vtable_handler()</a>, <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a>, <a class="el" href="group__hardware__irq.html#ga7c7167f643c6898b758340ce59d333d9">irq_set_enabled()</a>, <a class="el" href="group__hardware__irq.html#gafffd448ba2d2eef5b355b88180aefe7f">irq_set_exclusive_handler()</a>, <a class="el" href="group__hardware__irq.html#gae91340b84a6d70049933af657df93201">irq_set_mask_enabled()</a>, <a class="el" href="group__hardware__irq.html#gae1a927e62e780b2f7dacc3a008ffaf20">irq_set_mask_n_enabled()</a>, <a class="el" href="group__hardware__irq.html#ga36e4b97d3414ce58c3091e63badcf9ce">irq_set_pending()</a>, <a class="el" href="group__hardware__irq.html#gad11ea172f11d9763647ac34b366ab3c2">irq_set_priority()</a>, <a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac1926bb2da43016e5d14eb52c8c123f4">multicore_launch_core1_with_stack()</a>, <a class="el" href="group__pico__bootrom.html#ga1d90d68d70435f3ecdaaa5f68b142c4f">rom_pick_ab_partition_during_update()</a>, <a class="el" href="group__pico__stdio.html#gaba86bf2cb6b86a9078cd94dcf47b1915">stdio_set_translate_crlf()</a>, <a class="el" href="cyw43__driver_8c.html#a76608822399e623d732d83ea2b039a14">storage_read_blocks()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a3dab9817385fb47253786772d20f24b8">ta_clear_force_irq()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a73102744dcf111d5a1d2685669740e1b">ta_clear_irq()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4b867eddde1b04df6450a3bd77438ce5">ta_default_timer_instance()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a99fd3dd0095d13231984561b28b055f7">ta_disable_irq_handler()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a1bbd35ea242b570ceb01bff6f3a1da99">ta_enable_irq_handler()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a391d6f65485a5e26d0308088b8e28930">ta_force_irq()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a952988b7cf659173ac54ead9bba12a38">ta_from_current_irq()</a>, <a class="el" href="time__adapter_8c.html#a79ba4e53b177ebe5f9fe998313b84100">ta_get_handler_hardware_alarm_num()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a62aacb4bb2ce3d7c669e527b69e3bc87">ta_hardware_alarm_claim()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4ace0bbb622a9c0c711a5da5f1ea36e9">ta_hardware_alarm_claim_unused()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a2f6090c06cf54cfb181194cc749e481d">ta_set_timeout()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#aae874d1ba22ba6e725411466be0d3a03">ta_timer_instance()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4b27ef8c8be3422f253f8f364644387a">ta_timer_num()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#abe254cc7b544f0f6c67735561ebb5716">ta_wakes_up_on_or_before()</a>, <a class="el" href="host_2hardware__timer_2include_2hardware_2timer_8h.html#ade89cc2e64c8f20d2a18c288b900be08">time_us_64()</a> e <a class="el" href="group__hardware__uart.html#ga4ea0b7b9252cd22e2395ca6070000f7a">uart_set_translate_crlf()</a>.</p>
+
+</div>
+</div>
+<a id="a4b43d16f9b0566634a444aee3be523e8" name="a4b43d16f9b0566634a444aee3be523e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b43d16f9b0566634a444aee3be523e8">&#9670;&#160;</a></span>tight_loop_contents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() tight_loop_contents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a1e52626e2b11eb30cf81da1737049526">__wfe()</a>, <a class="el" href="group__hardware__adc.html#ga2b815e6730e8723a6d1d06d9ef8f31c0">adc_init()</a>, <a class="el" href="group__sleep.html#gaedc0ed51a5e908ddd660a5d279009abc">best_effort_wfe_or_timeout()</a>, <a class="el" href="group__hardware__clocks.html#gaeb4a4f07e66523304837a6498276dd53">frequency_count_khz()</a>, <a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a0c32cfcd182d5f1d3a25b6fb503352b7">multicore_fifo_push_timeout_us()</a>, <a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ad7a189a5f44f0124d74aa5b206f9a262">multicore_reset_core1()</a>, <a class="el" href="group__hardware__pll.html#ga67cfd74241b25d891f761af9b40d1ac8">pll_init()</a>, <a class="el" href="group__hardware__powman.html#ga37324a8d6e9b4416a1e8837cbca44275">powman_set_power_state()</a>, <a class="el" href="group__hardware__rtc.html#ga718b866eab2ba73221d37f7d15ba9737">rtc_disable_alarm()</a>, <a class="el" href="group__hardware__rtc.html#gab7f69ee0de1cae2518b2822fd82d5201">rtc_enable_alarm()</a>, <a class="el" href="group__hardware__rtc.html#ga076d68dec35129dd2b44d16ae457a3de">rtc_set_datetime()</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a3dd167ac601a4057aca2cc514795d7bf">runtime_init_clocks()</a>, <a class="el" href="group__hardware__spi.html#gacff6be19b2de92a34b295597f3ae8572">spi_write16_blocking()</a>, <a class="el" href="group__hardware__spi.html#ga541ec2a1eee4c7fee2134a8415f3b4c8">spi_write_blocking()</a>, <a class="el" href="group__hardware__timer.html#ga93c8c8020551f0656c3f59335aa823d6">timer_busy_wait_until()</a>, <a class="el" href="group__hardware__timer.html#ga9eaeafc2c64a5f1d5e0ddef2c7d4bbec">timer_busy_wait_us_32()</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a76b7390ab4cf180ce883ad9732edbc72">uart_getc()</a>, <a class="el" href="group__hardware__vreg.html#ga9d129557bd02bef7facf45b05130e000">vreg_set_voltage()</a>, <a class="el" href="group__hardware__xosc.html#gac88fa43c5100c86992b7af29f664a30a">xosc_disable()</a>, <a class="el" href="group__hardware__xosc.html#ga7f3d06c0cf19801074cee35f0aa35f9f">xosc_dormant()</a> e <a class="el" href="group__hardware__xosc.html#ga487dbffc27f23bdb4da3a0c372b800fb">xosc_init()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_807b6346a9c18472135e047d65c02b1e.html">host</a></li><li class="navelem"><a class="el" href="dir_93940d1d9c9bcfe5cb5b08d7cad7fa9b.html">pico_platform</a></li><li class="navelem"><a class="el" href="platform__base_8c.html">platform_base.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

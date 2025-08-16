@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro platform.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2040_2pico__platform_2include_2pico_2platform_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro platform.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="compiler_8h_source.html">pico/platform/compiler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sections_8h_source.html">pico/platform/sections.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="panic_8h_source.html">pico/platform/panic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_8h_source.html">pico/platform/common.h</a>&quot;</code><br />
+<code>#include &quot;hardware/regs/addressmap.h&quot;</code><br />
+<code>#include &quot;hardware/regs/sio.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para rp2040/pico_platform/include/pico/platform.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rp2040_2pico__platform_2include_2pico_2platform_8h__incl.svg" width="1288" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="rp2040_2pico__platform_2include_2pico_2platform_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga1f7eafa00361375ec15412f634ad67b7" id="r_ga1f7eafa00361375ec15412f634ad67b7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__platform.html#ga1f7eafa00361375ec15412f634ad67b7">__fast_mul</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>,  <a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>)</td></tr>
+<tr class="memdesc:ga1f7eafa00361375ec15412f634ad67b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">multiply two integer values using the fastest method possible  <br /></td></tr>
+<tr class="separator:ga1f7eafa00361375ec15412f634ad67b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022bc6535fca8796cdd94fee0ba9ac2b" id="r_a022bc6535fca8796cdd94fee0ba9ac2b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#a022bc6535fca8796cdd94fee0ba9ac2b">PICO_CLKDIV_ROUND_NEAREST</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a022bc6535fca8796cdd94fee0ba9ac2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a4daa9870ca07abaa1c77c86388e18" id="r_a48a4daa9870ca07abaa1c77c86388e18"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#a48a4daa9870ca07abaa1c77c86388e18">PICO_DOUBLE_SUPPORT_ROM_V1</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a48a4daa9870ca07abaa1c77c86388e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d1d4e9d28da61a7b6c78c5b583ff3b" id="r_a52d1d4e9d28da61a7b6c78c5b583ff3b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#a52d1d4e9d28da61a7b6c78c5b583ff3b">PICO_FLOAT_SUPPORT_ROM_V1</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a52d1d4e9d28da61a7b6c78c5b583ff3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714ff425f73934961a6772f4f22c052e" id="r_a714ff425f73934961a6772f4f22c052e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#a714ff425f73934961a6772f4f22c052e">PICO_HEAP_SIZE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x800)</td></tr>
+<tr class="separator:a714ff425f73934961a6772f4f22c052e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780128f12f2b3f401106c8eb058de98b" id="r_a780128f12f2b3f401106c8eb058de98b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#a780128f12f2b3f401106c8eb058de98b">PICO_NO_RAM_VECTOR_TABLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a780128f12f2b3f401106c8eb058de98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78554b289c077f9733b51c5b53c1d3b7" id="r_a78554b289c077f9733b51c5b53c1d3b7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#a78554b289c077f9733b51c5b53c1d3b7">PICO_RP2040_B0_SUPPORTED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a78554b289c077f9733b51c5b53c1d3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f372fd07f9dd7df8e347ad892c2bdfc" id="r_a5f372fd07f9dd7df8e347ad892c2bdfc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#a5f372fd07f9dd7df8e347ad892c2bdfc">PICO_RP2040_B1_SUPPORTED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a5f372fd07f9dd7df8e347ad892c2bdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea73c134e48ea613c4e234d24be623a3" id="r_aea73c134e48ea613c4e234d24be623a3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#aea73c134e48ea613c4e234d24be623a3">PICO_RP2040_B2_SUPPORTED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aea73c134e48ea613c4e234d24be623a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade06342e3d944df1117fd0b8cce150e7" id="r_ade06342e3d944df1117fd0b8cce150e7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html#ade06342e3d944df1117fd0b8cce150e7">PICO_STACK_SIZE</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x800)</td></tr>
+<tr class="separator:ade06342e3d944df1117fd0b8cce150e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gac157772e2fa6f4c64e1c3e4d761089d9" id="r_gac157772e2fa6f4c64e1c3e4d761089d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__platform.html#gac157772e2fa6f4c64e1c3e4d761089d9">rp2040_chip_version</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gac157772e2fa6f4c64e1c3e4d761089d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RP2040 chip revision number.  <br /></td></tr>
+<tr class="separator:gac157772e2fa6f4c64e1c3e4d761089d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a022bc6535fca8796cdd94fee0ba9ac2b" name="a022bc6535fca8796cdd94fee0ba9ac2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022bc6535fca8796cdd94fee0ba9ac2b">&#9670;&#160;</a></span>PICO_CLKDIV_ROUND_NEAREST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_CLKDIV_ROUND_NEAREST&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48a4daa9870ca07abaa1c77c86388e18" name="a48a4daa9870ca07abaa1c77c86388e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a4daa9870ca07abaa1c77c86388e18">&#9670;&#160;</a></span>PICO_DOUBLE_SUPPORT_ROM_V1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_DOUBLE_SUPPORT_ROM_V1&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52d1d4e9d28da61a7b6c78c5b583ff3b" name="a52d1d4e9d28da61a7b6c78c5b583ff3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d1d4e9d28da61a7b6c78c5b583ff3b">&#9670;&#160;</a></span>PICO_FLOAT_SUPPORT_ROM_V1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_FLOAT_SUPPORT_ROM_V1&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a714ff425f73934961a6772f4f22c052e" name="a714ff425f73934961a6772f4f22c052e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a714ff425f73934961a6772f4f22c052e">&#9670;&#160;</a></span>PICO_HEAP_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_HEAP_SIZE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x800)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a780128f12f2b3f401106c8eb058de98b" name="a780128f12f2b3f401106c8eb058de98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780128f12f2b3f401106c8eb058de98b">&#9670;&#160;</a></span>PICO_NO_RAM_VECTOR_TABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_NO_RAM_VECTOR_TABLE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78554b289c077f9733b51c5b53c1d3b7" name="a78554b289c077f9733b51c5b53c1d3b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78554b289c077f9733b51c5b53c1d3b7">&#9670;&#160;</a></span>PICO_RP2040_B0_SUPPORTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_RP2040_B0_SUPPORTED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f372fd07f9dd7df8e347ad892c2bdfc" name="a5f372fd07f9dd7df8e347ad892c2bdfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f372fd07f9dd7df8e347ad892c2bdfc">&#9670;&#160;</a></span>PICO_RP2040_B1_SUPPORTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_RP2040_B1_SUPPORTED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea73c134e48ea613c4e234d24be623a3" name="aea73c134e48ea613c4e234d24be623a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea73c134e48ea613c4e234d24be623a3">&#9670;&#160;</a></span>PICO_RP2040_B2_SUPPORTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_RP2040_B2_SUPPORTED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade06342e3d944df1117fd0b8cce150e7" name="ade06342e3d944df1117fd0b8cce150e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade06342e3d944df1117fd0b8cce150e7">&#9670;&#160;</a></span>PICO_STACK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_STACK_SIZE&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x800)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_51ec936d7a40ec30ddeb071179168d1a.html">pico_platform</a></li><li class="navelem"><a class="el" href="dir_84e9aec0a1b5d6190913b3ffc709b2ea.html">include</a></li><li class="navelem"><a class="el" href="dir_941f88888003f25501c0884633c3e214.html">pico</a></li><li class="navelem"><a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_8h.html">platform.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

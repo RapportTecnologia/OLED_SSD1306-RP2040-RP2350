@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de ticks.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2350/hardware_regs/include/hardware/regs/ticks.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : TICKS</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef _HARDWARE_REGS_TICKS_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define _HARDWARE_REGS_TICKS_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Register    : TICKS_PROC0_CTRL</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Description : Controls the tick generator</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a737158a2f0d52834623065296367b027">   18</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ad1e606e510776a2ae498de79d1e08ca8">   19</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#adee7574b0eeff423a2c504a0c3c24a79">   20</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Field       : TICKS_PROC0_CTRL_RUNNING</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Description : Is the tick generator running?</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac31054b7af8d4ce568c1a43aabb84707">   24</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_RUNNING_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa8bfce0c7e31c66f802ca2e0097ccd0c">   25</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_RUNNING_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a3f4ceab20c326f34ad5415816d6a5f1a">   26</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_RUNNING_MSB    _u(1)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa68d81ba9f0bb526473d2469725e0138">   27</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_RUNNING_LSB    _u(1)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac5e63ad2954d6c87091bb5d5db807579">   28</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_RUNNING_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// Field       : TICKS_PROC0_CTRL_ENABLE</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Description : start / stop tick generation</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a6679788a64424e705f6570226ad8b01c">   32</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_ENABLE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a41c9586f60c1902bd3494e3414ab577b">   33</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_ENABLE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#acab7372ae40df2f429937a6af4b9bb0d">   34</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_ENABLE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a029bc7ab9ffd405cac65541263d7fc64">   35</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_ENABLE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a528541df3ec7b44059a554f80dd97cf3">   36</a></span><span class="preprocessor">#define TICKS_PROC0_CTRL_ENABLE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// Register    : TICKS_PROC0_CYCLES</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// Description : Total number of clk_tick cycles before the next tick.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a41e89ca590f2be57b130558842800ed8">   40</a></span><span class="preprocessor">#define TICKS_PROC0_CYCLES_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a5b54d10654b629500f6b3405a4775c09">   41</a></span><span class="preprocessor">#define TICKS_PROC0_CYCLES_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a6193c84de15b570e638d540185df0493">   42</a></span><span class="preprocessor">#define TICKS_PROC0_CYCLES_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a535ff7714a61f7bf86b558b3bb6fb7fe">   43</a></span><span class="preprocessor">#define TICKS_PROC0_CYCLES_MSB    _u(8)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a151b7747c5398071f2d334e7976fcfb3">   44</a></span><span class="preprocessor">#define TICKS_PROC0_CYCLES_LSB    _u(0)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a1760b407f17e6052270e33be10ac7226">   45</a></span><span class="preprocessor">#define TICKS_PROC0_CYCLES_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Register    : TICKS_PROC0_COUNT</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// Description : Count down timer: the remaining number clk_tick cycles before</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//               the next tick is generated.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac4857c874d2dcc90a3be5556e8f3a88f">   50</a></span><span class="preprocessor">#define TICKS_PROC0_COUNT_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a465c6c002b8636b811261005dcd14eb1">   51</a></span><span class="preprocessor">#define TICKS_PROC0_COUNT_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a749ea5c8f226a596bc839a8947d30128">   52</a></span><span class="preprocessor">#define TICKS_PROC0_COUNT_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a8ace27e514cd18d03bf6ce94b8db3163">   53</a></span><span class="preprocessor">#define TICKS_PROC0_COUNT_MSB    _u(8)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a47713d72efabf9877e15dba6b6671705">   54</a></span><span class="preprocessor">#define TICKS_PROC0_COUNT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a333906b66b115fd37af0993fd10e4aff">   55</a></span><span class="preprocessor">#define TICKS_PROC0_COUNT_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Register    : TICKS_PROC1_CTRL</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// Description : Controls the tick generator</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a8a7c911a18c39bb277a81d5ee4e7a224">   59</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_OFFSET _u(0x0000000c)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a7f7b79ffbb07ee4f31299fb41c00171a">   60</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#acb81ce6b7d680fa8fd51e4013263b72b">   61</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// Field       : TICKS_PROC1_CTRL_RUNNING</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// Description : Is the tick generator running?</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a466612d70949f46e70f9219f77cc04f4">   65</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_RUNNING_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a66fa837702db5dc27cb14989fc8eff64">   66</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_RUNNING_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa96ce5a260e3d5fb81e20012e20b9ec8">   67</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_RUNNING_MSB    _u(1)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a7cefe33b671fa6422bc10bfcf57ff7a2">   68</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_RUNNING_LSB    _u(1)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a731ec0f81542db42ff922d16eefcf397">   69</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_RUNNING_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">// Field       : TICKS_PROC1_CTRL_ENABLE</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// Description : start / stop tick generation</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a60d933c1c62f832c1e6e3d36c7e84c60">   73</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_ENABLE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a988eadfa5f9dd91e3225e6f948e46916">   74</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_ENABLE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a0db7350053c5964dc6bc6e1a7ec6afc4">   75</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_ENABLE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a1983dd55f2fdbb727cdc0ddf51c115c9">   76</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_ENABLE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#abca30a935e5cb79c067b667c3fe4c6c7">   77</a></span><span class="preprocessor">#define TICKS_PROC1_CTRL_ENABLE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// Register    : TICKS_PROC1_CYCLES</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// Description : Total number of clk_tick cycles before the next tick.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aafae876e71d14171292e9c9921733c9d">   81</a></span><span class="preprocessor">#define TICKS_PROC1_CYCLES_OFFSET _u(0x00000010)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ade7e5ef9195014cae6c53e5db1131dd6">   82</a></span><span class="preprocessor">#define TICKS_PROC1_CYCLES_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ae6f405db88eb7b53a4dae7cb8f4ead65">   83</a></span><span class="preprocessor">#define TICKS_PROC1_CYCLES_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a2761c3c0b569e0942362ea6dcbcd2d70">   84</a></span><span class="preprocessor">#define TICKS_PROC1_CYCLES_MSB    _u(8)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac8bc66ab1b53a196697b22f496c321ec">   85</a></span><span class="preprocessor">#define TICKS_PROC1_CYCLES_LSB    _u(0)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a94c47a66902152fe06f10a842c5d627c">   86</a></span><span class="preprocessor">#define TICKS_PROC1_CYCLES_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// Register    : TICKS_PROC1_COUNT</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// Description : Count down timer: the remaining number clk_tick cycles before</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">//               the next tick is generated.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a5e63fa1c61c9c770e821136c64a7870c">   91</a></span><span class="preprocessor">#define TICKS_PROC1_COUNT_OFFSET _u(0x00000014)</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa28bbe70dd5d36e3922c850c6de99c55">   92</a></span><span class="preprocessor">#define TICKS_PROC1_COUNT_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a522209fa7bf192cd081676ef2954c4f0">   93</a></span><span class="preprocessor">#define TICKS_PROC1_COUNT_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa8b91b575b4a440696284a87d36a4f19">   94</a></span><span class="preprocessor">#define TICKS_PROC1_COUNT_MSB    _u(8)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a38748b89b57ac92cbba842e04679d52f">   95</a></span><span class="preprocessor">#define TICKS_PROC1_COUNT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a589556bfc48dc60938356ff83ab76b18">   96</a></span><span class="preprocessor">#define TICKS_PROC1_COUNT_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">// Register    : TICKS_TIMER0_CTRL</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// Description : Controls the tick generator</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a580e4aa599072103debc5b976aa4ec9d">  100</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_OFFSET _u(0x00000018)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a96a558b6177b13ef3c39c8f4a7e8f621">  101</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a71eba7c5639ddd0a81628911a3952b32">  102</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// Field       : TICKS_TIMER0_CTRL_RUNNING</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// Description : Is the tick generator running?</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a10f850401dda8d0ec9076b2714709b02">  106</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_RUNNING_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ad6ea16cfc3c729d309aa51b7c4805a95">  107</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_RUNNING_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa67709576e3cc3de1469bc13d917b834">  108</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_RUNNING_MSB    _u(1)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a5ee29988db78d8f61b1aa7a84f036d4d">  109</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_RUNNING_LSB    _u(1)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#af347a271712835223e34300d04052775">  110</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_RUNNING_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">// Field       : TICKS_TIMER0_CTRL_ENABLE</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">// Description : start / stop tick generation</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a1e2f2dc560d85056762f17deec8466f8">  114</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_ENABLE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a4669acc6778adec20a28728ed83ed3c3">  115</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_ENABLE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a442c9e97415496c007474cb0503c6284">  116</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_ENABLE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#accc100565cc66fa858d1f57a6e0f8fee">  117</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_ENABLE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a08415a7f850705b99ce8f2625e26b8e6">  118</a></span><span class="preprocessor">#define TICKS_TIMER0_CTRL_ENABLE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// Register    : TICKS_TIMER0_CYCLES</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">// Description : Total number of clk_tick cycles before the next tick.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a0c7eff359e19d5210222fe23639382d1">  122</a></span><span class="preprocessor">#define TICKS_TIMER0_CYCLES_OFFSET _u(0x0000001c)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a33f043da023b7802ab84fab9f8e0f30a">  123</a></span><span class="preprocessor">#define TICKS_TIMER0_CYCLES_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a241c24c08df22994c23dc49adfeed089">  124</a></span><span class="preprocessor">#define TICKS_TIMER0_CYCLES_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa9fcbdd83ece51438626fa540c7a71a0">  125</a></span><span class="preprocessor">#define TICKS_TIMER0_CYCLES_MSB    _u(8)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a696643afb280183a3f71c101f43f276d">  126</a></span><span class="preprocessor">#define TICKS_TIMER0_CYCLES_LSB    _u(0)</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a854534d47d24f374980a36ae5fd16b82">  127</a></span><span class="preprocessor">#define TICKS_TIMER0_CYCLES_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// Register    : TICKS_TIMER0_COUNT</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// Description : Count down timer: the remaining number clk_tick cycles before</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">//               the next tick is generated.</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ad1934a94d50e4dec1184489d576882f7">  132</a></span><span class="preprocessor">#define TICKS_TIMER0_COUNT_OFFSET _u(0x00000020)</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a5927abe2e21742148982c7a4bfc98a8f">  133</a></span><span class="preprocessor">#define TICKS_TIMER0_COUNT_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a59fcb767011fbbe71a0ad9b0194b1794">  134</a></span><span class="preprocessor">#define TICKS_TIMER0_COUNT_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a95753e42c0fe34bed9f192d07d458056">  135</a></span><span class="preprocessor">#define TICKS_TIMER0_COUNT_MSB    _u(8)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a8e8cdfc5dfcfdbf1bed466ab5c62dfe0">  136</a></span><span class="preprocessor">#define TICKS_TIMER0_COUNT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a61ea08b0eba705e8403faa783d873d37">  137</a></span><span class="preprocessor">#define TICKS_TIMER0_COUNT_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">// Register    : TICKS_TIMER1_CTRL</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">// Description : Controls the tick generator</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ad4a41cb8033aadfbce96dc73d9774adc">  141</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_OFFSET _u(0x00000024)</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a61bc92635dd3128070e86bf6cefc883c">  142</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a04f496c59bcbffe7b133fcebcb1ad558">  143</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">// Field       : TICKS_TIMER1_CTRL_RUNNING</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">// Description : Is the tick generator running?</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a504ceb4f732372560b3eba580ab440fc">  147</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_RUNNING_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a8d367f2600bdbe1b784695e6d0eea2e1">  148</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_RUNNING_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a0da685b6c5606e6a1262597a85c0bcf7">  149</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_RUNNING_MSB    _u(1)</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a959318fb8a93408e40072b2b7098c665">  150</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_RUNNING_LSB    _u(1)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a2c5c3aba5c37b71594547ae9983013d8">  151</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_RUNNING_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">// Field       : TICKS_TIMER1_CTRL_ENABLE</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">// Description : start / stop tick generation</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a793f36b93e6b2013dcbab1fe135ca940">  155</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_ENABLE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac9d40c691a974b334cb7e402a99afd65">  156</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_ENABLE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a55666a7e6341149c16573505ddbbd6e5">  157</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_ENABLE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a17ded82c2a6c99cbd2be8020d867c3cb">  158</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_ENABLE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a9c86136daa282554fc558aa5a5be71a9">  159</a></span><span class="preprocessor">#define TICKS_TIMER1_CTRL_ENABLE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">// Register    : TICKS_TIMER1_CYCLES</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">// Description : Total number of clk_tick cycles before the next tick.</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a24ccfd676add5c996b79695be3e7d545">  163</a></span><span class="preprocessor">#define TICKS_TIMER1_CYCLES_OFFSET _u(0x00000028)</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a273ac55b660402da8c9ce02335e540da">  164</a></span><span class="preprocessor">#define TICKS_TIMER1_CYCLES_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a44c63a566bc9ea29cd71c49e63a2c5ff">  165</a></span><span class="preprocessor">#define TICKS_TIMER1_CYCLES_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ad5f06a71d3c3e9c39e5d0265f174f5c4">  166</a></span><span class="preprocessor">#define TICKS_TIMER1_CYCLES_MSB    _u(8)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#af1231be46127a8123c1e0bb16d14e3c0">  167</a></span><span class="preprocessor">#define TICKS_TIMER1_CYCLES_LSB    _u(0)</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a2f3dfeaa4244dd341aa28bdd2a824c9e">  168</a></span><span class="preprocessor">#define TICKS_TIMER1_CYCLES_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">// Register    : TICKS_TIMER1_COUNT</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">// Description : Count down timer: the remaining number clk_tick cycles before</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">//               the next tick is generated.</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a8d61252531d401a1394dcadb69c72554">  173</a></span><span class="preprocessor">#define TICKS_TIMER1_COUNT_OFFSET _u(0x0000002c)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac07a15880a197cdebebaf82ba010a9b6">  174</a></span><span class="preprocessor">#define TICKS_TIMER1_COUNT_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a9f60483fc9f7bbbceee766c5bac7f325">  175</a></span><span class="preprocessor">#define TICKS_TIMER1_COUNT_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#afa4c9bc96f41da2907501f488b44aa81">  176</a></span><span class="preprocessor">#define TICKS_TIMER1_COUNT_MSB    _u(8)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#addf4ac378ae487a36f8fffce1e3f7545">  177</a></span><span class="preprocessor">#define TICKS_TIMER1_COUNT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#abd75eb01c12124962fc601a462f3a8a2">  178</a></span><span class="preprocessor">#define TICKS_TIMER1_COUNT_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">// Register    : TICKS_WATCHDOG_CTRL</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">// Description : Controls the tick generator</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a92ead06f6ad039570746df4b92fa3a4f">  182</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_OFFSET _u(0x00000030)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a91db6cfdd88a9f23f428fc30d77e9ed5">  183</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ae657d5e588a5e40d58bcb233f24b76d4">  184</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">// Field       : TICKS_WATCHDOG_CTRL_RUNNING</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">// Description : Is the tick generator running?</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a8c05a34e2e2a36f316a6ba17d12ac57e">  188</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_RUNNING_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a23c8243853777087cb2831a695c68a6a">  189</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_RUNNING_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a797689d0317464ee083cadf28a2e6e31">  190</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_RUNNING_MSB    _u(1)</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a3599bd5925ce50d9b8abb41524bb6a95">  191</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_RUNNING_LSB    _u(1)</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#acd12854fdace86aa227d7f535c068754">  192</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_RUNNING_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">// Field       : TICKS_WATCHDOG_CTRL_ENABLE</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">// Description : start / stop tick generation</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa35a4670d596ec76255faf054b849d3f">  196</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_ENABLE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a6e7a06ef14d1bdd5497d2ffaf98c3227">  197</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_ENABLE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a7015c648ed74f7e63059065cc8701cb5">  198</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_ENABLE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#af11872a1049f8a143f05520c8a4c4a3c">  199</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_ENABLE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a19715419a3f8c771f3e4f311aa5b505c">  200</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CTRL_ENABLE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">// Register    : TICKS_WATCHDOG_CYCLES</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">// Description : Total number of clk_tick cycles before the next tick.</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ad6fa86cd8752f6b3e56074a436f229e3">  204</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CYCLES_OFFSET _u(0x00000034)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a3e2664a1c10f9b2cab3ab5ea9c582c20">  205</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CYCLES_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a8ae28dd4701af68d626c30d12365f6d3">  206</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CYCLES_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a43ff4f876593dd8694c8daf7a40c0a48">  207</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CYCLES_MSB    _u(8)</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa4e14342e21d0801457a916b89bc8884">  208</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CYCLES_LSB    _u(0)</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a84e7ea56d0e9edc96e80db2b16a46b35">  209</a></span><span class="preprocessor">#define TICKS_WATCHDOG_CYCLES_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">// Register    : TICKS_WATCHDOG_COUNT</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">// Description : Count down timer: the remaining number clk_tick cycles before</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">//               the next tick is generated.</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a29de00a726c37b5bd7465f9d933d9b2c">  214</a></span><span class="preprocessor">#define TICKS_WATCHDOG_COUNT_OFFSET _u(0x00000038)</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a44e0556af28a328803a23c003ff92d94">  215</a></span><span class="preprocessor">#define TICKS_WATCHDOG_COUNT_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa5f19a0b2de45c5a02f7e2ab8b58dbfe">  216</a></span><span class="preprocessor">#define TICKS_WATCHDOG_COUNT_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a2418359130cf0b66843b1022bc96e088">  217</a></span><span class="preprocessor">#define TICKS_WATCHDOG_COUNT_MSB    _u(8)</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ab389dc57fe48d9a02dbb6bd67296900b">  218</a></span><span class="preprocessor">#define TICKS_WATCHDOG_COUNT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa288e7591d1c22dc4040f8ce3ae5d5c5">  219</a></span><span class="preprocessor">#define TICKS_WATCHDOG_COUNT_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">// Register    : TICKS_RISCV_CTRL</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">// Description : Controls the tick generator</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a4e7c61da3095e234b44dc30834fb6c00">  223</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_OFFSET _u(0x0000003c)</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a97dfd92544850cad417f6c0c0f408d90">  224</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a0f6075003df189b2575ed35fb77d2b5d">  225</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">// Field       : TICKS_RISCV_CTRL_RUNNING</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">// Description : Is the tick generator running?</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a409d827036a37d32467077a1d7c3807a">  229</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_RUNNING_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ae300733d463ac2ca022432756c6e965d">  230</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_RUNNING_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aeb4b18674d8e3399d06b721972e426a9">  231</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_RUNNING_MSB    _u(1)</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a3d30129eef45591385605049ebf3d67c">  232</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_RUNNING_LSB    _u(1)</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a3bc081f0c55c03c2365f298e0c6aafdf">  233</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_RUNNING_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// Field       : TICKS_RISCV_CTRL_ENABLE</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">// Description : start / stop tick generation</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aad8f42201c3c4b6128bb0b5887eb1bb8">  237</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_ENABLE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a890266783fb0f99f7b9c47cf6314b293">  238</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_ENABLE_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a3b17f8e0fa5d221a453a69d299deabc3">  239</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_ENABLE_MSB    _u(0)</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ad7aa621df60b7291df5d98977ec30ee4">  240</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_ENABLE_LSB    _u(0)</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a5812d43b9cad006ddc3fd5a03f884cbe">  241</a></span><span class="preprocessor">#define TICKS_RISCV_CTRL_ENABLE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">// Register    : TICKS_RISCV_CYCLES</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">// Description : Total number of clk_tick cycles before the next tick.</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a2f87ed486832fd90c958620f3b9a3a5e">  245</a></span><span class="preprocessor">#define TICKS_RISCV_CYCLES_OFFSET _u(0x00000040)</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a431c98c9fb1971fbaa530fc83c896973">  246</a></span><span class="preprocessor">#define TICKS_RISCV_CYCLES_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a7b9918f278ec607e5bcebf11165f6cdc">  247</a></span><span class="preprocessor">#define TICKS_RISCV_CYCLES_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a5cd123b66492a7ba714891e8548a7939">  248</a></span><span class="preprocessor">#define TICKS_RISCV_CYCLES_MSB    _u(8)</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aed73682eb3169f93a44e680c8746e141">  249</a></span><span class="preprocessor">#define TICKS_RISCV_CYCLES_LSB    _u(0)</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#abf86c918ebbe7729a4968f14738c196b">  250</a></span><span class="preprocessor">#define TICKS_RISCV_CYCLES_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">// Register    : TICKS_RISCV_COUNT</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">// Description : Count down timer: the remaining number clk_tick cycles before</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">//               the next tick is generated.</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a06b2b8595fafcc71e1ffbd7f480aeebe">  255</a></span><span class="preprocessor">#define TICKS_RISCV_COUNT_OFFSET _u(0x00000044)</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#aa9c6ea2168971edaf5bc2e9b10736ae2">  256</a></span><span class="preprocessor">#define TICKS_RISCV_COUNT_BITS   _u(0x000001ff)</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a1f528fa15d3204d6539f71c481c020f1">  257</a></span><span class="preprocessor">#define TICKS_RISCV_COUNT_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a23eeb438720c32c8b1c3542a4e948420">  258</a></span><span class="preprocessor">#define TICKS_RISCV_COUNT_MSB    _u(8)</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a78e6e768c929505453ddc0718cd560f6">  259</a></span><span class="preprocessor">#define TICKS_RISCV_COUNT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ab4e75f9e4289bda3c7bef38a549dac14">  260</a></span><span class="preprocessor">#define TICKS_RISCV_COUNT_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_TICKS_H</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html">ticks.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

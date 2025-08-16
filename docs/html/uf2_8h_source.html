@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de uf2.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('uf2_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">uf2.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="uf2_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _BOOT_UF2_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _BOOT_UF2_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8h.html">assert.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="uf2_8h.html#a5c5c4309a7d9c8413855c4d50e0a939e">   19</a></span><span class="preprocessor">#define UF2_MAGIC_START0 0x0A324655u</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="uf2_8h.html#a88c668a3380a6952e819d1e8a02ef8ca">   20</a></span><span class="preprocessor">#define UF2_MAGIC_START1 0x9E5D5157u</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="uf2_8h.html#a2d87dd22d24f4e73425aa499cd2dc97d">   21</a></span><span class="preprocessor">#define UF2_MAGIC_END    0x0AB16F30u</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="uf2_8h.html#a3e88ab9fb7cf0e21267d9739359c7fa7">   23</a></span><span class="preprocessor">#define UF2_FLAG_NOT_MAIN_FLASH          0x00000001u</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="uf2_8h.html#a6e1a1d7c751372748716592fcf7f4487">   24</a></span><span class="preprocessor">#define UF2_FLAG_FILE_CONTAINER          0x00001000u</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="uf2_8h.html#ab491ff743da533bb573129a06718b973">   25</a></span><span class="preprocessor">#define UF2_FLAG_FAMILY_ID_PRESENT       0x00002000u</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="uf2_8h.html#ac61b0fc1ff7274a0e28e5bb1a396f76a">   26</a></span><span class="preprocessor">#define UF2_FLAG_MD5_PRESENT             0x00004000u</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="uf2_8h.html#ad7f044024ae76f0e7c9eed937567789a">   27</a></span><span class="preprocessor">#define UF2_FLAG_EXTENSION_FLAGS_PRESENT 0x00008000u</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Extra family IDs</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="uf2_8h.html#af22d935f19ee7f717172597097b56d7b">   30</a></span><span class="preprocessor">#define CYW43_FIRMWARE_FAMILY_ID    0xe48bff55u</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// Bootrom supported family IDs</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="uf2_8h.html#aa3e8b45b096854bf103fa950ba646c77">   33</a></span><span class="preprocessor">#define RP2040_FAMILY_ID            0xe48bff56u</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="uf2_8h.html#a1dc21fe58e317197989a9df1a3300493">   34</a></span><span class="preprocessor">#define ABSOLUTE_FAMILY_ID          0xe48bff57u</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="uf2_8h.html#a81d3167f5138149b3d79d9659a45bf7c">   35</a></span><span class="preprocessor">#define DATA_FAMILY_ID              0xe48bff58u</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="uf2_8h.html#a4ed8b08fbae22fe91a02cf0db92ad003">   36</a></span><span class="preprocessor">#define RP2350_ARM_S_FAMILY_ID      0xe48bff59u</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="uf2_8h.html#a8651959376430ea2c96e3697e659e4e0">   37</a></span><span class="preprocessor">#define RP2350_RISCV_FAMILY_ID      0xe48bff5au</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="uf2_8h.html#acb1ccc6525a835ea3861c4bbfdd444ff">   38</a></span><span class="preprocessor">#define RP2350_ARM_NS_FAMILY_ID     0xe48bff5bu</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="uf2_8h.html#a3f17e976cf6438bb6161c3634b2994c0">   39</a></span><span class="preprocessor">#define BOOTROM_FAMILY_ID_MIN       RP2040_FAMILY_ID</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="uf2_8h.html#a9d59f9ad20401dfa8a20c0f20de6db5a">   40</a></span><span class="preprocessor">#define BOOTROM_FAMILY_ID_MAX       RP2350_ARM_NS_FAMILY_ID</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// Defined for backwards compatibility</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="uf2_8h.html#a314d1ef3ad7cd76484b49fd2ae928beb">   43</a></span><span class="preprocessor">#define FAMILY_ID_MAX               BOOTROM_FAMILY_ID_MAX</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// 04 e3 57 99</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="uf2_8h.html#ab63581ae7b09e8d24df2fd83329414d2">   46</a></span><span class="preprocessor">#define UF2_EXTENSION_RP2_IGNORE_BLOCK 0x9957e304</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structuf2__block.html">   48</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structuf2__block.html">uf2_block</a> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// 32 byte header</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structuf2__block.html#aafae30bd8789fb1dca4cbe8456bbb8b2">   50</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#aafae30bd8789fb1dca4cbe8456bbb8b2">magic_start0</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structuf2__block.html#ad0fb477c461a5aba9f5f7587b85f9551">   51</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#ad0fb477c461a5aba9f5f7587b85f9551">magic_start1</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structuf2__block.html#aa8162d66e9b3092e3c3eea547466413b">   52</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#aa8162d66e9b3092e3c3eea547466413b">flags</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structuf2__block.html#a9a87b2b13c483396e556a151bba3dd8b">   53</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#a9a87b2b13c483396e556a151bba3dd8b">target_addr</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structuf2__block.html#ae382fa0710052b0631edc58e75e3fda8">   54</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#ae382fa0710052b0631edc58e75e3fda8">payload_size</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structuf2__block.html#a78e20cc47e3a55bf52715209783036c4">   55</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#a78e20cc47e3a55bf52715209783036c4">block_no</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structuf2__block.html#af052c1f7032b4b92db6e655d9909a19d">   56</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#af052c1f7032b4b92db6e655d9909a19d">num_blocks</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structuf2__block.html#a2ffdb9eea83dbf908cfab71a3fefdf8c">   57</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#a2ffdb9eea83dbf908cfab71a3fefdf8c">file_size</a>; <span class="comment">// or familyID;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structuf2__block.html#ae4cd705c751de56c33d6faa64bf09c9b">   58</a></span>    uint8_t  <a class="code hl_variable" href="structuf2__block.html#ae4cd705c751de56c33d6faa64bf09c9b">data</a>[476];</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structuf2__block.html#a811b6d0366c97dbc0a10458a034b1007">   59</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structuf2__block.html#a811b6d0366c97dbc0a10458a034b1007">magic_end</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct </span><a class="code hl_struct" href="structuf2__block.html">uf2_block</a>) == 512, <span class="stringliteral">&quot;uf2_block not sector sized&quot;</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aassert_8h_html"><div class="ttname"><a href="assert_8h.html">assert.h</a></div></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="astructuf2__block_html"><div class="ttname"><a href="structuf2__block.html">uf2_block</a></div><div class="ttdef"><b>Definição</b> uf2.h:48</div></div>
+<div class="ttc" id="astructuf2__block_html_a2ffdb9eea83dbf908cfab71a3fefdf8c"><div class="ttname"><a href="structuf2__block.html#a2ffdb9eea83dbf908cfab71a3fefdf8c">uf2_block::file_size</a></div><div class="ttdeci">uint32_t file_size</div><div class="ttdef"><b>Definição</b> uf2.h:57</div></div>
+<div class="ttc" id="astructuf2__block_html_a78e20cc47e3a55bf52715209783036c4"><div class="ttname"><a href="structuf2__block.html#a78e20cc47e3a55bf52715209783036c4">uf2_block::block_no</a></div><div class="ttdeci">uint32_t block_no</div><div class="ttdef"><b>Definição</b> uf2.h:55</div></div>
+<div class="ttc" id="astructuf2__block_html_a811b6d0366c97dbc0a10458a034b1007"><div class="ttname"><a href="structuf2__block.html#a811b6d0366c97dbc0a10458a034b1007">uf2_block::magic_end</a></div><div class="ttdeci">uint32_t magic_end</div><div class="ttdef"><b>Definição</b> uf2.h:59</div></div>
+<div class="ttc" id="astructuf2__block_html_a9a87b2b13c483396e556a151bba3dd8b"><div class="ttname"><a href="structuf2__block.html#a9a87b2b13c483396e556a151bba3dd8b">uf2_block::target_addr</a></div><div class="ttdeci">uint32_t target_addr</div><div class="ttdef"><b>Definição</b> uf2.h:53</div></div>
+<div class="ttc" id="astructuf2__block_html_aa8162d66e9b3092e3c3eea547466413b"><div class="ttname"><a href="structuf2__block.html#aa8162d66e9b3092e3c3eea547466413b">uf2_block::flags</a></div><div class="ttdeci">uint32_t flags</div><div class="ttdef"><b>Definição</b> uf2.h:52</div></div>
+<div class="ttc" id="astructuf2__block_html_aafae30bd8789fb1dca4cbe8456bbb8b2"><div class="ttname"><a href="structuf2__block.html#aafae30bd8789fb1dca4cbe8456bbb8b2">uf2_block::magic_start0</a></div><div class="ttdeci">uint32_t magic_start0</div><div class="ttdef"><b>Definição</b> uf2.h:50</div></div>
+<div class="ttc" id="astructuf2__block_html_ad0fb477c461a5aba9f5f7587b85f9551"><div class="ttname"><a href="structuf2__block.html#ad0fb477c461a5aba9f5f7587b85f9551">uf2_block::magic_start1</a></div><div class="ttdeci">uint32_t magic_start1</div><div class="ttdef"><b>Definição</b> uf2.h:51</div></div>
+<div class="ttc" id="astructuf2__block_html_ae382fa0710052b0631edc58e75e3fda8"><div class="ttname"><a href="structuf2__block.html#ae382fa0710052b0631edc58e75e3fda8">uf2_block::payload_size</a></div><div class="ttdeci">uint32_t payload_size</div><div class="ttdef"><b>Definição</b> uf2.h:54</div></div>
+<div class="ttc" id="astructuf2__block_html_ae4cd705c751de56c33d6faa64bf09c9b"><div class="ttname"><a href="structuf2__block.html#ae4cd705c751de56c33d6faa64bf09c9b">uf2_block::data</a></div><div class="ttdeci">uint8_t data[476]</div><div class="ttdef"><b>Definição</b> uf2.h:58</div></div>
+<div class="ttc" id="astructuf2__block_html_af052c1f7032b4b92db6e655d9909a19d"><div class="ttname"><a href="structuf2__block.html#af052c1f7032b4b92db6e655d9909a19d">uf2_block::num_blocks</a></div><div class="ttdeci">uint32_t num_blocks</div><div class="ttdef"><b>Definição</b> uf2.h:56</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_afd6173fcc80f68f3e45820d53e5d728.html">common</a></li><li class="navelem"><a class="el" href="dir_a1631194a918df6f82a54a99aa6a87f3.html">boot_uf2_headers</a></li><li class="navelem"><a class="el" href="dir_6eb6a85c87d43347e91c21c8a4bed33a.html">include</a></li><li class="navelem"><a class="el" href="dir_c8e434f7ec7447191ec6d64f2646a198.html">boot</a></li><li class="navelem"><a class="el" href="uf2_8h.html">uf2.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

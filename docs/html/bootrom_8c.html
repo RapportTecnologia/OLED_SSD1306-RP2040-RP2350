@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro bootrom.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('bootrom_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro bootrom.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="bootrom_8h_source.html">pico/bootrom.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="picoboot_8h_source.html">boot/picoboot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="picobin_8h_source.html">boot/picobin.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rcp_8h_source.html">hardware/rcp.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para bootrom.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="bootrom_8c__incl.svg" width="1107" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a694eed0523bd8cc7979edff4540aa1c7" id="r_a694eed0523bd8cc7979edff4540aa1c7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#a694eed0523bd8cc7979edff4540aa1c7">IMAGE_DEF_BASE</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)(0x54 + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td></tr>
+<tr class="separator:a694eed0523bd8cc7979edff4540aa1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5224cb61f28933c7179be91c1b406185" id="r_a5224cb61f28933c7179be91c1b406185"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#a5224cb61f28933c7179be91c1b406185">IMAGE_DEF_REL_BLOCK_OFFSET</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)(0x5c + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td></tr>
+<tr class="separator:a5224cb61f28933c7179be91c1b406185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e541c87e2967de981fc63e67070b796" id="r_a6e541c87e2967de981fc63e67070b796"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#a6e541c87e2967de981fc63e67070b796">IMAGE_DEF_TBYB_FLAGGED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)&#160;&#160;&#160;*(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>*)(0x4c + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td></tr>
+<tr class="separator:a6e541c87e2967de981fc63e67070b796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21491f56f89f1d5be4e5e792b4204c00" id="r_a21491f56f89f1d5be4e5e792b4204c00"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#a21491f56f89f1d5be4e5e792b4204c00">IMAGE_DEF_VERIFIED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)(0x64 + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td></tr>
+<tr class="separator:a21491f56f89f1d5be4e5e792b4204c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51d6a88e7cdc0e4243b1b5f1f79974e" id="r_aa51d6a88e7cdc0e4243b1b5f1f79974e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#aa51d6a88e7cdc0e4243b1b5f1f79974e">TBYB_FLAG_ADDR</a>&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)0x400e0348</td></tr>
+<tr class="separator:aa51d6a88e7cdc0e4243b1b5f1f79974e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fe04703b4bb48b23aeac158171841c" id="r_a07fe04703b4bb48b23aeac158171841c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#a07fe04703b4bb48b23aeac158171841c">VERSION_DOWNGRADE_ERASE_ADDR</a>&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)0x400e0338</td></tr>
+<tr class="separator:a07fe04703b4bb48b23aeac158171841c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a93b9cf91f7623d6d8b100a3693d6d5e4" id="r_a93b9cf91f7623d6d8b100a3693d6d5e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#a93b9cf91f7623d6d8b100a3693d6d5e4">__attribute__</a> ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">noreturn</a>))</td></tr>
+<tr class="separator:a93b9cf91f7623d6d8b100a3693d6d5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17b99a409a7c1d595c202d0fa0d98c6e" id="r_ga17b99a409a7c1d595c202d0fa0d98c6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#ga17b99a409a7c1d595c202d0fa0d98c6e">rom_add_flash_runtime_partition</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">start_offset</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">permissions</a>)</td></tr>
+<tr class="memdesc:ga17b99a409a7c1d595c202d0fa0d98c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a runtime partition to the partition table to specify flash permissions.  <br /></td></tr>
+<tr class="separator:ga17b99a409a7c1d595c202d0fa0d98c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3e66e7bcbf0448a0a63cf37dfb4b53c" id="r_gad3e66e7bcbf0448a0a63cf37dfb4b53c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#gad3e66e7bcbf0448a0a63cf37dfb4b53c">rom_data_lookup</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">code</a>)</td></tr>
+<tr class="memdesc:gad3e66e7bcbf0448a0a63cf37dfb4b53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup a bootrom data address by its code.  <br /></td></tr>
+<tr class="separator:gad3e66e7bcbf0448a0a63cf37dfb4b53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf61234f389da6444b6479f29616d7d" id="r_gaaaf61234f389da6444b6479f29616d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#gaaaf61234f389da6444b6479f29616d7d">rom_func_lookup</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">code</a>)</td></tr>
+<tr class="memdesc:gaaaf61234f389da6444b6479f29616d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\tag<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">table_lookup</a>[]  <br /></td></tr>
+<tr class="separator:gaaaf61234f389da6444b6479f29616d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31965209f0ddaeaecaeb3c516abda04d" id="r_ga31965209f0ddaeaecaeb3c516abda04d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#ga31965209f0ddaeaecaeb3c516abda04d">rom_funcs_lookup</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">table</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga31965209f0ddaeaecaeb3c516abda04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\end<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">table_lookup</a>[]  <br /></td></tr>
+<tr class="separator:ga31965209f0ddaeaecaeb3c516abda04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0ac554145d66038fdc1906c0f7ebfb" id="r_abf0ac554145d66038fdc1906c0f7ebfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8c.html#abf0ac554145d66038fdc1906c0f7ebfb">rom_get_boot_random</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275">out</a>[4])</td></tr>
+<tr class="separator:abf0ac554145d66038fdc1906c0f7ebfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d90d68d70435f3ecdaaa5f68b142c4f" id="r_ga1d90d68d70435f3ecdaaa5f68b142c4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#ga1d90d68d70435f3ecdaaa5f68b142c4f">rom_pick_ab_partition_during_update</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_a_num</a>)</td></tr>
+<tr class="memdesc:ga1d90d68d70435f3ecdaaa5f68b142c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick A/B partition without disturbing any in progress Flash Update boot or TBYB boot.  <br /></td></tr>
+<tr class="separator:ga1d90d68d70435f3ecdaaa5f68b142c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a694eed0523bd8cc7979edff4540aa1c7" name="a694eed0523bd8cc7979edff4540aa1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694eed0523bd8cc7979edff4540aa1c7">&#9670;&#160;</a></span>IMAGE_DEF_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> IMAGE_DEF_BASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a></td><td>)</td>
+          <td>&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)(0x54 + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5224cb61f28933c7179be91c1b406185" name="a5224cb61f28933c7179be91c1b406185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5224cb61f28933c7179be91c1b406185">&#9670;&#160;</a></span>IMAGE_DEF_REL_BLOCK_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> IMAGE_DEF_REL_BLOCK_OFFSET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a></td><td>)</td>
+          <td>&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)(0x5c + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e541c87e2967de981fc63e67070b796" name="a6e541c87e2967de981fc63e67070b796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e541c87e2967de981fc63e67070b796">&#9670;&#160;</a></span>IMAGE_DEF_TBYB_FLAGGED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> IMAGE_DEF_TBYB_FLAGGED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a></td><td>)</td>
+          <td>&#160;&#160;&#160;*(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>*)(0x4c + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21491f56f89f1d5be4e5e792b4204c00" name="a21491f56f89f1d5be4e5e792b4204c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21491f56f89f1d5be4e5e792b4204c00">&#9670;&#160;</a></span>IMAGE_DEF_VERIFIED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> IMAGE_DEF_VERIFIED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a></td><td>)</td>
+          <td>&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)(0x64 + (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">scan_workarea</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa51d6a88e7cdc0e4243b1b5f1f79974e" name="aa51d6a88e7cdc0e4243b1b5f1f79974e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51d6a88e7cdc0e4243b1b5f1f79974e">&#9670;&#160;</a></span>TBYB_FLAG_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> TBYB_FLAG_ADDR&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)0x400e0348</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07fe04703b4bb48b23aeac158171841c" name="a07fe04703b4bb48b23aeac158171841c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07fe04703b4bb48b23aeac158171841c">&#9670;&#160;</a></span>VERSION_DOWNGRADE_ERASE_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> VERSION_DOWNGRADE_ERASE_ADDR&#160;&#160;&#160;*(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>*)0x400e0338</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a93b9cf91f7623d6d8b100a3693d6d5e4" name="a93b9cf91f7623d6d8b100a3693d6d5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b9cf91f7623d6d8b100a3693d6d5e4">&#9670;&#160;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">noreturn</a>)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="picoboot__constants_8h.html#a2d9da66a1d9d2ac20edba61ee7119f22">BOOTSEL_FLAG_GPIO_PIN_SPECIFIED</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="bootrom_8h.html#aa1e1afdc67311afa70c77c895aa63de5">disable_interface_mask</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>, <a class="el" href="picoboot__constants_8h.html#ae8f7555161b565e1ffe0e10070474010">REBOOT2_FLAG_NO_RETURN_ON_SUCCESS</a>, <a class="el" href="picoboot__constants_8h.html#a8a8c5d99b664fa6711e783d96923b5d9">REBOOT2_FLAG_REBOOT_TYPE_BOOTSEL</a> e <a class="el" href="group__pico__bootrom.html#gaaaf61234f389da6444b6479f29616d7d">rom_func_lookup()</a>.</p>
+
+</div>
+</div>
+<a id="abf0ac554145d66038fdc1906c0f7ebfb" name="abf0ac554145d66038fdc1906c0f7ebfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0ac554145d66038fdc1906c0f7ebfb">&#9670;&#160;</a></span>rom_get_boot_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> rom_get_boot_random </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>out</em>[4]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a29022c0c92a05cf88ca5046c59d6f629">count_of</a>, <a class="el" href="pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275">out</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a777ea842f3395f3631f05f65f96eb50f">ROM_FUNC_GET_SYS_INFO</a> e <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a61bb5835fbaaf04a2b82a4ddb6f65934">SYS_INFO_BOOT_RANDOM</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_1686c45b041666fce3b490096f338b4d.html">pico_bootrom</a></li><li class="navelem"><a class="el" href="bootrom_8c.html">bootrom.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

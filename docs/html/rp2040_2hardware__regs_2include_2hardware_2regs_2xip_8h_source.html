@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de xip.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2040/hardware_regs/include/hardware/regs/xip.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : XIP</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : ahb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : QSPI flash execute-in-place block</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _HARDWARE_REGS_XIP_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _HARDWARE_REGS_XIP_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register    : XIP_CTRL</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Description : Cache control</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a1194f39ae84577853d9f3fa9f2d24f37">   19</a></span><span class="preprocessor">#define XIP_CTRL_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a9a67fe8be765b45eac94441da276e38b">   20</a></span><span class="preprocessor">#define XIP_CTRL_BITS   _u(0x0000000b)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ae5db146f4b3725e102f962b9ed887014">   21</a></span><span class="preprocessor">#define XIP_CTRL_RESET  _u(0x00000003)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Field       : XIP_CTRL_POWER_DOWN</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Description : When 1, the cache memories are powered down. They retain state,</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//               but can not be accessed. This reduces static power dissipation.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//               Writing 1 to this bit forces CTRL_EN to 0, i.e. the cache</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//               cannot</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//               be enabled when powered down.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//               Cache-as-SRAM accesses will produce a bus error response when</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">//               the cache is powered down.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ad3b6cef42e2a1ca289294367d47f2eb8">   31</a></span><span class="preprocessor">#define XIP_CTRL_POWER_DOWN_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a543d16f8bf314aa3f70be1882133f92b">   32</a></span><span class="preprocessor">#define XIP_CTRL_POWER_DOWN_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a6375acb67e4967617f361d4d03782a42">   33</a></span><span class="preprocessor">#define XIP_CTRL_POWER_DOWN_MSB    _u(3)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ae0cbbf99d77bad2a3cae1cf24e848643">   34</a></span><span class="preprocessor">#define XIP_CTRL_POWER_DOWN_LSB    _u(3)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aa3dd6b5e085887ee20a93a4d9e7e4fda">   35</a></span><span class="preprocessor">#define XIP_CTRL_POWER_DOWN_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// Field       : XIP_CTRL_ERR_BADWRITE</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// Description : When 1, writes to any alias other than 0x0 (caching,</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//               allocating)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//               will produce a bus fault. When 0, these writes are silently</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//               ignored.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//               In either case, writes to the 0x0 alias will deallocate on tag</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//               match,</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//               as usual.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a5b209e4292870f1adb905c35bd76cf7c">   45</a></span><span class="preprocessor">#define XIP_CTRL_ERR_BADWRITE_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a0b39cb276b09dc11a5a6633632c76cd5">   46</a></span><span class="preprocessor">#define XIP_CTRL_ERR_BADWRITE_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a469c9dd132118d526b645f95a22cc2f3">   47</a></span><span class="preprocessor">#define XIP_CTRL_ERR_BADWRITE_MSB    _u(1)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a34d099a6952c0a9765218efed18383d7">   48</a></span><span class="preprocessor">#define XIP_CTRL_ERR_BADWRITE_LSB    _u(1)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a7f85d7cc5df7483d1f52383eebfdb2b2">   49</a></span><span class="preprocessor">#define XIP_CTRL_ERR_BADWRITE_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Field       : XIP_CTRL_EN</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// Description : When 1, enable the cache. When the cache is disabled, all XIP</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//               accesses</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//               will go straight to the flash, without querying the cache. When</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//               enabled,</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">//               cacheable XIP accesses will query the cache, and the flash will</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//               not be accessed if the tag matches and the valid bit is set.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">//</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">//               If the cache is enabled, cache-as-SRAM accesses have no effect</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">//               on the</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//               cache data RAM, and will produce a bus error response.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ab5a9d5eafcfcd98703fb23e1006b8423">   62</a></span><span class="preprocessor">#define XIP_CTRL_EN_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a18fca712dff9e30a4c514137d072c980">   63</a></span><span class="preprocessor">#define XIP_CTRL_EN_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a83bb0a829373b38e75b12312caa33143">   64</a></span><span class="preprocessor">#define XIP_CTRL_EN_MSB    _u(0)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ae14e75a116ccf009c6268a2bfb3582d3">   65</a></span><span class="preprocessor">#define XIP_CTRL_EN_LSB    _u(0)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a91fa61cb79a1f73296532f8f64351228">   66</a></span><span class="preprocessor">#define XIP_CTRL_EN_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// Register    : XIP_FLUSH</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// Description : Cache Flush control</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">//               Write 1 to flush the cache. This clears the tag memory, but</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">//               the data memory retains its contents. (This means cache-as-SRAM</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//               contents is not affected by flush or reset.)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//               Reading will hold the bus (stall the processor) until the flush</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">//               completes. Alternatively STAT can be polled until completion.</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a50921cd122e3c3e8efef38a990d43840">   75</a></span><span class="preprocessor">#define XIP_FLUSH_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a296e031f51da3132dc7e351ac697fcff">   76</a></span><span class="preprocessor">#define XIP_FLUSH_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a2f5af6eb1c7f642baac039e98146febf">   77</a></span><span class="preprocessor">#define XIP_FLUSH_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aed5e29306e9d9e80daee8bd4819e190e">   78</a></span><span class="preprocessor">#define XIP_FLUSH_MSB    _u(0)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a5819d70f952e3c78bfa1687990e5fa01">   79</a></span><span class="preprocessor">#define XIP_FLUSH_LSB    _u(0)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a7f0a7c99cb296ffdef6c523bd53c22b8">   80</a></span><span class="preprocessor">#define XIP_FLUSH_ACCESS &quot;SC&quot;</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// Register    : XIP_STAT</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// Description : Cache Status</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a8bd24919b3f7ccec16e5080fb5111762">   84</a></span><span class="preprocessor">#define XIP_STAT_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#add34c6c7312429ff255033b111a2ec6a">   85</a></span><span class="preprocessor">#define XIP_STAT_BITS   _u(0x00000007)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#af5eb677813d382d835d93bd9aef97089">   86</a></span><span class="preprocessor">#define XIP_STAT_RESET  _u(0x00000002)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// Field       : XIP_STAT_FIFO_FULL</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// Description : When 1, indicates the XIP streaming FIFO is completely full.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">//               The streaming FIFO is 2 entries deep, so the full and empty</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">//               flag allow its level to be ascertained.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a0184263721cb7ba7aab563b9a2c30075">   92</a></span><span class="preprocessor">#define XIP_STAT_FIFO_FULL_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a32e1fd0370c98e13e5c6bace1b505909">   93</a></span><span class="preprocessor">#define XIP_STAT_FIFO_FULL_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a8cbc11fd60365ce23579a4288129dfd0">   94</a></span><span class="preprocessor">#define XIP_STAT_FIFO_FULL_MSB    _u(2)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a037b31edb57c7e3236a21972058233fd">   95</a></span><span class="preprocessor">#define XIP_STAT_FIFO_FULL_LSB    _u(2)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a7d5572128941c51fe708e2abcfec1c37">   96</a></span><span class="preprocessor">#define XIP_STAT_FIFO_FULL_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">// Field       : XIP_STAT_FIFO_EMPTY</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// Description : When 1, indicates the XIP streaming FIFO is completely empty.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a70496c10469f5e59d9897f2a242e9037">  100</a></span><span class="preprocessor">#define XIP_STAT_FIFO_EMPTY_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ac288d501d9c86768a6b6d4b0c033c4bb">  101</a></span><span class="preprocessor">#define XIP_STAT_FIFO_EMPTY_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aacc66ac676810b9bb10e4a4e9ba72e43">  102</a></span><span class="preprocessor">#define XIP_STAT_FIFO_EMPTY_MSB    _u(1)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a78c82f72d92b028482ddcf7f0227b691">  103</a></span><span class="preprocessor">#define XIP_STAT_FIFO_EMPTY_LSB    _u(1)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a0fbc8db862f34899c7ff3cc728d35cc1">  104</a></span><span class="preprocessor">#define XIP_STAT_FIFO_EMPTY_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">// Field       : XIP_STAT_FLUSH_READY</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// Description : Reads as 0 while a cache flush is in progress, and 1 otherwise.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">//               The cache is flushed whenever the XIP block is reset, and also</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">//               when requested via the FLUSH register.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a3ac1d8615e0f31bb6771d9f76065d474">  110</a></span><span class="preprocessor">#define XIP_STAT_FLUSH_READY_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a3a81dbe159d30cc7030ca9da8ca87b5e">  111</a></span><span class="preprocessor">#define XIP_STAT_FLUSH_READY_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#adac375c50361672f2554b253bdc6e559">  112</a></span><span class="preprocessor">#define XIP_STAT_FLUSH_READY_MSB    _u(0)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a06f847ab3baa97b685f6c9f6950a5464">  113</a></span><span class="preprocessor">#define XIP_STAT_FLUSH_READY_LSB    _u(0)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a0805394b09cd7d5ed2d76e044e54c091">  114</a></span><span class="preprocessor">#define XIP_STAT_FLUSH_READY_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// Register    : XIP_CTR_HIT</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Description : Cache Hit counter</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">//               A 32 bit saturating counter that increments upon each cache</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">//               hit,</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">//               i.e. when an XIP access is serviced directly from cached data.</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">//               Write any value to clear.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ae98af7edaaf063770c63d0262d645877">  122</a></span><span class="preprocessor">#define XIP_CTR_HIT_OFFSET _u(0x0000000c)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a64635c9f2d86e809ab74dc26704bf874">  123</a></span><span class="preprocessor">#define XIP_CTR_HIT_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ada6244f8eb6dc961163d98aed150712f">  124</a></span><span class="preprocessor">#define XIP_CTR_HIT_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a325be86b5cd1d0498b3a95e5e5118438">  125</a></span><span class="preprocessor">#define XIP_CTR_HIT_MSB    _u(31)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aa64904c44c4cf1e2ee98d055163e8448">  126</a></span><span class="preprocessor">#define XIP_CTR_HIT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a0f57dc576878aba11604697dcae8a801">  127</a></span><span class="preprocessor">#define XIP_CTR_HIT_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// Register    : XIP_CTR_ACC</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// Description : Cache Access counter</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">//               A 32 bit saturating counter that increments upon each XIP</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">//               access,</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">//               whether the cache is hit or not. This includes noncacheable</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">//               accesses.</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">//               Write any value to clear.</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a8d789e4c582fb5874eb7bdcf87af65f4">  136</a></span><span class="preprocessor">#define XIP_CTR_ACC_OFFSET _u(0x00000010)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a47e251caaf8982d66d6817316f835483">  137</a></span><span class="preprocessor">#define XIP_CTR_ACC_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ab4d71f627a2fe18389e6fbd2594b94de">  138</a></span><span class="preprocessor">#define XIP_CTR_ACC_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aaadc56fd97f1c62a543397e652b7e540">  139</a></span><span class="preprocessor">#define XIP_CTR_ACC_MSB    _u(31)</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aad7fa3c71df5e9b2a9f2721eb9ea7776">  140</a></span><span class="preprocessor">#define XIP_CTR_ACC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aac8c52371e97cf43d7d5d6f45259bee2">  141</a></span><span class="preprocessor">#define XIP_CTR_ACC_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">// Register    : XIP_STREAM_ADDR</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">// Description : FIFO stream address</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">//               The address of the next word to be streamed from flash to the</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">//               streaming FIFO.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">//               Increments automatically after each flash access.</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">//               Write the initial access address here before starting a</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">//               streaming read.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aa2cb59ba184e5137cdf7155d8461ce2e">  150</a></span><span class="preprocessor">#define XIP_STREAM_ADDR_OFFSET _u(0x00000014)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a339232f1e3fe7e616f02dc520f5a0d56">  151</a></span><span class="preprocessor">#define XIP_STREAM_ADDR_BITS   _u(0xfffffffc)</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a203d765e48aabb14820b188997ddf6c7">  152</a></span><span class="preprocessor">#define XIP_STREAM_ADDR_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aaaaba06631f8577bd6d13e619663496b">  153</a></span><span class="preprocessor">#define XIP_STREAM_ADDR_MSB    _u(31)</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a778fd34a5864da47b4ba6b9dceb260c7">  154</a></span><span class="preprocessor">#define XIP_STREAM_ADDR_LSB    _u(2)</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a24c1bcd318191dd9956d0fa24948a4d4">  155</a></span><span class="preprocessor">#define XIP_STREAM_ADDR_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">// Register    : XIP_STREAM_CTR</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">// Description : FIFO stream control</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">//               Write a nonzero value to start a streaming read. This will then</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">//               progress in the background, using flash idle cycles to transfer</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">//               a linear data block from flash to the streaming FIFO.</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">//               Decrements automatically (1 at a time) as the stream</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">//               progresses, and halts on reaching 0.</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">//               Write 0 to halt an in-progress stream, and discard any in-</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">//               flight</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">//               read, so that a new stream can immediately be started (after</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">//               draining the FIFO and reinitialising STREAM_ADDR)</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#aa42e1ef6de164cca52960b069b430b15">  168</a></span><span class="preprocessor">#define XIP_STREAM_CTR_OFFSET _u(0x00000018)</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#ac481161b929a0703a33392718c5419b2">  169</a></span><span class="preprocessor">#define XIP_STREAM_CTR_BITS   _u(0x003fffff)</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#af3b73ccc5c1cb9056234e46e7dab632a">  170</a></span><span class="preprocessor">#define XIP_STREAM_CTR_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a4243302f2866686eaee266faa2f46845">  171</a></span><span class="preprocessor">#define XIP_STREAM_CTR_MSB    _u(21)</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#adbba356779766f9ff2f686598462abce">  172</a></span><span class="preprocessor">#define XIP_STREAM_CTR_LSB    _u(0)</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a50ea3fe0ec223b877555e999439010ac">  173</a></span><span class="preprocessor">#define XIP_STREAM_CTR_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">// Register    : XIP_STREAM_FIFO</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">// Description : FIFO stream data</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">//               Streamed data is buffered here, for retrieval by the system</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">//               DMA.</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">//               This FIFO can also be accessed via the XIP_AUX slave, to avoid</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">//               exposing</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">//               the DMA to bus stalls caused by other XIP traffic.</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a317254572097b0a658bfcac86f634bde">  182</a></span><span class="preprocessor">#define XIP_STREAM_FIFO_OFFSET _u(0x0000001c)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a17ec6ed05ded2859079b8152379d198d">  183</a></span><span class="preprocessor">#define XIP_STREAM_FIFO_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a1c86af1479fcd79cfa198d1cdc75ed3c">  184</a></span><span class="preprocessor">#define XIP_STREAM_FIFO_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a8bce289aa0e3ea774097cd1c9095169b">  185</a></span><span class="preprocessor">#define XIP_STREAM_FIFO_MSB    _u(31)</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a17f328427e615907a72be40db96db221">  186</a></span><span class="preprocessor">#define XIP_STREAM_FIFO_LSB    _u(0)</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html#a16b8567aea58b22244cc6d5c3c03161b">  187</a></span><span class="preprocessor">#define XIP_STREAM_FIFO_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_XIP_H</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_06354e3bf814a9a205e28ace252ee3f5.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_7bd6dad2f73c9497ac05e0910d6eaf47.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe2fde58e5940b473d8ed5d59c5a430.html">hardware</a></li><li class="navelem"><a class="el" href="dir_92a0b393fa4e0be08b4ff2e0195a4834.html">regs</a></li><li class="navelem"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2xip_8h.html">xip.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

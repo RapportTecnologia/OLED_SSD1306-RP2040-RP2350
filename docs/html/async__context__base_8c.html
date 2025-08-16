@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro async_context_base.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('async__context__base_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro async_context_base.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="async__context__base_8h_source.html">pico/async_context_base.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para async_context_base.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="async__context__base_8c__incl.svg" width="242" height="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a83c9fb9a81c93a8c6f121ec54ad2c0ba" id="r_a83c9fb9a81c93a8c6f121ec54ad2c0ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#a83c9fb9a81c93a8c6f121ec54ad2c0ba">async_context_base_add_at_time_worker</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>, <a class="el" href="group__pico__async__context.html#ga74aa4914d98b190d2d4d84d7ff6b469e">async_at_time_worker_t</a> *worker)</td></tr>
+<tr class="separator:a83c9fb9a81c93a8c6f121ec54ad2c0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b11f31e4ca70ec4e93e3c3d02861c5" id="r_a49b11f31e4ca70ec4e93e3c3d02861c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#a49b11f31e4ca70ec4e93e3c3d02861c5">async_context_base_add_when_pending_worker</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>, <a class="el" href="group__pico__async__context.html#ga975e8fa20352873b7ac76b06a497eb2b">async_when_pending_worker_t</a> *worker)</td></tr>
+<tr class="separator:a49b11f31e4ca70ec4e93e3c3d02861c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12cd14565e913b54eb6435dbf62a3f7" id="r_ab12cd14565e913b54eb6435dbf62a3f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#ab12cd14565e913b54eb6435dbf62a3f7">async_context_base_execute_once</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>)</td></tr>
+<tr class="separator:ab12cd14565e913b54eb6435dbf62a3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d50169925fedf7d389c7e5562bf94e" id="r_a73d50169925fedf7d389c7e5562bf94e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#a73d50169925fedf7d389c7e5562bf94e">async_context_base_needs_servicing</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>)</td></tr>
+<tr class="separator:a73d50169925fedf7d389c7e5562bf94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3313b8190c6852a0d8ddcf364937b2" id="r_a7c3313b8190c6852a0d8ddcf364937b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#a7c3313b8190c6852a0d8ddcf364937b2">async_context_base_refresh_next_timeout</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>)</td></tr>
+<tr class="separator:a7c3313b8190c6852a0d8ddcf364937b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac314681152c326babf63640fdf18200c" id="r_ac314681152c326babf63640fdf18200c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#ac314681152c326babf63640fdf18200c">async_context_base_remove_at_time_worker</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>, <a class="el" href="group__pico__async__context.html#ga74aa4914d98b190d2d4d84d7ff6b469e">async_at_time_worker_t</a> *worker)</td></tr>
+<tr class="separator:ac314681152c326babf63640fdf18200c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8728d3c435487b8a3b62fca4136be09d" id="r_a8728d3c435487b8a3b62fca4136be09d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pico__async__context.html#ga74aa4914d98b190d2d4d84d7ff6b469e">async_at_time_worker_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#a8728d3c435487b8a3b62fca4136be09d">async_context_base_remove_ready_at_time_worker</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>)</td></tr>
+<tr class="separator:a8728d3c435487b8a3b62fca4136be09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531fc090888b9ac84d905bd54688a9f5" id="r_a531fc090888b9ac84d905bd54688a9f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__base_8c.html#a531fc090888b9ac84d905bd54688a9f5">async_context_base_remove_when_pending_worker</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>, <a class="el" href="group__pico__async__context.html#ga975e8fa20352873b7ac76b06a497eb2b">async_when_pending_worker_t</a> *worker)</td></tr>
+<tr class="separator:a531fc090888b9ac84d905bd54688a9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a83c9fb9a81c93a8c6f121ec54ad2c0ba" name="a83c9fb9a81c93a8c6f121ec54ad2c0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c9fb9a81c93a8c6f121ec54ad2c0ba">&#9670;&#160;</a></span>async_context_base_add_at_time_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> async_context_base_add_at_time_worker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__pico__async__context.html#ga74aa4914d98b190d2d4d84d7ff6b469e">async_at_time_worker_t</a> *&#160;</td>
+          <td class="paramname"><em>worker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structasync__work__on__timeout.html#a0d624915407b8a4c38d0bc8b2e097729">async_work_on_timeout::next</a> e <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a49b11f31e4ca70ec4e93e3c3d02861c5" name="a49b11f31e4ca70ec4e93e3c3d02861c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b11f31e4ca70ec4e93e3c3d02861c5">&#9670;&#160;</a></span>async_context_base_add_when_pending_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> async_context_base_add_when_pending_worker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__pico__async__context.html#ga975e8fa20352873b7ac76b06a497eb2b">async_when_pending_worker_t</a> *&#160;</td>
+          <td class="paramname"><em>worker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structasync__when__pending__worker.html#a456024ab36675e4c603a3ed79168c686">async_when_pending_worker::next</a> e <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>.</p>
+
+</div>
+</div>
+<a id="ab12cd14565e913b54eb6435dbf62a3f7" name="ab12cd14565e913b54eb6435dbf62a3f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12cd14565e913b54eb6435dbf62a3f7">&#9670;&#160;</a></span>async_context_base_execute_once()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> async_context_base_execute_once </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="async__context__base_8c.html#a7c3313b8190c6852a0d8ddcf364937b2">async_context_base_refresh_next_timeout()</a>, <a class="el" href="async__context__base_8c.html#a8728d3c435487b8a3b62fca4136be09d">async_context_base_remove_ready_at_time_worker()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structasync__work__on__timeout.html#a01235aef0d013ca28c820df4809c505b">async_work_on_timeout::do_work</a> e <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a73d50169925fedf7d389c7e5562bf94e" name="a73d50169925fedf7d389c7e5562bf94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d50169925fedf7d389c7e5562bf94e">&#9670;&#160;</a></span>async_context_base_needs_servicing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> async_context_base_needs_servicing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="a7c3313b8190c6852a0d8ddcf364937b2" name="a7c3313b8190c6852a0d8ddcf364937b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3313b8190c6852a0d8ddcf364937b2">&#9670;&#160;</a></span>async_context_base_refresh_next_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> async_context_base_refresh_next_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="group__timestamp.html#gab375b40e949dce1052298f79c66f7120">at_the_end_of_time</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structasync__work__on__timeout.html#a0d624915407b8a4c38d0bc8b2e097729">async_work_on_timeout::next</a> e <a class="el" href="structasync__work__on__timeout.html#a695beb1e493cb6c2b15f0907e9a2cfb4">async_work_on_timeout::next_time</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="async__context__base_8c.html#ab12cd14565e913b54eb6435dbf62a3f7">async_context_base_execute_once()</a>.</p>
+
+</div>
+</div>
+<a id="ac314681152c326babf63640fdf18200c" name="ac314681152c326babf63640fdf18200c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac314681152c326babf63640fdf18200c">&#9670;&#160;</a></span>async_context_base_remove_at_time_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> async_context_base_remove_at_time_worker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__pico__async__context.html#ga74aa4914d98b190d2d4d84d7ff6b469e">async_at_time_worker_t</a> *&#160;</td>
+          <td class="paramname"><em>worker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="structasync__work__on__timeout.html#a0d624915407b8a4c38d0bc8b2e097729">async_work_on_timeout::next</a>.</p>
+
+</div>
+</div>
+<a id="a8728d3c435487b8a3b62fca4136be09d" name="a8728d3c435487b8a3b62fca4136be09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8728d3c435487b8a3b62fca4136be09d">&#9670;&#160;</a></span>async_context_base_remove_ready_at_time_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__pico__async__context.html#ga74aa4914d98b190d2d4d84d7ff6b469e">async_at_time_worker_t</a> * async_context_base_remove_ready_at_time_worker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structasync__work__on__timeout.html#a0d624915407b8a4c38d0bc8b2e097729">async_work_on_timeout::next</a> e <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="async__context__base_8c.html#ab12cd14565e913b54eb6435dbf62a3f7">async_context_base_execute_once()</a>.</p>
+
+</div>
+</div>
+<a id="a531fc090888b9ac84d905bd54688a9f5" name="a531fc090888b9ac84d905bd54688a9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531fc090888b9ac84d905bd54688a9f5">&#9670;&#160;</a></span>async_context_base_remove_when_pending_worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> async_context_base_remove_when_pending_worker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__pico__async__context.html#ga975e8fa20352873b7ac76b06a497eb2b">async_when_pending_worker_t</a> *&#160;</td>
+          <td class="paramname"><em>worker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="structasync__when__pending__worker.html#a456024ab36675e4c603a3ed79168c686">async_when_pending_worker::next</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_81ef59eb999ec4aab3b1999cf2329c91.html">pico_async_context</a></li><li class="navelem"><a class="el" href="async__context__base_8c.html">async_context_base.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

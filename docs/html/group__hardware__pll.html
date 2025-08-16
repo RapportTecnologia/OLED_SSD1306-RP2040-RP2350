@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: hardware_pll</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__hardware__pll.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">hardware_pll</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Phase Locked Loop control APIs.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gab0c11a480c3c39d63505a8f0d9f5f1ee" id="r_gab0c11a480c3c39d63505a8f0d9f5f1ee"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pll.html#gab0c11a480c3c39d63505a8f0d9f5f1ee">PLL_RESET_NUM</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pll</a>)</td></tr>
+<tr class="memdesc:gab0c11a480c3c39d63505a8f0d9f5f1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__hardware__resets.html#ga329b703b37e2e7506c74f7eaa19468e4">reset_num_t</a> used to reset a given PLL instance.  <br /></td></tr>
+<tr class="separator:gab0c11a480c3c39d63505a8f0d9f5f1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga4529ac07cbd8575938245850d20aba29" id="r_ga4529ac07cbd8575938245850d20aba29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pll.html#ga4529ac07cbd8575938245850d20aba29">pll_deinit</a> (<a class="el" href="rp2__common_2hardware__pll_2include_2hardware_2pll_8h.html#a80a90c0da69e3db416826ce41445396a">PLL</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pll</a>)</td></tr>
+<tr class="memdesc:ga4529ac07cbd8575938245850d20aba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release/uninitialise specified PLL.  <br /></td></tr>
+<tr class="separator:ga4529ac07cbd8575938245850d20aba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67cfd74241b25d891f761af9b40d1ac8" id="r_ga67cfd74241b25d891f761af9b40d1ac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pll.html#ga67cfd74241b25d891f761af9b40d1ac8">pll_init</a> (<a class="el" href="rp2__common_2hardware__pll_2include_2hardware_2pll_8h.html#a80a90c0da69e3db416826ce41445396a">PLL</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pll</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ref_div</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">vco_freq</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">post_div1</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">post_div2</a>)</td></tr>
+<tr class="memdesc:ga67cfd74241b25d891f761af9b40d1ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise specified PLL.  <br /></td></tr>
+<tr class="separator:ga67cfd74241b25d891f761af9b40d1ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Phase Locked Loop control APIs. </p>
+<p>There are two PLLs in RP2040. They are:</p><ul>
+<li>pll_sys - Used to generate up to a 133MHz system clock</li>
+<li>pll_usb - Used to generate a 48MHz USB reference clock</li>
+</ul>
+<p>For details on how the PLLs are calculated, please refer to the RP2040 datasheet. </p>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="gab0c11a480c3c39d63505a8f0d9f5f1ee" name="gab0c11a480c3c39d63505a8f0d9f5f1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0c11a480c3c39d63505a8f0d9f5f1ee">&#9670;&#160;</a></span>PLL_RESET_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PLL_RESET_NUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pll</a></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the <a class="el" href="group__hardware__resets.html#ga329b703b37e2e7506c74f7eaa19468e4">reset_num_t</a> used to reset a given PLL instance. </p>
+<p>Note this macro is intended to resolve at compile time, and does no parameter checking </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ga4529ac07cbd8575938245850d20aba29" name="ga4529ac07cbd8575938245850d20aba29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4529ac07cbd8575938245850d20aba29">&#9670;&#160;</a></span>pll_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> pll_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__pll_2include_2hardware_2pll_8h.html#a80a90c0da69e3db416826ce41445396a">PLL</a>&#160;</td>
+          <td class="paramname"><em>pll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release/uninitialise specified PLL. </p>
+<p>This will turn off the power to the specified PLL. Note this function does not currently check if the PLL is in use before powering it off so should be used with care.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pll</td><td>pll_sys or pll_usb </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a7441909f7df5d83b3f074b1a30837943">PLL_PWR_BITS</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__clocks.html#ga89efe34eab0b8b96954eb0e19a38c8be">set_sys_clock_48mhz()</a>.</p>
+
+</div>
+</div>
+<a id="ga67cfd74241b25d891f761af9b40d1ac8" name="ga67cfd74241b25d891f761af9b40d1ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67cfd74241b25d891f761af9b40d1ac8">&#9670;&#160;</a></span>pll_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> pll_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__pll_2include_2hardware_2pll_8h.html#a80a90c0da69e3db416826ce41445396a">PLL</a>&#160;</td>
+          <td class="paramname"><em>pll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>refdiv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>vco_freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>post_div1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>post_div2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise specified PLL. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pll</td><td>pll_sys or pll_usb </td></tr>
+    <tr><td class="paramname">ref_div</td><td>Input clock divider. </td></tr>
+    <tr><td class="paramname">vco_freq</td><td>Requested output from the VCO (voltage controlled oscillator) </td></tr>
+    <tr><td class="paramname">post_div1</td><td>Post Divider 1 - range 1-7. Must be &gt;= post_div2 </td></tr>
+    <tr><td class="paramname">post_div2</td><td>Post Divider 2 - range 1-7</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Initialise specified PLL. </p>
+<p>\end<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pll_init_calculations</a>[]</p>
+<p>\tag<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pll_init_finish</a>[]</p>
+<p>\end<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pll_init_finish</a>[]</p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="rp2__common_2hardware__pll_2include_2hardware_2pll_8h.html#af8733079c367841a0cd13aeceb4770b4">PICO_PLL_VCO_MAX_FREQ_HZ</a>, <a class="el" href="rp2__common_2hardware__pll_2include_2hardware_2pll_8h.html#abfc59ce6ceb0f07d6a9d87a42188d76e">PICO_PLL_VCO_MIN_FREQ_HZ</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a3ba3bd64d0b6573a858f3443414a41a3">PLL_CS_LOCK_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a25b3dae48adc3347640801cc1b4712e9">PLL_CS_REFDIV_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a1d9a2ada0d3aacf287f2c6c3d53277ec">PLL_FBDIV_INT_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a7af43df55e722f3b21ae157fda0f66a0">PLL_PRIM_POSTDIV1_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a86b5382596b4979d71fb6227c448c71e">PLL_PRIM_POSTDIV1_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ae97ab89f15667a02d62baceef8fc0be2">PLL_PRIM_POSTDIV2_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a625713123638e51760c74c4543d2bb6d">PLL_PRIM_POSTDIV2_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ac971cfa02f512e53e63f3f125a6f8a4c">PLL_PWR_PD_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad93071d5608c0781f605041c304217d2">PLL_PWR_POSTDIVPD_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#acc85e6636002baecc6fa5fad56ba8867">PLL_PWR_VCOPD_BITS</a>, <a class="el" href="group__hardware__pll.html#gab0c11a480c3c39d63505a8f0d9f5f1ee">PLL_RESET_NUM</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a4cd2ba8ffa19bec73fe1a54425d8bc03">tight_loop_contents()</a> e <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a27dda7b1276c553aee3b55d44109b05f">XOSC_HZ</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a3dd167ac601a4057aca2cc514795d7bf">runtime_init_clocks()</a> e <a class="el" href="group__hardware__clocks.html#ga44d5e0845d4f75f3b0c97c733e39f4c8">set_sys_clock_pll()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

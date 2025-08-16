@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de usb_dpram.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2040/hardware_structs/include/hardware/structs/usb_dpram.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _HARDWARE_STRUCTS_USB_DPRAM_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _HARDWARE_STRUCTS_USB_DPRAM_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;hardware/regs/usb.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Reference to datasheet: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf#tab-registerlist_usb</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// The _REG_ macro is intended to help make the register navigable in your IDE (for example, using the &quot;Go to Definition&quot; feature)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// _REG_(x) will link to the corresponding register in hardware/regs/usb.h.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Bit-field descriptions are of the form:</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// BITMASK [BITRANGE] FIELDNAME (RESETVALUE) DESCRIPTION</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// 0-15</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ab65e67e0606ae064bf7f70ccea8abce5">   23</a></span><span class="preprocessor">#define USB_NUM_ENDPOINTS 16</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// allow user to restrict number of endpoints available to save RAN</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef USB_MAX_ENDPOINTS</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a90b06c3af3d0e4cf9925dbbcd8d4ea9c">   27</a></span><span class="preprocessor">#define USB_MAX_ENDPOINTS USB_NUM_ENDPOINTS</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// 1-15</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a6f384f5ef63aad3529ce260aba63a0b0">   31</a></span><span class="preprocessor">#define USB_HOST_INTERRUPT_ENDPOINTS (USB_NUM_ENDPOINTS - 1)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Endpoint buffer control bits</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ab6d6f049d47e05e5f7686a86905f4da2">   34</a></span><span class="preprocessor">#define USB_BUF_CTRL_FULL      0x00008000u</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a1ecfc7a3a90c3b70da66d84b4581c169">   35</a></span><span class="preprocessor">#define USB_BUF_CTRL_LAST      0x00004000u</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ae447a0df126b63fda8d82ec061388177">   36</a></span><span class="preprocessor">#define USB_BUF_CTRL_DATA0_PID 0x00000000u</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a4c9716ae7d9f950cbec43187541a8d41">   37</a></span><span class="preprocessor">#define USB_BUF_CTRL_DATA1_PID 0x00002000u</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#affae216f7337ff8023a92d41516219f8">   38</a></span><span class="preprocessor">#define USB_BUF_CTRL_SEL       0x00001000u</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#afcbfa674a469aafd6dd78b0660ba4a04">   39</a></span><span class="preprocessor">#define USB_BUF_CTRL_STALL     0x00000800u</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ae21e9b7c83836cb116730740c1589b53">   40</a></span><span class="preprocessor">#define USB_BUF_CTRL_AVAIL     0x00000400u</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a94619d89c07d4e82cb1a1c8889c85037">   41</a></span><span class="preprocessor">#define USB_BUF_CTRL_LEN_MASK  0x000003FFu</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a6030fbc289ddb4ef8ea0c1d53ea07657">   42</a></span><span class="preprocessor">#define USB_BUF_CTRL_LEN_LSB   0</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// ep_inout_ctrl bits</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a66fe3699768dc63e6e11e903ef97e6bd">   45</a></span><span class="preprocessor">#define EP_CTRL_ENABLE_BITS (1u &lt;&lt; 31u)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a1ffdebab043e07a9a6b648a653a553e3">   46</a></span><span class="preprocessor">#define EP_CTRL_DOUBLE_BUFFERED_BITS (1u &lt;&lt; 30)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a16fa2ee2e2762898a0a4d1e2064b62d3">   47</a></span><span class="preprocessor">#define EP_CTRL_INTERRUPT_PER_BUFFER (1u &lt;&lt; 29)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a24e927738d9b9426e6d24c1806931de1">   48</a></span><span class="preprocessor">#define EP_CTRL_INTERRUPT_PER_DOUBLE_BUFFER (1u &lt;&lt; 28)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a10306d869f147f6ca991e3d11fdb214b">   49</a></span><span class="preprocessor">#define EP_CTRL_INTERRUPT_ON_NAK (1u &lt;&lt; 16)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a83dc4afb1be753a08991c3bb7141da8e">   50</a></span><span class="preprocessor">#define EP_CTRL_INTERRUPT_ON_STALL (1u &lt;&lt; 17)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a8732477583f5793599b3c0a82b1a7d67">   51</a></span><span class="preprocessor">#define EP_CTRL_BUFFER_TYPE_LSB 26u</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a9387fa62b4a53d6c51efc12278d3536a">   52</a></span><span class="preprocessor">#define EP_CTRL_HOST_INTERRUPT_INTERVAL_LSB 16u</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a5bb5e60f097606d5f5baaff0f0010138">   54</a></span><span class="preprocessor">#define USB_DPRAM_SIZE 4096u</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// PICO_CONFIG: USB_DPRAM_MAX, Set amount of USB RAM used by USB system, min=0, max=4096, default=4096, group=hardware_usb</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Allow user to claim some of the USB RAM for themselves</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#ifndef USB_DPRAM_MAX</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a8cae7bdb5c1954b47992e6dc545d4cf5">   59</a></span><span class="preprocessor">#define USB_DPRAM_MAX USB_DPRAM_SIZE</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// Define maximum packet sizes</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ab0bb4f27213fd7e969c4c5acfaef1b23">   63</a></span><span class="preprocessor">#define USB_MAX_ISO_PACKET_SIZE 1023</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a1061617fcc4b7108f42be51e60260bce">   64</a></span><span class="preprocessor">#define USB_MAX_PACKET_SIZE 64</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t.html">   66</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// 4K of DPSRAM at beginning. Note this supports 8, 16, and 32 bit accesses</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t.html#a6551433fe41a458f10bbe9dee0faf957">   68</a></span>    <span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> setup_packet[8]; <span class="comment">// First 8 bytes are always for setup packets</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Starts at ep1</span></div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html">   71</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html">usb_device_dpram_ep_ctrl</a> {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html#a5825b9f750720a66cdeb8d9825d44179">   72</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html#a5825b9f750720a66cdeb8d9825d44179">in</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html#aa5f91a604b27a77374005ee4edcfd39d">   73</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html#aa5f91a604b27a77374005ee4edcfd39d">out</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t.html#aa695f6c1575c4f4608a3ae607cd3de55">   74</a></span>    } ep_ctrl[<a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ab65e67e0606ae064bf7f70ccea8abce5">USB_NUM_ENDPOINTS</a> - 1];</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Starts at ep0</span></div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="};">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html">   77</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html">usb_device_dpram_ep_buf_ctrl</a> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html#af597f09b74f424d3a61f8050acc313d5">   78</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html#af597f09b74f424d3a61f8050acc313d5">in</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html#a0da2864f77a62340797cec2feda0c361">   79</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html#a0da2864f77a62340797cec2feda0c361">out</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t.html#a7261b955aa3c37d7b2fbc51190b02731">   80</a></span>    } ep_buf_ctrl[<a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ab65e67e0606ae064bf7f70ccea8abce5">USB_NUM_ENDPOINTS</a>];</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// EP0 buffers are fixed. Assumes single buffered mode for EP0</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t.html#afb2ef47ba845e904fbc5244d39684d9e">   83</a></span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> ep0_buf_a[0x40];</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t.html#adcff2448bfa5d209ec4b7ee570d5c538">   84</a></span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> ep0_buf_b[0x40];</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// Rest of DPRAM can be carved up as needed</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="structusb__device__dpram__t.html#a4286afe5973c4ab20c26f3734df7bbff">   87</a></span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> epx_data[<a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a8cae7bdb5c1954b47992e6dc545d4cf5">USB_DPRAM_MAX</a> - 0x180];</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <a class="code hl_struct" href="structusb__device__dpram__t.html">usb_device_dpram_t</a>;</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structusb__device__dpram__t.html">usb_device_dpram_t</a>) == <a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a8cae7bdb5c1954b47992e6dc545d4cf5">USB_DPRAM_MAX</a>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">static_assert</span>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">offsetof</a>(<a class="code hl_struct" href="structusb__device__dpram__t.html">usb_device_dpram_t</a>, epx_data) == 0x180, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="};">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html">   93</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// 4K of DPSRAM at beginning. Note this supports 8, 16, and 32 bit accesses</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#acb802de0780f71587d4461a00ac318ee">   95</a></span>    <span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> setup_packet[8]; <span class="comment">// First 8 bytes are always for setup packets</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="comment">// Interrupt endpoint control 1 -&gt; 15</span></div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="};">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html">   98</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html">usb_host_dpram_ep_ctrl</a> {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html#a094559cb96dd3d9ec542819cad8cf2dc">   99</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html#a094559cb96dd3d9ec542819cad8cf2dc">ctrl</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html#af74b13995413d4fc3fe8243b4bd640c3">  100</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html#af74b13995413d4fc3fe8243b4bd640c3">spare</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#a8af01c8594904e6f63080e55c75c0bd7">  101</a></span>    } int_ep_ctrl[<a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a6f384f5ef63aad3529ce260aba63a0b0">USB_HOST_INTERRUPT_ENDPOINTS</a>];</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#a71c16546080d94297234a31dea139bfa">  103</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__host__dpram__t.html#a71c16546080d94297234a31dea139bfa">epx_buf_ctrl</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#a89cf2030f9a6cbbbe287a12ba5f587a3">  104</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__host__dpram__t.html#a89cf2030f9a6cbbbe287a12ba5f587a3">_spare0</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// Interrupt endpoint buffer control</span></div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="};">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html">  107</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html">usb_host_dpram_ep_buf_ctrl</a> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html#a8deff57f3ff4f3ebad4fd10aace178a3">  108</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html#a8deff57f3ff4f3ebad4fd10aace178a3">ctrl</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html#ab0d94c9b39f4d16e27a794c690774c79">  109</a></span>        <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html#ab0d94c9b39f4d16e27a794c690774c79">spare</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#a20bbaf4840f572108d8f4c5e9f9da376">  110</a></span>    } int_ep_buffer_ctrl[<a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a6f384f5ef63aad3529ce260aba63a0b0">USB_HOST_INTERRUPT_ENDPOINTS</a>];</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#a74e989ee56b348a8f93fde8f80826aca">  112</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> <a class="code hl_variable" href="structusb__host__dpram__t.html#a74e989ee56b348a8f93fde8f80826aca">epx_ctrl</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#a80d6b65623b23d36588ad98780f5ebfd">  114</a></span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> _spare1[124];</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">// Should start at 0x180</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="structusb__host__dpram__t.html#a34ae58d612b726b09bd26a1be749d408">  117</a></span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> epx_data[<a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a8cae7bdb5c1954b47992e6dc545d4cf5">USB_DPRAM_MAX</a> - 0x180];</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>} <a class="code hl_struct" href="structusb__host__dpram__t.html">usb_host_dpram_t</a>;</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structusb__host__dpram__t.html">usb_host_dpram_t</a>) == <a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a8cae7bdb5c1954b47992e6dc545d4cf5">USB_DPRAM_MAX</a>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">static_assert</span>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">offsetof</a>(<a class="code hl_struct" href="structusb__host__dpram__t.html">usb_host_dpram_t</a>, epx_data) == 0x180, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a353393189d8c1b54159d93f80269371e">  123</a></span><span class="preprocessor">#define usb_dpram ((usb_device_dpram_t *)USBCTRL_DPRAM_BASE)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a7a521a6bec77c4739fa081456a477782">  124</a></span><span class="preprocessor">#define usbh_dpram ((usb_host_dpram_t *)USBCTRL_DPRAM_BASE)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">static_assert</span>( <a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a6f384f5ef63aad3529ce260aba63a0b0">USB_HOST_INTERRUPT_ENDPOINTS</a> == 15, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_STRUCTS_USB_DPRAM_H</span></div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ae7a3903ffe232108a65efc85970a5fdb"><div class="ttname"><a href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a></div><div class="ttdeci">volatile uint32_t io_rw_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:66</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h_html_a6f384f5ef63aad3529ce260aba63a0b0"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a6f384f5ef63aad3529ce260aba63a0b0">USB_HOST_INTERRUPT_ENDPOINTS</a></div><div class="ttdeci">#define USB_HOST_INTERRUPT_ENDPOINTS</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:31</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h_html_a8cae7bdb5c1954b47992e6dc545d4cf5"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#a8cae7bdb5c1954b47992e6dc545d4cf5">USB_DPRAM_MAX</a></div><div class="ttdeci">#define USB_DPRAM_MAX</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:59</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h_html_ab65e67e0606ae064bf7f70ccea8abce5"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html#ab65e67e0606ae064bf7f70ccea8abce5">USB_NUM_ENDPOINTS</a></div><div class="ttdeci">#define USB_NUM_ENDPOINTS</div><div class="ttdoc">Copyright (c) 2024 Raspberry Pi (Trading) Ltd.</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:23</div></div>
+<div class="ttc" id="astructusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl_html"><div class="ttname"><a href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html">usb_device_dpram_t::usb_device_dpram_ep_buf_ctrl</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:77</div></div>
+<div class="ttc" id="astructusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl_html_a0da2864f77a62340797cec2feda0c361"><div class="ttname"><a href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html#a0da2864f77a62340797cec2feda0c361">usb_device_dpram_t::usb_device_dpram_ep_buf_ctrl::out</a></div><div class="ttdeci">io_rw_32 out</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:79</div></div>
+<div class="ttc" id="astructusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl_html_af597f09b74f424d3a61f8050acc313d5"><div class="ttname"><a href="structusb__device__dpram__t_1_1usb__device__dpram__ep__buf__ctrl.html#af597f09b74f424d3a61f8050acc313d5">usb_device_dpram_t::usb_device_dpram_ep_buf_ctrl::in</a></div><div class="ttdeci">io_rw_32 in</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:78</div></div>
+<div class="ttc" id="astructusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl_html"><div class="ttname"><a href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html">usb_device_dpram_t::usb_device_dpram_ep_ctrl</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:71</div></div>
+<div class="ttc" id="astructusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl_html_a5825b9f750720a66cdeb8d9825d44179"><div class="ttname"><a href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html#a5825b9f750720a66cdeb8d9825d44179">usb_device_dpram_t::usb_device_dpram_ep_ctrl::in</a></div><div class="ttdeci">io_rw_32 in</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:72</div></div>
+<div class="ttc" id="astructusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl_html_aa5f91a604b27a77374005ee4edcfd39d"><div class="ttname"><a href="structusb__device__dpram__t_1_1usb__device__dpram__ep__ctrl.html#aa5f91a604b27a77374005ee4edcfd39d">usb_device_dpram_t::usb_device_dpram_ep_ctrl::out</a></div><div class="ttdeci">io_rw_32 out</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:73</div></div>
+<div class="ttc" id="astructusb__device__dpram__t_html"><div class="ttname"><a href="structusb__device__dpram__t.html">usb_device_dpram_t</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:66</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl_html"><div class="ttname"><a href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html">usb_host_dpram_t::usb_host_dpram_ep_buf_ctrl</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:107</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl_html_a8deff57f3ff4f3ebad4fd10aace178a3"><div class="ttname"><a href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html#a8deff57f3ff4f3ebad4fd10aace178a3">usb_host_dpram_t::usb_host_dpram_ep_buf_ctrl::ctrl</a></div><div class="ttdeci">io_rw_32 ctrl</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:108</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl_html_ab0d94c9b39f4d16e27a794c690774c79"><div class="ttname"><a href="structusb__host__dpram__t_1_1usb__host__dpram__ep__buf__ctrl.html#ab0d94c9b39f4d16e27a794c690774c79">usb_host_dpram_t::usb_host_dpram_ep_buf_ctrl::spare</a></div><div class="ttdeci">io_rw_32 spare</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:109</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl_html"><div class="ttname"><a href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html">usb_host_dpram_t::usb_host_dpram_ep_ctrl</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:98</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl_html_a094559cb96dd3d9ec542819cad8cf2dc"><div class="ttname"><a href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html#a094559cb96dd3d9ec542819cad8cf2dc">usb_host_dpram_t::usb_host_dpram_ep_ctrl::ctrl</a></div><div class="ttdeci">io_rw_32 ctrl</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:99</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl_html_af74b13995413d4fc3fe8243b4bd640c3"><div class="ttname"><a href="structusb__host__dpram__t_1_1usb__host__dpram__ep__ctrl.html#af74b13995413d4fc3fe8243b4bd640c3">usb_host_dpram_t::usb_host_dpram_ep_ctrl::spare</a></div><div class="ttdeci">io_rw_32 spare</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:100</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_html"><div class="ttname"><a href="structusb__host__dpram__t.html">usb_host_dpram_t</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:93</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_html_a71c16546080d94297234a31dea139bfa"><div class="ttname"><a href="structusb__host__dpram__t.html#a71c16546080d94297234a31dea139bfa">usb_host_dpram_t::epx_buf_ctrl</a></div><div class="ttdeci">io_rw_32 epx_buf_ctrl</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:103</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_html_a74e989ee56b348a8f93fde8f80826aca"><div class="ttname"><a href="structusb__host__dpram__t.html#a74e989ee56b348a8f93fde8f80826aca">usb_host_dpram_t::epx_ctrl</a></div><div class="ttdeci">io_rw_32 epx_ctrl</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:112</div></div>
+<div class="ttc" id="astructusb__host__dpram__t_html_a89cf2030f9a6cbbbe287a12ba5f587a3"><div class="ttname"><a href="structusb__host__dpram__t.html#a89cf2030f9a6cbbbe287a12ba5f587a3">usb_host_dpram_t::_spare0</a></div><div class="ttdeci">io_rw_32 _spare0</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/usb_dpram.h:104</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_519578c92a94c221750fe2f676450158.html">hardware_structs</a></li><li class="navelem"><a class="el" href="dir_2ab73e23d05a66084d7e97c97400bbce.html">include</a></li><li class="navelem"><a class="el" href="dir_2ebfd2cfe85b5f65b8c479450ca76d68.html">hardware</a></li><li class="navelem"><a class="el" href="dir_50758e3d52fdfb177ad98847c6ec1efb.html">structs</a></li><li class="navelem"><a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb__dpram_8h.html">usb_dpram.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

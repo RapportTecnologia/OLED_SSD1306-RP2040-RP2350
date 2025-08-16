@@ -1,0 +1,2165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro SEGGER_RTT.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('SEGGER__RTT_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro SEGGER_RTT.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="SEGGER__RTT__Conf_8h_source.html">../Config/SEGGER_RTT_Conf.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="stdlib_8h_source.html">stdlib.h</a>&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para SEGGER_RTT.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="SEGGER__RTT_8h__incl.svg" width="584" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="SEGGER__RTT_8h__dep__incl.svg" width="238" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="SEGGER__RTT_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEGGER__RTT__BUFFER__DOWN.html">SEGGER_RTT_BUFFER_DOWN</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEGGER__RTT__BUFFER__UP.html">SEGGER_RTT_BUFFER_UP</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSEGGER__RTT__CB.html">SEGGER_RTT_CB</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5c21547a1a3936b879ec82ab128710f0" id="r_a5c21547a1a3936b879ec82ab128710f0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a5c21547a1a3936b879ec82ab128710f0">_CC_HAS_RTT_ASM_SUPPORT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a5c21547a1a3936b879ec82ab128710f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0720b446e9c379eb4989ccd05f826834" id="r_a0720b446e9c379eb4989ccd05f826834"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a0720b446e9c379eb4989ccd05f826834">_CORE_HAS_RTT_ASM_SUPPORT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a0720b446e9c379eb4989ccd05f826834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af50d512d17b1cd07166069004ef98ac2" id="r_af50d512d17b1cd07166069004ef98ac2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#af50d512d17b1cd07166069004ef98ac2">_CORE_NEEDS_DMB</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:af50d512d17b1cd07166069004ef98ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953afdf8fdd46a36b8cd4c489fbf7a3f" id="r_a953afdf8fdd46a36b8cd4c489fbf7a3f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>()</td></tr>
+<tr class="separator:a953afdf8fdd46a36b8cd4c489fbf7a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ae0d3b77f338a5e58129d157705831" id="r_a64ae0d3b77f338a5e58129d157705831"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a64ae0d3b77f338a5e58129d157705831">RTT_CTRL_BG_BLACK</a>&#160;&#160;&#160;&quot;\x1B[24;40m&quot;</td></tr>
+<tr class="separator:a64ae0d3b77f338a5e58129d157705831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb43a41530d88c3e27426f42ae799c92" id="r_aeb43a41530d88c3e27426f42ae799c92"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#aeb43a41530d88c3e27426f42ae799c92">RTT_CTRL_BG_BLUE</a>&#160;&#160;&#160;&quot;\x1B[24;44<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:aeb43a41530d88c3e27426f42ae799c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74112d54a24faeb11bd55eac0ab882ba" id="r_a74112d54a24faeb11bd55eac0ab882ba"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a74112d54a24faeb11bd55eac0ab882ba">RTT_CTRL_BG_BRIGHT_BLACK</a>&#160;&#160;&#160;&quot;\x1B[4;40m&quot;</td></tr>
+<tr class="separator:a74112d54a24faeb11bd55eac0ab882ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a49e2ea480109e7b80ac233cca5eb4" id="r_a08a49e2ea480109e7b80ac233cca5eb4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a08a49e2ea480109e7b80ac233cca5eb4">RTT_CTRL_BG_BRIGHT_BLUE</a>&#160;&#160;&#160;&quot;\x1B[4;44<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a08a49e2ea480109e7b80ac233cca5eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8919c5089a0b31bdc96b86ed2c8816b" id="r_ae8919c5089a0b31bdc96b86ed2c8816b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ae8919c5089a0b31bdc96b86ed2c8816b">RTT_CTRL_BG_BRIGHT_CYAN</a>&#160;&#160;&#160;&quot;\x1B[4;46<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:ae8919c5089a0b31bdc96b86ed2c8816b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2739a12b2f3eea2fa0656666f412fd8" id="r_ad2739a12b2f3eea2fa0656666f412fd8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ad2739a12b2f3eea2fa0656666f412fd8">RTT_CTRL_BG_BRIGHT_GREEN</a>&#160;&#160;&#160;&quot;\x1B[4;42<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:ad2739a12b2f3eea2fa0656666f412fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6958ebc182c547172a03bb20ec482afa" id="r_a6958ebc182c547172a03bb20ec482afa"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a6958ebc182c547172a03bb20ec482afa">RTT_CTRL_BG_BRIGHT_MAGENTA</a>&#160;&#160;&#160;&quot;\x1B[4;45<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a6958ebc182c547172a03bb20ec482afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e0767614031aad9fb6ce6d3a64e7ec" id="r_a38e0767614031aad9fb6ce6d3a64e7ec"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a38e0767614031aad9fb6ce6d3a64e7ec">RTT_CTRL_BG_BRIGHT_RED</a>&#160;&#160;&#160;&quot;\x1B[4;41<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a38e0767614031aad9fb6ce6d3a64e7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5072ff033ab213fa0e62adaea90e89d6" id="r_a5072ff033ab213fa0e62adaea90e89d6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a5072ff033ab213fa0e62adaea90e89d6">RTT_CTRL_BG_BRIGHT_WHITE</a>&#160;&#160;&#160;&quot;\x1B[4;47<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a5072ff033ab213fa0e62adaea90e89d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8f7a23227e89238e4d948522af75c6" id="r_a3a8f7a23227e89238e4d948522af75c6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a3a8f7a23227e89238e4d948522af75c6">RTT_CTRL_BG_BRIGHT_YELLOW</a>&#160;&#160;&#160;&quot;\x1B[4;43<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a3a8f7a23227e89238e4d948522af75c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279347a4b625d699ed0a85b3033d0d1f" id="r_a279347a4b625d699ed0a85b3033d0d1f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a279347a4b625d699ed0a85b3033d0d1f">RTT_CTRL_BG_CYAN</a>&#160;&#160;&#160;&quot;\x1B[24;46<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a279347a4b625d699ed0a85b3033d0d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd33040a30ef694915bb757ba68fbd01" id="r_afd33040a30ef694915bb757ba68fbd01"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#afd33040a30ef694915bb757ba68fbd01">RTT_CTRL_BG_GREEN</a>&#160;&#160;&#160;&quot;\x1B[24;42<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:afd33040a30ef694915bb757ba68fbd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20bb181d0d44ed758c4c25df0977cd5" id="r_af20bb181d0d44ed758c4c25df0977cd5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#af20bb181d0d44ed758c4c25df0977cd5">RTT_CTRL_BG_MAGENTA</a>&#160;&#160;&#160;&quot;\x1B[24;45<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:af20bb181d0d44ed758c4c25df0977cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5699739eb36708084a3b0f659785e1dd" id="r_a5699739eb36708084a3b0f659785e1dd"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a5699739eb36708084a3b0f659785e1dd">RTT_CTRL_BG_RED</a>&#160;&#160;&#160;&quot;\x1B[24;41<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a5699739eb36708084a3b0f659785e1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c2cd2f245ac6699092a2d9122982a6" id="r_aa2c2cd2f245ac6699092a2d9122982a6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#aa2c2cd2f245ac6699092a2d9122982a6">RTT_CTRL_BG_WHITE</a>&#160;&#160;&#160;&quot;\x1B[24;47<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:aa2c2cd2f245ac6699092a2d9122982a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87ddc66d4a521cc8e4b1a49f589998b" id="r_ae87ddc66d4a521cc8e4b1a49f589998b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ae87ddc66d4a521cc8e4b1a49f589998b">RTT_CTRL_BG_YELLOW</a>&#160;&#160;&#160;&quot;\x1B[24;43<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:ae87ddc66d4a521cc8e4b1a49f589998b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4d39273f7bd3ec3dd529682443bb50" id="r_abf4d39273f7bd3ec3dd529682443bb50"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#abf4d39273f7bd3ec3dd529682443bb50">RTT_CTRL_CLEAR</a>&#160;&#160;&#160;&quot;\x1B[2<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">J&quot;</a></td></tr>
+<tr class="separator:abf4d39273f7bd3ec3dd529682443bb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5ff7fc3a515b040cb18dc1b276bc53" id="r_aaf5ff7fc3a515b040cb18dc1b276bc53"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#aaf5ff7fc3a515b040cb18dc1b276bc53">RTT_CTRL_RESET</a>&#160;&#160;&#160;&quot;\x1B[0m&quot;</td></tr>
+<tr class="separator:aaf5ff7fc3a515b040cb18dc1b276bc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d9283f4ed88b08be3e1901a69dd88d" id="r_a33d9283f4ed88b08be3e1901a69dd88d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a33d9283f4ed88b08be3e1901a69dd88d">RTT_CTRL_TEXT_BLACK</a>&#160;&#160;&#160;&quot;\x1B[2;30m&quot;</td></tr>
+<tr class="separator:a33d9283f4ed88b08be3e1901a69dd88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d621b5ce49df3ef9a5aa153e9b31664" id="r_a6d621b5ce49df3ef9a5aa153e9b31664"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a6d621b5ce49df3ef9a5aa153e9b31664">RTT_CTRL_TEXT_BLUE</a>&#160;&#160;&#160;&quot;\x1B[2;34<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a6d621b5ce49df3ef9a5aa153e9b31664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0638b08616c6ee20cc1c9defa8769b" id="r_a3a0638b08616c6ee20cc1c9defa8769b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a3a0638b08616c6ee20cc1c9defa8769b">RTT_CTRL_TEXT_BRIGHT_BLACK</a>&#160;&#160;&#160;&quot;\x1B[1;30m&quot;</td></tr>
+<tr class="separator:a3a0638b08616c6ee20cc1c9defa8769b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f08db8d2912aa3e91c3807d0dc6d6ac" id="r_a4f08db8d2912aa3e91c3807d0dc6d6ac"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a4f08db8d2912aa3e91c3807d0dc6d6ac">RTT_CTRL_TEXT_BRIGHT_BLUE</a>&#160;&#160;&#160;&quot;\x1B[1;34<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a4f08db8d2912aa3e91c3807d0dc6d6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70361639ea6e90013771c351f7e0f766" id="r_a70361639ea6e90013771c351f7e0f766"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a70361639ea6e90013771c351f7e0f766">RTT_CTRL_TEXT_BRIGHT_CYAN</a>&#160;&#160;&#160;&quot;\x1B[1;36<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a70361639ea6e90013771c351f7e0f766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e432277f63057cee0f57ae19428a4e" id="r_ae8e432277f63057cee0f57ae19428a4e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ae8e432277f63057cee0f57ae19428a4e">RTT_CTRL_TEXT_BRIGHT_GREEN</a>&#160;&#160;&#160;&quot;\x1B[1;32<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:ae8e432277f63057cee0f57ae19428a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e727218823b4be888d725cfad61a5b" id="r_a32e727218823b4be888d725cfad61a5b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a32e727218823b4be888d725cfad61a5b">RTT_CTRL_TEXT_BRIGHT_MAGENTA</a>&#160;&#160;&#160;&quot;\x1B[1;35<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a32e727218823b4be888d725cfad61a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09879d875068c395978e58dd6ab2874c" id="r_a09879d875068c395978e58dd6ab2874c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a09879d875068c395978e58dd6ab2874c">RTT_CTRL_TEXT_BRIGHT_RED</a>&#160;&#160;&#160;&quot;\x1B[1;31<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a09879d875068c395978e58dd6ab2874c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29f9ddd71bef3e8188139a76e07ab57" id="r_ab29f9ddd71bef3e8188139a76e07ab57"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ab29f9ddd71bef3e8188139a76e07ab57">RTT_CTRL_TEXT_BRIGHT_WHITE</a>&#160;&#160;&#160;&quot;\x1B[1;37<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:ab29f9ddd71bef3e8188139a76e07ab57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58d3c12765d5e45ab31a2944d90d29c" id="r_ad58d3c12765d5e45ab31a2944d90d29c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ad58d3c12765d5e45ab31a2944d90d29c">RTT_CTRL_TEXT_BRIGHT_YELLOW</a>&#160;&#160;&#160;&quot;\x1B[1;33<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:ad58d3c12765d5e45ab31a2944d90d29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8f32aaf4e39fd3e094f9954684dd24" id="r_ada8f32aaf4e39fd3e094f9954684dd24"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ada8f32aaf4e39fd3e094f9954684dd24">RTT_CTRL_TEXT_CYAN</a>&#160;&#160;&#160;&quot;\x1B[2;36<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:ada8f32aaf4e39fd3e094f9954684dd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881fa1fcb0407ec8fcbb06aa16b3ae44" id="r_a881fa1fcb0407ec8fcbb06aa16b3ae44"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a881fa1fcb0407ec8fcbb06aa16b3ae44">RTT_CTRL_TEXT_GREEN</a>&#160;&#160;&#160;&quot;\x1B[2;32<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a881fa1fcb0407ec8fcbb06aa16b3ae44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe512b444b6f7343256bc8ca806cac5" id="r_a0fe512b444b6f7343256bc8ca806cac5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a0fe512b444b6f7343256bc8ca806cac5">RTT_CTRL_TEXT_MAGENTA</a>&#160;&#160;&#160;&quot;\x1B[2;35<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a0fe512b444b6f7343256bc8ca806cac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9706de7d9226ae5ba892961af61a8a3c" id="r_a9706de7d9226ae5ba892961af61a8a3c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a9706de7d9226ae5ba892961af61a8a3c">RTT_CTRL_TEXT_RED</a>&#160;&#160;&#160;&quot;\x1B[2;31<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a9706de7d9226ae5ba892961af61a8a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840a992c73023e9110a8d8cdf57471a6" id="r_a840a992c73023e9110a8d8cdf57471a6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a840a992c73023e9110a8d8cdf57471a6">RTT_CTRL_TEXT_WHITE</a>&#160;&#160;&#160;&quot;\x1B[2;37<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a840a992c73023e9110a8d8cdf57471a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bee432388223a5b6189c547d28b73e" id="r_a75bee432388223a5b6189c547d28b73e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a75bee432388223a5b6189c547d28b73e">RTT_CTRL_TEXT_YELLOW</a>&#160;&#160;&#160;&quot;\x1B[2;33<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td></tr>
+<tr class="separator:a75bee432388223a5b6189c547d28b73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134fb52e938586eccb5acfbab4d1912a" id="r_a134fb52e938586eccb5acfbab4d1912a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a134fb52e938586eccb5acfbab4d1912a">RTT_USE_ASM</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a134fb52e938586eccb5acfbab4d1912a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e664593a8b399155f5ccb8c5582fff5" id="r_a2e664593a8b399155f5ccb8c5582fff5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a2e664593a8b399155f5ccb8c5582fff5">SEGGER_RTT__CB_PADDING</a>&#160;&#160;&#160;(<a class="el" href="SEGGER__RTT_8h.html#ac0394187b1f43d081bc172fe4570e803">SEGGER_RTT__ROUND_UP_2_CACHE_LINE_SIZE</a>(<a class="el" href="SEGGER__RTT_8h.html#ab8d979c800ba81b24e2bfee9f55b24ae">SEGGER_RTT__CB_SIZE</a>) - <a class="el" href="SEGGER__RTT_8h.html#ab8d979c800ba81b24e2bfee9f55b24ae">SEGGER_RTT__CB_SIZE</a>)</td></tr>
+<tr class="separator:a2e664593a8b399155f5ccb8c5582fff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d979c800ba81b24e2bfee9f55b24ae" id="r_ab8d979c800ba81b24e2bfee9f55b24ae"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ab8d979c800ba81b24e2bfee9f55b24ae">SEGGER_RTT__CB_SIZE</a>&#160;&#160;&#160;(16 + 4 + 4 + (<a class="el" href="SEGGER__RTT__Conf_8h.html#aa17bd49916a33976d490454904aa05de">SEGGER_RTT_MAX_NUM_UP_BUFFERS</a> * 24) + (<a class="el" href="SEGGER__RTT__Conf_8h.html#a6cee879ba1155278a731c5c798e15507">SEGGER_RTT_MAX_NUM_DOWN_BUFFERS</a> * 24))</td></tr>
+<tr class="separator:ab8d979c800ba81b24e2bfee9f55b24ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0394187b1f43d081bc172fe4570e803" id="r_ac0394187b1f43d081bc172fe4570e803"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ac0394187b1f43d081bc172fe4570e803">SEGGER_RTT__ROUND_UP_2_CACHE_LINE_SIZE</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:ac0394187b1f43d081bc172fe4570e803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fd94bc0e23f9fb24c09921c01fc382" id="r_aa7fd94bc0e23f9fb24c09921c01fc382"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#aa7fd94bc0e23f9fb24c09921c01fc382">SEGGER_RTT_CPU_CACHE_LINE_SIZE</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:aa7fd94bc0e23f9fb24c09921c01fc382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffff2e24b93e25f3821912c3c4e52ed" id="r_a3ffff2e24b93e25f3821912c3c4e52ed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a3ffff2e24b93e25f3821912c3c4e52ed">SEGGER_RTT_HASDATA</a>(n)&#160;&#160;&#160;(((<a class="el" href="structSEGGER__RTT__BUFFER__DOWN.html">SEGGER_RTT_BUFFER_DOWN</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aDown[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;WrOff - ((<a class="el" href="structSEGGER__RTT__BUFFER__DOWN.html">SEGGER_RTT_BUFFER_DOWN</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aDown[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;RdOff)</td></tr>
+<tr class="separator:a3ffff2e24b93e25f3821912c3c4e52ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3299dd9ea2ccf5bbae05ef63088d85c3" id="r_a3299dd9ea2ccf5bbae05ef63088d85c3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a3299dd9ea2ccf5bbae05ef63088d85c3">SEGGER_RTT_HASDATA_UP</a>(n)&#160;&#160;&#160;(((<a class="el" href="structSEGGER__RTT__BUFFER__UP.html">SEGGER_RTT_BUFFER_UP</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aUp[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;WrOff - ((<a class="el" href="structSEGGER__RTT__BUFFER__UP.html">SEGGER_RTT_BUFFER_UP</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aUp[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;RdOff)</td></tr>
+<tr class="separator:a3299dd9ea2ccf5bbae05ef63088d85c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40126a9630b109f8125132e93799191d" id="r_a40126a9630b109f8125132e93799191d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a40126a9630b109f8125132e93799191d">SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:a40126a9630b109f8125132e93799191d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb1098198ed927886b2e900ac184d60" id="r_abdb1098198ed927886b2e900ac184d60"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#abdb1098198ed927886b2e900ac184d60">SEGGER_RTT_MODE_MASK</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:abdb1098198ed927886b2e900ac184d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077dd2c59a5eda1d1a20d9c4269f8bed" id="r_a077dd2c59a5eda1d1a20d9c4269f8bed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a077dd2c59a5eda1d1a20d9c4269f8bed">SEGGER_RTT_MODE_NO_BLOCK_SKIP</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a077dd2c59a5eda1d1a20d9c4269f8bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addef4b89708ab199b9308553d64b9659" id="r_addef4b89708ab199b9308553d64b9659"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#addef4b89708ab199b9308553d64b9659">SEGGER_RTT_MODE_NO_BLOCK_TRIM</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:addef4b89708ab199b9308553d64b9659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309aa0838dbb72ea9a622f0093faaa72" id="r_a309aa0838dbb72ea9a622f0093faaa72"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a309aa0838dbb72ea9a622f0093faaa72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a7befbe07b4dc04f9a11dd5d7076ce852" id="r_a7befbe07b4dc04f9a11dd5d7076ce852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a7befbe07b4dc04f9a11dd5d7076ce852">SEGGER_RTT_AllocDownBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *sName, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> Flags)</td></tr>
+<tr class="separator:a7befbe07b4dc04f9a11dd5d7076ce852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad59518cb9823cb02fa4804444aafbc" id="r_a2ad59518cb9823cb02fa4804444aafbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a2ad59518cb9823cb02fa4804444aafbc">SEGGER_RTT_AllocUpBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *sName, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> Flags)</td></tr>
+<tr class="separator:a2ad59518cb9823cb02fa4804444aafbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b23014d063224335fd4c37e5ba6390" id="r_ac6b23014d063224335fd4c37e5ba6390"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ac6b23014d063224335fd4c37e5ba6390">SEGGER_RTT_ASM_WriteSkipNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:ac6b23014d063224335fd4c37e5ba6390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f452c9c32905c260f6dd28cc6ca153b" id="r_a2f452c9c32905c260f6dd28cc6ca153b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a2f452c9c32905c260f6dd28cc6ca153b">SEGGER_RTT_ConfigDownBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *sName, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> Flags)</td></tr>
+<tr class="separator:a2f452c9c32905c260f6dd28cc6ca153b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8f1910584fc75dfbbb0b859b7a2f17" id="r_a3c8f1910584fc75dfbbb0b859b7a2f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a3c8f1910584fc75dfbbb0b859b7a2f17">SEGGER_RTT_ConfigUpBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *sName, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> Flags)</td></tr>
+<tr class="separator:a3c8f1910584fc75dfbbb0b859b7a2f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11698482b69b1f31f19d184ce7c9d45" id="r_ac11698482b69b1f31f19d184ce7c9d45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ac11698482b69b1f31f19d184ce7c9d45">SEGGER_RTT_GetAvailWriteSpace</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>)</td></tr>
+<tr class="separator:ac11698482b69b1f31f19d184ce7c9d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09998b15b23fa70dade1c917986fab4b" id="r_a09998b15b23fa70dade1c917986fab4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a09998b15b23fa70dade1c917986fab4b">SEGGER_RTT_GetBytesInBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>)</td></tr>
+<tr class="separator:a09998b15b23fa70dade1c917986fab4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba54cef28db5c23aacafcf93885793f3" id="r_aba54cef28db5c23aacafcf93885793f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#aba54cef28db5c23aacafcf93885793f3">SEGGER_RTT_GetKey</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:aba54cef28db5c23aacafcf93885793f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5922a75e20e8bf7f4fb2e231cedc5284" id="r_a5922a75e20e8bf7f4fb2e231cedc5284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a5922a75e20e8bf7f4fb2e231cedc5284">SEGGER_RTT_HasData</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>)</td></tr>
+<tr class="separator:a5922a75e20e8bf7f4fb2e231cedc5284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde219bdb8e869b2c8fa65a97ad10d3f" id="r_abde219bdb8e869b2c8fa65a97ad10d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#abde219bdb8e869b2c8fa65a97ad10d3f">SEGGER_RTT_HasDataUp</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>)</td></tr>
+<tr class="separator:abde219bdb8e869b2c8fa65a97ad10d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e83d9b206722ca4c87df0abbe3208f" id="r_a47e83d9b206722ca4c87df0abbe3208f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a47e83d9b206722ca4c87df0abbe3208f">SEGGER_RTT_HasKey</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a47e83d9b206722ca4c87df0abbe3208f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617a0273b424963554ff7c2fb4c14704" id="r_a617a0273b424963554ff7c2fb4c14704"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a617a0273b424963554ff7c2fb4c14704">SEGGER_RTT_Init</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a617a0273b424963554ff7c2fb4c14704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442758fd24cb811b92e67782f215bf5a" id="r_a442758fd24cb811b92e67782f215bf5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a442758fd24cb811b92e67782f215bf5a">SEGGER_RTT_printf</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sFormat</a>,...)</td></tr>
+<tr class="separator:a442758fd24cb811b92e67782f215bf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2189541e88ae8dfedc66504166ffef9" id="r_aa2189541e88ae8dfedc66504166ffef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#aa2189541e88ae8dfedc66504166ffef9">SEGGER_RTT_PutChar</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> c)</td></tr>
+<tr class="separator:aa2189541e88ae8dfedc66504166ffef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5a80db715e46bf059157930c77f8d5" id="r_a8f5a80db715e46bf059157930c77f8d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a8f5a80db715e46bf059157930c77f8d5">SEGGER_RTT_PutCharSkip</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> c)</td></tr>
+<tr class="separator:a8f5a80db715e46bf059157930c77f8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d0fb6c5230a0681805473a7501d67f" id="r_ad7d0fb6c5230a0681805473a7501d67f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ad7d0fb6c5230a0681805473a7501d67f">SEGGER_RTT_PutCharSkipNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> c)</td></tr>
+<tr class="separator:ad7d0fb6c5230a0681805473a7501d67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38965ba740ed6c056f6d32f5f3c27b45" id="r_a38965ba740ed6c056f6d32f5f3c27b45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a38965ba740ed6c056f6d32f5f3c27b45">SEGGER_RTT_Read</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>)</td></tr>
+<tr class="separator:a38965ba740ed6c056f6d32f5f3c27b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe35c7961735c73c35b6d77fc9cdc77" id="r_adfe35c7961735c73c35b6d77fc9cdc77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#adfe35c7961735c73c35b6d77fc9cdc77">SEGGER_RTT_ReadNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pData</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>)</td></tr>
+<tr class="separator:adfe35c7961735c73c35b6d77fc9cdc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff43f248e6647b569541394ec386c13" id="r_a0ff43f248e6647b569541394ec386c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a0ff43f248e6647b569541394ec386c13">SEGGER_RTT_ReadUpBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>)</td></tr>
+<tr class="separator:a0ff43f248e6647b569541394ec386c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72ac9a3c9f60a723e5afdb52083657b" id="r_af72ac9a3c9f60a723e5afdb52083657b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#af72ac9a3c9f60a723e5afdb52083657b">SEGGER_RTT_ReadUpBufferNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pData</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferSize</a>)</td></tr>
+<tr class="separator:af72ac9a3c9f60a723e5afdb52083657b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f552985a280dc336a51b6b7f9b7aafe" id="r_a7f552985a280dc336a51b6b7f9b7aafe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a7f552985a280dc336a51b6b7f9b7aafe">SEGGER_RTT_SetFlagsDownBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> Flags)</td></tr>
+<tr class="separator:a7f552985a280dc336a51b6b7f9b7aafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eaccef50b6cf1b5d4cfaf41aba6ae04" id="r_a3eaccef50b6cf1b5d4cfaf41aba6ae04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a3eaccef50b6cf1b5d4cfaf41aba6ae04">SEGGER_RTT_SetFlagsUpBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> Flags)</td></tr>
+<tr class="separator:a3eaccef50b6cf1b5d4cfaf41aba6ae04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3a57e8c4c329b6bbb3b0d06cfd19a7" id="r_afc3a57e8c4c329b6bbb3b0d06cfd19a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#afc3a57e8c4c329b6bbb3b0d06cfd19a7">SEGGER_RTT_SetNameDownBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *sName)</td></tr>
+<tr class="separator:afc3a57e8c4c329b6bbb3b0d06cfd19a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6ee16d052ac7d3bcf6c39de0969be2" id="r_a4b6ee16d052ac7d3bcf6c39de0969be2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a4b6ee16d052ac7d3bcf6c39de0969be2">SEGGER_RTT_SetNameUpBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *sName)</td></tr>
+<tr class="separator:a4b6ee16d052ac7d3bcf6c39de0969be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e29ab572c438c03a3774c2cf482f772" id="r_a9e29ab572c438c03a3774c2cf482f772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a9e29ab572c438c03a3774c2cf482f772">SEGGER_RTT_SetTerminal</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">TerminalId</a>)</td></tr>
+<tr class="separator:a9e29ab572c438c03a3774c2cf482f772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6bc3ba0963be4fa9d66164d52c3eb05" id="r_ae6bc3ba0963be4fa9d66164d52c3eb05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ae6bc3ba0963be4fa9d66164d52c3eb05">SEGGER_RTT_TerminalOut</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">TerminalId</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">s</a>)</td></tr>
+<tr class="separator:ae6bc3ba0963be4fa9d66164d52c3eb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b81398913b7f7df425208067caab38" id="r_af3b81398913b7f7df425208067caab38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#af3b81398913b7f7df425208067caab38">SEGGER_RTT_vprintf</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sFormat</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">va_list</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pParamList</a>)</td></tr>
+<tr class="separator:af3b81398913b7f7df425208067caab38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44b02440f2ce5f83cdacb1f79570efa" id="r_ae44b02440f2ce5f83cdacb1f79570efa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ae44b02440f2ce5f83cdacb1f79570efa">SEGGER_RTT_WaitKey</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ae44b02440f2ce5f83cdacb1f79570efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491a86b2cc2d8cd9a475710624f17cc6" id="r_a491a86b2cc2d8cd9a475710624f17cc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a491a86b2cc2d8cd9a475710624f17cc6">SEGGER_RTT_Write</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:a491a86b2cc2d8cd9a475710624f17cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c4f23ee461e0ca788507176f76ba8a" id="r_ae1c4f23ee461e0ca788507176f76ba8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ae1c4f23ee461e0ca788507176f76ba8a">SEGGER_RTT_WriteDownBuffer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:ae1c4f23ee461e0ca788507176f76ba8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41998d4494291b1b3c76bf989837852" id="r_ab41998d4494291b1b3c76bf989837852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ab41998d4494291b1b3c76bf989837852">SEGGER_RTT_WriteDownBufferNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:ab41998d4494291b1b3c76bf989837852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3e7e2d19a8ec92ecfd960354a00119" id="r_a9a3e7e2d19a8ec92ecfd960354a00119"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a9a3e7e2d19a8ec92ecfd960354a00119">SEGGER_RTT_WriteNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:a9a3e7e2d19a8ec92ecfd960354a00119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094416be3fba23a653748b363cd857dc" id="r_a094416be3fba23a653748b363cd857dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a094416be3fba23a653748b363cd857dc">SEGGER_RTT_WriteSkipNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:a094416be3fba23a653748b363cd857dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41539af019ff070c6d701ecde55f30c6" id="r_a41539af019ff070c6d701ecde55f30c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a41539af019ff070c6d701ecde55f30c6">SEGGER_RTT_WriteString</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">s</a>)</td></tr>
+<tr class="separator:a41539af019ff070c6d701ecde55f30c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b86b0e66d0486b67b4b5e935d3358e" id="r_ab9b86b0e66d0486b67b4b5e935d3358e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#ab9b86b0e66d0486b67b4b5e935d3358e">SEGGER_RTT_WriteWithOverwriteNoLock</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">BufferIndex</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *pBuffer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td></tr>
+<tr class="separator:ab9b86b0e66d0486b67b4b5e935d3358e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a8ecb620ff16df3b71ae81204ccd6c80d" id="r_a8ecb620ff16df3b71ae81204ccd6c80d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSEGGER__RTT__CB.html">SEGGER_RTT_CB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a></td></tr>
+<tr class="separator:a8ecb620ff16df3b71ae81204ccd6c80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a5c21547a1a3936b879ec82ab128710f0" name="a5c21547a1a3936b879ec82ab128710f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c21547a1a3936b879ec82ab128710f0">&#9670;&#160;</a></span>_CC_HAS_RTT_ASM_SUPPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> _CC_HAS_RTT_ASM_SUPPORT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0720b446e9c379eb4989ccd05f826834" name="a0720b446e9c379eb4989ccd05f826834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0720b446e9c379eb4989ccd05f826834">&#9670;&#160;</a></span>_CORE_HAS_RTT_ASM_SUPPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> _CORE_HAS_RTT_ASM_SUPPORT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af50d512d17b1cd07166069004ef98ac2" name="af50d512d17b1cd07166069004ef98ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af50d512d17b1cd07166069004ef98ac2">&#9670;&#160;</a></span>_CORE_NEEDS_DMB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> _CORE_NEEDS_DMB&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a953afdf8fdd46a36b8cd4c489fbf7a3f" name="a953afdf8fdd46a36b8cd4c489fbf7a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953afdf8fdd46a36b8cd4c489fbf7a3f">&#9670;&#160;</a></span>RTT__DMB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT__DMB</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64ae0d3b77f338a5e58129d157705831" name="a64ae0d3b77f338a5e58129d157705831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ae0d3b77f338a5e58129d157705831">&#9670;&#160;</a></span>RTT_CTRL_BG_BLACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BLACK&#160;&#160;&#160;&quot;\x1B[24;40m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb43a41530d88c3e27426f42ae799c92" name="aeb43a41530d88c3e27426f42ae799c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb43a41530d88c3e27426f42ae799c92">&#9670;&#160;</a></span>RTT_CTRL_BG_BLUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BLUE&#160;&#160;&#160;&quot;\x1B[24;44<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74112d54a24faeb11bd55eac0ab882ba" name="a74112d54a24faeb11bd55eac0ab882ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74112d54a24faeb11bd55eac0ab882ba">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_BLACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_BLACK&#160;&#160;&#160;&quot;\x1B[4;40m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08a49e2ea480109e7b80ac233cca5eb4" name="a08a49e2ea480109e7b80ac233cca5eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a49e2ea480109e7b80ac233cca5eb4">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_BLUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_BLUE&#160;&#160;&#160;&quot;\x1B[4;44<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8919c5089a0b31bdc96b86ed2c8816b" name="ae8919c5089a0b31bdc96b86ed2c8816b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8919c5089a0b31bdc96b86ed2c8816b">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_CYAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_CYAN&#160;&#160;&#160;&quot;\x1B[4;46<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2739a12b2f3eea2fa0656666f412fd8" name="ad2739a12b2f3eea2fa0656666f412fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2739a12b2f3eea2fa0656666f412fd8">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_GREEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_GREEN&#160;&#160;&#160;&quot;\x1B[4;42<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6958ebc182c547172a03bb20ec482afa" name="a6958ebc182c547172a03bb20ec482afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6958ebc182c547172a03bb20ec482afa">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_MAGENTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_MAGENTA&#160;&#160;&#160;&quot;\x1B[4;45<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38e0767614031aad9fb6ce6d3a64e7ec" name="a38e0767614031aad9fb6ce6d3a64e7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e0767614031aad9fb6ce6d3a64e7ec">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_RED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_RED&#160;&#160;&#160;&quot;\x1B[4;41<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5072ff033ab213fa0e62adaea90e89d6" name="a5072ff033ab213fa0e62adaea90e89d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5072ff033ab213fa0e62adaea90e89d6">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_WHITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_WHITE&#160;&#160;&#160;&quot;\x1B[4;47<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a8f7a23227e89238e4d948522af75c6" name="a3a8f7a23227e89238e4d948522af75c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a8f7a23227e89238e4d948522af75c6">&#9670;&#160;</a></span>RTT_CTRL_BG_BRIGHT_YELLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_BRIGHT_YELLOW&#160;&#160;&#160;&quot;\x1B[4;43<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a279347a4b625d699ed0a85b3033d0d1f" name="a279347a4b625d699ed0a85b3033d0d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279347a4b625d699ed0a85b3033d0d1f">&#9670;&#160;</a></span>RTT_CTRL_BG_CYAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_CYAN&#160;&#160;&#160;&quot;\x1B[24;46<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd33040a30ef694915bb757ba68fbd01" name="afd33040a30ef694915bb757ba68fbd01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd33040a30ef694915bb757ba68fbd01">&#9670;&#160;</a></span>RTT_CTRL_BG_GREEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_GREEN&#160;&#160;&#160;&quot;\x1B[24;42<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af20bb181d0d44ed758c4c25df0977cd5" name="af20bb181d0d44ed758c4c25df0977cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20bb181d0d44ed758c4c25df0977cd5">&#9670;&#160;</a></span>RTT_CTRL_BG_MAGENTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_MAGENTA&#160;&#160;&#160;&quot;\x1B[24;45<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5699739eb36708084a3b0f659785e1dd" name="a5699739eb36708084a3b0f659785e1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5699739eb36708084a3b0f659785e1dd">&#9670;&#160;</a></span>RTT_CTRL_BG_RED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_RED&#160;&#160;&#160;&quot;\x1B[24;41<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2c2cd2f245ac6699092a2d9122982a6" name="aa2c2cd2f245ac6699092a2d9122982a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c2cd2f245ac6699092a2d9122982a6">&#9670;&#160;</a></span>RTT_CTRL_BG_WHITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_WHITE&#160;&#160;&#160;&quot;\x1B[24;47<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae87ddc66d4a521cc8e4b1a49f589998b" name="ae87ddc66d4a521cc8e4b1a49f589998b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87ddc66d4a521cc8e4b1a49f589998b">&#9670;&#160;</a></span>RTT_CTRL_BG_YELLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_BG_YELLOW&#160;&#160;&#160;&quot;\x1B[24;43<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf4d39273f7bd3ec3dd529682443bb50" name="abf4d39273f7bd3ec3dd529682443bb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4d39273f7bd3ec3dd529682443bb50">&#9670;&#160;</a></span>RTT_CTRL_CLEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_CLEAR&#160;&#160;&#160;&quot;\x1B[2<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">J&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf5ff7fc3a515b040cb18dc1b276bc53" name="aaf5ff7fc3a515b040cb18dc1b276bc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf5ff7fc3a515b040cb18dc1b276bc53">&#9670;&#160;</a></span>RTT_CTRL_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_RESET&#160;&#160;&#160;&quot;\x1B[0m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33d9283f4ed88b08be3e1901a69dd88d" name="a33d9283f4ed88b08be3e1901a69dd88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d9283f4ed88b08be3e1901a69dd88d">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BLACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BLACK&#160;&#160;&#160;&quot;\x1B[2;30m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d621b5ce49df3ef9a5aa153e9b31664" name="a6d621b5ce49df3ef9a5aa153e9b31664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d621b5ce49df3ef9a5aa153e9b31664">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BLUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BLUE&#160;&#160;&#160;&quot;\x1B[2;34<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a0638b08616c6ee20cc1c9defa8769b" name="a3a0638b08616c6ee20cc1c9defa8769b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0638b08616c6ee20cc1c9defa8769b">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_BLACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_BLACK&#160;&#160;&#160;&quot;\x1B[1;30m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f08db8d2912aa3e91c3807d0dc6d6ac" name="a4f08db8d2912aa3e91c3807d0dc6d6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f08db8d2912aa3e91c3807d0dc6d6ac">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_BLUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_BLUE&#160;&#160;&#160;&quot;\x1B[1;34<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70361639ea6e90013771c351f7e0f766" name="a70361639ea6e90013771c351f7e0f766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70361639ea6e90013771c351f7e0f766">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_CYAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_CYAN&#160;&#160;&#160;&quot;\x1B[1;36<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8e432277f63057cee0f57ae19428a4e" name="ae8e432277f63057cee0f57ae19428a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e432277f63057cee0f57ae19428a4e">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_GREEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_GREEN&#160;&#160;&#160;&quot;\x1B[1;32<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32e727218823b4be888d725cfad61a5b" name="a32e727218823b4be888d725cfad61a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e727218823b4be888d725cfad61a5b">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_MAGENTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_MAGENTA&#160;&#160;&#160;&quot;\x1B[1;35<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09879d875068c395978e58dd6ab2874c" name="a09879d875068c395978e58dd6ab2874c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09879d875068c395978e58dd6ab2874c">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_RED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_RED&#160;&#160;&#160;&quot;\x1B[1;31<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab29f9ddd71bef3e8188139a76e07ab57" name="ab29f9ddd71bef3e8188139a76e07ab57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29f9ddd71bef3e8188139a76e07ab57">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_WHITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_WHITE&#160;&#160;&#160;&quot;\x1B[1;37<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad58d3c12765d5e45ab31a2944d90d29c" name="ad58d3c12765d5e45ab31a2944d90d29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58d3c12765d5e45ab31a2944d90d29c">&#9670;&#160;</a></span>RTT_CTRL_TEXT_BRIGHT_YELLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_BRIGHT_YELLOW&#160;&#160;&#160;&quot;\x1B[1;33<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada8f32aaf4e39fd3e094f9954684dd24" name="ada8f32aaf4e39fd3e094f9954684dd24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8f32aaf4e39fd3e094f9954684dd24">&#9670;&#160;</a></span>RTT_CTRL_TEXT_CYAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_CYAN&#160;&#160;&#160;&quot;\x1B[2;36<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a881fa1fcb0407ec8fcbb06aa16b3ae44" name="a881fa1fcb0407ec8fcbb06aa16b3ae44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881fa1fcb0407ec8fcbb06aa16b3ae44">&#9670;&#160;</a></span>RTT_CTRL_TEXT_GREEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_GREEN&#160;&#160;&#160;&quot;\x1B[2;32<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fe512b444b6f7343256bc8ca806cac5" name="a0fe512b444b6f7343256bc8ca806cac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe512b444b6f7343256bc8ca806cac5">&#9670;&#160;</a></span>RTT_CTRL_TEXT_MAGENTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_MAGENTA&#160;&#160;&#160;&quot;\x1B[2;35<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9706de7d9226ae5ba892961af61a8a3c" name="a9706de7d9226ae5ba892961af61a8a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9706de7d9226ae5ba892961af61a8a3c">&#9670;&#160;</a></span>RTT_CTRL_TEXT_RED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_RED&#160;&#160;&#160;&quot;\x1B[2;31<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a840a992c73023e9110a8d8cdf57471a6" name="a840a992c73023e9110a8d8cdf57471a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840a992c73023e9110a8d8cdf57471a6">&#9670;&#160;</a></span>RTT_CTRL_TEXT_WHITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_WHITE&#160;&#160;&#160;&quot;\x1B[2;37<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75bee432388223a5b6189c547d28b73e" name="a75bee432388223a5b6189c547d28b73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bee432388223a5b6189c547d28b73e">&#9670;&#160;</a></span>RTT_CTRL_TEXT_YELLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_CTRL_TEXT_YELLOW&#160;&#160;&#160;&quot;\x1B[2;33<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m&quot;</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a134fb52e938586eccb5acfbab4d1912a" name="a134fb52e938586eccb5acfbab4d1912a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134fb52e938586eccb5acfbab4d1912a">&#9670;&#160;</a></span>RTT_USE_ASM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> RTT_USE_ASM&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e664593a8b399155f5ccb8c5582fff5" name="a2e664593a8b399155f5ccb8c5582fff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e664593a8b399155f5ccb8c5582fff5">&#9670;&#160;</a></span>SEGGER_RTT__CB_PADDING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT__CB_PADDING&#160;&#160;&#160;(<a class="el" href="SEGGER__RTT_8h.html#ac0394187b1f43d081bc172fe4570e803">SEGGER_RTT__ROUND_UP_2_CACHE_LINE_SIZE</a>(<a class="el" href="SEGGER__RTT_8h.html#ab8d979c800ba81b24e2bfee9f55b24ae">SEGGER_RTT__CB_SIZE</a>) - <a class="el" href="SEGGER__RTT_8h.html#ab8d979c800ba81b24e2bfee9f55b24ae">SEGGER_RTT__CB_SIZE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8d979c800ba81b24e2bfee9f55b24ae" name="ab8d979c800ba81b24e2bfee9f55b24ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d979c800ba81b24e2bfee9f55b24ae">&#9670;&#160;</a></span>SEGGER_RTT__CB_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT__CB_SIZE&#160;&#160;&#160;(16 + 4 + 4 + (<a class="el" href="SEGGER__RTT__Conf_8h.html#aa17bd49916a33976d490454904aa05de">SEGGER_RTT_MAX_NUM_UP_BUFFERS</a> * 24) + (<a class="el" href="SEGGER__RTT__Conf_8h.html#a6cee879ba1155278a731c5c798e15507">SEGGER_RTT_MAX_NUM_DOWN_BUFFERS</a> * 24))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0394187b1f43d081bc172fe4570e803" name="ac0394187b1f43d081bc172fe4570e803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0394187b1f43d081bc172fe4570e803">&#9670;&#160;</a></span>SEGGER_RTT__ROUND_UP_2_CACHE_LINE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT__ROUND_UP_2_CACHE_LINE_SIZE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">NumBytes</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7fd94bc0e23f9fb24c09921c01fc382" name="aa7fd94bc0e23f9fb24c09921c01fc382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7fd94bc0e23f9fb24c09921c01fc382">&#9670;&#160;</a></span>SEGGER_RTT_CPU_CACHE_LINE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_CPU_CACHE_LINE_SIZE&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ffff2e24b93e25f3821912c3c4e52ed" name="a3ffff2e24b93e25f3821912c3c4e52ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ffff2e24b93e25f3821912c3c4e52ed">&#9670;&#160;</a></span>SEGGER_RTT_HASDATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_HASDATA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n</td><td>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="structSEGGER__RTT__BUFFER__DOWN.html">SEGGER_RTT_BUFFER_DOWN</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aDown[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;WrOff - ((<a class="el" href="structSEGGER__RTT__BUFFER__DOWN.html">SEGGER_RTT_BUFFER_DOWN</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aDown[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;RdOff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3299dd9ea2ccf5bbae05ef63088d85c3" name="a3299dd9ea2ccf5bbae05ef63088d85c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3299dd9ea2ccf5bbae05ef63088d85c3">&#9670;&#160;</a></span>SEGGER_RTT_HASDATA_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_HASDATA_UP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n</td><td>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="structSEGGER__RTT__BUFFER__UP.html">SEGGER_RTT_BUFFER_UP</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aUp[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;WrOff - ((<a class="el" href="structSEGGER__RTT__BUFFER__UP.html">SEGGER_RTT_BUFFER_UP</a>*)((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>*)&amp;_SEGGER_RTT.aUp[n] + <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>))-&gt;RdOff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40126a9630b109f8125132e93799191d" name="a40126a9630b109f8125132e93799191d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40126a9630b109f8125132e93799191d">&#9670;&#160;</a></span>SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdb1098198ed927886b2e900ac184d60" name="abdb1098198ed927886b2e900ac184d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb1098198ed927886b2e900ac184d60">&#9670;&#160;</a></span>SEGGER_RTT_MODE_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_MODE_MASK&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a077dd2c59a5eda1d1a20d9c4269f8bed" name="a077dd2c59a5eda1d1a20d9c4269f8bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077dd2c59a5eda1d1a20d9c4269f8bed">&#9670;&#160;</a></span>SEGGER_RTT_MODE_NO_BLOCK_SKIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_MODE_NO_BLOCK_SKIP&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addef4b89708ab199b9308553d64b9659" name="addef4b89708ab199b9308553d64b9659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addef4b89708ab199b9308553d64b9659">&#9670;&#160;</a></span>SEGGER_RTT_MODE_NO_BLOCK_TRIM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_MODE_NO_BLOCK_TRIM&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a309aa0838dbb72ea9a622f0093faaa72" name="a309aa0838dbb72ea9a622f0093faaa72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a309aa0838dbb72ea9a622f0093faaa72">&#9670;&#160;</a></span>SEGGER_RTT_UNCACHED_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SEGGER_RTT_UNCACHED_OFF&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a7befbe07b4dc04f9a11dd5d7076ce852" name="a7befbe07b4dc04f9a11dd5d7076ce852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7befbe07b4dc04f9a11dd5d7076ce852">&#9670;&#160;</a></span>SEGGER_RTT_AllocDownBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_AllocDownBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>Flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="a2ad59518cb9823cb02fa4804444aafbc" name="a2ad59518cb9823cb02fa4804444aafbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad59518cb9823cb02fa4804444aafbc">&#9670;&#160;</a></span>SEGGER_RTT_AllocUpBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_AllocUpBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>Flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="ac6b23014d063224335fd4c37e5ba6390" name="ac6b23014d063224335fd4c37e5ba6390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b23014d063224335fd4c37e5ba6390">&#9670;&#160;</a></span>SEGGER_RTT_ASM_WriteSkipNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_ASM_WriteSkipNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>NumBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f452c9c32905c260f6dd28cc6ca153b" name="a2f452c9c32905c260f6dd28cc6ca153b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f452c9c32905c260f6dd28cc6ca153b">&#9670;&#160;</a></span>SEGGER_RTT_ConfigDownBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_ConfigDownBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>Flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#a6cee879ba1155278a731c5c798e15507">SEGGER_RTT_MAX_NUM_DOWN_BUFFERS</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="a3c8f1910584fc75dfbbb0b859b7a2f17" name="a3c8f1910584fc75dfbbb0b859b7a2f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8f1910584fc75dfbbb0b859b7a2f17">&#9670;&#160;</a></span>SEGGER_RTT_ConfigUpBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_ConfigUpBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>Flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa17bd49916a33976d490454904aa05de">SEGGER_RTT_MAX_NUM_UP_BUFFERS</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="ac11698482b69b1f31f19d184ce7c9d45" name="ac11698482b69b1f31f19d184ce7c9d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11698482b69b1f31f19d184ce7c9d45">&#9670;&#160;</a></span>SEGGER_RTT_GetAvailWriteSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_GetAvailWriteSpace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+</div>
+</div>
+<a id="a09998b15b23fa70dade1c917986fab4b" name="a09998b15b23fa70dade1c917986fab4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09998b15b23fa70dade1c917986fab4b">&#9670;&#160;</a></span>SEGGER_RTT_GetBytesInBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_GetBytesInBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structSEGGER__RTT__BUFFER__UP.html#a5656936cd59a5ddab55af1aa1467b67f">SEGGER_RTT_BUFFER_UP::RdOff</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+</div>
+</div>
+<a id="aba54cef28db5c23aacafcf93885793f3" name="aba54cef28db5c23aacafcf93885793f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba54cef28db5c23aacafcf93885793f3">&#9670;&#160;</a></span>SEGGER_RTT_GetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_GetKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="SEGGER__RTT_8c.html#a38965ba740ed6c056f6d32f5f3c27b45">SEGGER_RTT_Read()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#ae44b02440f2ce5f83cdacb1f79570efa">SEGGER_RTT_WaitKey()</a>.</p>
+
+</div>
+</div>
+<a id="a5922a75e20e8bf7f4fb2e231cedc5284" name="a5922a75e20e8bf7f4fb2e231cedc5284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5922a75e20e8bf7f4fb2e231cedc5284">&#9670;&#160;</a></span>SEGGER_RTT_HasData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_HasData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#a459f2d8a20dced065dbd54afbdf434e5">SEGGER_RTT_CB::aDown</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="structSEGGER__RTT__BUFFER__DOWN.html#a3cb6a09b71f1910b8eb92f97f1c1ace0">SEGGER_RTT_BUFFER_DOWN::WrOff</a>.</p>
+
+</div>
+</div>
+<a id="abde219bdb8e869b2c8fa65a97ad10d3f" name="abde219bdb8e869b2c8fa65a97ad10d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde219bdb8e869b2c8fa65a97ad10d3f">&#9670;&#160;</a></span>SEGGER_RTT_HasDataUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_HasDataUp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structSEGGER__RTT__BUFFER__UP.html#a5656936cd59a5ddab55af1aa1467b67f">SEGGER_RTT_BUFFER_UP::RdOff</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+</div>
+</div>
+<a id="a47e83d9b206722ca4c87df0abbe3208f" name="a47e83d9b206722ca4c87df0abbe3208f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e83d9b206722ca4c87df0abbe3208f">&#9670;&#160;</a></span>SEGGER_RTT_HasKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_HasKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#a459f2d8a20dced065dbd54afbdf434e5">SEGGER_RTT_CB::aDown</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+</div>
+</div>
+<a id="a617a0273b424963554ff7c2fb4c14704" name="a617a0273b424963554ff7c2fb4c14704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617a0273b424963554ff7c2fb4c14704">&#9670;&#160;</a></span>SEGGER_RTT_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> SEGGER_RTT_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__stdio__rtt.html#gac98d94f30ad1301df2b3e04269011a74">stdio_rtt_init()</a>.</p>
+
+</div>
+</div>
+<a id="a442758fd24cb811b92e67782f215bf5a" name="a442758fd24cb811b92e67782f215bf5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442758fd24cb811b92e67782f215bf5a">&#9670;&#160;</a></span>SEGGER_RTT_printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_printf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2189541e88ae8dfedc66504166ffef9" name="aa2189541e88ae8dfedc66504166ffef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2189541e88ae8dfedc66504166ffef9">&#9670;&#160;</a></span>SEGGER_RTT_PutChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_PutChar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8h.html#a40126a9630b109f8125132e93799191d">SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="a8f5a80db715e46bf059157930c77f8d5" name="a8f5a80db715e46bf059157930c77f8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f5a80db715e46bf059157930c77f8d5">&#9670;&#160;</a></span>SEGGER_RTT_PutCharSkip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_PutCharSkip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="ad7d0fb6c5230a0681805473a7501d67f" name="ad7d0fb6c5230a0681805473a7501d67f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d0fb6c5230a0681805473a7501d67f">&#9670;&#160;</a></span>SEGGER_RTT_PutCharSkipNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_PutCharSkipNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="structSEGGER__RTT__BUFFER__UP.html#add452c6f708e96f6bd6bf200736c2d0a">SEGGER_RTT_BUFFER_UP::WrOff</a>.</p>
+
+</div>
+</div>
+<a id="a38965ba740ed6c056f6d32f5f3c27b45" name="a38965ba740ed6c056f6d32f5f3c27b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38965ba740ed6c056f6d32f5f3c27b45">&#9670;&#160;</a></span>SEGGER_RTT_Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_Read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8c.html#adfe35c7961735c73c35b6d77fc9cdc77">SEGGER_RTT_ReadNoLock()</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#aba54cef28db5c23aacafcf93885793f3">SEGGER_RTT_GetKey()</a>.</p>
+
+</div>
+</div>
+<a id="adfe35c7961735c73c35b6d77fc9cdc77" name="adfe35c7961735c73c35b6d77fc9cdc77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe35c7961735c73c35b6d77fc9cdc77">&#9670;&#160;</a></span>SEGGER_RTT_ReadNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_ReadNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#a459f2d8a20dced065dbd54afbdf434e5">SEGGER_RTT_CB::aDown</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT_8c.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>, <a class="el" href="SEGGER__RTT_8c.html#aab61581eae1e3d0b9335b5143516800b">SEGGER_RTT_MEMCPY</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#a38965ba740ed6c056f6d32f5f3c27b45">SEGGER_RTT_Read()</a>.</p>
+
+</div>
+</div>
+<a id="a0ff43f248e6647b569541394ec386c13" name="a0ff43f248e6647b569541394ec386c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff43f248e6647b569541394ec386c13">&#9670;&#160;</a></span>SEGGER_RTT_ReadUpBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_ReadUpBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8c.html#af72ac9a3c9f60a723e5afdb52083657b">SEGGER_RTT_ReadUpBufferNoLock()</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="af72ac9a3c9f60a723e5afdb52083657b" name="af72ac9a3c9f60a723e5afdb52083657b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72ac9a3c9f60a723e5afdb52083657b">&#9670;&#160;</a></span>SEGGER_RTT_ReadUpBufferNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_ReadUpBufferNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT_8c.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>, <a class="el" href="SEGGER__RTT_8c.html#aab61581eae1e3d0b9335b5143516800b">SEGGER_RTT_MEMCPY</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#a0ff43f248e6647b569541394ec386c13">SEGGER_RTT_ReadUpBuffer()</a>.</p>
+
+</div>
+</div>
+<a id="a7f552985a280dc336a51b6b7f9b7aafe" name="a7f552985a280dc336a51b6b7f9b7aafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f552985a280dc336a51b6b7f9b7aafe">&#9670;&#160;</a></span>SEGGER_RTT_SetFlagsDownBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_SetFlagsDownBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>Flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#a6cee879ba1155278a731c5c798e15507">SEGGER_RTT_MAX_NUM_DOWN_BUFFERS</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="a3eaccef50b6cf1b5d4cfaf41aba6ae04" name="a3eaccef50b6cf1b5d4cfaf41aba6ae04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eaccef50b6cf1b5d4cfaf41aba6ae04">&#9670;&#160;</a></span>SEGGER_RTT_SetFlagsUpBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_SetFlagsUpBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>Flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa17bd49916a33976d490454904aa05de">SEGGER_RTT_MAX_NUM_UP_BUFFERS</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="afc3a57e8c4c329b6bbb3b0d06cfd19a7" name="afc3a57e8c4c329b6bbb3b0d06cfd19a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc3a57e8c4c329b6bbb3b0d06cfd19a7">&#9670;&#160;</a></span>SEGGER_RTT_SetNameDownBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_SetNameDownBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#a6cee879ba1155278a731c5c798e15507">SEGGER_RTT_MAX_NUM_DOWN_BUFFERS</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="a4b6ee16d052ac7d3bcf6c39de0969be2" name="a4b6ee16d052ac7d3bcf6c39de0969be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6ee16d052ac7d3bcf6c39de0969be2">&#9670;&#160;</a></span>SEGGER_RTT_SetNameUpBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_SetNameUpBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa17bd49916a33976d490454904aa05de">SEGGER_RTT_MAX_NUM_UP_BUFFERS</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="a9e29ab572c438c03a3774c2cf482f772" name="a9e29ab572c438c03a3774c2cf482f772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e29ab572c438c03a3774c2cf482f772">&#9670;&#160;</a></span>SEGGER_RTT_SetTerminal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_SetTerminal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>&#160;</td>
+          <td class="paramname"><em>TerminalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8h.html#a40126a9630b109f8125132e93799191d">SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL</a>, <a class="el" href="SEGGER__RTT_8h.html#abdb1098198ed927886b2e900ac184d60">SEGGER_RTT_MODE_MASK</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a id="ae6bc3ba0963be4fa9d66164d52c3eb05" name="ae6bc3ba0963be4fa9d66164d52c3eb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6bc3ba0963be4fa9d66164d52c3eb05">&#9670;&#160;</a></span>SEGGER_RTT_TerminalOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_TerminalOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>&#160;</td>
+          <td class="paramname"><em>TerminalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT_8h.html#a40126a9630b109f8125132e93799191d">SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL</a>, <a class="el" href="SEGGER__RTT_8h.html#abdb1098198ed927886b2e900ac184d60">SEGGER_RTT_MODE_MASK</a>, <a class="el" href="SEGGER__RTT_8h.html#a077dd2c59a5eda1d1a20d9c4269f8bed">SEGGER_RTT_MODE_NO_BLOCK_SKIP</a>, <a class="el" href="SEGGER__RTT_8h.html#addef4b89708ab199b9308553d64b9659">SEGGER_RTT_MODE_NO_BLOCK_TRIM</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a> e <a class="el" href="SEGGER__RTT_8c.html#a3fcd28234ee20920642f28fab3275051">STRLEN</a>.</p>
+
+</div>
+</div>
+<a id="af3b81398913b7f7df425208067caab38" name="af3b81398913b7f7df425208067caab38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b81398913b7f7df425208067caab38">&#9670;&#160;</a></span>SEGGER_RTT_vprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_vprintf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>sFormat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">va_list</a> *&#160;</td>
+          <td class="paramname"><em>pParamList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae44b02440f2ce5f83cdacb1f79570efa" name="ae44b02440f2ce5f83cdacb1f79570efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44b02440f2ce5f83cdacb1f79570efa">&#9670;&#160;</a></span>SEGGER_RTT_WaitKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> SEGGER_RTT_WaitKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8c.html#aba54cef28db5c23aacafcf93885793f3">SEGGER_RTT_GetKey()</a>.</p>
+
+</div>
+</div>
+<a id="a491a86b2cc2d8cd9a475710624f17cc6" name="a491a86b2cc2d8cd9a475710624f17cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491a86b2cc2d8cd9a475710624f17cc6">&#9670;&#160;</a></span>SEGGER_RTT_Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>NumBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a> e <a class="el" href="SEGGER__RTT_8c.html#a9a3e7e2d19a8ec92ecfd960354a00119">SEGGER_RTT_WriteNoLock()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#a41539af019ff070c6d701ecde55f30c6">SEGGER_RTT_WriteString()</a>.</p>
+
+</div>
+</div>
+<a id="ae1c4f23ee461e0ca788507176f76ba8a" name="ae1c4f23ee461e0ca788507176f76ba8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c4f23ee461e0ca788507176f76ba8a">&#9670;&#160;</a></span>SEGGER_RTT_WriteDownBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_WriteDownBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>NumBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#aec6f46435214ab758f347da3c3212f05">INIT</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#aa20599b1a15ec8e0f7886df26c04a381">SEGGER_RTT_LOCK</a>, <a class="el" href="SEGGER__RTT__Conf_8h.html#a23e2c84120db13475b1f31d3ba707d58">SEGGER_RTT_UNLOCK</a> e <a class="el" href="SEGGER__RTT_8c.html#ab41998d4494291b1b3c76bf989837852">SEGGER_RTT_WriteDownBufferNoLock()</a>.</p>
+
+</div>
+</div>
+<a id="ab41998d4494291b1b3c76bf989837852" name="ab41998d4494291b1b3c76bf989837852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41998d4494291b1b3c76bf989837852">&#9670;&#160;</a></span>SEGGER_RTT_WriteDownBufferNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_WriteDownBufferNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>NumBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#a459f2d8a20dced065dbd54afbdf434e5">SEGGER_RTT_CB::aDown</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8h.html#a40126a9630b109f8125132e93799191d">SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL</a>, <a class="el" href="SEGGER__RTT_8h.html#a077dd2c59a5eda1d1a20d9c4269f8bed">SEGGER_RTT_MODE_NO_BLOCK_SKIP</a>, <a class="el" href="SEGGER__RTT_8h.html#addef4b89708ab199b9308553d64b9659">SEGGER_RTT_MODE_NO_BLOCK_TRIM</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#ae1c4f23ee461e0ca788507176f76ba8a">SEGGER_RTT_WriteDownBuffer()</a>.</p>
+
+</div>
+</div>
+<a id="a9a3e7e2d19a8ec92ecfd960354a00119" name="a9a3e7e2d19a8ec92ecfd960354a00119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a3e7e2d19a8ec92ecfd960354a00119">&#9670;&#160;</a></span>SEGGER_RTT_WriteNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_WriteNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>NumBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8h.html#a40126a9630b109f8125132e93799191d">SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL</a>, <a class="el" href="SEGGER__RTT_8h.html#a077dd2c59a5eda1d1a20d9c4269f8bed">SEGGER_RTT_MODE_NO_BLOCK_SKIP</a>, <a class="el" href="SEGGER__RTT_8h.html#addef4b89708ab199b9308553d64b9659">SEGGER_RTT_MODE_NO_BLOCK_TRIM</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#a491a86b2cc2d8cd9a475710624f17cc6">SEGGER_RTT_Write()</a>.</p>
+
+</div>
+</div>
+<a id="a094416be3fba23a653748b363cd857dc" name="a094416be3fba23a653748b363cd857dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a094416be3fba23a653748b363cd857dc">&#9670;&#160;</a></span>SEGGER_RTT_WriteSkipNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_WriteSkipNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>NumBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a>, <a class="el" href="structSEGGER__RTT__BUFFER__UP.html#a5656936cd59a5ddab55af1aa1467b67f">SEGGER_RTT_BUFFER_UP::RdOff</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a> e <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a>.</p>
+
+</div>
+</div>
+<a id="a41539af019ff070c6d701ecde55f30c6" name="a41539af019ff070c6d701ecde55f30c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41539af019ff070c6d701ecde55f30c6">&#9670;&#160;</a></span>SEGGER_RTT_WriteString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> SEGGER_RTT_WriteString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8c.html#a491a86b2cc2d8cd9a475710624f17cc6">SEGGER_RTT_Write()</a> e <a class="el" href="SEGGER__RTT_8c.html#a3fcd28234ee20920642f28fab3275051">STRLEN</a>.</p>
+
+</div>
+</div>
+<a id="ab9b86b0e66d0486b67b4b5e935d3358e" name="ab9b86b0e66d0486b67b4b5e935d3358e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b86b0e66d0486b67b4b5e935d3358e">&#9670;&#160;</a></span>SEGGER_RTT_WriteWithOverwriteNoLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> SEGGER_RTT_WriteWithOverwriteNoLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>BufferIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>&#160;</td>
+          <td class="paramname"><em>NumBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8h.html#a8ecb620ff16df3b71ae81204ccd6c80d">_SEGGER_RTT</a>, <a class="el" href="structSEGGER__RTT__CB.html#af27ec025b21e2a8e42db0a19351cfff9">SEGGER_RTT_CB::aUp</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="SEGGER__RTT_8h.html#a953afdf8fdd46a36b8cd4c489fbf7a3f">RTT__DMB</a>, <a class="el" href="SEGGER__RTT_8c.html#aab61581eae1e3d0b9335b5143516800b">SEGGER_RTT_MEMCPY</a>, <a class="el" href="SEGGER__RTT_8h.html#a309aa0838dbb72ea9a622f0093faaa72">SEGGER_RTT_UNCACHED_OFF</a> e <a class="el" href="structSEGGER__RTT__BUFFER__UP.html#a723612a58edf1812316c6d68b1a5e10a">SEGGER_RTT_BUFFER_UP::SizeOfBuffer</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a8ecb620ff16df3b71ae81204ccd6c80d" name="a8ecb620ff16df3b71ae81204ccd6c80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ecb620ff16df3b71ae81204ccd6c80d">&#9670;&#160;</a></span>_SEGGER_RTT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSEGGER__RTT__CB.html">SEGGER_RTT_CB</a> _SEGGER_RTT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="SEGGER__RTT_8c.html#a7befbe07b4dc04f9a11dd5d7076ce852">SEGGER_RTT_AllocDownBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#a2ad59518cb9823cb02fa4804444aafbc">SEGGER_RTT_AllocUpBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#a2f452c9c32905c260f6dd28cc6ca153b">SEGGER_RTT_ConfigDownBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#a3c8f1910584fc75dfbbb0b859b7a2f17">SEGGER_RTT_ConfigUpBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#ac11698482b69b1f31f19d184ce7c9d45">SEGGER_RTT_GetAvailWriteSpace()</a>, <a class="el" href="SEGGER__RTT_8c.html#a09998b15b23fa70dade1c917986fab4b">SEGGER_RTT_GetBytesInBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#a5922a75e20e8bf7f4fb2e231cedc5284">SEGGER_RTT_HasData()</a>, <a class="el" href="SEGGER__RTT_8c.html#abde219bdb8e869b2c8fa65a97ad10d3f">SEGGER_RTT_HasDataUp()</a>, <a class="el" href="SEGGER__RTT_8c.html#a47e83d9b206722ca4c87df0abbe3208f">SEGGER_RTT_HasKey()</a>, <a class="el" href="SEGGER__RTT_8c.html#aa2189541e88ae8dfedc66504166ffef9">SEGGER_RTT_PutChar()</a>, <a class="el" href="SEGGER__RTT_8c.html#a8f5a80db715e46bf059157930c77f8d5">SEGGER_RTT_PutCharSkip()</a>, <a class="el" href="SEGGER__RTT_8c.html#ad7d0fb6c5230a0681805473a7501d67f">SEGGER_RTT_PutCharSkipNoLock()</a>, <a class="el" href="SEGGER__RTT_8c.html#adfe35c7961735c73c35b6d77fc9cdc77">SEGGER_RTT_ReadNoLock()</a>, <a class="el" href="SEGGER__RTT_8c.html#af72ac9a3c9f60a723e5afdb52083657b">SEGGER_RTT_ReadUpBufferNoLock()</a>, <a class="el" href="SEGGER__RTT_8c.html#a7f552985a280dc336a51b6b7f9b7aafe">SEGGER_RTT_SetFlagsDownBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#a3eaccef50b6cf1b5d4cfaf41aba6ae04">SEGGER_RTT_SetFlagsUpBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#afc3a57e8c4c329b6bbb3b0d06cfd19a7">SEGGER_RTT_SetNameDownBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#a4b6ee16d052ac7d3bcf6c39de0969be2">SEGGER_RTT_SetNameUpBuffer()</a>, <a class="el" href="SEGGER__RTT_8c.html#a9e29ab572c438c03a3774c2cf482f772">SEGGER_RTT_SetTerminal()</a>, <a class="el" href="SEGGER__RTT_8c.html#ae6bc3ba0963be4fa9d66164d52c3eb05">SEGGER_RTT_TerminalOut()</a>, <a class="el" href="SEGGER__RTT_8c.html#ab41998d4494291b1b3c76bf989837852">SEGGER_RTT_WriteDownBufferNoLock()</a>, <a class="el" href="SEGGER__RTT_8c.html#a9a3e7e2d19a8ec92ecfd960354a00119">SEGGER_RTT_WriteNoLock()</a>, <a class="el" href="SEGGER__RTT_8c.html#a094416be3fba23a653748b363cd857dc">SEGGER_RTT_WriteSkipNoLock()</a> e <a class="el" href="SEGGER__RTT_8c.html#ab9b86b0e66d0486b67b4b5e935d3358e">SEGGER_RTT_WriteWithOverwriteNoLock()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_1b0c3ecf9e1007edce762e0de6610e37.html">pico_stdio_rtt</a></li><li class="navelem"><a class="el" href="dir_561ec7be99c5a672b2d4877ef2ce91ab.html">SEGGER</a></li><li class="navelem"><a class="el" href="dir_c56582b1a3760d4fec3d18cbb1368562.html">RTT</a></li><li class="navelem"><a class="el" href="SEGGER__RTT_8h.html">SEGGER_RTT.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,26 +1,7 @@
 var searchData=
 [
-  ['o_20proxy_0',['Boas Práticas para Melhor Resultado com o Proxy',['../index.html#autotoc_md9',1,'']]],
-  ['observações_1',['Limitações e Observações',['../index.html#autotoc_md10',1,'']]],
-  ['oled_20h_20tt_2',['API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)',['../index.html#autotoc_md4',1,'']]],
-  ['oled_20ssd1306_20proxy_20tt_20oled_20h_20c_20tt_3',['OLED SSD1306 (Proxy &lt;tt&gt;oled.h/.c&lt;/tt&gt;)',['../index.html',1,'']]],
-  ['oled_2ec_4',['oled.c',['../oled_8c.html',1,'']]],
-  ['oled_2eh_5',['oled.h',['../oled_8h.html',1,'']]],
-  ['oled_5falign_5fcenter_6',['OLED_ALIGN_CENTER',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5',1,'oled.h']]],
-  ['oled_5falign_5fjustify_7',['OLED_ALIGN_JUSTIFY',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb',1,'oled.h']]],
-  ['oled_5falign_5fleft_8',['OLED_ALIGN_LEFT',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b',1,'oled.h']]],
-  ['oled_5falign_5fright_9',['OLED_ALIGN_RIGHT',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831',1,'oled.h']]],
-  ['oled_5fclear_10',['oled_clear',['../oled_8h.html#a66cdd05fb3a765535af54825cb9eb26c',1,'oled_clear(void):&#160;oled.c'],['../oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c',1,'oled_clear(void):&#160;oled.c']]],
-  ['oled_5fclear_5ftext_5fline_11',['oled_clear_text_line',['../oled_8c.html#ac533da08441193dc1c6274e58348feb5',1,'oled_clear_text_line(uint8_t line):&#160;oled.c'],['../oled_8h.html#ac533da08441193dc1c6274e58348feb5',1,'oled_clear_text_line(uint8_t line):&#160;oled.c']]],
-  ['oled_5fdraw_5fbig_5fchar_12',['oled_draw_big_char',['../oled_8h.html#aef19becab190e4a63b3ea566b8932996',1,'oled_draw_big_char(int x, int y, char c):&#160;oled.c'],['../oled_8c.html#aef19becab190e4a63b3ea566b8932996',1,'oled_draw_big_char(int x, int y, char c):&#160;oled.c']]],
-  ['oled_5fdraw_5fbig_5fstring_13',['oled_draw_big_string',['../oled_8h.html#ad1b2a8a190cc54f3147fcc197d25edc3',1,'oled.h']]],
-  ['oled_5fdraw_5fchar_14',['oled_draw_char',['../oled_8c.html#ae6e6696f947ba345d0a95ae94ce4b3df',1,'oled_draw_char(int x, int y, char c):&#160;oled.c'],['../oled_8h.html#ae6e6696f947ba345d0a95ae94ce4b3df',1,'oled_draw_char(int x, int y, char c):&#160;oled.c']]],
-  ['oled_5fdraw_5fline_15',['oled_draw_line',['../oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268',1,'oled_draw_line(int x0, int y0, int x1, int y1, bool on):&#160;oled.c'],['../oled_8h.html#ac284f0bd4fdf2dd11175524b8d78b268',1,'oled_draw_line(int x0, int y0, int x1, int y1, bool on):&#160;oled.c']]],
-  ['oled_5fdraw_5fstring_16',['oled_draw_string',['../oled_8h.html#a34f1c4779a919ec1623b7b5147c0c5be',1,'oled_draw_string(int x, int y, const char *str):&#160;oled.c'],['../oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be',1,'oled_draw_string(int x, int y, const char *str):&#160;oled.c']]],
-  ['oled_5finit_17',['oled_init',['../oled_8h.html#ad95f850c4c6d949229270c8da88c02cb',1,'oled_init(void):&#160;oled.c'],['../oled_8c.html#ad95f850c4c6d949229270c8da88c02cb',1,'oled_init(void):&#160;oled.c']]],
-  ['oled_5frender_18',['oled_render',['../oled_8h.html#a4a95395ba3445d3d5a9ba41324f9b5b4',1,'oled_render(void):&#160;oled.c'],['../oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4',1,'oled_render(void):&#160;oled.c']]],
-  ['oled_5frender_5ftext_19',['oled_render_text',['../oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689',1,'oled_render_text(void):&#160;oled.c'],['../oled_8h.html#a112b0ae9dc37e4d52be0acfacbd37689',1,'oled_render_text(void):&#160;oled.c']]],
-  ['oled_5fset_5fpixel_20',['oled_set_pixel',['../oled_8c.html#a06e013499ceeb5183e46d95b0ab49c3f',1,'oled_set_pixel(int x, int y, bool on):&#160;oled.c'],['../oled_8h.html#a06e013499ceeb5183e46d95b0ab49c3f',1,'oled_set_pixel(int x, int y, bool on):&#160;oled.c']]],
-  ['oled_5fset_5ftext_5fline_21',['oled_set_text_line',['../oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec',1,'oled_set_text_line(uint8_t line, const char *text, oled_text_alignment_t alignment):&#160;oled.c'],['../oled_8h.html#aa415fc483d7246dd7d28a32a69f7a6ec',1,'oled_set_text_line(uint8_t line, const char *text, oled_text_alignment_t alignment):&#160;oled.c']]],
-  ['oled_5ftext_5falignment_5ft_22',['oled_text_alignment_t',['../oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6',1,'oled.h']]]
+  ['jmp_0',['jmp',['../pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17a0ef6cf926f2f394b0cc8e11be8022625',1,'pio_types.h']]],
+  ['jmppin_1',['jmppin',['../structwait__source.html#a3e9a0034372f68f835e640d56684d99daeddeed23a6e7c79aa8126198ca64889a',1,'wait_source']]],
+  ['json_5foutput_2',['json_output',['../structjson__output.html',1,'json_output'],['../structjson__output.html#a45a3567c063da683fbbcdf2f75ee9a9e',1,'json_output::json_output()']]],
+  ['json_5foutput_2ecpp_3',['json_output.cpp',['../json__output_8cpp.html',1,'']]]
 ];

@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura clocks_hw_t</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structclocks__hw__t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structclocks__hw__t-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura clocks_hw_t</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2clocks_8h_source.html">clocks.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para clocks_hw_t:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structclocks__hw__t__coll__graph.svg" width="363" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ad1575dc9c637b7dc1aaa8e7047ae7b7c" id="r_ad1575dc9c637b7dc1aaa8e7047ae7b7c"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c134994ad763e477906c5e05bed782" id="r_a65c134994ad763e477906c5e05bed782"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db16ce14173e0c165060396aecd415f" id="r_a3db16ce14173e0c165060396aecd415f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a2965bd0255b1e15de5869cd840889f89">wake_en0</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3db16ce14173e0c165060396aecd415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af231b76e20e805769a4f45a9b4eed6a4" id="r_af231b76e20e805769a4f45a9b4eed6a4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a125dc9cf92828aac9c88679fcbe4d27a">wake_en1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af231b76e20e805769a4f45a9b4eed6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c134994ad763e477906c5e05bed782" id="r_a65c134994ad763e477906c5e05bed782"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a65c134994ad763e477906c5e05bed782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082d1ea5ecc1ed51e51d08e1fae1b3f0" id="r_a082d1ea5ecc1ed51e51d08e1fae1b3f0"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#ae9d98a9739aa03502f2709aa63b8e09c">wake_en</a> [2]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a082d1ea5ecc1ed51e51d08e1fae1b3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1575dc9c637b7dc1aaa8e7047ae7b7c" id="r_ad1575dc9c637b7dc1aaa8e7047ae7b7c"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ad1575dc9c637b7dc1aaa8e7047ae7b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296427f5557402b2cd124b298ef69bff" id="r_a296427f5557402b2cd124b298ef69bff"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f45036b27b13bc50b86641234ee95f" id="r_a45f45036b27b13bc50b86641234ee95f"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7ace598fc1dbfada0e99809afdbc8e" id="r_abd7ace598fc1dbfada0e99809afdbc8e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a2965bd0255b1e15de5869cd840889f89">wake_en0</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:abd7ace598fc1dbfada0e99809afdbc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1465a761aa7b12f4a3110b8e6d86af40" id="r_a1465a761aa7b12f4a3110b8e6d86af40"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a125dc9cf92828aac9c88679fcbe4d27a">wake_en1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a1465a761aa7b12f4a3110b8e6d86af40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f45036b27b13bc50b86641234ee95f" id="r_a45f45036b27b13bc50b86641234ee95f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a45f45036b27b13bc50b86641234ee95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c00c94f02f7701301c4e667b01eaff" id="r_a67c00c94f02f7701301c4e667b01eaff"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#ae9d98a9739aa03502f2709aa63b8e09c">wake_en</a> [2]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a67c00c94f02f7701301c4e667b01eaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296427f5557402b2cd124b298ef69bff" id="r_a296427f5557402b2cd124b298ef69bff"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a296427f5557402b2cd124b298ef69bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cdbc34c1fbadbd606274bb0a182bcb" id="r_ac8cdbc34c1fbadbd606274bb0a182bcb"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b76b70a7e97140b4847c3a3aa2b2b9" id="r_a71b76b70a7e97140b4847c3a3aa2b2b9"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a1018e997adc062c8914264d1166e4" id="r_a19a1018e997adc062c8914264d1166e4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a4e54e98cfd1be7fa3ea4d97d12f41abf">sleep_en0</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a19a1018e997adc062c8914264d1166e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36564006d30f55c818217b339d1c4b4" id="r_ad36564006d30f55c818217b339d1c4b4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a86e855f33a99656867736cac4ca2f3a2">sleep_en1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ad36564006d30f55c818217b339d1c4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b76b70a7e97140b4847c3a3aa2b2b9" id="r_a71b76b70a7e97140b4847c3a3aa2b2b9"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a71b76b70a7e97140b4847c3a3aa2b2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3edf9b331fb1d5cabf84b6f4499309" id="r_add3edf9b331fb1d5cabf84b6f4499309"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a9b2d18fc77a3802d0099906be05a89e7">sleep_en</a> [2]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:add3edf9b331fb1d5cabf84b6f4499309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cdbc34c1fbadbd606274bb0a182bcb" id="r_ac8cdbc34c1fbadbd606274bb0a182bcb"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac8cdbc34c1fbadbd606274bb0a182bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebcebdb069d560e1fdf6bebf92e1677d" id="r_aebcebdb069d560e1fdf6bebf92e1677d"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa594a7064f4135a45d7365a7db54c500" id="r_aa594a7064f4135a45d7365a7db54c500"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6c1f91824559b3747b4c6e5b87e2d0" id="r_a9f6c1f91824559b3747b4c6e5b87e2d0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a63b1597757e8d62f33d14fe3a48e69b2">enabled0</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a9f6c1f91824559b3747b4c6e5b87e2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72980b44a59bdd4e61bf964c6e31f67" id="r_ac72980b44a59bdd4e61bf964c6e31f67"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#ace9a5aac31cfe1d90cf31bf5dc8d73d3">enabled1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac72980b44a59bdd4e61bf964c6e31f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa594a7064f4135a45d7365a7db54c500" id="r_aa594a7064f4135a45d7365a7db54c500"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aa594a7064f4135a45d7365a7db54c500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccc7f3ecf98e85f827bdc6586927c92" id="r_a2ccc7f3ecf98e85f827bdc6586927c92"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a87d6235b5ed85c4d1c26902b783def07">enabled</a> [2]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2ccc7f3ecf98e85f827bdc6586927c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebcebdb069d560e1fdf6bebf92e1677d" id="r_aebcebdb069d560e1fdf6bebf92e1677d"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aebcebdb069d560e1fdf6bebf92e1677d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d72367f1ef7949ad1ff4d641f12f80c" id="r_a0d72367f1ef7949ad1ff4d641f12f80c"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6d9c9aa9521f4852cb6e9e8349e0ae" id="r_a7e6d9c9aa9521f4852cb6e9e8349e0ae"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e5797039ff1ddfb829693dc686e809" id="r_ae9e5797039ff1ddfb829693dc686e809"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a4e54e98cfd1be7fa3ea4d97d12f41abf">sleep_en0</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ae9e5797039ff1ddfb829693dc686e809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf5597b3aedbf7bd0d7ac60f8501e43" id="r_a7bf5597b3aedbf7bd0d7ac60f8501e43"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a86e855f33a99656867736cac4ca2f3a2">sleep_en1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7bf5597b3aedbf7bd0d7ac60f8501e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6d9c9aa9521f4852cb6e9e8349e0ae" id="r_a7e6d9c9aa9521f4852cb6e9e8349e0ae"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7e6d9c9aa9521f4852cb6e9e8349e0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805ebb9f56cec6960c853b478efabf3d" id="r_a805ebb9f56cec6960c853b478efabf3d"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a9b2d18fc77a3802d0099906be05a89e7">sleep_en</a> [2]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a805ebb9f56cec6960c853b478efabf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d72367f1ef7949ad1ff4d641f12f80c" id="r_a0d72367f1ef7949ad1ff4d641f12f80c"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0d72367f1ef7949ad1ff4d641f12f80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e61a27c4626926a09f8df3409e50d1" id="r_a31e61a27c4626926a09f8df3409e50d1"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570fd136353815cb609830f12f1dfd1e" id="r_a570fd136353815cb609830f12f1dfd1e"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87dd37a8d9ffad9bd1506de07eec242" id="r_ae87dd37a8d9ffad9bd1506de07eec242"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a63b1597757e8d62f33d14fe3a48e69b2">enabled0</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ae87dd37a8d9ffad9bd1506de07eec242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844a297cee6fc23989e79552ca8e05e2" id="r_a844a297cee6fc23989e79552ca8e05e2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#ace9a5aac31cfe1d90cf31bf5dc8d73d3">enabled1</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a844a297cee6fc23989e79552ca8e05e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570fd136353815cb609830f12f1dfd1e" id="r_a570fd136353815cb609830f12f1dfd1e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a570fd136353815cb609830f12f1dfd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace8637e6efacff9eef6804e2cb9e6d42" id="r_ace8637e6efacff9eef6804e2cb9e6d42"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;&#160;&#160;<a class="el" href="structclocks__hw__t.html#a87d6235b5ed85c4d1c26902b783def07">enabled</a> [2]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ace8637e6efacff9eef6804e2cb9e6d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e61a27c4626926a09f8df3409e50d1" id="r_a31e61a27c4626926a09f8df3409e50d1"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a31e61a27c4626926a09f8df3409e50d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c94d70912c8e06f9b84cf3e2ad8b48b" id="r_a3c94d70912c8e06f9b84cf3e2ad8b48b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structclock__hw__t.html">clock_hw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#a3c94d70912c8e06f9b84cf3e2ad8b48b">clk</a> [10]</td></tr>
+<tr class="separator:a3c94d70912c8e06f9b84cf3e2ad8b48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975497126409adc393d9570c3f4740ac" id="r_a975497126409adc393d9570c3f4740ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#a975497126409adc393d9570c3f4740ac">dftclk_lposc_ctrl</a></td></tr>
+<tr class="separator:a975497126409adc393d9570c3f4740ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a0a2edd8f7e69816a4decb83c7c06c" id="r_aa7a0a2edd8f7e69816a4decb83c7c06c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#aa7a0a2edd8f7e69816a4decb83c7c06c">dftclk_rosc_ctrl</a></td></tr>
+<tr class="separator:aa7a0a2edd8f7e69816a4decb83c7c06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfccdb49a33d90e01759ace54954dfd" id="r_afbfccdb49a33d90e01759ace54954dfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#afbfccdb49a33d90e01759ace54954dfd">dftclk_xosc_ctrl</a></td></tr>
+<tr class="separator:afbfccdb49a33d90e01759ace54954dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ee71e862fbbed47fce6542735ec409" id="r_ac4ee71e862fbbed47fce6542735ec409"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfc__hw__t.html">fc_hw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#ac4ee71e862fbbed47fce6542735ec409">fc0</a></td></tr>
+<tr class="separator:ac4ee71e862fbbed47fce6542735ec409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f2a79585c2fc1d402b4440c469f9eb" id="r_af7f2a79585c2fc1d402b4440c469f9eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#af7f2a79585c2fc1d402b4440c469f9eb">inte</a></td></tr>
+<tr class="separator:af7f2a79585c2fc1d402b4440c469f9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f09051d0a7b24bb68705626e8a0aad9" id="r_a1f09051d0a7b24bb68705626e8a0aad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#a1f09051d0a7b24bb68705626e8a0aad9">intf</a></td></tr>
+<tr class="separator:a1f09051d0a7b24bb68705626e8a0aad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12fdb98e127f42762925f84f643d0c3c" id="r_a12fdb98e127f42762925f84f643d0c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#a12fdb98e127f42762925f84f643d0c3c">intr</a></td></tr>
+<tr class="separator:a12fdb98e127f42762925f84f643d0c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd340c2b79f495eb5a3fb43d7a04aea" id="r_a4fd340c2b79f495eb5a3fb43d7a04aea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#a4fd340c2b79f495eb5a3fb43d7a04aea">ints</a></td></tr>
+<tr class="separator:a4fd340c2b79f495eb5a3fb43d7a04aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9474bb86b9059344f5933369ebe72e93" id="r_a9474bb86b9059344f5933369ebe72e93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structclock__resus__hw__t.html">clock_resus_hw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclocks__hw__t.html#a9474bb86b9059344f5933369ebe72e93">resus</a></td></tr>
+<tr class="separator:a9474bb86b9059344f5933369ebe72e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="ad1575dc9c637b7dc1aaa8e7047ae7b7c" name="ad1575dc9c637b7dc1aaa8e7047ae7b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1575dc9c637b7dc1aaa8e7047ae7b7c">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structclocks__hw__t.html">clocks_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a296427f5557402b2cd124b298ef69bff" name="a296427f5557402b2cd124b298ef69bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296427f5557402b2cd124b298ef69bff">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structclocks__hw__t.html">clocks_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8cdbc34c1fbadbd606274bb0a182bcb" name="ac8cdbc34c1fbadbd606274bb0a182bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cdbc34c1fbadbd606274bb0a182bcb">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structclocks__hw__t.html">clocks_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebcebdb069d560e1fdf6bebf92e1677d" name="aebcebdb069d560e1fdf6bebf92e1677d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebcebdb069d560e1fdf6bebf92e1677d">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structclocks__hw__t.html">clocks_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d72367f1ef7949ad1ff4d641f12f80c" name="a0d72367f1ef7949ad1ff4d641f12f80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d72367f1ef7949ad1ff4d641f12f80c">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structclocks__hw__t.html">clocks_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31e61a27c4626926a09f8df3409e50d1" name="a31e61a27c4626926a09f8df3409e50d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e61a27c4626926a09f8df3409e50d1">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structclocks__hw__t.html">clocks_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c94d70912c8e06f9b84cf3e2ad8b48b" name="a3c94d70912c8e06f9b84cf3e2ad8b48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c94d70912c8e06f9b84cf3e2ad8b48b">&#9670;&#160;</a></span>clk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structclock__hw__t.html">clock_hw_t</a> clocks_hw_t::clk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a975497126409adc393d9570c3f4740ac" name="a975497126409adc393d9570c3f4740ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a975497126409adc393d9570c3f4740ac">&#9670;&#160;</a></span>dftclk_lposc_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::dftclk_lposc_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7a0a2edd8f7e69816a4decb83c7c06c" name="aa7a0a2edd8f7e69816a4decb83c7c06c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a0a2edd8f7e69816a4decb83c7c06c">&#9670;&#160;</a></span>dftclk_rosc_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::dftclk_rosc_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbfccdb49a33d90e01759ace54954dfd" name="afbfccdb49a33d90e01759ace54954dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbfccdb49a33d90e01759ace54954dfd">&#9670;&#160;</a></span>dftclk_xosc_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::dftclk_xosc_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87d6235b5ed85c4d1c26902b783def07" name="a87d6235b5ed85c4d1c26902b783def07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d6235b5ed85c4d1c26902b783def07">&#9670;&#160;</a></span>enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> clocks_hw_t::enabled[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63b1597757e8d62f33d14fe3a48e69b2" name="a63b1597757e8d62f33d14fe3a48e69b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b1597757e8d62f33d14fe3a48e69b2">&#9670;&#160;</a></span>enabled0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> clocks_hw_t::enabled0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace9a5aac31cfe1d90cf31bf5dc8d73d3" name="ace9a5aac31cfe1d90cf31bf5dc8d73d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9a5aac31cfe1d90cf31bf5dc8d73d3">&#9670;&#160;</a></span>enabled1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> clocks_hw_t::enabled1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4ee71e862fbbed47fce6542735ec409" name="ac4ee71e862fbbed47fce6542735ec409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ee71e862fbbed47fce6542735ec409">&#9670;&#160;</a></span>fc0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structfc__hw__t.html">fc_hw_t</a> clocks_hw_t::fc0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7f2a79585c2fc1d402b4440c469f9eb" name="af7f2a79585c2fc1d402b4440c469f9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f2a79585c2fc1d402b4440c469f9eb">&#9670;&#160;</a></span>inte</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::inte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f09051d0a7b24bb68705626e8a0aad9" name="a1f09051d0a7b24bb68705626e8a0aad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f09051d0a7b24bb68705626e8a0aad9">&#9670;&#160;</a></span>intf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::intf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12fdb98e127f42762925f84f643d0c3c" name="a12fdb98e127f42762925f84f643d0c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12fdb98e127f42762925f84f643d0c3c">&#9670;&#160;</a></span>intr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> clocks_hw_t::intr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fd340c2b79f495eb5a3fb43d7a04aea" name="a4fd340c2b79f495eb5a3fb43d7a04aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd340c2b79f495eb5a3fb43d7a04aea">&#9670;&#160;</a></span>ints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> clocks_hw_t::ints</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9474bb86b9059344f5933369ebe72e93" name="a9474bb86b9059344f5933369ebe72e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9474bb86b9059344f5933369ebe72e93">&#9670;&#160;</a></span>resus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structclock__resus__hw__t.html">clock_resus_hw_t</a> clocks_hw_t::resus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b2d18fc77a3802d0099906be05a89e7" name="a9b2d18fc77a3802d0099906be05a89e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2d18fc77a3802d0099906be05a89e7">&#9670;&#160;</a></span>sleep_en</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::sleep_en[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e54e98cfd1be7fa3ea4d97d12f41abf" name="a4e54e98cfd1be7fa3ea4d97d12f41abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e54e98cfd1be7fa3ea4d97d12f41abf">&#9670;&#160;</a></span>sleep_en0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::sleep_en0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86e855f33a99656867736cac4ca2f3a2" name="a86e855f33a99656867736cac4ca2f3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e855f33a99656867736cac4ca2f3a2">&#9670;&#160;</a></span>sleep_en1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::sleep_en1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9d98a9739aa03502f2709aa63b8e09c" name="ae9d98a9739aa03502f2709aa63b8e09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d98a9739aa03502f2709aa63b8e09c">&#9670;&#160;</a></span>wake_en</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::wake_en[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2965bd0255b1e15de5869cd840889f89" name="a2965bd0255b1e15de5869cd840889f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2965bd0255b1e15de5869cd840889f89">&#9670;&#160;</a></span>wake_en0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::wake_en0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a125dc9cf92828aac9c88679fcbe4d27a" name="a125dc9cf92828aac9c88679fcbe4d27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125dc9cf92828aac9c88679fcbe4d27a">&#9670;&#160;</a></span>wake_en1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> clocks_hw_t::wake_en1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2clocks_8h_source.html">rp2040/hardware_structs/include/hardware/structs/clocks.h</a></li>
+<li><a class="el" href="rp2350_2hardware__structs_2include_2hardware_2structs_2clocks_8h_source.html">rp2350/hardware_structs/include/hardware/structs/clocks.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structclocks__hw__t.html">clocks_hw_t</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

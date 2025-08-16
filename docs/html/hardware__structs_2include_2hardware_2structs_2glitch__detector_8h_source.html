@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de glitch_detector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__structs_2include_2hardware_2structs_2glitch__detector_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_structs/include/hardware/structs/glitch_detector.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hardware__structs_2include_2hardware_2structs_2glitch__detector_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _HARDWARE_STRUCTS_GLITCH_DETECTOR_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _HARDWARE_STRUCTS_GLITCH_DETECTOR_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html">hardware/regs/glitch_detector.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Reference to datasheet: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf#tab-registerlist_glitch_detector</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// The _REG_ macro is intended to help make the register navigable in your IDE (for example, using the &quot;Go to Definition&quot; feature)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// _REG_(x) will link to the corresponding register in hardware/regs/glitch_detector.h.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Bit-field descriptions are of the form:</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// BITMASK [BITRANGE] FIELDNAME (RESETVALUE) DESCRIPTION</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structglitch__detector__hw__t.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a7a0b6aef63d6083ea25cc6a907bd8a26">GLITCH_DETECTOR_ARM_OFFSET</a>) <span class="comment">// GLITCH_DETECTOR_ARM</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Forcibly arm the glitch detectors, if they are not already armed by OTP</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// 0x0000ffff [15:0]  ARM          (0x5bad) </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structglitch__detector__hw__t.html#a84a260afa2a66be81e2544d8be9586f2">   30</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> arm;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afe3113d85035da4ef4f05d6ae57bb112">GLITCH_DETECTOR_DISARM_OFFSET</a>) <span class="comment">// GLITCH_DETECTOR_DISARM</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// 0x0000ffff [15:0]  DISARM       (0x0000) Forcibly disarm the glitch detectors, if they are armed by OTP</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structglitch__detector__hw__t.html#ac6beb73c2663d48662d21463931eee02">   34</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> disarm;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a23312943486a73f62867a1d366da04b8">GLITCH_DETECTOR_SENSITIVITY_OFFSET</a>) <span class="comment">// GLITCH_DETECTOR_SENSITIVITY</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Adjust the sensitivity of glitch detectors to values other than their OTP-provided defaults</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// 0xff000000 [31:24] DEFAULT      (0x00) </span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// 0x0000c000 [15:14] DET3_INV     (0x0) Must be the inverse of DET3, else the default value is used</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// 0x00003000 [13:12] DET2_INV     (0x0) Must be the inverse of DET2, else the default value is used</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// 0x00000c00 [11:10] DET1_INV     (0x0) Must be the inverse of DET1, else the default value is used</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// 0x00000300 [9:8]   DET0_INV     (0x0) Must be the inverse of DET0, else the default value is used</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// 0x000000c0 [7:6]   DET3         (0x0) Set sensitivity for detector 3</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// 0x00000030 [5:4]   DET2         (0x0) Set sensitivity for detector 2</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// 0x0000000c [3:2]   DET1         (0x0) Set sensitivity for detector 1</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// 0x00000003 [1:0]   DET0         (0x0) Set sensitivity for detector 0</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structglitch__detector__hw__t.html#af7451682dbf2c0d93af4b65b4e45d2fd">   47</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> sensitivity;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a1959d09dafad31651e0bcc4f9f3c48b2">GLITCH_DETECTOR_LOCK_OFFSET</a>) <span class="comment">// GLITCH_DETECTOR_LOCK</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// 0x000000ff [7:0]   LOCK         (0x00) Write any nonzero value to disable writes to ARM,...</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structglitch__detector__hw__t.html#a4a8a709cbb31f81641f07bd95a3fb808">   51</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> lock;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a85895c8616d76923895a93d71eeafd5e">GLITCH_DETECTOR_TRIG_STATUS_OFFSET</a>) <span class="comment">// GLITCH_DETECTOR_TRIG_STATUS</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Set when a detector output triggers</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// 0x00000008 [3]     DET3         (0) </span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// 0x00000004 [2]     DET2         (0) </span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// 0x00000002 [1]     DET1         (0) </span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// 0x00000001 [0]     DET0         (0) </span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structglitch__detector__hw__t.html#acca7e955f88260da9b8d26fdba4ecba5">   59</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> trig_status;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a727a26fc3d942725e2462625057c8ebb">GLITCH_DETECTOR_TRIG_FORCE_OFFSET</a>) <span class="comment">// GLITCH_DETECTOR_TRIG_FORCE</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Simulate the firing of one or more detectors</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// 0x0000000f [3:0]   TRIG_FORCE   (0x0) </span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structglitch__detector__hw__t.html#aad02ba1efe82d5a4bd17c1c5201c4c8a">   64</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#aec2e26f447787f282e83a0c3f135b28d">io_wo_32</a> trig_force;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>} <a class="code hl_struct" href="structglitch__detector__hw__t.html">glitch_detector_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="hardware__structs_2include_2hardware_2structs_2glitch__detector_8h.html#ae12dea9e99242910f038bc9c2eb1cf59">   67</a></span><span class="preprocessor">#define glitch_detector_hw ((glitch_detector_hw_t *)GLITCH_DETECTOR_BASE)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span> (<a class="code hl_struct" href="structglitch__detector__hw__t.html">glitch_detector_hw_t</a>) == 0x0018, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_STRUCTS_GLITCH_DETECTOR_H</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_a5e9dd65c504214b8530a3ce63adf8375"><div class="ttname"><a href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a></div><div class="ttdeci">#define _REG_(x)</div><div class="ttdef"><b>Definição</b> address_mapped.h:84</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ae7a3903ffe232108a65efc85970a5fdb"><div class="ttname"><a href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a></div><div class="ttdeci">volatile uint32_t io_rw_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:66</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_aec2e26f447787f282e83a0c3f135b28d"><div class="ttname"><a href="address__mapped_8h.html#aec2e26f447787f282e83a0c3f135b28d">io_wo_32</a></div><div class="ttdeci">volatile uint32_t io_wo_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:68</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2glitch__detector_8h_html"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html">glitch_detector.h</a></div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2glitch__detector_8h_html_a1959d09dafad31651e0bcc4f9f3c48b2"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a1959d09dafad31651e0bcc4f9f3c48b2">GLITCH_DETECTOR_LOCK_OFFSET</a></div><div class="ttdeci">#define GLITCH_DETECTOR_LOCK_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/glitch_detector.h:146</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2glitch__detector_8h_html_a23312943486a73f62867a1d366da04b8"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a23312943486a73f62867a1d366da04b8">GLITCH_DETECTOR_SENSITIVITY_OFFSET</a></div><div class="ttdeci">#define GLITCH_DETECTOR_SENSITIVITY_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/glitch_detector.h:60</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2glitch__detector_8h_html_a727a26fc3d942725e2462625057c8ebb"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a727a26fc3d942725e2462625057c8ebb">GLITCH_DETECTOR_TRIG_FORCE_OFFSET</a></div><div class="ttdeci">#define GLITCH_DETECTOR_TRIG_FORCE_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/glitch_detector.h:203</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2glitch__detector_8h_html_a7a0b6aef63d6083ea25cc6a907bd8a26"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a7a0b6aef63d6083ea25cc6a907bd8a26">GLITCH_DETECTOR_ARM_OFFSET</a></div><div class="ttdeci">#define GLITCH_DETECTOR_ARM_OFFSET</div><div class="ttdoc">Copyright (c) 2024 Raspberry Pi Ltd.</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/glitch_detector.h:30</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2glitch__detector_8h_html_a85895c8616d76923895a93d71eeafd5e"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#a85895c8616d76923895a93d71eeafd5e">GLITCH_DETECTOR_TRIG_STATUS_OFFSET</a></div><div class="ttdeci">#define GLITCH_DETECTOR_TRIG_STATUS_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/glitch_detector.h:161</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2glitch__detector_8h_html_afe3113d85035da4ef4f05d6ae57bb112"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2glitch__detector_8h.html#afe3113d85035da4ef4f05d6ae57bb112">GLITCH_DETECTOR_DISARM_OFFSET</a></div><div class="ttdeci">#define GLITCH_DETECTOR_DISARM_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/glitch_detector.h:46</div></div>
+<div class="ttc" id="astructglitch__detector__hw__t_html"><div class="ttname"><a href="structglitch__detector__hw__t.html">glitch_detector_hw_t</a></div><div class="ttdef"><b>Definição</b> hardware_structs/include/hardware/structs/glitch_detector.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_a4ed9f159ff82891f8d9c6442d59a09f.html">hardware_structs</a></li><li class="navelem"><a class="el" href="dir_644b18fc6729bbffe612edd11fd9bb60.html">include</a></li><li class="navelem"><a class="el" href="dir_00f006c97f93acb2044a3e94d70d66ca.html">hardware</a></li><li class="navelem"><a class="el" href="dir_e7a506f13e8b3ea148c60a9313519183.html">structs</a></li><li class="navelem"><a class="el" href="hardware__structs_2include_2hardware_2structs_2glitch__detector_8h.html">glitch_detector.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

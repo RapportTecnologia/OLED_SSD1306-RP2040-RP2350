@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro cyw43_driver.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('cyw43__driver_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro cyw43_driver.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;hardware/gpio.h&quot;</code><br />
+<code>#include &quot;hardware/irq.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="unique__id_8h_source.html">pico/unique_id.h</a>&quot;</code><br />
+<code>#include &quot;cyw43.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cyw43__driver_8h_source.html">pico/cyw43_driver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="async__context_8h_source.html">pico/async_context.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para cyw43_driver.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="cyw43__driver_8c__incl.svg" width="735" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad5b878cfa64ade5668ae5c132975c437" id="r_ad5b878cfa64ade5668ae5c132975c437"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#ad5b878cfa64ade5668ae5c132975c437">CYW43_GPIO_IRQ_HANDLER_PRIORITY</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="separator:ad5b878cfa64ade5668ae5c132975c437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9a7fc0fd5495b38153f76856d005c4" id="r_aba9a7fc0fd5495b38153f76856d005c4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#aba9a7fc0fd5495b38153f76856d005c4">CYW43_SLEEP_CHECK_MS</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:aba9a7fc0fd5495b38153f76856d005c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a201468129b483039afc5a619e2d31097" id="r_a201468129b483039afc5a619e2d31097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a201468129b483039afc5a619e2d31097">__attribute__</a> ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">weak</a>))</td></tr>
+<tr class="separator:a201468129b483039afc5a619e2d31097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581b0efdf0339b2d7966b63813bc0b6e" id="r_a581b0efdf0339b2d7966b63813bc0b6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a581b0efdf0339b2d7966b63813bc0b6e">cyw43_await_background_or_timeout_us</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timeout_us</a>)</td></tr>
+<tr class="separator:a581b0efdf0339b2d7966b63813bc0b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21011c54641af0ce04d3b08b9b63c4ca" id="r_a21011c54641af0ce04d3b08b9b63c4ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a21011c54641af0ce04d3b08b9b63c4ca">cyw43_delay_ms</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ms</a>)</td></tr>
+<tr class="separator:a21011c54641af0ce04d3b08b9b63c4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae4151b0d8f8ed7b730f1ede933dd2d" id="r_abae4151b0d8f8ed7b730f1ede933dd2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#abae4151b0d8f8ed7b730f1ede933dd2d">cyw43_delay_us</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">us</a>)</td></tr>
+<tr class="separator:abae4151b0d8f8ed7b730f1ede933dd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7f9ad52479938f40ae6b1f8c9ef80c3" id="r_gaf7f9ad52479938f40ae6b1f8c9ef80c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__driver.html#gaf7f9ad52479938f40ae6b1f8c9ef80c3">cyw43_driver_deinit</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *context)</td></tr>
+<tr class="memdesc:gaf7f9ad52479938f40ae6b1f8c9ef80c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the lowever level cyw43_driver and unhooks it from the <a class="el" href="structasync__context.html" title="Base structure type of all async_contexts.">async_context</a>.  <br /></td></tr>
+<tr class="separator:gaf7f9ad52479938f40ae6b1f8c9ef80c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24c12f6110969e420954356b104aaa07" id="r_ga24c12f6110969e420954356b104aaa07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__cyw43__driver.html#ga24c12f6110969e420954356b104aaa07">cyw43_driver_init</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *context)</td></tr>
+<tr class="memdesc:ga24c12f6110969e420954356b104aaa07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the lower level cyw43_driver and integrates it with the provided <a class="el" href="structasync__context.html" title="Base structure type of all async_contexts.">async_context</a>.  <br /></td></tr>
+<tr class="separator:ga24c12f6110969e420954356b104aaa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91b3bd68c640b4b35d5a495769ac3dd" id="r_ac91b3bd68c640b4b35d5a495769ac3dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#ac91b3bd68c640b4b35d5a495769ac3dd">cyw43_hal_get_mac</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">idx</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> buf[6])</td></tr>
+<tr class="separator:ac91b3bd68c640b4b35d5a495769ac3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d708a80634f0d76e266a52c34973053" id="r_a9d708a80634f0d76e266a52c34973053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a9d708a80634f0d76e266a52c34973053">cyw43_irq_deinit</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *param)</td></tr>
+<tr class="separator:a9d708a80634f0d76e266a52c34973053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae643934af50fb8cdd268f1dcd6cbbcc5" id="r_ae643934af50fb8cdd268f1dcd6cbbcc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#ae643934af50fb8cdd268f1dcd6cbbcc5">cyw43_irq_init</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *param)</td></tr>
+<tr class="separator:ae643934af50fb8cdd268f1dcd6cbbcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e968f2c3f342e7b074a791a86ce224" id="r_ae4e968f2c3f342e7b074a791a86ce224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#ae4e968f2c3f342e7b074a791a86ce224">cyw43_post_poll_hook</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ae4e968f2c3f342e7b074a791a86ce224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59af42005beaf22390f9e22c8af81439" id="r_a59af42005beaf22390f9e22c8af81439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a59af42005beaf22390f9e22c8af81439">cyw43_schedule_internal_poll_dispatch</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*func)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>))</td></tr>
+<tr class="separator:a59af42005beaf22390f9e22c8af81439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5e8ef00b605677b800abe78edebd6d" id="r_a2b5e8ef00b605677b800abe78edebd6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a2b5e8ef00b605677b800abe78edebd6d">cyw43_thread_enter</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a2b5e8ef00b605677b800abe78edebd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa7f8d9585e011da662070017d7b045" id="r_abfa7f8d9585e011da662070017d7b045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#abfa7f8d9585e011da662070017d7b045">cyw43_thread_exit</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:abfa7f8d9585e011da662070017d7b045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c90ae02ab4e90793c53e8f08844456" id="r_a33c90ae02ab4e90793c53e8f08844456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a33c90ae02ab4e90793c53e8f08844456">cyw43_thread_lock_check</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a33c90ae02ab4e90793c53e8f08844456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76608822399e623d732d83ea2b039a14" id="r_a76608822399e623d732d83ea2b039a14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyw43__driver_8c.html#a76608822399e623d732d83ea2b039a14">storage_read_blocks</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *dest, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">block_num</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> num_blocks)</td></tr>
+<tr class="separator:a76608822399e623d732d83ea2b039a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ad5b878cfa64ade5668ae5c132975c437" name="ad5b878cfa64ade5668ae5c132975c437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5b878cfa64ade5668ae5c132975c437">&#9670;&#160;</a></span>CYW43_GPIO_IRQ_HANDLER_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> CYW43_GPIO_IRQ_HANDLER_PRIORITY&#160;&#160;&#160;0x40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba9a7fc0fd5495b38153f76856d005c4" name="aba9a7fc0fd5495b38153f76856d005c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba9a7fc0fd5495b38153f76856d005c4">&#9670;&#160;</a></span>CYW43_SLEEP_CHECK_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> CYW43_SLEEP_CHECK_MS&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a201468129b483039afc5a619e2d31097" name="a201468129b483039afc5a619e2d31097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201468129b483039afc5a619e2d31097">&#9670;&#160;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">weak</a>)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a> e <a class="el" href="group__pico__unique__id.html#gaf87ef8a55d8dc2520776e427a605b6fb">pico_get_unique_board_id()</a>.</p>
+
+</div>
+</div>
+<a id="a581b0efdf0339b2d7966b63813bc0b6e" name="a581b0efdf0339b2d7966b63813bc0b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581b0efdf0339b2d7966b63813bc0b6e">&#9670;&#160;</a></span>cyw43_await_background_or_timeout_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_await_background_or_timeout_us </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>timeout_us</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="a21011c54641af0ce04d3b08b9b63c4ca" name="a21011c54641af0ce04d3b08b9b63c4ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21011c54641af0ce04d3b08b9b63c4ca">&#9670;&#160;</a></span>cyw43_delay_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_delay_ms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="abae4151b0d8f8ed7b730f1ede933dd2d" name="abae4151b0d8f8ed7b730f1ede933dd2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae4151b0d8f8ed7b730f1ede933dd2d">&#9670;&#160;</a></span>cyw43_delay_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_delay_us </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>us</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ac91b3bd68c640b4b35d5a495769ac3dd" name="ac91b3bd68c640b4b35d5a495769ac3dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91b3bd68c640b4b35d5a495769ac3dd">&#9670;&#160;</a></span>cyw43_hal_get_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_hal_get_mac </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>buf</em>[6]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a>.</p>
+
+</div>
+</div>
+<a id="a9d708a80634f0d76e266a52c34973053" name="a9d708a80634f0d76e266a52c34973053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d708a80634f0d76e266a52c34973053">&#9670;&#160;</a></span>cyw43_irq_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> cyw43_irq_deinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="cyw43__configport_8h.html#a27e79d64f9099bcaa259b3c188c1ba44">CYW43_PIN_WL_HOST_WAKE</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#aa4ca4d30183d0f6248b154c9d12a76a5">get_core_num()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__cyw43__driver.html#gaf7f9ad52479938f40ae6b1f8c9ef80c3">cyw43_driver_deinit()</a>.</p>
+
+</div>
+</div>
+<a id="ae643934af50fb8cdd268f1dcd6cbbcc5" name="ae643934af50fb8cdd268f1dcd6cbbcc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae643934af50fb8cdd268f1dcd6cbbcc5">&#9670;&#160;</a></span>cyw43_irq_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> cyw43_irq_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="cyw43__driver_8c.html#ad5b878cfa64ade5668ae5c132975c437">CYW43_GPIO_IRQ_HANDLER_PRIORITY</a>, <a class="el" href="cyw43__configport_8h.html#a27e79d64f9099bcaa259b3c188c1ba44">CYW43_PIN_WL_HOST_WAKE</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#aa4ca4d30183d0f6248b154c9d12a76a5">get_core_num()</a>, <a class="el" href="group__hardware__irq.html#ggaf4bf6b287c1a8445fce49ccaa711b3c3ae9d0650a36de3bfbad6edc82a613d3c1">IO_IRQ_BANK0</a> e <a class="el" href="group__hardware__irq.html#ga7c7167f643c6898b758340ce59d333d9">irq_set_enabled()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__cyw43__driver.html#ga24c12f6110969e420954356b104aaa07">cyw43_driver_init()</a>.</p>
+
+</div>
+</div>
+<a id="ae4e968f2c3f342e7b074a791a86ce224" name="ae4e968f2c3f342e7b074a791a86ce224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e968f2c3f342e7b074a791a86ce224">&#9670;&#160;</a></span>cyw43_post_poll_hook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_post_poll_hook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#aa4ca4d30183d0f6248b154c9d12a76a5">get_core_num()</a>.</p>
+
+</div>
+</div>
+<a id="a59af42005beaf22390f9e22c8af81439" name="a59af42005beaf22390f9e22c8af81439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59af42005beaf22390f9e22c8af81439">&#9670;&#160;</a></span>cyw43_schedule_internal_poll_dispatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_schedule_internal_poll_dispatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="a2b5e8ef00b605677b800abe78edebd6d" name="a2b5e8ef00b605677b800abe78edebd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5e8ef00b605677b800abe78edebd6d">&#9670;&#160;</a></span>cyw43_thread_enter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_thread_enter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfa7f8d9585e011da662070017d7b045" name="abfa7f8d9585e011da662070017d7b045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa7f8d9585e011da662070017d7b045">&#9670;&#160;</a></span>cyw43_thread_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_thread_exit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33c90ae02ab4e90793c53e8f08844456" name="a33c90ae02ab4e90793c53e8f08844456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c90ae02ab4e90793c53e8f08844456">&#9670;&#160;</a></span>cyw43_thread_lock_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> cyw43_thread_lock_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76608822399e623d732d83ea2b039a14" name="a76608822399e623d732d83ea2b039a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76608822399e623d732d83ea2b039a14">&#9670;&#160;</a></span>storage_read_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> storage_read_blocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>block_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>num_blocks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_7435a16b854d2d5948ecbd640e16fafd.html">pico_cyw43_driver</a></li><li class="navelem"><a class="el" href="cyw43__driver_8c.html">cyw43_driver.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

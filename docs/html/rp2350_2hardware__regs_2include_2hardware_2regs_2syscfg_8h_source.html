@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de syscfg.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2350/hardware_regs/include/hardware/regs/syscfg.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : SYSCFG</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : Register block for various chip control signals</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _HARDWARE_REGS_SYSCFG_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _HARDWARE_REGS_SYSCFG_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register    : SYSCFG_PROC_CONFIG</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Description : Configuration for processors</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aa7718189a4c2e200d2c2a58fc5d4d217">   19</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ac39584229d000b44c5d48b6b4df5b77d">   20</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a530b494a663c586983e2f09e263c07a4">   21</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Field       : SYSCFG_PROC_CONFIG_PROC1_HALTED</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Description : Indication that proc1 has halted</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4f5a6ba5cea3aab10c017c8533e45583">   25</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC1_HALTED_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4f189084fd934c9ae059ee2883f2c8fd">   26</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC1_HALTED_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad2c34d2534774cd488f2020418ff1f55">   27</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC1_HALTED_MSB    _u(1)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae61c67ce9381510b63fd1eb23082e132">   28</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC1_HALTED_LSB    _u(1)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a67994cb7433a00eec7a9bf9e4c3924eb">   29</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC1_HALTED_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Field       : SYSCFG_PROC_CONFIG_PROC0_HALTED</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// Description : Indication that proc0 has halted</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae59efafbc8031a4764f5f10c77f4bbad">   33</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC0_HALTED_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a77ec8d5ff491fe24485afae0fe6ade05">   34</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC0_HALTED_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad7dcfd93d43d4a45e5da91d573f8cffa">   35</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC0_HALTED_MSB    _u(0)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a6241a2a28a6a8f189e2feb46ec2eaa36">   36</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC0_HALTED_LSB    _u(0)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aa93eee64a88f205a42b8f8f546935218">   37</a></span><span class="preprocessor">#define SYSCFG_PROC_CONFIG_PROC0_HALTED_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// Register    : SYSCFG_PROC_IN_SYNC_BYPASS</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Description : For each bit, if 1, bypass the input synchronizer between that</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//               GPIO</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//               and the GPIO input register in the SIO. The input synchronizers</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//               should</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//               generally be unbypassed, to avoid injecting metastabilities</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//               into processors.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//               If you&#39;re feeling brave, you can bypass to save two cycles of</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//               input</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//               latency. This register applies to GPIO 0...31.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a253d1865c66ae8f447180d5062a34af3">   49</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#afb74e9f5d2bb20c24f1f5b1594f4f85c">   50</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4979e4b733b8d11b512e739bb9b77182">   51</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// Field       : SYSCFG_PROC_IN_SYNC_BYPASS_GPIO</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a90bbbe4b8b0ad0c78fc3aa6486d06878">   54</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_GPIO_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4e0767dc0dd47c86b037db6af6232847">   55</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_GPIO_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a8aa2b6c214db730d305d2af8165300a9">   56</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_GPIO_MSB    _u(31)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a99741fd6a73ccdd47e9f93bf6799f551">   57</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_GPIO_LSB    _u(0)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad152eb484ed42ed264d7737a82e63d8c">   58</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_GPIO_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// Register    : SYSCFG_PROC_IN_SYNC_BYPASS_HI</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// Description : For each bit, if 1, bypass the input synchronizer between that</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//               GPIO</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//               and the GPIO input register in the SIO. The input synchronizers</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//               should</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//               generally be unbypassed, to avoid injecting metastabilities</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//               into processors.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//               If you&#39;re feeling brave, you can bypass to save two cycles of</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//               input</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//               latency. This register applies to GPIO 32...47. USB GPIO 56..57</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">//               QSPI GPIO 58..63</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4b72afa9098f95476630b71def6940db">   71</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a000134ab6b86b3790f5ae32a00e48ddc">   72</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_BITS   _u(0xff00ffff)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a7cfbdf2b737b7d7ba1a76e31f4debfb9">   73</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// Field       : SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SD</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae56aeedeb9aa819d03b87442b20f6966">   76</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SD_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a108eb81800d9f226b3b1e0dc1de190b0">   77</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SD_BITS   _u(0xf0000000)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#af5b6b6746fca2e81830cdb8a7c8d0941">   78</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SD_MSB    _u(31)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0711826efd6561f4545f0adf0a04e035">   79</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SD_LSB    _u(28)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#adfed9c281fc6097fb309e23ba31f37ba">   80</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SD_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// Field       : SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_CSN</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a976e4e0d036066757b091530e580761a">   83</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_CSN_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a8647a2cfbc008ce5104ecd58c39d078d">   84</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_CSN_BITS   _u(0x08000000)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0ad9b18f2a64edacc334fdc2f7bb6453">   85</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_CSN_MSB    _u(27)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a896fb32fe79dd363fde9f985af473748">   86</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_CSN_LSB    _u(27)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae9f0ab225c7c34ea107e349f2945dae9">   87</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_CSN_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// Field       : SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SCK</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ac748784df2d08483ac5d8bc012f97cd0">   90</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SCK_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a60002e45267e8f7afd006600ebd67934">   91</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SCK_BITS   _u(0x04000000)</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae115254689d915e9634789db85c09137">   92</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SCK_MSB    _u(26)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae7b7fbed6afdcbd9ffb9f48bf449b237">   93</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SCK_LSB    _u(26)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a884c2df00abf681bbbb67b33393638b9">   94</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_QSPI_SCK_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// Field       : SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DM</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#af5ae0d015fccf3274642561b41e5de4e">   97</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DM_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a5aef17ee010fdd63cbd7f83039067a8b">   98</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DM_BITS   _u(0x02000000)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#af5e90f8aac3c5e903bb0372013fc2a63">   99</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DM_MSB    _u(25)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a33dd9a3353ef90f3259c91fc78446090">  100</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DM_LSB    _u(25)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a681dd51ef6f8b14c4f48397066cd9e7d">  101</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DM_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// Field       : SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DP</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a30953e7baed4514075fd40ebadce6023">  104</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DP_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aff3ffdce2594f01601d11c1702efa759">  105</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DP_BITS   _u(0x01000000)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#af80a0397ad98887e2a91e54edb6d9d51">  106</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DP_MSB    _u(24)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ab4341d8dff1d4e3d69e8b41d196930b3">  107</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DP_LSB    _u(24)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a1cefc030b318c60552469aa84f86bc78">  108</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_USB_DP_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// Field       : SYSCFG_PROC_IN_SYNC_BYPASS_HI_GPIO</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#affc16216576170de41e00b768543e4c2">  111</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_GPIO_RESET  _u(0x0000)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a90250b224171c54a376d83518f67de71">  112</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_GPIO_BITS   _u(0x0000ffff)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad78dfbbc1b14fbfeb1656d0effc712a6">  113</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_GPIO_MSB    _u(15)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aefbb336d29351a1583c9d011b378374c">  114</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_GPIO_LSB    _u(0)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae386f3aa7bfff87daa033ca114860382">  115</a></span><span class="preprocessor">#define SYSCFG_PROC_IN_SYNC_BYPASS_HI_GPIO_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Register    : SYSCFG_DBGFORCE</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">// Description : Directly control the chip SWD debug port</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a217c3eefd639f8ca0a096b0401d194cb">  119</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_OFFSET _u(0x0000000c)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a770941dfe48aec8c051333f1cf315f8e">  120</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_BITS   _u(0x0000000f)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aef70aac21f08d3b40bd55ff3b303204d">  121</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_RESET  _u(0x00000006)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">// Field       : SYSCFG_DBGFORCE_ATTACH</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// Description : Attach chip debug port to syscfg controls, and disconnect it</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">//               from external SWD pads.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4d503f116d0dbaf7d4b2859aca541db3">  126</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_ATTACH_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a975eb2b79732bf74469414623d0e994a">  127</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_ATTACH_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a1798a2a4ec2035e2ae215cdbf6e1c69d">  128</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_ATTACH_MSB    _u(3)</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a39250f94dddd82b8700139985f2d4cf7">  129</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_ATTACH_LSB    _u(3)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a2f3df2cea94149384b260d2059c8acf2">  130</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_ATTACH_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">// Field       : SYSCFG_DBGFORCE_SWCLK</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">// Description : Directly drive SWCLK, if ATTACH is set</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a81507039c481e1d3b3889f7fddd819f8">  134</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWCLK_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a6954f7331e07ecf9c38ecf3f9ff9f112">  135</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWCLK_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4fcaa7ae38f3092ef1ec4ef90dc08197">  136</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWCLK_MSB    _u(2)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad89f2aae00c3392d103aabda40805549">  137</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWCLK_LSB    _u(2)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a605271894c7bffbeaa01422ec080d2aa">  138</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWCLK_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">// Field       : SYSCFG_DBGFORCE_SWDI</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">// Description : Directly drive SWDIO input, if ATTACH is set</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ada08cfed136e2cc6c78bd150b36ac679">  142</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDI_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a894b7a6de19ea68712384abf48d64f7f">  143</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDI_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#abb86b257bbe2ed115299feedf3467c94">  144</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDI_MSB    _u(1)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae79c1dbf2a6f906667e28c8c7a9d0c7d">  145</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDI_LSB    _u(1)</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aba5e8edba3d642ffeb0126d5b3daac8d">  146</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDI_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">// Field       : SYSCFG_DBGFORCE_SWDO</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">// Description : Observe the value of SWDIO output.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a215bfb02577a8d112c46ad01d9573d30">  150</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDO_RESET  &quot;-&quot;</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a2d3e3d9f6f6c20e67892522f2f3e94c2">  151</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDO_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#af41339fd3fce2940df0552585681a87c">  152</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDO_MSB    _u(0)</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aa1b1a7203463babfce4aaf6ab84e4d1f">  153</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDO_LSB    _u(0)</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0451b2311162c5af90321f23c789516f">  154</a></span><span class="preprocessor">#define SYSCFG_DBGFORCE_SWDO_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">// Register    : SYSCFG_MEMPOWERDOWN</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">// Description : Control PD pins to memories.</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">//               Set high to put memories to a low power state. In this state</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">//               the memories will retain contents but not be accessible</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">//               Use with caution</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a42c589b8c4eaffc6c02fea64564727f6">  161</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_OFFSET _u(0x00000010)</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a6bdd1913127745217fd378b6f522e1db">  162</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_BITS   _u(0x00001fff)</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a3f3cd4d680e46e46581d50ae854e5803">  163</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_BOOTRAM</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a669025b028786839b23c529de1517111">  166</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_BOOTRAM_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0339e9bf21dcd73fe51811dde2a17b53">  167</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_BOOTRAM_BITS   _u(0x00001000)</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad80f4c57a70be6f493acf50e9f78f591">  168</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_BOOTRAM_MSB    _u(12)</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aabe85fdba1c2f69c53b1ca8526b385e3">  169</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_BOOTRAM_LSB    _u(12)</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0fde3c1b237b5b5facd7ceb3e51318f1">  170</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_BOOTRAM_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_ROM</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a6f3535397db15256f858369caf2f5e29">  173</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_ROM_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a765b7152414f0ec34f4a8ed934d0b49b">  174</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_ROM_BITS   _u(0x00000800)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a9febdad7a1a034f52300ba77bea00dce">  175</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_ROM_MSB    _u(11)</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a931a2e796b463e9249e2328e9c8e1f15">  176</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_ROM_LSB    _u(11)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a6f11f439ad67c2333415334a8264ca05">  177</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_ROM_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_USB</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0f17c5ea6314aeeb0964c8489808fbcb">  180</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_USB_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ade934f0ee78c9acc7bc19c8ea05fa3e0">  181</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_USB_BITS   _u(0x00000400)</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a9c0d241f2d1de0c3694c93e9c46a4b94">  182</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_USB_MSB    _u(10)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#af33a733b78e39f2826fb78a4b7d903ac">  183</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_USB_LSB    _u(10)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#adb30b21eaf6d9afd507d55b99ff8858e">  184</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_USB_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM9</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a9dd9b53a7d886502e0baf158369ad66f">  187</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM9_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a5f457eb26e952c646fbc5a5dff054aa3">  188</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM9_BITS   _u(0x00000200)</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a6e0ad2e29d4970ea98f6df9eb497de37">  189</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM9_MSB    _u(9)</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aa319d4f4e6384987009c1f716b337a03">  190</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM9_LSB    _u(9)</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a9ab1c97dac5c0f3789b6281c051265e1">  191</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM9_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM8</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0e0486ed52c2a5141738727b8c479120">  194</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM8_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a1c19342da87b44adfd970700b993c90a">  195</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM8_BITS   _u(0x00000100)</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a913b78a5ba583c86c179f307d82c94d6">  196</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM8_MSB    _u(8)</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a51760f7cd77b551cf396d5882fb2601b">  197</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM8_LSB    _u(8)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae1e91b8dfbabc4af482a36b35163bd56">  198</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM8_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM7</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a503ad0439335446d0efe6c5795ca8c17">  201</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM7_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#affb669b8bcf43b58aa47fc261237fb88">  202</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM7_BITS   _u(0x00000080)</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a5dc6800f832fdc4c0634c0cba4714df8">  203</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM7_MSB    _u(7)</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aba929b4e4a5d71e66ea1cda035d5e26d">  204</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM7_LSB    _u(7)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0bd0c78f2eddecb3a6eebddd1a51fdb1">  205</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM7_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM6</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a31127a8ba88d5df1e8a59e1f3a0a758e">  208</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM6_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4732180026defcbc3e6a07d3918d8982">  209</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM6_BITS   _u(0x00000040)</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a149d341abc81b1df44c7fab2435fc243">  210</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM6_MSB    _u(6)</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae7ed9e8a1632dc8f861a2e88e6d8cb09">  211</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM6_LSB    _u(6)</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a7682e949935518b29988492021c372a6">  212</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM6_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM5</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a7efe6820e22d8983c1d65c0ad0883c72">  215</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM5_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a442ad8b103003802c320fc24a26527e2">  216</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM5_BITS   _u(0x00000020)</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a15ff7ce16257204fb67bea38ad647a98">  217</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM5_MSB    _u(5)</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a39be8ce057d9a75995d4029ccca4bf68">  218</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM5_LSB    _u(5)</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4731d4fed903c41d75b40452993b493b">  219</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM5_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM4</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ada6bfb02c9782f95092687c57eec35f3">  222</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM4_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ae7393884c4b185ad38df53ea7751baee">  223</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM4_BITS   _u(0x00000010)</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a97392319b9b62d703ba5bb0dd753289f">  224</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM4_MSB    _u(4)</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a4532182b701286cfee2d3cc7e5669f78">  225</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM4_LSB    _u(4)</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a8e32df9fd68a4ac822eafe430652f45e">  226</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM4_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM3</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad4aa9e9444d6e8ee5f81eef2b5f4ba13">  229</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM3_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a22bf11a21b34c5ea9a873a96c3be5ceb">  230</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM3_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aa1d1bceb122c76401e76396568f95c22">  231</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM3_MSB    _u(3)</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a3a3a5401d7f435ef2c4a0f1d619d34da">  232</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM3_LSB    _u(3)</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a84d61793e650807d7b01a0bb52a9c268">  233</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM3_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM2</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a20b6bb175071fe6d8b1f0cd7b387323f">  236</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM2_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a9f4f3fb02c9306e723187faf60546b70">  237</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM2_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a440d733370c4d81cb20c24efb372f515">  238</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM2_MSB    _u(2)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a0d93857d602d20386f804058777ab9d6">  239</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM2_LSB    _u(2)</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a5d17136846c4a66178f661e075b5026e">  240</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM2_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM1</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a8e2211484dfb55e16950716985e32b5d">  243</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM1_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a21d74efa625a382f676240b1da0a66a7">  244</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM1_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a2d79fafd1332bf63a774f059276c2e2a">  245</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM1_MSB    _u(1)</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a42c4bd1c3037208c670caf7370a95a6b">  246</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM1_LSB    _u(1)</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#af0003cd1554fc873e1e16c46e9b2db00">  247</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">// Field       : SYSCFG_MEMPOWERDOWN_SRAM0</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#afcdbbccf055a84231b58abfec9e9fe65">  250</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM0_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#aa435a7a7c354a2482f5da0d32beefa9e">  251</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM0_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#ad1bb18932ef12f4c70fee99f29dcaceb">  252</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM0_MSB    _u(0)</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a09757d2e40ddca54857332378ef67f5c">  253</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM0_LSB    _u(0)</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#afa389e0a1cffafab63feed177cbd58a5">  254</a></span><span class="preprocessor">#define SYSCFG_MEMPOWERDOWN_SRAM0_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">// Register    : SYSCFG_AUXCTRL</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">// Description : Auxiliary system control register</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">//               * Bits 7:3: Reserved</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">//</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">//               * Bit 2: Set to mask OTP power analogue power supply detection</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">//               from resetting OTP controller and PSM</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">//</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">//               * Bit 1: When clear, the LPOSC output is XORed into the TRNG</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">//               ROSC output as an additional, uncorrelated entropy source. When</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">//               set, this behaviour is disabled.</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">//</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">//               * Bit 0: Force POWMAN clock to switch to LPOSC, by asserting</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">//               its WDRESET input. This must be set before initiating a</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">//               watchdog reset of the RSM from a stage that includes CLOCKS, if</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">//               POWMAN is running from clk_ref at the point that the watchdog</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">//               reset takes place. Otherwise, the short pulse generated on</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">//               clk_ref by the reset of the CLOCKS block may affect POWMAN</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">//               register state.</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a5f10f2690f5477e7a19925fdeca2683a">  274</a></span><span class="preprocessor">#define SYSCFG_AUXCTRL_OFFSET _u(0x00000014)</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#abc4a433eb42fa05f0599d56aa15d2d34">  275</a></span><span class="preprocessor">#define SYSCFG_AUXCTRL_BITS   _u(0x000000ff)</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#adbbdab58045d66ef038a860b8194bdd5">  276</a></span><span class="preprocessor">#define SYSCFG_AUXCTRL_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#afd33aa2cd0f2064fb5a24490a6d0ff2d">  277</a></span><span class="preprocessor">#define SYSCFG_AUXCTRL_MSB    _u(7)</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a26bf18366439750880b831423e70a983">  278</a></span><span class="preprocessor">#define SYSCFG_AUXCTRL_LSB    _u(0)</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html#a355c88a0e5a455e19fb9aebd054b74bb">  279</a></span><span class="preprocessor">#define SYSCFG_AUXCTRL_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_SYSCFG_H</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2syscfg_8h.html">syscfg.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

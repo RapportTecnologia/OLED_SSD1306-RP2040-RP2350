@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de bootrom_constants.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('boot__bootrom__headers_2include_2boot_2bootrom__constants_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">boot_bootrom_headers/include/boot/bootrom_constants.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _BOOT_BOOTROM_CONSTANTS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _BOOT_BOOTROM_CONSTANTS_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef NO_PICO_PLATFORM</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;pico/platform.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// ROOT ADDRESSES</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aff1839302c3920d81f19099b02e42675">   15</a></span><span class="preprocessor">#define BOOTROM_MAGIC_OFFSET 0x10</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a53f19465313279422badf86ce3d6318c">   16</a></span><span class="preprocessor">#define BOOTROM_FUNC_TABLE_OFFSET 0x14</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#if PICO_RP2040</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define BOOTROM_DATA_TABLE_OFFSET 0x16</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#if PICO_RP2040</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define BOOTROM_VTABLE_OFFSET           0x00</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define BOOTROM_TABLE_LOOKUP_OFFSET     0x18</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a0b8b97da5c1d4daa71071f9529312d5c">   25</a></span><span class="preprocessor">#define BOOTROM_WELL_KNOWN_PTR_SIZE 2</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#if defined(__riscv)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define BOOTROM_ENTRY_OFFSET            0x7dfc</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define BOOTROM_TABLE_LOOKUP_ENTRY_OFFSET (BOOTROM_ENTRY_OFFSET - BOOTROM_WELL_KNOWN_PTR_SIZE)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define BOOTROM_TABLE_LOOKUP_OFFSET     (BOOTROM_ENTRY_OFFSET - BOOTROM_WELL_KNOWN_PTR_SIZE*2)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aae14f3bcfdb26fc8ad821feb7ad40a64">   31</a></span><span class="preprocessor">#define BOOTROM_VTABLE_OFFSET 0x00</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ab37365abba97f68393868617849bb41f">   32</a></span><span class="preprocessor">#define BOOTROM_TABLE_LOOKUP_OFFSET     (BOOTROM_FUNC_TABLE_OFFSET + BOOTROM_WELL_KNOWN_PTR_SIZE)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#if !PICO_RP2040 || PICO_COMBINED_DOCS</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a5ce3ec699b8980829f9a7983160cb161">   38</a></span><span class="preprocessor">#define BOOTROM_OK 0</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//#define BOOTROM_ERROR_TIMEOUT (-1)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//#define BOOTROM_ERROR_GENERIC (-2)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//#define BOOTROM_ERROR_NO_DATA (-3)                   // E.g. read from an empty buffer/FIFO</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#adf5ba35e74fe93aa4177801b604f0c3f">   42</a></span><span class="preprocessor">#define BOOTROM_ERROR_NOT_PERMITTED (-4)             </span><span class="comment">// Permission violation e.g. write to read-only flash partition</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a4d5fbffea31dc27ea98657a1400ce6b8">   43</a></span><span class="preprocessor">#define BOOTROM_ERROR_INVALID_ARG (-5)               </span><span class="comment">// Argument is outside of range of supported values`</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//#define BOOTROM_ERROR_IO (-6)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//#define BOOTROM_ERROR_BADAUTH (-7)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//#define BOOTROM_ERROR_CONNECT_FAILED (-8)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//#define BOOTROM_ERROR_INSUFFICIENT_RESOURCES (-9)  // Dynamic allocation of resources failed</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7bd9ecd6a7682551b35941d2067ce124">   48</a></span><span class="preprocessor">#define BOOTROM_ERROR_INVALID_ADDRESS (-10)          </span><span class="comment">// Address argument was out-of-bounds or was determined to be an address that the caller may not access</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7b9cf29f511079ed6ba2c558c11c5092">   49</a></span><span class="preprocessor">#define BOOTROM_ERROR_BAD_ALIGNMENT (-11)            </span><span class="comment">// Address modulo transfer chunk size was nonzero (e.g. word-aligned transfer with address % 4 != 0)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a4bb640a15a923cf0d3bf0adc0358a1b2">   50</a></span><span class="preprocessor">#define BOOTROM_ERROR_INVALID_STATE (-12)            </span><span class="comment">// Something happened or failed to happen in the past, and consequently we (currently) can&#39;t service the request</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a40df1984c17174764c8138079baafcf6">   51</a></span><span class="preprocessor">#define BOOTROM_ERROR_BUFFER_TOO_SMALL (-13)         </span><span class="comment">// A user-allocated buffer was too small to hold the result or working state of this function</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8133ff7c7708bae84506d6d87e8d177a">   52</a></span><span class="preprocessor">#define BOOTROM_ERROR_PRECONDITION_NOT_MET (-14)     </span><span class="comment">// This call failed because another ROM function must be called first</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a011cc3a9b7ed45db7a5eff501c3a9ff4">   53</a></span><span class="preprocessor">#define BOOTROM_ERROR_MODIFIED_DATA (-15)            </span><span class="comment">// Cached data was determined to be inconsistent with the full version of the data it was calculated from</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ac77dd5f7c7b47150bce8a2adcf2c0f0e">   54</a></span><span class="preprocessor">#define BOOTROM_ERROR_INVALID_DATA (-16)             </span><span class="comment">// A data structure failed to validate</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ac5f5847b5bdc1a5f47ba8dac3970d5f2">   55</a></span><span class="preprocessor">#define BOOTROM_ERROR_NOT_FOUND (-17)                </span><span class="comment">// Attempted to access something that does not exist; or, a search failed</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ae0304671c2dcf76d6cf0e235f474fee2">   56</a></span><span class="preprocessor">#define BOOTROM_ERROR_UNSUPPORTED_MODIFICATION (-18) </span><span class="comment">// Write is impossible based on previous writes; e.g. attempted to clear an OTP bit</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#acff461efd280ece5861bc53e7a424156">   57</a></span><span class="preprocessor">#define BOOTROM_ERROR_LOCK_REQUIRED (-19)            </span><span class="comment">// A required lock is not owned</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ad862269c62b478924864193b77510188">   58</a></span><span class="preprocessor">#define BOOTROM_ERROR_LAST (-19)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a245d17cba1e874d63a8462f3f4b7329e">   60</a></span><span class="preprocessor">#define RT_FLAG_FUNC_RISCV      0x0001</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a3461331212c9f3c8261292e41b087e54">   61</a></span><span class="preprocessor">#define RT_FLAG_FUNC_RISCV_FAR  0x0003</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a68d45128b56e2ef2bc302c54e688ada5">   62</a></span><span class="preprocessor">#define RT_FLAG_FUNC_ARM_SEC    0x0004</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// reserved for 32-bit pointer: 0x0008</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#af6ecd41149a463922586835b9d811cb2">   64</a></span><span class="preprocessor">#define RT_FLAG_FUNC_ARM_NONSEC 0x0010</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// reserved for 32-bit pointer: 0x0020</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a36148603e72addf721f98582792e4b8c">   66</a></span><span class="preprocessor">#define RT_FLAG_DATA            0x0040</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// reserved for 32-bit pointer: 0x0080</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a5e341d216309af91927848f27d796c9a">   69</a></span><span class="preprocessor">#define PARTITION_TABLE_MAX_PARTITIONS    16</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// note this is deliberately &gt; MAX_PARTITIONs is likely to be, and also -1 as a signed byte</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a05bbc0847e423a701734db4032a44796">   71</a></span><span class="preprocessor">#define PARTITION_TABLE_NO_PARTITION_INDEX 0xff</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// todo these are duplicated in picoboot_constants.h</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// values 0-7 are secure/non-secure</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a1e81e5e2d9b0e0ad5f1df84d7ece0493">   75</a></span><span class="preprocessor">#define BOOT_TYPE_NORMAL     0</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a82e476c2814e0d0290930d5326cf6cb8">   76</a></span><span class="preprocessor">#define BOOT_TYPE_BOOTSEL    2</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ad772406af7a567b30bcef53939c3cc83">   77</a></span><span class="preprocessor">#define BOOT_TYPE_RAM_IMAGE  3</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a3f9355fbf10d7b05d5f010aa98892b5f">   78</a></span><span class="preprocessor">#define BOOT_TYPE_FLASH_UPDATE 4</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// values 8-15 are secure only</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8acf1a838404ca09352a485677988633">   81</a></span><span class="preprocessor">#define BOOT_TYPE_PC_SP      0xd</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// ORed in if a bootloader chained into the image</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2d113ea578876bc8c3753053149f9050">   84</a></span><span class="preprocessor">#define BOOT_TYPE_CHAINED_FLAG 0x80</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// call from NS to S</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#ifndef __riscv</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a77a67ee9ebd574ca0bd20bb4bbb69702">   88</a></span><span class="preprocessor">#define BOOTROM_API_CALLBACK_secure_call 0</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7c9ed3efe3a27756fa4290630b827700">   90</a></span><span class="preprocessor">#define BOOTROM_API_CALLBACK_COUNT 1</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8fe63b9bde4f9060c59956df65b57941">   92</a></span><span class="preprocessor">#define BOOTROM_LOCK_SHA_256   0</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a53f91f29ae1a77b2510f37dceaa5211e">   93</a></span><span class="preprocessor">#define BOOTROM_LOCK_FLASH_OP  1</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a01c4197ee6f17f7f4c39c296ce139b50">   94</a></span><span class="preprocessor">#define BOOTROM_LOCK_OTP       2</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#af712cb237eb156d61b294ee1a7731911">   95</a></span><span class="preprocessor">#define BOOTROM_LOCK_MAX       2</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6eff87f3b15f28fda142eafb8cc283bc">   97</a></span><span class="preprocessor">#define BOOTROM_LOCK_ENABLE    7</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a296513e9e608f17528c454fe2d396766">   99</a></span><span class="preprocessor">#define BOOT_PARTITION_NONE (-1)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a3a5e9a261d2943ce15fca2c36fafc8f1">  100</a></span><span class="preprocessor">#define BOOT_PARTITION_SLOT0 (-2)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ae0e1ae06d57e5a735b991255c595fb90">  101</a></span><span class="preprocessor">#define BOOT_PARTITION_SLOT1 (-3)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a4e9fc16b28f18949c6e75eb3cbbc1e7a">  102</a></span><span class="preprocessor">#define BOOT_PARTITION_WINDOW (-4)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a3473b91d2024618907a6a635778fdb48">  104</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_WINDOW_SEARCHED                           0x01</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// note if both BOOT_DIAGNOSTIC_INVALID_BLOCK_LOOP and BOOT_DIAGNOSTIC_VALID_BLOCK_LOOP then the block loop was valid</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">// but it has a PARTITION_TABLE which while it passed the initial verification (and hash/sig) had invalid contents</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// (discovered when it was later loaded)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a0be49e910343590809c966b5e9bd28a3">  108</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_INVALID_BLOCK_LOOP                        0x02</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a98401b4b0e3453523d240cf81a798897">  109</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_VALID_BLOCK_LOOP                          0x04</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a9258cc009c722ed06aa939c03eb9b33b">  110</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_VALID_IMAGE_DEF                           0x08</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#abb5ade2bfa29a52c4ab4660a3c4c131b">  111</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_HAS_PARTITION_TABLE                       0x10</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a16fcc471a2c3e778fe195629d12b46df">  112</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_CONSIDERED                                0x20</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a046a2bfb0103733d362ec0f78fb78580">  113</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_CHOSEN                                    0x40</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a9af9ba2a54e77a85428e2584fe657a71">  114</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_PARTITION_TABLE_LSB 7</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7e4caf9810f8447f9fa989ecb062243e">  115</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_PARTITION_TABLE_MATCHING_KEY_FOR_VERIFY   0x80</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a11c4dba8c2437151c997fb06a7f9012f">  116</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_PARTITION_TABLE_HASH_FOR_VERIFY          0x100</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aff21ccb11b22c6236be93445a4e8dc52">  117</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_PARTITION_TABLE_VERIFIED_OK              0x200</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a92b71cc2fdf568e827b5b608ef22dc55">  118</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_IMAGE_DEF_LSB 10</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a12d9cd08e13086be1d75fd32f521c443">  119</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_IMAGE_DEF_MATCHING_KEY_FOR_VERIFY        0x400</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a24bc95db866aa0c95597b1ebf5de1cf6">  120</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_IMAGE_DEF_HASH_FOR_VERIFY                0x800</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ab018e53b96fa111b2a178fd0370c5cd1">  121</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_IMAGE_DEF_VERIFIED_OK                   0x1000</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a3a8ef4a088c46af291b0f48d252b05b8">  123</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_LOAD_MAP_ENTRIES_LOADED                 0x2000</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#abbbce2761392a8487ac9dc81b26e5068">  124</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_IMAGE_LAUNCHED                          0x4000</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#afc244588fc422c78ada907b1dc334348">  125</a></span><span class="preprocessor">#define BOOT_DIAGNOSTIC_IMAGE_CONDITION_FAILURE                 0x8000</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a82615ea6485faec43ca0f72c65c4993b">  127</a></span><span class="preprocessor">#define BOOT_PARSED_BLOCK_DIAGNOSTIC_MATCHING_KEY_FOR_VERIFY       0x1 </span><span class="comment">// if this is present and VERIFIED_OK isn&#39;t the sig check failed</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a9d30d7fa9ad42d8cfcb33d271a8adb81">  128</a></span><span class="preprocessor">#define BOOT_PARSED_BLOCK_DIAGNOSTIC_HASH_FOR_VERIFY               0x2 </span><span class="comment">// if this is present and VERIFIED_OL isn&#39;t then hash check failed</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#abac56592b0bdd5ad1a887d99fda5b319">  129</a></span><span class="preprocessor">#define BOOT_PARSED_BLOCK_DIAGNOSTIC_VERIFIED_OK                   0x4</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a9a0545ea0f51b93afc9c4f645e0590a9">  131</a></span><span class="preprocessor">#define BOOT_TBYB_AND_UPDATE_FLAG_BUY_PENDING                      0x1</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a32b8698e92484ddabda630de073f2a39">  132</a></span><span class="preprocessor">#define BOOT_TBYB_AND_UPDATE_FLAG_OTP_VERSION_APPLIED              0x2</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2118024d3ae14fcaaf0c8e4588e16943">  133</a></span><span class="preprocessor">#define BOOT_TBYB_AND_UPDATE_FLAG_OTHER_ERASED                     0x4</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#ifndef __ASSEMBLER__</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// Limited to 3 arguments in case of varm multiplex hint (trashes Arm r3)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a81809b31a1db642562f19b2bdf1a3c78">  137</a></span><span class="keyword">typedef</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> (*<a class="code hl_typedef" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a81809b31a1db642562f19b2bdf1a3c78">bootrom_api_callback_generic_t</a>)(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">r0</a>, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">r1</a>, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">r2</a>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// Return negative for error, else number of bytes transferred:</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">//typedef int (*bootrom_api_callback_stdout_put_blocking_t)(const uint8_t *buffer, uint32_t size);</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">//typedef int (*bootrom_api_callback_stdin_get_t)(uint8_t *buffer, uint32_t size);</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">//typedef void (*bootrom_api_callback_core1_security_setup_t)(void);</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="group__pico__bootrom.html#ga5b3c93cbab0054e9938f2aca7261a73e">  155</a></span><span class="preprocessor">#define ROM_TABLE_CODE(c1, c2) ((c1) | ((c2) &lt;&lt; 8))</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">// ROM FUNCTIONS</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">// RP2040 &amp; RP2350</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a5086180ee40fa6a83535b247e95f4d7b">  160</a></span><span class="preprocessor">#define ROM_DATA_SOFTWARE_GIT_REVISION          ROM_TABLE_CODE(&#39;G&#39;, &#39;R&#39;)</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7ceb0a49e53500e9ee282028c24a27a8">  161</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_ENTER_CMD_XIP            ROM_TABLE_CODE(&#39;C&#39;, &#39;X&#39;)</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a410c479137898d789e9e3dccffb52961">  162</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_EXIT_XIP                 ROM_TABLE_CODE(&#39;E&#39;, &#39;X&#39;)</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a47512a8bdbf7077085ae63b11af381c0">  163</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_FLUSH_CACHE              ROM_TABLE_CODE(&#39;F&#39;, &#39;C&#39;)</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aaa3f22f89dbc2cdab9883569cc1959df">  164</a></span><span class="preprocessor">#define ROM_FUNC_CONNECT_INTERNAL_FLASH         ROM_TABLE_CODE(&#39;I&#39;, &#39;F&#39;)</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa271fbdae3908c92c6dc294c7362c1f8">  165</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_RANGE_ERASE              ROM_TABLE_CODE(&#39;R&#39;, &#39;E&#39;)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aedf1d12e68202e09f99a259e3bcd6748">  166</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_RANGE_PROGRAM            ROM_TABLE_CODE(&#39;R&#39;, &#39;P&#39;)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="preprocessor">#if PICO_RP2040</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">// RP2040 only</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">#define ROM_FUNC_MEMCPY44                       ROM_TABLE_CODE(&#39;C&#39;, &#39;4&#39;)</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#define ROM_DATA_COPYRIGHT                      ROM_TABLE_CODE(&#39;C&#39;, &#39;R&#39;)</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#define ROM_FUNC_CLZ32                          ROM_TABLE_CODE(&#39;L&#39;, &#39;3&#39;)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">#define ROM_FUNC_MEMCPY                         ROM_TABLE_CODE(&#39;M&#39;, &#39;C&#39;)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">#define ROM_FUNC_MEMSET                         ROM_TABLE_CODE(&#39;M&#39;, &#39;S&#39;)</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">#define ROM_FUNC_POPCOUNT32                     ROM_TABLE_CODE(&#39;P&#39;, &#39;3&#39;)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#define ROM_FUNC_REVERSE32                      ROM_TABLE_CODE(&#39;R&#39;, &#39;3&#39;)</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">#define ROM_FUNC_MEMSET4                        ROM_TABLE_CODE(&#39;S&#39;, &#39;4&#39;)</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">#define ROM_FUNC_CTZ32                          ROM_TABLE_CODE(&#39;T&#39;, &#39;3&#39;)</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#define ROM_FUNC_RESET_USB_BOOT                 ROM_TABLE_CODE(&#39;U&#39;, &#39;B&#39;)</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#if !PICO_RP2040 || PICO_COMBINED_DOCS</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">// RP2350 only</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a9472ec002136298393b5859810ca461a">  185</a></span><span class="preprocessor">#define ROM_FUNC_PICK_AB_PARTITION              ROM_TABLE_CODE(&#39;A&#39;, &#39;B&#39;)</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#acd0b8fb6e92977378a852f1dd157e860">  186</a></span><span class="preprocessor">#define ROM_FUNC_CHAIN_IMAGE                    ROM_TABLE_CODE(&#39;C&#39;, &#39;I&#39;)</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#af1dbbcb6d221ece6bdedcf1c44ba9ef1">  187</a></span><span class="preprocessor">#define ROM_FUNC_EXPLICIT_BUY                   ROM_TABLE_CODE(&#39;E&#39;, &#39;B&#39;)</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aac48d70766d23cba85bb0fe17cf5cab7">  188</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_RUNTIME_TO_STORAGE_ADDR  ROM_TABLE_CODE(&#39;F&#39;, &#39;A&#39;)</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a4a2190dc9707490a2a3d25740f106736">  189</a></span><span class="preprocessor">#define ROM_DATA_FLASH_DEVINFO16_PTR            ROM_TABLE_CODE(&#39;F&#39;, &#39;D&#39;)</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ae9c85b25fabbbe1fa87383701b65d653">  190</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_OP                       ROM_TABLE_CODE(&#39;F&#39;, &#39;O&#39;)</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#af07333d1c821e72cd9b8632ccd6dd41b">  191</a></span><span class="preprocessor">#define ROM_FUNC_GET_B_PARTITION                ROM_TABLE_CODE(&#39;G&#39;, &#39;B&#39;)</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a61cd57388a80b2aa7fca8f9f7fc6f6dc">  192</a></span><span class="preprocessor">#define ROM_FUNC_GET_PARTITION_TABLE_INFO       ROM_TABLE_CODE(&#39;G&#39;, &#39;P&#39;)</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a777ea842f3395f3631f05f65f96eb50f">  193</a></span><span class="preprocessor">#define ROM_FUNC_GET_SYS_INFO                   ROM_TABLE_CODE(&#39;G&#39;, &#39;S&#39;)</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ae99a727630b2f4cdb27b83ef4b4b2e81">  194</a></span><span class="preprocessor">#define ROM_FUNC_GET_UF2_TARGET_PARTITION       ROM_TABLE_CODE(&#39;G&#39;, &#39;U&#39;)</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a438f442b0a217707deaf9c517f71604e">  195</a></span><span class="preprocessor">#define ROM_FUNC_LOAD_PARTITION_TABLE           ROM_TABLE_CODE(&#39;L&#39;, &#39;P&#39;)</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ada13e15a3bd963a00157bf8de9be5fe3">  196</a></span><span class="preprocessor">#define ROM_FUNC_OTP_ACCESS                     ROM_TABLE_CODE(&#39;O&#39;, &#39;A&#39;)</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a01c390bba1a85ae1b0fcd08838935542">  197</a></span><span class="preprocessor">#define ROM_DATA_PARTITION_TABLE_PTR            ROM_TABLE_CODE(&#39;P&#39;, &#39;T&#39;)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aec6ccc83073d8c70da1a78da5d8509c1">  198</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_RESET_ADDRESS_TRANS      ROM_TABLE_CODE(&#39;R&#39;, &#39;A&#39;)</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6566bca48f93be2a746fc0d3b57557d5">  199</a></span><span class="preprocessor">#define ROM_FUNC_REBOOT                         ROM_TABLE_CODE(&#39;R&#39;, &#39;B&#39;)</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a779173067cffe9e75af3de48ee885e0b">  200</a></span><span class="preprocessor">#define ROM_FUNC_SET_ROM_CALLBACK               ROM_TABLE_CODE(&#39;R&#39;, &#39;C&#39;)</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8de8c5976d5c902204330a7fb8a07e2d">  201</a></span><span class="preprocessor">#define ROM_FUNC_SECURE_CALL                    ROM_TABLE_CODE(&#39;S&#39;, &#39;C&#39;)</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8a9bccc01f8affe4696281b865eb3967">  202</a></span><span class="preprocessor">#define ROM_FUNC_SET_NS_API_PERMISSION          ROM_TABLE_CODE(&#39;S&#39;, &#39;P&#39;)</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a79c978631cee00a5bdea5ab2a1c5fdf0">  203</a></span><span class="preprocessor">#define ROM_FUNC_BOOTROM_STATE_RESET            ROM_TABLE_CODE(&#39;S&#39;, &#39;R&#39;)</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2f98438072599d0c5f74b3cd3dde4bd3">  204</a></span><span class="preprocessor">#define ROM_FUNC_SET_BOOTROM_STACK              ROM_TABLE_CODE(&#39;S&#39;, &#39;S&#39;)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a78e62fc2f1ce6d1be343d4a5d8e9d894">  205</a></span><span class="preprocessor">#define ROM_DATA_SAVED_XIP_SETUP_FUNC_PTR       ROM_TABLE_CODE(&#39;X&#39;, &#39;F&#39;)</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a97541580d93d5bc470e3f6545c937c26">  206</a></span><span class="preprocessor">#define ROM_FUNC_FLASH_SELECT_XIP_READ_MODE     ROM_TABLE_CODE(&#39;X&#39;, &#39;M&#39;)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ac65a3a338878da9dabef8d2a9bc82c5c">  207</a></span><span class="preprocessor">#define ROM_FUNC_VALIDATE_NS_BUFFER             ROM_TABLE_CODE(&#39;V&#39;, &#39;B&#39;)</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">// these form a bit set</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a5c7ca3b2e52879a401770d1c05bf8065">  211</a></span><span class="preprocessor">#define BOOTROM_STATE_RESET_CURRENT_CORE 0x01</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a0dc6dcb95f3e8e5a36b6c8fd8ece7466">  212</a></span><span class="preprocessor">#define BOOTROM_STATE_RESET_OTHER_CORE   0x02</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8935a2e40488262e1878e7c88305c222">  213</a></span><span class="preprocessor">#define BOOTROM_STATE_RESET_GLOBAL_STATE 0x04 </span><span class="comment">// reset any global state (e.g. permissions)</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">// partition level stuff is returned first (note PT_INFO flags is only 16 bits)</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">// 3 words: pt_count, unpartitioned_perm_loc, unpartioned_perm_flags</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a79edd6ce0334f1978ea56be2d93fdfe3">  218</a></span><span class="preprocessor">#define PT_INFO_PT_INFO                         0x0001</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#abc6a0482cde867f2fe140115a2af87a0">  219</a></span><span class="preprocessor">#define PT_INFO_SINGLE_PARTITION                0x8000 </span><span class="comment">// marker to just include a single partition in the results)</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">// then in order per partition selected</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">// 2 words: unpartitioned_perm_loc, unpartioned_perm_flags</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a80f30a2b907be6bac97204fa4c1c03ef">  224</a></span><span class="preprocessor">#define PT_INFO_PARTITION_LOCATION_AND_FLAGS    0x0010</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">// 2 words: id lsb first</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ab04234b62b3d9252d56b553f2a60b4eb">  226</a></span><span class="preprocessor">#define PT_INFO_PARTITION_ID                    0x0020</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">// n+1 words: n, family_id...</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#adf2a9cc78ce37db711a8bdc6511540be">  228</a></span><span class="preprocessor">#define PT_INFO_PARTITION_FAMILY_IDS            0x0040</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">// (n+3)/4 words... bytes are: n (len), c0, c1, ... cn-1 padded to word boundary with zeroes</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa95ccc5fe1696b9bc94da06418bd10bd">  230</a></span><span class="preprocessor">#define PT_INFO_PARTITION_NAME                  0x0080</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">// items are returned in order</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">// 3 words package_id, device_id_lo, device_id_hi</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa26ab104a289727e717cf7e0d507d1fd">  234</a></span><span class="preprocessor">#define SYS_INFO_CHIP_INFO                      0x0001</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// 1 word: chip specific critical bits</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7b72bb5463cc421528a9f4e7e4464d0c">  236</a></span><span class="preprocessor">#define SYS_INFO_CRITICAL                       0x0002</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">// 1 word: bytes: cpu_type, supported_cpu_type_bitfield</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a41ee34823ff1e59eb78a2473b105a255">  238</a></span><span class="preprocessor">#define SYS_INFO_CPU_INFO                       0x0004</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">// 1 word: same as FLASH_DEVINFO row in OTP</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a448a9460bfcffe0ac5a2fe85281bb7d4">  240</a></span><span class="preprocessor">#define SYS_INFO_FLASH_DEV_INFO                 0x0008</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">// 4 words</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a61bb5835fbaaf04a2b82a4ddb6f65934">  242</a></span><span class="preprocessor">#define SYS_INFO_BOOT_RANDOM                    0x0010</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">// 2 words lsb first</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ad2f59e7337971fc622aac7765af9e740">  244</a></span><span class="preprocessor">#define SYS_INFO_NONCE                          0x0020</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">// 4 words boot_info, boot_diagnostic, boot_param0, boot_param1</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ab53d656100d0195128a6fea66d2499da">  246</a></span><span class="preprocessor">#define SYS_INFO_BOOT_INFO                      0x0040</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ae59c24cc03af16410cc4ed6cde810f0e">  248</a></span><span class="preprocessor">#define BOOTROM_NS_API_get_sys_info 0</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a02cd136e94ec354fe389be7e71f2d15e">  249</a></span><span class="preprocessor">#define BOOTROM_NS_API_checked_flash_op 1</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a03dd1dccb839568287e3e2fe7d8f6571">  250</a></span><span class="preprocessor">#define BOOTROM_NS_API_flash_runtime_to_storage_addr 2</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a520914f6a40f2850491774ee8f257d41">  251</a></span><span class="preprocessor">#define BOOTROM_NS_API_get_partition_table_info 3</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa00e82e5ee8ceecb0b2dd83b676ac5e5">  252</a></span><span class="preprocessor">#define BOOTROM_NS_API_secure_call 4</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a93e7dd6454108d7170b3ee0f88c46975">  253</a></span><span class="preprocessor">#define BOOTROM_NS_API_otp_access 5</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa2913d736cf7470697957855d529a194">  254</a></span><span class="preprocessor">#define BOOTROM_NS_API_reboot 6</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a469c9b7b586dfe1e184c21ad1d7c33d5">  255</a></span><span class="preprocessor">#define BOOTROM_NS_API_get_b_partition 7</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a9e25d3b40fc4dcb422d19fd616a0d4bd">  256</a></span><span class="preprocessor">#define BOOTROM_NS_API_COUNT 8</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a03e6bf6082c0cac843c15995ccd36ed6">  258</a></span><span class="preprocessor">#define OTP_CMD_ROW_BITS                    _u(0x0000ffff)</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa14e44b36f37a0299bdfb60c30e0a359">  259</a></span><span class="preprocessor">#define OTP_CMD_ROW_LSB                     _u(0)</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#af6eae4785af1422ca9b44a208ffc9392">  260</a></span><span class="preprocessor">#define OTP_CMD_WRITE_BITS                  _u(0x00010000)</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7ac1e2ad79ac4575209b4c2733e13209">  261</a></span><span class="preprocessor">#define OTP_CMD_WRITE_LSB                   _u(16)</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a4a5aacb4e9a8d28759c1c9dc12283454">  262</a></span><span class="preprocessor">#define OTP_CMD_ECC_BITS                    _u(0x00020000)</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ad12dc4b168dbef587b4c1ab8ae322120">  263</a></span><span class="preprocessor">#define OTP_CMD_ECC_LSB                     _u(17)</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">#ifndef __ASSEMBLER__</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="keyword">static_assert</span>(<a class="code hl_define" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#af6eae4785af1422ca9b44a208ffc9392">OTP_CMD_WRITE_BITS</a> == (1 &lt;&lt; <a class="code hl_define" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7ac1e2ad79ac4575209b4c2733e13209">OTP_CMD_WRITE_LSB</a>), <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">static_assert</span>(<a class="code hl_define" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a4a5aacb4e9a8d28759c1c9dc12283454">OTP_CMD_ECC_BITS</a> == (1 &lt;&lt; <a class="code hl_define" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ad12dc4b168dbef587b4c1ab8ae322120">OTP_CMD_ECC_LSB</a>), <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="foldopen" id="foldopen00269" data-start="{" data-end="};">
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="structresident__partition__t.html">  269</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="structresident__partition__t.html#aed755fd91f8a3802469d5ae64738b3a9">  270</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structresident__partition__t.html#aed755fd91f8a3802469d5ae64738b3a9">permissions_and_location</a>;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="structresident__partition__t.html#aa60ddd85d84134f8cbf8bf1d0a397aa8">  271</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structresident__partition__t.html#aa60ddd85d84134f8cbf8bf1d0a397aa8">permissions_and_flags</a>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>} <a class="code hl_struct" href="structresident__partition__t.html">resident_partition_t</a>;</div>
+</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structresident__partition__t.html">resident_partition_t</a>) == 8, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="foldopen" id="foldopen00275" data-start="{" data-end="};">
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="structotp__cmd.html">  275</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structotp__cmd.html">otp_cmd</a> {</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="structotp__cmd.html#a70b83c5c9023a08e108c310adc323180">  276</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structotp__cmd.html#a70b83c5c9023a08e108c310adc323180">flags</a>;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#acbef05ca63bca46b1e7fc4ca8ddff4cb">  277</a></span>} <a class="code hl_typedef" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#acbef05ca63bca46b1e7fc4ca8ddff4cb">otp_cmd_t</a>;</div>
+</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="foldopen" id="foldopen00279" data-start="{" data-end="};">
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2">  279</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a4333904ce6f3b816dda4f66abb5acfc0">  280</a></span>    <a class="code hl_enumvalue" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a4333904ce6f3b816dda4f66abb5acfc0">BOOTROM_XIP_MODE_03H_SERIAL</a> = 0,</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a834c12297abb13fed395196b9870deeb">  281</a></span>    <a class="code hl_enumvalue" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a834c12297abb13fed395196b9870deeb">BOOTROM_XIP_MODE_0BH_SERIAL</a>,</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2aa6b4c5c03781d4f9e3d10c6a8ad63716">  282</a></span>    <a class="code hl_enumvalue" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2aa6b4c5c03781d4f9e3d10c6a8ad63716">BOOTROM_XIP_MODE_BBH_DUAL</a>,</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a35850663b081b3d10c00f8e35883d939">  283</a></span>    <a class="code hl_enumvalue" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a35850663b081b3d10c00f8e35883d939">BOOTROM_XIP_MODE_EBH_QUAD</a>,</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <a class="code hl_enumvalue" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2ae42c2b3bfd76cee262f3a153f7f82d1b">BOOTROM_XIP_MODE_N_MODES</a></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2ae42c2b3bfd76cee262f3a153f7f82d1b">  285</a></span>} <a class="code hl_enumeration" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2">bootrom_xip_mode_t</a>;</div>
+</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">// The checked flash API wraps the low-level flash routines from generic_flash, adding bounds</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">// checking, permission checking against the resident partition table, and simple address</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">// translation. The low-level API deals with flash offsets (i.e. distance from the start of the</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">// first flash device, measured in bytes) but the checked flash API accepts one of two types of</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment">// address:</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">//</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment">// - Flash runtime addresses: the address of some flash-resident data or code in the currently</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment">//   running image. The flash addresses your binary is &quot;linked at&quot; by the linker.</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment">// - Flash storage addresses: a flash offset, plus the address base where QSPI hardware is first</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">//   mapped on the system bus (XIP_BASE constant from addressmap.h)</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment">//</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment">// These addresses are one and the same *if* the currently running program is stored at the</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">// beginning of flash. They are different if the start of your image has been &quot;rolled&quot; by the flash</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">// boot path to make it appear at the address it was linked at even though it is stored at a</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">// different location in flash, which is necessary when you have A/B images for example.</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">//</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">// The address translation between flash runtime and flash storage addresses is configured in</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">// hardware by the QMI_ATRANSx registers, and this API assumes those registers contain a valid</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">// address mapping which it can use to translate runtime to storage addresses.</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="foldopen" id="foldopen00307" data-start="{" data-end="};">
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="structcflash__flags.html">  307</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structcflash__flags.html">cflash_flags</a> {</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="structcflash__flags.html#a0a795fa54b1a4e04d0487f704c27f05f">  308</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structcflash__flags.html#a0a795fa54b1a4e04d0487f704c27f05f">flags</a>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2cde0ba3f85e7e696109ba06ee0eb3c6">  309</a></span>} <a class="code hl_typedef" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2cde0ba3f85e7e696109ba06ee0eb3c6">cflash_flags_t</a>;</div>
+</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="preprocessor">#endif </span><span class="comment">// #ifdef __ASSEMBLER__</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">// Bits which are permitted to be set in a flags variable -- any other bits being set is an error</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ac5061f46aba8ad4fc47e9679a26bf1de">  314</a></span><span class="preprocessor">#define CFLASH_FLAGS_BITS               0x00070301u</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment">// Used to tell checked flash API which space a given address belongs to</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ac3436a72ff82d8cb5e1b1033cf3a3003">  317</a></span><span class="preprocessor">#define CFLASH_ASPACE_BITS              0x00000001u</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a10f2f240a2630616767d928b98b07cfc">  318</a></span><span class="preprocessor">#define CFLASH_ASPACE_LSB               _u(0)</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aaedfe83966f6efd451ed546add0fc1c9">  319</a></span><span class="preprocessor">#define CFLASH_ASPACE_VALUE_STORAGE     _u(0)</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ae318a5c66c66ad4687b9be005def633c">  320</a></span><span class="preprocessor">#define CFLASH_ASPACE_VALUE_RUNTIME     _u(1)</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment">// Used to tell checked flash APIs the effective security level of a flash access (may be forced to</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">// one of these values for the NonSecure-exported version of this API)</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ac8ab8b2e2542916a50a983fcf10a5816">  324</a></span><span class="preprocessor">#define CFLASH_SECLEVEL_BITS            0x00000300u</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a47355b96f04311b2e5527a4fc8d77e9b">  325</a></span><span class="preprocessor">#define CFLASH_SECLEVEL_LSB             _u(8)</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">// Zero is not a valid security level:</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a02011a2a6817aff19e6e54df3505b4a3">  327</a></span><span class="preprocessor">#define CFLASH_SECLEVEL_VALUE_SECURE    _u(1)</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a5260fcc17ea68f7614b897b953a38133">  328</a></span><span class="preprocessor">#define CFLASH_SECLEVEL_VALUE_NONSECURE _u(2)</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a88630fff32c34bbe9b9f4d39dc8d65fd">  329</a></span><span class="preprocessor">#define CFLASH_SECLEVEL_VALUE_BOOTLOADER _u(3)</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a61bc2eabf96dd93336b90c477a6d9a68">  331</a></span><span class="preprocessor">#define CFLASH_OP_BITS                  0x00070000u</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa07ca40aba71c46dc88cb9be5dc90658">  332</a></span><span class="preprocessor">#define CFLASH_OP_LSB                   _u(16)</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">// Erase size_bytes bytes of flash, starting at address addr. Both addr and size_bytes must be a</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">// multiple of 4096 bytes (one flash sector).</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a13e5934a8f7bce74aef03ad71ba519a8">  335</a></span><span class="preprocessor">#define CFLASH_OP_VALUE_ERASE           _u(0)</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">// Program size_bytes bytes of flash, starting at address addr. Both addr and size_bytes must be a</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment">// multiple of 256 bytes (one flash page).</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a88a9565c3122d1872a4d17b942e03e3e">  338</a></span><span class="preprocessor">#define CFLASH_OP_VALUE_PROGRAM         _u(1)</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">// Read size_bytes bytes of flash, starting at address addr. There are no alignment restrictions on</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">// addr or size_bytes.</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ab1b87900776c0d28decf0b6206984668">  341</a></span><span class="preprocessor">#define CFLASH_OP_VALUE_READ            _u(2)</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7dcdef25860055be903b4cf803d0bfdb">  342</a></span><span class="preprocessor">#define CFLASH_OP_MAX                   _u(2)</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a2cde0ba3f85e7e696109ba06ee0eb3c6"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2cde0ba3f85e7e696109ba06ee0eb3c6">cflash_flags_t</a></div><div class="ttdeci">struct cflash_flags cflash_flags_t</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a4a5aacb4e9a8d28759c1c9dc12283454"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a4a5aacb4e9a8d28759c1c9dc12283454">OTP_CMD_ECC_BITS</a></div><div class="ttdeci">#define OTP_CMD_ECC_BITS</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:262</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a6fdc0b7ed628547b2c63aea7c84ae5d2"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2">bootrom_xip_mode_t</a></div><div class="ttdeci">bootrom_xip_mode_t</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:279</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a6fdc0b7ed628547b2c63aea7c84ae5d2a35850663b081b3d10c00f8e35883d939"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a35850663b081b3d10c00f8e35883d939">BOOTROM_XIP_MODE_EBH_QUAD</a></div><div class="ttdeci">@ BOOTROM_XIP_MODE_EBH_QUAD</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:283</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a6fdc0b7ed628547b2c63aea7c84ae5d2a4333904ce6f3b816dda4f66abb5acfc0"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a4333904ce6f3b816dda4f66abb5acfc0">BOOTROM_XIP_MODE_03H_SERIAL</a></div><div class="ttdeci">@ BOOTROM_XIP_MODE_03H_SERIAL</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:280</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a6fdc0b7ed628547b2c63aea7c84ae5d2a834c12297abb13fed395196b9870deeb"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2a834c12297abb13fed395196b9870deeb">BOOTROM_XIP_MODE_0BH_SERIAL</a></div><div class="ttdeci">@ BOOTROM_XIP_MODE_0BH_SERIAL</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:281</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a6fdc0b7ed628547b2c63aea7c84ae5d2aa6b4c5c03781d4f9e3d10c6a8ad63716"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2aa6b4c5c03781d4f9e3d10c6a8ad63716">BOOTROM_XIP_MODE_BBH_DUAL</a></div><div class="ttdeci">@ BOOTROM_XIP_MODE_BBH_DUAL</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:282</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a6fdc0b7ed628547b2c63aea7c84ae5d2ae42c2b3bfd76cee262f3a153f7f82d1b"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2ae42c2b3bfd76cee262f3a153f7f82d1b">BOOTROM_XIP_MODE_N_MODES</a></div><div class="ttdeci">@ BOOTROM_XIP_MODE_N_MODES</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:284</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a7ac1e2ad79ac4575209b4c2733e13209"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7ac1e2ad79ac4575209b4c2733e13209">OTP_CMD_WRITE_LSB</a></div><div class="ttdeci">#define OTP_CMD_WRITE_LSB</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:261</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_a81809b31a1db642562f19b2bdf1a3c78"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a81809b31a1db642562f19b2bdf1a3c78">bootrom_api_callback_generic_t</a></div><div class="ttdeci">int(* bootrom_api_callback_generic_t)(uint32_t r0, uint32_t r1, uint32_t r2)</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:137</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_acbef05ca63bca46b1e7fc4ca8ddff4cb"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#acbef05ca63bca46b1e7fc4ca8ddff4cb">otp_cmd_t</a></div><div class="ttdeci">struct otp_cmd otp_cmd_t</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_ad12dc4b168dbef587b4c1ab8ae322120"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#ad12dc4b168dbef587b4c1ab8ae322120">OTP_CMD_ECC_LSB</a></div><div class="ttdeci">#define OTP_CMD_ECC_LSB</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:263</div></div>
+<div class="ttc" id="aboot__bootrom__headers_2include_2boot_2bootrom__constants_8h_html_af6eae4785af1422ca9b44a208ffc9392"><div class="ttname"><a href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#af6eae4785af1422ca9b44a208ffc9392">OTP_CMD_WRITE_BITS</a></div><div class="ttdeci">#define OTP_CMD_WRITE_BITS</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:260</div></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="astructcflash__flags_html"><div class="ttname"><a href="structcflash__flags.html">cflash_flags</a></div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:307</div></div>
+<div class="ttc" id="astructcflash__flags_html_a0a795fa54b1a4e04d0487f704c27f05f"><div class="ttname"><a href="structcflash__flags.html#a0a795fa54b1a4e04d0487f704c27f05f">cflash_flags::flags</a></div><div class="ttdeci">uint32_t flags</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:308</div></div>
+<div class="ttc" id="astructotp__cmd_html"><div class="ttname"><a href="structotp__cmd.html">otp_cmd</a></div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:275</div></div>
+<div class="ttc" id="astructotp__cmd_html_a70b83c5c9023a08e108c310adc323180"><div class="ttname"><a href="structotp__cmd.html#a70b83c5c9023a08e108c310adc323180">otp_cmd::flags</a></div><div class="ttdeci">uint32_t flags</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:276</div></div>
+<div class="ttc" id="astructresident__partition__t_html"><div class="ttname"><a href="structresident__partition__t.html">resident_partition_t</a></div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:269</div></div>
+<div class="ttc" id="astructresident__partition__t_html_aa60ddd85d84134f8cbf8bf1d0a397aa8"><div class="ttname"><a href="structresident__partition__t.html#aa60ddd85d84134f8cbf8bf1d0a397aa8">resident_partition_t::permissions_and_flags</a></div><div class="ttdeci">uint32_t permissions_and_flags</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:271</div></div>
+<div class="ttc" id="astructresident__partition__t_html_aed755fd91f8a3802469d5ae64738b3a9"><div class="ttname"><a href="structresident__partition__t.html#aed755fd91f8a3802469d5ae64738b3a9">resident_partition_t::permissions_and_location</a></div><div class="ttdeci">uint32_t permissions_and_location</div><div class="ttdef"><b>Definição</b> boot_bootrom_headers/include/boot/bootrom_constants.h:270</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_68070da774414d757d6db0f1c36cb9c3.html">boot_bootrom_headers</a></li><li class="navelem"><a class="el" href="dir_5564ec67993eb1ac7e9ed8d1e4232297.html">include</a></li><li class="navelem"><a class="el" href="dir_233e94ef760173145140a877a5c54bce.html">boot</a></li><li class="navelem"><a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html">bootrom_constants.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

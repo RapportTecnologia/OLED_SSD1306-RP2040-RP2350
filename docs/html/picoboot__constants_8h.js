@@ -1,0 +1,25 @@
+var picoboot__constants_8h =
+[
+    [ "BOOTSEL_FLAG_DISABLE_MSD_INTERFACE", "picoboot__constants_8h.html#a0c787ad2eff83b0291c87fa86c7ef293", null ],
+    [ "BOOTSEL_FLAG_DISABLE_PICOBOOT_INTERFACE", "picoboot__constants_8h.html#ab3ef05e169cfce205cf4aff42284fb65", null ],
+    [ "BOOTSEL_FLAG_GPIO_PIN_ACTIVE_LOW", "picoboot__constants_8h.html#a8ceb6375cfd9d523a33a1b5be6896f55", null ],
+    [ "BOOTSEL_FLAG_GPIO_PIN_SPECIFIED", "picoboot__constants_8h.html#a2d9da66a1d9d2ac20edba61ee7119f22", null ],
+    [ "PICOBOOT_GET_INFO_PARTTION_TABLE", "picoboot__constants_8h.html#a4e746b56b577fdc05fdecef48a32ea14", null ],
+    [ "PICOBOOT_GET_INFO_SYS", "picoboot__constants_8h.html#a8eb80402ba34a6e61c94c1e553e230d6", null ],
+    [ "PICOBOOT_GET_INFO_UF2_STATUS", "picoboot__constants_8h.html#ac42e8ceaeeb5a8a6ce68163fab3fcae1", null ],
+    [ "PICOBOOT_GET_INFO_UF2_TARGET_PARTITION", "picoboot__constants_8h.html#a81a143ea07828fab9cd2e590c7e90eff", null ],
+    [ "REBOOT2_FLAG_NO_RETURN_ON_SUCCESS", "picoboot__constants_8h.html#ae8f7555161b565e1ffe0e10070474010", null ],
+    [ "REBOOT2_FLAG_REBOOT_TO_ARM", "picoboot__constants_8h.html#ae47a4f82ee181b5155096cc009a0d016", null ],
+    [ "REBOOT2_FLAG_REBOOT_TO_RISCV", "picoboot__constants_8h.html#ae27b770dd16f41608fe6b43478a85e03", null ],
+    [ "REBOOT2_FLAG_REBOOT_TYPE_BOOTSEL", "picoboot__constants_8h.html#a8a8c5d99b664fa6711e783d96923b5d9", null ],
+    [ "REBOOT2_FLAG_REBOOT_TYPE_FLASH_UPDATE", "picoboot__constants_8h.html#af619108ec1e5143f8a23d15d1eb4ae29", null ],
+    [ "REBOOT2_FLAG_REBOOT_TYPE_NORMAL", "picoboot__constants_8h.html#a069acf060860454b38b66bfe3e1cc01f", null ],
+    [ "REBOOT2_FLAG_REBOOT_TYPE_PC_SP", "picoboot__constants_8h.html#a1f5bb4db9b8a9f8d32851ee2ab3675d0", null ],
+    [ "REBOOT2_FLAG_REBOOT_TYPE_RAM_IMAGE", "picoboot__constants_8h.html#abd12931a2ad52bdc2e04d7a02abd56aa", null ],
+    [ "REBOOT2_TYPE_MASK", "picoboot__constants_8h.html#aea26ad7946dd04874cc58e10b51c2a66", null ],
+    [ "UF2_STATUS_ABORT_BAD_ADDRESS", "picoboot__constants_8h.html#ad5f3f7f9d4efda08b445be1b1f106d91", null ],
+    [ "UF2_STATUS_ABORT_EXCLUSIVELY_LOCKED", "picoboot__constants_8h.html#a3153570709a4ed4a9a7fe64d39b21fb0", null ],
+    [ "UF2_STATUS_ABORT_REBOOT_FAILED", "picoboot__constants_8h.html#aac8563b97c5580b0b21e38126ea2724e", null ],
+    [ "UF2_STATUS_ABORT_WRITE_ERROR", "picoboot__constants_8h.html#aa22778c57954f97854cc1421410b9857", null ],
+    [ "UF2_STATUS_IGNORED_FAMILY", "picoboot__constants_8h.html#a37dc064d0196b3f034a8124f6dfe9466", null ]
+];

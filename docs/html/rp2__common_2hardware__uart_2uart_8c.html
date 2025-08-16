@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro uart.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2__common_2hardware__uart_2uart_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro uart.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="address__mapped_8h_source.html">hardware/address_mapped.h</a>&quot;</code><br />
+<code>#include &quot;hardware/platform_defs.h&quot;</code><br />
+<code>#include &quot;hardware/uart.h&quot;</code><br />
+<code>#include &quot;hardware/structs/uart.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__resets_2include_2hardware_2resets_8h_source.html">hardware/resets.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h_source.html">hardware/clocks.h</a>&quot;</code><br />
+<code>#include &quot;hardware/timer.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="assert_8h_source.html">pico/assert.h</a>&quot;</code><br />
+<code>#include &quot;pico.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para rp2_common/hardware_uart/uart.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rp2__common_2hardware__uart_2uart_8c__incl.svg" width="1583" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a493d5fe0e691538517f306da23464464" id="r_a493d5fe0e691538517f306da23464464"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__uart_2uart_8c.html#a493d5fe0e691538517f306da23464464">check_hw_layout</a> (<a class="el" href="structuart__hw__t.html">uart_hw_t</a>, dmacr, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#aad9620fc3bfd954b71ea835218d74868">UART_UARTDMACR_OFFSET</a>)</td></tr>
+<tr class="separator:a493d5fe0e691538517f306da23464464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f682f68eff4df7d16083fc2ea1ffe4" id="r_ad6f682f68eff4df7d16083fc2ea1ffe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__uart_2uart_8c.html#ad6f682f68eff4df7d16083fc2ea1ffe4">check_hw_layout</a> (<a class="el" href="structuart__hw__t.html">uart_hw_t</a>, fr, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#abe3e5d41881f7721e89d412647ec58f4">UART_UARTFR_OFFSET</a>)</td></tr>
+<tr class="separator:ad6f682f68eff4df7d16083fc2ea1ffe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85b12f7d19f5087b22f26473039d2c4f" id="r_ga85b12f7d19f5087b22f26473039d2c4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga85b12f7d19f5087b22f26473039d2c4f">uart_deinit</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart)</td></tr>
+<tr class="memdesc:ga85b12f7d19f5087b22f26473039d2c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\end<a class="el" href="group__hardware__uart.html#ga5a55924eff530aff6db3b15fd872cda4" title="\enduart_reset[]">uart_init</a>[]  <br /></td></tr>
+<tr class="separator:ga85b12f7d19f5087b22f26473039d2c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a55924eff530aff6db3b15fd872cda4" id="r_ga5a55924eff530aff6db3b15fd872cda4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga5a55924eff530aff6db3b15fd872cda4">uart_init</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>)</td></tr>
+<tr class="memdesc:ga5a55924eff530aff6db3b15fd872cda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\enduart_reset[]  <br /></td></tr>
+<tr class="separator:ga5a55924eff530aff6db3b15fd872cda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga026539f355b6c6f5a044a5f4ee051f0e" id="r_ga026539f355b6c6f5a044a5f4ee051f0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga026539f355b6c6f5a044a5f4ee051f0e">uart_is_readable_within_us</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">us</a>)</td></tr>
+<tr class="memdesc:ga026539f355b6c6f5a044a5f4ee051f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for up to a certain number of microseconds for the RX FIFO to be non empty.  <br /></td></tr>
+<tr class="separator:ga026539f355b6c6f5a044a5f4ee051f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7f2ad3380a44597d8dda42b2d2ddef9" id="r_gab7f2ad3380a44597d8dda42b2d2ddef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gab7f2ad3380a44597d8dda42b2d2ddef9">uart_set_baudrate</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">baudrate</a>)</td></tr>
+<tr class="memdesc:gab7f2ad3380a44597d8dda42b2d2ddef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\tag<a class="el" href="group__hardware__uart.html#gab7f2ad3380a44597d8dda42b2d2ddef9" title="\taguart_set_baudrate[]">uart_set_baudrate</a>[]  <br /></td></tr>
+<tr class="separator:gab7f2ad3380a44597d8dda42b2d2ddef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddb01507886acab5604a2eecc014b388" id="r_gaddb01507886acab5604a2eecc014b388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gaddb01507886acab5604a2eecc014b388">uart_set_break</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> en)</td></tr>
+<tr class="memdesc:gaddb01507886acab5604a2eecc014b388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assert a break condition on the UART transmission.  <br /></td></tr>
+<tr class="separator:gaddb01507886acab5604a2eecc014b388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3daee9514dacfb76f3c04b131e2e41a" id="r_gac3daee9514dacfb76f3c04b131e2e41a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#gac3daee9514dacfb76f3c04b131e2e41a">uart_set_fifo_enabled</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> enabled)</td></tr>
+<tr class="memdesc:gac3daee9514dacfb76f3c04b131e2e41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/Disable the FIFOs on specified UART.  <br /></td></tr>
+<tr class="separator:gac3daee9514dacfb76f3c04b131e2e41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07e3c6ce7c1abf5e875b62964b8f841e" id="r_ga07e3c6ce7c1abf5e875b62964b8f841e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga07e3c6ce7c1abf5e875b62964b8f841e">uart_set_format</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">data_bits</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">stop_bits</a>, <a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">parity</a>)</td></tr>
+<tr class="memdesc:ga07e3c6ce7c1abf5e875b62964b8f841e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\end<a class="el" href="group__hardware__uart.html#gab7f2ad3380a44597d8dda42b2d2ddef9" title="\taguart_set_baudrate[]">uart_set_baudrate</a>[]  <br /></td></tr>
+<tr class="separator:ga07e3c6ce7c1abf5e875b62964b8f841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ea0b7b9252cd22e2395ca6070000f7a" id="r_ga4ea0b7b9252cd22e2395ca6070000f7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__uart.html#ga4ea0b7b9252cd22e2395ca6070000f7a">uart_set_translate_crlf</a> (<a class="el" href="host_2hardware__uart_2include_2hardware_2uart_8h.html#a3920e2bf2b198420bbaa5a758a4001aa">uart_inst_t</a> *uart, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">crlf</a>)</td></tr>
+<tr class="memdesc:ga4ea0b7b9252cd22e2395ca6070000f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set CR/LF conversion on UART.  <br /></td></tr>
+<tr class="separator:ga4ea0b7b9252cd22e2395ca6070000f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a493d5fe0e691538517f306da23464464" name="a493d5fe0e691538517f306da23464464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493d5fe0e691538517f306da23464464">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structuart__hw__t.html">uart_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dmacr&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#aad9620fc3bfd954b71ea835218d74868">UART_UARTDMACR_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6f682f68eff4df7d16083fc2ea1ffe4" name="ad6f682f68eff4df7d16083fc2ea1ffe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f682f68eff4df7d16083fc2ea1ffe4">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structuart__hw__t.html">uart_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fr&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2uart_8h.html#abe3e5d41881f7721e89d412647ec58f4">UART_UARTFR_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_f051d51c2651ca6afb24013e7e5ee721.html">hardware_uart</a></li><li class="navelem"><a class="el" href="rp2__common_2hardware__uart_2uart_8c.html">uart.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

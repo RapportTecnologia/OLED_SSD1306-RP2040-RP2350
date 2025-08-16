@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura io_qspi_hw_t</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structio__qspi__hw__t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structio__qspi__hw__t-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura io_qspi_hw_t</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2io__qspi_8h_source.html">io_qspi.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para io_qspi_hw_t:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structio__qspi__hw__t__coll__graph.svg" width="426" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:afe48899a72c42046327a2eda5938c449" id="r_afe48899a72c42046327a2eda5938c449"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a25a8eaa00af1bc6f9d2b5ca05356fe" id="r_a0a25a8eaa00af1bc6f9d2b5ca05356fe"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4430656df2ad1dfadb322c23a33723" id="r_a0a4430656df2ad1dfadb322c23a33723"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#a4163a3e133cfeb966af35111d790f4d0">dormant_wake_irq_ctrl</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0a4430656df2ad1dfadb322c23a33723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a788e9a6153dc5b6593ca0b117f30e0" id="r_a4a788e9a6153dc5b6593ca0b117f30e0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#ae3c3807ff4035df8a9709ffd35cff01a">proc0_irq_ctrl</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a4a788e9a6153dc5b6593ca0b117f30e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a24560eef6b4e8b8834f26659745082" id="r_a1a24560eef6b4e8b8834f26659745082"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#ad756ab3162c400bb65256e364ff57ee4">proc1_irq_ctrl</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a1a24560eef6b4e8b8834f26659745082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a25a8eaa00af1bc6f9d2b5ca05356fe" id="r_a0a25a8eaa00af1bc6f9d2b5ca05356fe"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0a25a8eaa00af1bc6f9d2b5ca05356fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781a4269adb8b3ef157950d6d79b84cc" id="r_a781a4269adb8b3ef157950d6d79b84cc"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#a78a2c1ab0faa0a87a11a8f6dcd57e79e">irq_ctrl</a> [3]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a781a4269adb8b3ef157950d6d79b84cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe48899a72c42046327a2eda5938c449" id="r_afe48899a72c42046327a2eda5938c449"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:afe48899a72c42046327a2eda5938c449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f824db253f0e3a8f5885e6408a9c04" id="r_ab4f824db253f0e3a8f5885e6408a9c04"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525b57a2f5dbf036801d26b557c7256b" id="r_a525b57a2f5dbf036801d26b557c7256b"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7359f54063d01b7eaefe850a12578c" id="r_aaf7359f54063d01b7eaefe850a12578c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#a4163a3e133cfeb966af35111d790f4d0">dormant_wake_irq_ctrl</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aaf7359f54063d01b7eaefe850a12578c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade457b02544cd79935708b5d5f215e55" id="r_ade457b02544cd79935708b5d5f215e55"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#ae3c3807ff4035df8a9709ffd35cff01a">proc0_irq_ctrl</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ade457b02544cd79935708b5d5f215e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72ff1f5b08ba579b43b5f4a4b94b03d" id="r_ad72ff1f5b08ba579b43b5f4a4b94b03d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#ad756ab3162c400bb65256e364ff57ee4">proc1_irq_ctrl</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ad72ff1f5b08ba579b43b5f4a4b94b03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525b57a2f5dbf036801d26b557c7256b" id="r_a525b57a2f5dbf036801d26b557c7256b"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a525b57a2f5dbf036801d26b557c7256b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05113ebf3f40c84a3511ebea531eb8f5" id="r_a05113ebf3f40c84a3511ebea531eb8f5"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a>&#160;&#160;&#160;<a class="el" href="structio__qspi__hw__t.html#a78a2c1ab0faa0a87a11a8f6dcd57e79e">irq_ctrl</a> [3]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a05113ebf3f40c84a3511ebea531eb8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f824db253f0e3a8f5885e6408a9c04" id="r_ab4f824db253f0e3a8f5885e6408a9c04"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ab4f824db253f0e3a8f5885e6408a9c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb82ea9d3878bcbf4401a46aefcce05" id="r_acfb82ea9d3878bcbf4401a46aefcce05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#acfb82ea9d3878bcbf4401a46aefcce05">_pad0</a> [112]</td></tr>
+<tr class="separator:acfb82ea9d3878bcbf4401a46aefcce05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7afd2b22284c509931a1b236bdc9c7" id="r_afa7afd2b22284c509931a1b236bdc9c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#afa7afd2b22284c509931a1b236bdc9c7">intr</a></td></tr>
+<tr class="separator:afa7afd2b22284c509931a1b236bdc9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42a86cea7738d032ab9769577ae335d" id="r_aa42a86cea7738d032ab9769577ae335d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structio__qspi__status__ctrl__hw__t.html">io_qspi_status_ctrl_hw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#aa42a86cea7738d032ab9769577ae335d">io</a> [6]</td></tr>
+<tr class="separator:aa42a86cea7738d032ab9769577ae335d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fa4aee23dfc965f238388fec292069" id="r_ae2fa4aee23dfc965f238388fec292069"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#ae2fa4aee23dfc965f238388fec292069">irqsummary_dormant_wake_nonsecure</a></td></tr>
+<tr class="separator:ae2fa4aee23dfc965f238388fec292069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40df21b392d5d350d472084bd411ecac" id="r_a40df21b392d5d350d472084bd411ecac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#a40df21b392d5d350d472084bd411ecac">irqsummary_dormant_wake_secure</a></td></tr>
+<tr class="separator:a40df21b392d5d350d472084bd411ecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022615caf7c1dd4c1f13099d007fa97f" id="r_a022615caf7c1dd4c1f13099d007fa97f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#a022615caf7c1dd4c1f13099d007fa97f">irqsummary_proc0_nonsecure</a></td></tr>
+<tr class="separator:a022615caf7c1dd4c1f13099d007fa97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e86a818983b7073c5f6ba1e45b4425" id="r_ad0e86a818983b7073c5f6ba1e45b4425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#ad0e86a818983b7073c5f6ba1e45b4425">irqsummary_proc0_secure</a></td></tr>
+<tr class="separator:ad0e86a818983b7073c5f6ba1e45b4425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2b4fa46a837bf58d875e39722f1f47" id="r_a2e2b4fa46a837bf58d875e39722f1f47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#a2e2b4fa46a837bf58d875e39722f1f47">irqsummary_proc1_nonsecure</a></td></tr>
+<tr class="separator:a2e2b4fa46a837bf58d875e39722f1f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e694d8145f6a7f67f1af2a6c42a9f4" id="r_a56e694d8145f6a7f67f1af2a6c42a9f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#a56e694d8145f6a7f67f1af2a6c42a9f4">irqsummary_proc1_secure</a></td></tr>
+<tr class="separator:a56e694d8145f6a7f67f1af2a6c42a9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6f34646c3ae3dcd6edd6cb6de013c5" id="r_abf6f34646c3ae3dcd6edd6cb6de013c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#abf6f34646c3ae3dcd6edd6cb6de013c5">usbphy_dm_ctrl</a></td></tr>
+<tr class="separator:abf6f34646c3ae3dcd6edd6cb6de013c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648fd3ff1aaade2838e1b5a087564488" id="r_a648fd3ff1aaade2838e1b5a087564488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#a648fd3ff1aaade2838e1b5a087564488">usbphy_dm_status</a></td></tr>
+<tr class="separator:a648fd3ff1aaade2838e1b5a087564488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a3dd8194a959b2005d7fcc8bb9a7c7" id="r_af6a3dd8194a959b2005d7fcc8bb9a7c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#af6a3dd8194a959b2005d7fcc8bb9a7c7">usbphy_dp_ctrl</a></td></tr>
+<tr class="separator:af6a3dd8194a959b2005d7fcc8bb9a7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438920b3ad49be32b6c7c3533274bbe9" id="r_a438920b3ad49be32b6c7c3533274bbe9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structio__qspi__hw__t.html#a438920b3ad49be32b6c7c3533274bbe9">usbphy_dp_status</a></td></tr>
+<tr class="separator:a438920b3ad49be32b6c7c3533274bbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="afe48899a72c42046327a2eda5938c449" name="afe48899a72c42046327a2eda5938c449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe48899a72c42046327a2eda5938c449">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structio__qspi__hw__t.html">io_qspi_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4f824db253f0e3a8f5885e6408a9c04" name="ab4f824db253f0e3a8f5885e6408a9c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f824db253f0e3a8f5885e6408a9c04">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structio__qspi__hw__t.html">io_qspi_hw_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfb82ea9d3878bcbf4401a46aefcce05" name="acfb82ea9d3878bcbf4401a46aefcce05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb82ea9d3878bcbf4401a46aefcce05">&#9670;&#160;</a></span>_pad0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> io_qspi_hw_t::_pad0[112]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4163a3e133cfeb966af35111d790f4d0" name="a4163a3e133cfeb966af35111d790f4d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4163a3e133cfeb966af35111d790f4d0">&#9670;&#160;</a></span>dormant_wake_irq_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a> io_qspi_hw_t::dormant_wake_irq_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa7afd2b22284c509931a1b236bdc9c7" name="afa7afd2b22284c509931a1b236bdc9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7afd2b22284c509931a1b236bdc9c7">&#9670;&#160;</a></span>intr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> io_qspi_hw_t::intr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa42a86cea7738d032ab9769577ae335d" name="aa42a86cea7738d032ab9769577ae335d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42a86cea7738d032ab9769577ae335d">&#9670;&#160;</a></span>io</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structio__qspi__status__ctrl__hw__t.html">io_qspi_status_ctrl_hw_t</a> io_qspi_hw_t::io</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78a2c1ab0faa0a87a11a8f6dcd57e79e" name="a78a2c1ab0faa0a87a11a8f6dcd57e79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a2c1ab0faa0a87a11a8f6dcd57e79e">&#9670;&#160;</a></span>irq_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a> io_qspi_hw_t::irq_ctrl[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2fa4aee23dfc965f238388fec292069" name="ae2fa4aee23dfc965f238388fec292069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2fa4aee23dfc965f238388fec292069">&#9670;&#160;</a></span>irqsummary_dormant_wake_nonsecure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::irqsummary_dormant_wake_nonsecure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40df21b392d5d350d472084bd411ecac" name="a40df21b392d5d350d472084bd411ecac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40df21b392d5d350d472084bd411ecac">&#9670;&#160;</a></span>irqsummary_dormant_wake_secure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::irqsummary_dormant_wake_secure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a022615caf7c1dd4c1f13099d007fa97f" name="a022615caf7c1dd4c1f13099d007fa97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022615caf7c1dd4c1f13099d007fa97f">&#9670;&#160;</a></span>irqsummary_proc0_nonsecure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::irqsummary_proc0_nonsecure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0e86a818983b7073c5f6ba1e45b4425" name="ad0e86a818983b7073c5f6ba1e45b4425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e86a818983b7073c5f6ba1e45b4425">&#9670;&#160;</a></span>irqsummary_proc0_secure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::irqsummary_proc0_secure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e2b4fa46a837bf58d875e39722f1f47" name="a2e2b4fa46a837bf58d875e39722f1f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2b4fa46a837bf58d875e39722f1f47">&#9670;&#160;</a></span>irqsummary_proc1_nonsecure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::irqsummary_proc1_nonsecure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56e694d8145f6a7f67f1af2a6c42a9f4" name="a56e694d8145f6a7f67f1af2a6c42a9f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e694d8145f6a7f67f1af2a6c42a9f4">&#9670;&#160;</a></span>irqsummary_proc1_secure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::irqsummary_proc1_secure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3c3807ff4035df8a9709ffd35cff01a" name="ae3c3807ff4035df8a9709ffd35cff01a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3c3807ff4035df8a9709ffd35cff01a">&#9670;&#160;</a></span>proc0_irq_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a> io_qspi_hw_t::proc0_irq_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad756ab3162c400bb65256e364ff57ee4" name="ad756ab3162c400bb65256e364ff57ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad756ab3162c400bb65256e364ff57ee4">&#9670;&#160;</a></span>proc1_irq_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structio__qspi__irq__ctrl__hw__t.html">io_qspi_irq_ctrl_hw_t</a> io_qspi_hw_t::proc1_irq_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf6f34646c3ae3dcd6edd6cb6de013c5" name="abf6f34646c3ae3dcd6edd6cb6de013c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6f34646c3ae3dcd6edd6cb6de013c5">&#9670;&#160;</a></span>usbphy_dm_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> io_qspi_hw_t::usbphy_dm_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a648fd3ff1aaade2838e1b5a087564488" name="a648fd3ff1aaade2838e1b5a087564488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a648fd3ff1aaade2838e1b5a087564488">&#9670;&#160;</a></span>usbphy_dm_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::usbphy_dm_status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6a3dd8194a959b2005d7fcc8bb9a7c7" name="af6a3dd8194a959b2005d7fcc8bb9a7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a3dd8194a959b2005d7fcc8bb9a7c7">&#9670;&#160;</a></span>usbphy_dp_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> io_qspi_hw_t::usbphy_dp_ctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a438920b3ad49be32b6c7c3533274bbe9" name="a438920b3ad49be32b6c7c3533274bbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438920b3ad49be32b6c7c3533274bbe9">&#9670;&#160;</a></span>usbphy_dp_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> io_qspi_hw_t::usbphy_dp_status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2io__qspi_8h_source.html">rp2040/hardware_structs/include/hardware/structs/io_qspi.h</a></li>
+<li><a class="el" href="rp2350_2hardware__structs_2include_2hardware_2structs_2io__qspi_8h_source.html">rp2350/hardware_structs/include/hardware/structs/io_qspi.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structio__qspi__hw__t.html">io_qspi_hw_t</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

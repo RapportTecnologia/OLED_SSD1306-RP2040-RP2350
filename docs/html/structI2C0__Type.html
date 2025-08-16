@@ -1,0 +1,1150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura I2C0_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structI2C0__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structI2C0__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura I2C0_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>DW_apb_i2c address block.  
+ <a href="structI2C0__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para I2C0_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structI2C0__Type__coll__graph.svg" width="194" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:af48854543950f0355ff8b2a55413f260" id="r_af48854543950f0355ff8b2a55413f260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#af48854543950f0355ff8b2a55413f260">IC_ACK_GENERAL_CALL</a></td></tr>
+<tr class="memdesc:af48854543950f0355ff8b2a55413f260"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C ACK General Call Register The register controls whether DW_apb_i2c responds with a ACK or NACK when it receives an I2C General Call address.  <br /></td></tr>
+<tr class="separator:af48854543950f0355ff8b2a55413f260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d69b42cd7747d35bf4a0f343768f837" id="r_a4d69b42cd7747d35bf4a0f343768f837"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a4d69b42cd7747d35bf4a0f343768f837">IC_CLR_ACTIVITY</a></td></tr>
+<tr class="memdesc:a4d69b42cd7747d35bf4a0f343768f837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear ACTIVITY Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:a4d69b42cd7747d35bf4a0f343768f837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03b5dca4f277d5f2414f81c104e5844" id="r_ad03b5dca4f277d5f2414f81c104e5844"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ad03b5dca4f277d5f2414f81c104e5844">IC_CLR_GEN_CALL</a></td></tr>
+<tr class="memdesc:ad03b5dca4f277d5f2414f81c104e5844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear GEN_CALL Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:ad03b5dca4f277d5f2414f81c104e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7b705efb87af518afc950c58b933ab" id="r_a8d7b705efb87af518afc950c58b933ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a8d7b705efb87af518afc950c58b933ab">IC_CLR_INTR</a></td></tr>
+<tr class="memdesc:a8d7b705efb87af518afc950c58b933ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear Combined and Individual Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:a8d7b705efb87af518afc950c58b933ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba12c8f6f46994ad01d23c100908081b" id="r_aba12c8f6f46994ad01d23c100908081b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#aba12c8f6f46994ad01d23c100908081b">IC_CLR_RD_REQ</a></td></tr>
+<tr class="memdesc:aba12c8f6f46994ad01d23c100908081b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear RD_REQ Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:aba12c8f6f46994ad01d23c100908081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb64c02a0ca39131a313a160c63fead3" id="r_aeb64c02a0ca39131a313a160c63fead3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#aeb64c02a0ca39131a313a160c63fead3">IC_CLR_RESTART_DET</a></td></tr>
+<tr class="memdesc:aeb64c02a0ca39131a313a160c63fead3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear RESTART_DET Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:aeb64c02a0ca39131a313a160c63fead3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2890ddf700cf1a0ea626b0d5bf594d" id="r_aff2890ddf700cf1a0ea626b0d5bf594d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#aff2890ddf700cf1a0ea626b0d5bf594d">IC_CLR_RX_DONE</a></td></tr>
+<tr class="memdesc:aff2890ddf700cf1a0ea626b0d5bf594d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear RX_DONE Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:aff2890ddf700cf1a0ea626b0d5bf594d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0eea8c0bf5d5411620eb7d44452c12" id="r_ace0eea8c0bf5d5411620eb7d44452c12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ace0eea8c0bf5d5411620eb7d44452c12">IC_CLR_RX_OVER</a></td></tr>
+<tr class="memdesc:ace0eea8c0bf5d5411620eb7d44452c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear RX_OVER Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:ace0eea8c0bf5d5411620eb7d44452c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f68a46a0bceef728bcc060c0ef48900" id="r_a8f68a46a0bceef728bcc060c0ef48900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a8f68a46a0bceef728bcc060c0ef48900">IC_CLR_RX_UNDER</a></td></tr>
+<tr class="memdesc:a8f68a46a0bceef728bcc060c0ef48900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear RX_UNDER Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:a8f68a46a0bceef728bcc060c0ef48900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53030fbacca2f684dc596931cd772a3" id="r_aa53030fbacca2f684dc596931cd772a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#aa53030fbacca2f684dc596931cd772a3">IC_CLR_START_DET</a></td></tr>
+<tr class="memdesc:aa53030fbacca2f684dc596931cd772a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear START_DET Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:aa53030fbacca2f684dc596931cd772a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82bb3a32b2e1edc41bc40d3d97f7a0d" id="r_ab82bb3a32b2e1edc41bc40d3d97f7a0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ab82bb3a32b2e1edc41bc40d3d97f7a0d">IC_CLR_STOP_DET</a></td></tr>
+<tr class="memdesc:ab82bb3a32b2e1edc41bc40d3d97f7a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear STOP_DET Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:ab82bb3a32b2e1edc41bc40d3d97f7a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa2a48bd16098ad21416c19f637ae3b" id="r_abfa2a48bd16098ad21416c19f637ae3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#abfa2a48bd16098ad21416c19f637ae3b">IC_CLR_TX_ABRT</a></td></tr>
+<tr class="memdesc:abfa2a48bd16098ad21416c19f637ae3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear TX_ABRT Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:abfa2a48bd16098ad21416c19f637ae3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71d0cebae0b1a82a8c8f5c68fee944e" id="r_ae71d0cebae0b1a82a8c8f5c68fee944e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ae71d0cebae0b1a82a8c8f5c68fee944e">IC_CLR_TX_OVER</a></td></tr>
+<tr class="memdesc:ae71d0cebae0b1a82a8c8f5c68fee944e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear TX_OVER Interrupt Register <br  />
+  <br /></td></tr>
+<tr class="separator:ae71d0cebae0b1a82a8c8f5c68fee944e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e711546bccd9747519bcf0516ec0d0" id="r_a00e711546bccd9747519bcf0516ec0d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a00e711546bccd9747519bcf0516ec0d0">IC_COMP_PARAM_1</a></td></tr>
+<tr class="memdesc:a00e711546bccd9747519bcf0516ec0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Component Parameter Register 1 Note This register is not implemented and therefore reads as 0.  <br /></td></tr>
+<tr class="separator:a00e711546bccd9747519bcf0516ec0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd18e19cacb8145b2f539e307c63fde3" id="r_abd18e19cacb8145b2f539e307c63fde3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#abd18e19cacb8145b2f539e307c63fde3">IC_COMP_TYPE</a></td></tr>
+<tr class="memdesc:abd18e19cacb8145b2f539e307c63fde3"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Component Type Register <br  />
+  <br /></td></tr>
+<tr class="separator:abd18e19cacb8145b2f539e307c63fde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8578469098d37c692934b3dedbc56b95" id="r_a8578469098d37c692934b3dedbc56b95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a8578469098d37c692934b3dedbc56b95">IC_COMP_VERSION</a></td></tr>
+<tr class="memdesc:a8578469098d37c692934b3dedbc56b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Component Version Register <br  />
+  <br /></td></tr>
+<tr class="separator:a8578469098d37c692934b3dedbc56b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e15f95dff23ae0a31d8f3cdf382aec" id="r_a07e15f95dff23ae0a31d8f3cdf382aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a07e15f95dff23ae0a31d8f3cdf382aec">IC_CON</a></td></tr>
+<tr class="memdesc:a07e15f95dff23ae0a31d8f3cdf382aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; I2C0 Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a07e15f95dff23ae0a31d8f3cdf382aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de2d104864c9367eaed625dba09e0de" id="r_a5de2d104864c9367eaed625dba09e0de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a5de2d104864c9367eaed625dba09e0de">IC_DATA_CMD</a></td></tr>
+<tr class="memdesc:a5de2d104864c9367eaed625dba09e0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Rx/Tx Data Buffer and Command Register; this is the register the CPU writes to when filling the TX FIFO and the CPU reads from when retrieving bytes from RX FIFO.  <br /></td></tr>
+<tr class="separator:a5de2d104864c9367eaed625dba09e0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2227706b27c7dc6405e3c54d1381bba" id="r_ab2227706b27c7dc6405e3c54d1381bba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ab2227706b27c7dc6405e3c54d1381bba">IC_DMA_CR</a></td></tr>
+<tr class="memdesc:ab2227706b27c7dc6405e3c54d1381bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA Control Register The register is used to enable the DMA Controller interface operation.  <br /></td></tr>
+<tr class="separator:ab2227706b27c7dc6405e3c54d1381bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9ef80f668784dfe96aceb2535a4689" id="r_a2f9ef80f668784dfe96aceb2535a4689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a2f9ef80f668784dfe96aceb2535a4689">IC_DMA_RDLR</a></td></tr>
+<tr class="memdesc:a2f9ef80f668784dfe96aceb2535a4689"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Receive Data Level Register <br  />
+  <br /></td></tr>
+<tr class="separator:a2f9ef80f668784dfe96aceb2535a4689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a11534343e534953eb2559438a88d9a" id="r_a9a11534343e534953eb2559438a88d9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a9a11534343e534953eb2559438a88d9a">IC_DMA_TDLR</a></td></tr>
+<tr class="memdesc:a9a11534343e534953eb2559438a88d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA Transmit Data Level Register <br  />
+  <br /></td></tr>
+<tr class="separator:a9a11534343e534953eb2559438a88d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee6236a4ee1bb9e01ad14c2f5b544ea" id="r_a4ee6236a4ee1bb9e01ad14c2f5b544ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a4ee6236a4ee1bb9e01ad14c2f5b544ea">IC_ENABLE</a></td></tr>
+<tr class="memdesc:a4ee6236a4ee1bb9e01ad14c2f5b544ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Enable Register <br  />
+  <br /></td></tr>
+<tr class="separator:a4ee6236a4ee1bb9e01ad14c2f5b544ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692d07143740345aa9609c75694d35e5" id="r_a692d07143740345aa9609c75694d35e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a692d07143740345aa9609c75694d35e5">IC_ENABLE_STATUS</a></td></tr>
+<tr class="memdesc:a692d07143740345aa9609c75694d35e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Enable Status Register The register is used to report the DW_apb_i2c hardware status when the IC_ENABLE[0] register is set from 1 to 0; that is, when DW_apb_i2c is disabled.  <br /></td></tr>
+<tr class="separator:a692d07143740345aa9609c75694d35e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7f28b98ce28f657550b98550354af9" id="r_a5f7f28b98ce28f657550b98550354af9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a5f7f28b98ce28f657550b98550354af9">IC_FS_SCL_HCNT</a></td></tr>
+<tr class="memdesc:a5f7f28b98ce28f657550b98550354af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast Mode or Fast Mode Plus I2C Clock SCL High Count Register <br  />
+  <br /></td></tr>
+<tr class="separator:a5f7f28b98ce28f657550b98550354af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc6a044caad5fac8b1736b8302a6b0f" id="r_afcc6a044caad5fac8b1736b8302a6b0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#afcc6a044caad5fac8b1736b8302a6b0f">IC_FS_SCL_LCNT</a></td></tr>
+<tr class="memdesc:afcc6a044caad5fac8b1736b8302a6b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast Mode or Fast Mode Plus I2C Clock SCL Low Count Register <br  />
+  <br /></td></tr>
+<tr class="separator:afcc6a044caad5fac8b1736b8302a6b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26002631cde72efb8bdcd575d4f99c36" id="r_a26002631cde72efb8bdcd575d4f99c36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a26002631cde72efb8bdcd575d4f99c36">IC_FS_SPKLEN</a></td></tr>
+<tr class="memdesc:a26002631cde72efb8bdcd575d4f99c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C SS, FS or FM+ spike suppression limit This register is used to store the duration, measured in ic_clk cycles, of the longest spike that is filtered out by the spike suppression logic when the component is operating in SS, FS or FM+ modes.  <br /></td></tr>
+<tr class="separator:a26002631cde72efb8bdcd575d4f99c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc932dc9612c40a4d899e17e51c49fdd" id="r_afc932dc9612c40a4d899e17e51c49fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#afc932dc9612c40a4d899e17e51c49fdd">IC_INTR_MASK</a></td></tr>
+<tr class="memdesc:afc932dc9612c40a4d899e17e51c49fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Interrupt Mask Register.  <br /></td></tr>
+<tr class="separator:afc932dc9612c40a4d899e17e51c49fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554a6055362b121a1ebb5d59f7bc6c91" id="r_a554a6055362b121a1ebb5d59f7bc6c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a554a6055362b121a1ebb5d59f7bc6c91">IC_INTR_STAT</a></td></tr>
+<tr class="memdesc:a554a6055362b121a1ebb5d59f7bc6c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Interrupt Status Register Each bit in this register has a corresponding mask bit in the IC_INTR_MASK register.  <br /></td></tr>
+<tr class="separator:a554a6055362b121a1ebb5d59f7bc6c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a71b36274fd0902b1ace3fed4c6c676" id="r_a8a71b36274fd0902b1ace3fed4c6c676"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a8a71b36274fd0902b1ace3fed4c6c676">IC_RAW_INTR_STAT</a></td></tr>
+<tr class="memdesc:a8a71b36274fd0902b1ace3fed4c6c676"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Raw Interrupt Status Register Unlike the IC_INTR_STAT register, these bits are not masked so they always show the true status of the DW_apb_i2c.  <br /></td></tr>
+<tr class="separator:a8a71b36274fd0902b1ace3fed4c6c676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a66438e33d61445e03deba7dd2b889" id="r_ac4a66438e33d61445e03deba7dd2b889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ac4a66438e33d61445e03deba7dd2b889">IC_RX_TL</a></td></tr>
+<tr class="memdesc:ac4a66438e33d61445e03deba7dd2b889"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Receive FIFO Threshold Register <br  />
+  <br /></td></tr>
+<tr class="separator:ac4a66438e33d61445e03deba7dd2b889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71626b8fc91a9adfdb640a5216f6661c" id="r_a71626b8fc91a9adfdb640a5216f6661c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a71626b8fc91a9adfdb640a5216f6661c">IC_RXFLR</a></td></tr>
+<tr class="memdesc:a71626b8fc91a9adfdb640a5216f6661c"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Receive FIFO Level Register This register contains the number of valid data entries in the receive FIFO buffer.  <br /></td></tr>
+<tr class="separator:a71626b8fc91a9adfdb640a5216f6661c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53cccea70140edcf7006e9ed4167f9db" id="r_a53cccea70140edcf7006e9ed4167f9db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a53cccea70140edcf7006e9ed4167f9db">IC_SAR</a></td></tr>
+<tr class="memdesc:a53cccea70140edcf7006e9ed4167f9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Slave Address Register <br  />
+  <br /></td></tr>
+<tr class="separator:a53cccea70140edcf7006e9ed4167f9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb9d1590484dc9ee2c99cdd5e3639e4" id="r_a6bb9d1590484dc9ee2c99cdd5e3639e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a6bb9d1590484dc9ee2c99cdd5e3639e4">IC_SDA_HOLD</a></td></tr>
+<tr class="memdesc:a6bb9d1590484dc9ee2c99cdd5e3639e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C SDA Hold Time Length Register The bits [15:0] of this register are used to control the hold time of SDA during transmit in both slave and master mode (after SCL goes from HIGH to LOW).  <br /></td></tr>
+<tr class="separator:a6bb9d1590484dc9ee2c99cdd5e3639e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96012581c0b92c2166964ec987991fce" id="r_a96012581c0b92c2166964ec987991fce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a96012581c0b92c2166964ec987991fce">IC_SDA_SETUP</a></td></tr>
+<tr class="memdesc:a96012581c0b92c2166964ec987991fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C SDA Setup Register This register controls the amount of time delay (in terms of number of ic_clk clock periods) introduced in the rising edge of SCL - relative to SDA changing - when DW_apb_i2c services a read request in a slave-transmitter operation.  <br /></td></tr>
+<tr class="separator:a96012581c0b92c2166964ec987991fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e231baf5f5aa9bd8cda39d1ef204cb" id="r_af3e231baf5f5aa9bd8cda39d1ef204cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#af3e231baf5f5aa9bd8cda39d1ef204cb">IC_SLV_DATA_NACK_ONLY</a></td></tr>
+<tr class="memdesc:af3e231baf5f5aa9bd8cda39d1ef204cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate Slave Data NACK Register The register is used to generate a NACK for the data part of a transfer when DW_apb_i2c is acting as a slave-receiver.  <br /></td></tr>
+<tr class="separator:af3e231baf5f5aa9bd8cda39d1ef204cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6364edb3031aa72adfeb7c76305a46c" id="r_ad6364edb3031aa72adfeb7c76305a46c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ad6364edb3031aa72adfeb7c76305a46c">IC_SS_SCL_HCNT</a></td></tr>
+<tr class="memdesc:ad6364edb3031aa72adfeb7c76305a46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard Speed I2C Clock SCL High Count Register <br  />
+  <br /></td></tr>
+<tr class="separator:ad6364edb3031aa72adfeb7c76305a46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae897a6cb53f07fb0ff2695086563afc1" id="r_ae897a6cb53f07fb0ff2695086563afc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ae897a6cb53f07fb0ff2695086563afc1">IC_SS_SCL_LCNT</a></td></tr>
+<tr class="memdesc:ae897a6cb53f07fb0ff2695086563afc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard Speed I2C Clock SCL Low Count Register <br  />
+  <br /></td></tr>
+<tr class="separator:ae897a6cb53f07fb0ff2695086563afc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9a9e0ea6a97123138ebde3292bfad3" id="r_aad9a9e0ea6a97123138ebde3292bfad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#aad9a9e0ea6a97123138ebde3292bfad3">IC_STATUS</a></td></tr>
+<tr class="memdesc:aad9a9e0ea6a97123138ebde3292bfad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Status Register This is a read-only register used to indicate the current transfer status and FIFO status.  <br /></td></tr>
+<tr class="separator:aad9a9e0ea6a97123138ebde3292bfad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e551130af1de465a70b0921381ca944" id="r_a9e551130af1de465a70b0921381ca944"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a9e551130af1de465a70b0921381ca944">IC_TAR</a></td></tr>
+<tr class="memdesc:a9e551130af1de465a70b0921381ca944"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Target Address Register This register is 12 bits wide, and bits 31:12 are reserved.  <br /></td></tr>
+<tr class="separator:a9e551130af1de465a70b0921381ca944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04005ccf4436c2c7cde8b152aafd2cb2" id="r_a04005ccf4436c2c7cde8b152aafd2cb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a04005ccf4436c2c7cde8b152aafd2cb2">IC_TX_ABRT_SOURCE</a></td></tr>
+<tr class="memdesc:a04005ccf4436c2c7cde8b152aafd2cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Transmit Abort Source Register This register has 32 bits that indicate the source of the TX_ABRT bit.  <br /></td></tr>
+<tr class="separator:a04005ccf4436c2c7cde8b152aafd2cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd7b90f71dbbbb16d591d818e302aa7" id="r_a5bd7b90f71dbbbb16d591d818e302aa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a5bd7b90f71dbbbb16d591d818e302aa7">IC_TX_TL</a></td></tr>
+<tr class="memdesc:a5bd7b90f71dbbbb16d591d818e302aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Transmit FIFO Threshold Register <br  />
+  <br /></td></tr>
+<tr class="separator:a5bd7b90f71dbbbb16d591d818e302aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4a1076e0eb87b095d481215b46048d" id="r_aba4a1076e0eb87b095d481215b46048d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#aba4a1076e0eb87b095d481215b46048d">IC_TXFLR</a></td></tr>
+<tr class="memdesc:aba4a1076e0eb87b095d481215b46048d"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Transmit FIFO Level Register This register contains the number of valid data entries in the transmit FIFO buffer.  <br /></td></tr>
+<tr class="separator:aba4a1076e0eb87b095d481215b46048d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bd7eeea1fab347f0757a8114b3d598" id="r_a65bd7eeea1fab347f0757a8114b3d598"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a65bd7eeea1fab347f0757a8114b3d598">RESERVED</a></td></tr>
+<tr class="separator:a65bd7eeea1fab347f0757a8114b3d598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6edf5eb8d7a92219fd01bae93d1aeea8" id="r_a6edf5eb8d7a92219fd01bae93d1aeea8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a6edf5eb8d7a92219fd01bae93d1aeea8">RESERVED1</a> [2]</td></tr>
+<tr class="separator:a6edf5eb8d7a92219fd01bae93d1aeea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14dd06594409757536aee4d0efb1bbe0" id="r_a14dd06594409757536aee4d0efb1bbe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#a14dd06594409757536aee4d0efb1bbe0">RESERVED2</a></td></tr>
+<tr class="separator:a14dd06594409757536aee4d0efb1bbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49b43c3f12429b791cc58c258283cfa" id="r_ae49b43c3f12429b791cc58c258283cfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C0__Type.html#ae49b43c3f12429b791cc58c258283cfa">RESERVED3</a> [18]</td></tr>
+<tr class="separator:ae49b43c3f12429b791cc58c258283cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>DW_apb_i2c address block. </p>
+<pre class="fragment">    List of configuration constants for the Synopsys I2C hardware (you may see references to these in I2C register header; these are *fixed* values, set at hardware design time):
+
+    IC_ULTRA_FAST_MODE ................ 0x0 
+    IC_UFM_TBUF_CNT_DEFAULT ........... 0x8 
+    IC_UFM_SCL_LOW_COUNT .............. 0x0008 
+    IC_UFM_SCL_HIGH_COUNT ............. 0x0006 
+    IC_TX_TL .......................... 0x0 
+    IC_TX_CMD_BLOCK ................... 0x1 
+    IC_HAS_DMA ........................ 0x1 
+    IC_HAS_ASYNC_FIFO ................. 0x0 
+    IC_SMBUS_ARP ...................... 0x0 
+    IC_FIRST_DATA_BYTE_STATUS ......... 0x1 
+    IC_INTR_IO ........................ 0x1 
+    IC_MASTER_MODE .................... 0x1 
+    IC_DEFAULT_ACK_GENERAL_CALL ....... 0x1 
+    IC_INTR_POL ....................... 0x1 
+    IC_OPTIONAL_SAR ................... 0x0 
+    IC_DEFAULT_TAR_SLAVE_ADDR ......... 0x055 
+    IC_DEFAULT_SLAVE_ADDR ............. 0x055 
+    IC_DEFAULT_HS_SPKLEN .............. 0x1 
+    IC_FS_SCL_HIGH_COUNT .............. 0x0006 
+    IC_HS_SCL_LOW_COUNT ............... 0x0008 
+    IC_DEVICE_ID_VALUE ................ 0x0 
+    IC_10BITADDR_MASTER ............... 0x0 
+    IC_CLK_FREQ_OPTIMIZATION .......... 0x0 
+    IC_DEFAULT_FS_SPKLEN .............. 0x7 
+    IC_ADD_ENCODED_PARAMS ............. 0x0 
+    IC_DEFAULT_SDA_HOLD ............... 0x000001 
+    IC_DEFAULT_SDA_SETUP .............. 0x64 
+    IC_AVOID_RX_FIFO_FLUSH_ON_TX_ABRT . 0x0 
+    IC_CLOCK_PERIOD ................... 100 
+    IC_EMPTYFIFO_HOLD_MASTER_EN ....... 1 
+    IC_RESTART_EN ..................... 0x1 
+    IC_TX_CMD_BLOCK_DEFAULT ........... 0x0 
+    IC_BUS_CLEAR_FEATURE .............. 0x0 
+    IC_CAP_LOADING .................... 100 
+    IC_FS_SCL_LOW_COUNT ............... 0x000d 
+    APB_DATA_WIDTH .................... 32 
+    IC_SDA_STUCK_TIMEOUT_DEFAULT ...... 0xffffffff 
+    IC_SLV_DATA_NACK_ONLY ............. 0x1 
+    IC_10BITADDR_SLAVE ................ 0x0 
+    IC_CLK_TYPE ....................... 0x0 
+    IC_SMBUS_UDID_MSB ................. 0x0 
+    IC_SMBUS_SUSPEND_ALERT ............ 0x0 
+    IC_HS_SCL_HIGH_COUNT .............. 0x0006 
+    IC_SLV_RESTART_DET_EN ............. 0x1 
+    IC_SMBUS .......................... 0x0 
+    IC_OPTIONAL_SAR_DEFAULT ........... 0x0 
+    IC_PERSISTANT_SLV_ADDR_DEFAULT .... 0x0 
+    IC_USE_COUNTS ..................... 0x0 
+    IC_RX_BUFFER_DEPTH ................ 16 
+    IC_SCL_STUCK_TIMEOUT_DEFAULT ...... 0xffffffff 
+    IC_RX_FULL_HLD_BUS_EN ............. 0x1 
+    IC_SLAVE_DISABLE .................. 0x1 
+    IC_RX_TL .......................... 0x0 
+    IC_DEVICE_ID ...................... 0x0 
+    IC_HC_COUNT_VALUES ................ 0x0 
+    I2C_DYNAMIC_TAR_UPDATE ............ 0 
+    IC_SMBUS_CLK_LOW_MEXT_DEFAULT ..... 0xffffffff 
+    IC_SMBUS_CLK_LOW_SEXT_DEFAULT ..... 0xffffffff 
+    IC_HS_MASTER_CODE ................. 0x1 
+    IC_SMBUS_RST_IDLE_CNT_DEFAULT ..... 0xffff 
+    IC_SMBUS_UDID_LSB_DEFAULT ......... 0xffffffff 
+    IC_SS_SCL_HIGH_COUNT .............. 0x0028 
+    IC_SS_SCL_LOW_COUNT ............... 0x002f 
+    IC_MAX_SPEED_MODE ................. 0x2 
+    IC_STAT_FOR_CLK_STRETCH ........... 0x0 
+    IC_STOP_DET_IF_MASTER_ACTIVE ...... 0x0 
+    IC_DEFAULT_UFM_SPKLEN ............. 0x1 
+    IC_TX_BUFFER_DEPTH ................ 16 (I2C0)
+</pre> </div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="af48854543950f0355ff8b2a55413f260" name="af48854543950f0355ff8b2a55413f260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48854543950f0355ff8b2a55413f260">&#9670;&#160;</a></span>IC_ACK_GENERAL_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_ACK_GENERAL_CALL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C ACK General Call Register The register controls whether DW_apb_i2c responds with a ACK or NACK when it receives an I2C General Call address. </p>
+<p>This register is applicable only when the DW_apb_i2c is in slave mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4d69b42cd7747d35bf4a0f343768f837" name="a4d69b42cd7747d35bf4a0f343768f837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d69b42cd7747d35bf4a0f343768f837">&#9670;&#160;</a></span>IC_CLR_ACTIVITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_ACTIVITY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear ACTIVITY Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad03b5dca4f277d5f2414f81c104e5844" name="ad03b5dca4f277d5f2414f81c104e5844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03b5dca4f277d5f2414f81c104e5844">&#9670;&#160;</a></span>IC_CLR_GEN_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_GEN_CALL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear GEN_CALL Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8d7b705efb87af518afc950c58b933ab" name="a8d7b705efb87af518afc950c58b933ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d7b705efb87af518afc950c58b933ab">&#9670;&#160;</a></span>IC_CLR_INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear Combined and Individual Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aba12c8f6f46994ad01d23c100908081b" name="aba12c8f6f46994ad01d23c100908081b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba12c8f6f46994ad01d23c100908081b">&#9670;&#160;</a></span>IC_CLR_RD_REQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_RD_REQ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear RD_REQ Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aeb64c02a0ca39131a313a160c63fead3" name="aeb64c02a0ca39131a313a160c63fead3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb64c02a0ca39131a313a160c63fead3">&#9670;&#160;</a></span>IC_CLR_RESTART_DET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_RESTART_DET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear RESTART_DET Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aff2890ddf700cf1a0ea626b0d5bf594d" name="aff2890ddf700cf1a0ea626b0d5bf594d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2890ddf700cf1a0ea626b0d5bf594d">&#9670;&#160;</a></span>IC_CLR_RX_DONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_RX_DONE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear RX_DONE Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="ace0eea8c0bf5d5411620eb7d44452c12" name="ace0eea8c0bf5d5411620eb7d44452c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0eea8c0bf5d5411620eb7d44452c12">&#9670;&#160;</a></span>IC_CLR_RX_OVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_RX_OVER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear RX_OVER Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8f68a46a0bceef728bcc060c0ef48900" name="a8f68a46a0bceef728bcc060c0ef48900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f68a46a0bceef728bcc060c0ef48900">&#9670;&#160;</a></span>IC_CLR_RX_UNDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_RX_UNDER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear RX_UNDER Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa53030fbacca2f684dc596931cd772a3" name="aa53030fbacca2f684dc596931cd772a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa53030fbacca2f684dc596931cd772a3">&#9670;&#160;</a></span>IC_CLR_START_DET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_START_DET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear START_DET Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab82bb3a32b2e1edc41bc40d3d97f7a0d" name="ab82bb3a32b2e1edc41bc40d3d97f7a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab82bb3a32b2e1edc41bc40d3d97f7a0d">&#9670;&#160;</a></span>IC_CLR_STOP_DET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_STOP_DET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear STOP_DET Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="abfa2a48bd16098ad21416c19f637ae3b" name="abfa2a48bd16098ad21416c19f637ae3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa2a48bd16098ad21416c19f637ae3b">&#9670;&#160;</a></span>IC_CLR_TX_ABRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_TX_ABRT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear TX_ABRT Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae71d0cebae0b1a82a8c8f5c68fee944e" name="ae71d0cebae0b1a82a8c8f5c68fee944e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71d0cebae0b1a82a8c8f5c68fee944e">&#9670;&#160;</a></span>IC_CLR_TX_OVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CLR_TX_OVER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear TX_OVER Interrupt Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a00e711546bccd9747519bcf0516ec0d0" name="a00e711546bccd9747519bcf0516ec0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e711546bccd9747519bcf0516ec0d0">&#9670;&#160;</a></span>IC_COMP_PARAM_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_COMP_PARAM_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Component Parameter Register 1 Note This register is not implemented and therefore reads as 0. </p>
+<p>If it was implemented it would be a constant read-only register that contains encoded information about the component's parameter settings. Fields shown below are the settings for those parameters <br  />
+ </p>
+
+</div>
+</div>
+<a id="abd18e19cacb8145b2f539e307c63fde3" name="abd18e19cacb8145b2f539e307c63fde3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd18e19cacb8145b2f539e307c63fde3">&#9670;&#160;</a></span>IC_COMP_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_COMP_TYPE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Component Type Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8578469098d37c692934b3dedbc56b95" name="a8578469098d37c692934b3dedbc56b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8578469098d37c692934b3dedbc56b95">&#9670;&#160;</a></span>IC_COMP_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_COMP_VERSION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Component Version Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a07e15f95dff23ae0a31d8f3cdf382aec" name="a07e15f95dff23ae0a31d8f3cdf382aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e15f95dff23ae0a31d8f3cdf382aec">&#9670;&#160;</a></span>IC_CON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_CON</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; I2C0 Structure <br  />
+ </p>
+<p>I2C Control Register. This register can be written only when the DW_apb_i2c is disabled, which corresponds to the IC_ENABLE[0] register being set to 0. Writes at other times have no effect. Read/Write Access: - bit 10 is read only. - bit 11 is read only - bit 16 is read only - bit 17 is read only - bits 18 and 19 are read only. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5de2d104864c9367eaed625dba09e0de" name="a5de2d104864c9367eaed625dba09e0de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5de2d104864c9367eaed625dba09e0de">&#9670;&#160;</a></span>IC_DATA_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_DATA_CMD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Rx/Tx Data Buffer and Command Register; this is the register the CPU writes to when filling the TX FIFO and the CPU reads from when retrieving bytes from RX FIFO. </p>
+<p>The size of the register changes as follows: Write: - 11 bits when IC_EMPTYFIFO_HOLD_MASTER_EN=1 - 9 bits when IC_EMPTYFIFO_HOLD_MASTER_EN=0 Read: - 12 bits when IC_FIRST_DATA_BYTE_STATUS = 1 - 8 bits when IC_FIRST_DATA_BYTE_STATUS = 0 Note: In order for the DW_apb_i2c to continue acknowledging reads, a read command should be written for every byte that is to be received; otherwise the DW_apb_i2c will stop acknowledging. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab2227706b27c7dc6405e3c54d1381bba" name="ab2227706b27c7dc6405e3c54d1381bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2227706b27c7dc6405e3c54d1381bba">&#9670;&#160;</a></span>IC_DMA_CR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_DMA_CR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA Control Register The register is used to enable the DMA Controller interface operation. </p>
+<p>There is a separate bit for transmit and receive. This can be programmed regardless of the state of IC_ENABLE. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2f9ef80f668784dfe96aceb2535a4689" name="a2f9ef80f668784dfe96aceb2535a4689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9ef80f668784dfe96aceb2535a4689">&#9670;&#160;</a></span>IC_DMA_RDLR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_DMA_RDLR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Receive Data Level Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9a11534343e534953eb2559438a88d9a" name="a9a11534343e534953eb2559438a88d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a11534343e534953eb2559438a88d9a">&#9670;&#160;</a></span>IC_DMA_TDLR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_DMA_TDLR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA Transmit Data Level Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4ee6236a4ee1bb9e01ad14c2f5b544ea" name="a4ee6236a4ee1bb9e01ad14c2f5b544ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee6236a4ee1bb9e01ad14c2f5b544ea">&#9670;&#160;</a></span>IC_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Enable Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a692d07143740345aa9609c75694d35e5" name="a692d07143740345aa9609c75694d35e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692d07143740345aa9609c75694d35e5">&#9670;&#160;</a></span>IC_ENABLE_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_ENABLE_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Enable Status Register The register is used to report the DW_apb_i2c hardware status when the IC_ENABLE[0] register is set from 1 to 0; that is, when DW_apb_i2c is disabled. </p>
+<p>If IC_ENABLE[0] has been set to 1, bits 2:1 are forced to 0, and bit 0 is forced to 1. If IC_ENABLE[0] has been set to 0, bits 2:1 is only be valid as soon as bit 0 is read as '0'. Note: When IC_ENABLE[0] has been set to 0, a delay occurs for bit 0 to be read as 0 because disabling the DW_apb_i2c depends on I2C bus activities. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5f7f28b98ce28f657550b98550354af9" name="a5f7f28b98ce28f657550b98550354af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7f28b98ce28f657550b98550354af9">&#9670;&#160;</a></span>IC_FS_SCL_HCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_FS_SCL_HCNT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fast Mode or Fast Mode Plus I2C Clock SCL High Count Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="afcc6a044caad5fac8b1736b8302a6b0f" name="afcc6a044caad5fac8b1736b8302a6b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc6a044caad5fac8b1736b8302a6b0f">&#9670;&#160;</a></span>IC_FS_SCL_LCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_FS_SCL_LCNT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fast Mode or Fast Mode Plus I2C Clock SCL Low Count Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a26002631cde72efb8bdcd575d4f99c36" name="a26002631cde72efb8bdcd575d4f99c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26002631cde72efb8bdcd575d4f99c36">&#9670;&#160;</a></span>IC_FS_SPKLEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_FS_SPKLEN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C SS, FS or FM+ spike suppression limit This register is used to store the duration, measured in ic_clk cycles, of the longest spike that is filtered out by the spike suppression logic when the component is operating in SS, FS or FM+ modes. </p>
+<p>The relevant I2C requirement is tSP (table 4) as detailed in the I2C Bus Specification. This register must be programmed with a minimum value of 1. <br  />
+ </p>
+
+</div>
+</div>
+<a id="afc932dc9612c40a4d899e17e51c49fdd" name="afc932dc9612c40a4d899e17e51c49fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc932dc9612c40a4d899e17e51c49fdd">&#9670;&#160;</a></span>IC_INTR_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_INTR_MASK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Interrupt Mask Register. </p>
+<p>These bits mask their corresponding interrupt status bits. This register is active low; a value of 0 masks the interrupt, whereas a value of 1 unmasks the interrupt. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a554a6055362b121a1ebb5d59f7bc6c91" name="a554a6055362b121a1ebb5d59f7bc6c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554a6055362b121a1ebb5d59f7bc6c91">&#9670;&#160;</a></span>IC_INTR_STAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_INTR_STAT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Interrupt Status Register Each bit in this register has a corresponding mask bit in the IC_INTR_MASK register. </p>
+<p>These bits are cleared by reading the matching interrupt clear register. The unmasked raw versions of these bits are available in the IC_RAW_INTR_STAT register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8a71b36274fd0902b1ace3fed4c6c676" name="a8a71b36274fd0902b1ace3fed4c6c676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a71b36274fd0902b1ace3fed4c6c676">&#9670;&#160;</a></span>IC_RAW_INTR_STAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_RAW_INTR_STAT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Raw Interrupt Status Register Unlike the IC_INTR_STAT register, these bits are not masked so they always show the true status of the DW_apb_i2c. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ac4a66438e33d61445e03deba7dd2b889" name="ac4a66438e33d61445e03deba7dd2b889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a66438e33d61445e03deba7dd2b889">&#9670;&#160;</a></span>IC_RX_TL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_RX_TL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Receive FIFO Threshold Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a71626b8fc91a9adfdb640a5216f6661c" name="a71626b8fc91a9adfdb640a5216f6661c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71626b8fc91a9adfdb640a5216f6661c">&#9670;&#160;</a></span>IC_RXFLR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_RXFLR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Receive FIFO Level Register This register contains the number of valid data entries in the receive FIFO buffer. </p>
+<p>It is cleared whenever: - The I2C is disabled - Whenever there is a transmit abort caused by any of the events tracked in IC_TX_ABRT_SOURCE The register increments whenever data is placed into the receive FIFO and decrements when data is taken from the receive FIFO. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a53cccea70140edcf7006e9ed4167f9db" name="a53cccea70140edcf7006e9ed4167f9db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53cccea70140edcf7006e9ed4167f9db">&#9670;&#160;</a></span>IC_SAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_SAR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Slave Address Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6bb9d1590484dc9ee2c99cdd5e3639e4" name="a6bb9d1590484dc9ee2c99cdd5e3639e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb9d1590484dc9ee2c99cdd5e3639e4">&#9670;&#160;</a></span>IC_SDA_HOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_SDA_HOLD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C SDA Hold Time Length Register The bits [15:0] of this register are used to control the hold time of SDA during transmit in both slave and master mode (after SCL goes from HIGH to LOW). </p>
+<p>The bits [23:16] of this register are used to extend the SDA transition (if any) whenever SCL is HIGH in the receiver in either master or slave mode. Writes to this register succeed only when IC_ENABLE[0]=0. The values in this register are in units of ic_clk period. The value programmed in IC_SDA_TX_HOLD must be greater than the minimum hold time in each mode (one cycle in master mode, seven cycles in slave mode) for the value to be implemented. The programmed SDA hold time during transmit (IC_SDA_TX_HOLD) cannot exceed at any time the duration of the low part of scl. Therefore the programmed value cannot be larger than N_SCL_LOW-2, where N_SCL_LOW is the duration of the low part of the scl period measured in ic_clk cycles. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a96012581c0b92c2166964ec987991fce" name="a96012581c0b92c2166964ec987991fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96012581c0b92c2166964ec987991fce">&#9670;&#160;</a></span>IC_SDA_SETUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_SDA_SETUP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C SDA Setup Register This register controls the amount of time delay (in terms of number of ic_clk clock periods) introduced in the rising edge of SCL - relative to SDA changing - when DW_apb_i2c services a read request in a slave-transmitter operation. </p>
+<p>The relevant I2C requirement is tSU:DAT (note 4) as detailed in the I2C Bus Specification. This register must be programmed with a value equal to or greater than 2. Writes to this register succeed only when IC_ENABLE[0] = 0. Note: The length of setup time is calculated using [(IC_SDA_SETUP - 1) * (ic_clk_period)], so if the user requires 10 ic_clk periods of setup time, they should program a value of 11. The IC_SDA_SETUP register is only used by the DW_apb_i2c when operating as a slave transmitter. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af3e231baf5f5aa9bd8cda39d1ef204cb" name="af3e231baf5f5aa9bd8cda39d1ef204cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e231baf5f5aa9bd8cda39d1ef204cb">&#9670;&#160;</a></span>IC_SLV_DATA_NACK_ONLY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_SLV_DATA_NACK_ONLY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate Slave Data NACK Register The register is used to generate a NACK for the data part of a transfer when DW_apb_i2c is acting as a slave-receiver. </p>
+<p>This register only exists when the IC_SLV_DATA_NACK_ONLY parameter is set to 1. When this parameter disabled, this register does not exist and writing to the register's address has no effect. A write can occur on this register if both of the following conditions are met: - DW_apb_i2c is disabled (IC_ENABLE[0] = 0) - Slave part is inactive (IC_STATUS[6] = 0) Note: The IC_STATUS[6] is a register read-back location for the internal slv_activity signal; the user should poll this before writing the ic_slv_data_nack_onl bit. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad6364edb3031aa72adfeb7c76305a46c" name="ad6364edb3031aa72adfeb7c76305a46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6364edb3031aa72adfeb7c76305a46c">&#9670;&#160;</a></span>IC_SS_SCL_HCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_SS_SCL_HCNT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Standard Speed I2C Clock SCL High Count Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae897a6cb53f07fb0ff2695086563afc1" name="ae897a6cb53f07fb0ff2695086563afc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae897a6cb53f07fb0ff2695086563afc1">&#9670;&#160;</a></span>IC_SS_SCL_LCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_SS_SCL_LCNT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Standard Speed I2C Clock SCL Low Count Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aad9a9e0ea6a97123138ebde3292bfad3" name="aad9a9e0ea6a97123138ebde3292bfad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9a9e0ea6a97123138ebde3292bfad3">&#9670;&#160;</a></span>IC_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Status Register This is a read-only register used to indicate the current transfer status and FIFO status. </p>
+<p>The status register may be read at any time. None of the bits in this register request an interrupt. When the I2C is disabled by writing 0 in bit 0 of the IC_ENABLE register: - Bits 1 and 2 are set to 1 - Bits 3 and 10 are set to 0 When the master or slave state machines goes to idle and ic_en=0:</p><ul>
+<li>Bits 5 and 6 are set to 0 <br  />
+ </li>
+</ul>
+
+</div>
+</div>
+<a id="a9e551130af1de465a70b0921381ca944" name="a9e551130af1de465a70b0921381ca944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e551130af1de465a70b0921381ca944">&#9670;&#160;</a></span>IC_TAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_TAR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Target Address Register This register is 12 bits wide, and bits 31:12 are reserved. </p>
+<p>This register can be written to only when IC_ENABLE[0] is set to 0. Note: If the software or application is aware that the DW_apb_i2c is not using the TAR address for the pending commands in the Tx FIFO, then it is possible to update the TAR address even while the Tx FIFO has entries (IC_STATUS[2]= 0). - It is not necessary to perform any write to this register if DW_apb_i2c is enabled as an I2C slave only. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a04005ccf4436c2c7cde8b152aafd2cb2" name="a04005ccf4436c2c7cde8b152aafd2cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04005ccf4436c2c7cde8b152aafd2cb2">&#9670;&#160;</a></span>IC_TX_ABRT_SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_TX_ABRT_SOURCE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Transmit Abort Source Register This register has 32 bits that indicate the source of the TX_ABRT bit. </p>
+<p>Except for Bit 9, this register is cleared whenever the IC_CLR_TX_ABRT register or the IC_CLR_INTR register is read. To clear Bit 9, the source of the ABRT_SBYTE_NORSTRT must be fixed first; RESTART must be enabled (IC_CON[5]=1), the SPECIAL bit must be cleared (IC_TAR[11]), or the GC_OR_START bit must be cleared (IC_TAR[10]). Once the source of the ABRT_SBYTE_NORSTRT is fixed, then this bit can be cleared in the same manner as other bits in this register. If the source of the ABRT_SBYTE_NORSTRT is not fixed before attempting to clear this bit, Bit 9 clears for one cycle and is then re-asserted. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5bd7b90f71dbbbb16d591d818e302aa7" name="a5bd7b90f71dbbbb16d591d818e302aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd7b90f71dbbbb16d591d818e302aa7">&#9670;&#160;</a></span>IC_TX_TL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_TX_TL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Transmit FIFO Threshold Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aba4a1076e0eb87b095d481215b46048d" name="aba4a1076e0eb87b095d481215b46048d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4a1076e0eb87b095d481215b46048d">&#9670;&#160;</a></span>IC_TXFLR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::IC_TXFLR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C Transmit FIFO Level Register This register contains the number of valid data entries in the transmit FIFO buffer. </p>
+<p>It is cleared whenever: - The I2C is disabled - There is a transmit abort - that is, TX_ABRT bit is set in the IC_RAW_INTR_STAT register - The slave bulk transmit mode is aborted The register increments whenever data is placed into the transmit FIFO and decrements when data is taken from the transmit FIFO. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a65bd7eeea1fab347f0757a8114b3d598" name="a65bd7eeea1fab347f0757a8114b3d598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65bd7eeea1fab347f0757a8114b3d598">&#9670;&#160;</a></span>RESERVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::RESERVED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6edf5eb8d7a92219fd01bae93d1aeea8" name="a6edf5eb8d7a92219fd01bae93d1aeea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6edf5eb8d7a92219fd01bae93d1aeea8">&#9670;&#160;</a></span>RESERVED1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::RESERVED1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14dd06594409757536aee4d0efb1bbe0" name="a14dd06594409757536aee4d0efb1bbe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14dd06594409757536aee4d0efb1bbe0">&#9670;&#160;</a></span>RESERVED2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::RESERVED2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae49b43c3f12429b791cc58c258283cfa" name="ae49b43c3f12429b791cc58c258283cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49b43c3f12429b791cc58c258283cfa">&#9670;&#160;</a></span>RESERVED3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> I2C0_Type::RESERVED3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structI2C0__Type.html">I2C0_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1049 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de cmsis_tiarmclang_m.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('cmsis__tiarmclang__m_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">cmsis_tiarmclang_m.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="cmsis__tiarmclang__m_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2023-2024 Arm Limited. All rights reserved.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: Apache-2.0</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * Licensed under the Apache License, Version 2.0 (the License); you may</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * distributed under the License is distributed on an AS IS BASIS, WITHOUT</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * CMSIS-Core(M) Compiler TIARMClang Header File</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef __CMSIS_TIARMCLANG_M_H</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define __CMSIS_TIARMCLANG_M_H</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#pragma clang system_header   </span><span class="comment">/* treat file as system include file */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#if (__ARM_ACLE &gt;= 200)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">  #include &lt;arm_acle.h&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">  #error Compiler must support ACLE V2.0</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_ACLE &gt;= 200) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/* CMSIS compiler specific defines */</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifndef   __ASM</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">   36</a></span><span class="preprocessor">  #define __ASM                                  __asm</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifndef   __INLINE</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#ade2d8d7118f8ff49547f60aa0c3382bb">   39</a></span><span class="preprocessor">  #define __INLINE                               __inline</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#ifndef   __STATIC_INLINE</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#aba87361bfad2ae52cfe2f40c1a1dbf9c">   42</a></span><span class="preprocessor">  #define __STATIC_INLINE                        static __inline</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifndef   __STATIC_FORCEINLINE</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">   45</a></span><span class="preprocessor">  #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static __inline</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef   __NO_RETURN</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a153a4a31b276a9758959580538720a51">   48</a></span><span class="preprocessor">  #define __NO_RETURN                            __attribute__((__noreturn__))</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifndef   __USED</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a3e40e4c553fc11588f7a4c2a19e789e0">   51</a></span><span class="preprocessor">  #define __USED                                 __attribute__((used))</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#ifndef   __WEAK</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#ac607bf387b29162be6a9b77fc7999539">   54</a></span><span class="preprocessor">  #define __WEAK                                 __attribute__((weak))</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#ifndef   __PACKED</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#abe8996d3d985ee1529475443cc635bf1">   57</a></span><span class="preprocessor">  #define __PACKED                               __attribute__((packed, aligned(1)))</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#ifndef   __PACKED_STRUCT</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a4dbb70fab85207c27b581ecb6532b314">   60</a></span><span class="preprocessor">  #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#ifndef   __PACKED_UNION</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a6fba34d08b0a526830b4231d2ea0b89a">   63</a></span><span class="preprocessor">  #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#ifndef   __UNALIGNED_UINT16_WRITE</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">  #pragma clang diagnostic push</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">  #pragma clang diagnostic ignored &quot;-Wpacked&quot;</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#ac962a9aa89cef6e5cde0fe6b067f7de3">   68</a></span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a4dbb70fab85207c27b581ecb6532b314">__PACKED_STRUCT</a> <a class="code hl_variable" href="cmsis__tiarmclang__m_8h.html#ac962a9aa89cef6e5cde0fe6b067f7de3">T_UINT16_WRITE</a> { <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> v; };</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">  #pragma clang diagnostic pop</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a5103fb373cae9837cc4a384be55dc87f">   70</a></span><span class="preprocessor">  #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-&gt;v) = (val))</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#ifndef   __UNALIGNED_UINT16_READ</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">  #pragma clang diagnostic push</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">  #pragma clang diagnostic ignored &quot;-Wpacked&quot;</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a86899dc41c5b3b9ce6b8014ee0e852b9">   75</a></span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a4dbb70fab85207c27b581ecb6532b314">__PACKED_STRUCT</a> <a class="code hl_variable" href="cmsis__tiarmclang__m_8h.html#a86899dc41c5b3b9ce6b8014ee0e852b9">T_UINT16_READ</a> { <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> v; };</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">  #pragma clang diagnostic pop</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#ab71b66e5ce403158d3dee62a59f9175f">   77</a></span><span class="preprocessor">  #define __UNALIGNED_UINT16_READ(addr)          (((const struct T_UINT16_READ *)(const void *)(addr))-&gt;v)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#ifndef   __UNALIGNED_UINT32_WRITE</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">  #pragma clang diagnostic push</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">  #pragma clang diagnostic ignored &quot;-Wpacked&quot;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#abbd193dec7cb45f1fbd05ff7e366ffe2">   82</a></span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a4dbb70fab85207c27b581ecb6532b314">__PACKED_STRUCT</a> <a class="code hl_variable" href="cmsis__tiarmclang__m_8h.html#abbd193dec7cb45f1fbd05ff7e366ffe2">T_UINT32_WRITE</a> { <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> v; };</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">  #pragma clang diagnostic pop</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a203f593d140ed88b81bc189edc861110">   84</a></span><span class="preprocessor">  #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-&gt;v) = (val))</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#ifndef   __UNALIGNED_UINT32_READ</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">  #pragma clang diagnostic push</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">  #pragma clang diagnostic ignored &quot;-Wpacked&quot;</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a9653a1cbf01ec418e8e940ee3996b8ca">   89</a></span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a4dbb70fab85207c27b581ecb6532b314">__PACKED_STRUCT</a> <a class="code hl_variable" href="cmsis__tiarmclang__m_8h.html#a9653a1cbf01ec418e8e940ee3996b8ca">T_UINT32_READ</a> { <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> v; };</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">  #pragma clang diagnostic pop</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a3b931f0b051b8c1a6377a3dcc7559b5e">   91</a></span><span class="preprocessor">  #define __UNALIGNED_UINT32_READ(addr)          (((const struct T_UINT32_READ *)(const void *)(addr))-&gt;v)</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#ifndef   __ALIGNED</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#aa65ef8f7a5e8b7a6ea6c1d48b4c78e55">   94</a></span><span class="preprocessor">  #define __ALIGNED(x)                           __attribute__((aligned(x)))</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#ifndef   __RESTRICT</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a378ac21329d33f561f90265eef89f564">   97</a></span><span class="preprocessor">  #define __RESTRICT                             __restrict</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#ifndef   __COMPILER_BARRIER</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a6516fb12ab0dd45c734f8cef7d921af6">  100</a></span><span class="preprocessor">  #define __COMPILER_BARRIER()                   __ASM volatile(&quot;&quot;:::&quot;memory&quot;)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#ifndef __NO_INIT</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a541e3bdeb73ef92c9a18ea2f7082bf5d">  103</a></span><span class="preprocessor">  #define __NO_INIT                              __attribute__ ((section (&quot;.noinit&quot;)))</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#ifndef __ALIAS</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#adcc4d5357fba5c28342fcc703e449f33">  106</a></span><span class="preprocessor">  #define __ALIAS(x)                             __attribute__ ((alias(x)))</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/* #########################  Startup and Lowlevel Init  ######################## */</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#ifndef __PROGRAM_START</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a72db8b026c5e100254080fefabd9fd88">  111</a></span><span class="preprocessor">#define __PROGRAM_START           _c_int00</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#ifndef __INITIAL_SP</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a1002e751427b1189f92787d4e4eef965">  115</a></span><span class="preprocessor">#define __INITIAL_SP              __STACK_END</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#ifndef __STACK_LIMIT</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a84b0bad4aa39632d3faea46aa1e102a8">  119</a></span><span class="preprocessor">#define __STACK_LIMIT             __STACK_SIZE</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#ifndef __VECTOR_TABLE</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#ab94ebeb20055f1848d7b707d3c7cfc5d">  123</a></span><span class="preprocessor">#define __VECTOR_TABLE            __Vectors</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#ifndef __VECTOR_TABLE_ATTRIBUTE</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="cmsis__tiarmclang__m_8h.html#a4f65c96effa79fbd610fea43ee7d745b">  127</a></span><span class="preprocessor">#define __VECTOR_TABLE_ATTRIBUTE  __attribute__((used, section(&quot;.intvecs&quot;)))</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#ifndef __STACK_SEAL</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#define __STACK_SEAL              Image$$STACKSEAL$$ZI$$Base</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#ifndef __TZ_STACK_SEAL_SIZE</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#define __TZ_STACK_SEAL_SIZE      8U</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#ifndef __TZ_STACK_SEAL_VALUE</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="preprocessor">#define __TZ_STACK_SEAL_VALUE     0xFEF5EDA5FEF5EDA5ULL</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_STACKSEAL_S</a> (<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>* <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">stackTop</a>) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  *((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">stackTop</a>) = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_STACK_SEAL_VALUE</a>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">/* ##########################  Core Instruction Access  ######################### */</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">/* Define macros for porting to both thumb1 and thumb2.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment"> * For thumb1, use low register (r0-r7), specified by constraint &quot;l&quot;</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment"> * Otherwise, use general registers, specified by constraint &quot;r&quot; */</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">#if defined (__thumb__) &amp;&amp; !defined (__thumb2__)</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#define __CMSIS_GCC_OUT_REG(r) &quot;=l&quot; (r)</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#define __CMSIS_GCC_RW_REG(r) &quot;+l&quot; (r)</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#define __CMSIS_GCC_USE_REG(r) &quot;l&quot; (r)</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gabc17e391c13c71702366c67cba39c276">  164</a></span><span class="preprocessor">#define __CMSIS_GCC_OUT_REG(r) &quot;=r&quot; (r)</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga03179f79efee45c226dddfb8d824ad83">  165</a></span><span class="preprocessor">#define __CMSIS_GCC_RW_REG(r) &quot;+r&quot; (r)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga9d94dee7402367961d2cf0accc00fd97">  166</a></span><span class="preprocessor">#define __CMSIS_GCC_USE_REG(r) &quot;r&quot; (r)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga0b13f3617dd4af2cd2eb3a311073f717">  173</a></span><span class="preprocessor">#define __NOP() __nop()</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gab28e2b328c4cf23c917ab18a23194f8e">  180</a></span><span class="preprocessor">#define __WFI() __wfi()</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gaf0330712223f4cfb6091e4ab84775f73">  188</a></span><span class="preprocessor">#define __WFE() __wfe()</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gafa58e60fcd2176ad58f96947466ea1fa">  195</a></span><span class="preprocessor">#define __SEV() __sev()</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gaad233022e850a009fc6f7602be1182f6">  204</a></span><span class="preprocessor">#define __ISB() __isb(0xF)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga067d257a2b34565410acefb5afef2203">  212</a></span><span class="preprocessor">#define __DSB() __dsb(0xF)</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga671101179b5943990785f36f8c1e2269">  220</a></span><span class="preprocessor">#define __DMB() __dmb(0xF)</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gaca25a02e09983da5558f5242f2f635bc">  229</a></span><span class="preprocessor">#define __REV(value) __rev(value)</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gad35497777af37e7809271b5e6f9510ba">  238</a></span><span class="preprocessor">#define __REV16(value) __rev16(value)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gae580812686119c9c5cf3c11a7519a404">  247</a></span><span class="preprocessor">#define __REVSH(value) __revsh(value)</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#gaf9d93e9acd8741e52faef4520d3b4d05">  257</a></span><span class="preprocessor">#define __ROR(op1, op2) __ror(op1, op2)</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga15ea6bd3c507d3e81c3b3a1258e46397">  267</a></span><span class="preprocessor">#define __BKPT(value)     __ASM volatile (&quot;bkpt &quot;#value)</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga0ffdc7f8b90076408f400768a7f5e372">  276</a></span><span class="preprocessor">#define __RBIT(value)  __rbit(value)</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="group__CMSIS__Core__InstructionInterface.html#ga8c74711af7896cdfc3271eca9c4d2511">  285</a></span><span class="preprocessor">#define __CLZ(value) __clz(value)</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">/* __ARM_FEATURE_SAT is wrong for for Armv8-M Baseline devices */</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="preprocessor">#if ((__ARM_FEATURE_SAT    &gt;= 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">     (__ARM_ARCH_ISA_THUMB &gt;= 2)    )</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="preprocessor">#define __SSAT(value, sat) __ssat(value, sat)</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="preprocessor">#define __USAT(value, sat) __usat(value, sat)</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">#else </span><span class="comment">/* (__ARM_FEATURE_SAT &gt;= 1) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_function" href="group__CMSIS__Core__InstructionInterface.html#ga372c0535573dde3e37f0f08c774a3487">__SSAT</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a>)</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>{</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordflow">if</span> ((<a class="code hl_variable" href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a> &gt;= 1U) &amp;&amp; (<a class="code hl_variable" href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a> &lt;= 32U))</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  {</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keyword">const</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">max</a> = (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a>)((1U &lt;&lt; (<a class="code hl_variable" href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a> - 1U)) - 1U);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keyword">const</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min</a> = -1 - <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">max</a> ;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a> &gt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">max</a>)</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    {</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>      <span class="keywordflow">return</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">max</a>);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a> &lt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min</a>)</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    {</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>      <span class="keywordflow">return</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">min</a>);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    }</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keywordflow">return</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__CMSIS__Core__InstructionInterface.html#ga6562dbd8182d1571e22dbca7ebdfa9bc">__USAT</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a>)</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>{</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a> &lt;= 31U)</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  {</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">max</a> = ((1U &lt;&lt; <a class="code hl_variable" href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a>) - 1U);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a> &gt; (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a>)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">max</a>)</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>      <span class="keywordflow">return</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">max</a>);</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    }</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a> &lt; 0)</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    {</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>      <span class="keywordflow">return</span> (0<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    }</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  }</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>);</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>}</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_FEATURE_SAT &gt;= 1) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">#if (__ARM_FEATURE_LDREX &gt;= 1)</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">#define __CLREX             __builtin_arm_clrex</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="preprocessor">#define __LDREXB        (uint8_t)__builtin_arm_ldrex</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="preprocessor">#define __STREXB        (uint32_t)__builtin_arm_strex</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_FEATURE_LDREX &gt;= 1) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="preprocessor">#if (__ARM_FEATURE_LDREX &gt;= 2)</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="preprocessor">#define __LDREXH        (uint16_t)__builtin_arm_ldrex</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="preprocessor">#define __STREXH        (uint32_t)__builtin_arm_strex</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_FEATURE_LDREX &gt;= 2) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="preprocessor">#if (__ARM_FEATURE_LDREX &gt;= 4)</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="preprocessor">#define __LDREXW        (uint32_t)__builtin_arm_ldrex</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="preprocessor">#define __STREXW        (uint32_t)__builtin_arm_strex</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_FEATURE_LDREX &gt;= 4) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span><span class="preprocessor">#if (__ARM_ARCH_ISA_THUMB &gt;= 2)</span></div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__RRX</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> value)</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>{</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;rrx %0, %1&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) : <span class="stringliteral">&quot;r&quot;</span> (value));</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>}</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__LDRBT</a>(<span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>{</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span> </div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;ldrbt %0, %1&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) : <span class="stringliteral">&quot;Q&quot;</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>) );</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>  <span class="keywordflow">return</span> ((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>)result);    <span class="comment">/* Add explicit type cast here */</span></div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>}</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__LDRHT</a>(<span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>{</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span> </div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;ldrht %0, %1&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) : <span class="stringliteral">&quot;Q&quot;</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>) );</div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>  <span class="keywordflow">return</span> ((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a>)result);    <span class="comment">/* Add explicit type cast here */</span></div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>}</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span> </div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__LDRT</a>(<span class="keyword">volatile</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>{</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span> </div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;ldrt %0, %1&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) : <span class="stringliteral">&quot;Q&quot;</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>) );</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>}</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__STRBT</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> value, <span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>{</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;strbt %1, %0&quot;</span> : <span class="stringliteral">&quot;=Q&quot;</span> (*ptr) : <span class="stringliteral">&quot;r&quot;</span> ((<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)value) );</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>}</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span> </div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span> </div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__STRHT</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> value, <span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>{</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;strht %1, %0&quot;</span> : <span class="stringliteral">&quot;=Q&quot;</span> (*ptr) : <span class="stringliteral">&quot;r&quot;</span> ((<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)value) );</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>}</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__STRT</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> value, <span class="keyword">volatile</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>{</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;strt %1, %0&quot;</span> : <span class="stringliteral">&quot;=Q&quot;</span> (*ptr) : <span class="stringliteral">&quot;r&quot;</span> (value) );</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>}</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_ARCH_ISA_THUMB &gt;= 2) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span> </div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="preprocessor">#if (__ARM_ARCH &gt;= 8)</span></div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__LDAB</a>(<span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>{</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;ldab %0, %1&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) : <span class="stringliteral">&quot;Q&quot;</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>) : <span class="stringliteral">&quot;memory&quot;</span> );</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>  <span class="keywordflow">return</span> ((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>)result);    <span class="comment">/* Add explicit type cast here */</span></div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>}</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span> </div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__LDAH</a>(<span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>{</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;ldah %0, %1&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) : <span class="stringliteral">&quot;Q&quot;</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>) : <span class="stringliteral">&quot;memory&quot;</span> );</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  <span class="keywordflow">return</span> ((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a>)result);    <span class="comment">/* Add explicit type cast here */</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>}</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__LDA</a>(<span class="keyword">volatile</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>{</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;lda %0, %1&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) : <span class="stringliteral">&quot;Q&quot;</span> (*<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>) : <span class="stringliteral">&quot;memory&quot;</span> );</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>}</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__STLB</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> value, <span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>{</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;stlb %1, %0&quot;</span> : <span class="stringliteral">&quot;=Q&quot;</span> (*ptr) : <span class="stringliteral">&quot;r&quot;</span> ((<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)value) : <span class="stringliteral">&quot;memory&quot;</span> );</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>}</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__STLH</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> value, <span class="keyword">volatile</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>{</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;stlh %1, %0&quot;</span> : <span class="stringliteral">&quot;=Q&quot;</span> (*ptr) : <span class="stringliteral">&quot;r&quot;</span> ((<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)value) : <span class="stringliteral">&quot;memory&quot;</span> );</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>}</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__STL</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> value, <span class="keyword">volatile</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>{</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;stl %1, %0&quot;</span> : <span class="stringliteral">&quot;=Q&quot;</span> (*ptr) : <span class="stringliteral">&quot;r&quot;</span> ((<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>)value) : <span class="stringliteral">&quot;memory&quot;</span> );</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>}</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="preprocessor">#define     __LDAEXB                 (uint8_t)__builtin_arm_ldaex</span></div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="preprocessor">#define     __LDAEXH                 (uint16_t)__builtin_arm_ldaex</span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="preprocessor">#define     __LDAEX                  (uint32_t)__builtin_arm_ldaex</span></div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="preprocessor">#define     __STLEXB                 (uint32_t)__builtin_arm_stlex</span></div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="preprocessor">#define     __STLEXH                 (uint32_t)__builtin_arm_stlex</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span><span class="preprocessor">#define     __STLEX                  (uint32_t)__builtin_arm_stlex</span></div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_ARCH &gt;= 8) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
+ <span class="comment">/* end of group CMSIS_Core_InstructionInterface */</span><div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="comment">/* ###########################  Core Function Access  ########################### */</span></div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="preprocessor">#ifndef __ARM_COMPAT_H</span></div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_define" href="cmsis__iccarm_8h.html#a6c141f2890d12b9c0f56eaed4e4846c8">__enable_irq</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>{</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;cpsie i&quot;</span> : : : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>}</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span> </div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span><span class="preprocessor">#ifndef __ARM_COMPAT_H</span></div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_define" href="cmsis__iccarm_8h.html#a6cb98c1adc8a28bc3b48649a3421195d">__disable_irq</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>{</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;cpsid i&quot;</span> : : : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>}</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#ga7dd5c942bee32f055b90153feb950f59">__get_CONTROL</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>{</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span> </div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, control&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>}</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span> </div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_CONTROL_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>{</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span> </div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, control_ns&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>}</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#ga0102d0939d9b26c5c792be6bf5fd550f">__set_CONTROL</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">control</a>)</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>{</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR control, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">control</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>  <a class="code hl_define" href="group__CMSIS__Core__InstructionInterface.html#gaad233022e850a009fc6f7602be1182f6">__ISB</a>();</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>}</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_CONTROL_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">control</a>)</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>{</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR control_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">control</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>  <a class="code hl_define" href="group__CMSIS__Core__InstructionInterface.html#gaad233022e850a009fc6f7602be1182f6">__ISB</a>();</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>}</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span> </div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#gaf15a71855b9d731d11de92704c82bd18">__get_IPSR</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>{</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span> </div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, ipsr&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>}</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#gadff4f1e599946e8ae96fba17b5245f04">__get_APSR</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>{</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, apsr&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>}</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span> </div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_define" href="cmsis__iccarm_8h.html#ad0fa4773e9c51500ee78bc4daa88341b">__get_xPSR</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>{</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span> </div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, xpsr&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>}</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span> </div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#ga826c53e30812e350c77f58aac9f42bcb">__get_PSP</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>{</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span> </div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, psp&quot;</span>  : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>}</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_PSP_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>{</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, psp_ns&quot;</span>  : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>}</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span> </div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#ga21f50fc02c3927a8ebf0bc3678c06862">__set_PSP</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfProcStack</a>)</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>{</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR psp, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfProcStack</a>) : );</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>}</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span> </div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span> </div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_PSP_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfProcStack</a>)</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>{</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR psp_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfProcStack</a>) : );</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>}</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span> </div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#ga667e7b8b97b4a30f445ae45d37588e45">__get_MSP</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>{</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span> </div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, msp&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>}</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span> </div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_MSP_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>{</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span> </div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, msp_ns&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>}</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span> </div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#ga08b66e2b60a46fada36d90d2bc1e7c9b">__set_MSP</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfMainStack</a>)</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>{</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR msp, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfMainStack</a>) : );</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>}</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span> </div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_MSP_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfMainStack</a>)</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>{</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR msp_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfMainStack</a>) : );</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>}</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_SP_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>{</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span> </div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, sp_ns&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>}</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span> </div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span> </div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_SP_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfStack</a>)</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>{</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR sp_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">topOfStack</a>) : );</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>}</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span> </div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#ga4ff59fb9e280d19e79e6875863a65f0a">__get_PRIMASK</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>{</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span> </div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, primask&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>}</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span> </div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_PRIMASK_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>{</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, primask_ns&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>}</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span> </div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span> </div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_function" href="group__CMSIS__Core__RegAccFunctions.html#gaf4a17d3be7dbb066489836d849930d92">__set_PRIMASK</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">priMask</a>)</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>{</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR primask, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">priMask</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>}</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span> </div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span> </div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_PRIMASK_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">priMask</a>)</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>{</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR primask_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">priMask</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>}</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span> </div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span><span class="preprocessor">#if (__ARM_ARCH_ISA_THUMB &gt;= 2)</span></div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__enable_fault_irq</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>{</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;cpsie f&quot;</span> : : : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>}</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span> </div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span> </div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__disable_fault_irq</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>{</div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;cpsid f&quot;</span> : : : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>}</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span> </div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__get_BASEPRI</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>{</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span> </div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, basepri&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>}</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span> </div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span> </div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_BASEPRI_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>{</div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span> </div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, basepri_ns&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>}</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span> </div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span> </div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__set_BASEPRI</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">basePri</a>)</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>{</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR basepri, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">basePri</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>}</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span> </div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span> </div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_BASEPRI_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">basePri</a>)</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>{</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR basepri_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">basePri</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>}</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span> </div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span> </div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__set_BASEPRI_MAX</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">basePri</a>)</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>{</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR basepri_max, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">basePri</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>}</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span> </div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span> </div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__get_FAULTMASK</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>{</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span> </div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, faultmask&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>}</div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span> </div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span> </div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_FAULTMASK_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>{</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span> </div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, faultmask_ns&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>}</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span> </div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span> </div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__set_FAULTMASK</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">faultMask</a>)</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>{</div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR faultmask, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">faultMask</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>}</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span> </div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span> </div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_FAULTMASK_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">faultMask</a>)</div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>{</div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR faultmask_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">faultMask</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>}</div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span> </div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_ARCH_ISA_THUMB &gt;= 2) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span> </div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span> </div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span><span class="preprocessor">#if (__ARM_ARCH &gt;= 8)</span></div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__get_PSPLIM</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>{</div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span><span class="preprocessor">#if (((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span><span class="preprocessor">      (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    ) &amp;&amp; \</span></div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span><span class="preprocessor">     (__ARM_FEATURE_CMSE &lt; 3)              )</span></div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>  <span class="comment">/* without main extensions, the non-secure PSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>  <span class="keywordflow">return</span> (0<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>);</div>
+<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, psplim&quot;</span>  : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>}</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span> </div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_PSPLIM_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>{</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span><span class="preprocessor">#if ((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span><span class="preprocessor">     (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    )</span></div>
+<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>  <span class="comment">/* without main extensions, the non-secure PSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>  <span class="keywordflow">return</span> (0<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>);</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, psplim_ns&quot;</span>  : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>}</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span> </div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span> </div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__set_PSPLIM</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProcStackPtrLimit</a>)</div>
+<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>{</div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span><span class="preprocessor">#if (((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span><span class="preprocessor">      (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    ) &amp;&amp; \</span></div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span><span class="preprocessor">     (__ARM_FEATURE_CMSE &lt; 3)              )</span></div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>  <span class="comment">/* without main extensions, the non-secure PSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>  (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProcStackPtrLimit</a>;</div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR psplim, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProcStackPtrLimit</a>));</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>}</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span> </div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span> </div>
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_PSPLIM_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProcStackPtrLimit</a>)</div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>{</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span><span class="preprocessor">#if ((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span><span class="preprocessor">     (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    )</span></div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>  <span class="comment">/* without main extensions, the non-secure PSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>  (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProcStackPtrLimit</a>;</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR psplim_ns, %0\n&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProcStackPtrLimit</a>));</div>
+<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>}</div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span> </div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span> </div>
+<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__get_MSPLIM</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>{</div>
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span><span class="preprocessor">#if (((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span><span class="preprocessor">      (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    ) &amp;&amp; \</span></div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span><span class="preprocessor">     (__ARM_FEATURE_CMSE &lt; 3)              )</span></div>
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>  <span class="comment">/* without main extensions, the non-secure MSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>  <span class="keywordflow">return</span> (0<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>);</div>
+<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, msplim&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>}</div>
+<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span> </div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span> </div>
+<div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_get_MSPLIM_NS</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>{</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span><span class="preprocessor">#if ((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span><span class="preprocessor">     (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    )</span></div>
+<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>  <span class="comment">/* without main extensions, the non-secure MSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>  <span class="keywordflow">return</span> (0<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>);</div>
+<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>  <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> result;</div>
+<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MRS %0, msplim_ns&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result) );</div>
+<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>}</div>
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span> </div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span> </div>
+<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__set_MSPLIM</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">MainStackPtrLimit</a>)</div>
+<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>{</div>
+<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span><span class="preprocessor">#if (((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span><span class="preprocessor">      (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    ) &amp;&amp; \</span></div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span><span class="preprocessor">     (__ARM_FEATURE_CMSE &lt; 3)              )</span></div>
+<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>  <span class="comment">/* without main extensions, the non-secure MSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>  (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">MainStackPtrLimit</a>;</div>
+<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR msplim, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">MainStackPtrLimit</a>));</div>
+<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>}</div>
+<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span> </div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span> </div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span><span class="preprocessor">#if (__ARM_FEATURE_CMSE == 3)</span></div>
+<div class="line"><a id="l01314" name="l01314"></a><span class="lineno"> 1314</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__TZ_set_MSPLIM_NS</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">MainStackPtrLimit</a>)</div>
+<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"> 1315</span>{</div>
+<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span><span class="preprocessor">#if ((__ARM_ARCH_8M_MAIN__   &lt; 1) &amp;&amp; \</span></div>
+<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span><span class="preprocessor">     (__ARM_ARCH_8_1M_MAIN__ &lt; 1)    )</span></div>
+<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>  <span class="comment">/* without main extensions, the non-secure MSPLIM is RAZ/WI */</span></div>
+<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>  (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">MainStackPtrLimit</a>;</div>
+<div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;MSR msplim_ns, %0&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">MainStackPtrLimit</a>));</div>
+<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>}</div>
+<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span> </div>
+<div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_ARCH &gt;= 8) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span> </div>
+<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span> </div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_define" href="group__CMSIS__Core__RegAccFunctions.html#ga4d0739b1355ca5642a7ce76df1271f01">__get_FPSCR</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>{</div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span><span class="preprocessor">#if (defined(__ARM_FP) &amp;&amp; (__ARM_FP &gt;= 1))</span></div>
+<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>  <span class="keywordflow">return</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__builtin_arm_get_fpscr</a>());</div>
+<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>  <span class="keywordflow">return</span> (0<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>);</div>
+<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>}</div>
+<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span> </div>
+<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span> </div>
+<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <span class="keywordtype">void</span> <a class="code hl_define" href="group__CMSIS__Core__RegAccFunctions.html#ga3cd91c42ad2793c3f3ae553a1b975512">__set_FPSCR</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fpscr</a>)</div>
+<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>{</div>
+<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span><span class="preprocessor">#if (defined(__ARM_FP) &amp;&amp; (__ARM_FP &gt;= 1))</span></div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>  <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__builtin_arm_set_fpscr</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fpscr</a>);</div>
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>  (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fpscr</a>;</div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>}</div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span> </div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span> </div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span><span class="comment">/* ###################  Compiler specific Intrinsics  ########################### */</span></div>
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span><span class="preprocessor">#if (__ARM_FEATURE_DSP == 1)</span></div>
+<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span><span class="preprocessor">#define     __SADD8                 __sadd8</span></div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span><span class="preprocessor">#define     __QADD8                 __qadd8</span></div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span><span class="preprocessor">#define     __SHADD8                __shadd8</span></div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span><span class="preprocessor">#define     __UADD8                 __uadd8</span></div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span><span class="preprocessor">#define     __UQADD8                __uqadd8</span></div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span><span class="preprocessor">#define     __UHADD8                __uhadd8</span></div>
+<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span><span class="preprocessor">#define     __SSUB8                 __ssub8</span></div>
+<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span><span class="preprocessor">#define     __QSUB8                 __qsub8</span></div>
+<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span><span class="preprocessor">#define     __SHSUB8                __shsub8</span></div>
+<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span><span class="preprocessor">#define     __USUB8                 __usub8</span></div>
+<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span><span class="preprocessor">#define     __UQSUB8                __uqsub8</span></div>
+<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span><span class="preprocessor">#define     __UHSUB8                __uhsub8</span></div>
+<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span><span class="preprocessor">#define     __SADD16                __sadd16</span></div>
+<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span><span class="preprocessor">#define     __QADD16                __qadd16</span></div>
+<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span><span class="preprocessor">#define     __SHADD16               __shadd16</span></div>
+<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span><span class="preprocessor">#define     __UADD16                __uadd16</span></div>
+<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span><span class="preprocessor">#define     __UQADD16               __uqadd16</span></div>
+<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span><span class="preprocessor">#define     __UHADD16               __uhadd16</span></div>
+<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span><span class="preprocessor">#define     __SSUB16                __ssub16</span></div>
+<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span><span class="preprocessor">#define     __QSUB16                __qsub16</span></div>
+<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span><span class="preprocessor">#define     __SHSUB16               __shsub16</span></div>
+<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span><span class="preprocessor">#define     __USUB16                __usub16</span></div>
+<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span><span class="preprocessor">#define     __UQSUB16               __uqsub16</span></div>
+<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span><span class="preprocessor">#define     __UHSUB16               __uhsub16</span></div>
+<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span><span class="preprocessor">#define     __SASX                  __sasx</span></div>
+<div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span><span class="preprocessor">#define     __QASX                  __qasx</span></div>
+<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span><span class="preprocessor">#define     __SHASX                 __shasx</span></div>
+<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span><span class="preprocessor">#define     __UASX                  __uasx</span></div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span><span class="preprocessor">#define     __UQASX                 __uqasx</span></div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span><span class="preprocessor">#define     __UHASX                 __uhasx</span></div>
+<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span><span class="preprocessor">#define     __SSAX                  __ssax</span></div>
+<div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span><span class="preprocessor">#define     __QSAX                  __qsax</span></div>
+<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span><span class="preprocessor">#define     __SHSAX                 __shsax</span></div>
+<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span><span class="preprocessor">#define     __USAX                  __usax</span></div>
+<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span><span class="preprocessor">#define     __UQSAX                 __uqsax</span></div>
+<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span><span class="preprocessor">#define     __UHSAX                 __uhsax</span></div>
+<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span><span class="preprocessor">#define     __USAD8                 __usad8</span></div>
+<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span><span class="preprocessor">#define     __USADA8                __usada8</span></div>
+<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span><span class="preprocessor">#define     __SSAT16                __ssat16</span></div>
+<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span><span class="preprocessor">#define     __USAT16                __usat16</span></div>
+<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span><span class="preprocessor">#define     __UXTB16                __uxtb16</span></div>
+<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span><span class="preprocessor">#define     __UXTAB16               __uxtab16</span></div>
+<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span><span class="preprocessor">#define     __SXTB16                __sxtb16</span></div>
+<div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span><span class="preprocessor">#define     __SXTAB16               __sxtab16</span></div>
+<div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span><span class="preprocessor">#define     __SMUAD                 __smuad</span></div>
+<div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span><span class="preprocessor">#define     __SMUADX                __smuadx</span></div>
+<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span><span class="preprocessor">#define     __SMLAD                 __smlad</span></div>
+<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span><span class="preprocessor">#define     __SMLADX                __smladx</span></div>
+<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span><span class="preprocessor">#define     __SMLALD                __smlald</span></div>
+<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span><span class="preprocessor">#define     __SMLALDX               __smlaldx</span></div>
+<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span><span class="preprocessor">#define     __SMUSD                 __smusd</span></div>
+<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span><span class="preprocessor">#define     __SMUSDX                __smusdx</span></div>
+<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span><span class="preprocessor">#define     __SMLSD                 __smlsd</span></div>
+<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span><span class="preprocessor">#define     __SMLSDX                __smlsdx</span></div>
+<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span><span class="preprocessor">#define     __SMLSLD                __smlsld</span></div>
+<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span><span class="preprocessor">#define     __SMLSLDX               __smlsldx</span></div>
+<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span><span class="preprocessor">#define     __SEL                   __sel</span></div>
+<div class="line"><a id="l01426" name="l01426"></a><span class="lineno"> 1426</span><span class="preprocessor">#define     __QADD                  __qadd</span></div>
+<div class="line"><a id="l01427" name="l01427"></a><span class="lineno"> 1427</span><span class="preprocessor">#define     __QSUB                  __qsub</span></div>
+<div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span> </div>
+<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span><span class="preprocessor">#define __PKHBT(ARG1,ARG2,ARG3)          ( ((((uint32_t)(ARG1))          ) &amp; 0x0000FFFFUL) |  \</span></div>
+<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span><span class="preprocessor">                                           ((((uint32_t)(ARG2)) &lt;&lt; (ARG3)) &amp; 0xFFFF0000UL)  )</span></div>
+<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span> </div>
+<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span><span class="preprocessor">#define __PKHTB(ARG1,ARG2,ARG3)          ( ((((uint32_t)(ARG1))          ) &amp; 0xFFFF0000UL) |  \</span></div>
+<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span><span class="preprocessor">                                           ((((uint32_t)(ARG2)) &gt;&gt; (ARG3)) &amp; 0x0000FFFFUL)  )</span></div>
+<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span> </div>
+<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span><span class="preprocessor">#define __SXTB16_RORn(ARG1, ARG2)        __SXTB16(__ROR(ARG1, ARG2))</span></div>
+<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span> </div>
+<div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span><span class="preprocessor">#define __SXTAB16_RORn(ARG1, ARG2, ARG3) __SXTAB16(ARG1, __ROR(ARG2, ARG3))</span></div>
+<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span> </div>
+<div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span><a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__SMMLA</a> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">op1</a>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">op2</a>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">op3</a>)</div>
+<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>{</div>
+<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>  <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> result;</div>
+<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span> </div>
+<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>  <a class="code hl_define" href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;smmla %0, %1, %2, %3&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (result): <span class="stringliteral">&quot;r&quot;</span>  (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">op1</a>), <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">op2</a>), <span class="stringliteral">&quot;r&quot;</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">op3</a>) );</div>
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>}</div>
+<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span> </div>
+<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span><span class="preprocessor">#endif </span><span class="comment">/* (__ARM_FEATURE_DSP == 1) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span><span class="preprocessor">#endif </span><span class="comment">/* __CMSIS_TIARMCLANG_M_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="acmsis__iccarm_8h_html_a6c141f2890d12b9c0f56eaed4e4846c8"><div class="ttname"><a href="cmsis__iccarm_8h.html#a6c141f2890d12b9c0f56eaed4e4846c8">__enable_irq</a></div><div class="ttdeci">#define __enable_irq</div><div class="ttdef"><b>Definição</b> cmsis_iccarm.h:606</div></div>
+<div class="ttc" id="acmsis__iccarm_8h_html_a6cb98c1adc8a28bc3b48649a3421195d"><div class="ttname"><a href="cmsis__iccarm_8h.html#a6cb98c1adc8a28bc3b48649a3421195d">__disable_irq</a></div><div class="ttdeci">#define __disable_irq</div><div class="ttdef"><b>Definição</b> cmsis_iccarm.h:607</div></div>
+<div class="ttc" id="acmsis__iccarm_8h_html_ad0fa4773e9c51500ee78bc4daa88341b"><div class="ttname"><a href="cmsis__iccarm_8h.html#ad0fa4773e9c51500ee78bc4daa88341b">__get_xPSR</a></div><div class="ttdeci">#define __get_xPSR</div><div class="ttdef"><b>Definição</b> cmsis_iccarm.h:610</div></div>
+<div class="ttc" id="acmsis__tiarmclang__m_8h_html_a1378040bcf22428955c6e3ce9c2053cd"><div class="ttname"><a href="cmsis__tiarmclang__m_8h.html#a1378040bcf22428955c6e3ce9c2053cd">__ASM</a></div><div class="ttdeci">#define __ASM</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:36</div></div>
+<div class="ttc" id="acmsis__tiarmclang__m_8h_html_a4dbb70fab85207c27b581ecb6532b314"><div class="ttname"><a href="cmsis__tiarmclang__m_8h.html#a4dbb70fab85207c27b581ecb6532b314">__PACKED_STRUCT</a></div><div class="ttdeci">#define __PACKED_STRUCT</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:60</div></div>
+<div class="ttc" id="acmsis__tiarmclang__m_8h_html_a86899dc41c5b3b9ce6b8014ee0e852b9"><div class="ttname"><a href="cmsis__tiarmclang__m_8h.html#a86899dc41c5b3b9ce6b8014ee0e852b9">T_UINT16_READ</a></div><div class="ttdeci">__PACKED_STRUCT T_UINT16_READ</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:75</div></div>
+<div class="ttc" id="acmsis__tiarmclang__m_8h_html_a9653a1cbf01ec418e8e940ee3996b8ca"><div class="ttname"><a href="cmsis__tiarmclang__m_8h.html#a9653a1cbf01ec418e8e940ee3996b8ca">T_UINT32_READ</a></div><div class="ttdeci">__PACKED_STRUCT T_UINT32_READ</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:89</div></div>
+<div class="ttc" id="acmsis__tiarmclang__m_8h_html_ab904513442afdf77d4f8c74f23cbb040"><div class="ttname"><a href="cmsis__tiarmclang__m_8h.html#ab904513442afdf77d4f8c74f23cbb040">__STATIC_FORCEINLINE</a></div><div class="ttdeci">#define __STATIC_FORCEINLINE</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:45</div></div>
+<div class="ttc" id="acmsis__tiarmclang__m_8h_html_abbd193dec7cb45f1fbd05ff7e366ffe2"><div class="ttname"><a href="cmsis__tiarmclang__m_8h.html#abbd193dec7cb45f1fbd05ff7e366ffe2">T_UINT32_WRITE</a></div><div class="ttdeci">__PACKED_STRUCT T_UINT32_WRITE</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:82</div></div>
+<div class="ttc" id="acmsis__tiarmclang__m_8h_html_ac962a9aa89cef6e5cde0fe6b067f7de3"><div class="ttname"><a href="cmsis__tiarmclang__m_8h.html#ac962a9aa89cef6e5cde0fe6b067f7de3">T_UINT16_WRITE</a></div><div class="ttdeci">__PACKED_STRUCT T_UINT16_WRITE</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:68</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__InstructionInterface_html_ga372c0535573dde3e37f0f08c774a3487"><div class="ttname"><a href="group__CMSIS__Core__InstructionInterface.html#ga372c0535573dde3e37f0f08c774a3487">__SSAT</a></div><div class="ttdeci">__STATIC_FORCEINLINE int32_t __SSAT(int32_t val, uint32_t sat)</div><div class="ttdoc">Signed Saturate.</div><div class="ttdef"><b>Definição</b> cmsis_armclang.h:282</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__InstructionInterface_html_ga6562dbd8182d1571e22dbca7ebdfa9bc"><div class="ttname"><a href="group__CMSIS__Core__InstructionInterface.html#ga6562dbd8182d1571e22dbca7ebdfa9bc">__USAT</a></div><div class="ttdeci">__STATIC_FORCEINLINE uint32_t __USAT(int32_t val, uint32_t sat)</div><div class="ttdoc">Unsigned Saturate.</div><div class="ttdef"><b>Definição</b> cmsis_armclang.h:308</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__InstructionInterface_html_gaad233022e850a009fc6f7602be1182f6"><div class="ttname"><a href="group__CMSIS__Core__InstructionInterface.html#gaad233022e850a009fc6f7602be1182f6">__ISB</a></div><div class="ttdeci">#define __ISB()</div><div class="ttdoc">Instruction Synchronization Barrier.</div><div class="ttdef"><b>Definição</b> cmsis_tiarmclang_m.h:204</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__InstructionInterface_html_gaafcad33f86db3a8e1f55925989f9d2dc"><div class="ttname"><a href="group__CMSIS__Core__InstructionInterface.html#gaafcad33f86db3a8e1f55925989f9d2dc">sat</a></div><div class="ttdeci">uint32_t sat</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:755</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga0102d0939d9b26c5c792be6bf5fd550f"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga0102d0939d9b26c5c792be6bf5fd550f">__set_CONTROL</a></div><div class="ttdeci">__STATIC_INLINE void __set_CONTROL(uint32_t control)</div><div class="ttdoc">Set Control Register.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:172</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga08b66e2b60a46fada36d90d2bc1e7c9b"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga08b66e2b60a46fada36d90d2bc1e7c9b">__set_MSP</a></div><div class="ttdeci">__STATIC_INLINE void __set_MSP(uint32_t topOfMainStack)</div><div class="ttdoc">Set Main Stack Pointer.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:256</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga21f50fc02c3927a8ebf0bc3678c06862"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga21f50fc02c3927a8ebf0bc3678c06862">__set_PSP</a></div><div class="ttdeci">__STATIC_INLINE void __set_PSP(uint32_t topOfProcStack)</div><div class="ttdoc">Set Process Stack Pointer.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:232</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga3cd91c42ad2793c3f3ae553a1b975512"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga3cd91c42ad2793c3f3ae553a1b975512">__set_FPSCR</a></div><div class="ttdeci">#define __set_FPSCR(x)</div><div class="ttdoc">Set FPSCR.</div><div class="ttdef"><b>Definição</b> cmsis_armclang_ltm.h:1383</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga4d0739b1355ca5642a7ce76df1271f01"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga4d0739b1355ca5642a7ce76df1271f01">__get_FPSCR</a></div><div class="ttdeci">#define __get_FPSCR()</div><div class="ttdoc">Get FPSCR.</div><div class="ttdef"><b>Definição</b> cmsis_armclang_ltm.h:1371</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga4ff59fb9e280d19e79e6875863a65f0a"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga4ff59fb9e280d19e79e6875863a65f0a">__get_PRIMASK</a></div><div class="ttdeci">__STATIC_INLINE uint32_t __get_PRIMASK(void)</div><div class="ttdoc">Get Priority Mask.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:268</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga667e7b8b97b4a30f445ae45d37588e45"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga667e7b8b97b4a30f445ae45d37588e45">__get_MSP</a></div><div class="ttdeci">__STATIC_INLINE uint32_t __get_MSP(void)</div><div class="ttdoc">Get Main Stack Pointer.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:244</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga7dd5c942bee32f055b90153feb950f59"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga7dd5c942bee32f055b90153feb950f59">__get_CONTROL</a></div><div class="ttdeci">__STATIC_INLINE uint32_t __get_CONTROL(void)</div><div class="ttdoc">Enable IRQ Interrupts.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:160</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_ga826c53e30812e350c77f58aac9f42bcb"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#ga826c53e30812e350c77f58aac9f42bcb">__get_PSP</a></div><div class="ttdeci">__STATIC_INLINE uint32_t __get_PSP(void)</div><div class="ttdoc">Get Process Stack Pointer.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:220</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_gadff4f1e599946e8ae96fba17b5245f04"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#gadff4f1e599946e8ae96fba17b5245f04">__get_APSR</a></div><div class="ttdeci">__STATIC_INLINE uint32_t __get_APSR(void)</div><div class="ttdoc">Get APSR Register.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:196</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_gaf15a71855b9d731d11de92704c82bd18"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#gaf15a71855b9d731d11de92704c82bd18">__get_IPSR</a></div><div class="ttdeci">__STATIC_INLINE uint32_t __get_IPSR(void)</div><div class="ttdoc">Get IPSR Register.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:184</div></div>
+<div class="ttc" id="agroup__CMSIS__Core__RegAccFunctions_html_gaf4a17d3be7dbb066489836d849930d92"><div class="ttname"><a href="group__CMSIS__Core__RegAccFunctions.html#gaf4a17d3be7dbb066489836d849930d92">__set_PRIMASK</a></div><div class="ttdeci">__STATIC_INLINE void __set_PRIMASK(uint32_t priMask)</div><div class="ttdoc">Set Priority Mask.</div><div class="ttdef"><b>Definição</b> cmsis_armcc.h:280</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_0e8989fea8ccf099f0fc16208c8507bd.html">cmsis</a></li><li class="navelem"><a class="el" href="dir_16c3c216facd2c52f74cd3e97b828a25.html">stub</a></li><li class="navelem"><a class="el" href="dir_2f19d458558785900f66b853aadf1e7a.html">CMSIS</a></li><li class="navelem"><a class="el" href="dir_42066cd9125f0e3528eb9491a6c86fd5.html">Core</a></li><li class="navelem"><a class="el" href="dir_4f88a420711dfc5bfe027d9bc210ba35.html">Include</a></li><li class="navelem"><a class="el" href="dir_33b6900dbb5ca5483d65dd86bd7268d3.html">m-profile</a></li><li class="navelem"><a class="el" href="cmsis__tiarmclang__m_8h.html">cmsis_tiarmclang_m.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro gpio.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro gpio.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico.h&quot;</code><br />
+<code>#include &quot;hardware/structs/sio.h&quot;</code><br />
+<code>#include &quot;hardware/structs/pads_bank0.h&quot;</code><br />
+<code>#include &quot;hardware/structs/io_bank0.h&quot;</code><br />
+<code>#include &quot;hardware/irq.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para rp2_common/hardware_gpio/include/hardware/gpio.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h__incl.svg" width="767" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a38bceaf4b611c47a1839a055bd6d2552" id="r_a38bceaf4b611c47a1839a055bd6d2552"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a38bceaf4b611c47a1839a055bd6d2552">CU_REGISTER_DEBUG_PINS</a>(...)&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">DEBUG_PIN_TYPE</a> { <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_none</a> = 0, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__VA_ARGS__</a> }; <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">DEBUG_PIN_TYPE</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__selected_debug_pins</a>;</td></tr>
+<tr class="separator:a38bceaf4b611c47a1839a055bd6d2552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba9410c462bdbb994d8514eabb7edbc" id="r_aeba9410c462bdbb994d8514eabb7edbc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#aeba9410c462bdbb994d8514eabb7edbc">CU_SELECT_DEBUG_PINS</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">DEBUG_PIN_TYPE</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__selected_debug_pins</a> = (<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>);</td></tr>
+<tr class="separator:aeba9410c462bdbb994d8514eabb7edbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88da8ef1b11d08229cb1954fb05af1f7" id="r_a88da8ef1b11d08229cb1954fb05af1f7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a88da8ef1b11d08229cb1954fb05af1f7">DEBUG_PINS_CLR</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>,  v)&#160;&#160;&#160;<a class="el" href="lexer_8cpp.html#ad4a65b873df5c05570846b5413b41dfd">if</a> (<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a1a27d6b4476ace95c088da7a30ebbe13">DEBUG_PINS_ENABLED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>)) <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a3fd974b65843a11fa7f62e9ca2a8b98a">gpio_clr_mask</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>)(v)&lt;&lt;<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8f575c4b2382dc5a5b33ae9f3536f92c">PICO_DEBUG_PIN_BASE</a>)</td></tr>
+<tr class="separator:a88da8ef1b11d08229cb1954fb05af1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a27d6b4476ace95c088da7a30ebbe13" id="r_a1a27d6b4476ace95c088da7a30ebbe13"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a1a27d6b4476ace95c088da7a30ebbe13">DEBUG_PINS_ENABLED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>)&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__selected_debug_pins</a> == (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>))</td></tr>
+<tr class="separator:a1a27d6b4476ace95c088da7a30ebbe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8885757fa08364182ea0f442155eeca0" id="r_a8885757fa08364182ea0f442155eeca0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8885757fa08364182ea0f442155eeca0">DEBUG_PINS_SET</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>,  v)&#160;&#160;&#160;<a class="el" href="lexer_8cpp.html#ad4a65b873df5c05570846b5413b41dfd">if</a> (<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a1a27d6b4476ace95c088da7a30ebbe13">DEBUG_PINS_ENABLED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>)) <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a7c42e4eef8f268b36f6d54cf7fd5212c">gpio_set_mask</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>)(v)&lt;&lt;<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8f575c4b2382dc5a5b33ae9f3536f92c">PICO_DEBUG_PIN_BASE</a>)</td></tr>
+<tr class="separator:a8885757fa08364182ea0f442155eeca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294dc71289462d28771c0c24bc596532" id="r_a294dc71289462d28771c0c24bc596532"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a294dc71289462d28771c0c24bc596532">DEBUG_PINS_XOR</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>,  v)&#160;&#160;&#160;<a class="el" href="lexer_8cpp.html#ad4a65b873df5c05570846b5413b41dfd">if</a> (<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a1a27d6b4476ace95c088da7a30ebbe13">DEBUG_PINS_ENABLED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>)) <a class="el" href="host_2hardware__gpio_2gpio_8c.html#ab39b3ee9eb6681d963c3a13d63e413b9">gpio_xor_mask</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>)(v)&lt;&lt;<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8f575c4b2382dc5a5b33ae9f3536f92c">PICO_DEBUG_PIN_BASE</a>)</td></tr>
+<tr class="separator:a294dc71289462d28771c0c24bc596532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d859292be1d4de39a8501ed968b9fe" id="r_a96d859292be1d4de39a8501ed968b9fe"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a96d859292be1d4de39a8501ed968b9fe">GPIO_IRQ_CALLBACK_ORDER_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a35fae10151154433571c1b149e0b1200">PICO_SHARED_IRQ_HANDLER_LOWEST_ORDER_PRIORITY</a></td></tr>
+<tr class="separator:a96d859292be1d4de39a8501ed968b9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ef069c2e7919c42afdfbd60af1963d" id="r_a88ef069c2e7919c42afdfbd60af1963d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a88ef069c2e7919c42afdfbd60af1963d">GPIO_RAW_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a767bbb33ddb413551944b144d1960c77">PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY</a></td></tr>
+<tr class="separator:a88ef069c2e7919c42afdfbd60af1963d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe0abb4598dc814a2701fd43cbc90b5" id="r_aefe0abb4598dc814a2701fd43cbc90b5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#aefe0abb4598dc814a2701fd43cbc90b5">PARAM_ASSERTIONS_ENABLED_HARDWARE_GPIO</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aefe0abb4598dc814a2701fd43cbc90b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f575c4b2382dc5a5b33ae9f3536f92c" id="r_a8f575c4b2382dc5a5b33ae9f3536f92c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8f575c4b2382dc5a5b33ae9f3536f92c">PICO_DEBUG_PIN_BASE</a>&#160;&#160;&#160;19<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a></td></tr>
+<tr class="separator:a8f575c4b2382dc5a5b33ae9f3536f92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870a07d4d0ad3706a524b6d0635d1e8f" id="r_a870a07d4d0ad3706a524b6d0635d1e8f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a870a07d4d0ad3706a524b6d0635d1e8f">PICO_DEBUG_PIN_COUNT</a>&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a></td></tr>
+<tr class="separator:a870a07d4d0ad3706a524b6d0635d1e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:ga8fcdfeff45cc2030530bf00c6ae1e0a3" id="r_ga8fcdfeff45cc2030530bf00c6ae1e0a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga8fcdfeff45cc2030530bf00c6ae1e0a3">gpio_irq_callback_t</a>) (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">event_mask</a>)</td></tr>
+<tr class="memdesc:ga8fcdfeff45cc2030530bf00c6ae1e0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function type for GPIO events.  <br /></td></tr>
+<tr class="separator:ga8fcdfeff45cc2030530bf00c6ae1e0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a27085b238a536b1a919497a563caf666" id="r_a27085b238a536b1a919497a563caf666"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a27085b238a536b1a919497a563caf666">gpio_dir</a> { <a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a27085b238a536b1a919497a563caf666a1b59f059dea546f0248fb26232ee3531">GPIO_OUT</a> = 1u
+, <a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a27085b238a536b1a919497a563caf666a3343e227f62c4c536efff81438a8e155">GPIO_IN</a> = 0u
+ }</td></tr>
+<tr class="separator:a27085b238a536b1a919497a563caf666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14eba84c1c8f80b08a770775d3bf060a" id="r_ga14eba84c1c8f80b08a770775d3bf060a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga14eba84c1c8f80b08a770775d3bf060a">gpio_drive_strength</a> { <a class="el" href="group__hardware__gpio.html#gga14eba84c1c8f80b08a770775d3bf060aa04d31285e4f4921102485e775e55e295">GPIO_DRIVE_STRENGTH_2MA</a> = 0
+, <a class="el" href="group__hardware__gpio.html#gga14eba84c1c8f80b08a770775d3bf060aa5c9d0b430fd44ee7688d58cf94f47de6">GPIO_DRIVE_STRENGTH_4MA</a> = 1
+, <a class="el" href="group__hardware__gpio.html#gga14eba84c1c8f80b08a770775d3bf060aa3cc28353572b5f8e8bb2eb80f884a98d">GPIO_DRIVE_STRENGTH_8MA</a> = 2
+, <a class="el" href="group__hardware__gpio.html#gga14eba84c1c8f80b08a770775d3bf060aa418f6be7649c316bab248b91c2eb1716">GPIO_DRIVE_STRENGTH_12MA</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga14eba84c1c8f80b08a770775d3bf060a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive strength levels for GPIO outputs.  <a href="group__hardware__gpio.html#ga14eba84c1c8f80b08a770775d3bf060a">Mais...</a><br /></td></tr>
+<tr class="separator:ga14eba84c1c8f80b08a770775d3bf060a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6347e27da3ab34f1ea65b5ae16ab724f" id="r_ga6347e27da3ab34f1ea65b5ae16ab724f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga6347e27da3ab34f1ea65b5ae16ab724f">gpio_irq_level</a> { <a class="el" href="group__hardware__gpio.html#gga6347e27da3ab34f1ea65b5ae16ab724fa1c66c5d8bd30302e7efb5aca467bb136">GPIO_IRQ_LEVEL_LOW</a> = 0x1u
+, <a class="el" href="group__hardware__gpio.html#gga6347e27da3ab34f1ea65b5ae16ab724faee23912609cd5f804358476dec7511de">GPIO_IRQ_LEVEL_HIGH</a> = 0x2u
+, <a class="el" href="group__hardware__gpio.html#gga6347e27da3ab34f1ea65b5ae16ab724fa1967e44a20619945c86b6fd73e3b0a59">GPIO_IRQ_EDGE_FALL</a> = 0x4u
+, <a class="el" href="group__hardware__gpio.html#gga6347e27da3ab34f1ea65b5ae16ab724fa1341b53a6f9d3f6fb65f57f3d16d289e">GPIO_IRQ_EDGE_RISE</a> = 0x8u
+ }</td></tr>
+<tr class="memdesc:ga6347e27da3ab34f1ea65b5ae16ab724f"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO Interrupt level definitions (GPIO events)  <a href="group__hardware__gpio.html#ga6347e27da3ab34f1ea65b5ae16ab724f">Mais...</a><br /></td></tr>
+<tr class="separator:ga6347e27da3ab34f1ea65b5ae16ab724f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga760c408911eb8aaad767d39df9e4e990" id="r_ga760c408911eb8aaad767d39df9e4e990"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga760c408911eb8aaad767d39df9e4e990">gpio_override</a> { <a class="el" href="group__hardware__gpio.html#gga760c408911eb8aaad767d39df9e4e990ab06a7f6c3884d4d4870f5aee7438e130">GPIO_OVERRIDE_NORMAL</a> = 0
+, <a class="el" href="group__hardware__gpio.html#gga760c408911eb8aaad767d39df9e4e990a1d047c6f785ba82c18c3f120841d17b5">GPIO_OVERRIDE_INVERT</a> = 1
+, <a class="el" href="group__hardware__gpio.html#gga760c408911eb8aaad767d39df9e4e990aab4dee7abb67c5d1cc213c810b9447ab">GPIO_OVERRIDE_LOW</a> = 2
+, <a class="el" href="group__hardware__gpio.html#gga760c408911eb8aaad767d39df9e4e990a716e4dd9554b27d65c2c88bcfd6e7dd4">GPIO_OVERRIDE_HIGH</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga760c408911eb8aaad767d39df9e4e990"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO override modes.  <a href="group__hardware__gpio.html#ga760c408911eb8aaad767d39df9e4e990">Mais...</a><br /></td></tr>
+<tr class="separator:ga760c408911eb8aaad767d39df9e4e990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72c250c9393043ea5beb56092d26e229" id="r_ga72c250c9393043ea5beb56092d26e229"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga72c250c9393043ea5beb56092d26e229">gpio_slew_rate</a> { <a class="el" href="group__hardware__gpio.html#gga72c250c9393043ea5beb56092d26e229a6173e20f5be765a136661c48f9766634">GPIO_SLEW_RATE_SLOW</a> = 0
+, <a class="el" href="group__hardware__gpio.html#gga72c250c9393043ea5beb56092d26e229a44b116ac7ac70a405c952a6054a1eade">GPIO_SLEW_RATE_FAST</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga72c250c9393043ea5beb56092d26e229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slew rate limiting levels for GPIO outputs.  <a href="group__hardware__gpio.html#ga72c250c9393043ea5beb56092d26e229">Mais...</a><br /></td></tr>
+<tr class="separator:ga72c250c9393043ea5beb56092d26e229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gaf745f0bcdaf049d2e060aa8971352a55" id="r_gaf745f0bcdaf049d2e060aa8971352a55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#gaf745f0bcdaf049d2e060aa8971352a55">gpio_add_raw_irq_handler_masked</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler)</td></tr>
+<tr class="memdesc:gaf745f0bcdaf049d2e060aa8971352a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a raw GPIO IRQ handler for the specified GPIOs on the current core.  <br /></td></tr>
+<tr class="separator:gaf745f0bcdaf049d2e060aa8971352a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24e5e9eed83f48ffe77f732b800f1405" id="r_ga24e5e9eed83f48ffe77f732b800f1405"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga24e5e9eed83f48ffe77f732b800f1405">gpio_add_raw_irq_handler_masked64</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler)</td></tr>
+<tr class="memdesc:ga24e5e9eed83f48ffe77f732b800f1405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a raw GPIO IRQ handler for the specified GPIOs on the current core.  <br /></td></tr>
+<tr class="separator:ga24e5e9eed83f48ffe77f732b800f1405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf43d2f09003804f535dc118688a9702c" id="r_gaf43d2f09003804f535dc118688a9702c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#gaf43d2f09003804f535dc118688a9702c">gpio_add_raw_irq_handler_with_order_priority_masked</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">order_priority</a>)</td></tr>
+<tr class="memdesc:gaf43d2f09003804f535dc118688a9702c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a raw GPIO IRQ handler for the specified GPIOs on the current core.  <br /></td></tr>
+<tr class="separator:gaf43d2f09003804f535dc118688a9702c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78f8d7c7c8fb66794f7c269311f145ae" id="r_ga78f8d7c7c8fb66794f7c269311f145ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga78f8d7c7c8fb66794f7c269311f145ae">gpio_add_raw_irq_handler_with_order_priority_masked64</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">order_priority</a>)</td></tr>
+<tr class="memdesc:ga78f8d7c7c8fb66794f7c269311f145ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a raw GPIO IRQ handler for the specified GPIOs on the current core.  <br /></td></tr>
+<tr class="separator:ga78f8d7c7c8fb66794f7c269311f145ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82efe48d938d76d8de6445739049465" id="r_ae82efe48d938d76d8de6445739049465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#ae82efe48d938d76d8de6445739049465">gpio_debug_pins_init</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ae82efe48d938d76d8de6445739049465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4df18d737955c17a65c5a94412826674" id="r_ga4df18d737955c17a65c5a94412826674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga4df18d737955c17a65c5a94412826674">gpio_deinit</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:ga4df18d737955c17a65c5a94412826674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets a GPIO back to the NULL function, i.e.  <br /></td></tr>
+<tr class="separator:ga4df18d737955c17a65c5a94412826674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1378540c24ec318ac7674dac4ec30140" id="r_ga1378540c24ec318ac7674dac4ec30140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a14eba84c1c8f80b08a770775d3bf060a">gpio_drive_strength</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga1378540c24ec318ac7674dac4ec30140">gpio_get_drive_strength</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:ga1378540c24ec318ac7674dac4ec30140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine current drive strength for a specified GPIO.  <br /></td></tr>
+<tr class="separator:ga1378540c24ec318ac7674dac4ec30140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24dabfcb46dde4daa8938b36df130c31" id="r_ga24dabfcb46dde4daa8938b36df130c31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hardware__gpio.html#ga1339fecb25e263eee2a6b9d362c3a946">gpio_function_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga24dabfcb46dde4daa8938b36df130c31">gpio_get_function</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:ga24dabfcb46dde4daa8938b36df130c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine current GPIO function.  <br /></td></tr>
+<tr class="separator:ga24dabfcb46dde4daa8938b36df130c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4422d9c09199d199e8fe736b3c29ae49" id="r_ga4422d9c09199d199e8fe736b3c29ae49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a72c250c9393043ea5beb56092d26e229">gpio_slew_rate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga4422d9c09199d199e8fe736b3c29ae49">gpio_get_slew_rate</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:ga4422d9c09199d199e8fe736b3c29ae49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine current slew rate for a specified GPIO.  <br /></td></tr>
+<tr class="separator:ga4422d9c09199d199e8fe736b3c29ae49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aa4741d93dc40bc728dbd3e41813ad1" id="r_ga8aa4741d93dc40bc728dbd3e41813ad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga8aa4741d93dc40bc728dbd3e41813ad1">gpio_init</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:ga8aa4741d93dc40bc728dbd3e41813ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise a GPIO for (enabled I/O and set func to GPIO_FUNC_SIO)  <br /></td></tr>
+<tr class="separator:ga8aa4741d93dc40bc728dbd3e41813ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f3ccb15297fecd3792359d9cbbf6ed6" id="r_ga2f3ccb15297fecd3792359d9cbbf6ed6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga2f3ccb15297fecd3792359d9cbbf6ed6">gpio_init_mask</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>)</td></tr>
+<tr class="memdesc:ga2f3ccb15297fecd3792359d9cbbf6ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise multiple GPIOs (enabled I/O and set func to GPIO_FUNC_SIO)  <br /></td></tr>
+<tr class="separator:ga2f3ccb15297fecd3792359d9cbbf6ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac451f3251c0d0bea97aa535f65974ec8" id="r_gac451f3251c0d0bea97aa535f65974ec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#gac451f3251c0d0bea97aa535f65974ec8">gpio_is_input_hysteresis_enabled</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:gac451f3251c0d0bea97aa535f65974ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether input hysteresis is enabled on a specified GPIO.  <br /></td></tr>
+<tr class="separator:gac451f3251c0d0bea97aa535f65974ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25b1f0b4dc42144da4ed3acbed513095" id="r_ga25b1f0b4dc42144da4ed3acbed513095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga25b1f0b4dc42144da4ed3acbed513095">gpio_remove_raw_irq_handler_masked</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler)</td></tr>
+<tr class="memdesc:ga25b1f0b4dc42144da4ed3acbed513095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a raw GPIO IRQ handler for the specified GPIOs on the current core.  <br /></td></tr>
+<tr class="separator:ga25b1f0b4dc42144da4ed3acbed513095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9310346a1f7b58ba6b6be82097980af6" id="r_ga9310346a1f7b58ba6b6be82097980af6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga9310346a1f7b58ba6b6be82097980af6">gpio_remove_raw_irq_handler_masked64</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler)</td></tr>
+<tr class="memdesc:ga9310346a1f7b58ba6b6be82097980af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a raw GPIO IRQ handler for the specified GPIOs on the current core.  <br /></td></tr>
+<tr class="separator:ga9310346a1f7b58ba6b6be82097980af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b10ec79e10d7df958373b178debcd2e" id="r_ga0b10ec79e10d7df958373b178debcd2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga0b10ec79e10d7df958373b178debcd2e">gpio_set_dormant_irq_enabled</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">event_mask</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> enabled)</td></tr>
+<tr class="memdesc:ga0b10ec79e10d7df958373b178debcd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable dormant wake up interrupt for specified GPIO and events.  <br /></td></tr>
+<tr class="separator:ga0b10ec79e10d7df958373b178debcd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ffe0ddabcd081b513731275df97e7ca" id="r_ga0ffe0ddabcd081b513731275df97e7ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga0ffe0ddabcd081b513731275df97e7ca">gpio_set_drive_strength</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a14eba84c1c8f80b08a770775d3bf060a">gpio_drive_strength</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">drive</a>)</td></tr>
+<tr class="memdesc:ga0ffe0ddabcd081b513731275df97e7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set drive strength for a specified GPIO.  <br /></td></tr>
+<tr class="separator:ga0ffe0ddabcd081b513731275df97e7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22f6b90c4c7e0013b4b5341de0a44fc4" id="r_ga22f6b90c4c7e0013b4b5341de0a44fc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga22f6b90c4c7e0013b4b5341de0a44fc4">gpio_set_function</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="group__hardware__gpio.html#ga1339fecb25e263eee2a6b9d362c3a946">gpio_function_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fn</a>)</td></tr>
+<tr class="memdesc:ga22f6b90c4c7e0013b4b5341de0a44fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select GPIO function.  <br /></td></tr>
+<tr class="separator:ga22f6b90c4c7e0013b4b5341de0a44fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32c1aae77b4b3bf42e9ae554d16284ab" id="r_ga32c1aae77b4b3bf42e9ae554d16284ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga32c1aae77b4b3bf42e9ae554d16284ab">gpio_set_function_masked</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__gpio.html#ga1339fecb25e263eee2a6b9d362c3a946">gpio_function_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fn</a>)</td></tr>
+<tr class="memdesc:ga32c1aae77b4b3bf42e9ae554d16284ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the function for multiple GPIOs.  <br /></td></tr>
+<tr class="separator:ga32c1aae77b4b3bf42e9ae554d16284ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83093178ba0ad7d711bff47fc90d361b" id="r_ga83093178ba0ad7d711bff47fc90d361b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga83093178ba0ad7d711bff47fc90d361b">gpio_set_function_masked64</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_mask</a>, <a class="el" href="group__hardware__gpio.html#ga1339fecb25e263eee2a6b9d362c3a946">gpio_function_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fn</a>)</td></tr>
+<tr class="memdesc:ga83093178ba0ad7d711bff47fc90d361b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the function for multiple GPIOs.  <br /></td></tr>
+<tr class="separator:ga83093178ba0ad7d711bff47fc90d361b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6037bdaf406a84336043c9a6c40e5073" id="r_ga6037bdaf406a84336043c9a6c40e5073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga6037bdaf406a84336043c9a6c40e5073">gpio_set_inover</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> value)</td></tr>
+<tr class="memdesc:ga6037bdaf406a84336043c9a6c40e5073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select GPIO input override.  <br /></td></tr>
+<tr class="separator:ga6037bdaf406a84336043c9a6c40e5073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74a8c3e55185581bc3df335aea1d0fb8" id="r_ga74a8c3e55185581bc3df335aea1d0fb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga74a8c3e55185581bc3df335aea1d0fb8">gpio_set_input_enabled</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> enabled)</td></tr>
+<tr class="memdesc:ga74a8c3e55185581bc3df335aea1d0fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable GPIO input.  <br /></td></tr>
+<tr class="separator:ga74a8c3e55185581bc3df335aea1d0fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f52eecc12d4348ef8bd1e17bdb4b107" id="r_ga1f52eecc12d4348ef8bd1e17bdb4b107"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga1f52eecc12d4348ef8bd1e17bdb4b107">gpio_set_input_hysteresis_enabled</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> enabled)</td></tr>
+<tr class="memdesc:ga1f52eecc12d4348ef8bd1e17bdb4b107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable GPIO input hysteresis (Schmitt trigger)  <br /></td></tr>
+<tr class="separator:ga1f52eecc12d4348ef8bd1e17bdb4b107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37b23dea291af5926735b5e8c87b7dbb" id="r_ga37b23dea291af5926735b5e8c87b7dbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga37b23dea291af5926735b5e8c87b7dbb">gpio_set_irq_callback</a> (<a class="el" href="group__hardware__gpio.html#ga8fcdfeff45cc2030530bf00c6ae1e0a3">gpio_irq_callback_t</a> callback)</td></tr>
+<tr class="memdesc:ga37b23dea291af5926735b5e8c87b7dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the generic callback used for GPIO IRQ events for the current core.  <br /></td></tr>
+<tr class="separator:ga37b23dea291af5926735b5e8c87b7dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08b1f920beba446c4d4385de999cf945" id="r_ga08b1f920beba446c4d4385de999cf945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga08b1f920beba446c4d4385de999cf945">gpio_set_irq_enabled</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">event_mask</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> enabled)</td></tr>
+<tr class="memdesc:ga08b1f920beba446c4d4385de999cf945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable specific interrupt events for specified GPIO.  <br /></td></tr>
+<tr class="separator:ga08b1f920beba446c4d4385de999cf945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6165f07f4b619dd08ea6dc97d069e78a" id="r_ga6165f07f4b619dd08ea6dc97d069e78a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga6165f07f4b619dd08ea6dc97d069e78a">gpio_set_irq_enabled_with_callback</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">event_mask</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> enabled, <a class="el" href="group__hardware__gpio.html#ga8fcdfeff45cc2030530bf00c6ae1e0a3">gpio_irq_callback_t</a> callback)</td></tr>
+<tr class="memdesc:ga6165f07f4b619dd08ea6dc97d069e78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function which performs multiple GPIO IRQ related initializations.  <br /></td></tr>
+<tr class="separator:ga6165f07f4b619dd08ea6dc97d069e78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9788ec1b8306c6bacfb578f0074eb3ad" id="r_ga9788ec1b8306c6bacfb578f0074eb3ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga9788ec1b8306c6bacfb578f0074eb3ad">gpio_set_irqover</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> value)</td></tr>
+<tr class="memdesc:ga9788ec1b8306c6bacfb578f0074eb3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set GPIO IRQ override.  <br /></td></tr>
+<tr class="separator:ga9788ec1b8306c6bacfb578f0074eb3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga250e767769daabb71b5ea8cab49b4463" id="r_ga250e767769daabb71b5ea8cab49b4463"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga250e767769daabb71b5ea8cab49b4463">gpio_set_oeover</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> value)</td></tr>
+<tr class="memdesc:ga250e767769daabb71b5ea8cab49b4463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select GPIO output enable override.  <br /></td></tr>
+<tr class="separator:ga250e767769daabb71b5ea8cab49b4463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga829129eed5d42f3455e9da339219d814" id="r_ga829129eed5d42f3455e9da339219d814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#ga829129eed5d42f3455e9da339219d814">gpio_set_outover</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> value)</td></tr>
+<tr class="memdesc:ga829129eed5d42f3455e9da339219d814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set GPIO output override.  <br /></td></tr>
+<tr class="separator:ga829129eed5d42f3455e9da339219d814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6bf9552da32b3dd0a5d0db45d8374fc" id="r_gab6bf9552da32b3dd0a5d0db45d8374fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#gab6bf9552da32b3dd0a5d0db45d8374fc">gpio_set_pulls</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">up</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">down</a>)</td></tr>
+<tr class="memdesc:gab6bf9552da32b3dd0a5d0db45d8374fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select up and down pulls on specific GPIO.  <br /></td></tr>
+<tr class="separator:gab6bf9552da32b3dd0a5d0db45d8374fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1d12efbed0809650d98fe9a424876c8" id="r_gaf1d12efbed0809650d98fe9a424876c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__gpio.html#gaf1d12efbed0809650d98fe9a424876c8">gpio_set_slew_rate</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a72c250c9393043ea5beb56092d26e229">gpio_slew_rate</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">slew</a>)</td></tr>
+<tr class="memdesc:gaf1d12efbed0809650d98fe9a424876c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set slew rate for a specified GPIO.  <br /></td></tr>
+<tr class="separator:gaf1d12efbed0809650d98fe9a424876c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a38bceaf4b611c47a1839a055bd6d2552" name="a38bceaf4b611c47a1839a055bd6d2552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38bceaf4b611c47a1839a055bd6d2552">&#9670;&#160;</a></span>CU_REGISTER_DEBUG_PINS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> CU_REGISTER_DEBUG_PINS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">DEBUG_PIN_TYPE</a> { <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_none</a> = 0, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__VA_ARGS__</a> }; <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">DEBUG_PIN_TYPE</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__selected_debug_pins</a>;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeba9410c462bdbb994d8514eabb7edbc" name="aeba9410c462bdbb994d8514eabb7edbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba9410c462bdbb994d8514eabb7edbc">&#9670;&#160;</a></span>CU_SELECT_DEBUG_PINS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> CU_SELECT_DEBUG_PINS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">DEBUG_PIN_TYPE</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__selected_debug_pins</a> = (<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88da8ef1b11d08229cb1954fb05af1f7" name="a88da8ef1b11d08229cb1954fb05af1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88da8ef1b11d08229cb1954fb05af1f7">&#9670;&#160;</a></span>DEBUG_PINS_CLR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DEBUG_PINS_CLR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="lexer_8cpp.html#ad4a65b873df5c05570846b5413b41dfd">if</a> (<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a1a27d6b4476ace95c088da7a30ebbe13">DEBUG_PINS_ENABLED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>)) <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a3fd974b65843a11fa7f62e9ca2a8b98a">gpio_clr_mask</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>)(v)&lt;&lt;<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8f575c4b2382dc5a5b33ae9f3536f92c">PICO_DEBUG_PIN_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a27d6b4476ace95c088da7a30ebbe13" name="a1a27d6b4476ace95c088da7a30ebbe13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a27d6b4476ace95c088da7a30ebbe13">&#9670;&#160;</a></span>DEBUG_PINS_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DEBUG_PINS_ENABLED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__selected_debug_pins</a> == (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8885757fa08364182ea0f442155eeca0" name="a8885757fa08364182ea0f442155eeca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8885757fa08364182ea0f442155eeca0">&#9670;&#160;</a></span>DEBUG_PINS_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DEBUG_PINS_SET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="lexer_8cpp.html#ad4a65b873df5c05570846b5413b41dfd">if</a> (<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a1a27d6b4476ace95c088da7a30ebbe13">DEBUG_PINS_ENABLED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>)) <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a7c42e4eef8f268b36f6d54cf7fd5212c">gpio_set_mask</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>)(v)&lt;&lt;<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8f575c4b2382dc5a5b33ae9f3536f92c">PICO_DEBUG_PIN_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a294dc71289462d28771c0c24bc596532" name="a294dc71289462d28771c0c24bc596532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294dc71289462d28771c0c24bc596532">&#9670;&#160;</a></span>DEBUG_PINS_XOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DEBUG_PINS_XOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="lexer_8cpp.html#ad4a65b873df5c05570846b5413b41dfd">if</a> (<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a1a27d6b4476ace95c088da7a30ebbe13">DEBUG_PINS_ENABLED</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">p</a>)) <a class="el" href="host_2hardware__gpio_2gpio_8c.html#ab39b3ee9eb6681d963c3a13d63e413b9">gpio_xor_mask</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a>)(v)&lt;&lt;<a class="el" href="host_2hardware__gpio_2include_2hardware_2gpio_8h.html#a8f575c4b2382dc5a5b33ae9f3536f92c">PICO_DEBUG_PIN_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96d859292be1d4de39a8501ed968b9fe" name="a96d859292be1d4de39a8501ed968b9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d859292be1d4de39a8501ed968b9fe">&#9670;&#160;</a></span>GPIO_IRQ_CALLBACK_ORDER_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> GPIO_IRQ_CALLBACK_ORDER_PRIORITY&#160;&#160;&#160;<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a35fae10151154433571c1b149e0b1200">PICO_SHARED_IRQ_HANDLER_LOWEST_ORDER_PRIORITY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88ef069c2e7919c42afdfbd60af1963d" name="a88ef069c2e7919c42afdfbd60af1963d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ef069c2e7919c42afdfbd60af1963d">&#9670;&#160;</a></span>GPIO_RAW_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> GPIO_RAW_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY&#160;&#160;&#160;<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a767bbb33ddb413551944b144d1960c77">PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefe0abb4598dc814a2701fd43cbc90b5" name="aefe0abb4598dc814a2701fd43cbc90b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe0abb4598dc814a2701fd43cbc90b5">&#9670;&#160;</a></span>PARAM_ASSERTIONS_ENABLED_HARDWARE_GPIO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PARAM_ASSERTIONS_ENABLED_HARDWARE_GPIO&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f575c4b2382dc5a5b33ae9f3536f92c" name="a8f575c4b2382dc5a5b33ae9f3536f92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f575c4b2382dc5a5b33ae9f3536f92c">&#9670;&#160;</a></span>PICO_DEBUG_PIN_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_DEBUG_PIN_BASE&#160;&#160;&#160;19<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a870a07d4d0ad3706a524b6d0635d1e8f" name="a870a07d4d0ad3706a524b6d0635d1e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870a07d4d0ad3706a524b6d0635d1e8f">&#9670;&#160;</a></span>PICO_DEBUG_PIN_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_DEBUG_PIN_COUNT&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos valores da enumeração</h2>
+<a id="a27085b238a536b1a919497a563caf666" name="a27085b238a536b1a919497a563caf666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27085b238a536b1a919497a563caf666">&#9670;&#160;</a></span>gpio_dir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html#a27085b238a536b1a919497a563caf666">gpio_dir</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="a27085b238a536b1a919497a563caf666a1b59f059dea546f0248fb26232ee3531" name="a27085b238a536b1a919497a563caf666a1b59f059dea546f0248fb26232ee3531"></a>GPIO_OUT&#160;</td><td class="fielddoc"><p>set GPIO to output </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27085b238a536b1a919497a563caf666a3343e227f62c4c536efff81438a8e155" name="a27085b238a536b1a919497a563caf666a3343e227f62c4c536efff81438a8e155"></a>GPIO_IN&#160;</td><td class="fielddoc"><p>set GPIO to input </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ae82efe48d938d76d8de6445739049465" name="ae82efe48d938d76d8de6445739049465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82efe48d938d76d8de6445739049465">&#9670;&#160;</a></span>gpio_debug_pins_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> gpio_debug_pins_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="group__pico__binary__info.html#ga448b6eaeefd68be7031086e7dfcaf96e">bi_decl_if_func_used</a>, <a class="el" href="code_8h.html#a094fabefb5b148152980d5ed903ddf3c">bi_pin_mask_with_names</a>, <a class="el" href="rp2__common_2hardware__gpio_2gpio_8c.html#a778d0989f14d2a8cbfa570533c280485">DEBUG_PIN_MASK</a>, <a class="el" href="group__hardware__gpio.html#ga2f3ccb15297fecd3792359d9cbbf6ed6">gpio_init_mask()</a> e <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a235432d68062a8ba46b2cb9736176f1d">gpio_set_dir_masked()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_2adb0335d3c3a7a0e231a65c7549282a.html">hardware_gpio</a></li><li class="navelem"><a class="el" href="dir_8fc3e84a87b299b8956f5ef9ca29100d.html">include</a></li><li class="navelem"><a class="el" href="dir_97c409d138b4e8df543b400021becfe6.html">hardware</a></li><li class="navelem"><a class="el" href="rp2__common_2hardware__gpio_2include_2hardware_2gpio_8h.html">gpio.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de m0plus.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__structs_2include_2hardware_2structs_2m0plus_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_structs/include/hardware/structs/m0plus.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hardware__structs_2include_2hardware_2structs_2m0plus_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _HARDWARE_STRUCTS_M0PLUS_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _HARDWARE_STRUCTS_M0PLUS_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html">hardware/regs/m0plus.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Reference to datasheet: https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#tab-registerlist_m0plus</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// The _REG_ macro is intended to help make the register navigable in your IDE (for example, using the &quot;Go to Definition&quot; feature)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// _REG_(x) will link to the corresponding register in hardware/regs/m0plus.h.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Bit-field descriptions are of the form:</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// BITMASK [BITRANGE] FIELDNAME (RESETVALUE) DESCRIPTION</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a87234c02be950ccd003049dd4b12e43a">   27</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad0[14340];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ac863b3735472a55fe31ebf9419bc0210">M0PLUS_SYST_CSR_OFFSET</a>) <span class="comment">// M0PLUS_SYST_CSR</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// SysTick Control and Status Register</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// 0x00010000 [16]    COUNTFLAG    (0) Returns 1 if timer counted to 0 since last time this was read</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// 0x00000004 [2]     CLKSOURCE    (0) SysTick clock source</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// 0x00000002 [1]     TICKINT      (0) Enables SysTick exception request: +</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// 0x00000001 [0]     ENABLE       (0) Enable SysTick counter: +</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aa7b226f6ccb31e4d9557eaf4b38d2665">   35</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> syst_csr;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a733a9ec9a1ff380dc12f771f9393b8c2">M0PLUS_SYST_RVR_OFFSET</a>) <span class="comment">// M0PLUS_SYST_RVR</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// SysTick Reload Value Register</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// 0x00ffffff [23:0]  RELOAD       (0x000000) Value to load into the SysTick Current Value Register...</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a06fed874be90582948f5c39944429827">   40</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> syst_rvr;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ac26ad559bfb93dfed4effe60f2e6ecea">M0PLUS_SYST_CVR_OFFSET</a>) <span class="comment">// M0PLUS_SYST_CVR</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// SysTick Current Value Register</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// 0x00ffffff [23:0]  CURRENT      (0x000000) Reads return the current value of the SysTick counter</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a2a903efe364a53363b9dc12b566401d2">   45</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> syst_cvr;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a7bdb9d258c1b28e1b0f24515f31080e6">M0PLUS_SYST_CALIB_OFFSET</a>) <span class="comment">// M0PLUS_SYST_CALIB</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// SysTick Calibration Value Register</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// 0x80000000 [31]    NOREF        (0) If reads as 1, the Reference clock is not provided - the...</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// 0x40000000 [30]    SKEW         (0) If reads as 1, the calibration value for 10ms is inexact...</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// 0x00ffffff [23:0]  TENMS        (0x000000) An optional Reload value to be used for 10ms (100Hz)...</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aa13af5daf9e8fbb2429b7a10127d4705">   52</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> syst_calib;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a852e8c2180a334f29b67e8a5b94f9aa2">   54</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad1[56];</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a7002370e7bfe001c67871f6252cbd701">M0PLUS_NVIC_ISER_OFFSET</a>) <span class="comment">// M0PLUS_NVIC_ISER</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Interrupt Set-Enable Register</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// 0xffffffff [31:0]  SETENA       (0x00000000) Interrupt set-enable bits</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a35a136703d7a757c7005872c225b165c">   59</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> nvic_iser;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a7f5a27dd75c465b1019da3070997831e">   61</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad2[31];</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a037a3098316906ad8913fdcfdda811ed">M0PLUS_NVIC_ICER_OFFSET</a>) <span class="comment">// M0PLUS_NVIC_ICER</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// Interrupt Clear-Enable Register</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// 0xffffffff [31:0]  CLRENA       (0x00000000) Interrupt clear-enable bits</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a725b88e084b6aff40d06fdf5c922e45e">   66</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> nvic_icer;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a00c4251d54dd373084f07deff2c14535">   68</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad3[31];</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a1f0fc5282e4458f170fce0683f17f421">M0PLUS_NVIC_ISPR_OFFSET</a>) <span class="comment">// M0PLUS_NVIC_ISPR</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// Interrupt Set-Pending Register</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// 0xffffffff [31:0]  SETPEND      (0x00000000) Interrupt set-pending bits</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a87f9d43d6aaa6d16beb7034877f4f4f0">   73</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> nvic_ispr;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#ac5c9d651918b9d28cbbdddd8edec99fe">   75</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad4[31];</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#adec423fce69d1d1dc4afe15453a55a16">M0PLUS_NVIC_ICPR_OFFSET</a>) <span class="comment">// M0PLUS_NVIC_ICPR</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// Interrupt Clear-Pending Register</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// 0xffffffff [31:0]  CLRPEND      (0x00000000) Interrupt clear-pending bits</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aa99aacbbf414e9c1ac29205a2087cc15">   80</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> nvic_icpr;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a2c7216bc7268578c2fac1e707897ed62">   82</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad5[95];</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// (Description copied from array index 0 register M0PLUS_NVIC_IPR0 applies similarly to other array indexes)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#af41a4eddddf3bd8e0c12878fa17bec41">M0PLUS_NVIC_IPR0_OFFSET</a>) <span class="comment">// M0PLUS_NVIC_IPR0</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// Interrupt Priority Register 0</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// 0xc0000000 [31:30] IP_3         (0x0) Priority of interrupt 3</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="comment">// 0x00c00000 [23:22] IP_2         (0x0) Priority of interrupt 2</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// 0x0000c000 [15:14] IP_1         (0x0) Priority of interrupt 1</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// 0x000000c0 [7:6]   IP_0         (0x0) Priority of interrupt 0</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aa3064f1ae84f5dc5e2780a4dec41d63e">   91</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> nvic_ipr[8];</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#adc1f0adcf8a11df620a2f7c981194b15">   93</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad6[568];</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#afdd03a051be6fe34ad0d56f9c5531599">M0PLUS_CPUID_OFFSET</a>) <span class="comment">// M0PLUS_CPUID</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">// CPUID Base Register</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="comment">// 0xff000000 [31:24] IMPLEMENTER  (0x41) Implementor code: 0x41 = ARM</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// 0x00f00000 [23:20] VARIANT      (0x0) Major revision number n in the rnpm revision status: +</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// 0x000f0000 [19:16] ARCHITECTURE (0xc) Constant that defines the architecture of the processor: +</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// 0x0000fff0 [15:4]  PARTNO       (0xc60) Number of processor within family: 0xC60 = Cortex-M0+</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// 0x0000000f [3:0]   REVISION     (0x1) Minor revision number m in the rnpm revision status: +</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#ad17c8002c0c5198201775f0139d7d0cb">  102</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> cpuid;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a1994965431fd54870fae35cde77bf8c7">M0PLUS_ICSR_OFFSET</a>) <span class="comment">// M0PLUS_ICSR</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// Interrupt Control and State Register</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// 0x80000000 [31]    NMIPENDSET   (0) Setting this bit will activate an NMI</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">// 0x10000000 [28]    PENDSVSET    (0) PendSV set-pending bit</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// 0x08000000 [27]    PENDSVCLR    (0) PendSV clear-pending bit</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// 0x04000000 [26]    PENDSTSET    (0) SysTick exception set-pending bit</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// 0x02000000 [25]    PENDSTCLR    (0) SysTick exception clear-pending bit</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// 0x00800000 [23]    ISRPREEMPT   (0) The system can only access this bit when the core is halted</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">// 0x00400000 [22]    ISRPENDING   (0) External interrupt pending flag</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// 0x001ff000 [20:12] VECTPENDING  (0x000) Indicates the exception number for the highest priority...</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">// 0x000001ff [8:0]   VECTACTIVE   (0x000) Active exception number field</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#ac4c8424bdfa5782cb44638db2afa0956">  115</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> icsr;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#adee08420618f5da8a125250b061cf2a1">M0PLUS_VTOR_OFFSET</a>) <span class="comment">// M0PLUS_VTOR</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="comment">// Vector Table Offset Register</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="comment">// 0xffffff00 [31:8]  TBLOFF       (0x000000) Bits [31:8] of the indicate the vector table offset address</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a8a70f1719a2bde36377af303d499c2e4">  120</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> vtor;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ab6b0850c1049cfae31da456ad68ae406">M0PLUS_AIRCR_OFFSET</a>) <span class="comment">// M0PLUS_AIRCR</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">// Application Interrupt and Reset Control Register</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">// 0xffff0000 [31:16] VECTKEY      (0x0000) Register key: +</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="comment">// 0x00008000 [15]    ENDIANESS    (0) Data endianness implemented: +</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// 0x00000004 [2]     SYSRESETREQ  (0) Writing 1 to this bit causes the SYSRESETREQ signal to...</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="comment">// 0x00000002 [1]     VECTCLRACTIVE (0) Clears all active state information for fixed and...</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a6478a03e1836f8e5df5d3bfebd240d64">  128</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> aircr;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ac3d26065c853e788cc620173bf439a69">M0PLUS_SCR_OFFSET</a>) <span class="comment">// M0PLUS_SCR</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="comment">// System Control Register</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">// 0x00000010 [4]     SEVONPEND    (0) Send Event on Pending bit: +</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="comment">// 0x00000004 [2]     SLEEPDEEP    (0) Controls whether the processor uses sleep or deep sleep...</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="comment">// 0x00000002 [1]     SLEEPONEXIT  (0) Indicates sleep-on-exit when returning from Handler mode...</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a3f1297a681aeed2178669ce1709c148c">  135</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> scr;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#aa27df5e52fa80c2857a1cc2f868ea99d">M0PLUS_CCR_OFFSET</a>) <span class="comment">// M0PLUS_CCR</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="comment">// Configuration and Control Register</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="comment">// 0x00000200 [9]     STKALIGN     (0) Always reads as one, indicates 8-byte stack alignment on...</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="comment">// 0x00000008 [3]     UNALIGN_TRP  (0) Always reads as one, indicates that all unaligned...</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#ae23c87b1ad841f83e4e592df7a405be2">  141</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> ccr;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aeb192435e45a586b63d043e0d7f3938e">  143</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad7;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="comment">// (Description copied from array index 0 register M0PLUS_SHPR2 applies similarly to other array indexes)</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a457e63bc551b4840643e9fb423cdef82">M0PLUS_SHPR2_OFFSET</a>) <span class="comment">// M0PLUS_SHPR2</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">// System Handler Priority Register 2</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="comment">// 0xc0000000 [31:30] PRI_11       (0x0) Priority of system handler 11, SVCall</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aae7c1d07145aafb1fcdd54a4bcdfa8ba">  149</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> shpr[2];</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a2e8f9825e3f029d03a3fba1bae3d4b20">M0PLUS_SHCSR_OFFSET</a>) <span class="comment">// M0PLUS_SHCSR</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="comment">// System Handler Control and State Register</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="comment">// 0x00008000 [15]    SVCALLPENDED (0) Reads as 1 if SVCall is Pending</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aaba958dca305e2175806319fd8c539c4">  154</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> shcsr;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a146d5818444ceb5df1ec40283f5cf1b7">  156</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> _pad8[26];</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a35b6d57bd69383fcd9150023c805ab7c">M0PLUS_MPU_TYPE_OFFSET</a>) <span class="comment">// M0PLUS_MPU_TYPE</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="comment">// MPU Type Register</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="comment">// 0x00ff0000 [23:16] IREGION      (0x00) Instruction region</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// 0x0000ff00 [15:8]  DREGION      (0x08) Number of regions supported by the MPU</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// 0x00000001 [0]     SEPARATE     (0) Indicates support for separate instruction and data address maps</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#aabfc0ce67bf10f8a8ea89a7b7fbb2e32">  163</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> mpu_type;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a952a49450e0dc12aaad8c6a81989c69b">M0PLUS_MPU_CTRL_OFFSET</a>) <span class="comment">// M0PLUS_MPU_CTRL</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="comment">// MPU Control Register</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">// 0x00000004 [2]     PRIVDEFENA   (0) Controls whether the default memory map is enabled as a...</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="comment">// 0x00000002 [1]     HFNMIENA     (0) Controls the use of the MPU for HardFaults and NMIs</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">// 0x00000001 [0]     ENABLE       (0) Enables the MPU</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a533ae199aa66cdd35a4ecc3fbba574b7">  170</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> mpu_ctrl;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a16e72454fd67238e0ae08b4099beb522">M0PLUS_MPU_RNR_OFFSET</a>) <span class="comment">// M0PLUS_MPU_RNR</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="comment">// MPU Region Number Register</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">// 0x0000000f [3:0]   REGION       (0x0) Indicates the MPU region referenced by the MPU_RBAR and...</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a2bb7e74c772f480425a8799c6d0ea98e">  175</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> mpu_rnr;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a140691af7f7359342ac9d4aff1b354e7">M0PLUS_MPU_RBAR_OFFSET</a>) <span class="comment">// M0PLUS_MPU_RBAR</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="comment">// MPU Region Base Address Register</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="comment">// 0xffffff00 [31:8]  ADDR         (0x000000) Base address of the region</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="comment">// 0x00000010 [4]     VALID        (0) On writes, indicates whether the write must update the...</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="comment">// 0x0000000f [3:0]   REGION       (0x0) On writes, specifies the number of the region whose base...</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a41709d1f75095091fcc898952c8ce218">  182</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> mpu_rbar;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a5cace041f4d16bee983a83415d3141de">M0PLUS_MPU_RASR_OFFSET</a>) <span class="comment">// M0PLUS_MPU_RASR</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="comment">// MPU Region Attribute and Size Register</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="comment">// 0xffff0000 [31:16] ATTRS        (0x0000) The MPU Region Attribute field</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="comment">// 0x0000ff00 [15:8]  SRD          (0x00) Subregion Disable</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="comment">// 0x0000003e [5:1]   SIZE         (0x00) Indicates the region size</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="comment">// 0x00000001 [0]     ENABLE       (0) Enables the region</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="structm0plus__hw__t.html#a6802b4af444fe626aba47cba2e237b96">  190</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> mpu_rasr;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>} <a class="code hl_struct" href="structm0plus__hw__t.html">m0plus_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="hardware__structs_2include_2hardware_2structs_2m0plus_8h.html#adac617112b2eaee72b5c3e44e37cf2f3">  193</a></span><span class="preprocessor">#define ppb_hw ((m0plus_hw_t *)PPB_BASE)</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span> (<a class="code hl_struct" href="structm0plus__hw__t.html">m0plus_hw_t</a>) == 0xeda4, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_STRUCTS_M0PLUS_H</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_a5e9dd65c504214b8530a3ce63adf8375"><div class="ttname"><a href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a></div><div class="ttdeci">#define _REG_(x)</div><div class="ttdef"><b>Definição</b> address_mapped.h:84</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ab87d9fde36e04e9e65c9f16f56982eeb"><div class="ttname"><a href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a></div><div class="ttdeci">const volatile uint32_t io_ro_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:67</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ae7a3903ffe232108a65efc85970a5fdb"><div class="ttname"><a href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a></div><div class="ttdeci">volatile uint32_t io_rw_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:66</div></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html">m0plus.h</a></div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a037a3098316906ad8913fdcfdda811ed"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a037a3098316906ad8913fdcfdda811ed">M0PLUS_NVIC_ICER_OFFSET</a></div><div class="ttdeci">#define M0PLUS_NVIC_ICER_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:174</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a140691af7f7359342ac9d4aff1b354e7"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a140691af7f7359342ac9d4aff1b354e7">M0PLUS_MPU_RBAR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_MPU_RBAR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:1056</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a16e72454fd67238e0ae08b4099beb522"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a16e72454fd67238e0ae08b4099beb522">M0PLUS_MPU_RNR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_MPU_RNR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:1036</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a1994965431fd54870fae35cde77bf8c7"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a1994965431fd54870fae35cde77bf8c7">M0PLUS_ICSR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_ICSR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:619</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a1f0fc5282e4458f170fce0683f17f421"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a1f0fc5282e4458f170fce0683f17f421">M0PLUS_NVIC_ISPR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_NVIC_ISPR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:195</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a2e8f9825e3f029d03a3fba1bae3d4b20"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a2e8f9825e3f029d03a3fba1bae3d4b20">M0PLUS_SHCSR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_SHCSR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:935</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a35b6d57bd69383fcd9150023c805ab7c"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a35b6d57bd69383fcd9150023c805ab7c">M0PLUS_MPU_TYPE_OFFSET</a></div><div class="ttdeci">#define M0PLUS_MPU_TYPE_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:951</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a457e63bc551b4840643e9fb423cdef82"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a457e63bc551b4840643e9fb423cdef82">M0PLUS_SHPR2_OFFSET</a></div><div class="ttdeci">#define M0PLUS_SHPR2_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:895</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a5cace041f4d16bee983a83415d3141de"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a5cace041f4d16bee983a83415d3141de">M0PLUS_MPU_RASR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_MPU_RASR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:1103</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a7002370e7bfe001c67871f6252cbd701"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a7002370e7bfe001c67871f6252cbd701">M0PLUS_NVIC_ISER_OFFSET</a></div><div class="ttdeci">#define M0PLUS_NVIC_ISER_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:153</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a733a9ec9a1ff380dc12f771f9393b8c2"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a733a9ec9a1ff380dc12f771f9393b8c2">M0PLUS_SYST_RVR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_SYST_RVR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:77</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a7bdb9d258c1b28e1b0f24515f31080e6"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a7bdb9d258c1b28e1b0f24515f31080e6">M0PLUS_SYST_CALIB_OFFSET</a></div><div class="ttdeci">#define M0PLUS_SYST_CALIB_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:112</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_a952a49450e0dc12aaad8c6a81989c69b"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#a952a49450e0dc12aaad8c6a81989c69b">M0PLUS_MPU_CTRL_OFFSET</a></div><div class="ttdeci">#define M0PLUS_MPU_CTRL_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:986</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_aa27df5e52fa80c2857a1cc2f868ea99d"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#aa27df5e52fa80c2857a1cc2f868ea99d">M0PLUS_CCR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_CCR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:865</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_ab6b0850c1049cfae31da456ad68ae406"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ab6b0850c1049cfae31da456ad68ae406">M0PLUS_AIRCR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_AIRCR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:759</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_ac26ad559bfb93dfed4effe60f2e6ecea"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ac26ad559bfb93dfed4effe60f2e6ecea">M0PLUS_SYST_CVR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_SYST_CVR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:94</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_ac3d26065c853e788cc620173bf439a69"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ac3d26065c853e788cc620173bf439a69">M0PLUS_SCR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_SCR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:814</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_ac863b3735472a55fe31ebf9419bc0210"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#ac863b3735472a55fe31ebf9419bc0210">M0PLUS_SYST_CSR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_SYST_CSR_OFFSET</div><div class="ttdoc">Copyright (c) 2024 Raspberry Pi Ltd.</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:19</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_adec423fce69d1d1dc4afe15453a55a16"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#adec423fce69d1d1dc4afe15453a55a16">M0PLUS_NVIC_ICPR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_NVIC_ICPR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:221</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_adee08420618f5da8a125250b061cf2a1"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#adee08420618f5da8a125250b061cf2a1">M0PLUS_VTOR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_VTOR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:743</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_af41a4eddddf3bd8e0c12878fa17bec41"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#af41a4eddddf3bd8e0c12878fa17bec41">M0PLUS_NVIC_IPR0_OFFSET</a></div><div class="ttdeci">#define M0PLUS_NVIC_IPR0_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:246</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_afdd03a051be6fe34ad0d56f9c5531599"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#afdd03a051be6fe34ad0d56f9c5531599">M0PLUS_CPUID_OFFSET</a></div><div class="ttdeci">#define M0PLUS_CPUID_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:566</div></div>
+<div class="ttc" id="astructm0plus__hw__t_html"><div class="ttname"><a href="structm0plus__hw__t.html">m0plus_hw_t</a></div><div class="ttdef"><b>Definição</b> hardware_structs/include/hardware/structs/m0plus.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_519578c92a94c221750fe2f676450158.html">hardware_structs</a></li><li class="navelem"><a class="el" href="dir_2ab73e23d05a66084d7e97c97400bbce.html">include</a></li><li class="navelem"><a class="el" href="dir_2ebfd2cfe85b5f65b8c479450ca76d68.html">hardware</a></li><li class="navelem"><a class="el" href="dir_50758e3d52fdfb177ad98847c6ec1efb.html">structs</a></li><li class="navelem"><a class="el" href="hardware__structs_2include_2hardware_2structs_2m0plus_8h.html">m0plus.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

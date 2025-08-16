@@ -1,0 +1,27 @@
+var olimex__rp2350__xxl_8h =
+[
+    [ "OLIMEX_RP2350_XXL", "olimex__rp2350__xxl_8h.html#ad4a20ad4c76b10f4bf3fa2367879cd89", null ],
+    [ "PICO_BOOT_STAGE2_CHOOSE_W25Q080", "olimex__rp2350__xxl_8h.html#a868e795ee21e547e10edf12a3aeafbc9", null ],
+    [ "PICO_DEFAULT_I2C", "olimex__rp2350__xxl_8h.html#aa97a6c55314d1b099ced2860a6b3dcc7", null ],
+    [ "PICO_DEFAULT_I2C_SCL_PIN", "olimex__rp2350__xxl_8h.html#a8b06cc6391b2a8f7d6da3f027381611d", null ],
+    [ "PICO_DEFAULT_I2C_SDA_PIN", "olimex__rp2350__xxl_8h.html#abc0792454cd382ae0cf50dffadfaa02e", null ],
+    [ "PICO_DEFAULT_LED_PIN", "olimex__rp2350__xxl_8h.html#a4a29698db5ef031543df84d51da3e16a", null ],
+    [ "PICO_DEFAULT_SPI", "olimex__rp2350__xxl_8h.html#ae4e23302c26c165c8f4519ccc664e992", null ],
+    [ "PICO_DEFAULT_SPI_CSN_PIN", "olimex__rp2350__xxl_8h.html#a1f76bedc8bb59acb457e1943dda8431d", null ],
+    [ "PICO_DEFAULT_SPI_RX_PIN", "olimex__rp2350__xxl_8h.html#ab7eaa7dddacd975821969189da644cdb", null ],
+    [ "PICO_DEFAULT_SPI_SCK_PIN", "olimex__rp2350__xxl_8h.html#adad46d9962adcf584b003bb52ef8e33e", null ],
+    [ "PICO_DEFAULT_SPI_TX_PIN", "olimex__rp2350__xxl_8h.html#acd12af431f3d8c3752815d58f998c0ac", null ],
+    [ "PICO_DEFAULT_UART", "olimex__rp2350__xxl_8h.html#ac6468dfeffb42ab797be2e0b3d886428", null ],
+    [ "PICO_DEFAULT_UART_RX_PIN", "olimex__rp2350__xxl_8h.html#a14ba1da2ef162698e5fc3fe54896103e", null ],
+    [ "PICO_DEFAULT_UART_TX_PIN", "olimex__rp2350__xxl_8h.html#a596b6d76c33b68f0cab100a6360a0784", null ],
+    [ "PICO_FLASH_SIZE_BYTES", "olimex__rp2350__xxl_8h.html#a7ad5a8273ffcd10db868c3c3e03d5bf0", null ],
+    [ "PICO_FLASH_SPI_CLKDIV", "olimex__rp2350__xxl_8h.html#a090528628a511947179066f60c2aeb8a", null ],
+    [ "PICO_RP2350_A2_SUPPORTED", "olimex__rp2350__xxl_8h.html#ae0fd438812696e3d1a23842f755daf74", null ],
+    [ "PICO_RP2350A", "olimex__rp2350__xxl_8h.html#a82ed167c189e248cd45960a4ddf976bf", null ],
+    [ "PICO_SD_CLK_PIN", "olimex__rp2350__xxl_8h.html#ad57163b0316f3be60d3d300ded92a2ef", null ],
+    [ "PICO_SD_CMD_PIN", "olimex__rp2350__xxl_8h.html#a06a80a24c3390571bfac1cc9573b4347", null ],
+    [ "PICO_SD_DAT0_PIN", "olimex__rp2350__xxl_8h.html#ae801a7700c52a9b556b2a151186db04c", null ],
+    [ "PICO_SD_DAT3_PIN", "olimex__rp2350__xxl_8h.html#a69135fd25b1a80dc917887d2b869fdaa", null ],
+    [ "PICO_SD_DAT_PIN_COUNT", "olimex__rp2350__xxl_8h.html#ab7f6390e774893bb849fd0d67343b391", null ],
+    [ "pico_board_cmake_set", "olimex__rp2350__xxl_8h.html#a84cada78bd4360891c500026949abd61", null ]
+];

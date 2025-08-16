@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro hardware_pwm_test.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__pwm__test_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro hardware_pwm_test.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="stdlib_8h_source.html">pico/stdlib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="test_8h_source.html">pico/test.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_2pico__time_2include_2pico_2time_8h_source.html">pico/time.h</a>&quot;</code><br />
+<code>#include &quot;hardware/irq.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__resets_2include_2hardware_2resets_8h_source.html">hardware/resets.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__pwm_2include_2hardware_2pwm_8h_source.html">hardware/pwm.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para hardware_pwm_test.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="hardware__pwm__test_8c__incl.svg" width="1542" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinterrupt__state.html">interrupt_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__pwm__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae691f63410b3f1f8670f08f616a75c55" id="r_ae691f63410b3f1f8670f08f616a75c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__pwm__test_8c.html#ae691f63410b3f1f8670f08f616a75c55">on_pwm_wrap</a> ()</td></tr>
+<tr class="separator:ae691f63410b3f1f8670f08f616a75c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac739556bb4656bc117c9c915bcf563c" id="r_aac739556bb4656bc117c9c915bcf563c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__pwm__test_8c.html#aac739556bb4656bc117c9c915bcf563c">PICOTEST_MODULE_NAME</a> (&quot;PWM&quot;, &quot;PWM <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">SDK</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Test</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">harness&quot;</a>)</td></tr>
+<tr class="memdesc:aac739556bb4656bc117c9c915bcf563c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) 2020 Raspberry Pi (Trading) Ltd.  <br /></td></tr>
+<tr class="separator:aac739556bb4656bc117c9c915bcf563c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:ae4b29fad858a2009795b3e768b074d51" id="r_ae4b29fad858a2009795b3e768b074d51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structinterrupt__state.html">interrupt_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hardware__pwm__test_8c.html#ae4b29fad858a2009795b3e768b074d51">interrupt_states</a> [<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2platform__defs_8h.html#ace61766594880b825323b8807b942c66">NUM_PWM_SLICES</a>] = {0}</td></tr>
+<tr class="separator:ae4b29fad858a2009795b3e768b074d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structpwm__slice__hw__t.html#a5e87ba0e6e6962046b8489235fb1ebd0">pwm_slice_hw_t::cc</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structpwm__slice__hw__t.html#ab30ce816fbd685811759bd6cee599d33">pwm_slice_hw_t::csr</a>, <a class="el" href="structpwm__slice__hw__t.html#ac26c113d16e220890318df08c4122752">pwm_slice_hw_t::ctr</a>, <a class="el" href="structpwm__slice__hw__t.html#a0a2bcf4ca16af768f0ef548ad62c8404">pwm_slice_hw_t::div</a>, <a class="el" href="hardware__pwm__test_8c.html#ae4b29fad858a2009795b3e768b074d51">interrupt_states</a>, <a class="el" href="group__hardware__irq.html#ga7c7167f643c6898b758340ce59d333d9">irq_set_enabled()</a>, <a class="el" href="group__hardware__irq.html#gafffd448ba2d2eef5b355b88180aefe7f">irq_set_exclusive_handler()</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2platform__defs_8h.html#ace61766594880b825323b8807b942c66">NUM_PWM_SLICES</a>, <a class="el" href="hardware__pwm__test_8c.html#ae691f63410b3f1f8670f08f616a75c55">on_pwm_wrap()</a>, <a class="el" href="test_8h.html#addf78fbc71cfc0b486b4f6da5b89d07c">PICOTEST_CHECK_CHANNEL</a>, <a class="el" href="test_8h.html#aaa2b43e9b197f078bcd2042e953d5935">PICOTEST_END_SECTION</a>, <a class="el" href="test_8h.html#a0a887529c4aa55c3d1938919cb4f5ffe">PICOTEST_END_TEST</a>, <a class="el" href="test_8h.html#ad9c576df6edb6c893cb2fb5fa46e3ce9">PICOTEST_START</a>, <a class="el" href="test_8h.html#aa944cbf5e0e5820d019d90609a73de11">PICOTEST_START_SECTION</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a8796b31b821fd19e25dcd9591fc94e04">PWM_CH0_CC_A_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#aafa503e783d47a66e4a6296471908fb0">PWM_CH0_CC_B_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a73e5a54113fd3224be236e32dd29937d">PWM_CH0_CC_RESET</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a1b6aec0141d674a85aa197f600f21d95">PWM_CH0_CSR_A_INV_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a9ae747188c4fd668ab7318380d5312c3">PWM_CH0_CSR_A_INV_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a17a818d6741f41370dd77acb22287b7a">PWM_CH0_CSR_B_INV_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#acab6945e27527b9f4c13365813dd8559">PWM_CH0_CSR_B_INV_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#ab0f923ffa80bdfea7f78104ff8877dad">PWM_CH0_CSR_DIVMODE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a783b11b664a4af77b55ca8728a0d30d1">PWM_CH0_CSR_DIVMODE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a7d1f4bf66910da4448ee29fe8b47e759">PWM_CH0_CSR_DIVMODE_VALUE_LEVEL</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a18483153695f6b182c6584ee12c4e178">PWM_CH0_CSR_PH_CORRECT_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#abae542f9e4363f88f9a80afd07ce7a45">PWM_CH0_CSR_PH_CORRECT_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pwm_8h.html#a6bef71594779024f01dcb145aee20ebc">PWM_CH0_DIV_INT_LSB</a>, <a class="el" href="group__hardware__pwm.html#ga799affc57db362720ea5f4a5aef381f8">PWM_DEFAULT_IRQ_NUM</a>, <a class="el" href="group__hardware__pwm.html#gga0a00197703c8606641488cfff3f660e6a0b4afcaa75090169d3b7cbec4c0e2012">PWM_DIV_B_FALLING</a>, <a class="el" href="group__hardware__pwm.html#gga0a00197703c8606641488cfff3f660e6a186c27a4768fcb0c6930471db51861b7">PWM_DIV_B_HIGH</a>, <a class="el" href="group__hardware__pwm.html#gga0a00197703c8606641488cfff3f660e6acd3efbc3feaca58b87930008fdd8486b">PWM_DIV_FREE_RUNNING</a>, <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2pwm_8h.html#a86e3cd598c449e822f9a7ac4b5752cbb">pwm_hw</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a5282174c02e8e9dc3cac7387cf891bef">RESET_PWM</a>, <a class="el" href="group__pico__stdlib.html#gacf31cd777510116d829aea040b034c4c">setup_default_uart()</a>, <a class="el" href="group__sleep.html#gae617a6842d4f3a192064c4354b88fcff">sleep_ms()</a>, <a class="el" href="structpwm__slice__hw__t.html#a1972ed9822f9c603551c07f57503ad9c">pwm_slice_hw_t::top</a> e <a class="el" href="structpwm__config.html#a4e70bcde75ac1170144d6f4d98037efd">pwm_config::top</a>.</p>
+
+</div>
+</div>
+<a id="ae691f63410b3f1f8670f08f616a75c55" name="ae691f63410b3f1f8670f08f616a75c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae691f63410b3f1f8670f08f616a75c55">&#9670;&#160;</a></span>on_pwm_wrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> on_pwm_wrap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="structinterrupt__state.html#ad581c7126f1ccf6a90afb0e7985771fb">interrupt_state::count</a>, <a class="el" href="hardware__pwm__test_8c.html#ae4b29fad858a2009795b3e768b074d51">interrupt_states</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2platform__defs_8h.html#ace61766594880b825323b8807b942c66">NUM_PWM_SLICES</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="hardware__pwm__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="aac739556bb4656bc117c9c915bcf563c" name="aac739556bb4656bc117c9c915bcf563c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac739556bb4656bc117c9c915bcf563c">&#9670;&#160;</a></span>PICOTEST_MODULE_NAME()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICOTEST_MODULE_NAME </td>
+          <td>(</td>
+          <td class="paramtype">&quot;PWM&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;PWM <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">SDK</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Test</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">harness&quot;</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copyright (c) 2020 Raspberry Pi (Trading) Ltd. </p>
+<p>SPDX-License-Identifier: BSD-3-Clause </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="ae4b29fad858a2009795b3e768b074d51" name="ae4b29fad858a2009795b3e768b074d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b29fad858a2009795b3e768b074d51">&#9670;&#160;</a></span>interrupt_states</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structinterrupt__state.html">interrupt_state</a> interrupt_states[<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2platform__defs_8h.html#ace61766594880b825323b8807b942c66">NUM_PWM_SLICES</a>] = {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="hardware__pwm__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a> e <a class="el" href="hardware__pwm__test_8c.html#ae691f63410b3f1f8670f08f616a75c55">on_pwm_wrap()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_4b97774b20923cf06c558e66efce829f.html">test</a></li><li class="navelem"><a class="el" href="dir_fd34e7c30bed5d9038f4f3f96cc5b3aa.html">hardware_pwm_test</a></li><li class="navelem"><a class="el" href="hardware__pwm__test_8c.html">hardware_pwm_test.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

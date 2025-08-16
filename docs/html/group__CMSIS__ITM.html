@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Instrumentation Trace Macrocell (ITM)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__CMSIS__ITM.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Módulos</a> &#124;
+<a href="#nested-classes">Componentes</a>  </div>
+  <div class="headertitle"><div class="title">Instrumentation Trace Macrocell (ITM)<div class="ingroups"><a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &#124; <a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &raquo; <a class="el" href="group__CMSIS__SCnSCB.html">System Controls not in SCB (SCnSCB)</a> &raquo; <a class="el" href="group__CMSIS__SysTick.html">System Tick Timer (SysTick)</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Type definitions for the Instrumentation Trace Macrocell (ITM)  
+<a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para Instrumentation Trace Macrocell (ITM):</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__CMSIS__ITM.svg" width="578" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Módulos</h2></td></tr>
+<tr class="memitem:group__CMSIS__DWT" id="r_group__CMSIS__DWT"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__DWT.html">Data Watchpoint and Trace (DWT)</a></td></tr>
+<tr class="memdesc:group__CMSIS__DWT"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definitions for the Data Watchpoint and Trace (DWT) <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structITM__Type.html">ITM_Type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure type to access the Instrumentation Trace Macrocell Register (ITM).  <a href="structITM__Type.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd9ed85f36233685f182cc249621e025" id="r_gafd9ed85f36233685f182cc249621e025"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gafd9ed85f36233685f182cc249621e025">ITM_STIM_DISABLED_Pos</a>&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gafd9ed85f36233685f182cc249621e025"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM Stimulus Port Register Definitions.  <br /></td></tr>
+<tr class="separator:gafd9ed85f36233685f182cc249621e025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d8f821bdad48c7b4a02f11ebf2c8852" id="r_ga9d8f821bdad48c7b4a02f11ebf2c8852"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga9d8f821bdad48c7b4a02f11ebf2c8852">ITM_STIM_DISABLED_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gafd9ed85f36233685f182cc249621e025">ITM_STIM_DISABLED_Pos</a>)</td></tr>
+<tr class="memdesc:ga9d8f821bdad48c7b4a02f11ebf2c8852"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM STIM: DISABLED Mask.  <br /></td></tr>
+<tr class="separator:ga9d8f821bdad48c7b4a02f11ebf2c8852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa79f3a59d15d810d48d924c0ca4ae0b9" id="r_gaa79f3a59d15d810d48d924c0ca4ae0b9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gaa79f3a59d15d810d48d924c0ca4ae0b9">ITM_STIM_FIFOREADY_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:gaa79f3a59d15d810d48d924c0ca4ae0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM STIM: FIFOREADY Position.  <br /></td></tr>
+<tr class="separator:gaa79f3a59d15d810d48d924c0ca4ae0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73dc88e3338b4ef9a81e53a1d2c5ae83" id="r_ga73dc88e3338b4ef9a81e53a1d2c5ae83"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga73dc88e3338b4ef9a81e53a1d2c5ae83">ITM_STIM_FIFOREADY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gaa79f3a59d15d810d48d924c0ca4ae0b9">ITM_STIM_FIFOREADY_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga73dc88e3338b4ef9a81e53a1d2c5ae83"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM STIM: FIFOREADY Mask.  <br /></td></tr>
+<tr class="separator:ga73dc88e3338b4ef9a81e53a1d2c5ae83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7abe5e590d1611599df87a1884a352e8" id="r_ga7abe5e590d1611599df87a1884a352e8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga7abe5e590d1611599df87a1884a352e8">ITM_TPR_PRIVMASK_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga7abe5e590d1611599df87a1884a352e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM Trace Privilege Register Definitions.  <br /></td></tr>
+<tr class="separator:ga7abe5e590d1611599df87a1884a352e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga168e089d882df325a387aab3a802a46b" id="r_ga168e089d882df325a387aab3a802a46b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga168e089d882df325a387aab3a802a46b">ITM_TPR_PRIVMASK_Msk</a>&#160;&#160;&#160;(0xFUL /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga7abe5e590d1611599df87a1884a352e8">ITM_TPR_PRIVMASK_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga168e089d882df325a387aab3a802a46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TPR: PRIVMASK Mask.  <br /></td></tr>
+<tr class="separator:ga168e089d882df325a387aab3a802a46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9174ad4a36052c377cef4e6aba2ed484" id="r_ga9174ad4a36052c377cef4e6aba2ed484"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga9174ad4a36052c377cef4e6aba2ed484">ITM_TCR_BUSY_Pos</a>&#160;&#160;&#160;23<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga9174ad4a36052c377cef4e6aba2ed484"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM Trace Control Register Definitions.  <br /></td></tr>
+<tr class="separator:ga9174ad4a36052c377cef4e6aba2ed484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43ad7cf33de12f2ef3a412d4f354c60f" id="r_ga43ad7cf33de12f2ef3a412d4f354c60f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga43ad7cf33de12f2ef3a412d4f354c60f">ITM_TCR_BUSY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga9174ad4a36052c377cef4e6aba2ed484">ITM_TCR_BUSY_Pos</a>)</td></tr>
+<tr class="memdesc:ga43ad7cf33de12f2ef3a412d4f354c60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: BUSY Mask.  <br /></td></tr>
+<tr class="separator:ga43ad7cf33de12f2ef3a412d4f354c60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga113bf41ed31584360ad7d865e5e0ace7" id="r_ga113bf41ed31584360ad7d865e5e0ace7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga113bf41ed31584360ad7d865e5e0ace7">ITM_TCR_TRACEBUSID_Pos</a>&#160;&#160;&#160;16<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga113bf41ed31584360ad7d865e5e0ace7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: ATBID Position.  <br /></td></tr>
+<tr class="separator:ga113bf41ed31584360ad7d865e5e0ace7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac014c7345304ed245b642eb9d6e9a302" id="r_gac014c7345304ed245b642eb9d6e9a302"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gac014c7345304ed245b642eb9d6e9a302">ITM_TCR_TRACEBUSID_Msk</a>&#160;&#160;&#160;(0x7FUL &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga113bf41ed31584360ad7d865e5e0ace7">ITM_TCR_TRACEBUSID_Pos</a>)</td></tr>
+<tr class="memdesc:gac014c7345304ed245b642eb9d6e9a302"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: ATBID Mask.  <br /></td></tr>
+<tr class="separator:gac014c7345304ed245b642eb9d6e9a302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96c7c7cbc0d98426c408090b41f583f1" id="r_ga96c7c7cbc0d98426c408090b41f583f1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga96c7c7cbc0d98426c408090b41f583f1">ITM_TCR_GTSFREQ_Pos</a>&#160;&#160;&#160;10U</td></tr>
+<tr class="memdesc:ga96c7c7cbc0d98426c408090b41f583f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: Global timestamp frequency Position.  <br /></td></tr>
+<tr class="separator:ga96c7c7cbc0d98426c408090b41f583f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade862cf009827f7f6748fc44c541b067" id="r_gade862cf009827f7f6748fc44c541b067"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gade862cf009827f7f6748fc44c541b067">ITM_TCR_GTSFREQ_Msk</a>&#160;&#160;&#160;(3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga96c7c7cbc0d98426c408090b41f583f1">ITM_TCR_GTSFREQ_Pos</a>)</td></tr>
+<tr class="memdesc:gade862cf009827f7f6748fc44c541b067"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: Global timestamp frequency Mask.  <br /></td></tr>
+<tr class="separator:gade862cf009827f7f6748fc44c541b067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa39e93e22d56e5e9edaf866b1171ac4f" id="r_gaa39e93e22d56e5e9edaf866b1171ac4f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gaa39e93e22d56e5e9edaf866b1171ac4f">ITM_TCR_TSPRESCALE_Pos</a>&#160;&#160;&#160;8<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gaa39e93e22d56e5e9edaf866b1171ac4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: TSPRESCALE Position.  <br /></td></tr>
+<tr class="separator:gaa39e93e22d56e5e9edaf866b1171ac4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e8651ecde89295bcc6e248a1b7393d6" id="r_ga3e8651ecde89295bcc6e248a1b7393d6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga3e8651ecde89295bcc6e248a1b7393d6">ITM_TCR_TSPRESCALE_Msk</a>&#160;&#160;&#160;(3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gaa39e93e22d56e5e9edaf866b1171ac4f">ITM_TCR_TSPRESCALE_Pos</a>)</td></tr>
+<tr class="memdesc:ga3e8651ecde89295bcc6e248a1b7393d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: TSPRESCALE Mask.  <br /></td></tr>
+<tr class="separator:ga3e8651ecde89295bcc6e248a1b7393d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad74ca6140644b572eadbf21e870d24b9" id="r_gad74ca6140644b572eadbf21e870d24b9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gad74ca6140644b572eadbf21e870d24b9">ITM_TCR_STALLENA_Pos</a>&#160;&#160;&#160;5<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gad74ca6140644b572eadbf21e870d24b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: STALLENA Position.  <br /></td></tr>
+<tr class="separator:gad74ca6140644b572eadbf21e870d24b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga724f0560593042670b49e2f9a6483b6f" id="r_ga724f0560593042670b49e2f9a6483b6f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga724f0560593042670b49e2f9a6483b6f">ITM_TCR_STALLENA_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gad74ca6140644b572eadbf21e870d24b9">ITM_TCR_STALLENA_Pos</a>)</td></tr>
+<tr class="memdesc:ga724f0560593042670b49e2f9a6483b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: STALLENA Mask.  <br /></td></tr>
+<tr class="separator:ga724f0560593042670b49e2f9a6483b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a380f0c8078f6560051406583ecd6a5" id="r_ga7a380f0c8078f6560051406583ecd6a5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga7a380f0c8078f6560051406583ecd6a5">ITM_TCR_SWOENA_Pos</a>&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga7a380f0c8078f6560051406583ecd6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: SWOENA Position.  <br /></td></tr>
+<tr class="separator:ga7a380f0c8078f6560051406583ecd6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97476cb65bab16a328b35f81fd02010a" id="r_ga97476cb65bab16a328b35f81fd02010a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga97476cb65bab16a328b35f81fd02010a">ITM_TCR_SWOENA_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga7a380f0c8078f6560051406583ecd6a5">ITM_TCR_SWOENA_Pos</a>)</td></tr>
+<tr class="memdesc:ga97476cb65bab16a328b35f81fd02010a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: SWOENA Mask.  <br /></td></tr>
+<tr class="separator:ga97476cb65bab16a328b35f81fd02010a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30e83ebb33aa766070fe3d1f27ae820e" id="r_ga30e83ebb33aa766070fe3d1f27ae820e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga30e83ebb33aa766070fe3d1f27ae820e">ITM_TCR_DWTENA_Pos</a>&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga30e83ebb33aa766070fe3d1f27ae820e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: DWTENA Position.  <br /></td></tr>
+<tr class="separator:ga30e83ebb33aa766070fe3d1f27ae820e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98ea1c596d43d3633a202f9ee746cf70" id="r_ga98ea1c596d43d3633a202f9ee746cf70"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga98ea1c596d43d3633a202f9ee746cf70">ITM_TCR_DWTENA_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga30e83ebb33aa766070fe3d1f27ae820e">ITM_TCR_DWTENA_Pos</a>)</td></tr>
+<tr class="memdesc:ga98ea1c596d43d3633a202f9ee746cf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: DWTENA Mask.  <br /></td></tr>
+<tr class="separator:ga98ea1c596d43d3633a202f9ee746cf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa93a1147a39fc63980d299231252a30e" id="r_gaa93a1147a39fc63980d299231252a30e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gaa93a1147a39fc63980d299231252a30e">ITM_TCR_SYNCENA_Pos</a>&#160;&#160;&#160;2<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gaa93a1147a39fc63980d299231252a30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: SYNCENA Position.  <br /></td></tr>
+<tr class="separator:gaa93a1147a39fc63980d299231252a30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac89b74a78701c25b442105d7fe2bbefb" id="r_gac89b74a78701c25b442105d7fe2bbefb"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gac89b74a78701c25b442105d7fe2bbefb">ITM_TCR_SYNCENA_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gaa93a1147a39fc63980d299231252a30e">ITM_TCR_SYNCENA_Pos</a>)</td></tr>
+<tr class="memdesc:gac89b74a78701c25b442105d7fe2bbefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: SYNCENA Mask.  <br /></td></tr>
+<tr class="separator:gac89b74a78701c25b442105d7fe2bbefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aa381845f810114ab519b90753922a1" id="r_ga5aa381845f810114ab519b90753922a1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga5aa381845f810114ab519b90753922a1">ITM_TCR_TSENA_Pos</a>&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga5aa381845f810114ab519b90753922a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: TSENA Position.  <br /></td></tr>
+<tr class="separator:ga5aa381845f810114ab519b90753922a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga436b2e8fa24328f48f2da31c00fc9e65" id="r_ga436b2e8fa24328f48f2da31c00fc9e65"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga436b2e8fa24328f48f2da31c00fc9e65">ITM_TCR_TSENA_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga5aa381845f810114ab519b90753922a1">ITM_TCR_TSENA_Pos</a>)</td></tr>
+<tr class="memdesc:ga436b2e8fa24328f48f2da31c00fc9e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: TSENA Mask.  <br /></td></tr>
+<tr class="separator:ga436b2e8fa24328f48f2da31c00fc9e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3286b86004bce7ffe17ee269f87f8d9d" id="r_ga3286b86004bce7ffe17ee269f87f8d9d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga3286b86004bce7ffe17ee269f87f8d9d">ITM_TCR_ITMENA_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga3286b86004bce7ffe17ee269f87f8d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: ITM Enable bit Position.  <br /></td></tr>
+<tr class="separator:ga3286b86004bce7ffe17ee269f87f8d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dd53e3bff24ac09d94e61cb595cb2d9" id="r_ga7dd53e3bff24ac09d94e61cb595cb2d9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga7dd53e3bff24ac09d94e61cb595cb2d9">ITM_TCR_ITMENA_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga3286b86004bce7ffe17ee269f87f8d9d">ITM_TCR_ITMENA_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga7dd53e3bff24ac09d94e61cb595cb2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM TCR: ITM Enable bit Mask.  <br /></td></tr>
+<tr class="separator:ga7dd53e3bff24ac09d94e61cb595cb2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabde5907a22b68e4214b300a183b5ac4b" id="r_gabde5907a22b68e4214b300a183b5ac4b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#gabde5907a22b68e4214b300a183b5ac4b">ITM_ITREAD_AFVALID_Pos</a>&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gabde5907a22b68e4214b300a183b5ac4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM Integration Read Register Definitions.  <br /></td></tr>
+<tr class="separator:gabde5907a22b68e4214b300a183b5ac4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a4f4fa423e67fd6b3a30ef198dfd411" id="r_ga0a4f4fa423e67fd6b3a30ef198dfd411"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga0a4f4fa423e67fd6b3a30ef198dfd411">ITM_ITREAD_AFVALID_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gabde5907a22b68e4214b300a183b5ac4b">ITM_ITREAD_AFVALID_Pos</a>)</td></tr>
+<tr class="memdesc:ga0a4f4fa423e67fd6b3a30ef198dfd411"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM ITREAD: AFVALID Mask.  <br /></td></tr>
+<tr class="separator:ga0a4f4fa423e67fd6b3a30ef198dfd411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga369c864748a97888b7fc07791ed6dd7d" id="r_ga369c864748a97888b7fc07791ed6dd7d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga369c864748a97888b7fc07791ed6dd7d">ITM_ITREAD_ATREADY_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga369c864748a97888b7fc07791ed6dd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM ITREAD: ATREADY Position.  <br /></td></tr>
+<tr class="separator:ga369c864748a97888b7fc07791ed6dd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga475e0252bd4dc448b3abc62f9cdda958" id="r_ga475e0252bd4dc448b3abc62f9cdda958"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga475e0252bd4dc448b3abc62f9cdda958">ITM_ITREAD_ATREADY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga369c864748a97888b7fc07791ed6dd7d">ITM_ITREAD_ATREADY_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga475e0252bd4dc448b3abc62f9cdda958"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM ITREAD: ATREADY Mask.  <br /></td></tr>
+<tr class="separator:ga475e0252bd4dc448b3abc62f9cdda958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga112ec2adf5c6baa5dab90a27bf46d976" id="r_ga112ec2adf5c6baa5dab90a27bf46d976"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga112ec2adf5c6baa5dab90a27bf46d976">ITM_ITWRITE_AFVALID_Pos</a>&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga112ec2adf5c6baa5dab90a27bf46d976"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM Integration Write Register Definitions.  <br /></td></tr>
+<tr class="separator:ga112ec2adf5c6baa5dab90a27bf46d976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90352cff17ccc14f8ac1e34a17394665" id="r_ga90352cff17ccc14f8ac1e34a17394665"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga90352cff17ccc14f8ac1e34a17394665">ITM_ITWRITE_AFVALID_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga112ec2adf5c6baa5dab90a27bf46d976">ITM_ITWRITE_AFVALID_Pos</a>)</td></tr>
+<tr class="memdesc:ga90352cff17ccc14f8ac1e34a17394665"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM ITWRITE: AFVALID Mask.  <br /></td></tr>
+<tr class="separator:ga90352cff17ccc14f8ac1e34a17394665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f37f521cf3febbb417eaae59b0c58ef" id="r_ga2f37f521cf3febbb417eaae59b0c58ef"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga2f37f521cf3febbb417eaae59b0c58ef">ITM_ITWRITE_ATREADY_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga2f37f521cf3febbb417eaae59b0c58ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM ITWRITE: ATREADY Position.  <br /></td></tr>
+<tr class="separator:ga2f37f521cf3febbb417eaae59b0c58ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fe8feb12b89f3d07c22e874e0c5a18a" id="r_ga2fe8feb12b89f3d07c22e874e0c5a18a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga2fe8feb12b89f3d07c22e874e0c5a18a">ITM_ITWRITE_ATREADY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga2f37f521cf3febbb417eaae59b0c58ef">ITM_ITWRITE_ATREADY_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga2fe8feb12b89f3d07c22e874e0c5a18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM ITWRITE: ATREADY Mask.  <br /></td></tr>
+<tr class="separator:ga2fe8feb12b89f3d07c22e874e0c5a18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49b6660fc478f3be1bf446813a80e05a" id="r_ga49b6660fc478f3be1bf446813a80e05a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga49b6660fc478f3be1bf446813a80e05a">ITM_ITCTRL_IME_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga49b6660fc478f3be1bf446813a80e05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM Integration Mode Control Register Definitions.  <br /></td></tr>
+<tr class="separator:ga49b6660fc478f3be1bf446813a80e05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga654b258a41d2e851d6c2861f95e6ed85" id="r_ga654b258a41d2e851d6c2861f95e6ed85"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__ITM.html#ga654b258a41d2e851d6c2861f95e6ed85">ITM_ITCTRL_IME_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga49b6660fc478f3be1bf446813a80e05a">ITM_ITCTRL_IME_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga654b258a41d2e851d6c2861f95e6ed85"><td class="mdescLeft">&#160;</td><td class="mdescRight">ITM ITCTRL: IME Mask.  <br /></td></tr>
+<tr class="separator:ga654b258a41d2e851d6c2861f95e6ed85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Type definitions for the Instrumentation Trace Macrocell (ITM) </p>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ga654b258a41d2e851d6c2861f95e6ed85" name="ga654b258a41d2e851d6c2861f95e6ed85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga654b258a41d2e851d6c2861f95e6ed85">&#9670;&#160;</a></span>ITM_ITCTRL_IME_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITCTRL_IME_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga49b6660fc478f3be1bf446813a80e05a">ITM_ITCTRL_IME_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM ITCTRL: IME Mask. </p>
+
+</div>
+</div>
+<a id="ga49b6660fc478f3be1bf446813a80e05a" name="ga49b6660fc478f3be1bf446813a80e05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49b6660fc478f3be1bf446813a80e05a">&#9670;&#160;</a></span>ITM_ITCTRL_IME_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITCTRL_IME_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM Integration Mode Control Register Definitions. </p>
+<p>ITM ITCTRL: IME Position </p>
+
+</div>
+</div>
+<a id="ga0a4f4fa423e67fd6b3a30ef198dfd411" name="ga0a4f4fa423e67fd6b3a30ef198dfd411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a4f4fa423e67fd6b3a30ef198dfd411">&#9670;&#160;</a></span>ITM_ITREAD_AFVALID_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITREAD_AFVALID_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gabde5907a22b68e4214b300a183b5ac4b">ITM_ITREAD_AFVALID_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM ITREAD: AFVALID Mask. </p>
+
+</div>
+</div>
+<a id="gabde5907a22b68e4214b300a183b5ac4b" name="gabde5907a22b68e4214b300a183b5ac4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabde5907a22b68e4214b300a183b5ac4b">&#9670;&#160;</a></span>ITM_ITREAD_AFVALID_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITREAD_AFVALID_Pos&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM Integration Read Register Definitions. </p>
+<p>ITM ITREAD: AFVALID Position </p>
+
+</div>
+</div>
+<a id="ga475e0252bd4dc448b3abc62f9cdda958" name="ga475e0252bd4dc448b3abc62f9cdda958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga475e0252bd4dc448b3abc62f9cdda958">&#9670;&#160;</a></span>ITM_ITREAD_ATREADY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITREAD_ATREADY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga369c864748a97888b7fc07791ed6dd7d">ITM_ITREAD_ATREADY_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM ITREAD: ATREADY Mask. </p>
+
+</div>
+</div>
+<a id="ga369c864748a97888b7fc07791ed6dd7d" name="ga369c864748a97888b7fc07791ed6dd7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga369c864748a97888b7fc07791ed6dd7d">&#9670;&#160;</a></span>ITM_ITREAD_ATREADY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITREAD_ATREADY_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM ITREAD: ATREADY Position. </p>
+
+</div>
+</div>
+<a id="ga90352cff17ccc14f8ac1e34a17394665" name="ga90352cff17ccc14f8ac1e34a17394665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90352cff17ccc14f8ac1e34a17394665">&#9670;&#160;</a></span>ITM_ITWRITE_AFVALID_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITWRITE_AFVALID_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga112ec2adf5c6baa5dab90a27bf46d976">ITM_ITWRITE_AFVALID_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM ITWRITE: AFVALID Mask. </p>
+
+</div>
+</div>
+<a id="ga112ec2adf5c6baa5dab90a27bf46d976" name="ga112ec2adf5c6baa5dab90a27bf46d976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga112ec2adf5c6baa5dab90a27bf46d976">&#9670;&#160;</a></span>ITM_ITWRITE_AFVALID_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITWRITE_AFVALID_Pos&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM Integration Write Register Definitions. </p>
+<p>ITM ITWRITE: AFVALID Position </p>
+
+</div>
+</div>
+<a id="ga2fe8feb12b89f3d07c22e874e0c5a18a" name="ga2fe8feb12b89f3d07c22e874e0c5a18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2fe8feb12b89f3d07c22e874e0c5a18a">&#9670;&#160;</a></span>ITM_ITWRITE_ATREADY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITWRITE_ATREADY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga2f37f521cf3febbb417eaae59b0c58ef">ITM_ITWRITE_ATREADY_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM ITWRITE: ATREADY Mask. </p>
+
+</div>
+</div>
+<a id="ga2f37f521cf3febbb417eaae59b0c58ef" name="ga2f37f521cf3febbb417eaae59b0c58ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f37f521cf3febbb417eaae59b0c58ef">&#9670;&#160;</a></span>ITM_ITWRITE_ATREADY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_ITWRITE_ATREADY_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM ITWRITE: ATREADY Position. </p>
+
+</div>
+</div>
+<a id="ga9d8f821bdad48c7b4a02f11ebf2c8852" name="ga9d8f821bdad48c7b4a02f11ebf2c8852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d8f821bdad48c7b4a02f11ebf2c8852">&#9670;&#160;</a></span>ITM_STIM_DISABLED_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_STIM_DISABLED_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gafd9ed85f36233685f182cc249621e025">ITM_STIM_DISABLED_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM STIM: DISABLED Mask. </p>
+
+</div>
+</div>
+<a id="gafd9ed85f36233685f182cc249621e025" name="gafd9ed85f36233685f182cc249621e025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd9ed85f36233685f182cc249621e025">&#9670;&#160;</a></span>ITM_STIM_DISABLED_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_STIM_DISABLED_Pos&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM Stimulus Port Register Definitions. </p>
+<p>ITM STIM: DISABLED Position </p>
+
+</div>
+</div>
+<a id="ga73dc88e3338b4ef9a81e53a1d2c5ae83" name="ga73dc88e3338b4ef9a81e53a1d2c5ae83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73dc88e3338b4ef9a81e53a1d2c5ae83">&#9670;&#160;</a></span>ITM_STIM_FIFOREADY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_STIM_FIFOREADY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gaa79f3a59d15d810d48d924c0ca4ae0b9">ITM_STIM_FIFOREADY_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM STIM: FIFOREADY Mask. </p>
+
+</div>
+</div>
+<a id="gaa79f3a59d15d810d48d924c0ca4ae0b9" name="gaa79f3a59d15d810d48d924c0ca4ae0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa79f3a59d15d810d48d924c0ca4ae0b9">&#9670;&#160;</a></span>ITM_STIM_FIFOREADY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_STIM_FIFOREADY_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM STIM: FIFOREADY Position. </p>
+
+</div>
+</div>
+<a id="ga43ad7cf33de12f2ef3a412d4f354c60f" name="ga43ad7cf33de12f2ef3a412d4f354c60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43ad7cf33de12f2ef3a412d4f354c60f">&#9670;&#160;</a></span>ITM_TCR_BUSY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_BUSY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga9174ad4a36052c377cef4e6aba2ed484">ITM_TCR_BUSY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: BUSY Mask. </p>
+
+</div>
+</div>
+<a id="ga9174ad4a36052c377cef4e6aba2ed484" name="ga9174ad4a36052c377cef4e6aba2ed484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9174ad4a36052c377cef4e6aba2ed484">&#9670;&#160;</a></span>ITM_TCR_BUSY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_BUSY_Pos&#160;&#160;&#160;23<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM Trace Control Register Definitions. </p>
+<p>ITM TCR: BUSY Position </p>
+
+</div>
+</div>
+<a id="ga98ea1c596d43d3633a202f9ee746cf70" name="ga98ea1c596d43d3633a202f9ee746cf70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98ea1c596d43d3633a202f9ee746cf70">&#9670;&#160;</a></span>ITM_TCR_DWTENA_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_DWTENA_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga30e83ebb33aa766070fe3d1f27ae820e">ITM_TCR_DWTENA_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: DWTENA Mask. </p>
+
+</div>
+</div>
+<a id="ga30e83ebb33aa766070fe3d1f27ae820e" name="ga30e83ebb33aa766070fe3d1f27ae820e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30e83ebb33aa766070fe3d1f27ae820e">&#9670;&#160;</a></span>ITM_TCR_DWTENA_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_DWTENA_Pos&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: DWTENA Position. </p>
+
+</div>
+</div>
+<a id="gade862cf009827f7f6748fc44c541b067" name="gade862cf009827f7f6748fc44c541b067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade862cf009827f7f6748fc44c541b067">&#9670;&#160;</a></span>ITM_TCR_GTSFREQ_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_GTSFREQ_Msk&#160;&#160;&#160;(3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga96c7c7cbc0d98426c408090b41f583f1">ITM_TCR_GTSFREQ_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: Global timestamp frequency Mask. </p>
+
+</div>
+</div>
+<a id="ga96c7c7cbc0d98426c408090b41f583f1" name="ga96c7c7cbc0d98426c408090b41f583f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96c7c7cbc0d98426c408090b41f583f1">&#9670;&#160;</a></span>ITM_TCR_GTSFREQ_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_GTSFREQ_Pos&#160;&#160;&#160;10U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: Global timestamp frequency Position. </p>
+
+</div>
+</div>
+<a id="ga7dd53e3bff24ac09d94e61cb595cb2d9" name="ga7dd53e3bff24ac09d94e61cb595cb2d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7dd53e3bff24ac09d94e61cb595cb2d9">&#9670;&#160;</a></span>ITM_TCR_ITMENA_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_ITMENA_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga3286b86004bce7ffe17ee269f87f8d9d">ITM_TCR_ITMENA_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: ITM Enable bit Mask. </p>
+
+</div>
+</div>
+<a id="ga3286b86004bce7ffe17ee269f87f8d9d" name="ga3286b86004bce7ffe17ee269f87f8d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3286b86004bce7ffe17ee269f87f8d9d">&#9670;&#160;</a></span>ITM_TCR_ITMENA_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_ITMENA_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: ITM Enable bit Position. </p>
+
+</div>
+</div>
+<a id="ga724f0560593042670b49e2f9a6483b6f" name="ga724f0560593042670b49e2f9a6483b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga724f0560593042670b49e2f9a6483b6f">&#9670;&#160;</a></span>ITM_TCR_STALLENA_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_STALLENA_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gad74ca6140644b572eadbf21e870d24b9">ITM_TCR_STALLENA_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: STALLENA Mask. </p>
+
+</div>
+</div>
+<a id="gad74ca6140644b572eadbf21e870d24b9" name="gad74ca6140644b572eadbf21e870d24b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad74ca6140644b572eadbf21e870d24b9">&#9670;&#160;</a></span>ITM_TCR_STALLENA_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_STALLENA_Pos&#160;&#160;&#160;5<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: STALLENA Position. </p>
+
+</div>
+</div>
+<a id="ga97476cb65bab16a328b35f81fd02010a" name="ga97476cb65bab16a328b35f81fd02010a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97476cb65bab16a328b35f81fd02010a">&#9670;&#160;</a></span>ITM_TCR_SWOENA_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_SWOENA_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga7a380f0c8078f6560051406583ecd6a5">ITM_TCR_SWOENA_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: SWOENA Mask. </p>
+
+</div>
+</div>
+<a id="ga7a380f0c8078f6560051406583ecd6a5" name="ga7a380f0c8078f6560051406583ecd6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a380f0c8078f6560051406583ecd6a5">&#9670;&#160;</a></span>ITM_TCR_SWOENA_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_SWOENA_Pos&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: SWOENA Position. </p>
+
+</div>
+</div>
+<a id="gac89b74a78701c25b442105d7fe2bbefb" name="gac89b74a78701c25b442105d7fe2bbefb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac89b74a78701c25b442105d7fe2bbefb">&#9670;&#160;</a></span>ITM_TCR_SYNCENA_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_SYNCENA_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gaa93a1147a39fc63980d299231252a30e">ITM_TCR_SYNCENA_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: SYNCENA Mask. </p>
+
+</div>
+</div>
+<a id="gaa93a1147a39fc63980d299231252a30e" name="gaa93a1147a39fc63980d299231252a30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa93a1147a39fc63980d299231252a30e">&#9670;&#160;</a></span>ITM_TCR_SYNCENA_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_SYNCENA_Pos&#160;&#160;&#160;2<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: SYNCENA Position. </p>
+
+</div>
+</div>
+<a id="gac014c7345304ed245b642eb9d6e9a302" name="gac014c7345304ed245b642eb9d6e9a302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac014c7345304ed245b642eb9d6e9a302">&#9670;&#160;</a></span>ITM_TCR_TRACEBUSID_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_TRACEBUSID_Msk&#160;&#160;&#160;(0x7FUL &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga113bf41ed31584360ad7d865e5e0ace7">ITM_TCR_TRACEBUSID_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: ATBID Mask. </p>
+
+</div>
+</div>
+<a id="ga113bf41ed31584360ad7d865e5e0ace7" name="ga113bf41ed31584360ad7d865e5e0ace7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga113bf41ed31584360ad7d865e5e0ace7">&#9670;&#160;</a></span>ITM_TCR_TRACEBUSID_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_TRACEBUSID_Pos&#160;&#160;&#160;16<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: ATBID Position. </p>
+
+</div>
+</div>
+<a id="ga436b2e8fa24328f48f2da31c00fc9e65" name="ga436b2e8fa24328f48f2da31c00fc9e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga436b2e8fa24328f48f2da31c00fc9e65">&#9670;&#160;</a></span>ITM_TCR_TSENA_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_TSENA_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga5aa381845f810114ab519b90753922a1">ITM_TCR_TSENA_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: TSENA Mask. </p>
+
+</div>
+</div>
+<a id="ga5aa381845f810114ab519b90753922a1" name="ga5aa381845f810114ab519b90753922a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5aa381845f810114ab519b90753922a1">&#9670;&#160;</a></span>ITM_TCR_TSENA_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_TSENA_Pos&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: TSENA Position. </p>
+
+</div>
+</div>
+<a id="ga3e8651ecde89295bcc6e248a1b7393d6" name="ga3e8651ecde89295bcc6e248a1b7393d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e8651ecde89295bcc6e248a1b7393d6">&#9670;&#160;</a></span>ITM_TCR_TSPRESCALE_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_TSPRESCALE_Msk&#160;&#160;&#160;(3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__ITM.html#gaa39e93e22d56e5e9edaf866b1171ac4f">ITM_TCR_TSPRESCALE_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: TSPRESCALE Mask. </p>
+
+</div>
+</div>
+<a id="gaa39e93e22d56e5e9edaf866b1171ac4f" name="gaa39e93e22d56e5e9edaf866b1171ac4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa39e93e22d56e5e9edaf866b1171ac4f">&#9670;&#160;</a></span>ITM_TCR_TSPRESCALE_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TCR_TSPRESCALE_Pos&#160;&#160;&#160;8<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TCR: TSPRESCALE Position. </p>
+
+</div>
+</div>
+<a id="ga168e089d882df325a387aab3a802a46b" name="ga168e089d882df325a387aab3a802a46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga168e089d882df325a387aab3a802a46b">&#9670;&#160;</a></span>ITM_TPR_PRIVMASK_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TPR_PRIVMASK_Msk&#160;&#160;&#160;(0xFUL /*&lt;&lt; <a class="el" href="group__CMSIS__ITM.html#ga7abe5e590d1611599df87a1884a352e8">ITM_TPR_PRIVMASK_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM TPR: PRIVMASK Mask. </p>
+
+</div>
+</div>
+<a id="ga7abe5e590d1611599df87a1884a352e8" name="ga7abe5e590d1611599df87a1884a352e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7abe5e590d1611599df87a1884a352e8">&#9670;&#160;</a></span>ITM_TPR_PRIVMASK_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ITM_TPR_PRIVMASK_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ITM Trace Privilege Register Definitions. </p>
+<p>ITM TPR: PRIVMASK Position </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

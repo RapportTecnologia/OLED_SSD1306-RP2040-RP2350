@@ -1,0 +1,1623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura PWM_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structPWM__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structPWM__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura PWM_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Simple PWM (PWM)  
+ <a href="structPWM__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para PWM_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structPWM__Type__coll__graph.svg" width="116" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a740057ced1e151e5c85a11d2788ad0f0" id="r_a740057ced1e151e5c85a11d2788ad0f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a740057ced1e151e5c85a11d2788ad0f0">CH0_CC</a></td></tr>
+<tr class="memdesc:a740057ced1e151e5c85a11d2788ad0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a740057ced1e151e5c85a11d2788ad0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b98fea138a782851f5c641731841b7" id="r_a16b98fea138a782851f5c641731841b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a16b98fea138a782851f5c641731841b7">CH0_CSR</a></td></tr>
+<tr class="memdesc:a16b98fea138a782851f5c641731841b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; PWM Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a16b98fea138a782851f5c641731841b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030fda72364817caaa09ddefc3d50575" id="r_a030fda72364817caaa09ddefc3d50575"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a030fda72364817caaa09ddefc3d50575">CH0_CTR</a></td></tr>
+<tr class="memdesc:a030fda72364817caaa09ddefc3d50575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:a030fda72364817caaa09ddefc3d50575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e592b9f617c0ec3167a45c7329166ae" id="r_a9e592b9f617c0ec3167a45c7329166ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a9e592b9f617c0ec3167a45c7329166ae">CH0_DIV</a></td></tr>
+<tr class="memdesc:a9e592b9f617c0ec3167a45c7329166ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:a9e592b9f617c0ec3167a45c7329166ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717119b5a9f3206dbdc501510e49e59c" id="r_a717119b5a9f3206dbdc501510e49e59c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a717119b5a9f3206dbdc501510e49e59c">CH0_TOP</a></td></tr>
+<tr class="memdesc:a717119b5a9f3206dbdc501510e49e59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a717119b5a9f3206dbdc501510e49e59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538a249bbf1af085c0b003f3249e6f66" id="r_a538a249bbf1af085c0b003f3249e6f66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a538a249bbf1af085c0b003f3249e6f66">CH10_CC</a></td></tr>
+<tr class="memdesc:a538a249bbf1af085c0b003f3249e6f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a538a249bbf1af085c0b003f3249e6f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c79e8eb6dcc73d16776db3df32d33c" id="r_ac3c79e8eb6dcc73d16776db3df32d33c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ac3c79e8eb6dcc73d16776db3df32d33c">CH10_CSR</a></td></tr>
+<tr class="memdesc:ac3c79e8eb6dcc73d16776db3df32d33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:ac3c79e8eb6dcc73d16776db3df32d33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0ddb3cd61952b6cde242fdac4bd6ea" id="r_abd0ddb3cd61952b6cde242fdac4bd6ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#abd0ddb3cd61952b6cde242fdac4bd6ea">CH10_CTR</a></td></tr>
+<tr class="memdesc:abd0ddb3cd61952b6cde242fdac4bd6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:abd0ddb3cd61952b6cde242fdac4bd6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0991b8862d60a5957860fba49ac22a" id="r_abf0991b8862d60a5957860fba49ac22a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#abf0991b8862d60a5957860fba49ac22a">CH10_DIV</a></td></tr>
+<tr class="memdesc:abf0991b8862d60a5957860fba49ac22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:abf0991b8862d60a5957860fba49ac22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809fb7fcad961b29ea872c35b7f5f28e" id="r_a809fb7fcad961b29ea872c35b7f5f28e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a809fb7fcad961b29ea872c35b7f5f28e">CH10_TOP</a></td></tr>
+<tr class="memdesc:a809fb7fcad961b29ea872c35b7f5f28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a809fb7fcad961b29ea872c35b7f5f28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9fd7126d7ca353d96b7284d614b351" id="r_a2c9fd7126d7ca353d96b7284d614b351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a2c9fd7126d7ca353d96b7284d614b351">CH11_CC</a></td></tr>
+<tr class="memdesc:a2c9fd7126d7ca353d96b7284d614b351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a2c9fd7126d7ca353d96b7284d614b351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24ed84a28fd41469af64c472b67a559" id="r_ae24ed84a28fd41469af64c472b67a559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ae24ed84a28fd41469af64c472b67a559">CH11_CSR</a></td></tr>
+<tr class="memdesc:ae24ed84a28fd41469af64c472b67a559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:ae24ed84a28fd41469af64c472b67a559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ec55b25b22164fdc4a6d4594f4e5a1" id="r_aa1ec55b25b22164fdc4a6d4594f4e5a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aa1ec55b25b22164fdc4a6d4594f4e5a1">CH11_CTR</a></td></tr>
+<tr class="memdesc:aa1ec55b25b22164fdc4a6d4594f4e5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:aa1ec55b25b22164fdc4a6d4594f4e5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242f6765d4ab56b9a700f10b8fd4ceae" id="r_a242f6765d4ab56b9a700f10b8fd4ceae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a242f6765d4ab56b9a700f10b8fd4ceae">CH11_DIV</a></td></tr>
+<tr class="memdesc:a242f6765d4ab56b9a700f10b8fd4ceae"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:a242f6765d4ab56b9a700f10b8fd4ceae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7523c6ed449b0601d596b8ed0553cae8" id="r_a7523c6ed449b0601d596b8ed0553cae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a7523c6ed449b0601d596b8ed0553cae8">CH11_TOP</a></td></tr>
+<tr class="memdesc:a7523c6ed449b0601d596b8ed0553cae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a7523c6ed449b0601d596b8ed0553cae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abead61bbbc1341192a3d39b152bd7a" id="r_a4abead61bbbc1341192a3d39b152bd7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a4abead61bbbc1341192a3d39b152bd7a">CH1_CC</a></td></tr>
+<tr class="memdesc:a4abead61bbbc1341192a3d39b152bd7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a4abead61bbbc1341192a3d39b152bd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8fc187cfcc642752f8cc90ca6c2a23b" id="r_aa8fc187cfcc642752f8cc90ca6c2a23b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aa8fc187cfcc642752f8cc90ca6c2a23b">CH1_CSR</a></td></tr>
+<tr class="memdesc:aa8fc187cfcc642752f8cc90ca6c2a23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:aa8fc187cfcc642752f8cc90ca6c2a23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0154e7f4edd1bbdfae9caf316716d0" id="r_a4e0154e7f4edd1bbdfae9caf316716d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a4e0154e7f4edd1bbdfae9caf316716d0">CH1_CTR</a></td></tr>
+<tr class="memdesc:a4e0154e7f4edd1bbdfae9caf316716d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:a4e0154e7f4edd1bbdfae9caf316716d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3302002d632e600cd732a20c2eb04be" id="r_aa3302002d632e600cd732a20c2eb04be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aa3302002d632e600cd732a20c2eb04be">CH1_DIV</a></td></tr>
+<tr class="memdesc:aa3302002d632e600cd732a20c2eb04be"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:aa3302002d632e600cd732a20c2eb04be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0193821b36d0628a6b35797d7dddc54d" id="r_a0193821b36d0628a6b35797d7dddc54d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a0193821b36d0628a6b35797d7dddc54d">CH1_TOP</a></td></tr>
+<tr class="memdesc:a0193821b36d0628a6b35797d7dddc54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a0193821b36d0628a6b35797d7dddc54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4924db1cf5ce0b1b47376cd9ba778e64" id="r_a4924db1cf5ce0b1b47376cd9ba778e64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a4924db1cf5ce0b1b47376cd9ba778e64">CH2_CC</a></td></tr>
+<tr class="memdesc:a4924db1cf5ce0b1b47376cd9ba778e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a4924db1cf5ce0b1b47376cd9ba778e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93349fdc1920c090cdff8a1854215f84" id="r_a93349fdc1920c090cdff8a1854215f84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a93349fdc1920c090cdff8a1854215f84">CH2_CSR</a></td></tr>
+<tr class="memdesc:a93349fdc1920c090cdff8a1854215f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:a93349fdc1920c090cdff8a1854215f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0da74b4489981f89a8a6cd99079221" id="r_acc0da74b4489981f89a8a6cd99079221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#acc0da74b4489981f89a8a6cd99079221">CH2_CTR</a></td></tr>
+<tr class="memdesc:acc0da74b4489981f89a8a6cd99079221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:acc0da74b4489981f89a8a6cd99079221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8eb957578428e72310d06639e7db6da" id="r_ad8eb957578428e72310d06639e7db6da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ad8eb957578428e72310d06639e7db6da">CH2_DIV</a></td></tr>
+<tr class="memdesc:ad8eb957578428e72310d06639e7db6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:ad8eb957578428e72310d06639e7db6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d0f65a603ccedc5deba3ec080d5703" id="r_ab2d0f65a603ccedc5deba3ec080d5703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ab2d0f65a603ccedc5deba3ec080d5703">CH2_TOP</a></td></tr>
+<tr class="memdesc:ab2d0f65a603ccedc5deba3ec080d5703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:ab2d0f65a603ccedc5deba3ec080d5703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8513e512b85ad26181b1184f0ba370" id="r_a4c8513e512b85ad26181b1184f0ba370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a4c8513e512b85ad26181b1184f0ba370">CH3_CC</a></td></tr>
+<tr class="memdesc:a4c8513e512b85ad26181b1184f0ba370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a4c8513e512b85ad26181b1184f0ba370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172edae06482f87b5aef2b23e31e175d" id="r_a172edae06482f87b5aef2b23e31e175d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a172edae06482f87b5aef2b23e31e175d">CH3_CSR</a></td></tr>
+<tr class="memdesc:a172edae06482f87b5aef2b23e31e175d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:a172edae06482f87b5aef2b23e31e175d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a5ebd810f5399a37aa77d83e1e537e" id="r_a32a5ebd810f5399a37aa77d83e1e537e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a32a5ebd810f5399a37aa77d83e1e537e">CH3_CTR</a></td></tr>
+<tr class="memdesc:a32a5ebd810f5399a37aa77d83e1e537e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:a32a5ebd810f5399a37aa77d83e1e537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ceedf89d943ba9ad1c70c587695a2c" id="r_a13ceedf89d943ba9ad1c70c587695a2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a13ceedf89d943ba9ad1c70c587695a2c">CH3_DIV</a></td></tr>
+<tr class="memdesc:a13ceedf89d943ba9ad1c70c587695a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:a13ceedf89d943ba9ad1c70c587695a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2089d1438f4bb20e1bd99e6546d68950" id="r_a2089d1438f4bb20e1bd99e6546d68950"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a2089d1438f4bb20e1bd99e6546d68950">CH3_TOP</a></td></tr>
+<tr class="memdesc:a2089d1438f4bb20e1bd99e6546d68950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a2089d1438f4bb20e1bd99e6546d68950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba7605a9c2449b7a938b748066fb40a" id="r_a1ba7605a9c2449b7a938b748066fb40a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a1ba7605a9c2449b7a938b748066fb40a">CH4_CC</a></td></tr>
+<tr class="memdesc:a1ba7605a9c2449b7a938b748066fb40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a1ba7605a9c2449b7a938b748066fb40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40873ff0f9feab764da27bd5fcbf3915" id="r_a40873ff0f9feab764da27bd5fcbf3915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a40873ff0f9feab764da27bd5fcbf3915">CH4_CSR</a></td></tr>
+<tr class="memdesc:a40873ff0f9feab764da27bd5fcbf3915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:a40873ff0f9feab764da27bd5fcbf3915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03eb96bc6130d979be854f6b49e8767b" id="r_a03eb96bc6130d979be854f6b49e8767b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a03eb96bc6130d979be854f6b49e8767b">CH4_CTR</a></td></tr>
+<tr class="memdesc:a03eb96bc6130d979be854f6b49e8767b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:a03eb96bc6130d979be854f6b49e8767b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72091cb6b2791e725fd4449e90861d33" id="r_a72091cb6b2791e725fd4449e90861d33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a72091cb6b2791e725fd4449e90861d33">CH4_DIV</a></td></tr>
+<tr class="memdesc:a72091cb6b2791e725fd4449e90861d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:a72091cb6b2791e725fd4449e90861d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef64b8a8aaaa8c92fc55a6dc3a0d8932" id="r_aef64b8a8aaaa8c92fc55a6dc3a0d8932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aef64b8a8aaaa8c92fc55a6dc3a0d8932">CH4_TOP</a></td></tr>
+<tr class="memdesc:aef64b8a8aaaa8c92fc55a6dc3a0d8932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:aef64b8a8aaaa8c92fc55a6dc3a0d8932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af482015e4ee76d6bb6cee912610c0f5d" id="r_af482015e4ee76d6bb6cee912610c0f5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#af482015e4ee76d6bb6cee912610c0f5d">CH5_CC</a></td></tr>
+<tr class="memdesc:af482015e4ee76d6bb6cee912610c0f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:af482015e4ee76d6bb6cee912610c0f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae646ce91a9afef8b1fde6f99133d07a9" id="r_ae646ce91a9afef8b1fde6f99133d07a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ae646ce91a9afef8b1fde6f99133d07a9">CH5_CSR</a></td></tr>
+<tr class="memdesc:ae646ce91a9afef8b1fde6f99133d07a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:ae646ce91a9afef8b1fde6f99133d07a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeab9c2041bfc094a415a19cece5f45b" id="r_adeab9c2041bfc094a415a19cece5f45b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#adeab9c2041bfc094a415a19cece5f45b">CH5_CTR</a></td></tr>
+<tr class="memdesc:adeab9c2041bfc094a415a19cece5f45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:adeab9c2041bfc094a415a19cece5f45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbf69f09bf77805bccd1f70efa2e029" id="r_a1fbf69f09bf77805bccd1f70efa2e029"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a1fbf69f09bf77805bccd1f70efa2e029">CH5_DIV</a></td></tr>
+<tr class="memdesc:a1fbf69f09bf77805bccd1f70efa2e029"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:a1fbf69f09bf77805bccd1f70efa2e029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8a3980a1205cf4fb20a2e0a86ee9e7" id="r_a0a8a3980a1205cf4fb20a2e0a86ee9e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a0a8a3980a1205cf4fb20a2e0a86ee9e7">CH5_TOP</a></td></tr>
+<tr class="memdesc:a0a8a3980a1205cf4fb20a2e0a86ee9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a0a8a3980a1205cf4fb20a2e0a86ee9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff6e9a71957c1065cbb757e78d7ddc2" id="r_aaff6e9a71957c1065cbb757e78d7ddc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aaff6e9a71957c1065cbb757e78d7ddc2">CH6_CC</a></td></tr>
+<tr class="memdesc:aaff6e9a71957c1065cbb757e78d7ddc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:aaff6e9a71957c1065cbb757e78d7ddc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9fff871c1121b5383f35c363784a86" id="r_a8d9fff871c1121b5383f35c363784a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a8d9fff871c1121b5383f35c363784a86">CH6_CSR</a></td></tr>
+<tr class="memdesc:a8d9fff871c1121b5383f35c363784a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:a8d9fff871c1121b5383f35c363784a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaeb7af521d8c1f1028a09f484282e8c" id="r_aeaeb7af521d8c1f1028a09f484282e8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aeaeb7af521d8c1f1028a09f484282e8c">CH6_CTR</a></td></tr>
+<tr class="memdesc:aeaeb7af521d8c1f1028a09f484282e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:aeaeb7af521d8c1f1028a09f484282e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0616f0d0f8300d549fed77483988fef" id="r_af0616f0d0f8300d549fed77483988fef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#af0616f0d0f8300d549fed77483988fef">CH6_DIV</a></td></tr>
+<tr class="memdesc:af0616f0d0f8300d549fed77483988fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:af0616f0d0f8300d549fed77483988fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3fac4291999cd4de997ed99c6ca9fd" id="r_a8d3fac4291999cd4de997ed99c6ca9fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a8d3fac4291999cd4de997ed99c6ca9fd">CH6_TOP</a></td></tr>
+<tr class="memdesc:a8d3fac4291999cd4de997ed99c6ca9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a8d3fac4291999cd4de997ed99c6ca9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f148d2decdc401e8589e9eb1851ecc7" id="r_a5f148d2decdc401e8589e9eb1851ecc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a5f148d2decdc401e8589e9eb1851ecc7">CH7_CC</a></td></tr>
+<tr class="memdesc:a5f148d2decdc401e8589e9eb1851ecc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:a5f148d2decdc401e8589e9eb1851ecc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f921ccbc62f3f990820a6f01f878f0c" id="r_a0f921ccbc62f3f990820a6f01f878f0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a0f921ccbc62f3f990820a6f01f878f0c">CH7_CSR</a></td></tr>
+<tr class="memdesc:a0f921ccbc62f3f990820a6f01f878f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:a0f921ccbc62f3f990820a6f01f878f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0904344f16b2e871845a117d064b52" id="r_a7c0904344f16b2e871845a117d064b52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a7c0904344f16b2e871845a117d064b52">CH7_CTR</a></td></tr>
+<tr class="memdesc:a7c0904344f16b2e871845a117d064b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:a7c0904344f16b2e871845a117d064b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c63177a44aa92686ddbabe7c789a73" id="r_a27c63177a44aa92686ddbabe7c789a73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a27c63177a44aa92686ddbabe7c789a73">CH7_DIV</a></td></tr>
+<tr class="memdesc:a27c63177a44aa92686ddbabe7c789a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:a27c63177a44aa92686ddbabe7c789a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef036d25a503842c4fa7e9aea7698769" id="r_aef036d25a503842c4fa7e9aea7698769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aef036d25a503842c4fa7e9aea7698769">CH7_TOP</a></td></tr>
+<tr class="memdesc:aef036d25a503842c4fa7e9aea7698769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:aef036d25a503842c4fa7e9aea7698769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad528f98ae4e538c0693b1f71c89fce09" id="r_ad528f98ae4e538c0693b1f71c89fce09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ad528f98ae4e538c0693b1f71c89fce09">CH8_CC</a></td></tr>
+<tr class="memdesc:ad528f98ae4e538c0693b1f71c89fce09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:ad528f98ae4e538c0693b1f71c89fce09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c00588cfab1e88193b37c0cb5b13168" id="r_a1c00588cfab1e88193b37c0cb5b13168"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a1c00588cfab1e88193b37c0cb5b13168">CH8_CSR</a></td></tr>
+<tr class="memdesc:a1c00588cfab1e88193b37c0cb5b13168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:a1c00588cfab1e88193b37c0cb5b13168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2fb1484d48e6bbe6c2a699d7be35789" id="r_ad2fb1484d48e6bbe6c2a699d7be35789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ad2fb1484d48e6bbe6c2a699d7be35789">CH8_CTR</a></td></tr>
+<tr class="memdesc:ad2fb1484d48e6bbe6c2a699d7be35789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:ad2fb1484d48e6bbe6c2a699d7be35789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99883ff9f1a18275c79c740b16903d8a" id="r_a99883ff9f1a18275c79c740b16903d8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a99883ff9f1a18275c79c740b16903d8a">CH8_DIV</a></td></tr>
+<tr class="memdesc:a99883ff9f1a18275c79c740b16903d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:a99883ff9f1a18275c79c740b16903d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b773e518dc6cad7b6aa3a7bf2177007" id="r_a3b773e518dc6cad7b6aa3a7bf2177007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a3b773e518dc6cad7b6aa3a7bf2177007">CH8_TOP</a></td></tr>
+<tr class="memdesc:a3b773e518dc6cad7b6aa3a7bf2177007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a3b773e518dc6cad7b6aa3a7bf2177007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac8c23dc8dfff13f2548804ba144e9f" id="r_afac8c23dc8dfff13f2548804ba144e9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#afac8c23dc8dfff13f2548804ba144e9f">CH9_CC</a></td></tr>
+<tr class="memdesc:afac8c23dc8dfff13f2548804ba144e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter compare values <br  />
+  <br /></td></tr>
+<tr class="separator:afac8c23dc8dfff13f2548804ba144e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3405aa842ff0415b9d398ee56594457d" id="r_a3405aa842ff0415b9d398ee56594457d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a3405aa842ff0415b9d398ee56594457d">CH9_CSR</a></td></tr>
+<tr class="memdesc:a3405aa842ff0415b9d398ee56594457d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control and status register <br  />
+  <br /></td></tr>
+<tr class="separator:a3405aa842ff0415b9d398ee56594457d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0634be5240a93af3c37ebf77c27a216d" id="r_a0634be5240a93af3c37ebf77c27a216d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a0634be5240a93af3c37ebf77c27a216d">CH9_CTR</a></td></tr>
+<tr class="memdesc:a0634be5240a93af3c37ebf77c27a216d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct access to the PWM counter <br  />
+  <br /></td></tr>
+<tr class="separator:a0634be5240a93af3c37ebf77c27a216d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4addab8a6da2ce0d67d33be6d18847b" id="r_ad4addab8a6da2ce0d67d33be6d18847b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#ad4addab8a6da2ce0d67d33be6d18847b">CH9_DIV</a></td></tr>
+<tr class="memdesc:ad4addab8a6da2ce0d67d33be6d18847b"><td class="mdescLeft">&#160;</td><td class="mdescRight">INT and FRAC form a fixed-point fractional number.  <br /></td></tr>
+<tr class="separator:ad4addab8a6da2ce0d67d33be6d18847b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c44ffe6ad2ae3538b8bc66d320b570" id="r_a03c44ffe6ad2ae3538b8bc66d320b570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a03c44ffe6ad2ae3538b8bc66d320b570">CH9_TOP</a></td></tr>
+<tr class="memdesc:a03c44ffe6ad2ae3538b8bc66d320b570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter wrap value <br  />
+  <br /></td></tr>
+<tr class="separator:a03c44ffe6ad2ae3538b8bc66d320b570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53174e5ca14282a2821a0af810197790" id="r_a53174e5ca14282a2821a0af810197790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a53174e5ca14282a2821a0af810197790">EN</a></td></tr>
+<tr class="memdesc:a53174e5ca14282a2821a0af810197790"><td class="mdescLeft">&#160;</td><td class="mdescRight">This register aliases the CSR_EN bits for all channels.  <br /></td></tr>
+<tr class="separator:a53174e5ca14282a2821a0af810197790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649c5ffe9fdcfeaa62c3ca8a0539d640" id="r_a649c5ffe9fdcfeaa62c3ca8a0539d640"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a649c5ffe9fdcfeaa62c3ca8a0539d640">INTE</a></td></tr>
+<tr class="memdesc:a649c5ffe9fdcfeaa62c3ca8a0539d640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable <br  />
+  <br /></td></tr>
+<tr class="separator:a649c5ffe9fdcfeaa62c3ca8a0539d640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0cb1d3434906b5d81b5993bce70a10" id="r_aaa0cb1d3434906b5d81b5993bce70a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aaa0cb1d3434906b5d81b5993bce70a10">INTF</a></td></tr>
+<tr class="memdesc:aaa0cb1d3434906b5d81b5993bce70a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force <br  />
+  <br /></td></tr>
+<tr class="separator:aaa0cb1d3434906b5d81b5993bce70a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1461e81f015e67048170e8c9de4f97bc" id="r_a1461e81f015e67048170e8c9de4f97bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a1461e81f015e67048170e8c9de4f97bc">INTR</a></td></tr>
+<tr class="memdesc:a1461e81f015e67048170e8c9de4f97bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupts <br  />
+  <br /></td></tr>
+<tr class="separator:a1461e81f015e67048170e8c9de4f97bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c1d0d9ad7170cd1fc02e869ffbf73f" id="r_a82c1d0d9ad7170cd1fc02e869ffbf73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a82c1d0d9ad7170cd1fc02e869ffbf73f">INTS</a></td></tr>
+<tr class="memdesc:a82c1d0d9ad7170cd1fc02e869ffbf73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing <br  />
+  <br /></td></tr>
+<tr class="separator:a82c1d0d9ad7170cd1fc02e869ffbf73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13290b98bfd7ae95bff58302b36137c2" id="r_a13290b98bfd7ae95bff58302b36137c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a13290b98bfd7ae95bff58302b36137c2">IRQ0_INTE</a></td></tr>
+<tr class="memdesc:a13290b98bfd7ae95bff58302b36137c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable for irq0 <br  />
+  <br /></td></tr>
+<tr class="separator:a13290b98bfd7ae95bff58302b36137c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618bfc1400c254748a37afbf1ffac092" id="r_a618bfc1400c254748a37afbf1ffac092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a618bfc1400c254748a37afbf1ffac092">IRQ0_INTF</a></td></tr>
+<tr class="memdesc:a618bfc1400c254748a37afbf1ffac092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force for irq0 <br  />
+  <br /></td></tr>
+<tr class="separator:a618bfc1400c254748a37afbf1ffac092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa442476a82e5b5ff998c42cb1016c340" id="r_aa442476a82e5b5ff998c42cb1016c340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#aa442476a82e5b5ff998c42cb1016c340">IRQ0_INTS</a></td></tr>
+<tr class="memdesc:aa442476a82e5b5ff998c42cb1016c340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing for irq0 <br  />
+  <br /></td></tr>
+<tr class="separator:aa442476a82e5b5ff998c42cb1016c340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb85158e42863c312bc51b7d42e5ddd" id="r_a4fb85158e42863c312bc51b7d42e5ddd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a4fb85158e42863c312bc51b7d42e5ddd">IRQ1_INTE</a></td></tr>
+<tr class="memdesc:a4fb85158e42863c312bc51b7d42e5ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable for irq1 <br  />
+  <br /></td></tr>
+<tr class="separator:a4fb85158e42863c312bc51b7d42e5ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d36d7055eb3e47e18e3aa55cd2f1794" id="r_a2d36d7055eb3e47e18e3aa55cd2f1794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a2d36d7055eb3e47e18e3aa55cd2f1794">IRQ1_INTF</a></td></tr>
+<tr class="memdesc:a2d36d7055eb3e47e18e3aa55cd2f1794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force for irq1 <br  />
+  <br /></td></tr>
+<tr class="separator:a2d36d7055eb3e47e18e3aa55cd2f1794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326b8da072507dfb826e915bcdf45295" id="r_a326b8da072507dfb826e915bcdf45295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPWM__Type.html#a326b8da072507dfb826e915bcdf45295">IRQ1_INTS</a></td></tr>
+<tr class="memdesc:a326b8da072507dfb826e915bcdf45295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing for irq1 <br  />
+  <br /></td></tr>
+<tr class="separator:a326b8da072507dfb826e915bcdf45295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Simple PWM (PWM) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a740057ced1e151e5c85a11d2788ad0f0" name="a740057ced1e151e5c85a11d2788ad0f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a740057ced1e151e5c85a11d2788ad0f0">&#9670;&#160;</a></span>CH0_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH0_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a16b98fea138a782851f5c641731841b7" name="a16b98fea138a782851f5c641731841b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b98fea138a782851f5c641731841b7">&#9670;&#160;</a></span>CH0_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH0_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; PWM Structure <br  />
+ </p>
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a030fda72364817caaa09ddefc3d50575" name="a030fda72364817caaa09ddefc3d50575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030fda72364817caaa09ddefc3d50575">&#9670;&#160;</a></span>CH0_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH0_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9e592b9f617c0ec3167a45c7329166ae" name="a9e592b9f617c0ec3167a45c7329166ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e592b9f617c0ec3167a45c7329166ae">&#9670;&#160;</a></span>CH0_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH0_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a717119b5a9f3206dbdc501510e49e59c" name="a717119b5a9f3206dbdc501510e49e59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717119b5a9f3206dbdc501510e49e59c">&#9670;&#160;</a></span>CH0_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH0_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a538a249bbf1af085c0b003f3249e6f66" name="a538a249bbf1af085c0b003f3249e6f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538a249bbf1af085c0b003f3249e6f66">&#9670;&#160;</a></span>CH10_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH10_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac3c79e8eb6dcc73d16776db3df32d33c" name="ac3c79e8eb6dcc73d16776db3df32d33c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c79e8eb6dcc73d16776db3df32d33c">&#9670;&#160;</a></span>CH10_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH10_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="abd0ddb3cd61952b6cde242fdac4bd6ea" name="abd0ddb3cd61952b6cde242fdac4bd6ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0ddb3cd61952b6cde242fdac4bd6ea">&#9670;&#160;</a></span>CH10_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH10_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="abf0991b8862d60a5957860fba49ac22a" name="abf0991b8862d60a5957860fba49ac22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0991b8862d60a5957860fba49ac22a">&#9670;&#160;</a></span>CH10_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH10_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a809fb7fcad961b29ea872c35b7f5f28e" name="a809fb7fcad961b29ea872c35b7f5f28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a809fb7fcad961b29ea872c35b7f5f28e">&#9670;&#160;</a></span>CH10_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH10_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2c9fd7126d7ca353d96b7284d614b351" name="a2c9fd7126d7ca353d96b7284d614b351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9fd7126d7ca353d96b7284d614b351">&#9670;&#160;</a></span>CH11_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH11_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae24ed84a28fd41469af64c472b67a559" name="ae24ed84a28fd41469af64c472b67a559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24ed84a28fd41469af64c472b67a559">&#9670;&#160;</a></span>CH11_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH11_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa1ec55b25b22164fdc4a6d4594f4e5a1" name="aa1ec55b25b22164fdc4a6d4594f4e5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ec55b25b22164fdc4a6d4594f4e5a1">&#9670;&#160;</a></span>CH11_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH11_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="a242f6765d4ab56b9a700f10b8fd4ceae" name="a242f6765d4ab56b9a700f10b8fd4ceae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242f6765d4ab56b9a700f10b8fd4ceae">&#9670;&#160;</a></span>CH11_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH11_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7523c6ed449b0601d596b8ed0553cae8" name="a7523c6ed449b0601d596b8ed0553cae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7523c6ed449b0601d596b8ed0553cae8">&#9670;&#160;</a></span>CH11_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH11_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4abead61bbbc1341192a3d39b152bd7a" name="a4abead61bbbc1341192a3d39b152bd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abead61bbbc1341192a3d39b152bd7a">&#9670;&#160;</a></span>CH1_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH1_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa8fc187cfcc642752f8cc90ca6c2a23b" name="aa8fc187cfcc642752f8cc90ca6c2a23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fc187cfcc642752f8cc90ca6c2a23b">&#9670;&#160;</a></span>CH1_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH1_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4e0154e7f4edd1bbdfae9caf316716d0" name="a4e0154e7f4edd1bbdfae9caf316716d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0154e7f4edd1bbdfae9caf316716d0">&#9670;&#160;</a></span>CH1_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH1_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa3302002d632e600cd732a20c2eb04be" name="aa3302002d632e600cd732a20c2eb04be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3302002d632e600cd732a20c2eb04be">&#9670;&#160;</a></span>CH1_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH1_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0193821b36d0628a6b35797d7dddc54d" name="a0193821b36d0628a6b35797d7dddc54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0193821b36d0628a6b35797d7dddc54d">&#9670;&#160;</a></span>CH1_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH1_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4924db1cf5ce0b1b47376cd9ba778e64" name="a4924db1cf5ce0b1b47376cd9ba778e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4924db1cf5ce0b1b47376cd9ba778e64">&#9670;&#160;</a></span>CH2_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH2_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a93349fdc1920c090cdff8a1854215f84" name="a93349fdc1920c090cdff8a1854215f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93349fdc1920c090cdff8a1854215f84">&#9670;&#160;</a></span>CH2_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH2_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="acc0da74b4489981f89a8a6cd99079221" name="acc0da74b4489981f89a8a6cd99079221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0da74b4489981f89a8a6cd99079221">&#9670;&#160;</a></span>CH2_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH2_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad8eb957578428e72310d06639e7db6da" name="ad8eb957578428e72310d06639e7db6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8eb957578428e72310d06639e7db6da">&#9670;&#160;</a></span>CH2_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH2_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab2d0f65a603ccedc5deba3ec080d5703" name="ab2d0f65a603ccedc5deba3ec080d5703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d0f65a603ccedc5deba3ec080d5703">&#9670;&#160;</a></span>CH2_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH2_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4c8513e512b85ad26181b1184f0ba370" name="a4c8513e512b85ad26181b1184f0ba370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8513e512b85ad26181b1184f0ba370">&#9670;&#160;</a></span>CH3_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH3_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a172edae06482f87b5aef2b23e31e175d" name="a172edae06482f87b5aef2b23e31e175d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172edae06482f87b5aef2b23e31e175d">&#9670;&#160;</a></span>CH3_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH3_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a32a5ebd810f5399a37aa77d83e1e537e" name="a32a5ebd810f5399a37aa77d83e1e537e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a5ebd810f5399a37aa77d83e1e537e">&#9670;&#160;</a></span>CH3_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH3_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="a13ceedf89d943ba9ad1c70c587695a2c" name="a13ceedf89d943ba9ad1c70c587695a2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ceedf89d943ba9ad1c70c587695a2c">&#9670;&#160;</a></span>CH3_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH3_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2089d1438f4bb20e1bd99e6546d68950" name="a2089d1438f4bb20e1bd99e6546d68950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2089d1438f4bb20e1bd99e6546d68950">&#9670;&#160;</a></span>CH3_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH3_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1ba7605a9c2449b7a938b748066fb40a" name="a1ba7605a9c2449b7a938b748066fb40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba7605a9c2449b7a938b748066fb40a">&#9670;&#160;</a></span>CH4_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH4_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a40873ff0f9feab764da27bd5fcbf3915" name="a40873ff0f9feab764da27bd5fcbf3915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40873ff0f9feab764da27bd5fcbf3915">&#9670;&#160;</a></span>CH4_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH4_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a03eb96bc6130d979be854f6b49e8767b" name="a03eb96bc6130d979be854f6b49e8767b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03eb96bc6130d979be854f6b49e8767b">&#9670;&#160;</a></span>CH4_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH4_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="a72091cb6b2791e725fd4449e90861d33" name="a72091cb6b2791e725fd4449e90861d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72091cb6b2791e725fd4449e90861d33">&#9670;&#160;</a></span>CH4_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH4_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aef64b8a8aaaa8c92fc55a6dc3a0d8932" name="aef64b8a8aaaa8c92fc55a6dc3a0d8932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef64b8a8aaaa8c92fc55a6dc3a0d8932">&#9670;&#160;</a></span>CH4_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH4_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="af482015e4ee76d6bb6cee912610c0f5d" name="af482015e4ee76d6bb6cee912610c0f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af482015e4ee76d6bb6cee912610c0f5d">&#9670;&#160;</a></span>CH5_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH5_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae646ce91a9afef8b1fde6f99133d07a9" name="ae646ce91a9afef8b1fde6f99133d07a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae646ce91a9afef8b1fde6f99133d07a9">&#9670;&#160;</a></span>CH5_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH5_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="adeab9c2041bfc094a415a19cece5f45b" name="adeab9c2041bfc094a415a19cece5f45b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeab9c2041bfc094a415a19cece5f45b">&#9670;&#160;</a></span>CH5_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH5_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1fbf69f09bf77805bccd1f70efa2e029" name="a1fbf69f09bf77805bccd1f70efa2e029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fbf69f09bf77805bccd1f70efa2e029">&#9670;&#160;</a></span>CH5_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH5_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0a8a3980a1205cf4fb20a2e0a86ee9e7" name="a0a8a3980a1205cf4fb20a2e0a86ee9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8a3980a1205cf4fb20a2e0a86ee9e7">&#9670;&#160;</a></span>CH5_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH5_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaff6e9a71957c1065cbb757e78d7ddc2" name="aaff6e9a71957c1065cbb757e78d7ddc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff6e9a71957c1065cbb757e78d7ddc2">&#9670;&#160;</a></span>CH6_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH6_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8d9fff871c1121b5383f35c363784a86" name="a8d9fff871c1121b5383f35c363784a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9fff871c1121b5383f35c363784a86">&#9670;&#160;</a></span>CH6_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH6_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aeaeb7af521d8c1f1028a09f484282e8c" name="aeaeb7af521d8c1f1028a09f484282e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaeb7af521d8c1f1028a09f484282e8c">&#9670;&#160;</a></span>CH6_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH6_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="af0616f0d0f8300d549fed77483988fef" name="af0616f0d0f8300d549fed77483988fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0616f0d0f8300d549fed77483988fef">&#9670;&#160;</a></span>CH6_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH6_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8d3fac4291999cd4de997ed99c6ca9fd" name="a8d3fac4291999cd4de997ed99c6ca9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3fac4291999cd4de997ed99c6ca9fd">&#9670;&#160;</a></span>CH6_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH6_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5f148d2decdc401e8589e9eb1851ecc7" name="a5f148d2decdc401e8589e9eb1851ecc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f148d2decdc401e8589e9eb1851ecc7">&#9670;&#160;</a></span>CH7_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH7_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0f921ccbc62f3f990820a6f01f878f0c" name="a0f921ccbc62f3f990820a6f01f878f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f921ccbc62f3f990820a6f01f878f0c">&#9670;&#160;</a></span>CH7_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH7_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7c0904344f16b2e871845a117d064b52" name="a7c0904344f16b2e871845a117d064b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0904344f16b2e871845a117d064b52">&#9670;&#160;</a></span>CH7_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH7_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="a27c63177a44aa92686ddbabe7c789a73" name="a27c63177a44aa92686ddbabe7c789a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c63177a44aa92686ddbabe7c789a73">&#9670;&#160;</a></span>CH7_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH7_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aef036d25a503842c4fa7e9aea7698769" name="aef036d25a503842c4fa7e9aea7698769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef036d25a503842c4fa7e9aea7698769">&#9670;&#160;</a></span>CH7_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH7_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad528f98ae4e538c0693b1f71c89fce09" name="ad528f98ae4e538c0693b1f71c89fce09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad528f98ae4e538c0693b1f71c89fce09">&#9670;&#160;</a></span>CH8_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH8_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1c00588cfab1e88193b37c0cb5b13168" name="a1c00588cfab1e88193b37c0cb5b13168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c00588cfab1e88193b37c0cb5b13168">&#9670;&#160;</a></span>CH8_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH8_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad2fb1484d48e6bbe6c2a699d7be35789" name="ad2fb1484d48e6bbe6c2a699d7be35789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2fb1484d48e6bbe6c2a699d7be35789">&#9670;&#160;</a></span>CH8_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH8_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="a99883ff9f1a18275c79c740b16903d8a" name="a99883ff9f1a18275c79c740b16903d8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99883ff9f1a18275c79c740b16903d8a">&#9670;&#160;</a></span>CH8_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH8_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3b773e518dc6cad7b6aa3a7bf2177007" name="a3b773e518dc6cad7b6aa3a7bf2177007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b773e518dc6cad7b6aa3a7bf2177007">&#9670;&#160;</a></span>CH8_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH8_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="afac8c23dc8dfff13f2548804ba144e9f" name="afac8c23dc8dfff13f2548804ba144e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac8c23dc8dfff13f2548804ba144e9f">&#9670;&#160;</a></span>CH9_CC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH9_CC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter compare values <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3405aa842ff0415b9d398ee56594457d" name="a3405aa842ff0415b9d398ee56594457d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3405aa842ff0415b9d398ee56594457d">&#9670;&#160;</a></span>CH9_CSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH9_CSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control and status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0634be5240a93af3c37ebf77c27a216d" name="a0634be5240a93af3c37ebf77c27a216d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0634be5240a93af3c37ebf77c27a216d">&#9670;&#160;</a></span>CH9_CTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH9_CTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct access to the PWM counter <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad4addab8a6da2ce0d67d33be6d18847b" name="ad4addab8a6da2ce0d67d33be6d18847b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4addab8a6da2ce0d67d33be6d18847b">&#9670;&#160;</a></span>CH9_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH9_DIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>INT and FRAC form a fixed-point fractional number. </p>
+<p>Counting rate is system clock frequency divided by this number. Fractional division uses simple 1st-order sigma-delta. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a03c44ffe6ad2ae3538b8bc66d320b570" name="a03c44ffe6ad2ae3538b8bc66d320b570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c44ffe6ad2ae3538b8bc66d320b570">&#9670;&#160;</a></span>CH9_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::CH9_TOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter wrap value <br  />
+ </p>
+
+</div>
+</div>
+<a id="a53174e5ca14282a2821a0af810197790" name="a53174e5ca14282a2821a0af810197790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53174e5ca14282a2821a0af810197790">&#9670;&#160;</a></span>EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::EN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This register aliases the CSR_EN bits for all channels. </p>
+<p>Writing to this register allows multiple channels to be enabled or disabled simultaneously, so they can run in perfect sync. For each channel, there is only one physical EN register bit, which can be accessed through here or CHx_CSR. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a649c5ffe9fdcfeaa62c3ca8a0539d640" name="a649c5ffe9fdcfeaa62c3ca8a0539d640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649c5ffe9fdcfeaa62c3ca8a0539d640">&#9670;&#160;</a></span>INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaa0cb1d3434906b5d81b5993bce70a10" name="aaa0cb1d3434906b5d81b5993bce70a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0cb1d3434906b5d81b5993bce70a10">&#9670;&#160;</a></span>INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1461e81f015e67048170e8c9de4f97bc" name="a1461e81f015e67048170e8c9de4f97bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1461e81f015e67048170e8c9de4f97bc">&#9670;&#160;</a></span>INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupts <br  />
+ </p>
+
+</div>
+</div>
+<a id="a82c1d0d9ad7170cd1fc02e869ffbf73f" name="a82c1d0d9ad7170cd1fc02e869ffbf73f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c1d0d9ad7170cd1fc02e869ffbf73f">&#9670;&#160;</a></span>INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing <br  />
+ </p>
+
+</div>
+</div>
+<a id="a13290b98bfd7ae95bff58302b36137c2" name="a13290b98bfd7ae95bff58302b36137c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13290b98bfd7ae95bff58302b36137c2">&#9670;&#160;</a></span>IRQ0_INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::IRQ0_INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable for irq0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a618bfc1400c254748a37afbf1ffac092" name="a618bfc1400c254748a37afbf1ffac092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618bfc1400c254748a37afbf1ffac092">&#9670;&#160;</a></span>IRQ0_INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::IRQ0_INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force for irq0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa442476a82e5b5ff998c42cb1016c340" name="aa442476a82e5b5ff998c42cb1016c340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa442476a82e5b5ff998c42cb1016c340">&#9670;&#160;</a></span>IRQ0_INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::IRQ0_INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing for irq0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4fb85158e42863c312bc51b7d42e5ddd" name="a4fb85158e42863c312bc51b7d42e5ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb85158e42863c312bc51b7d42e5ddd">&#9670;&#160;</a></span>IRQ1_INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::IRQ1_INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable for irq1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2d36d7055eb3e47e18e3aa55cd2f1794" name="a2d36d7055eb3e47e18e3aa55cd2f1794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d36d7055eb3e47e18e3aa55cd2f1794">&#9670;&#160;</a></span>IRQ1_INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::IRQ1_INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force for irq1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a326b8da072507dfb826e915bcdf45295" name="a326b8da072507dfb826e915bcdf45295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a326b8da072507dfb826e915bcdf45295">&#9670;&#160;</a></span>IRQ1_INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PWM_Type::IRQ1_INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing for irq1 <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structPWM__Type.html">PWM_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

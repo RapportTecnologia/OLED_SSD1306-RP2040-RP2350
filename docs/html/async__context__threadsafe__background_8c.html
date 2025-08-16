@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro async_context_threadsafe_background.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('async__context__threadsafe__background_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro async_context_threadsafe_background.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="async__context__threadsafe__background_8h_source.html">pico/async_context_threadsafe_background.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="async__context__base_8h_source.html">pico/async_context_base.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_2pico__sync_2include_2pico_2sync_8h_source.html">pico/sync.h</a>&quot;</code><br />
+<code>#include &quot;hardware/irq.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para async_context_threadsafe_background.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="async__context__threadsafe__background_8c__incl.svg" width="687" height="432"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a85530b75f1533f0555d0b9f20970e53f" id="r_a85530b75f1533f0555d0b9f20970e53f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__threadsafe__background_8c.html#a85530b75f1533f0555d0b9f20970e53f">ASYNC_CONTEXT_THREADSAFE_BACKGROUND_ALARM_POOL_MAX_ALARMS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a85530b75f1533f0555d0b9f20970e53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe870b076dad9737dfc426132f628de5" id="r_afe870b076dad9737dfc426132f628de5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__threadsafe__background_8c.html#afe870b076dad9737dfc426132f628de5">ASYNC_CONTEXT_THREADSAFE_BACKGROUND_DEFAULT_LOW_PRIORITY_IRQ_HANDLER_PRIORITY</a>&#160;&#160;&#160;<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#af49152aa8909a5957743872cea415089">PICO_LOWEST_IRQ_PRIORITY</a></td></tr>
+<tr class="separator:afe870b076dad9737dfc426132f628de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gaf8eafbbac141e7f24e377c708ffa1479" id="r_gaf8eafbbac141e7f24e377c708ffa1479"><td class="memItemLeft" align="right" valign="top"><a class="el" href="async__context__threadsafe__background_8h.html#a06fc66e2ef6861d5d67171b0fb59b949">async_context_threadsafe_background_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__context__threadsafe__background.html#gaf8eafbbac141e7f24e377c708ffa1479">async_context_threadsafe_background_default_config</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gaf8eafbbac141e7f24e377c708ffa1479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a copy of the default configuration object used by async_context_threadsafe_background_init_with_defaults()  <br /></td></tr>
+<tr class="separator:gaf8eafbbac141e7f24e377c708ffa1479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb528f429470b2ddd291081dcd718243" id="r_aeb528f429470b2ddd291081dcd718243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="async__context__threadsafe__background_8c.html#aeb528f429470b2ddd291081dcd718243">async_context_threadsafe_background_execute_sync</a> (<a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self_base</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>(*func)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *param), <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *param)</td></tr>
+<tr class="separator:aeb528f429470b2ddd291081dcd718243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf48cafcbfa48c9fbef1aa7a18ded9e5" id="r_gabf48cafcbfa48c9fbef1aa7a18ded9e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__context__threadsafe__background.html#gabf48cafcbfa48c9fbef1aa7a18ded9e5">async_context_threadsafe_background_init</a> (<a class="el" href="async__context__threadsafe__background_8h.html#afba6dbc140abbb0b46348694d9f0a4ce">async_context_threadsafe_background_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">self</a>, <a class="el" href="async__context__threadsafe__background_8h.html#a06fc66e2ef6861d5d67171b0fb59b949">async_context_threadsafe_background_config_t</a> *config)</td></tr>
+<tr class="memdesc:gabf48cafcbfa48c9fbef1aa7a18ded9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="structasync__context__threadsafe__background.html">async_context_threadsafe_background</a> instance using the specified configuration.  <br /></td></tr>
+<tr class="separator:gabf48cafcbfa48c9fbef1aa7a18ded9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a85530b75f1533f0555d0b9f20970e53f" name="a85530b75f1533f0555d0b9f20970e53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85530b75f1533f0555d0b9f20970e53f">&#9670;&#160;</a></span>ASYNC_CONTEXT_THREADSAFE_BACKGROUND_ALARM_POOL_MAX_ALARMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ASYNC_CONTEXT_THREADSAFE_BACKGROUND_ALARM_POOL_MAX_ALARMS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe870b076dad9737dfc426132f628de5" name="afe870b076dad9737dfc426132f628de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe870b076dad9737dfc426132f628de5">&#9670;&#160;</a></span>ASYNC_CONTEXT_THREADSAFE_BACKGROUND_DEFAULT_LOW_PRIORITY_IRQ_HANDLER_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ASYNC_CONTEXT_THREADSAFE_BACKGROUND_DEFAULT_LOW_PRIORITY_IRQ_HANDLER_PRIORITY&#160;&#160;&#160;<a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#af49152aa8909a5957743872cea415089">PICO_LOWEST_IRQ_PRIORITY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="aeb528f429470b2ddd291081dcd718243" name="aeb528f429470b2ddd291081dcd718243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb528f429470b2ddd291081dcd718243">&#9670;&#160;</a></span>async_context_threadsafe_background_execute_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> async_context_threadsafe_background_execute_sync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="async__context_8h.html#a3728ca5d4a0c859eddfb6b6bca7ba5ef">async_context_t</a> *&#160;</td>
+          <td class="paramname"><em>self_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>(*)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *param)&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structasync__when__pending__worker.html#a4111ccb1e1ec6e19bf36d23c86b83e0d">async_when_pending_worker::do_work</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#aa4ca4d30183d0f6248b154c9d12a76a5">get_core_num()</a>, <a class="el" href="group__lock__core.html#gae28f1d974cf1f1b973127500a764245c">lock_get_caller_owner_id</a>, <a class="el" href="group__sem.html#gaefa22667355703497ae883f68a87aacf">sem_acquire_blocking()</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a9e3e15e5f3e2ada2784a36ee981362d0">sem_init</a> e <a class="el" href="structsync__func__call.html#ac7cd46bba2b33938b8585e37b01e9edd">sync_func_call::worker</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_81ef59eb999ec4aab3b1999cf2329c91.html">pico_async_context</a></li><li class="navelem"><a class="el" href="async__context__threadsafe__background_8c.html">async_context_threadsafe_background.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

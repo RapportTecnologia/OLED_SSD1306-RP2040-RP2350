@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura i2c_hw_t</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structi2c__hw__t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structi2c__hw__t-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura i2c_hw_t</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2i2c_8h_source.html">i2c.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para i2c_hw_t:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structi2c__hw__t__coll__graph.svg" width="148" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ae056e1acee848ae4a59d328583a95e69" id="r_ae056e1acee848ae4a59d328583a95e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ae056e1acee848ae4a59d328583a95e69">_pad0</a></td></tr>
+<tr class="separator:ae056e1acee848ae4a59d328583a95e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b9d76a6e3ae245f5946fd3a8226803" id="r_a82b9d76a6e3ae245f5946fd3a8226803"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a82b9d76a6e3ae245f5946fd3a8226803">_pad1</a> [2]</td></tr>
+<tr class="separator:a82b9d76a6e3ae245f5946fd3a8226803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4916c1cfbb6cc2f71f2b5995c1996e84" id="r_a4916c1cfbb6cc2f71f2b5995c1996e84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a4916c1cfbb6cc2f71f2b5995c1996e84">_pad2</a></td></tr>
+<tr class="separator:a4916c1cfbb6cc2f71f2b5995c1996e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35e9c3876a76376b3e25af538d3c73e" id="r_af35e9c3876a76376b3e25af538d3c73e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#af35e9c3876a76376b3e25af538d3c73e">_pad3</a> [18]</td></tr>
+<tr class="separator:af35e9c3876a76376b3e25af538d3c73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af377c49de270ad04366ebfe65d4fcb91" id="r_af377c49de270ad04366ebfe65d4fcb91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#af377c49de270ad04366ebfe65d4fcb91">ack_general_call</a></td></tr>
+<tr class="separator:af377c49de270ad04366ebfe65d4fcb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8635ed381e73ac41f84846af1e2ef1c8" id="r_a8635ed381e73ac41f84846af1e2ef1c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a8635ed381e73ac41f84846af1e2ef1c8">clr_activity</a></td></tr>
+<tr class="separator:a8635ed381e73ac41f84846af1e2ef1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bb36dba1192d462c422fbc6ddb53cf" id="r_ab8bb36dba1192d462c422fbc6ddb53cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ab8bb36dba1192d462c422fbc6ddb53cf">clr_gen_call</a></td></tr>
+<tr class="separator:ab8bb36dba1192d462c422fbc6ddb53cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214d5b75e88582e577b98c642ea588e3" id="r_a214d5b75e88582e577b98c642ea588e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a214d5b75e88582e577b98c642ea588e3">clr_intr</a></td></tr>
+<tr class="separator:a214d5b75e88582e577b98c642ea588e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc52f9151d929d0b97215655063179c4" id="r_abc52f9151d929d0b97215655063179c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#abc52f9151d929d0b97215655063179c4">clr_rd_req</a></td></tr>
+<tr class="separator:abc52f9151d929d0b97215655063179c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54372a8349af0dea1238755a4041f2e6" id="r_a54372a8349af0dea1238755a4041f2e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a54372a8349af0dea1238755a4041f2e6">clr_restart_det</a></td></tr>
+<tr class="separator:a54372a8349af0dea1238755a4041f2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d7e32567c3753ac77e3704ef78862d" id="r_af9d7e32567c3753ac77e3704ef78862d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#af9d7e32567c3753ac77e3704ef78862d">clr_rx_done</a></td></tr>
+<tr class="separator:af9d7e32567c3753ac77e3704ef78862d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef03e99068b0bd4fc09fb2ce8f33484a" id="r_aef03e99068b0bd4fc09fb2ce8f33484a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#aef03e99068b0bd4fc09fb2ce8f33484a">clr_rx_over</a></td></tr>
+<tr class="separator:aef03e99068b0bd4fc09fb2ce8f33484a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc22f1237407d48e0b4cd211c61ae8d4" id="r_adc22f1237407d48e0b4cd211c61ae8d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#adc22f1237407d48e0b4cd211c61ae8d4">clr_rx_under</a></td></tr>
+<tr class="separator:adc22f1237407d48e0b4cd211c61ae8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105d80a6f1fd207571b01a1a1625d2bc" id="r_a105d80a6f1fd207571b01a1a1625d2bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a105d80a6f1fd207571b01a1a1625d2bc">clr_start_det</a></td></tr>
+<tr class="separator:a105d80a6f1fd207571b01a1a1625d2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c691cde3d0aa37f3804010b633d8cad" id="r_a7c691cde3d0aa37f3804010b633d8cad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a7c691cde3d0aa37f3804010b633d8cad">clr_stop_det</a></td></tr>
+<tr class="separator:a7c691cde3d0aa37f3804010b633d8cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d523fdf35fd82d2eb3743a093cabe3" id="r_a37d523fdf35fd82d2eb3743a093cabe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a37d523fdf35fd82d2eb3743a093cabe3">clr_tx_abrt</a></td></tr>
+<tr class="separator:a37d523fdf35fd82d2eb3743a093cabe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c328d03f4a9ddd21deb8b834e7d82c5" id="r_a3c328d03f4a9ddd21deb8b834e7d82c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a3c328d03f4a9ddd21deb8b834e7d82c5">clr_tx_over</a></td></tr>
+<tr class="separator:a3c328d03f4a9ddd21deb8b834e7d82c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931da75dfc65258c08e6181dfb52a339" id="r_a931da75dfc65258c08e6181dfb52a339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a931da75dfc65258c08e6181dfb52a339">comp_param_1</a></td></tr>
+<tr class="separator:a931da75dfc65258c08e6181dfb52a339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94958f5e70e32e83d762d108b118b49" id="r_af94958f5e70e32e83d762d108b118b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#af94958f5e70e32e83d762d108b118b49">comp_type</a></td></tr>
+<tr class="separator:af94958f5e70e32e83d762d108b118b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d6a6395b8901f7b49928553348e090" id="r_a54d6a6395b8901f7b49928553348e090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a54d6a6395b8901f7b49928553348e090">comp_version</a></td></tr>
+<tr class="separator:a54d6a6395b8901f7b49928553348e090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f948293d38ad2d03e9e28979c53ee86" id="r_a1f948293d38ad2d03e9e28979c53ee86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a1f948293d38ad2d03e9e28979c53ee86">con</a></td></tr>
+<tr class="separator:a1f948293d38ad2d03e9e28979c53ee86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1de42a4c2bd956a03d4355bf7033330" id="r_ab1de42a4c2bd956a03d4355bf7033330"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ab1de42a4c2bd956a03d4355bf7033330">data_cmd</a></td></tr>
+<tr class="separator:ab1de42a4c2bd956a03d4355bf7033330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fab6dbb41416804825cee1bb5bccf0" id="r_a06fab6dbb41416804825cee1bb5bccf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a06fab6dbb41416804825cee1bb5bccf0">dma_cr</a></td></tr>
+<tr class="separator:a06fab6dbb41416804825cee1bb5bccf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ad33d692dd53b0b8210f9b8ff13f6c" id="r_ae3ad33d692dd53b0b8210f9b8ff13f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ae3ad33d692dd53b0b8210f9b8ff13f6c">dma_rdlr</a></td></tr>
+<tr class="separator:ae3ad33d692dd53b0b8210f9b8ff13f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4af03b47b0d33aab1a9e3c8db9a5f79" id="r_ac4af03b47b0d33aab1a9e3c8db9a5f79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ac4af03b47b0d33aab1a9e3c8db9a5f79">dma_tdlr</a></td></tr>
+<tr class="separator:ac4af03b47b0d33aab1a9e3c8db9a5f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bc74f697d6f69c423a73a94d495616" id="r_ac5bc74f697d6f69c423a73a94d495616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ac5bc74f697d6f69c423a73a94d495616">enable</a></td></tr>
+<tr class="separator:ac5bc74f697d6f69c423a73a94d495616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fca9026a526b821408178cc98aef43" id="r_a07fca9026a526b821408178cc98aef43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a07fca9026a526b821408178cc98aef43">enable_status</a></td></tr>
+<tr class="separator:a07fca9026a526b821408178cc98aef43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95acda52c695b8077b3c424da4bbb4fe" id="r_a95acda52c695b8077b3c424da4bbb4fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a95acda52c695b8077b3c424da4bbb4fe">fs_scl_hcnt</a></td></tr>
+<tr class="separator:a95acda52c695b8077b3c424da4bbb4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6652f2ecf835fe05fd40e16d2438e73" id="r_ae6652f2ecf835fe05fd40e16d2438e73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ae6652f2ecf835fe05fd40e16d2438e73">fs_scl_lcnt</a></td></tr>
+<tr class="separator:ae6652f2ecf835fe05fd40e16d2438e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d4f93c292d4157ef07eb689fdf33ca" id="r_aa7d4f93c292d4157ef07eb689fdf33ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#aa7d4f93c292d4157ef07eb689fdf33ca">fs_spklen</a></td></tr>
+<tr class="separator:aa7d4f93c292d4157ef07eb689fdf33ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad5bf6eb5b30c0834639f0c41c689e3" id="r_aaad5bf6eb5b30c0834639f0c41c689e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#aaad5bf6eb5b30c0834639f0c41c689e3">intr_mask</a></td></tr>
+<tr class="separator:aaad5bf6eb5b30c0834639f0c41c689e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591b2052462d8bc9ff1bdae5e7006bbe" id="r_a591b2052462d8bc9ff1bdae5e7006bbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a591b2052462d8bc9ff1bdae5e7006bbe">intr_stat</a></td></tr>
+<tr class="separator:a591b2052462d8bc9ff1bdae5e7006bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29fc7cdcca2837cf5e5ee0d38cb56aec" id="r_a29fc7cdcca2837cf5e5ee0d38cb56aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a29fc7cdcca2837cf5e5ee0d38cb56aec">raw_intr_stat</a></td></tr>
+<tr class="separator:a29fc7cdcca2837cf5e5ee0d38cb56aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f32d75a571a77e128de6c5e15fce1b" id="r_a30f32d75a571a77e128de6c5e15fce1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a30f32d75a571a77e128de6c5e15fce1b">rx_tl</a></td></tr>
+<tr class="separator:a30f32d75a571a77e128de6c5e15fce1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555d628999d9c111396f1b8e430927c5" id="r_a555d628999d9c111396f1b8e430927c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a555d628999d9c111396f1b8e430927c5">rxflr</a></td></tr>
+<tr class="separator:a555d628999d9c111396f1b8e430927c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fb3edfc0bd758cf3a84d782c7a8973" id="r_a82fb3edfc0bd758cf3a84d782c7a8973"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a82fb3edfc0bd758cf3a84d782c7a8973">sar</a></td></tr>
+<tr class="separator:a82fb3edfc0bd758cf3a84d782c7a8973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f30169f71fb1f3cd3ac10d63e364c4" id="r_a06f30169f71fb1f3cd3ac10d63e364c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a06f30169f71fb1f3cd3ac10d63e364c4">sda_hold</a></td></tr>
+<tr class="separator:a06f30169f71fb1f3cd3ac10d63e364c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac496d995f75e8083b6eb74ef6ced8241" id="r_ac496d995f75e8083b6eb74ef6ced8241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#ac496d995f75e8083b6eb74ef6ced8241">sda_setup</a></td></tr>
+<tr class="separator:ac496d995f75e8083b6eb74ef6ced8241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b9bda1d1340be1ebb1567bddf3d388" id="r_a08b9bda1d1340be1ebb1567bddf3d388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a08b9bda1d1340be1ebb1567bddf3d388">slv_data_nack_only</a></td></tr>
+<tr class="separator:a08b9bda1d1340be1ebb1567bddf3d388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f253789966d38b63d99f32d61e83ba3" id="r_a7f253789966d38b63d99f32d61e83ba3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a7f253789966d38b63d99f32d61e83ba3">ss_scl_hcnt</a></td></tr>
+<tr class="separator:a7f253789966d38b63d99f32d61e83ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6a113afcd650b77dc8130540586b56" id="r_a8b6a113afcd650b77dc8130540586b56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a8b6a113afcd650b77dc8130540586b56">ss_scl_lcnt</a></td></tr>
+<tr class="separator:a8b6a113afcd650b77dc8130540586b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa711f0a53ca4425450b0951c8152eac7" id="r_aa711f0a53ca4425450b0951c8152eac7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#aa711f0a53ca4425450b0951c8152eac7">status</a></td></tr>
+<tr class="separator:aa711f0a53ca4425450b0951c8152eac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7428390b2be54afa2d173ad0e537dd" id="r_aaa7428390b2be54afa2d173ad0e537dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#aaa7428390b2be54afa2d173ad0e537dd">tar</a></td></tr>
+<tr class="separator:aaa7428390b2be54afa2d173ad0e537dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a15515a164d1c747bc15f345d60062c" id="r_a5a15515a164d1c747bc15f345d60062c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a5a15515a164d1c747bc15f345d60062c">tx_abrt_source</a></td></tr>
+<tr class="separator:a5a15515a164d1c747bc15f345d60062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b50d7d07e61477e7e431eb0ae3ba152" id="r_a3b50d7d07e61477e7e431eb0ae3ba152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#a3b50d7d07e61477e7e431eb0ae3ba152">tx_tl</a></td></tr>
+<tr class="separator:a3b50d7d07e61477e7e431eb0ae3ba152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea077a41f7607ee17887cdcdd7f4c7dd" id="r_aea077a41f7607ee17887cdcdd7f4c7dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__hw__t.html#aea077a41f7607ee17887cdcdd7f4c7dd">txflr</a></td></tr>
+<tr class="separator:aea077a41f7607ee17887cdcdd7f4c7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="ae056e1acee848ae4a59d328583a95e69" name="ae056e1acee848ae4a59d328583a95e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae056e1acee848ae4a59d328583a95e69">&#9670;&#160;</a></span>_pad0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> i2c_hw_t::_pad0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82b9d76a6e3ae245f5946fd3a8226803" name="a82b9d76a6e3ae245f5946fd3a8226803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b9d76a6e3ae245f5946fd3a8226803">&#9670;&#160;</a></span>_pad1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> i2c_hw_t::_pad1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4916c1cfbb6cc2f71f2b5995c1996e84" name="a4916c1cfbb6cc2f71f2b5995c1996e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4916c1cfbb6cc2f71f2b5995c1996e84">&#9670;&#160;</a></span>_pad2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> i2c_hw_t::_pad2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af35e9c3876a76376b3e25af538d3c73e" name="af35e9c3876a76376b3e25af538d3c73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35e9c3876a76376b3e25af538d3c73e">&#9670;&#160;</a></span>_pad3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> i2c_hw_t::_pad3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af377c49de270ad04366ebfe65d4fcb91" name="af377c49de270ad04366ebfe65d4fcb91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af377c49de270ad04366ebfe65d4fcb91">&#9670;&#160;</a></span>ack_general_call</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::ack_general_call</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8635ed381e73ac41f84846af1e2ef1c8" name="a8635ed381e73ac41f84846af1e2ef1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8635ed381e73ac41f84846af1e2ef1c8">&#9670;&#160;</a></span>clr_activity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_activity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8bb36dba1192d462c422fbc6ddb53cf" name="ab8bb36dba1192d462c422fbc6ddb53cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8bb36dba1192d462c422fbc6ddb53cf">&#9670;&#160;</a></span>clr_gen_call</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_gen_call</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a214d5b75e88582e577b98c642ea588e3" name="a214d5b75e88582e577b98c642ea588e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214d5b75e88582e577b98c642ea588e3">&#9670;&#160;</a></span>clr_intr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_intr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc52f9151d929d0b97215655063179c4" name="abc52f9151d929d0b97215655063179c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc52f9151d929d0b97215655063179c4">&#9670;&#160;</a></span>clr_rd_req</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_rd_req</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54372a8349af0dea1238755a4041f2e6" name="a54372a8349af0dea1238755a4041f2e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54372a8349af0dea1238755a4041f2e6">&#9670;&#160;</a></span>clr_restart_det</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_restart_det</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9d7e32567c3753ac77e3704ef78862d" name="af9d7e32567c3753ac77e3704ef78862d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d7e32567c3753ac77e3704ef78862d">&#9670;&#160;</a></span>clr_rx_done</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_rx_done</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef03e99068b0bd4fc09fb2ce8f33484a" name="aef03e99068b0bd4fc09fb2ce8f33484a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef03e99068b0bd4fc09fb2ce8f33484a">&#9670;&#160;</a></span>clr_rx_over</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_rx_over</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc22f1237407d48e0b4cd211c61ae8d4" name="adc22f1237407d48e0b4cd211c61ae8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc22f1237407d48e0b4cd211c61ae8d4">&#9670;&#160;</a></span>clr_rx_under</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_rx_under</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a105d80a6f1fd207571b01a1a1625d2bc" name="a105d80a6f1fd207571b01a1a1625d2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105d80a6f1fd207571b01a1a1625d2bc">&#9670;&#160;</a></span>clr_start_det</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_start_det</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c691cde3d0aa37f3804010b633d8cad" name="a7c691cde3d0aa37f3804010b633d8cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c691cde3d0aa37f3804010b633d8cad">&#9670;&#160;</a></span>clr_stop_det</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_stop_det</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37d523fdf35fd82d2eb3743a093cabe3" name="a37d523fdf35fd82d2eb3743a093cabe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d523fdf35fd82d2eb3743a093cabe3">&#9670;&#160;</a></span>clr_tx_abrt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_tx_abrt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c328d03f4a9ddd21deb8b834e7d82c5" name="a3c328d03f4a9ddd21deb8b834e7d82c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c328d03f4a9ddd21deb8b834e7d82c5">&#9670;&#160;</a></span>clr_tx_over</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::clr_tx_over</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a931da75dfc65258c08e6181dfb52a339" name="a931da75dfc65258c08e6181dfb52a339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931da75dfc65258c08e6181dfb52a339">&#9670;&#160;</a></span>comp_param_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::comp_param_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af94958f5e70e32e83d762d108b118b49" name="af94958f5e70e32e83d762d108b118b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af94958f5e70e32e83d762d108b118b49">&#9670;&#160;</a></span>comp_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::comp_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54d6a6395b8901f7b49928553348e090" name="a54d6a6395b8901f7b49928553348e090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d6a6395b8901f7b49928553348e090">&#9670;&#160;</a></span>comp_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::comp_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f948293d38ad2d03e9e28979c53ee86" name="a1f948293d38ad2d03e9e28979c53ee86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f948293d38ad2d03e9e28979c53ee86">&#9670;&#160;</a></span>con</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::con</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#gad31793849a130033e94fa5b8e98a30a8">i2c_init()</a>, <a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate()</a> e <a class="el" href="group__hardware__i2c.html#ga42571b2db5d1ed0dc083385c230dc9e8">i2c_set_slave_mode()</a>.</p>
+
+</div>
+</div>
+<a id="ab1de42a4c2bd956a03d4355bf7033330" name="ab1de42a4c2bd956a03d4355bf7033330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1de42a4c2bd956a03d4355bf7033330">&#9670;&#160;</a></span>data_cmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::data_cmd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06fab6dbb41416804825cee1bb5bccf0" name="a06fab6dbb41416804825cee1bb5bccf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fab6dbb41416804825cee1bb5bccf0">&#9670;&#160;</a></span>dma_cr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::dma_cr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#gad31793849a130033e94fa5b8e98a30a8">i2c_init()</a>.</p>
+
+</div>
+</div>
+<a id="ae3ad33d692dd53b0b8210f9b8ff13f6c" name="ae3ad33d692dd53b0b8210f9b8ff13f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ad33d692dd53b0b8210f9b8ff13f6c">&#9670;&#160;</a></span>dma_rdlr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::dma_rdlr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4af03b47b0d33aab1a9e3c8db9a5f79" name="ac4af03b47b0d33aab1a9e3c8db9a5f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4af03b47b0d33aab1a9e3c8db9a5f79">&#9670;&#160;</a></span>dma_tdlr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::dma_tdlr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5bc74f697d6f69c423a73a94d495616" name="ac5bc74f697d6f69c423a73a94d495616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5bc74f697d6f69c423a73a94d495616">&#9670;&#160;</a></span>enable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::enable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#gad31793849a130033e94fa5b8e98a30a8">i2c_init()</a>, <a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate()</a> e <a class="el" href="group__hardware__i2c.html#ga42571b2db5d1ed0dc083385c230dc9e8">i2c_set_slave_mode()</a>.</p>
+
+</div>
+</div>
+<a id="a07fca9026a526b821408178cc98aef43" name="a07fca9026a526b821408178cc98aef43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07fca9026a526b821408178cc98aef43">&#9670;&#160;</a></span>enable_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::enable_status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95acda52c695b8077b3c424da4bbb4fe" name="a95acda52c695b8077b3c424da4bbb4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95acda52c695b8077b3c424da4bbb4fe">&#9670;&#160;</a></span>fs_scl_hcnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::fs_scl_hcnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate()</a>.</p>
+
+</div>
+</div>
+<a id="ae6652f2ecf835fe05fd40e16d2438e73" name="ae6652f2ecf835fe05fd40e16d2438e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6652f2ecf835fe05fd40e16d2438e73">&#9670;&#160;</a></span>fs_scl_lcnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::fs_scl_lcnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate()</a>.</p>
+
+</div>
+</div>
+<a id="aa7d4f93c292d4157ef07eb689fdf33ca" name="aa7d4f93c292d4157ef07eb689fdf33ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d4f93c292d4157ef07eb689fdf33ca">&#9670;&#160;</a></span>fs_spklen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::fs_spklen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate()</a>.</p>
+
+</div>
+</div>
+<a id="aaad5bf6eb5b30c0834639f0c41c689e3" name="aaad5bf6eb5b30c0834639f0c41c689e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad5bf6eb5b30c0834639f0c41c689e3">&#9670;&#160;</a></span>intr_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::intr_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__i2c__slave.html#gaebbea8f5a707f23750ba3e0c8b5eb6ee">i2c_slave_deinit()</a> e <a class="el" href="group__pico__i2c__slave.html#ga2ecc43ff4a3c673a704d0c7bd7d91db4">i2c_slave_init()</a>.</p>
+
+</div>
+</div>
+<a id="a591b2052462d8bc9ff1bdae5e7006bbe" name="a591b2052462d8bc9ff1bdae5e7006bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591b2052462d8bc9ff1bdae5e7006bbe">&#9670;&#160;</a></span>intr_stat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::intr_stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29fc7cdcca2837cf5e5ee0d38cb56aec" name="a29fc7cdcca2837cf5e5ee0d38cb56aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29fc7cdcca2837cf5e5ee0d38cb56aec">&#9670;&#160;</a></span>raw_intr_stat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::raw_intr_stat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30f32d75a571a77e128de6c5e15fce1b" name="a30f32d75a571a77e128de6c5e15fce1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f32d75a571a77e128de6c5e15fce1b">&#9670;&#160;</a></span>rx_tl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::rx_tl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#gad31793849a130033e94fa5b8e98a30a8">i2c_init()</a>.</p>
+
+</div>
+</div>
+<a id="a555d628999d9c111396f1b8e430927c5" name="a555d628999d9c111396f1b8e430927c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555d628999d9c111396f1b8e430927c5">&#9670;&#160;</a></span>rxflr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::rxflr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82fb3edfc0bd758cf3a84d782c7a8973" name="a82fb3edfc0bd758cf3a84d782c7a8973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fb3edfc0bd758cf3a84d782c7a8973">&#9670;&#160;</a></span>sar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::sar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#ga42571b2db5d1ed0dc083385c230dc9e8">i2c_set_slave_mode()</a>.</p>
+
+</div>
+</div>
+<a id="a06f30169f71fb1f3cd3ac10d63e364c4" name="a06f30169f71fb1f3cd3ac10d63e364c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f30169f71fb1f3cd3ac10d63e364c4">&#9670;&#160;</a></span>sda_hold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::sda_hold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#ga615525cad9398b3ec37e8208523c73b4">i2c_set_baudrate()</a>.</p>
+
+</div>
+</div>
+<a id="ac496d995f75e8083b6eb74ef6ced8241" name="ac496d995f75e8083b6eb74ef6ced8241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac496d995f75e8083b6eb74ef6ced8241">&#9670;&#160;</a></span>sda_setup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::sda_setup</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b9bda1d1340be1ebb1567bddf3d388" name="a08b9bda1d1340be1ebb1567bddf3d388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b9bda1d1340be1ebb1567bddf3d388">&#9670;&#160;</a></span>slv_data_nack_only</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::slv_data_nack_only</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f253789966d38b63d99f32d61e83ba3" name="a7f253789966d38b63d99f32d61e83ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f253789966d38b63d99f32d61e83ba3">&#9670;&#160;</a></span>ss_scl_hcnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::ss_scl_hcnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b6a113afcd650b77dc8130540586b56" name="a8b6a113afcd650b77dc8130540586b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b6a113afcd650b77dc8130540586b56">&#9670;&#160;</a></span>ss_scl_lcnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::ss_scl_lcnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa711f0a53ca4425450b0951c8152eac7" name="aa711f0a53ca4425450b0951c8152eac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa711f0a53ca4425450b0951c8152eac7">&#9670;&#160;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa7428390b2be54afa2d173ad0e537dd" name="aaa7428390b2be54afa2d173ad0e537dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7428390b2be54afa2d173ad0e537dd">&#9670;&#160;</a></span>tar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::tar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a15515a164d1c747bc15f345d60062c" name="a5a15515a164d1c747bc15f345d60062c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a15515a164d1c747bc15f345d60062c">&#9670;&#160;</a></span>tx_abrt_source</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::tx_abrt_source</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b50d7d07e61477e7e431eb0ae3ba152" name="a3b50d7d07e61477e7e431eb0ae3ba152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b50d7d07e61477e7e431eb0ae3ba152">&#9670;&#160;</a></span>tx_tl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> i2c_hw_t::tx_tl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__i2c.html#gad31793849a130033e94fa5b8e98a30a8">i2c_init()</a>.</p>
+
+</div>
+</div>
+<a id="aea077a41f7607ee17887cdcdd7f4c7dd" name="aea077a41f7607ee17887cdcdd7f4c7dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea077a41f7607ee17887cdcdd7f4c7dd">&#9670;&#160;</a></span>txflr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> i2c_hw_t::txflr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2i2c_8h_source.html">rp2040/hardware_structs/include/hardware/structs/i2c.h</a></li>
+<li><a class="el" href="rp2350_2hardware__structs_2include_2hardware_2structs_2i2c_8h_source.html">rp2350/hardware_structs/include/hardware/structs/i2c.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structi2c__hw__t.html">i2c_hw_t</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

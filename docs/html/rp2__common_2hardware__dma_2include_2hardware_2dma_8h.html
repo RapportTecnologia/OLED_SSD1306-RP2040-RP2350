@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro dma.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro dma.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico.h&quot;</code><br />
+<code>#include &quot;hardware/structs/dma.h&quot;</code><br />
+<code>#include &quot;hardware/regs/dreq.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="assert_8h_source.html">pico/assert.h</a>&quot;</code><br />
+<code>#include &quot;hardware/regs/intctrl.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para rp2_common/hardware_dma/include/hardware/dma.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rp2__common_2hardware__dma_2include_2hardware_2dma_8h__incl.svg" width="804" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="rp2__common_2hardware__dma_2include_2hardware_2dma_8h__dep__incl.svg" width="931" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdma__channel__config__t.html">dma_channel_config_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque representation of a DMA channel configuration that can be later applied to a hardware DMA channel.  <a href="structdma__channel__config__t.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1ac94a390c0b2ce546ddff993c586b68" id="r_a1ac94a390c0b2ce546ddff993c586b68"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#a1ac94a390c0b2ce546ddff993c586b68">DMA_ADDRESS_UPDATE_TYPE_TO_DMA_CH_CTRL_READ_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a>)</td></tr>
+<tr class="separator:a1ac94a390c0b2ce546ddff993c586b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af330b3d0ba89816c38e5229d5337f3a5" id="r_af330b3d0ba89816c38e5229d5337f3a5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#af330b3d0ba89816c38e5229d5337f3a5">DMA_ADDRESS_UPDATE_TYPE_TO_DMA_CH_CTRL_WRITE_BITS</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a>)</td></tr>
+<tr class="separator:af330b3d0ba89816c38e5229d5337f3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96436020834b65ba2857cff900fd8fc" id="r_aa96436020834b65ba2857cff900fd8fc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#aa96436020834b65ba2857cff900fd8fc">DMA_CH_CTRL_ALL_ADDRESS_UPDATE_READ_BITS</a>&#160;&#160;&#160;(<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a19eee72d7b0345943e424cd8d1f227e0">DMA_CH0_CTRL_TRIG_INCR_READ_BITS</a> | <a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a93b9057daa907dd14b363b5cadff2092">DMA_CH0_CTRL_TRIG_INCR_READ_REV_BITS</a>)</td></tr>
+<tr class="separator:aa96436020834b65ba2857cff900fd8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd0067e744eb1c8dcbb0778c8845d27" id="r_adfd0067e744eb1c8dcbb0778c8845d27"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#adfd0067e744eb1c8dcbb0778c8845d27">DMA_CH_CTRL_ALL_ADDRESS_UPDATE_WRITE_BITS</a>&#160;&#160;&#160;(<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a10fc0d7dc63479e418fa92a02fd9061d">DMA_CH0_CTRL_TRIG_INCR_WRITE_BITS</a> | <a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a401bd8aed3572c603bd6c35c89f30f44">DMA_CH0_CTRL_TRIG_INCR_WRITE_REV_BITS</a>)</td></tr>
+<tr class="separator:adfd0067e744eb1c8dcbb0778c8845d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c72cc3aafb409371f60fefd0463e289" id="r_ga6c72cc3aafb409371f60fefd0463e289"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga6c72cc3aafb409371f60fefd0463e289">DMA_IRQ_NUM</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_index</a>)</td></tr>
+<tr class="memdesc:ga6c72cc3aafb409371f60fefd0463e289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="group__hardware__irq.html#gaf30862f51b5994ffd5863176a185d137">irq_num_t</a> for the nth DMA interrupt.  <br /></td></tr>
+<tr class="separator:ga6c72cc3aafb409371f60fefd0463e289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ce358a69e81abaf4a137ad160ca737" id="r_a84ce358a69e81abaf4a137ad160ca737"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#a84ce358a69e81abaf4a137ad160ca737">PARAM_ASSERTIONS_ENABLED_HARDWARE_DMA</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a84ce358a69e81abaf4a137ad160ca737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:ga192c7d6987793fe4aac2d77b97c649c1" id="r_ga192c7d6987793fe4aac2d77b97c649c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="group__hardware__dma.html#ga0a0cc999960744ae8647fc3ae1c31bf4">dma_address_update_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga192c7d6987793fe4aac2d77b97c649c1">dma_address_update_type_t</a></td></tr>
+<tr class="memdesc:ga192c7d6987793fe4aac2d77b97c649c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of types of updates that can be made to the DMA read or write address after each transfer.  <br /></td></tr>
+<tr class="separator:ga192c7d6987793fe4aac2d77b97c649c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bc354c79f0d2098f5636d39cb181e6" id="r_aa3bc354c79f0d2098f5636d39cb181e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="structdma__channel__config__t.html">dma_channel_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#aa3bc354c79f0d2098f5636d39cb181e6">dma_channel_config</a></td></tr>
+<tr class="separator:aa3bc354c79f0d2098f5636d39cb181e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9f337fb83c41e2fd262a39ed20b5174" id="r_gae9f337fb83c41e2fd262a39ed20b5174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="group__hardware__dma.html#gaccecdff367b06a019373e9a55d4f3e01">dma_channel_transfer_size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gae9f337fb83c41e2fd262a39ed20b5174">dma_channel_transfer_size_t</a></td></tr>
+<tr class="memdesc:gae9f337fb83c41e2fd262a39ed20b5174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of available DMA channel transfer sizes.  <br /></td></tr>
+<tr class="separator:gae9f337fb83c41e2fd262a39ed20b5174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:ga0a0cc999960744ae8647fc3ae1c31bf4" id="r_ga0a0cc999960744ae8647fc3ae1c31bf4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga0a0cc999960744ae8647fc3ae1c31bf4">dma_address_update_type</a> { <a class="el" href="group__hardware__dma.html#gga0a0cc999960744ae8647fc3ae1c31bf4aa6623fbfce43ec9cb0ccf2a01ff55934">DMA_ADDRESS_UPDATE_NONE</a> = 0
+, <a class="el" href="group__hardware__dma.html#gga0a0cc999960744ae8647fc3ae1c31bf4abaebd9dec9c0ffbf963cd9583a167f77">DMA_ADDRESS_UPDATE_INCREMENT</a> = 1
+, <a class="el" href="group__hardware__dma.html#gga0a0cc999960744ae8647fc3ae1c31bf4a5dabcadec77ebaab0621e5a4cbf27c6f">DMA_ADDRESS_UPDATE_INCREMENT_BY_TWO</a> = 2
+, <a class="el" href="group__hardware__dma.html#gga0a0cc999960744ae8647fc3ae1c31bf4a5e84bce4f44b5ad104065a90d1f943f7">DMA_ADDRESS_UPDATE_DECREMENT</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga0a0cc999960744ae8647fc3ae1c31bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of types of updates that can be made to the DMA read or write address after each transfer.  <a href="group__hardware__dma.html#ga0a0cc999960744ae8647fc3ae1c31bf4">Mais...</a><br /></td></tr>
+<tr class="separator:ga0a0cc999960744ae8647fc3ae1c31bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccecdff367b06a019373e9a55d4f3e01" id="r_gaccecdff367b06a019373e9a55d4f3e01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gaccecdff367b06a019373e9a55d4f3e01">dma_channel_transfer_size</a> { <a class="el" href="group__hardware__dma.html#ggaccecdff367b06a019373e9a55d4f3e01abd7d246406a2ebe4dd49780db176dc3c">DMA_SIZE_8</a> = 0
+, <a class="el" href="group__hardware__dma.html#ggaccecdff367b06a019373e9a55d4f3e01a2e343022ac046b6b67bb99eebc833cfc">DMA_SIZE_16</a> = 1
+, <a class="el" href="group__hardware__dma.html#ggaccecdff367b06a019373e9a55d4f3e01abf1030013f4ad74b45d25cd9a07b6296">DMA_SIZE_32</a> = 2
+ }</td></tr>
+<tr class="memdesc:gaccecdff367b06a019373e9a55d4f3e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of available DMA channel transfer sizes.  <a href="group__hardware__dma.html#gaccecdff367b06a019373e9a55d4f3e01">Mais...</a><br /></td></tr>
+<tr class="separator:gaccecdff367b06a019373e9a55d4f3e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gae1b3c916746b3d2052f21b7dda34aab9" id="r_gae1b3c916746b3d2052f21b7dda34aab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gae1b3c916746b3d2052f21b7dda34aab9">dma_channel_claim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:gae1b3c916746b3d2052f21b7dda34aab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma channel as used.  <br /></td></tr>
+<tr class="separator:gae1b3c916746b3d2052f21b7dda34aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga655130988c1045bdf711135698adf321" id="r_ga655130988c1045bdf711135698adf321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga655130988c1045bdf711135698adf321">dma_channel_cleanup</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:ga655130988c1045bdf711135698adf321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs DMA channel cleanup after use.  <br /></td></tr>
+<tr class="separator:ga655130988c1045bdf711135698adf321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9aadb81f53b979bde1c1a81164d1eff2" id="r_ga9aadb81f53b979bde1c1a81164d1eff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga9aadb81f53b979bde1c1a81164d1eff2">dma_channel_is_claimed</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:ga9aadb81f53b979bde1c1a81164d1eff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a dma channel is claimed.  <br /></td></tr>
+<tr class="separator:ga9aadb81f53b979bde1c1a81164d1eff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac50200739b88a2fd52316f4150533035" id="r_gac50200739b88a2fd52316f4150533035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gac50200739b88a2fd52316f4150533035">dma_channel_unclaim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:gac50200739b88a2fd52316f4150533035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma channel as no longer used.  <br /></td></tr>
+<tr class="separator:gac50200739b88a2fd52316f4150533035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa430bc53dc2b36d727ad976f6348c8b3" id="r_gaa430bc53dc2b36d727ad976f6348c8b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gaa430bc53dc2b36d727ad976f6348c8b3">dma_claim_mask</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">channel_mask</a>)</td></tr>
+<tr class="memdesc:gaa430bc53dc2b36d727ad976f6348c8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark multiple dma channels as used.  <br /></td></tr>
+<tr class="separator:gaa430bc53dc2b36d727ad976f6348c8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b0a6680795b9c9ed787362a8a057206" id="r_ga4b0a6680795b9c9ed787362a8a057206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga4b0a6680795b9c9ed787362a8a057206">dma_claim_unused_channel</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>)</td></tr>
+<tr class="memdesc:ga4b0a6680795b9c9ed787362a8a057206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a free dma channel.  <br /></td></tr>
+<tr class="separator:ga4b0a6680795b9c9ed787362a8a057206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f218b6acd97e09430afbb74172bd570" id="r_ga2f218b6acd97e09430afbb74172bd570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga2f218b6acd97e09430afbb74172bd570">dma_claim_unused_timer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>)</td></tr>
+<tr class="memdesc:ga2f218b6acd97e09430afbb74172bd570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a free dma timer.  <br /></td></tr>
+<tr class="separator:ga2f218b6acd97e09430afbb74172bd570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08fc90c0064510e7a0a2cf8d1cd187bc" id="r_ga08fc90c0064510e7a0a2cf8d1cd187bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga08fc90c0064510e7a0a2cf8d1cd187bc">dma_timer_claim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> timer)</td></tr>
+<tr class="memdesc:ga08fc90c0064510e7a0a2cf8d1cd187bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma timer as used.  <br /></td></tr>
+<tr class="separator:ga08fc90c0064510e7a0a2cf8d1cd187bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b45bfe6985f8c0894d34876eedc3090" id="r_ga9b45bfe6985f8c0894d34876eedc3090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga9b45bfe6985f8c0894d34876eedc3090">dma_timer_is_claimed</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> timer)</td></tr>
+<tr class="memdesc:ga9b45bfe6985f8c0894d34876eedc3090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a dma timer is claimed.  <br /></td></tr>
+<tr class="separator:ga9b45bfe6985f8c0894d34876eedc3090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga890490576d8806b8933aad0e34d09c5e" id="r_ga890490576d8806b8933aad0e34d09c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga890490576d8806b8933aad0e34d09c5e">dma_timer_unclaim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> timer)</td></tr>
+<tr class="memdesc:ga890490576d8806b8933aad0e34d09c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma timer as no longer used.  <br /></td></tr>
+<tr class="separator:ga890490576d8806b8933aad0e34d09c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0211681c906ebe4971d0cded8e98f8b5" id="r_ga0211681c906ebe4971d0cded8e98f8b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga0211681c906ebe4971d0cded8e98f8b5">dma_unclaim_mask</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">channel_mask</a>)</td></tr>
+<tr class="memdesc:ga0211681c906ebe4971d0cded8e98f8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark multiple dma channels as no longer used.  <br /></td></tr>
+<tr class="separator:ga0211681c906ebe4971d0cded8e98f8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cde69b01ff6105d7ac019b7d092329" id="r_ac5cde69b01ff6105d7ac019b7d092329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#ac5cde69b01ff6105d7ac019b7d092329">print_dma_ctrl</a> (<a class="el" href="structdma__channel__hw__t.html">dma_channel_hw_t</a> *channel)</td></tr>
+<tr class="separator:ac5cde69b01ff6105d7ac019b7d092329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a3f35a0e47bf6b3c83ab80a1be289f746" id="r_a3f35a0e47bf6b3c83ab80a1be289f746"><td class="memItemLeft" align="right" valign="top">hw&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#a3f35a0e47bf6b3c83ab80a1be289f746">al1_transfer_count_trig</a> = <a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#a8fe4c8a7b9509a59fcf80d4520a2da42">encoded_transfer_count</a></td></tr>
+<tr class="separator:a3f35a0e47bf6b3c83ab80a1be289f746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe4c8a7b9509a59fcf80d4520a2da42" id="r_a8fe4c8a7b9509a59fcf80d4520a2da42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#a8fe4c8a7b9509a59fcf80d4520a2da42">encoded_transfer_count</a></td></tr>
+<tr class="separator:a8fe4c8a7b9509a59fcf80d4520a2da42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb25c34bbdf81536f472b9370d0330f" id="r_aecb25c34bbdf81536f472b9370d0330f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#aecb25c34bbdf81536f472b9370d0330f">read_addr</a> = (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a>) read_addr</td></tr>
+<tr class="separator:aecb25c34bbdf81536f472b9370d0330f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a1ac94a390c0b2ce546ddff993c586b68" name="a1ac94a390c0b2ce546ddff993c586b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac94a390c0b2ce546ddff993c586b68">&#9670;&#160;</a></span>DMA_ADDRESS_UPDATE_TYPE_TO_DMA_CH_CTRL_READ_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DMA_ADDRESS_UPDATE_TYPE_TO_DMA_CH_CTRL_READ_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">    ((((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a>)&amp;1) &lt;&lt; <a class="code hl_define" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af360bcd2cba45073f096190ee8a50209">DMA_CH0_CTRL_TRIG_INCR_READ_LSB</a>) | \</div>
+<div class="line">    (((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a>)&amp;2) &lt;&lt; (<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a24d22ca90167ecc445c5d12889bf36b1">DMA_CH0_CTRL_TRIG_INCR_READ_REV_LSB</a> - 1)))</div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="arp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h_html_af360bcd2cba45073f096190ee8a50209"><div class="ttname"><a href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af360bcd2cba45073f096190ee8a50209">DMA_CH0_CTRL_TRIG_INCR_READ_LSB</a></div><div class="ttdeci">#define DMA_CH0_CTRL_TRIG_INCR_READ_LSB</div><div class="ttdef"><b>Definição</b> rp2040/hardware_regs/include/hardware/regs/dma.h:242</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h_html_a24d22ca90167ecc445c5d12889bf36b1"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a24d22ca90167ecc445c5d12889bf36b1">DMA_CH0_CTRL_TRIG_INCR_READ_REV_LSB</a></div><div class="ttdeci">#define DMA_CH0_CTRL_TRIG_INCR_READ_REV_LSB</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/dma.h:295</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af330b3d0ba89816c38e5229d5337f3a5" name="af330b3d0ba89816c38e5229d5337f3a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af330b3d0ba89816c38e5229d5337f3a5">&#9670;&#160;</a></span>DMA_ADDRESS_UPDATE_TYPE_TO_DMA_CH_CTRL_WRITE_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DMA_ADDRESS_UPDATE_TYPE_TO_DMA_CH_CTRL_WRITE_BITS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">((((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a>)&amp;1) &lt;&lt; <a class="code hl_define" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af2f0318e9f29245387612332d083513e">DMA_CH0_CTRL_TRIG_INCR_WRITE_LSB</a>) | \</div>
+<div class="line">(((<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">u</a>)&amp;2) &lt;&lt; (<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#abc894443ccaa79f01329edd3db93bc12">DMA_CH0_CTRL_TRIG_INCR_WRITE_REV_LSB</a> - 1)))</div>
+<div class="ttc" id="arp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h_html_af2f0318e9f29245387612332d083513e"><div class="ttname"><a href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af2f0318e9f29245387612332d083513e">DMA_CH0_CTRL_TRIG_INCR_WRITE_LSB</a></div><div class="ttdeci">#define DMA_CH0_CTRL_TRIG_INCR_WRITE_LSB</div><div class="ttdef"><b>Definição</b> rp2040/hardware_regs/include/hardware/regs/dma.h:230</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h_html_abc894443ccaa79f01329edd3db93bc12"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#abc894443ccaa79f01329edd3db93bc12">DMA_CH0_CTRL_TRIG_INCR_WRITE_REV_LSB</a></div><div class="ttdeci">#define DMA_CH0_CTRL_TRIG_INCR_WRITE_REV_LSB</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/dma.h:270</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa96436020834b65ba2857cff900fd8fc" name="aa96436020834b65ba2857cff900fd8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa96436020834b65ba2857cff900fd8fc">&#9670;&#160;</a></span>DMA_CH_CTRL_ALL_ADDRESS_UPDATE_READ_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DMA_CH_CTRL_ALL_ADDRESS_UPDATE_READ_BITS&#160;&#160;&#160;(<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a19eee72d7b0345943e424cd8d1f227e0">DMA_CH0_CTRL_TRIG_INCR_READ_BITS</a> | <a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a93b9057daa907dd14b363b5cadff2092">DMA_CH0_CTRL_TRIG_INCR_READ_REV_BITS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfd0067e744eb1c8dcbb0778c8845d27" name="adfd0067e744eb1c8dcbb0778c8845d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd0067e744eb1c8dcbb0778c8845d27">&#9670;&#160;</a></span>DMA_CH_CTRL_ALL_ADDRESS_UPDATE_WRITE_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DMA_CH_CTRL_ALL_ADDRESS_UPDATE_WRITE_BITS&#160;&#160;&#160;(<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a10fc0d7dc63479e418fa92a02fd9061d">DMA_CH0_CTRL_TRIG_INCR_WRITE_BITS</a> | <a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a401bd8aed3572c603bd6c35c89f30f44">DMA_CH0_CTRL_TRIG_INCR_WRITE_REV_BITS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84ce358a69e81abaf4a137ad160ca737" name="a84ce358a69e81abaf4a137ad160ca737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ce358a69e81abaf4a137ad160ca737">&#9670;&#160;</a></span>PARAM_ASSERTIONS_ENABLED_HARDWARE_DMA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PARAM_ASSERTIONS_ENABLED_HARDWARE_DMA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="aa3bc354c79f0d2098f5636d39cb181e6" name="aa3bc354c79f0d2098f5636d39cb181e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3bc354c79f0d2098f5636d39cb181e6">&#9670;&#160;</a></span>dma_channel_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="structdma__channel__config__t.html">dma_channel_config_t</a> <a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#aa3bc354c79f0d2098f5636d39cb181e6">dma_channel_config</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ac5cde69b01ff6105d7ac019b7d092329" name="ac5cde69b01ff6105d7ac019b7d092329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5cde69b01ff6105d7ac019b7d092329">&#9670;&#160;</a></span>print_dma_ctrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> print_dma_ctrl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdma__channel__hw__t.html">dma_channel_hw_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structdma__channel__hw__t.html#ab4ac190b8909662e59e4726a6909f439">dma_channel_hw_t::ctrl_trig</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af75cb82b70ae8e877489b537a94a3819">DMA_CH0_CTRL_TRIG_AHB_ERROR_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a523d68e7c7b52300e196134e56a6c12a">DMA_CH0_CTRL_TRIG_BUSY_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a6ba8901126a998de7971214b37dda28f">DMA_CH0_CTRL_TRIG_CHAIN_TO_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a89b7240f57abde3ac1c476fd3f65e369">DMA_CH0_CTRL_TRIG_CHAIN_TO_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af4fe8105129e9c35ffd2ec9c74daf311">DMA_CH0_CTRL_TRIG_DATA_SIZE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a721e85b929b6a1edef4ea6ca1607aff2">DMA_CH0_CTRL_TRIG_DATA_SIZE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a9d86911ca6921b1e2d74fc4a450a4266">DMA_CH0_CTRL_TRIG_EN_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a71804e14eceddd980578e49aeb308cd9">DMA_CH0_CTRL_TRIG_HIGH_PRIORITY_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a19eee72d7b0345943e424cd8d1f227e0">DMA_CH0_CTRL_TRIG_INCR_READ_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a10fc0d7dc63479e418fa92a02fd9061d">DMA_CH0_CTRL_TRIG_INCR_WRITE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a386f2ee2e7fb683423385242c048f0ae">DMA_CH0_CTRL_TRIG_READ_ERROR_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#ae99912d9f2e555088bd6bc4f7aebe17f">DMA_CH0_CTRL_TRIG_RING_SEL_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#accad8f7951bc5b05e0c512601c66b240">DMA_CH0_CTRL_TRIG_RING_SIZE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#afd923e0ff023ee7c090533cac524f30c">DMA_CH0_CTRL_TRIG_RING_SIZE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#abb819cea5a2319ad8a86cc54c08b8c5d">DMA_CH0_CTRL_TRIG_TREQ_SEL_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a6adcac9ca0a6eccbd469d1854c5adb9b">DMA_CH0_CTRL_TRIG_TREQ_SEL_LSB</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#aa3ddbe090c121992731556e8d08edefb">DMA_CH0_CTRL_TRIG_WRITE_ERROR_BITS</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a3f35a0e47bf6b3c83ab80a1be289f746" name="a3f35a0e47bf6b3c83ab80a1be289f746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f35a0e47bf6b3c83ab80a1be289f746">&#9670;&#160;</a></span>al1_transfer_count_trig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hw al1_transfer_count_trig = <a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html#a8fe4c8a7b9509a59fcf80d4520a2da42">encoded_transfer_count</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fe4c8a7b9509a59fcf80d4520a2da42" name="a8fe4c8a7b9509a59fcf80d4520a2da42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe4c8a7b9509a59fcf80d4520a2da42">&#9670;&#160;</a></span>encoded_transfer_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> encoded_transfer_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_struct" href="structdma__channel__hw__t.html">dma_channel_hw_t</a> *hw = dma_channel_hw_addr(channel)</div>
+<div class="ttc" id="astructdma__channel__hw__t_html"><div class="ttname"><a href="structdma__channel__hw__t.html">dma_channel_hw_t</a></div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/dma.h:27</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aecb25c34bbdf81536f472b9370d0330f" name="aecb25c34bbdf81536f472b9370d0330f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb25c34bbdf81536f472b9370d0330f">&#9670;&#160;</a></span>read_addr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hw read_addr = (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a>) read_addr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_241308b15ba8dcb979ff4dc1efe465b5.html">hardware_dma</a></li><li class="navelem"><a class="el" href="dir_b7de3f717dd562acb8366b431defa659.html">include</a></li><li class="navelem"><a class="el" href="dir_34cadf48c9bee7d005ac2dea8e13d43c.html">hardware</a></li><li class="navelem"><a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h.html">dma.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

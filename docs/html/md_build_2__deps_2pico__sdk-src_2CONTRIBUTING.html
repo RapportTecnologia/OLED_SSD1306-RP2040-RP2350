@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Contributing to Raspberry Pi Pico C/C++ SDK</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_build_2__deps_2pico__sdk-src_2CONTRIBUTING.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Contributing to Raspberry Pi Pico C/C++ SDK</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md13"></a> </p>
+<h1><a class="anchor" id="autotoc_md14"></a>
+How to Report a Bug</h1>
+<p>We use GitHub to host code, track <a href="https://github.com/raspberrypi/pico-sdk/issues">issues</a> and feature requests, and to accept <a href="https://github.com/raspberrypi/pico-sdk/pulls">pull requests</a>. If you find think you have found a bug in the SDK please report it by <a href="https://github.com/raspberrypi/pico-sdk/issues/new">opening a new issue</a>. Please include as much detail as possible, and ideally some code to reproduce the problem.</p>
+<h1><a class="anchor" id="autotoc_md15"></a>
+How to Contribute Code</h1>
+<p>In order to contribute new or updated code, you must first create a GitHub account and fork the original repository to your own account. You can make changes, save them in your repository, then <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">make a pull request</a> against this repository. The pull request will appear <a href="https://github.com/raspberrypi/pico-sdk/pulls">in the repository</a> where it can be assessed by the maintainers, and if appropriate, merged with the official repository.</p>
+<p><b>NOTE:</b> Development takes place on the <code>develop</code> branch in this repository. Please open your <a href="https://github.com/raspberrypi/pico-sdk/pulls">pull request</a> (PR) against the <a href="https://github.com/raspberrypi/pico-sdk/tree/develop"><code>develop</code></a> branch, pull requests against the <code>master</code> branch will automatically CI fail checks and will not be accepted. You will be asked to rebase your PR against <code>develop</code> and if you do not do so, your PR will be closed.</p>
+<p>While we are happy to take contributions, big or small, changes in the SDK may have knock-on effects in other places so it is possible that apparently benign pull requests that make seemingly small changes could be refused.</p>
+<h2><a class="anchor" id="autotoc_md16"></a>
+Code Style</h2>
+<p>If you are contributing new or updated code please match the existing code style, particularly:</p>
+<ul>
+<li>Use 4 spaces for indentation rather than tabs.</li>
+<li>Braces are required for everything except single line <code>if</code> statements.</li>
+<li>Opening braces should not be placed on a new line.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md17"></a>
+Licensing</h2>
+<p>Code in this repository is licensed under the <a href="LICENSE.TXT">BSD-3 License</a>. By contributing content to this repository you are agreeing to place your contributions under this license. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro malloc.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('malloc_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro malloc.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="stdlib_8h_source.html">stdlib.h</a>&gt;</code><br />
+<code>#include &quot;pico.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="malloc_8h_source.html">pico/malloc.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para malloc.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="malloc_8c__incl.svg" width="763" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8eef8e1494420b4255324a331d32053f" id="r_a8eef8e1494420b4255324a331d32053f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="malloc_8c.html#a8eef8e1494420b4255324a331d32053f">MALLOC_ENTER</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">outer</a>)&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0);</td></tr>
+<tr class="separator:a8eef8e1494420b4255324a331d32053f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f563202d485de95be6365f03725420f" id="r_a4f563202d485de95be6365f03725420f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="malloc_8c.html#a4f563202d485de95be6365f03725420f">MALLOC_EXIT</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">outer</a>)&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0);</td></tr>
+<tr class="separator:a4f563202d485de95be6365f03725420f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a175874e1634f0cd69ede77f62a5d329a" id="r_a175874e1634f0cd69ede77f62a5d329a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="malloc_8c.html#a175874e1634f0cd69ede77f62a5d329a">calloc</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> size)</td></tr>
+<tr class="separator:a175874e1634f0cd69ede77f62a5d329a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77b903835a9d447de01fac54c993876" id="r_af77b903835a9d447de01fac54c993876"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mem</a>)</td></tr>
+<tr class="separator:af77b903835a9d447de01fac54c993876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f83ae31a66b9cddbdf9b33db6ca708" id="r_a33f83ae31a66b9cddbdf9b33db6ca708"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="malloc_8c.html#a33f83ae31a66b9cddbdf9b33db6ca708">malloc</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> size)</td></tr>
+<tr class="separator:a33f83ae31a66b9cddbdf9b33db6ca708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20d0a56bfb16dd6a669fcd766e4f10c" id="r_ab20d0a56bfb16dd6a669fcd766e4f10c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="malloc_8c.html#ab20d0a56bfb16dd6a669fcd766e4f10c">realloc</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mem</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> size)</td></tr>
+<tr class="separator:ab20d0a56bfb16dd6a669fcd766e4f10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a3d92ea4f573d5add6d568940793117d0" id="r_a3d92ea4f573d5add6d568940793117d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="malloc_8c.html#a3d92ea4f573d5add6d568940793117d0">__StackLimit</a></td></tr>
+<tr class="separator:a3d92ea4f573d5add6d568940793117d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a8eef8e1494420b4255324a331d32053f" name="a8eef8e1494420b4255324a331d32053f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eef8e1494420b4255324a331d32053f">&#9670;&#160;</a></span>MALLOC_ENTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> MALLOC_ENTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">outer</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f563202d485de95be6365f03725420f" name="a4f563202d485de95be6365f03725420f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f563202d485de95be6365f03725420f">&#9670;&#160;</a></span>MALLOC_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> MALLOC_EXIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">outer</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a175874e1634f0cd69ede77f62a5d329a" name="a175874e1634f0cd69ede77f62a5d329a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175874e1634f0cd69ede77f62a5d329a">&#9670;&#160;</a></span>calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>() calloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="malloc_8c.html#a175874e1634f0cd69ede77f62a5d329a">calloc()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="malloc_8c.html#a8eef8e1494420b4255324a331d32053f">MALLOC_ENTER</a>, <a class="el" href="malloc_8c.html#a4f563202d485de95be6365f03725420f">MALLOC_EXIT</a>, <a class="el" href="malloc_8h.html#a54873d92da2ef72b11813fb3c07ab422">PICO_DEBUG_MALLOC_LOW_WATER</a> e <a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a078624fb8eadf3e5f7f6ec7608aad94f">alarm_pool_create_on_timer()</a>, <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#ab2774c4d9347961d09ff7d05cdaa4809">alarm_pool_create_on_timer_with_unused_hardware_alarm()</a>, <a class="el" href="malloc_8c.html#a175874e1634f0cd69ede77f62a5d329a">calloc()</a>, <a class="el" href="group__util__pheap.html#gacde2f3fabd67330b56dbb8473387b272">ph_create()</a>, <a class="el" href="group__queue.html#ga6b379b09df9ac326e3c07a2727b7ca96">queue_init_with_spinlock()</a> e <a class="el" href="ssd1306_8h.html#a3b043ccdfcac74d8b05cf4e5dc04c21f">ssd1306_init_bm()</a>.</p>
+
+</div>
+</div>
+<a id="af77b903835a9d447de01fac54c993876" name="af77b903835a9d447de01fac54c993876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77b903835a9d447de01fac54c993876">&#9670;&#160;</a></span>free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>() free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>mem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free()</a>, <a class="el" href="malloc_8c.html#a8eef8e1494420b4255324a331d32053f">MALLOC_ENTER</a>, <a class="el" href="malloc_8c.html#a4f563202d485de95be6365f03725420f">MALLOC_EXIT</a> e <a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#gae7536c4d34088a2d19b2da92b87cbb4e">alarm_pool_destroy()</a>, <a class="el" href="group__pico__cyw43__driver.html#ga24c12f6110969e420954356b104aaa07">cyw43_driver_init()</a>, <a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free()</a>, <a class="el" href="group__util__pheap.html#ga0ad42a7be2446ffcdbce6c9c3590eb8e">ph_destroy()</a>, <a class="el" href="group__util__pheap.html#ga8ebc494b4ad703fe080bee5f18775fec">ph_remove_head()</a>, <a class="el" href="group__queue.html#gaa13034dd0decdb0faf1b863383560be2">queue_free()</a>, <a class="el" href="ssd1306_8h.html#a7e18a42742d08329312e5f45a7608baa">ssd1306_send_buffer()</a> e <a class="el" href="lexer_8cpp.html#a70f82d43d4797bb2a50f7678ddbfbda5">yyfree()</a>.</p>
+
+</div>
+</div>
+<a id="a33f83ae31a66b9cddbdf9b33db6ca708" name="a33f83ae31a66b9cddbdf9b33db6ca708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f83ae31a66b9cddbdf9b33db6ca708">&#9670;&#160;</a></span>malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>() malloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="malloc_8c.html#a33f83ae31a66b9cddbdf9b33db6ca708">malloc()</a>, <a class="el" href="malloc_8c.html#a8eef8e1494420b4255324a331d32053f">MALLOC_ENTER</a>, <a class="el" href="malloc_8c.html#a4f563202d485de95be6365f03725420f">MALLOC_EXIT</a>, <a class="el" href="malloc_8h.html#a54873d92da2ef72b11813fb3c07ab422">PICO_DEBUG_MALLOC_LOW_WATER</a> e <a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a078624fb8eadf3e5f7f6ec7608aad94f">alarm_pool_create_on_timer()</a>, <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#ab2774c4d9347961d09ff7d05cdaa4809">alarm_pool_create_on_timer_with_unused_hardware_alarm()</a>, <a class="el" href="group__pico__cyw43__driver.html#ga24c12f6110969e420954356b104aaa07">cyw43_driver_init()</a>, <a class="el" href="malloc_8c.html#a33f83ae31a66b9cddbdf9b33db6ca708">malloc()</a>, <a class="el" href="ssd1306_8h.html#a7e18a42742d08329312e5f45a7608baa">ssd1306_send_buffer()</a> e <a class="el" href="lexer_8cpp.html#a7da304d8ef6c688c0835d35296fe61c2">yyalloc()</a>.</p>
+
+</div>
+</div>
+<a id="ab20d0a56bfb16dd6a669fcd766e4f10c" name="ab20d0a56bfb16dd6a669fcd766e4f10c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab20d0a56bfb16dd6a669fcd766e4f10c">&#9670;&#160;</a></span>realloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a>() realloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>mem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="malloc_8c.html#a8eef8e1494420b4255324a331d32053f">MALLOC_ENTER</a>, <a class="el" href="malloc_8c.html#a4f563202d485de95be6365f03725420f">MALLOC_EXIT</a>, <a class="el" href="malloc_8h.html#a54873d92da2ef72b11813fb3c07ab422">PICO_DEBUG_MALLOC_LOW_WATER</a>, <a class="el" href="compiler_8h.html#a8b63aac737cda686dda09b59de7145d5">REAL_FUNC</a> e <a class="el" href="malloc_8c.html#ab20d0a56bfb16dd6a669fcd766e4f10c">realloc()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="malloc_8c.html#ab20d0a56bfb16dd6a669fcd766e4f10c">realloc()</a> e <a class="el" href="lexer_8cpp.html#abcb4148bc13fe254059384c2fdf472b7">yyrealloc()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a3d92ea4f573d5add6d568940793117d0" name="a3d92ea4f573d5add6d568940793117d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d92ea4f573d5add6d568940793117d0">&#9670;&#160;</a></span>__StackLimit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> __StackLimit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_afae25753e0813eb7b63a7ccfec8374b.html">pico_malloc</a></li><li class="navelem"><a class="el" href="malloc_8c.html">malloc.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

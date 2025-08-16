@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de xip_aux.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__regs_2include_2hardware_2regs_2xip__aux_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_regs/include/hardware/regs/xip_aux.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : XIP_AUX</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : ahb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : Auxiliary DMA access to XIP FIFOs, via fast AHB bus access</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _HARDWARE_REGS_XIP_AUX_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _HARDWARE_REGS_XIP_AUX_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register    : XIP_AUX_STREAM</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Description : Read the XIP stream FIFO (fast bus access to</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//               XIP_CTRL_STREAM_FIFO)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a48a4b0818ffae84f9d189c86cfef5039">   20</a></span><span class="preprocessor">#define XIP_AUX_STREAM_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a3dc2b7cf53e8e24afb0ba9ba40e447d8">   21</a></span><span class="preprocessor">#define XIP_AUX_STREAM_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ab31dff7efe45c128961303e2768cdcb6">   22</a></span><span class="preprocessor">#define XIP_AUX_STREAM_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a80539722e522d264bc38f56874e56bb9">   23</a></span><span class="preprocessor">#define XIP_AUX_STREAM_MSB    _u(31)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#af38a1c03e9815b39ecbad83e1440f66c">   24</a></span><span class="preprocessor">#define XIP_AUX_STREAM_LSB    _u(0)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a3ca8c5c5ae2a27aba03c035c6d4d8ded">   25</a></span><span class="preprocessor">#define XIP_AUX_STREAM_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Register    : XIP_AUX_QMI_DIRECT_TX</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Description : Write to the QMI direct-mode TX FIFO (fast bus access to</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//               QMI_DIRECT_TX)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a932a18b91a86f36ea4063ec70aaec883">   30</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ac4962b36b887d8406b292c9fb9557c17">   31</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_BITS   _u(0x001fffff)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a0b4a9ed2d6007c5293c777741e6b0f5b">   32</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Field       : XIP_AUX_QMI_DIRECT_TX_NOPUSH</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// Description : Inhibit the RX FIFO push that would correspond to this TX FIFO</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//               entry.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//               Useful to avoid garbage appearing in the RX FIFO when pushing</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//               the command at the beginning of a SPI transfer.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#af97c5a744a7483faf7b92085a39ba811">   40</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_NOPUSH_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ae0c77f49b66857c3d73198b766c434e4">   41</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_NOPUSH_BITS   _u(0x00100000)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a12d5423e4a036aa8dd8f529389c36cf6">   42</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_NOPUSH_MSB    _u(20)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a0f88233850ca8cbd979111f11d579e36">   43</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_NOPUSH_LSB    _u(20)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ac13295661e8c628d09169666ce8e2858">   44</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_NOPUSH_ACCESS &quot;WF&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// Field       : XIP_AUX_QMI_DIRECT_TX_OE</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Description : Output enable (active-high). For single width (SPI), this field</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//               is ignored, and SD0 is always set to output, with SD1 always</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//               set to input.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">//</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">//               For dual and quad width (DSPI/QSPI), this sets whether the</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//               relevant SDx pads are set to output whilst transferring this</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//               FIFO record. In this case the command/address should have OE</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//               set, and the data transfer should have OE set or clear</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//               depending on the direction of the transfer.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ad3d407a7db248f6de1e46394a515df5c">   56</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_OE_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a60f9c0b5064554f9fa0ba7e5d5b12589">   57</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_OE_BITS   _u(0x00080000)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#aac241462a8e2d7362ca87d03e4d01aeb">   58</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_OE_MSB    _u(19)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ad6d55f080063a4e76e30ee82ae83788f">   59</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_OE_LSB    _u(19)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a82f2d6df80778e8988a4fc9a67132d43">   60</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_OE_ACCESS &quot;WF&quot;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// Field       : XIP_AUX_QMI_DIRECT_TX_DWIDTH</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// Description : Data width. If 0, hardware will transmit the 8 LSBs of the</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//               DIRECT_TX DATA field, and return an 8-bit value in the 8 LSBs</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//               of DIRECT_RX. If 1, the full 16-bit width is used. 8-bit and</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//               16-bit transfers can be mixed freely.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a1488271a18a6dd6629661d5e6437e2f6">   67</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DWIDTH_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a1336ba3211b65dcbcaca822cd1badd3e">   68</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DWIDTH_BITS   _u(0x00040000)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a58697f316502dde8e5d532cb0048081a">   69</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DWIDTH_MSB    _u(18)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a628b246f0648a2a33e65020354297ec1">   70</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DWIDTH_LSB    _u(18)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a410c6c626501ad34501023fe5918e84a">   71</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DWIDTH_ACCESS &quot;WF&quot;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// Field       : XIP_AUX_QMI_DIRECT_TX_IWIDTH</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// Description : Configure whether this FIFO record is transferred with</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//               single/dual/quad interface width (0/1/2). Different widths can</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">//               be mixed freely.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//               0x0 -&gt; Single width</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//               0x1 -&gt; Dual width</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//               0x2 -&gt; Quad width</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ae9f7bcca880c17848f4d90a26ab1a236">   80</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a27c8547f7c1b12e634ea197f17312a0d">   81</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_BITS   _u(0x00030000)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#adf446cc7eec1e46d90b5f7f875ca8097">   82</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_MSB    _u(17)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a7d3d31a46853abba9d64d4989725ddd7">   83</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_LSB    _u(16)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a9d3f0b750c10e5dc62100533c7e4056c">   84</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_ACCESS &quot;WF&quot;</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a9336302822e4c449f683df084f628ab4">   85</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_VALUE_S _u(0x0)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ac9b39dc2be858999cf3cd3127bbfc15e">   86</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_VALUE_D _u(0x1)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#afc20858e8c4f8c825c64b894af55309a">   87</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_IWIDTH_VALUE_Q _u(0x2)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// Field       : XIP_AUX_QMI_DIRECT_TX_DATA</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// Description : Data pushed here will be clocked out falling edges of SCK (or</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">//               before the very first rising edge of SCK, if this is the first</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">//               pulse). For each byte clocked out, the interface will</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">//               simultaneously sample one byte, on rising edges of SCK, and</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">//               push this to the DIRECT_RX FIFO.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">//</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">//               For 16-bit data, the least-significant byte is transmitted</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">//               first.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a045790d840eaaa028a6b5f8e06cf981c">   98</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DATA_RESET  _u(0x0000)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a5423d2ab95f297eb35217b0a04e50d5d">   99</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DATA_BITS   _u(0x0000ffff)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a0edccb26a18978b5b606d0fa0d7deca0">  100</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DATA_MSB    _u(15)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a83fcabcae47647362800388d123b538c">  101</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DATA_LSB    _u(0)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a12986d0a0580bf68d8f5e51045039a13">  102</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_TX_DATA_ACCESS &quot;WF&quot;</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// Register    : XIP_AUX_QMI_DIRECT_RX</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// Description : Read from the QMI direct-mode RX FIFO (fast bus access to</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">//               QMI_DIRECT_RX)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">//               With each byte clocked out on the serial interface, one byte</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">//               will simultaneously be clocked in, and will appear in this</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">//               FIFO. The serial interface will stall when this FIFO is full,</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">//               to avoid dropping data.</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">//</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">//               When 16-bit data is pushed into the TX FIFO, the corresponding</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">//               RX FIFO push will also contain 16 bits of data. The least-</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">//               significant byte is the first one received.</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a852aadd3693802534395040e42f1ea86">  115</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_RX_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a4a9703cc9e089596e3e560f14fb51997">  116</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_RX_BITS   _u(0x0000ffff)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#ac65ca9d7efa39051421d1d7ce1b7b6a2">  117</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_RX_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a274ffebc24df3bec8145274b3c1a259f">  118</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_RX_MSB    _u(15)</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a1e227013d21d0519304c0958aee78c07">  119</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_RX_LSB    _u(0)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html#a36d352e4c978fc7a17b5349692e88061">  120</a></span><span class="preprocessor">#define XIP_AUX_QMI_DIRECT_RX_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_XIP_AUX_H</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="hardware__regs_2include_2hardware_2regs_2xip__aux_8h.html">xip_aux.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

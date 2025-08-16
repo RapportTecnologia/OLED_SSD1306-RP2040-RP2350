@@ -1,0 +1,1477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura USB_DPRAM_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structUSB__DPRAM__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structUSB__DPRAM__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura USB_DPRAM_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>DPRAM layout for USB device.  
+ <a href="structUSB__DPRAM__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para USB_DPRAM_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structUSB__DPRAM__Type__coll__graph.svg" width="236" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a897956cf088ca1169912980644a821c3" id="r_a897956cf088ca1169912980644a821c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a897956cf088ca1169912980644a821c3">EP0_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a897956cf088ca1169912980644a821c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a897956cf088ca1169912980644a821c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266dfa56b9c3b1efec1259419b3400c6" id="r_a266dfa56b9c3b1efec1259419b3400c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a266dfa56b9c3b1efec1259419b3400c6">EP0_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a266dfa56b9c3b1efec1259419b3400c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a266dfa56b9c3b1efec1259419b3400c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae856b44475a62b1207523ecf7a0e0fb2" id="r_ae856b44475a62b1207523ecf7a0e0fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ae856b44475a62b1207523ecf7a0e0fb2">EP10_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:ae856b44475a62b1207523ecf7a0e0fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:ae856b44475a62b1207523ecf7a0e0fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79be201488e2e657fd261adfde38940" id="r_ab79be201488e2e657fd261adfde38940"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ab79be201488e2e657fd261adfde38940">EP10_IN_CONTROL</a></td></tr>
+<tr class="memdesc:ab79be201488e2e657fd261adfde38940"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP10_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:ab79be201488e2e657fd261adfde38940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01de84cf894ec80e3d1803b6453bcd7a" id="r_a01de84cf894ec80e3d1803b6453bcd7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a01de84cf894ec80e3d1803b6453bcd7a">EP10_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a01de84cf894ec80e3d1803b6453bcd7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a01de84cf894ec80e3d1803b6453bcd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc5a4d8d331215d195e5d207e02ce7d" id="r_a0dc5a4d8d331215d195e5d207e02ce7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a0dc5a4d8d331215d195e5d207e02ce7d">EP10_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a0dc5a4d8d331215d195e5d207e02ce7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP10_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a0dc5a4d8d331215d195e5d207e02ce7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960fba90ed6ad65d5875ea057ce6c969" id="r_a960fba90ed6ad65d5875ea057ce6c969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a960fba90ed6ad65d5875ea057ce6c969">EP11_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a960fba90ed6ad65d5875ea057ce6c969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a960fba90ed6ad65d5875ea057ce6c969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec153ba6196848e392aae31092496aba" id="r_aec153ba6196848e392aae31092496aba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#aec153ba6196848e392aae31092496aba">EP11_IN_CONTROL</a></td></tr>
+<tr class="memdesc:aec153ba6196848e392aae31092496aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP11_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:aec153ba6196848e392aae31092496aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32159c030b3285343ee5997df401de0a" id="r_a32159c030b3285343ee5997df401de0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a32159c030b3285343ee5997df401de0a">EP11_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a32159c030b3285343ee5997df401de0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a32159c030b3285343ee5997df401de0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1f128d5fdb2e9d3f9d84019ac641e1" id="r_a1c1f128d5fdb2e9d3f9d84019ac641e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a1c1f128d5fdb2e9d3f9d84019ac641e1">EP11_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a1c1f128d5fdb2e9d3f9d84019ac641e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP11_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a1c1f128d5fdb2e9d3f9d84019ac641e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293c96a96304e24aba8ba2a34782bd42" id="r_a293c96a96304e24aba8ba2a34782bd42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a293c96a96304e24aba8ba2a34782bd42">EP12_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a293c96a96304e24aba8ba2a34782bd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a293c96a96304e24aba8ba2a34782bd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2be5e3eefd44f7b5579bb78196cec78" id="r_ae2be5e3eefd44f7b5579bb78196cec78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ae2be5e3eefd44f7b5579bb78196cec78">EP12_IN_CONTROL</a></td></tr>
+<tr class="memdesc:ae2be5e3eefd44f7b5579bb78196cec78"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP12_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:ae2be5e3eefd44f7b5579bb78196cec78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ec3789d0ec291b58c8493dcf9403eb" id="r_a44ec3789d0ec291b58c8493dcf9403eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a44ec3789d0ec291b58c8493dcf9403eb">EP12_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a44ec3789d0ec291b58c8493dcf9403eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a44ec3789d0ec291b58c8493dcf9403eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4b1f7e794319353a8867635ee76d4a" id="r_a1f4b1f7e794319353a8867635ee76d4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a1f4b1f7e794319353a8867635ee76d4a">EP12_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a1f4b1f7e794319353a8867635ee76d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP12_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a1f4b1f7e794319353a8867635ee76d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb27f4b6bf17fc57ba9a7f8ecfd12008" id="r_acb27f4b6bf17fc57ba9a7f8ecfd12008"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#acb27f4b6bf17fc57ba9a7f8ecfd12008">EP13_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:acb27f4b6bf17fc57ba9a7f8ecfd12008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:acb27f4b6bf17fc57ba9a7f8ecfd12008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab609653d1136aaf1c1c71125847dd290" id="r_ab609653d1136aaf1c1c71125847dd290"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ab609653d1136aaf1c1c71125847dd290">EP13_IN_CONTROL</a></td></tr>
+<tr class="memdesc:ab609653d1136aaf1c1c71125847dd290"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP13_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:ab609653d1136aaf1c1c71125847dd290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94543515a0c8365ab8087a72d976f0eb" id="r_a94543515a0c8365ab8087a72d976f0eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a94543515a0c8365ab8087a72d976f0eb">EP13_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a94543515a0c8365ab8087a72d976f0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a94543515a0c8365ab8087a72d976f0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444e7143e4b8d4be1a9cf1f88e06ac66" id="r_a444e7143e4b8d4be1a9cf1f88e06ac66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a444e7143e4b8d4be1a9cf1f88e06ac66">EP13_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a444e7143e4b8d4be1a9cf1f88e06ac66"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP13_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a444e7143e4b8d4be1a9cf1f88e06ac66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc7ecd144f67b9f11d3f008520a23e1" id="r_adcc7ecd144f67b9f11d3f008520a23e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#adcc7ecd144f67b9f11d3f008520a23e1">EP14_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:adcc7ecd144f67b9f11d3f008520a23e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:adcc7ecd144f67b9f11d3f008520a23e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfeca209edd591f228f8511db972614" id="r_adbfeca209edd591f228f8511db972614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#adbfeca209edd591f228f8511db972614">EP14_IN_CONTROL</a></td></tr>
+<tr class="memdesc:adbfeca209edd591f228f8511db972614"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP14_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:adbfeca209edd591f228f8511db972614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49cbb2bab1ed7624dec7e2e5534d7f9" id="r_ab49cbb2bab1ed7624dec7e2e5534d7f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ab49cbb2bab1ed7624dec7e2e5534d7f9">EP14_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:ab49cbb2bab1ed7624dec7e2e5534d7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:ab49cbb2bab1ed7624dec7e2e5534d7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0a3b69cfc82c4c2f835120b0522111" id="r_a9e0a3b69cfc82c4c2f835120b0522111"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a9e0a3b69cfc82c4c2f835120b0522111">EP14_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a9e0a3b69cfc82c4c2f835120b0522111"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP14_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a9e0a3b69cfc82c4c2f835120b0522111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a558bf30bf28bbb140db66fbaa6eec" id="r_a71a558bf30bf28bbb140db66fbaa6eec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a71a558bf30bf28bbb140db66fbaa6eec">EP15_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a71a558bf30bf28bbb140db66fbaa6eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a71a558bf30bf28bbb140db66fbaa6eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880a1cd4b3ce1521dfa940fdd0b66093" id="r_a880a1cd4b3ce1521dfa940fdd0b66093"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a880a1cd4b3ce1521dfa940fdd0b66093">EP15_IN_CONTROL</a></td></tr>
+<tr class="memdesc:a880a1cd4b3ce1521dfa940fdd0b66093"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP15_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a880a1cd4b3ce1521dfa940fdd0b66093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94930496561eda43e4aca0a7a7377dc" id="r_ae94930496561eda43e4aca0a7a7377dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ae94930496561eda43e4aca0a7a7377dc">EP15_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:ae94930496561eda43e4aca0a7a7377dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:ae94930496561eda43e4aca0a7a7377dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc0a9d07d332ead44c41a5457bbc555" id="r_aecc0a9d07d332ead44c41a5457bbc555"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#aecc0a9d07d332ead44c41a5457bbc555">EP15_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:aecc0a9d07d332ead44c41a5457bbc555"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP15_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:aecc0a9d07d332ead44c41a5457bbc555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7734942df8f5a754615cdea873c1dc23" id="r_a7734942df8f5a754615cdea873c1dc23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a7734942df8f5a754615cdea873c1dc23">EP1_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a7734942df8f5a754615cdea873c1dc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a7734942df8f5a754615cdea873c1dc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578fa88de7f77cd173159298ca0731d4" id="r_a578fa88de7f77cd173159298ca0731d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a578fa88de7f77cd173159298ca0731d4">EP1_IN_CONTROL</a></td></tr>
+<tr class="memdesc:a578fa88de7f77cd173159298ca0731d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP1_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a578fa88de7f77cd173159298ca0731d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ceeffdc950ae337f8a1bc55ed09e0a6" id="r_a1ceeffdc950ae337f8a1bc55ed09e0a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a1ceeffdc950ae337f8a1bc55ed09e0a6">EP1_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a1ceeffdc950ae337f8a1bc55ed09e0a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a1ceeffdc950ae337f8a1bc55ed09e0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef289e9dc9fe28dea8fe828ee834bb2" id="r_a2ef289e9dc9fe28dea8fe828ee834bb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a2ef289e9dc9fe28dea8fe828ee834bb2">EP1_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a2ef289e9dc9fe28dea8fe828ee834bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP1_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a2ef289e9dc9fe28dea8fe828ee834bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bf88de1a2bf82442b5d1da3e555625" id="r_a78bf88de1a2bf82442b5d1da3e555625"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a78bf88de1a2bf82442b5d1da3e555625">EP2_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a78bf88de1a2bf82442b5d1da3e555625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a78bf88de1a2bf82442b5d1da3e555625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce0c54a5710693b07f582069aebba01" id="r_acce0c54a5710693b07f582069aebba01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#acce0c54a5710693b07f582069aebba01">EP2_IN_CONTROL</a></td></tr>
+<tr class="memdesc:acce0c54a5710693b07f582069aebba01"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP2_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:acce0c54a5710693b07f582069aebba01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b45610744bfba74f105754d4b35193e" id="r_a8b45610744bfba74f105754d4b35193e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a8b45610744bfba74f105754d4b35193e">EP2_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a8b45610744bfba74f105754d4b35193e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a8b45610744bfba74f105754d4b35193e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40df6c733e63f47e564b47d9ab02dbc" id="r_ac40df6c733e63f47e564b47d9ab02dbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ac40df6c733e63f47e564b47d9ab02dbc">EP2_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:ac40df6c733e63f47e564b47d9ab02dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP2_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:ac40df6c733e63f47e564b47d9ab02dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f83ffcebec16f9a6c8d55019fca0da9" id="r_a3f83ffcebec16f9a6c8d55019fca0da9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a3f83ffcebec16f9a6c8d55019fca0da9">EP3_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a3f83ffcebec16f9a6c8d55019fca0da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a3f83ffcebec16f9a6c8d55019fca0da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab430eb8f4addc5e5fa0ed6ba09e8b44" id="r_aab430eb8f4addc5e5fa0ed6ba09e8b44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#aab430eb8f4addc5e5fa0ed6ba09e8b44">EP3_IN_CONTROL</a></td></tr>
+<tr class="memdesc:aab430eb8f4addc5e5fa0ed6ba09e8b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP3_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:aab430eb8f4addc5e5fa0ed6ba09e8b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e04d6e98364fc204cd027f39cefc8d9" id="r_a8e04d6e98364fc204cd027f39cefc8d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a8e04d6e98364fc204cd027f39cefc8d9">EP3_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a8e04d6e98364fc204cd027f39cefc8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a8e04d6e98364fc204cd027f39cefc8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bba4edecc38bc463fecb1600ca40a70" id="r_a0bba4edecc38bc463fecb1600ca40a70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a0bba4edecc38bc463fecb1600ca40a70">EP3_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a0bba4edecc38bc463fecb1600ca40a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP3_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a0bba4edecc38bc463fecb1600ca40a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3882400766bab00df61e99cb4ea34360" id="r_a3882400766bab00df61e99cb4ea34360"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a3882400766bab00df61e99cb4ea34360">EP4_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a3882400766bab00df61e99cb4ea34360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a3882400766bab00df61e99cb4ea34360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc41849a2f56fba87a33d40a19753e6" id="r_a3cc41849a2f56fba87a33d40a19753e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a3cc41849a2f56fba87a33d40a19753e6">EP4_IN_CONTROL</a></td></tr>
+<tr class="memdesc:a3cc41849a2f56fba87a33d40a19753e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP4_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a3cc41849a2f56fba87a33d40a19753e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03bc3f7e56fa51ab9616f2e25beaf22" id="r_af03bc3f7e56fa51ab9616f2e25beaf22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#af03bc3f7e56fa51ab9616f2e25beaf22">EP4_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:af03bc3f7e56fa51ab9616f2e25beaf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:af03bc3f7e56fa51ab9616f2e25beaf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e9542202edeed52d87bd769f2a7561" id="r_a19e9542202edeed52d87bd769f2a7561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a19e9542202edeed52d87bd769f2a7561">EP4_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a19e9542202edeed52d87bd769f2a7561"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP4_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a19e9542202edeed52d87bd769f2a7561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae609cdfdea5bf9ba5298c00cfd88deab" id="r_ae609cdfdea5bf9ba5298c00cfd88deab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ae609cdfdea5bf9ba5298c00cfd88deab">EP5_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:ae609cdfdea5bf9ba5298c00cfd88deab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:ae609cdfdea5bf9ba5298c00cfd88deab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63265115e80f0986f70e552039d4dc14" id="r_a63265115e80f0986f70e552039d4dc14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a63265115e80f0986f70e552039d4dc14">EP5_IN_CONTROL</a></td></tr>
+<tr class="memdesc:a63265115e80f0986f70e552039d4dc14"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP5_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a63265115e80f0986f70e552039d4dc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f956b40ce61f0735e2f7ca4261b504" id="r_a87f956b40ce61f0735e2f7ca4261b504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a87f956b40ce61f0735e2f7ca4261b504">EP5_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a87f956b40ce61f0735e2f7ca4261b504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a87f956b40ce61f0735e2f7ca4261b504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b41be59161c142bf476813c6a04382b" id="r_a7b41be59161c142bf476813c6a04382b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a7b41be59161c142bf476813c6a04382b">EP5_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a7b41be59161c142bf476813c6a04382b"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP5_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a7b41be59161c142bf476813c6a04382b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fe18d1ca91d7c159bde51146cee2e4" id="r_a15fe18d1ca91d7c159bde51146cee2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a15fe18d1ca91d7c159bde51146cee2e4">EP6_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a15fe18d1ca91d7c159bde51146cee2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a15fe18d1ca91d7c159bde51146cee2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5a7a0305332949d7d8def61fe769fc" id="r_a1c5a7a0305332949d7d8def61fe769fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a1c5a7a0305332949d7d8def61fe769fc">EP6_IN_CONTROL</a></td></tr>
+<tr class="memdesc:a1c5a7a0305332949d7d8def61fe769fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP6_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a1c5a7a0305332949d7d8def61fe769fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84c234fbb6af852ef833790bd80ec5c" id="r_ae84c234fbb6af852ef833790bd80ec5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ae84c234fbb6af852ef833790bd80ec5c">EP6_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:ae84c234fbb6af852ef833790bd80ec5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:ae84c234fbb6af852ef833790bd80ec5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e54279bc39493d676104b5d57c0115" id="r_a22e54279bc39493d676104b5d57c0115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a22e54279bc39493d676104b5d57c0115">EP6_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a22e54279bc39493d676104b5d57c0115"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP6_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a22e54279bc39493d676104b5d57c0115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25996d9a74b6b9450fa542688377c4ec" id="r_a25996d9a74b6b9450fa542688377c4ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a25996d9a74b6b9450fa542688377c4ec">EP7_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a25996d9a74b6b9450fa542688377c4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a25996d9a74b6b9450fa542688377c4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2493887ec898dd86548832f33d07a0c1" id="r_a2493887ec898dd86548832f33d07a0c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a2493887ec898dd86548832f33d07a0c1">EP7_IN_CONTROL</a></td></tr>
+<tr class="memdesc:a2493887ec898dd86548832f33d07a0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP7_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a2493887ec898dd86548832f33d07a0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887857cbfdb817b5a1713f4810387cec" id="r_a887857cbfdb817b5a1713f4810387cec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a887857cbfdb817b5a1713f4810387cec">EP7_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a887857cbfdb817b5a1713f4810387cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a887857cbfdb817b5a1713f4810387cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcfab749603c44a0eaf3b57aae61e4a" id="r_a1fcfab749603c44a0eaf3b57aae61e4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a1fcfab749603c44a0eaf3b57aae61e4a">EP7_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a1fcfab749603c44a0eaf3b57aae61e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP7_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a1fcfab749603c44a0eaf3b57aae61e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769a1777548d38e0821315caa8702d66" id="r_a769a1777548d38e0821315caa8702d66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a769a1777548d38e0821315caa8702d66">EP8_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a769a1777548d38e0821315caa8702d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a769a1777548d38e0821315caa8702d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b9d0a03afbbdf7e9aab558fa8273b5" id="r_ac5b9d0a03afbbdf7e9aab558fa8273b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ac5b9d0a03afbbdf7e9aab558fa8273b5">EP8_IN_CONTROL</a></td></tr>
+<tr class="memdesc:ac5b9d0a03afbbdf7e9aab558fa8273b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP8_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:ac5b9d0a03afbbdf7e9aab558fa8273b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc34839fc0fffad2b048985a9132fde4" id="r_abc34839fc0fffad2b048985a9132fde4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#abc34839fc0fffad2b048985a9132fde4">EP8_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:abc34839fc0fffad2b048985a9132fde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:abc34839fc0fffad2b048985a9132fde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bd1f663d39db43801c9fdc39b08b19" id="r_a98bd1f663d39db43801c9fdc39b08b19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a98bd1f663d39db43801c9fdc39b08b19">EP8_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:a98bd1f663d39db43801c9fdc39b08b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP8_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:a98bd1f663d39db43801c9fdc39b08b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab981607861fb267e9ef2c1849c642b8a" id="r_ab981607861fb267e9ef2c1849c642b8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ab981607861fb267e9ef2c1849c642b8a">EP9_IN_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:ab981607861fb267e9ef2c1849c642b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:ab981607861fb267e9ef2c1849c642b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a42f9812b1b5393999ce8815fcc515" id="r_ab2a42f9812b1b5393999ce8815fcc515"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ab2a42f9812b1b5393999ce8815fcc515">EP9_IN_CONTROL</a></td></tr>
+<tr class="memdesc:ab2a42f9812b1b5393999ce8815fcc515"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP9_IN_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:ab2a42f9812b1b5393999ce8815fcc515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02164373349a1a827dfb8a538cdfd88a" id="r_a02164373349a1a827dfb8a538cdfd88a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#a02164373349a1a827dfb8a538cdfd88a">EP9_OUT_BUFFER_CONTROL</a></td></tr>
+<tr class="memdesc:a02164373349a1a827dfb8a538cdfd88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer control for both buffers of an endpoint.  <br /></td></tr>
+<tr class="separator:a02164373349a1a827dfb8a538cdfd88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac31f57702c593464e2ea4c0670a184a" id="r_aac31f57702c593464e2ea4c0670a184a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#aac31f57702c593464e2ea4c0670a184a">EP9_OUT_CONTROL</a></td></tr>
+<tr class="memdesc:aac31f57702c593464e2ea4c0670a184a"><td class="mdescLeft">&#160;</td><td class="mdescRight">EP9_OUT_CONTROL <br  />
+  <br /></td></tr>
+<tr class="separator:aac31f57702c593464e2ea4c0670a184a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1087ee6ecfa6b58f9059e892752ef06" id="r_ae1087ee6ecfa6b58f9059e892752ef06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#ae1087ee6ecfa6b58f9059e892752ef06">SETUP_PACKET_HIGH</a></td></tr>
+<tr class="memdesc:ae1087ee6ecfa6b58f9059e892752ef06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes 4-7 of the setup packet from the host.  <br /></td></tr>
+<tr class="separator:ae1087ee6ecfa6b58f9059e892752ef06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8db852600727a35990275179ab66b2" id="r_abc8db852600727a35990275179ab66b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSB__DPRAM__Type.html#abc8db852600727a35990275179ab66b2">SETUP_PACKET_LOW</a></td></tr>
+<tr class="memdesc:abc8db852600727a35990275179ab66b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; USB_DPRAM Structure <br  />
+  <br /></td></tr>
+<tr class="separator:abc8db852600727a35990275179ab66b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>DPRAM layout for USB device. </p>
+<p>(USB_DPRAM) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a897956cf088ca1169912980644a821c3" name="a897956cf088ca1169912980644a821c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897956cf088ca1169912980644a821c3">&#9670;&#160;</a></span>EP0_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP0_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a266dfa56b9c3b1efec1259419b3400c6" name="a266dfa56b9c3b1efec1259419b3400c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266dfa56b9c3b1efec1259419b3400c6">&#9670;&#160;</a></span>EP0_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP0_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae856b44475a62b1207523ecf7a0e0fb2" name="ae856b44475a62b1207523ecf7a0e0fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae856b44475a62b1207523ecf7a0e0fb2">&#9670;&#160;</a></span>EP10_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP10_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab79be201488e2e657fd261adfde38940" name="ab79be201488e2e657fd261adfde38940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79be201488e2e657fd261adfde38940">&#9670;&#160;</a></span>EP10_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP10_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP10_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a01de84cf894ec80e3d1803b6453bcd7a" name="a01de84cf894ec80e3d1803b6453bcd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01de84cf894ec80e3d1803b6453bcd7a">&#9670;&#160;</a></span>EP10_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP10_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0dc5a4d8d331215d195e5d207e02ce7d" name="a0dc5a4d8d331215d195e5d207e02ce7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc5a4d8d331215d195e5d207e02ce7d">&#9670;&#160;</a></span>EP10_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP10_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP10_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a960fba90ed6ad65d5875ea057ce6c969" name="a960fba90ed6ad65d5875ea057ce6c969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a960fba90ed6ad65d5875ea057ce6c969">&#9670;&#160;</a></span>EP11_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP11_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aec153ba6196848e392aae31092496aba" name="aec153ba6196848e392aae31092496aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec153ba6196848e392aae31092496aba">&#9670;&#160;</a></span>EP11_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP11_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP11_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a32159c030b3285343ee5997df401de0a" name="a32159c030b3285343ee5997df401de0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32159c030b3285343ee5997df401de0a">&#9670;&#160;</a></span>EP11_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP11_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1c1f128d5fdb2e9d3f9d84019ac641e1" name="a1c1f128d5fdb2e9d3f9d84019ac641e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1f128d5fdb2e9d3f9d84019ac641e1">&#9670;&#160;</a></span>EP11_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP11_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP11_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a293c96a96304e24aba8ba2a34782bd42" name="a293c96a96304e24aba8ba2a34782bd42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293c96a96304e24aba8ba2a34782bd42">&#9670;&#160;</a></span>EP12_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP12_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae2be5e3eefd44f7b5579bb78196cec78" name="ae2be5e3eefd44f7b5579bb78196cec78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2be5e3eefd44f7b5579bb78196cec78">&#9670;&#160;</a></span>EP12_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP12_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP12_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a44ec3789d0ec291b58c8493dcf9403eb" name="a44ec3789d0ec291b58c8493dcf9403eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ec3789d0ec291b58c8493dcf9403eb">&#9670;&#160;</a></span>EP12_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP12_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1f4b1f7e794319353a8867635ee76d4a" name="a1f4b1f7e794319353a8867635ee76d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4b1f7e794319353a8867635ee76d4a">&#9670;&#160;</a></span>EP12_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP12_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP12_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="acb27f4b6bf17fc57ba9a7f8ecfd12008" name="acb27f4b6bf17fc57ba9a7f8ecfd12008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb27f4b6bf17fc57ba9a7f8ecfd12008">&#9670;&#160;</a></span>EP13_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP13_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab609653d1136aaf1c1c71125847dd290" name="ab609653d1136aaf1c1c71125847dd290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab609653d1136aaf1c1c71125847dd290">&#9670;&#160;</a></span>EP13_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP13_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP13_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a94543515a0c8365ab8087a72d976f0eb" name="a94543515a0c8365ab8087a72d976f0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94543515a0c8365ab8087a72d976f0eb">&#9670;&#160;</a></span>EP13_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP13_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a444e7143e4b8d4be1a9cf1f88e06ac66" name="a444e7143e4b8d4be1a9cf1f88e06ac66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444e7143e4b8d4be1a9cf1f88e06ac66">&#9670;&#160;</a></span>EP13_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP13_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP13_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="adcc7ecd144f67b9f11d3f008520a23e1" name="adcc7ecd144f67b9f11d3f008520a23e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc7ecd144f67b9f11d3f008520a23e1">&#9670;&#160;</a></span>EP14_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP14_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="adbfeca209edd591f228f8511db972614" name="adbfeca209edd591f228f8511db972614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfeca209edd591f228f8511db972614">&#9670;&#160;</a></span>EP14_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP14_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP14_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab49cbb2bab1ed7624dec7e2e5534d7f9" name="ab49cbb2bab1ed7624dec7e2e5534d7f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49cbb2bab1ed7624dec7e2e5534d7f9">&#9670;&#160;</a></span>EP14_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP14_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9e0a3b69cfc82c4c2f835120b0522111" name="a9e0a3b69cfc82c4c2f835120b0522111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0a3b69cfc82c4c2f835120b0522111">&#9670;&#160;</a></span>EP14_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP14_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP14_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a71a558bf30bf28bbb140db66fbaa6eec" name="a71a558bf30bf28bbb140db66fbaa6eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a558bf30bf28bbb140db66fbaa6eec">&#9670;&#160;</a></span>EP15_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP15_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a880a1cd4b3ce1521dfa940fdd0b66093" name="a880a1cd4b3ce1521dfa940fdd0b66093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880a1cd4b3ce1521dfa940fdd0b66093">&#9670;&#160;</a></span>EP15_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP15_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP15_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae94930496561eda43e4aca0a7a7377dc" name="ae94930496561eda43e4aca0a7a7377dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae94930496561eda43e4aca0a7a7377dc">&#9670;&#160;</a></span>EP15_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP15_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aecc0a9d07d332ead44c41a5457bbc555" name="aecc0a9d07d332ead44c41a5457bbc555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc0a9d07d332ead44c41a5457bbc555">&#9670;&#160;</a></span>EP15_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP15_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP15_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7734942df8f5a754615cdea873c1dc23" name="a7734942df8f5a754615cdea873c1dc23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7734942df8f5a754615cdea873c1dc23">&#9670;&#160;</a></span>EP1_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP1_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a578fa88de7f77cd173159298ca0731d4" name="a578fa88de7f77cd173159298ca0731d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578fa88de7f77cd173159298ca0731d4">&#9670;&#160;</a></span>EP1_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP1_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP1_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1ceeffdc950ae337f8a1bc55ed09e0a6" name="a1ceeffdc950ae337f8a1bc55ed09e0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ceeffdc950ae337f8a1bc55ed09e0a6">&#9670;&#160;</a></span>EP1_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP1_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2ef289e9dc9fe28dea8fe828ee834bb2" name="a2ef289e9dc9fe28dea8fe828ee834bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef289e9dc9fe28dea8fe828ee834bb2">&#9670;&#160;</a></span>EP1_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP1_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP1_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a78bf88de1a2bf82442b5d1da3e555625" name="a78bf88de1a2bf82442b5d1da3e555625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bf88de1a2bf82442b5d1da3e555625">&#9670;&#160;</a></span>EP2_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP2_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="acce0c54a5710693b07f582069aebba01" name="acce0c54a5710693b07f582069aebba01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce0c54a5710693b07f582069aebba01">&#9670;&#160;</a></span>EP2_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP2_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP2_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8b45610744bfba74f105754d4b35193e" name="a8b45610744bfba74f105754d4b35193e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b45610744bfba74f105754d4b35193e">&#9670;&#160;</a></span>EP2_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP2_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac40df6c733e63f47e564b47d9ab02dbc" name="ac40df6c733e63f47e564b47d9ab02dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40df6c733e63f47e564b47d9ab02dbc">&#9670;&#160;</a></span>EP2_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP2_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP2_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3f83ffcebec16f9a6c8d55019fca0da9" name="a3f83ffcebec16f9a6c8d55019fca0da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f83ffcebec16f9a6c8d55019fca0da9">&#9670;&#160;</a></span>EP3_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP3_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aab430eb8f4addc5e5fa0ed6ba09e8b44" name="aab430eb8f4addc5e5fa0ed6ba09e8b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab430eb8f4addc5e5fa0ed6ba09e8b44">&#9670;&#160;</a></span>EP3_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP3_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP3_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8e04d6e98364fc204cd027f39cefc8d9" name="a8e04d6e98364fc204cd027f39cefc8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e04d6e98364fc204cd027f39cefc8d9">&#9670;&#160;</a></span>EP3_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP3_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0bba4edecc38bc463fecb1600ca40a70" name="a0bba4edecc38bc463fecb1600ca40a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bba4edecc38bc463fecb1600ca40a70">&#9670;&#160;</a></span>EP3_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP3_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP3_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3882400766bab00df61e99cb4ea34360" name="a3882400766bab00df61e99cb4ea34360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3882400766bab00df61e99cb4ea34360">&#9670;&#160;</a></span>EP4_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP4_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3cc41849a2f56fba87a33d40a19753e6" name="a3cc41849a2f56fba87a33d40a19753e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc41849a2f56fba87a33d40a19753e6">&#9670;&#160;</a></span>EP4_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP4_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP4_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="af03bc3f7e56fa51ab9616f2e25beaf22" name="af03bc3f7e56fa51ab9616f2e25beaf22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03bc3f7e56fa51ab9616f2e25beaf22">&#9670;&#160;</a></span>EP4_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP4_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a19e9542202edeed52d87bd769f2a7561" name="a19e9542202edeed52d87bd769f2a7561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e9542202edeed52d87bd769f2a7561">&#9670;&#160;</a></span>EP4_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP4_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP4_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae609cdfdea5bf9ba5298c00cfd88deab" name="ae609cdfdea5bf9ba5298c00cfd88deab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae609cdfdea5bf9ba5298c00cfd88deab">&#9670;&#160;</a></span>EP5_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP5_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a63265115e80f0986f70e552039d4dc14" name="a63265115e80f0986f70e552039d4dc14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63265115e80f0986f70e552039d4dc14">&#9670;&#160;</a></span>EP5_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP5_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP5_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a87f956b40ce61f0735e2f7ca4261b504" name="a87f956b40ce61f0735e2f7ca4261b504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f956b40ce61f0735e2f7ca4261b504">&#9670;&#160;</a></span>EP5_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP5_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7b41be59161c142bf476813c6a04382b" name="a7b41be59161c142bf476813c6a04382b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b41be59161c142bf476813c6a04382b">&#9670;&#160;</a></span>EP5_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP5_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP5_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a15fe18d1ca91d7c159bde51146cee2e4" name="a15fe18d1ca91d7c159bde51146cee2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15fe18d1ca91d7c159bde51146cee2e4">&#9670;&#160;</a></span>EP6_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP6_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1c5a7a0305332949d7d8def61fe769fc" name="a1c5a7a0305332949d7d8def61fe769fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5a7a0305332949d7d8def61fe769fc">&#9670;&#160;</a></span>EP6_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP6_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP6_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae84c234fbb6af852ef833790bd80ec5c" name="ae84c234fbb6af852ef833790bd80ec5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84c234fbb6af852ef833790bd80ec5c">&#9670;&#160;</a></span>EP6_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP6_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a22e54279bc39493d676104b5d57c0115" name="a22e54279bc39493d676104b5d57c0115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e54279bc39493d676104b5d57c0115">&#9670;&#160;</a></span>EP6_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP6_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP6_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a25996d9a74b6b9450fa542688377c4ec" name="a25996d9a74b6b9450fa542688377c4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25996d9a74b6b9450fa542688377c4ec">&#9670;&#160;</a></span>EP7_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP7_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2493887ec898dd86548832f33d07a0c1" name="a2493887ec898dd86548832f33d07a0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2493887ec898dd86548832f33d07a0c1">&#9670;&#160;</a></span>EP7_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP7_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP7_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a887857cbfdb817b5a1713f4810387cec" name="a887857cbfdb817b5a1713f4810387cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887857cbfdb817b5a1713f4810387cec">&#9670;&#160;</a></span>EP7_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP7_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1fcfab749603c44a0eaf3b57aae61e4a" name="a1fcfab749603c44a0eaf3b57aae61e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcfab749603c44a0eaf3b57aae61e4a">&#9670;&#160;</a></span>EP7_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP7_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP7_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a769a1777548d38e0821315caa8702d66" name="a769a1777548d38e0821315caa8702d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769a1777548d38e0821315caa8702d66">&#9670;&#160;</a></span>EP8_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP8_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac5b9d0a03afbbdf7e9aab558fa8273b5" name="ac5b9d0a03afbbdf7e9aab558fa8273b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b9d0a03afbbdf7e9aab558fa8273b5">&#9670;&#160;</a></span>EP8_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP8_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP8_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="abc34839fc0fffad2b048985a9132fde4" name="abc34839fc0fffad2b048985a9132fde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc34839fc0fffad2b048985a9132fde4">&#9670;&#160;</a></span>EP8_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP8_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a98bd1f663d39db43801c9fdc39b08b19" name="a98bd1f663d39db43801c9fdc39b08b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98bd1f663d39db43801c9fdc39b08b19">&#9670;&#160;</a></span>EP8_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP8_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP8_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab981607861fb267e9ef2c1849c642b8a" name="ab981607861fb267e9ef2c1849c642b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab981607861fb267e9ef2c1849c642b8a">&#9670;&#160;</a></span>EP9_IN_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP9_IN_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab2a42f9812b1b5393999ce8815fcc515" name="ab2a42f9812b1b5393999ce8815fcc515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a42f9812b1b5393999ce8815fcc515">&#9670;&#160;</a></span>EP9_IN_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP9_IN_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP9_IN_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a02164373349a1a827dfb8a538cdfd88a" name="a02164373349a1a827dfb8a538cdfd88a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02164373349a1a827dfb8a538cdfd88a">&#9670;&#160;</a></span>EP9_OUT_BUFFER_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP9_OUT_BUFFER_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer control for both buffers of an endpoint. </p>
+<p>Fields ending in a _1 are for buffer 1. Fields ending in a _0 are for buffer 0. Buffer 1 controls are only valid if the endpoint is in double buffered mode. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aac31f57702c593464e2ea4c0670a184a" name="aac31f57702c593464e2ea4c0670a184a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac31f57702c593464e2ea4c0670a184a">&#9670;&#160;</a></span>EP9_OUT_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::EP9_OUT_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EP9_OUT_CONTROL <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae1087ee6ecfa6b58f9059e892752ef06" name="ae1087ee6ecfa6b58f9059e892752ef06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1087ee6ecfa6b58f9059e892752ef06">&#9670;&#160;</a></span>SETUP_PACKET_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::SETUP_PACKET_HIGH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bytes 4-7 of the setup packet from the host. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="abc8db852600727a35990275179ab66b2" name="abc8db852600727a35990275179ab66b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc8db852600727a35990275179ab66b2">&#9670;&#160;</a></span>SETUP_PACKET_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> USB_DPRAM_Type::SETUP_PACKET_LOW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; USB_DPRAM Structure <br  />
+ </p>
+<p>Bytes 0-3 of the SETUP packet from the host. <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structUSB__DPRAM__Type.html">USB_DPRAM_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

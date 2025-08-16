@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro pio.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('pio_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro pio.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="claim_8h_source.html">hardware/claim.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h_source.html">hardware/pio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pio__instructions_8h_source.html">hardware/pio_instructions.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para pio.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="pio_8c__incl.svg" width="1435" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac865a7d64c1625c0d14101edc3d6d4a9" id="r_ac865a7d64c1625c0d14101edc3d6d4a9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#ac865a7d64c1625c0d14101edc3d6d4a9">pio_sm_set_pindirs_with_mask_internal</a>&#160;&#160;&#160;<a class="el" href="group__hardware__pio.html#ga8269f1ef4cb1e4b3b957d5f1fa6fc623">pio_sm_set_pindirs_with_mask</a></td></tr>
+<tr class="separator:ac865a7d64c1625c0d14101edc3d6d4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38b5caba2cb97e83641b5a5ee30f7bc" id="r_ae38b5caba2cb97e83641b5a5ee30f7bc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#ae38b5caba2cb97e83641b5a5ee30f7bc">pio_sm_set_pins_internal</a>&#160;&#160;&#160;<a class="el" href="group__hardware__pio.html#ga1286f306263b413a8002c9db2b433d8b">pio_sm_set_pins</a></td></tr>
+<tr class="separator:ae38b5caba2cb97e83641b5a5ee30f7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af86d6162170f2019a7e78a4fcacc5f" id="r_a5af86d6162170f2019a7e78a4fcacc5f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a5af86d6162170f2019a7e78a4fcacc5f">pio_sm_set_pins_with_mask_internal</a>&#160;&#160;&#160;<a class="el" href="group__hardware__pio.html#ga963167ca42f67f79ec5de6b47d6027d5">pio_sm_set_pins_with_mask</a></td></tr>
+<tr class="separator:a5af86d6162170f2019a7e78a4fcacc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a172ac8f930a6c26333fee74f923068ad" id="r_a172ac8f930a6c26333fee74f923068ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a172ac8f930a6c26333fee74f923068ad">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, instr_mem[0], <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a5f16a90775f37078c859472f9cd51100">PIO_INSTR_MEM0_OFFSET</a>)</td></tr>
+<tr class="separator:a172ac8f930a6c26333fee74f923068ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba87f90f6f19f7ec065a4703dc6fa41" id="r_a1ba87f90f6f19f7ec065a4703dc6fa41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a1ba87f90f6f19f7ec065a4703dc6fa41">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, inte0, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a935f8622aa0c1de4a357095fef9b73e7">PIO_IRQ0_INTE_OFFSET</a>)</td></tr>
+<tr class="separator:a1ba87f90f6f19f7ec065a4703dc6fa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74da8961490ca4b8b2bce50fb1876da" id="r_ac74da8961490ca4b8b2bce50fb1876da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#ac74da8961490ca4b8b2bce50fb1876da">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, ints1, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a9bc8cb2115aa8b8c58e0c8409cd28cfc">PIO_IRQ1_INTS_OFFSET</a>)</td></tr>
+<tr class="separator:ac74da8961490ca4b8b2bce50fb1876da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1b0f83977d7ce3b210f7d1072e0a68" id="r_a7b1b0f83977d7ce3b210f7d1072e0a68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a7b1b0f83977d7ce3b210f7d1072e0a68">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, irq_ctrl[0].inte, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a935f8622aa0c1de4a357095fef9b73e7">PIO_IRQ0_INTE_OFFSET</a>)</td></tr>
+<tr class="separator:a7b1b0f83977d7ce3b210f7d1072e0a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d7f17731937bcbd7ecfa60b209ca4d" id="r_af8d7f17731937bcbd7ecfa60b209ca4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#af8d7f17731937bcbd7ecfa60b209ca4d">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, irq_ctrl[1].ints, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a9bc8cb2115aa8b8c58e0c8409cd28cfc">PIO_IRQ1_INTS_OFFSET</a>)</td></tr>
+<tr class="separator:af8d7f17731937bcbd7ecfa60b209ca4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4b881494f1b48eb1d1b81a8e13e41f" id="r_a9c4b881494f1b48eb1d1b81a8e13e41f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a9c4b881494f1b48eb1d1b81a8e13e41f">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, rxf[3], <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a470b09c150fbfc901024100dc920e710">PIO_RXF3_OFFSET</a>)</td></tr>
+<tr class="separator:a9c4b881494f1b48eb1d1b81a8e13e41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203be63bbdd3ff27afbe9e7477d955bd" id="r_a203be63bbdd3ff27afbe9e7477d955bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a203be63bbdd3ff27afbe9e7477d955bd">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, sm[0].clkdiv, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#ae7ca0ff548a3a64123b78f083a7e71b6">PIO_SM0_CLKDIV_OFFSET</a>)</td></tr>
+<tr class="separator:a203be63bbdd3ff27afbe9e7477d955bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad315455694bd76bf362e3b6d65d720f5" id="r_ad315455694bd76bf362e3b6d65d720f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#ad315455694bd76bf362e3b6d65d720f5">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, sm[1].clkdiv, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a50200f29e0fc6f86fdf9f381ea47c0ec">PIO_SM1_CLKDIV_OFFSET</a>)</td></tr>
+<tr class="separator:ad315455694bd76bf362e3b6d65d720f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f382aeaff323cd383d19a842d849846" id="r_a6f382aeaff323cd383d19a842d849846"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a6f382aeaff323cd383d19a842d849846">check_hw_layout</a> (<a class="el" href="structpio__hw__t.html">pio_hw_t</a>, txf[1], <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a7991b3edcaebc228a384638cdc36d015">PIO_TXF1_OFFSET</a>)</td></tr>
+<tr class="separator:a6f382aeaff323cd383d19a842d849846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefbd086e8e96fee073438dac3c20334c" id="r_gaefbd086e8e96fee073438dac3c20334c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#gaefbd086e8e96fee073438dac3c20334c">pio_add_program</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>)</td></tr>
+<tr class="memdesc:gaefbd086e8e96fee073438dac3c20334c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to load the program.  <br /></td></tr>
+<tr class="separator:gaefbd086e8e96fee073438dac3c20334c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12948478935f817218b64e1db3a8ebad" id="r_ga12948478935f817218b64e1db3a8ebad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga12948478935f817218b64e1db3a8ebad">pio_add_program_at_offset</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">offset</a>)</td></tr>
+<tr class="memdesc:ga12948478935f817218b64e1db3a8ebad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to load the program at the specified instruction memory offset.  <br /></td></tr>
+<tr class="separator:ga12948478935f817218b64e1db3a8ebad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8aafe966a46f4de9be59f73cae65a4b" id="r_gaa8aafe966a46f4de9be59f73cae65a4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#gaa8aafe966a46f4de9be59f73cae65a4b">pio_can_add_program</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>)</td></tr>
+<tr class="memdesc:gaa8aafe966a46f4de9be59f73cae65a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the given program can (at the time of the call) be loaded onto the PIO instance.  <br /></td></tr>
+<tr class="separator:gaa8aafe966a46f4de9be59f73cae65a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafac789d94b0727bb02ea83a8786897f" id="r_gaafac789d94b0727bb02ea83a8786897f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#gaafac789d94b0727bb02ea83a8786897f">pio_can_add_program_at_offset</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">offset</a>)</td></tr>
+<tr class="memdesc:gaafac789d94b0727bb02ea83a8786897f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the given program can (at the time of the call) be loaded onto the PIO instance starting at a particular location.  <br /></td></tr>
+<tr class="separator:gaafac789d94b0727bb02ea83a8786897f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03abf744baa28e22a46fcf81452c47cf" id="r_ga03abf744baa28e22a46fcf81452c47cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga03abf744baa28e22a46fcf81452c47cf">pio_claim_free_sm_and_add_program</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>, <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> *pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *sm, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">offset</a>)</td></tr>
+<tr class="memdesc:ga03abf744baa28e22a46fcf81452c47cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a PIO and statemachine and adds a program into PIO memory.  <br /></td></tr>
+<tr class="separator:ga03abf744baa28e22a46fcf81452c47cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53c3bbe939b3c58585d0e19ffe91e18e" id="r_ga53c3bbe939b3c58585d0e19ffe91e18e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga53c3bbe939b3c58585d0e19ffe91e18e">pio_claim_free_sm_and_add_program_for_gpio_range</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>, <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> *pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *sm, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">offset</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_base</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_count</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">set_gpio_base</a>)</td></tr>
+<tr class="memdesc:ga53c3bbe939b3c58585d0e19ffe91e18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a PIO and statemachine and adds a program into PIO memory.  <br /></td></tr>
+<tr class="separator:ga53c3bbe939b3c58585d0e19ffe91e18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c25ad61f15a76499997102e126cbdfd" id="r_ga4c25ad61f15a76499997102e126cbdfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga4c25ad61f15a76499997102e126cbdfd">pio_claim_sm_mask</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sm_mask</a>)</td></tr>
+<tr class="memdesc:ga4c25ad61f15a76499997102e126cbdfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark multiple state machines as used.  <br /></td></tr>
+<tr class="separator:ga4c25ad61f15a76499997102e126cbdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga604c071438065c46c9f4f21bdb61befd" id="r_ga604c071438065c46c9f4f21bdb61befd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga604c071438065c46c9f4f21bdb61befd">pio_claim_unused_sm</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>)</td></tr>
+<tr class="memdesc:ga604c071438065c46c9f4f21bdb61befd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a free state machine on a PIO instance.  <br /></td></tr>
+<tr class="separator:ga604c071438065c46c9f4f21bdb61befd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga850396a2a2925bbcc97247a629ca5bd2" id="r_ga850396a2a2925bbcc97247a629ca5bd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga850396a2a2925bbcc97247a629ca5bd2">pio_clear_instruction_memory</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio)</td></tr>
+<tr class="memdesc:ga850396a2a2925bbcc97247a629ca5bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all of a PIO instance's instruction memory.  <br /></td></tr>
+<tr class="separator:ga850396a2a2925bbcc97247a629ca5bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81c77d31aff72655977b658a9c37665e" id="r_ga81c77d31aff72655977b658a9c37665e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga81c77d31aff72655977b658a9c37665e">pio_remove_program</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">loaded_offset</a>)</td></tr>
+<tr class="memdesc:ga81c77d31aff72655977b658a9c37665e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a program from a PIO instance's instruction memory.  <br /></td></tr>
+<tr class="separator:ga81c77d31aff72655977b658a9c37665e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8178ef68166e58260da3989bc5f06bd" id="r_gaa8178ef68166e58260da3989bc5f06bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#gaa8178ef68166e58260da3989bc5f06bd">pio_remove_program_and_unclaim_sm</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a4e7cba9478a0cc1d3d9c508bd115b947">pio_program_t</a> *<a class="el" href="structprogram.html">program</a>, <a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">offset</a>)</td></tr>
+<tr class="memdesc:gaa8178ef68166e58260da3989bc5f06bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a program from PIO memory and unclaims the state machine.  <br /></td></tr>
+<tr class="separator:gaa8178ef68166e58260da3989bc5f06bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga332210f0e594b24bf64f4bb1c8f49be3" id="r_ga332210f0e594b24bf64f4bb1c8f49be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga332210f0e594b24bf64f4bb1c8f49be3">pio_set_gpio_base</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">gpio_base</a>)</td></tr>
+<tr class="memdesc:ga332210f0e594b24bf64f4bb1c8f49be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the base GPIO base for the PIO instance.  <br /></td></tr>
+<tr class="separator:ga332210f0e594b24bf64f4bb1c8f49be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa75bc8b2060929ec2b2599da8081a99b" id="r_gaa75bc8b2060929ec2b2599da8081a99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#gaa75bc8b2060929ec2b2599da8081a99b">pio_sm_claim</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm)</td></tr>
+<tr class="memdesc:gaa75bc8b2060929ec2b2599da8081a99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a state machine as used.  <br /></td></tr>
+<tr class="separator:gaa75bc8b2060929ec2b2599da8081a99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46af88f03a0c5abe4d55d45c5b2ccfb7" id="r_ga46af88f03a0c5abe4d55d45c5b2ccfb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga46af88f03a0c5abe4d55d45c5b2ccfb7">pio_sm_drain_tx_fifo</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm)</td></tr>
+<tr class="memdesc:ga46af88f03a0c5abe4d55d45c5b2ccfb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty out a state machine's TX FIFO.  <br /></td></tr>
+<tr class="separator:ga46af88f03a0c5abe4d55d45c5b2ccfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bd15922f2a2f836650ebbda8425b438" id="r_ga8bd15922f2a2f836650ebbda8425b438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga8bd15922f2a2f836650ebbda8425b438">pio_sm_init</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">initial_pc</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="structpio__sm__config.html">pio_sm_config</a> *config)</td></tr>
+<tr class="memdesc:ga8bd15922f2a2f836650ebbda8425b438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the state machine to a consistent state, and configures it.  <br /></td></tr>
+<tr class="separator:ga8bd15922f2a2f836650ebbda8425b438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga699fb7272e3cb5ab76a84fbf3640325d" id="r_ga699fb7272e3cb5ab76a84fbf3640325d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga699fb7272e3cb5ab76a84fbf3640325d">pio_sm_is_claimed</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm)</td></tr>
+<tr class="memdesc:ga699fb7272e3cb5ab76a84fbf3640325d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a PIO state machine is claimed.  <br /></td></tr>
+<tr class="separator:ga699fb7272e3cb5ab76a84fbf3640325d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5c965ef1ca21684630c8be2cf3e52e7" id="r_gaf5c965ef1ca21684630c8be2cf3e52e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#gaf5c965ef1ca21684630c8be2cf3e52e7">pio_sm_set_consecutive_pindirs</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pio__types_8h.html#a4824b91cc0e6b5f112bdd8049af4d7d6a8a6f503814aa4a7cd863e68c7778fbdb">pin</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">is_out</a>)</td></tr>
+<tr class="memdesc:gaf5c965ef1ca21684630c8be2cf3e52e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use a state machine to set the same pin direction for multiple consecutive pins for the PIO instance.  <br /></td></tr>
+<tr class="separator:gaf5c965ef1ca21684630c8be2cf3e52e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4637bbb0cf6ce0d53fc45a9b017ea434" id="r_ga4637bbb0cf6ce0d53fc45a9b017ea434"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga4637bbb0cf6ce0d53fc45a9b017ea434">pio_sm_set_pindirs_with_mask64</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44acf337a87d53716b3a1111598ed172fb5">pindirs</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> pin_mask)</td></tr>
+<tr class="memdesc:ga4637bbb0cf6ce0d53fc45a9b017ea434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use a state machine to set the pin directions for multiple pins for the PIO instance.  <br /></td></tr>
+<tr class="separator:ga4637bbb0cf6ce0d53fc45a9b017ea434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e9f8ffcd4ef8961edda6d8678faf49" id="r_a23e9f8ffcd4ef8961edda6d8678faf49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a23e9f8ffcd4ef8961edda6d8678faf49">pio_sm_set_pindirs_with_mask_internal</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44acf337a87d53716b3a1111598ed172fb5">pindirs</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> pin_mask)</td></tr>
+<tr class="separator:a23e9f8ffcd4ef8961edda6d8678faf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5eccc79bdddcebdf02371d0a68b420fd" id="r_ga5eccc79bdddcebdf02371d0a68b420fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga5eccc79bdddcebdf02371d0a68b420fd">pio_sm_set_pins64</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44ad3226782744ce122d789ea8e03d32f53">pins</a>)</td></tr>
+<tr class="memdesc:ga5eccc79bdddcebdf02371d0a68b420fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use a state machine to set a value on all pins for the PIO instance.  <br /></td></tr>
+<tr class="separator:ga5eccc79bdddcebdf02371d0a68b420fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b5b29e8241bb5c40c9a870ebe8a641" id="r_ae0b5b29e8241bb5c40c9a870ebe8a641"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#ae0b5b29e8241bb5c40c9a870ebe8a641">pio_sm_set_pins_internal</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44ad3226782744ce122d789ea8e03d32f53">pins</a>)</td></tr>
+<tr class="separator:ae0b5b29e8241bb5c40c9a870ebe8a641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07c978498ed4a9fbc3683e48be90586e" id="r_ga07c978498ed4a9fbc3683e48be90586e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga07c978498ed4a9fbc3683e48be90586e">pio_sm_set_pins_with_mask64</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pin_values</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a> pin_mask)</td></tr>
+<tr class="memdesc:ga07c978498ed4a9fbc3683e48be90586e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use a state machine to set a value on multiple pins for the PIO instance.  <br /></td></tr>
+<tr class="separator:ga07c978498ed4a9fbc3683e48be90586e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d2aafcad873ae6ea207911bde6cf92" id="r_a43d2aafcad873ae6ea207911bde6cf92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pio_8c.html#a43d2aafcad873ae6ea207911bde6cf92">pio_sm_set_pins_with_mask_internal</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pin_values</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> pin_mask)</td></tr>
+<tr class="separator:a43d2aafcad873ae6ea207911bde6cf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62328112de918932e4ed0955ce0054ab" id="r_ga62328112de918932e4ed0955ce0054ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__pio.html#ga62328112de918932e4ed0955ce0054ab">pio_sm_unclaim</a> (<a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a> pio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> sm)</td></tr>
+<tr class="memdesc:ga62328112de918932e4ed0955ce0054ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a state machine as no longer used.  <br /></td></tr>
+<tr class="separator:ga62328112de918932e4ed0955ce0054ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ac865a7d64c1625c0d14101edc3d6d4a9" name="ac865a7d64c1625c0d14101edc3d6d4a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac865a7d64c1625c0d14101edc3d6d4a9">&#9670;&#160;</a></span>pio_sm_set_pindirs_with_mask_internal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> pio_sm_set_pindirs_with_mask_internal&#160;&#160;&#160;<a class="el" href="group__hardware__pio.html#ga8269f1ef4cb1e4b3b957d5f1fa6fc623">pio_sm_set_pindirs_with_mask</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae38b5caba2cb97e83641b5a5ee30f7bc" name="ae38b5caba2cb97e83641b5a5ee30f7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae38b5caba2cb97e83641b5a5ee30f7bc">&#9670;&#160;</a></span>pio_sm_set_pins_internal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> pio_sm_set_pins_internal&#160;&#160;&#160;<a class="el" href="group__hardware__pio.html#ga1286f306263b413a8002c9db2b433d8b">pio_sm_set_pins</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5af86d6162170f2019a7e78a4fcacc5f" name="a5af86d6162170f2019a7e78a4fcacc5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af86d6162170f2019a7e78a4fcacc5f">&#9670;&#160;</a></span>pio_sm_set_pins_with_mask_internal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> pio_sm_set_pins_with_mask_internal&#160;&#160;&#160;<a class="el" href="group__hardware__pio.html#ga963167ca42f67f79ec5de6b47d6027d5">pio_sm_set_pins_with_mask</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a172ac8f930a6c26333fee74f923068ad" name="a172ac8f930a6c26333fee74f923068ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172ac8f930a6c26333fee74f923068ad">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">instr_mem&#160;</td>
+          <td class="paramname">[0], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a5f16a90775f37078c859472f9cd51100">PIO_INSTR_MEM0_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ba87f90f6f19f7ec065a4703dc6fa41" name="a1ba87f90f6f19f7ec065a4703dc6fa41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba87f90f6f19f7ec065a4703dc6fa41">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">inte0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a935f8622aa0c1de4a357095fef9b73e7">PIO_IRQ0_INTE_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac74da8961490ca4b8b2bce50fb1876da" name="ac74da8961490ca4b8b2bce50fb1876da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74da8961490ca4b8b2bce50fb1876da">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ints1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a9bc8cb2115aa8b8c58e0c8409cd28cfc">PIO_IRQ1_INTS_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b1b0f83977d7ce3b210f7d1072e0a68" name="a7b1b0f83977d7ce3b210f7d1072e0a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1b0f83977d7ce3b210f7d1072e0a68">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">irq_ctrl.&#160;</td>
+          <td class="paramname"><em>inte</em>[0], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a935f8622aa0c1de4a357095fef9b73e7">PIO_IRQ0_INTE_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8d7f17731937bcbd7ecfa60b209ca4d" name="af8d7f17731937bcbd7ecfa60b209ca4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d7f17731937bcbd7ecfa60b209ca4d">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">irq_ctrl.&#160;</td>
+          <td class="paramname"><em>ints</em>[1], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a9bc8cb2115aa8b8c58e0c8409cd28cfc">PIO_IRQ1_INTS_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c4b881494f1b48eb1d1b81a8e13e41f" name="a9c4b881494f1b48eb1d1b81a8e13e41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4b881494f1b48eb1d1b81a8e13e41f">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rxf&#160;</td>
+          <td class="paramname">[3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a470b09c150fbfc901024100dc920e710">PIO_RXF3_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a203be63bbdd3ff27afbe9e7477d955bd" name="a203be63bbdd3ff27afbe9e7477d955bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203be63bbdd3ff27afbe9e7477d955bd">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sm.&#160;</td>
+          <td class="paramname"><em>clkdiv</em>[0], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#ae7ca0ff548a3a64123b78f083a7e71b6">PIO_SM0_CLKDIV_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad315455694bd76bf362e3b6d65d720f5" name="ad315455694bd76bf362e3b6d65d720f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad315455694bd76bf362e3b6d65d720f5">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sm.&#160;</td>
+          <td class="paramname"><em>clkdiv</em>[1], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a50200f29e0fc6f86fdf9f381ea47c0ec">PIO_SM1_CLKDIV_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f382aeaff323cd383d19a842d849846" name="a6f382aeaff323cd383d19a842d849846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f382aeaff323cd383d19a842d849846">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpio__hw__t.html">pio_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">txf&#160;</td>
+          <td class="paramname">[1], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#a7991b3edcaebc228a384638cdc36d015">PIO_TXF1_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23e9f8ffcd4ef8961edda6d8678faf49" name="a23e9f8ffcd4ef8961edda6d8678faf49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e9f8ffcd4ef8961edda6d8678faf49">&#9670;&#160;</a></span>pio_sm_set_pindirs_with_mask_internal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> pio_sm_set_pindirs_with_mask_internal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a>&#160;</td>
+          <td class="paramname"><em>pio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>sm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>pindirs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>pin_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structpio__sm__hw__t.html#a8aa213ec48685ae9e2a1e24c1b4ad54e">pio_sm_hw_t::execctrl</a>, <a class="el" href="structpio__sm__hw__t.html#a5951c9e266e9d20d7f4fb8ce7dedb1bc">pio_sm_hw_t::pinctrl</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44acf337a87d53716b3a1111598ed172fb5">pindirs</a>, <a class="el" href="group__pio__instructions.html#gga52f7ffda150c44a085ead5c80a40352faf831f6905ec2398e6824a6b0ac618d15">pio_pindirs</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#aecf4ba7b6edb7bb84d10d9fef9d15d26">PIO_SM0_EXECCTRL_OUT_STICKY_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#ab9cb707371fd269760cd979fd28d32d9">PIO_SM0_PINCTRL_SET_BASE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#afa0d0f5721425e177c77ed3e82a6e917">PIO_SM0_PINCTRL_SET_COUNT_LSB</a> e <a class="el" href="structpio__hw__t.html#a9838a92529fec2cf86f22e0438ed1678">pio_hw_t::sm</a>.</p>
+
+</div>
+</div>
+<a id="ae0b5b29e8241bb5c40c9a870ebe8a641" name="ae0b5b29e8241bb5c40c9a870ebe8a641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b5b29e8241bb5c40c9a870ebe8a641">&#9670;&#160;</a></span>pio_sm_set_pins_internal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> pio_sm_set_pins_internal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a>&#160;</td>
+          <td class="paramname"><em>pio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>sm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>pins</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structpio__sm__hw__t.html#a8aa213ec48685ae9e2a1e24c1b4ad54e">pio_sm_hw_t::execctrl</a>, <a class="el" href="structpio__sm__hw__t.html#a5951c9e266e9d20d7f4fb8ce7dedb1bc">pio_sm_hw_t::pinctrl</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44ad3226782744ce122d789ea8e03d32f53">pins</a>, <a class="el" href="group__pio__instructions.html#gga52f7ffda150c44a085ead5c80a40352fa723a3eeb13fc77c6059946003f8ee492">pio_pins</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#aecf4ba7b6edb7bb84d10d9fef9d15d26">PIO_SM0_EXECCTRL_OUT_STICKY_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#ab9cb707371fd269760cd979fd28d32d9">PIO_SM0_PINCTRL_SET_BASE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#afa0d0f5721425e177c77ed3e82a6e917">PIO_SM0_PINCTRL_SET_COUNT_LSB</a> e <a class="el" href="structpio__hw__t.html#a9838a92529fec2cf86f22e0438ed1678">pio_hw_t::sm</a>.</p>
+
+</div>
+</div>
+<a id="a43d2aafcad873ae6ea207911bde6cf92" name="a43d2aafcad873ae6ea207911bde6cf92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d2aafcad873ae6ea207911bde6cf92">&#9670;&#160;</a></span>pio_sm_set_pins_with_mask_internal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> pio_sm_set_pins_with_mask_internal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2hardware__pio_2include_2hardware_2pio_8h.html#a7a8b2b0f22f858bff47f0b7e2c727f3f">PIO</a>&#160;</td>
+          <td class="paramname"><em>pio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>sm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>pin_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>pin_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structpio__sm__hw__t.html#a8aa213ec48685ae9e2a1e24c1b4ad54e">pio_sm_hw_t::execctrl</a>, <a class="el" href="structpio__sm__hw__t.html#a5951c9e266e9d20d7f4fb8ce7dedb1bc">pio_sm_hw_t::pinctrl</a>, <a class="el" href="group__pio__instructions.html#gga52f7ffda150c44a085ead5c80a40352fa723a3eeb13fc77c6059946003f8ee492">pio_pins</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#aecf4ba7b6edb7bb84d10d9fef9d15d26">PIO_SM0_EXECCTRL_OUT_STICKY_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#ab9cb707371fd269760cd979fd28d32d9">PIO_SM0_PINCTRL_SET_BASE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pio_8h.html#afa0d0f5721425e177c77ed3e82a6e917">PIO_SM0_PINCTRL_SET_COUNT_LSB</a> e <a class="el" href="structpio__hw__t.html#a9838a92529fec2cf86f22e0438ed1678">pio_hw_t::sm</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_10e237d6759f9805698baf9835c013e1.html">hardware_pio</a></li><li class="navelem"><a class="el" href="pio_8c.html">pio.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

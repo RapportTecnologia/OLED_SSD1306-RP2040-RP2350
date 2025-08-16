@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de vreg_and_chip_reset.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_regs/include/hardware/regs/vreg_and_chip_reset.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : VREG_AND_CHIP_RESET</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : control and status for on-chip voltage regulator and chip</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//                  level reset subsystem</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifndef _HARDWARE_REGS_VREG_AND_CHIP_RESET_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define _HARDWARE_REGS_VREG_AND_CHIP_RESET_H</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Register    : VREG_AND_CHIP_RESET_VREG</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Description : Voltage regulator control and status</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#adb40d4493d4c03066e546a394ddc281d">   20</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a41770a64cd2ea2b246e49b06386a3143">   21</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_BITS   _u(0x000010f3)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a3aceda7607b33ae2bcc9e26b0d5f0439">   22</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_RESET  _u(0x000000b1)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_VREG_ROK</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Description : regulation status</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//               0=not in regulation, 1=in regulation</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a4281e41c34098a2355f57846fda6ae02">   27</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_ROK_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#ac310cce3e47582801a5e82c3d63c9497">   28</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_ROK_BITS   _u(0x00001000)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a08c964a788a357ff15f9e811bd1d9631">   29</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_ROK_MSB    _u(12)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a1186c0dcda43da72cceefd6d20f42bbf">   30</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_ROK_LSB    _u(12)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a560fc07af6c5977ad8501e02ab9754f5">   31</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_ROK_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_VREG_VSEL</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Description : output voltage select</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//               0000 to 0101 - 0.80V</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//               0110         - 0.85V</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//               0111         - 0.90V</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//               1000         - 0.95V</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//               1001         - 1.00V</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//               1010         - 1.05V</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//               1011         - 1.10V (default)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//               1100         - 1.15V</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//               1101         - 1.20V</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//               1110         - 1.25V</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//               1111         - 1.30V</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#ab31bb1d91c5ea2f2cf28990304825ad0">   46</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_VSEL_RESET  _u(0xb)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a36dad7feb44b3e094e7aae6c43230857">   47</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_VSEL_BITS   _u(0x000000f0)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a450975998998ff9a311c0c4aa363cda1">   48</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_VSEL_MSB    _u(7)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a9221a591bf69181a97894800a0f0b074">   49</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_VSEL_LSB    _u(4)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a15bb29221b540076270373316ae6cea9">   50</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_VSEL_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_VREG_HIZ</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// Description : high impedance mode select</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//               0=not in high impedance mode, 1=in high impedance mode</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a506a966c8be41a9ed5ee03d66e925b92">   55</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_HIZ_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#af85b78d6c1deec9625ee7af177fbbf7d">   56</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_HIZ_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a8d2a536e5aaa9013eff5f473802d6e7d">   57</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_HIZ_MSB    _u(1)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a9bd14e6fc9597cbbc7ae1c032d097659">   58</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_HIZ_LSB    _u(1)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#aa520874d0c725a9aeb671a837571c0ff">   59</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_HIZ_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_VREG_EN</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// Description : enable</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//               0=not enabled, 1=enabled</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#adef16259c2cea2226a382cb7100ffdb9">   64</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_EN_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#aff013d3187b70715a56786f6f7adda10">   65</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_EN_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a0f0cd1b2a61be11bea4e03b76fee941e">   66</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_EN_MSB    _u(0)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a9d0b35f9c76f072b16c7e750e61fa9b2">   67</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_EN_LSB    _u(0)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a0ccdd5dd617621f2dffff4ed1c65a915">   68</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_VREG_EN_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// Register    : VREG_AND_CHIP_RESET_BOD</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">// Description : brown-out detection control</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a76007305a686777e8ab78e033a855463">   72</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a5f1f8caf9f6e699911e0fe0b8bf3170d">   73</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_BITS   _u(0x000000f1)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a353bf415fee07f4af564543d6ad43b6f">   74</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_RESET  _u(0x00000091)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_BOD_VSEL</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// Description : threshold select</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//               0000 - 0.473V</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//               0001 - 0.516V</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">//               0010 - 0.559V</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">//               0011 - 0.602V</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">//               0100 - 0.645V</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">//               0101 - 0.688V</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">//               0110 - 0.731V</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">//               0111 - 0.774V</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">//               1000 - 0.817V</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">//               1001 - 0.860V (default)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">//               1010 - 0.903V</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">//               1011 - 0.946V</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">//               1100 - 0.989V</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">//               1101 - 1.032V</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">//               1110 - 1.075V</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">//               1111 - 1.118V</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a7b5c539aa91dac574b1daed268ab3bc8">   94</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_VSEL_RESET  _u(0x9)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a463bdb317a978667312b8723c67dab1f">   95</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_VSEL_BITS   _u(0x000000f0)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#abd9130ec4446f8e16fcd061c309a1dfe">   96</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_VSEL_MSB    _u(7)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a6a067a0598de4693724ace4a7d6e5a4c">   97</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_VSEL_LSB    _u(4)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a175aa63bd0d644f13fbe098fc8050aae">   98</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_VSEL_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_BOD_EN</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// Description : enable</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//               0=not enabled, 1=enabled</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a154f82430b6ba3f1dd4182ab1b28035e">  103</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_EN_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a701427e841b787e60f9cd5b54a2f0272">  104</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_EN_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#af3a935a6a85c420ac4fe62fbd7d1716e">  105</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_EN_MSB    _u(0)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a8e42c0aab396b55cf8e553fb5755981b">  106</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_EN_LSB    _u(0)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#ab9086e33bdeb33f30167dc7ecc86b8fe">  107</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_BOD_EN_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">// Register    : VREG_AND_CHIP_RESET_CHIP_RESET</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// Description : Chip reset control and status</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a3ba9d379cd5a71d978d15041052e8b52">  111</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a2e01a5fcff0b190c923e361453c21950">  112</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_BITS   _u(0x01110100)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#aa8dff6c67c5f13aef940ed41b5fb74a1">  113</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_CHIP_RESET_PSM_RESTART_FLAG</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// Description : This is set by psm_restart from the debugger.</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">//               Its purpose is to branch bootcode to a safe mode when the</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">//               debugger has issued a psm_restart in order to recover from a</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">//               boot lock-up.</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">//               In the safe mode the debugger can repair the boot code, clear</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">//               this flag then reboot the processor.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#ae8fd180a5a5b7422d90e8fb1b9ac8e87">  122</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_PSM_RESTART_FLAG_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#abcec3fbf48f66f9d3de4c3c2ece1414f">  123</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_PSM_RESTART_FLAG_BITS   _u(0x01000000)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#af5593976fb981423fb72ea86f41a90a4">  124</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_PSM_RESTART_FLAG_MSB    _u(24)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#ad7b40c57206c1bb320e7c9bcf80caaf7">  125</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_PSM_RESTART_FLAG_LSB    _u(24)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a622659e9be28590ba8960071c57b7780">  126</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_PSM_RESTART_FLAG_ACCESS &quot;WC&quot;</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_CHIP_RESET_HAD_PSM_RESTART</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// Description : Last reset was from the debug port</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a42c8f1084a7aefbdf520ed92353bc818">  130</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_PSM_RESTART_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a2f4eb883556a70970e9fb7aab40e8198">  131</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_PSM_RESTART_BITS   _u(0x00100000)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a094fe04848f7c24db9f2b9803f2195b7">  132</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_PSM_RESTART_MSB    _u(20)</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#afb14583afca048fc09500fc801e6b1b9">  133</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_PSM_RESTART_LSB    _u(20)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a1e33c85008cdd7986d382fbb9e56f356">  134</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_PSM_RESTART_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_CHIP_RESET_HAD_RUN</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">// Description : Last reset was from the RUN pin</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a204a775b7862e4ee89d974aabc33cdb2">  138</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_RUN_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a0502c029134f14ec847ecd5c33e18d8c">  139</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_RUN_BITS   _u(0x00010000)</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a5d0f3217523aa980519abaff1124fbe0">  140</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_RUN_MSB    _u(16)</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a35471a0d7951c7162d125346a1a62fdb">  141</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_RUN_LSB    _u(16)</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a10790dd290ff3a661f4af8b0f5e44ec0">  142</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_RUN_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">// Field       : VREG_AND_CHIP_RESET_CHIP_RESET_HAD_POR</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">// Description : Last reset was from the power-on reset or brown-out detection</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">//               blocks</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a3a6c0ebe12e4631aede22f55463a1517">  147</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_POR_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a7785b1cbababa53b42c88a36b7f35687">  148</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_POR_BITS   _u(0x00000100)</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#afa7a0a40502fe0120960057e182c81f5">  149</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_POR_MSB    _u(8)</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a7c3aa2b32e30016e7502192bd9659dd3">  150</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_POR_LSB    _u(8)</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html#a59ba885aa03fe7d3fae78cde5f7d04ec">  151</a></span><span class="preprocessor">#define VREG_AND_CHIP_RESET_CHIP_RESET_HAD_POR_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_VREG_AND_CHIP_RESET_H</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_06354e3bf814a9a205e28ace252ee3f5.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_7bd6dad2f73c9497ac05e0910d6eaf47.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe2fde58e5940b473d8ed5d59c5a430.html">hardware</a></li><li class="navelem"><a class="el" href="dir_92a0b393fa4e0be08b4ff2e0195a4834.html">regs</a></li><li class="navelem"><a class="el" href="hardware__regs_2include_2hardware_2regs_2vreg__and__chip__reset_8h.html">vreg_and_chip_reset.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

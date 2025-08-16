@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: hardware_adc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__hardware__adc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">hardware_adc</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Analog to Digital Converter (ADC) API.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga2b815e6730e8723a6d1d06d9ef8f31c0" id="r_ga2b815e6730e8723a6d1d06d9ef8f31c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__adc.html#ga2b815e6730e8723a6d1d06d9ef8f31c0">adc_init</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga2b815e6730e8723a6d1d06d9ef8f31c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the ADC HW.  <br /></td></tr>
+<tr class="separator:ga2b815e6730e8723a6d1d06d9ef8f31c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Analog to Digital Converter (ADC) API. </p>
+<p>RP-series microcontrollers have an internal analogue-digital converter (ADC) with the following features:</p><ul>
+<li>SAR ADC</li>
+<li>500 kS/s (Using an independent 48MHz clock)</li>
+<li>12 bit (RP2040 8.7 ENOB, RP2350 9.2 ENOB) </li>
+</ul>
+<ul>
+<li>One input dedicated to the internal temperature sensor (see Section 12.4.6)</li>
+<li>Interrupt generation</li>
+<li>DMA interface</li>
+</ul>
+<p>Although there is only one ADC you can specify the input to it using the adc_select_input() function. In round robin mode (adc_set_round_robin()), the ADC will use that input and move to the next one after a read.</p>
+<p>RP2040, RP2350 QFN-60: User ADC inputs are on 0-3 (GPIO 26-29), the temperature sensor is on input 4. RP2350 QFN-80 : User ADC inputs are on 0-7 (GPIO 40-47), the temperature sensor is on input 8.</p>
+<p>Temperature sensor values can be approximated in centigrade as:</p>
+<p>T = 27 - (ADC_Voltage - 0.706)/0.001721</p>
+<h2><a class="anchor" id="adc_example"></a>
+Example</h2>
+<div class="fragment"></div><!-- fragment --> <h2 class="groupheader">Documentação das funções</h2>
+<a id="ga2b815e6730e8723a6d1d06d9ef8f31c0" name="ga2b815e6730e8723a6d1d06d9ef8f31c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b815e6730e8723a6d1d06d9ef8f31c0">&#9670;&#160;</a></span>adc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> adc_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise the ADC HW. </p>
+
+<p class="reference">Referências <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2adc_8h.html#a59fbdd1c3a0c5f2291f426d4fcf3eac5">ADC_CS_EN_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2adc_8h.html#ac89038b02a3d1247bc53ae400926e052">ADC_CS_READY_BITS</a>, <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2adc_8h.html#aa402f2c0356afda16b19ff5f31544196">adc_hw</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455ae878f20914c5790ef9bb04bec2a2ac59">RESET_ADC</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a4cd2ba8ffa19bec73fe1a54425d8bc03">tight_loop_contents()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

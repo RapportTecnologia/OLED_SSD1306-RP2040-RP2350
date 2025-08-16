@@ -1,0 +1,22 @@
+var waveshare__pico__cam__a_8h =
+[
+    [ "PICO_BOOT_STAGE2_CHOOSE_W25Q080", "waveshare__pico__cam__a_8h.html#a868e795ee21e547e10edf12a3aeafbc9", null ],
+    [ "PICO_DEFAULT_I2C", "waveshare__pico__cam__a_8h.html#aa97a6c55314d1b099ced2860a6b3dcc7", null ],
+    [ "PICO_DEFAULT_I2C_SCL_PIN", "waveshare__pico__cam__a_8h.html#a8b06cc6391b2a8f7d6da3f027381611d", null ],
+    [ "PICO_DEFAULT_I2C_SDA_PIN", "waveshare__pico__cam__a_8h.html#abc0792454cd382ae0cf50dffadfaa02e", null ],
+    [ "PICO_DEFAULT_UART", "waveshare__pico__cam__a_8h.html#ac6468dfeffb42ab797be2e0b3d886428", null ],
+    [ "PICO_DEFAULT_UART_RX_PIN", "waveshare__pico__cam__a_8h.html#a14ba1da2ef162698e5fc3fe54896103e", null ],
+    [ "PICO_DEFAULT_UART_TX_PIN", "waveshare__pico__cam__a_8h.html#a596b6d76c33b68f0cab100a6360a0784", null ],
+    [ "PICO_FLASH_SIZE_BYTES", "waveshare__pico__cam__a_8h.html#a7ad5a8273ffcd10db868c3c3e03d5bf0", null ],
+    [ "PICO_FLASH_SPI_CLKDIV", "waveshare__pico__cam__a_8h.html#a090528628a511947179066f60c2aeb8a", null ],
+    [ "PICO_RP2040_B0_SUPPORTED", "waveshare__pico__cam__a_8h.html#a78554b289c077f9733b51c5b53c1d3b7", null ],
+    [ "PICO_SMPS_MODE_PIN", "waveshare__pico__cam__a_8h.html#a11ebfeefe195a36f1bc2174c8dd928a1", null ],
+    [ "WAVESHARE_LCD_CS_PIN", "waveshare__pico__cam__a_8h.html#a60657df0755a64e643bfc4c8c01b87d9", null ],
+    [ "WAVESHARE_LCD_DC_PIN", "waveshare__pico__cam__a_8h.html#ad06cb1e55d33cd12fdd0f41df17fb93d", null ],
+    [ "WAVESHARE_LCD_RST_PIN", "waveshare__pico__cam__a_8h.html#a46fb2e0425ddc61eb1b309a2fd7a10a1", null ],
+    [ "WAVESHARE_LCD_SCLK_PIN", "waveshare__pico__cam__a_8h.html#a93a36b45ddf46a1a5d185caa54015ee5", null ],
+    [ "WAVESHARE_LCD_SPI", "waveshare__pico__cam__a_8h.html#ab73a241b75665b03bae63a94a45b66cf", null ],
+    [ "WAVESHARE_LCD_TX_PIN", "waveshare__pico__cam__a_8h.html#aaf2a70717f2f797ed190ee3a182dba8f", null ],
+    [ "WAVESHARE_PICO_CAM_A", "waveshare__pico__cam__a_8h.html#ac5fa96c31eab9dbd8bfb27a63c4b94aa", null ],
+    [ "pico_board_cmake_set", "waveshare__pico__cam__a_8h.html#a92c75dfad2f4f9c825e55ab079659328", null ]
+];

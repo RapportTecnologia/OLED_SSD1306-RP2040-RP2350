@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura SPI0_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structSPI0__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structSPI0__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura SPI0_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SPI0 (SPI0)  
+ <a href="structSPI0__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para SPI0_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structSPI0__Type__coll__graph.svg" width="124" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a5680bf432a10e4d69005375654ee4ee6" id="r_a5680bf432a10e4d69005375654ee4ee6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a5680bf432a10e4d69005375654ee4ee6">RESERVED</a> [1006]</td></tr>
+<tr class="separator:a5680bf432a10e4d69005375654ee4ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fd3dc4c2c95c834580d969a5501d09" id="r_ac9fd3dc4c2c95c834580d969a5501d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#ac9fd3dc4c2c95c834580d969a5501d09">SSPCPSR</a></td></tr>
+<tr class="memdesc:ac9fd3dc4c2c95c834580d969a5501d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock prescale register, SSPCPSR on page 3-8 <br  />
+  <br /></td></tr>
+<tr class="separator:ac9fd3dc4c2c95c834580d969a5501d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b31c15ff09da0f653bcba40f3e6ecd" id="r_ad2b31c15ff09da0f653bcba40f3e6ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#ad2b31c15ff09da0f653bcba40f3e6ecd">SSPCR0</a></td></tr>
+<tr class="memdesc:ad2b31c15ff09da0f653bcba40f3e6ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; SPI0 Structure <br  />
+  <br /></td></tr>
+<tr class="separator:ad2b31c15ff09da0f653bcba40f3e6ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900c004fe3502790b38333d774408d40" id="r_a900c004fe3502790b38333d774408d40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a900c004fe3502790b38333d774408d40">SSPCR1</a></td></tr>
+<tr class="memdesc:a900c004fe3502790b38333d774408d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control register 1, SSPCR1 on page 3-5 <br  />
+  <br /></td></tr>
+<tr class="separator:a900c004fe3502790b38333d774408d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d1cde970ff03175f9b6fd1729d4b7f" id="r_ae4d1cde970ff03175f9b6fd1729d4b7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#ae4d1cde970ff03175f9b6fd1729d4b7f">SSPDMACR</a></td></tr>
+<tr class="memdesc:ae4d1cde970ff03175f9b6fd1729d4b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA control register, SSPDMACR on page 3-12 <br  />
+  <br /></td></tr>
+<tr class="separator:ae4d1cde970ff03175f9b6fd1729d4b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17320fdf843375b5b394371fad3f588" id="r_ae17320fdf843375b5b394371fad3f588"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#ae17320fdf843375b5b394371fad3f588">SSPDR</a></td></tr>
+<tr class="memdesc:ae17320fdf843375b5b394371fad3f588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data register, SSPDR on page 3-6 <br  />
+  <br /></td></tr>
+<tr class="separator:ae17320fdf843375b5b394371fad3f588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2a624f5aac574007ec411b14fd6ce1" id="r_aed2a624f5aac574007ec411b14fd6ce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#aed2a624f5aac574007ec411b14fd6ce1">SSPICR</a></td></tr>
+<tr class="memdesc:aed2a624f5aac574007ec411b14fd6ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt clear register, SSPICR on page 3-11 <br  />
+  <br /></td></tr>
+<tr class="separator:aed2a624f5aac574007ec411b14fd6ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3649d1bdebb6d5a7d0483afe4a1021ff" id="r_a3649d1bdebb6d5a7d0483afe4a1021ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a3649d1bdebb6d5a7d0483afe4a1021ff">SSPIMSC</a></td></tr>
+<tr class="memdesc:a3649d1bdebb6d5a7d0483afe4a1021ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt mask set or clear register, SSPIMSC on page 3-9 <br  />
+  <br /></td></tr>
+<tr class="separator:a3649d1bdebb6d5a7d0483afe4a1021ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a2809d5f417ab73a7029d85f82a9cc" id="r_a67a2809d5f417ab73a7029d85f82a9cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a67a2809d5f417ab73a7029d85f82a9cc">SSPMIS</a></td></tr>
+<tr class="memdesc:a67a2809d5f417ab73a7029d85f82a9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masked interrupt status register, SSPMIS on page 3-11 <br  />
+  <br /></td></tr>
+<tr class="separator:a67a2809d5f417ab73a7029d85f82a9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cbabe305335e6da36511f93267d6b0" id="r_a42cbabe305335e6da36511f93267d6b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a42cbabe305335e6da36511f93267d6b0">SSPPCELLID0</a></td></tr>
+<tr class="memdesc:a42cbabe305335e6da36511f93267d6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+  <br /></td></tr>
+<tr class="separator:a42cbabe305335e6da36511f93267d6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50e26dfab927493e3b4e245b8c693c8" id="r_ad50e26dfab927493e3b4e245b8c693c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#ad50e26dfab927493e3b4e245b8c693c8">SSPPCELLID1</a></td></tr>
+<tr class="memdesc:ad50e26dfab927493e3b4e245b8c693c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+  <br /></td></tr>
+<tr class="separator:ad50e26dfab927493e3b4e245b8c693c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0fc9bb9cd9034042221a3efd30dce2" id="r_a7e0fc9bb9cd9034042221a3efd30dce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a7e0fc9bb9cd9034042221a3efd30dce2">SSPPCELLID2</a></td></tr>
+<tr class="memdesc:a7e0fc9bb9cd9034042221a3efd30dce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+  <br /></td></tr>
+<tr class="separator:a7e0fc9bb9cd9034042221a3efd30dce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f2cd1716c7e229800e3078da357105" id="r_a41f2cd1716c7e229800e3078da357105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a41f2cd1716c7e229800e3078da357105">SSPPCELLID3</a></td></tr>
+<tr class="memdesc:a41f2cd1716c7e229800e3078da357105"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+  <br /></td></tr>
+<tr class="separator:a41f2cd1716c7e229800e3078da357105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3698d7125d5902e5a6daa93d3db472ae" id="r_a3698d7125d5902e5a6daa93d3db472ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a3698d7125d5902e5a6daa93d3db472ae">SSPPERIPHID0</a></td></tr>
+<tr class="memdesc:a3698d7125d5902e5a6daa93d3db472ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+  <br /></td></tr>
+<tr class="separator:a3698d7125d5902e5a6daa93d3db472ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8328b8893175a5e800aed9ea9e5dabc" id="r_af8328b8893175a5e800aed9ea9e5dabc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#af8328b8893175a5e800aed9ea9e5dabc">SSPPERIPHID1</a></td></tr>
+<tr class="memdesc:af8328b8893175a5e800aed9ea9e5dabc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+  <br /></td></tr>
+<tr class="separator:af8328b8893175a5e800aed9ea9e5dabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051efe84ae35c7e2098b2e9ca035faa6" id="r_a051efe84ae35c7e2098b2e9ca035faa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#a051efe84ae35c7e2098b2e9ca035faa6">SSPPERIPHID2</a></td></tr>
+<tr class="memdesc:a051efe84ae35c7e2098b2e9ca035faa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+  <br /></td></tr>
+<tr class="separator:a051efe84ae35c7e2098b2e9ca035faa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24b90e9612794d6739e7680d3607832" id="r_ab24b90e9612794d6739e7680d3607832"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#ab24b90e9612794d6739e7680d3607832">SSPPERIPHID3</a></td></tr>
+<tr class="memdesc:ab24b90e9612794d6739e7680d3607832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+  <br /></td></tr>
+<tr class="separator:ab24b90e9612794d6739e7680d3607832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38eb61802e9e2da58e4e6653cba20f0" id="r_ad38eb61802e9e2da58e4e6653cba20f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#ad38eb61802e9e2da58e4e6653cba20f0">SSPRIS</a></td></tr>
+<tr class="memdesc:ad38eb61802e9e2da58e4e6653cba20f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw interrupt status register, SSPRIS on page 3-10 <br  />
+  <br /></td></tr>
+<tr class="separator:ad38eb61802e9e2da58e4e6653cba20f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af633d21510d50075f5062510484bea35" id="r_af633d21510d50075f5062510484bea35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPI0__Type.html#af633d21510d50075f5062510484bea35">SSPSR</a></td></tr>
+<tr class="memdesc:af633d21510d50075f5062510484bea35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status register, SSPSR on page 3-7 <br  />
+  <br /></td></tr>
+<tr class="separator:af633d21510d50075f5062510484bea35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>SPI0 (SPI0) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a5680bf432a10e4d69005375654ee4ee6" name="a5680bf432a10e4d69005375654ee4ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5680bf432a10e4d69005375654ee4ee6">&#9670;&#160;</a></span>RESERVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::RESERVED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9fd3dc4c2c95c834580d969a5501d09" name="ac9fd3dc4c2c95c834580d969a5501d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9fd3dc4c2c95c834580d969a5501d09">&#9670;&#160;</a></span>SSPCPSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPCPSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock prescale register, SSPCPSR on page 3-8 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad2b31c15ff09da0f653bcba40f3e6ecd" name="ad2b31c15ff09da0f653bcba40f3e6ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b31c15ff09da0f653bcba40f3e6ecd">&#9670;&#160;</a></span>SSPCR0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPCR0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; SPI0 Structure <br  />
+ </p>
+<p>Control register 0, SSPCR0 on page 3-4 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a900c004fe3502790b38333d774408d40" name="a900c004fe3502790b38333d774408d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900c004fe3502790b38333d774408d40">&#9670;&#160;</a></span>SSPCR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPCR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control register 1, SSPCR1 on page 3-5 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae4d1cde970ff03175f9b6fd1729d4b7f" name="ae4d1cde970ff03175f9b6fd1729d4b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d1cde970ff03175f9b6fd1729d4b7f">&#9670;&#160;</a></span>SSPDMACR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPDMACR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA control register, SSPDMACR on page 3-12 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae17320fdf843375b5b394371fad3f588" name="ae17320fdf843375b5b394371fad3f588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17320fdf843375b5b394371fad3f588">&#9670;&#160;</a></span>SSPDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data register, SSPDR on page 3-6 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aed2a624f5aac574007ec411b14fd6ce1" name="aed2a624f5aac574007ec411b14fd6ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2a624f5aac574007ec411b14fd6ce1">&#9670;&#160;</a></span>SSPICR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPICR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt clear register, SSPICR on page 3-11 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3649d1bdebb6d5a7d0483afe4a1021ff" name="a3649d1bdebb6d5a7d0483afe4a1021ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3649d1bdebb6d5a7d0483afe4a1021ff">&#9670;&#160;</a></span>SSPIMSC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPIMSC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt mask set or clear register, SSPIMSC on page 3-9 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a67a2809d5f417ab73a7029d85f82a9cc" name="a67a2809d5f417ab73a7029d85f82a9cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a2809d5f417ab73a7029d85f82a9cc">&#9670;&#160;</a></span>SSPMIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPMIS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Masked interrupt status register, SSPMIS on page 3-11 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a42cbabe305335e6da36511f93267d6b0" name="a42cbabe305335e6da36511f93267d6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cbabe305335e6da36511f93267d6b0">&#9670;&#160;</a></span>SSPPCELLID0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPCELLID0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad50e26dfab927493e3b4e245b8c693c8" name="ad50e26dfab927493e3b4e245b8c693c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50e26dfab927493e3b4e245b8c693c8">&#9670;&#160;</a></span>SSPPCELLID1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPCELLID1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7e0fc9bb9cd9034042221a3efd30dce2" name="a7e0fc9bb9cd9034042221a3efd30dce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0fc9bb9cd9034042221a3efd30dce2">&#9670;&#160;</a></span>SSPPCELLID2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPCELLID2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a41f2cd1716c7e229800e3078da357105" name="a41f2cd1716c7e229800e3078da357105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f2cd1716c7e229800e3078da357105">&#9670;&#160;</a></span>SSPPCELLID3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPCELLID3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PrimeCell identification registers, SSPPCellID0-3 on page 3-16 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3698d7125d5902e5a6daa93d3db472ae" name="a3698d7125d5902e5a6daa93d3db472ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3698d7125d5902e5a6daa93d3db472ae">&#9670;&#160;</a></span>SSPPERIPHID0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPERIPHID0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+ </p>
+
+</div>
+</div>
+<a id="af8328b8893175a5e800aed9ea9e5dabc" name="af8328b8893175a5e800aed9ea9e5dabc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8328b8893175a5e800aed9ea9e5dabc">&#9670;&#160;</a></span>SSPPERIPHID1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPERIPHID1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a051efe84ae35c7e2098b2e9ca035faa6" name="a051efe84ae35c7e2098b2e9ca035faa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a051efe84ae35c7e2098b2e9ca035faa6">&#9670;&#160;</a></span>SSPPERIPHID2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPERIPHID2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab24b90e9612794d6739e7680d3607832" name="ab24b90e9612794d6739e7680d3607832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24b90e9612794d6739e7680d3607832">&#9670;&#160;</a></span>SSPPERIPHID3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPPERIPHID3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Peripheral identification registers, SSPPeriphID0-3 on page 3-13 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad38eb61802e9e2da58e4e6653cba20f0" name="ad38eb61802e9e2da58e4e6653cba20f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38eb61802e9e2da58e4e6653cba20f0">&#9670;&#160;</a></span>SSPRIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPRIS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw interrupt status register, SSPRIS on page 3-10 <br  />
+ </p>
+
+</div>
+</div>
+<a id="af633d21510d50075f5062510484bea35" name="af633d21510d50075f5062510484bea35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af633d21510d50075f5062510484bea35">&#9670;&#160;</a></span>SSPSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> SPI0_Type::SSPSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status register, SSPSR on page 3-7 <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structSPI0__Type.html">SPI0_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

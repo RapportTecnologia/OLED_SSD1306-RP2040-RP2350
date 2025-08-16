@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: alarm</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__alarm.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">alarm<div class="ingroups"><a class="el" href="group__pico__time.html">pico_time</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Alarm functions for scheduling future execution.  
+<a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para alarm:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__alarm.svg" width="206" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga72314cafa18f7b2f90f9200be136ca27" id="r_ga72314cafa18f7b2f90f9200be136ca27"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga72314cafa18f7b2f90f9200be136ca27">PICO_TIME_DEFAULT_ALARM_POOL_DISABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga72314cafa18f7b2f90f9200be136ca27"><td class="mdescLeft">&#160;</td><td class="mdescRight">If 1 then the default alarm pool is disabled (so no timer_alarm is claimed for the pool)  <br /></td></tr>
+<tr class="separator:ga72314cafa18f7b2f90f9200be136ca27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40b4a03bf9e967d4e7170d20c5c9fb15" id="r_ga40b4a03bf9e967d4e7170d20c5c9fb15"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga40b4a03bf9e967d4e7170d20c5c9fb15">PICO_TIME_DEFAULT_ALARM_POOL_HARDWARE_ALARM_NUM</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:ga40b4a03bf9e967d4e7170d20c5c9fb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects which timer_alarm is used for the default alarm pool.  <br /></td></tr>
+<tr class="separator:ga40b4a03bf9e967d4e7170d20c5c9fb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bb3180aa64f3c9af8c521ec1b22bdb2" id="r_ga4bb3180aa64f3c9af8c521ec1b22bdb2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga4bb3180aa64f3c9af8c521ec1b22bdb2">PICO_TIME_DEFAULT_ALARM_POOL_MAX_TIMERS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:ga4bb3180aa64f3c9af8c521ec1b22bdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the maximum number of concurrent timers in the default alarm pool.  <br /></td></tr>
+<tr class="separator:ga4bb3180aa64f3c9af8c521ec1b22bdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:gade88ed45e9b59ad39d91f17c8709c16a" id="r_gade88ed45e9b59ad39d91f17c8709c16a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gade88ed45e9b59ad39d91f17c8709c16a">alarm_callback_t</a>) (<a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> id, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data)</td></tr>
+<tr class="memdesc:gade88ed45e9b59ad39d91f17c8709c16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">User alarm callback.  <br /></td></tr>
+<tr class="separator:gade88ed45e9b59ad39d91f17c8709c16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa593548569c182a0d65d2e06a9c3493b" id="r_gaa593548569c182a0d65d2e06a9c3493b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a></td></tr>
+<tr class="memdesc:gaa593548569c182a0d65d2e06a9c3493b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for an alarm.  <br /></td></tr>
+<tr class="separator:gaa593548569c182a0d65d2e06a9c3493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gab75446a927e4e870ad27fde145a88019" id="r_gab75446a927e4e870ad27fde145a88019"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gab75446a927e4e870ad27fde145a88019">alarm_pool_add_alarm_at</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">time</a>, <a class="el" href="group__alarm.html#gade88ed45e9b59ad39d91f17c8709c16a">alarm_callback_t</a> callback, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">fire_if_past</a>)</td></tr>
+<tr class="memdesc:gab75446a927e4e870ad27fde145a88019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an alarm callback to be called at a specific time.  <br /></td></tr>
+<tr class="separator:gab75446a927e4e870ad27fde145a88019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72bfc8c2dd5bf334cd68af2e349a1b37" id="r_ga72bfc8c2dd5bf334cd68af2e349a1b37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga72bfc8c2dd5bf334cd68af2e349a1b37">alarm_pool_add_alarm_at_force_in_context</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">time</a>, <a class="el" href="group__alarm.html#gade88ed45e9b59ad39d91f17c8709c16a">alarm_callback_t</a> callback, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data)</td></tr>
+<tr class="memdesc:ga72bfc8c2dd5bf334cd68af2e349a1b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an alarm callback to be called at or after a specific time.  <br /></td></tr>
+<tr class="separator:ga72bfc8c2dd5bf334cd68af2e349a1b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02cc23b4a3109fb8c2d57e24981f2932" id="r_ga02cc23b4a3109fb8c2d57e24981f2932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga02cc23b4a3109fb8c2d57e24981f2932">alarm_pool_cancel_alarm</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool, <a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> alarm_id)</td></tr>
+<tr class="memdesc:ga02cc23b4a3109fb8c2d57e24981f2932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel an alarm.  <br /></td></tr>
+<tr class="separator:ga02cc23b4a3109fb8c2d57e24981f2932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4918e03a3ddd5c328d65bd014d26856b" id="r_ga4918e03a3ddd5c328d65bd014d26856b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga4918e03a3ddd5c328d65bd014d26856b">alarm_pool_core_num</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool)</td></tr>
+<tr class="memdesc:ga4918e03a3ddd5c328d65bd014d26856b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the core number the alarm pool was initialized on (and hence callbacks are called on)  <br /></td></tr>
+<tr class="separator:ga4918e03a3ddd5c328d65bd014d26856b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7536c4d34088a2d19b2da92b87cbb4e" id="r_gae7536c4d34088a2d19b2da92b87cbb4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gae7536c4d34088a2d19b2da92b87cbb4e">alarm_pool_destroy</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool)</td></tr>
+<tr class="memdesc:gae7536c4d34088a2d19b2da92b87cbb4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the alarm pool, cancelling all alarms and freeing up the underlying timer_alarm.  <br /></td></tr>
+<tr class="separator:gae7536c4d34088a2d19b2da92b87cbb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5092ceb879289c0a597a389f34b4815e" id="r_ga5092ceb879289c0a597a389f34b4815e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga5092ceb879289c0a597a389f34b4815e">alarm_pool_get_default</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga5092ceb879289c0a597a389f34b4815e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default alarm pool used when alarms are added without specifying an alarm pool, and also used by the SDK to support lower power sleeps and timeouts.  <br /></td></tr>
+<tr class="separator:ga5092ceb879289c0a597a389f34b4815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab363026fa15b43405538eb087ee7cfa9" id="r_gab363026fa15b43405538eb087ee7cfa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gab363026fa15b43405538eb087ee7cfa9">alarm_pool_init_default</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gab363026fa15b43405538eb087ee7cfa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the default alarm pool (if not already created or disabled)  <br /></td></tr>
+<tr class="separator:gab363026fa15b43405538eb087ee7cfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a9a4343aa9efe22e4324dc82ad2f3ec" id="r_ga3a9a4343aa9efe22e4324dc82ad2f3ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga3a9a4343aa9efe22e4324dc82ad2f3ec">alarm_pool_remaining_alarm_time_ms</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool, <a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> alarm_id)</td></tr>
+<tr class="memdesc:ga3a9a4343aa9efe22e4324dc82ad2f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time remaining before the next trigger of an alarm.  <br /></td></tr>
+<tr class="separator:ga3a9a4343aa9efe22e4324dc82ad2f3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga342ebecd5ebc1a39f1da0bac81069712" id="r_ga342ebecd5ebc1a39f1da0bac81069712"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga342ebecd5ebc1a39f1da0bac81069712">alarm_pool_remaining_alarm_time_us</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool, <a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> alarm_id)</td></tr>
+<tr class="memdesc:ga342ebecd5ebc1a39f1da0bac81069712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time remaining before the next trigger of an alarm.  <br /></td></tr>
+<tr class="separator:ga342ebecd5ebc1a39f1da0bac81069712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb9321260fecc29b551d5e6ceffccc99" id="r_gaeb9321260fecc29b551d5e6ceffccc99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#gaeb9321260fecc29b551d5e6ceffccc99">alarm_pool_timer_alarm_num</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *pool)</td></tr>
+<tr class="memdesc:gaeb9321260fecc29b551d5e6ceffccc99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the timer alarm used by an alarm pool.  <br /></td></tr>
+<tr class="separator:gaeb9321260fecc29b551d5e6ceffccc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61affbec7fedd98582b1df8b5ca3fe3b" id="r_ga61affbec7fedd98582b1df8b5ca3fe3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga61affbec7fedd98582b1df8b5ca3fe3b">remaining_alarm_time_ms</a> (<a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> alarm_id)</td></tr>
+<tr class="memdesc:ga61affbec7fedd98582b1df8b5ca3fe3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time remaining before the next trigger of an alarm.  <br /></td></tr>
+<tr class="separator:ga61affbec7fedd98582b1df8b5ca3fe3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga549331a1b34938eb9f9dae03712a714c" id="r_ga549331a1b34938eb9f9dae03712a714c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alarm.html#ga549331a1b34938eb9f9dae03712a714c">remaining_alarm_time_us</a> (<a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> alarm_id)</td></tr>
+<tr class="memdesc:ga549331a1b34938eb9f9dae03712a714c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time remaining before the next trigger of an alarm.  <br /></td></tr>
+<tr class="separator:ga549331a1b34938eb9f9dae03712a714c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Alarm functions for scheduling future execution. </p>
+<p>Alarms are added to alarm pools, which may hold a certain fixed number of active alarms. Each alarm pool utilizes one of four underlying timer_alarms, thus you may have up to four alarm pools. An alarm pool calls (except when the callback would happen before or during being set) the callback on the core from which the alarm pool was created. Callbacks are called from the timer_alarm IRQ handler, so care must be taken in their implementation.</p>
+<p>A default pool is created the core specified by PICO_TIME_DEFAULT_ALARM_POOL_HARDWARE_ALARM_NUM on core 0, and may be used by the method variants that take no alarm pool parameter.</p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structalarm__pool.html">alarm_pool</a> </dd>
+<dd>
+<a class="el" href="group__hardware__timer.html" title="Low-level hardware timer API.">hardware_timer</a> </dd></dl>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ga72314cafa18f7b2f90f9200be136ca27" name="ga72314cafa18f7b2f90f9200be136ca27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72314cafa18f7b2f90f9200be136ca27">&#9670;&#160;</a></span>PICO_TIME_DEFAULT_ALARM_POOL_DISABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_TIME_DEFAULT_ALARM_POOL_DISABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If 1 then the default alarm pool is disabled (so no timer_alarm is claimed for the pool) </p>
+<dl class="section note"><dt>Nota</dt><dd>Setting to 1 may cause some code not to compile as default timer pool related methods are removed</dd>
+<dd>
+When the default alarm pool is disabled, <em>sleep_</em> methods and timeouts are no longer lower powered (they become <em>busy_wait_</em>)</dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__alarm.html#ga40b4a03bf9e967d4e7170d20c5c9fb15" title="Selects which timer_alarm is used for the default alarm pool.">PICO_TIME_DEFAULT_ALARM_POOL_HARDWARE_ALARM_NUM</a> </dd>
+<dd>
+<a class="el" href="group__alarm.html#ga5092ceb879289c0a597a389f34b4815e" title="The default alarm pool used when alarms are added without specifying an alarm pool,...">alarm_pool_get_default()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga40b4a03bf9e967d4e7170d20c5c9fb15" name="ga40b4a03bf9e967d4e7170d20c5c9fb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40b4a03bf9e967d4e7170d20c5c9fb15">&#9670;&#160;</a></span>PICO_TIME_DEFAULT_ALARM_POOL_HARDWARE_ALARM_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_TIME_DEFAULT_ALARM_POOL_HARDWARE_ALARM_NUM&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects which timer_alarm is used for the default alarm pool. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__alarm.html#ga5092ceb879289c0a597a389f34b4815e" title="The default alarm pool used when alarms are added without specifying an alarm pool,...">alarm_pool_get_default()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga4bb3180aa64f3c9af8c521ec1b22bdb2" name="ga4bb3180aa64f3c9af8c521ec1b22bdb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bb3180aa64f3c9af8c521ec1b22bdb2">&#9670;&#160;</a></span>PICO_TIME_DEFAULT_ALARM_POOL_MAX_TIMERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_TIME_DEFAULT_ALARM_POOL_MAX_TIMERS&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects the maximum number of concurrent timers in the default alarm pool. </p>
+<dl class="section note"><dt>Nota</dt><dd>For implementation reasons this is limited to PICO_PHEAP_MAX_ENTRIES which defaults to 255 </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__alarm.html#ga40b4a03bf9e967d4e7170d20c5c9fb15" title="Selects which timer_alarm is used for the default alarm pool.">PICO_TIME_DEFAULT_ALARM_POOL_HARDWARE_ALARM_NUM</a> </dd>
+<dd>
+<a class="el" href="group__alarm.html#ga5092ceb879289c0a597a389f34b4815e" title="The default alarm pool used when alarms are added without specifying an alarm pool,...">alarm_pool_get_default()</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="gade88ed45e9b59ad39d91f17c8709c16a" name="gade88ed45e9b59ad39d91f17c8709c16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade88ed45e9b59ad39d91f17c8709c16a">&#9670;&#160;</a></span>alarm_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a>(* alarm_callback_t) (<a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> id, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User alarm callback. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>the alarm_id as returned when the alarm was added </td></tr>
+    <tr><td class="paramname">user_data</td><td>the user data passed when the alarm was added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>&lt;0 to reschedule the same alarm this many us from the time the alarm was previously scheduled to fire </dd>
+<dd>
+&gt;0 to reschedule the same alarm this many us from the time this method returns </dd>
+<dd>
+0 to not reschedule the alarm </dd></dl>
+
+</div>
+</div>
+<a id="gaa593548569c182a0d65d2e06a9c3493b" name="gaa593548569c182a0d65d2e06a9c3493b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa593548569c182a0d65d2e06a9c3493b">&#9670;&#160;</a></span>alarm_id_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> <a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The identifier for an alarm. </p>
+<dl class="section note"><dt>Nota</dt><dd>this identifier is signed because &lt;0 is used as an error condition when creating alarms</dd>
+<dd>
+alarm ids may be reused, however for convenience the implementation makes an attempt to defer reusing as long as possible. You should certainly expect it to be hundreds of ids before one is reused, although in most cases it is more. Nonetheless care must still be taken when cancelling alarms or other functionality based on alarms when the alarm may have expired, as eventually the alarm id may be reused for another alarm.</dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__pico__base.html#gaddcb20bc9a61ceff479aa87369a862aa" title="Common return codes from pico_sdk methods that return a status.">pico_error_codes</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="gab75446a927e4e870ad27fde145a88019" name="gab75446a927e4e870ad27fde145a88019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab75446a927e4e870ad27fde145a88019">&#9670;&#160;</a></span>alarm_pool_add_alarm_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> alarm_pool_add_alarm_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a>&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__alarm.html#gade88ed45e9b59ad39d91f17c8709c16a">alarm_callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>user_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>fire_if_past</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an alarm callback to be called at a specific time. </p>
+<p>Generally the callback is called as soon as possible after the time specified from an IRQ handler on the core the alarm pool was created on. If the callback is in the past or happens before the alarm setup could be completed, then this method will optionally call the callback itself and then return a return code to indicate that the target time has passed.</p>
+<dl class="section note"><dt>Nota</dt><dd>It is safe to call this method from an IRQ handler (including alarm callbacks), and from either core.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the alarm pool to use for scheduling the callback (this determines which timer_alarm is used, and which core calls the callback) </td></tr>
+    <tr><td class="paramname">time</td><td>the timestamp when (after which) the callback should fire </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function </td></tr>
+    <tr><td class="paramname">user_data</td><td>user data to pass to the callback function </td></tr>
+    <tr><td class="paramname">fire_if_past</td><td>if true, and the alarm time falls before or during this call before the alarm can be set, then the callback should be called during (by) this function instead </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>&gt;0 the alarm id for an active (at the time of return) alarm </dd>
+<dd>
+0 if the alarm time passed before or during the call and fire_if_past was false </dd>
+<dd>
+&lt;0 if there were no alarm slots available, or other error occurred </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__alarm.html#ga72bfc8c2dd5bf334cd68af2e349a1b37">alarm_pool_add_alarm_at_force_in_context()</a> e <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__repeating__timer.html#ga75dad2018ae1e4c154fb17cd96db9872">alarm_pool_add_repeating_timer_us()</a> e <a class="el" href="pico__time__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ga72bfc8c2dd5bf334cd68af2e349a1b37" name="ga72bfc8c2dd5bf334cd68af2e349a1b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72bfc8c2dd5bf334cd68af2e349a1b37">&#9670;&#160;</a></span>alarm_pool_add_alarm_at_force_in_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a> alarm_pool_add_alarm_at_force_in_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a>&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__alarm.html#gade88ed45e9b59ad39d91f17c8709c16a">alarm_callback_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an alarm callback to be called at or after a specific time. </p>
+<p>The callback is called as soon as possible after the time specified from an IRQ handler on the core the alarm pool was created on. Unlike <a class="el" href="group__alarm.html#gab75446a927e4e870ad27fde145a88019">alarm_pool_add_alarm_at</a>, this method guarantees to call the callback from that core even if the time is during this method call or in the past.</p>
+<dl class="section note"><dt>Nota</dt><dd>It is safe to call this method from an IRQ handler (including alarm callbacks), and from either core.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the alarm pool to use for scheduling the callback (this determines which timer_alarm is used, and which core calls the callback) </td></tr>
+    <tr><td class="paramname">time</td><td>the timestamp when (after which) the callback should fire </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function </td></tr>
+    <tr><td class="paramname">user_data</td><td>user data to pass to the callback function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>&gt;0 the alarm id for an active (at the time of return) alarm </dd>
+<dd>
+&lt;0 if there were no alarm slots available, or other error occurred </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structalarm__pool.html#a4d257e184b9e4f65f6b729bf8731fa65">alarm_pool::entries</a>, <a class="el" href="structalarm__pool.html#aaa0eaeb7224894b849b702224c55e0d3">alarm_pool::free_head</a>, <a class="el" href="structalarm__pool.html#a3c957660aa67178f82dad8120aee73d2">alarm_pool::lock</a>, <a class="el" href="structalarm__pool.html#a04cb681fd341d015d4a7104d265c64e9">alarm_pool::new_head</a>, <a class="el" href="group__pico__base.html#ggaddcb20bc9a61ceff479aa87369a862aaa3881c25df2261efbc82252df515240d0">PICO_ERROR_GENERIC</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking()</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a391d6f65485a5e26d0308088b8e28930">ta_force_irq()</a>, <a class="el" href="structalarm__pool.html#a23554fac3f79c9145a236703c1a74d4d">alarm_pool::timer</a> e <a class="el" href="structalarm__pool.html#aa97929b1d0d8f80077555b2dd9a46bb7">alarm_pool::timer_alarm_num</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#gab75446a927e4e870ad27fde145a88019">alarm_pool_add_alarm_at()</a>.</p>
+
+</div>
+</div>
+<a id="ga02cc23b4a3109fb8c2d57e24981f2932" name="ga02cc23b4a3109fb8c2d57e24981f2932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02cc23b4a3109fb8c2d57e24981f2932">&#9670;&#160;</a></span>alarm_pool_cancel_alarm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> alarm_pool_cancel_alarm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a>&#160;</td>
+          <td class="paramname"><em>alarm_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancel an alarm. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the <a class="el" href="structalarm__pool.html">alarm_pool</a> containing the alarm </td></tr>
+    <tr><td class="paramname">alarm_id</td><td>the alarm </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the alarm was cancelled, false if it didn't exist </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b" title="The identifier for an alarm.">alarm_id_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">for</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">note</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">on</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">reuse</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">of</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">IDs</a> </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structalarm__pool.html#a4d257e184b9e4f65f6b729bf8731fa65">alarm_pool::entries</a>, <a class="el" href="structalarm__pool.html#ab2dca632b60fafe248a9e993fb5af70a">alarm_pool::has_pending_cancellations</a>, <a class="el" href="structalarm__pool.html#a3c957660aa67178f82dad8120aee73d2">alarm_pool::lock</a>, <a class="el" href="structalarm__pool.html#a5826e72189122f3eec44a7cfb58a0996">alarm_pool::num_entries</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking()</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a391d6f65485a5e26d0308088b8e28930">ta_force_irq()</a>, <a class="el" href="structalarm__pool.html#a23554fac3f79c9145a236703c1a74d4d">alarm_pool::timer</a> e <a class="el" href="structalarm__pool.html#aa97929b1d0d8f80077555b2dd9a46bb7">alarm_pool::timer_alarm_num</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__repeating__timer.html#ga9ad5a07a3f2300cc9d46c1c847fae6f1">cancel_repeating_timer()</a> e <a class="el" href="pico__time__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ga4918e03a3ddd5c328d65bd014d26856b" name="ga4918e03a3ddd5c328d65bd014d26856b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4918e03a3ddd5c328d65bd014d26856b">&#9670;&#160;</a></span>alarm_pool_core_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> alarm_pool_core_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the core number the alarm pool was initialized on (and hence callbacks are called on) </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the pool </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>the core used by the pool </dd></dl>
+
+<p class="reference">Referências <a class="el" href="structalarm__pool.html#ab8e202b1b782bf9a85a13b6b65251d57">alarm_pool::core_num</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__async__context__threadsafe__background.html#gabf48cafcbfa48c9fbef1aa7a18ded9e5">async_context_threadsafe_background_init()</a>.</p>
+
+</div>
+</div>
+<a id="gae7536c4d34088a2d19b2da92b87cbb4e" name="gae7536c4d34088a2d19b2da92b87cbb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7536c4d34088a2d19b2da92b87cbb4e">&#9670;&#160;</a></span>alarm_pool_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> alarm_pool_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the alarm pool, cancelling all alarms and freeing up the underlying timer_alarm. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the pool </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structalarm__pool.html#a4d257e184b9e4f65f6b729bf8731fa65">alarm_pool::entries</a>, <a class="el" href="malloc_8c.html#af77b903835a9d447de01fac54c993876">free()</a>, <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a99fd3dd0095d13231984561b28b055f7">ta_disable_irq_handler()</a>, <a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4b27ef8c8be3422f253f8f364644387a">ta_timer_num()</a>, <a class="el" href="structalarm__pool.html#a23554fac3f79c9145a236703c1a74d4d">alarm_pool::timer</a> e <a class="el" href="structalarm__pool.html#aa97929b1d0d8f80077555b2dd9a46bb7">alarm_pool::timer_alarm_num</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="pico__time__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ga5092ceb879289c0a597a389f34b4815e" name="ga5092ceb879289c0a597a389f34b4815e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5092ceb879289c0a597a389f34b4815e">&#9670;&#160;</a></span>alarm_pool_get_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> * alarm_pool_get_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default alarm pool used when alarms are added without specifying an alarm pool, and also used by the SDK to support lower power sleeps and timeouts. </p>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__alarm.html#ga40b4a03bf9e967d4e7170d20c5c9fb15" title="Selects which timer_alarm is used for the default alarm pool.">PICO_TIME_DEFAULT_ALARM_POOL_HARDWARE_ALARM_NUM</a> </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__async__context__threadsafe__background.html#gabf48cafcbfa48c9fbef1aa7a18ded9e5">async_context_threadsafe_background_init()</a>, <a class="el" href="group__sleep.html#gaedc0ed51a5e908ddd660a5d279009abc">best_effort_wfe_or_timeout()</a>, <a class="el" href="pico__time__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="group__alarm.html#ga61affbec7fedd98582b1df8b5ca3fe3b">remaining_alarm_time_ms()</a> e <a class="el" href="group__alarm.html#ga549331a1b34938eb9f9dae03712a714c">remaining_alarm_time_us()</a>.</p>
+
+</div>
+</div>
+<a id="gab363026fa15b43405538eb087ee7cfa9" name="gab363026fa15b43405538eb087ee7cfa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab363026fa15b43405538eb087ee7cfa9">&#9670;&#160;</a></span>alarm_pool_init_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> alarm_pool_init_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create the default alarm pool (if not already created or disabled) </p>
+
+<p class="reference">Referências <a class="el" href="time_8c.html#af1bbb9dda125c948fd47a093a5faf0f1">runtime_init_default_alarm_pool()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="pico__time__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ga3a9a4343aa9efe22e4324dc82ad2f3ec" name="ga3a9a4343aa9efe22e4324dc82ad2f3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a9a4343aa9efe22e4324dc82ad2f3ec">&#9670;&#160;</a></span>alarm_pool_remaining_alarm_time_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> alarm_pool_remaining_alarm_time_ms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a>&#160;</td>
+          <td class="paramname"><em>alarm_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the time remaining before the next trigger of an alarm. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the <a class="el" href="structalarm__pool.html">alarm_pool</a> containing the alarm </td></tr>
+    <tr><td class="paramname">alarm_id</td><td>the alarm</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>&gt;=0 the number of milliseconds before the next trigger (INT32_MAX if the number of ms is higher than can be represented0 </dd>
+<dd>
+&lt;0 if either the given alarm is not in progress or it has passed </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__alarm.html#ga342ebecd5ebc1a39f1da0bac81069712">alarm_pool_remaining_alarm_time_us()</a> e <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#ga61affbec7fedd98582b1df8b5ca3fe3b">remaining_alarm_time_ms()</a>.</p>
+
+</div>
+</div>
+<a id="ga342ebecd5ebc1a39f1da0bac81069712" name="ga342ebecd5ebc1a39f1da0bac81069712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga342ebecd5ebc1a39f1da0bac81069712">&#9670;&#160;</a></span>alarm_pool_remaining_alarm_time_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a> alarm_pool_remaining_alarm_time_us </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a>&#160;</td>
+          <td class="paramname"><em>alarm_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the time remaining before the next trigger of an alarm. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the <a class="el" href="structalarm__pool.html">alarm_pool</a> containing the alarm </td></tr>
+    <tr><td class="paramname">alarm_id</td><td>the alarm</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>&gt;=0 the number of microseconds before the next trigger </dd>
+<dd>
+&lt;0 if either the given alarm is not in progress or it has passed </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structalarm__pool.html#a4d257e184b9e4f65f6b729bf8731fa65">alarm_pool::entries</a>, <a class="el" href="structalarm__pool.html#a3c957660aa67178f82dad8120aee73d2">alarm_pool::lock</a>, <a class="el" href="structalarm__pool.html#a263e1150e68074325cfef1782020c8ba">alarm_pool::ordered_head</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking()</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock()</a>, <a class="el" href="structalarm__pool__entry.html#a24ac528a13951853729f7d1f2bab04ea">alarm_pool_entry::target</a> e <a class="el" href="structalarm__pool.html#a23554fac3f79c9145a236703c1a74d4d">alarm_pool::timer</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#ga3a9a4343aa9efe22e4324dc82ad2f3ec">alarm_pool_remaining_alarm_time_ms()</a> e <a class="el" href="group__alarm.html#ga549331a1b34938eb9f9dae03712a714c">remaining_alarm_time_us()</a>.</p>
+
+</div>
+</div>
+<a id="gaeb9321260fecc29b551d5e6ceffccc99" name="gaeb9321260fecc29b551d5e6ceffccc99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb9321260fecc29b551d5e6ceffccc99">&#9670;&#160;</a></span>alarm_pool_timer_alarm_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> alarm_pool_timer_alarm_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aab6827a4c19f5e2e1e9f4db8bad64a99">alarm_pool_t</a> *&#160;</td>
+          <td class="paramname"><em>pool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the timer alarm used by an alarm pool. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>the pool </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>the timer_alarm used by the pool </dd></dl>
+
+<p class="reference">Referências <a class="el" href="structalarm__pool.html#aa97929b1d0d8f80077555b2dd9a46bb7">alarm_pool::timer_alarm_num</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="pico__time__test_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="ga61affbec7fedd98582b1df8b5ca3fe3b" name="ga61affbec7fedd98582b1df8b5ca3fe3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61affbec7fedd98582b1df8b5ca3fe3b">&#9670;&#160;</a></span>remaining_alarm_time_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int32_t</a> remaining_alarm_time_ms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a>&#160;</td>
+          <td class="paramname"><em>alarm_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the time remaining before the next trigger of an alarm. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alarm_id</td><td>the alarm</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>&gt;=0 the number of milliseconds before the next trigger (INT32_MAX if the number of ms is higher than can be represented0 </dd>
+<dd>
+&lt;0 if either the given alarm is not in progress or it has passed </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__alarm.html#ga5092ceb879289c0a597a389f34b4815e">alarm_pool_get_default()</a> e <a class="el" href="group__alarm.html#ga3a9a4343aa9efe22e4324dc82ad2f3ec">alarm_pool_remaining_alarm_time_ms()</a>.</p>
+
+</div>
+</div>
+<a id="ga549331a1b34938eb9f9dae03712a714c" name="ga549331a1b34938eb9f9dae03712a714c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga549331a1b34938eb9f9dae03712a714c">&#9670;&#160;</a></span>remaining_alarm_time_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a> remaining_alarm_time_us </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__alarm.html#gaa593548569c182a0d65d2e06a9c3493b">alarm_id_t</a>&#160;</td>
+          <td class="paramname"><em>alarm_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the time remaining before the next trigger of an alarm. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alarm_id</td><td>the alarm</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>&gt;=0 the number of microseconds before the next trigger </dd>
+<dd>
+&lt;0 if either the given alarm is not in progress or it has passed </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__alarm.html#ga5092ceb879289c0a597a389f34b4815e">alarm_pool_get_default()</a> e <a class="el" href="group__alarm.html#ga342ebecd5ebc1a39f1da0bac81069712">alarm_pool_remaining_alarm_time_us()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

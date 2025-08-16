@@ -1,0 +1,27 @@
+var sync__core0__only_8c =
+[
+    [ "__sev", "sync__core0__only_8c.html#a9df5a532fcf55522c7f25b810faf15b9", null ],
+    [ "__wfe", "sync__core0__only_8c.html#a3b7a9b4d8d5938a845506d76742edaf5", null ],
+    [ "__wfi", "sync__core0__only_8c.html#a774d0153f61c0ea132dfec1739e0032e", null ],
+    [ "clear_spin_locks", "sync__core0__only_8c.html#a4ecd7d64e0ac6b7a7041d3fc01442ac9", null ],
+    [ "disable_interrupts", "sync__core0__only_8c.html#ac05dcf6f91cdcb6d00c1eb9c2de1007a", null ],
+    [ "enable_interrupts", "sync__core0__only_8c.html#aec6dadf112848aacacdaa1672730d374", null ],
+    [ "is_spin_locked", "sync__core0__only_8c.html#a40b97c381e30cfd715d75836dddfabf4", null ],
+    [ "next_striped_spin_lock_num", "group__hardware__sync.html#ga8f4578aa492d4d37dfbdab5c99ab5b1c", null ],
+    [ "restore_interrupts", "sync__core0__only_8c.html#ac8beb837a85389103e72295b1a6fdf48", null ],
+    [ "restore_interrupts_from_disabled", "sync__core0__only_8c.html#af450332c075d671abc59fb5d0f5e0e06", null ],
+    [ "save_and_disable_interrupts", "sync__core0__only_8c.html#a811fcb9650f9d2e99ddc8c167fe6ece2", null ],
+    [ "spin_lock_blocking", "sync__core0__only_8c.html#a93ad980be48c91cb5dd91fd8d09622c0", null ],
+    [ "spin_lock_claim", "group__hardware__sync.html#ga50945cb4c33c3263b69e1fce81c474c7", null ],
+    [ "spin_lock_claim_mask", "group__hardware__sync.html#ga41304e0ee0aed1b5c20b0fd8c2adf9e6", null ],
+    [ "spin_lock_claim_unused", "group__hardware__sync.html#ga157bccb525bdfd90255490558cbeb9c0", null ],
+    [ "spin_lock_get_num", "sync__core0__only_8c.html#a9720700af8bae5cb43264b31a8fea3b0", null ],
+    [ "spin_lock_init", "group__hardware__sync.html#gad38821cab3d935b009c6551d5ff70c4c", null ],
+    [ "spin_lock_instance", "sync__core0__only_8c.html#a570e1d9c049ade36ac9b4149cb3f02a2", null ],
+    [ "spin_lock_num", "sync__core0__only_8c.html#abc896e744bed54876f49921796649896", null ],
+    [ "spin_lock_unclaim", "group__hardware__sync.html#ga177efc085451e4eabfc726897a59ca57", null ],
+    [ "spin_lock_unsafe_blocking", "sync__core0__only_8c.html#abb504613e2e89dae8e264aee5ca91d67", null ],
+    [ "spin_unlock", "sync__core0__only_8c.html#aa2f02585f606ae2ef9be10db0318f113", null ],
+    [ "spin_unlock_unsafe", "sync__core0__only_8c.html#af453e216d17861419dc39e2bb1e54623", null ],
+    [ "event_fired", "sync__core0__only_8c.html#a815c7e97f0064713cbce712bb6fc9e69", null ]
+];

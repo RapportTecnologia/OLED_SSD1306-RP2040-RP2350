@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura TRNG_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structTRNG__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structTRNG__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura TRNG_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ARM TrustZone RNG register block (TRNG)  
+ <a href="structTRNG__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2350_8h_source.html">RP2350.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para TRNG_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structTRNG__Type__coll__graph.svg" width="186" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a1edf578c5b3da7a987f7e45cc3c2d9df" id="r_a1edf578c5b3da7a987f7e45cc3c2d9df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a1edf578c5b3da7a987f7e45cc3c2d9df">AUTOCORR_STATISTIC</a></td></tr>
+<tr class="memdesc:a1edf578c5b3da7a987f7e45cc3c2d9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistic about Autocorrelation test activations.  <br /></td></tr>
+<tr class="separator:a1edf578c5b3da7a987f7e45cc3c2d9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50c8372c4448b307fa7dd1f5b75d1e1" id="r_ae50c8372c4448b307fa7dd1f5b75d1e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#ae50c8372c4448b307fa7dd1f5b75d1e1">EHR_DATA0</a></td></tr>
+<tr class="memdesc:ae50c8372c4448b307fa7dd1f5b75d1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG collected bits.  <br /></td></tr>
+<tr class="separator:ae50c8372c4448b307fa7dd1f5b75d1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b5d6ec4f22eba9767baa44c4f80b23" id="r_a45b5d6ec4f22eba9767baa44c4f80b23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a45b5d6ec4f22eba9767baa44c4f80b23">EHR_DATA1</a></td></tr>
+<tr class="memdesc:a45b5d6ec4f22eba9767baa44c4f80b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG collected bits.  <br /></td></tr>
+<tr class="separator:a45b5d6ec4f22eba9767baa44c4f80b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb376f60a9a31bbe40be5491e675a9c" id="r_acdb376f60a9a31bbe40be5491e675a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#acdb376f60a9a31bbe40be5491e675a9c">EHR_DATA2</a></td></tr>
+<tr class="memdesc:acdb376f60a9a31bbe40be5491e675a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG collected bits.  <br /></td></tr>
+<tr class="separator:acdb376f60a9a31bbe40be5491e675a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b1e4ba9c1f10f195689aed5e358c81" id="r_a12b1e4ba9c1f10f195689aed5e358c81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a12b1e4ba9c1f10f195689aed5e358c81">EHR_DATA3</a></td></tr>
+<tr class="memdesc:a12b1e4ba9c1f10f195689aed5e358c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG collected bits.  <br /></td></tr>
+<tr class="separator:a12b1e4ba9c1f10f195689aed5e358c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad943e8082629b6b401280639d821e341" id="r_ad943e8082629b6b401280639d821e341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#ad943e8082629b6b401280639d821e341">EHR_DATA4</a></td></tr>
+<tr class="memdesc:ad943e8082629b6b401280639d821e341"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG collected bits.  <br /></td></tr>
+<tr class="separator:ad943e8082629b6b401280639d821e341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96fedcb319f70cf902b07c3a0d6996e1" id="r_a96fedcb319f70cf902b07c3a0d6996e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a96fedcb319f70cf902b07c3a0d6996e1">EHR_DATA5</a></td></tr>
+<tr class="memdesc:a96fedcb319f70cf902b07c3a0d6996e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG collected bits.  <br /></td></tr>
+<tr class="separator:a96fedcb319f70cf902b07c3a0d6996e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508f2fea0453fdcc3c30e399232562b3" id="r_a508f2fea0453fdcc3c30e399232562b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a508f2fea0453fdcc3c30e399232562b3">RESERVED</a> [64]</td></tr>
+<tr class="memdesc:a508f2fea0453fdcc3c30e399232562b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; TRNG Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a508f2fea0453fdcc3c30e399232562b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0b9bd88a70e25850e4fa0119363822" id="r_aab0b9bd88a70e25850e4fa0119363822"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#aab0b9bd88a70e25850e4fa0119363822">RESERVED1</a></td></tr>
+<tr class="separator:aab0b9bd88a70e25850e4fa0119363822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53347cc3f54c837f09e6d0c03a855316" id="r_a53347cc3f54c837f09e6d0c03a855316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a53347cc3f54c837f09e6d0c03a855316">RESERVED2</a> [28]</td></tr>
+<tr class="separator:a53347cc3f54c837f09e6d0c03a855316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0966f763c596f175022385be35cef62" id="r_ad0966f763c596f175022385be35cef62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#ad0966f763c596f175022385be35cef62">RESERVED3</a> [7]</td></tr>
+<tr class="separator:ad0966f763c596f175022385be35cef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af96a1b24c1462b663b52ba7df821124b" id="r_af96a1b24c1462b663b52ba7df821124b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#af96a1b24c1462b663b52ba7df821124b">RND_SOURCE_ENABLE</a></td></tr>
+<tr class="memdesc:af96a1b24c1462b663b52ba7df821124b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable signal for the random source.  <br /></td></tr>
+<tr class="separator:af96a1b24c1462b663b52ba7df821124b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34593431156f126831c2054acf2dfaf7" id="r_a34593431156f126831c2054acf2dfaf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a34593431156f126831c2054acf2dfaf7">RNG_BIST_CNTR_0</a></td></tr>
+<tr class="memdesc:a34593431156f126831c2054acf2dfaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collected BIST results.  <br /></td></tr>
+<tr class="separator:a34593431156f126831c2054acf2dfaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95782f6fea11a621582ba63efe8d2557" id="r_a95782f6fea11a621582ba63efe8d2557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a95782f6fea11a621582ba63efe8d2557">RNG_BIST_CNTR_1</a></td></tr>
+<tr class="memdesc:a95782f6fea11a621582ba63efe8d2557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collected BIST results.  <br /></td></tr>
+<tr class="separator:a95782f6fea11a621582ba63efe8d2557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad0e55477dfbe1ed7303acbd74324b2" id="r_a7ad0e55477dfbe1ed7303acbd74324b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a7ad0e55477dfbe1ed7303acbd74324b2">RNG_BIST_CNTR_2</a></td></tr>
+<tr class="memdesc:a7ad0e55477dfbe1ed7303acbd74324b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collected BIST results.  <br /></td></tr>
+<tr class="separator:a7ad0e55477dfbe1ed7303acbd74324b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bb6af995ec22370ff0cbb766fa35ac" id="r_a52bb6af995ec22370ff0cbb766fa35ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a52bb6af995ec22370ff0cbb766fa35ac">RNG_DEBUG_EN_INPUT</a></td></tr>
+<tr class="memdesc:a52bb6af995ec22370ff0cbb766fa35ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the RNG debug mode <br  />
+  <br /></td></tr>
+<tr class="separator:a52bb6af995ec22370ff0cbb766fa35ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09715e9fa77d02714dbeee7cbd214339" id="r_a09715e9fa77d02714dbeee7cbd214339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a09715e9fa77d02714dbeee7cbd214339">RNG_ICR</a></td></tr>
+<tr class="memdesc:a09715e9fa77d02714dbeee7cbd214339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt/status bit clear Register.  <br /></td></tr>
+<tr class="separator:a09715e9fa77d02714dbeee7cbd214339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840d1bfbc22c1d2271ed2f072141ba50" id="r_a840d1bfbc22c1d2271ed2f072141ba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a840d1bfbc22c1d2271ed2f072141ba50">RNG_IMR</a></td></tr>
+<tr class="memdesc:a840d1bfbc22c1d2271ed2f072141ba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt masking.  <br /></td></tr>
+<tr class="separator:a840d1bfbc22c1d2271ed2f072141ba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b183c0153030c3be40bd4a2242bf4e" id="r_a89b183c0153030c3be40bd4a2242bf4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a89b183c0153030c3be40bd4a2242bf4e">RNG_ISR</a></td></tr>
+<tr class="memdesc:a89b183c0153030c3be40bd4a2242bf4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG status register.  <br /></td></tr>
+<tr class="separator:a89b183c0153030c3be40bd4a2242bf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35e7adb0f2217743619749e69c71c9c" id="r_ab35e7adb0f2217743619749e69c71c9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#ab35e7adb0f2217743619749e69c71c9c">RNG_VERSION</a></td></tr>
+<tr class="memdesc:ab35e7adb0f2217743619749e69c71c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the version settings of the TRNG.  <br /></td></tr>
+<tr class="separator:ab35e7adb0f2217743619749e69c71c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b68cd806901ea3afdafc57e1814fc8" id="r_ae7b68cd806901ea3afdafc57e1814fc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#ae7b68cd806901ea3afdafc57e1814fc8">RST_BITS_COUNTER</a></td></tr>
+<tr class="memdesc:ae7b68cd806901ea3afdafc57e1814fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the counter of collected bits in the RNG.  <br /></td></tr>
+<tr class="separator:ae7b68cd806901ea3afdafc57e1814fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3802824def8033ace3427fa10c129ad1" id="r_a3802824def8033ace3427fa10c129ad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a3802824def8033ace3427fa10c129ad1">SAMPLE_CNT1</a></td></tr>
+<tr class="memdesc:a3802824def8033ace3427fa10c129ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts clocks between sampling of random bit.  <br /></td></tr>
+<tr class="separator:a3802824def8033ace3427fa10c129ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d93263d68d0634d489a24cc6067fbc" id="r_a46d93263d68d0634d489a24cc6067fbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a46d93263d68d0634d489a24cc6067fbc">TRNG_BUSY</a></td></tr>
+<tr class="memdesc:a46d93263d68d0634d489a24cc6067fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG Busy indication.  <br /></td></tr>
+<tr class="separator:a46d93263d68d0634d489a24cc6067fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5de2fe4de87803fc8f5244f2a1705a" id="r_a0c5de2fe4de87803fc8f5244f2a1705a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a0c5de2fe4de87803fc8f5244f2a1705a">TRNG_CONFIG</a></td></tr>
+<tr class="memdesc:a0c5de2fe4de87803fc8f5244f2a1705a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selecting the inverter-chain length.  <br /></td></tr>
+<tr class="separator:a0c5de2fe4de87803fc8f5244f2a1705a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a20853d5a3a3573fb6f6bc114e03930" id="r_a1a20853d5a3a3573fb6f6bc114e03930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#a1a20853d5a3a3573fb6f6bc114e03930">TRNG_DEBUG_CONTROL</a></td></tr>
+<tr class="memdesc:a1a20853d5a3a3573fb6f6bc114e03930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug register.  <br /></td></tr>
+<tr class="separator:a1a20853d5a3a3573fb6f6bc114e03930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8fa5544c3f6d3d36f513c2cd74d5699" id="r_aa8fa5544c3f6d3d36f513c2cd74d5699"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#aa8fa5544c3f6d3d36f513c2cd74d5699">TRNG_SW_RESET</a></td></tr>
+<tr class="memdesc:aa8fa5544c3f6d3d36f513c2cd74d5699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate internal SW reset within the RNG block.  <br /></td></tr>
+<tr class="separator:aa8fa5544c3f6d3d36f513c2cd74d5699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abddff25fe1b1953f929f147eef3f1d62" id="r_abddff25fe1b1953f929f147eef3f1d62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTRNG__Type.html#abddff25fe1b1953f929f147eef3f1d62">TRNG_VALID</a></td></tr>
+<tr class="memdesc:abddff25fe1b1953f929f147eef3f1d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">192 bit collection indication.  <br /></td></tr>
+<tr class="separator:abddff25fe1b1953f929f147eef3f1d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>ARM TrustZone RNG register block (TRNG) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a1edf578c5b3da7a987f7e45cc3c2d9df" name="a1edf578c5b3da7a987f7e45cc3c2d9df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1edf578c5b3da7a987f7e45cc3c2d9df">&#9670;&#160;</a></span>AUTOCORR_STATISTIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::AUTOCORR_STATISTIC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Statistic about Autocorrelation test activations. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ae50c8372c4448b307fa7dd1f5b75d1e1" name="ae50c8372c4448b307fa7dd1f5b75d1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50c8372c4448b307fa7dd1f5b75d1e1">&#9670;&#160;</a></span>EHR_DATA0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::EHR_DATA0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG collected bits. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a45b5d6ec4f22eba9767baa44c4f80b23" name="a45b5d6ec4f22eba9767baa44c4f80b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b5d6ec4f22eba9767baa44c4f80b23">&#9670;&#160;</a></span>EHR_DATA1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::EHR_DATA1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG collected bits. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="acdb376f60a9a31bbe40be5491e675a9c" name="acdb376f60a9a31bbe40be5491e675a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb376f60a9a31bbe40be5491e675a9c">&#9670;&#160;</a></span>EHR_DATA2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::EHR_DATA2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG collected bits. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a12b1e4ba9c1f10f195689aed5e358c81" name="a12b1e4ba9c1f10f195689aed5e358c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b1e4ba9c1f10f195689aed5e358c81">&#9670;&#160;</a></span>EHR_DATA3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::EHR_DATA3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG collected bits. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ad943e8082629b6b401280639d821e341" name="ad943e8082629b6b401280639d821e341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad943e8082629b6b401280639d821e341">&#9670;&#160;</a></span>EHR_DATA4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::EHR_DATA4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG collected bits. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a96fedcb319f70cf902b07c3a0d6996e1" name="a96fedcb319f70cf902b07c3a0d6996e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96fedcb319f70cf902b07c3a0d6996e1">&#9670;&#160;</a></span>EHR_DATA5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::EHR_DATA5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG collected bits. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a508f2fea0453fdcc3c30e399232562b3" name="a508f2fea0453fdcc3c30e399232562b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508f2fea0453fdcc3c30e399232562b3">&#9670;&#160;</a></span>RESERVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RESERVED[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; TRNG Structure <br  />
+ </p>
+
+</div>
+</div>
+<a id="aab0b9bd88a70e25850e4fa0119363822" name="aab0b9bd88a70e25850e4fa0119363822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab0b9bd88a70e25850e4fa0119363822">&#9670;&#160;</a></span>RESERVED1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RESERVED1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53347cc3f54c837f09e6d0c03a855316" name="a53347cc3f54c837f09e6d0c03a855316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53347cc3f54c837f09e6d0c03a855316">&#9670;&#160;</a></span>RESERVED2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RESERVED2[28]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0966f763c596f175022385be35cef62" name="ad0966f763c596f175022385be35cef62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0966f763c596f175022385be35cef62">&#9670;&#160;</a></span>RESERVED3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RESERVED3[7]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af96a1b24c1462b663b52ba7df821124b" name="af96a1b24c1462b663b52ba7df821124b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96a1b24c1462b663b52ba7df821124b">&#9670;&#160;</a></span>RND_SOURCE_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RND_SOURCE_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable signal for the random source. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a34593431156f126831c2054acf2dfaf7" name="a34593431156f126831c2054acf2dfaf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34593431156f126831c2054acf2dfaf7">&#9670;&#160;</a></span>RNG_BIST_CNTR_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_BIST_CNTR_0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Collected BIST results. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a95782f6fea11a621582ba63efe8d2557" name="a95782f6fea11a621582ba63efe8d2557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95782f6fea11a621582ba63efe8d2557">&#9670;&#160;</a></span>RNG_BIST_CNTR_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_BIST_CNTR_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Collected BIST results. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a7ad0e55477dfbe1ed7303acbd74324b2" name="a7ad0e55477dfbe1ed7303acbd74324b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad0e55477dfbe1ed7303acbd74324b2">&#9670;&#160;</a></span>RNG_BIST_CNTR_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_BIST_CNTR_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Collected BIST results. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a52bb6af995ec22370ff0cbb766fa35ac" name="a52bb6af995ec22370ff0cbb766fa35ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52bb6af995ec22370ff0cbb766fa35ac">&#9670;&#160;</a></span>RNG_DEBUG_EN_INPUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_DEBUG_EN_INPUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the RNG debug mode <br  />
+ </p>
+
+</div>
+</div>
+<a id="a09715e9fa77d02714dbeee7cbd214339" name="a09715e9fa77d02714dbeee7cbd214339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09715e9fa77d02714dbeee7cbd214339">&#9670;&#160;</a></span>RNG_ICR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_ICR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt/status bit clear Register. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a840d1bfbc22c1d2271ed2f072141ba50" name="a840d1bfbc22c1d2271ed2f072141ba50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840d1bfbc22c1d2271ed2f072141ba50">&#9670;&#160;</a></span>RNG_IMR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_IMR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt masking. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a89b183c0153030c3be40bd4a2242bf4e" name="a89b183c0153030c3be40bd4a2242bf4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b183c0153030c3be40bd4a2242bf4e">&#9670;&#160;</a></span>RNG_ISR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_ISR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG status register. </p>
+<p>If corresponding RNG_IMR bit is unmasked, an interrupt will be generated. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab35e7adb0f2217743619749e69c71c9c" name="ab35e7adb0f2217743619749e69c71c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35e7adb0f2217743619749e69c71c9c">&#9670;&#160;</a></span>RNG_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RNG_VERSION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays the version settings of the TRNG. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ae7b68cd806901ea3afdafc57e1814fc8" name="ae7b68cd806901ea3afdafc57e1814fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b68cd806901ea3afdafc57e1814fc8">&#9670;&#160;</a></span>RST_BITS_COUNTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::RST_BITS_COUNTER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the counter of collected bits in the RNG. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a3802824def8033ace3427fa10c129ad1" name="a3802824def8033ace3427fa10c129ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3802824def8033ace3427fa10c129ad1">&#9670;&#160;</a></span>SAMPLE_CNT1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::SAMPLE_CNT1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counts clocks between sampling of random bit. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a46d93263d68d0634d489a24cc6067fbc" name="a46d93263d68d0634d489a24cc6067fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d93263d68d0634d489a24cc6067fbc">&#9670;&#160;</a></span>TRNG_BUSY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::TRNG_BUSY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG Busy indication. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a0c5de2fe4de87803fc8f5244f2a1705a" name="a0c5de2fe4de87803fc8f5244f2a1705a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5de2fe4de87803fc8f5244f2a1705a">&#9670;&#160;</a></span>TRNG_CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::TRNG_CONFIG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selecting the inverter-chain length. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a1a20853d5a3a3573fb6f6bc114e03930" name="a1a20853d5a3a3573fb6f6bc114e03930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a20853d5a3a3573fb6f6bc114e03930">&#9670;&#160;</a></span>TRNG_DEBUG_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::TRNG_DEBUG_CONTROL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debug register. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="aa8fa5544c3f6d3d36f513c2cd74d5699" name="aa8fa5544c3f6d3d36f513c2cd74d5699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fa5544c3f6d3d36f513c2cd74d5699">&#9670;&#160;</a></span>TRNG_SW_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::TRNG_SW_RESET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate internal SW reset within the RNG block. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="abddff25fe1b1953f929f147eef3f1d62" name="abddff25fe1b1953f929f147eef3f1d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abddff25fe1b1953f929f147eef3f1d62">&#9670;&#160;</a></span>TRNG_VALID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TRNG_Type::TRNG_VALID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>192 bit collection indication. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structTRNG__Type.html">TRNG_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

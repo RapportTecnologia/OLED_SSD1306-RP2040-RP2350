@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de coresight_trace.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__regs_2include_2hardware_2regs_2coresight__trace_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_regs/include/hardware/regs/coresight_trace.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : CORESIGHT_TRACE</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : ahbl</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : Coresight block - RP specific registers</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _HARDWARE_REGS_CORESIGHT_TRACE_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _HARDWARE_REGS_CORESIGHT_TRACE_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register    : CORESIGHT_TRACE_CTRL_STATUS</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Description : Control and status register</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a0861247180001083ac9d96322f522b96">   19</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#ace3b9a0fd557fac4e61765208aeb1739">   20</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_BITS   _u(0x00000003)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a6413f7ffd402122468837128fc47194c">   21</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_RESET  _u(0x00000001)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Field       : CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_OVERFLOW</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Description : This status flag is set high when trace data has been dropped</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//               due to the FIFO being full at the point trace data was sampled.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//               Write 1 to acknowledge and clear the bit.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a7a382f6117299727e75e48cdc3ff9fc5">   27</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_OVERFLOW_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#ab07498618c1e79e7c30e17199abea7af">   28</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_OVERFLOW_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a16de2446c99894bfa44f35ea8a982e5f">   29</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_OVERFLOW_MSB    _u(1)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#ac30a36d90e0463cd663c6f32b49562bd">   30</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_OVERFLOW_LSB    _u(1)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#ae2d628be359ff52d90072dc81113b15a">   31</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_OVERFLOW_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// Field       : CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_FLUSH</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Description : Set to 1 to continuously hold the trace FIFO in a flushed state</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//               and prevent overflow.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//               Before clearing this flag, configure and start a DMA channel</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//               with the correct DREQ for the TRACE_CAPTURE_FIFO register.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//               Clear this flag to begin sampling trace data, and set once</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//               again once the trace capture buffer is full. You must configure</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//               the TPIU in order to generate trace packets to be captured, as</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//               well as components like the ETM further upstream to generate</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//               the event stream propagated to the TPIU.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a5ab8565432d9132d5cf32e8d3ab1eb6f">   45</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_FLUSH_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#ad401db2f4dc391ac1b86fb0f450343ac">   46</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_FLUSH_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a5c97dbf14734dd53b967f71c1cbae37e">   47</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_FLUSH_MSB    _u(0)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a5e40466eef7cec17480411c3013d0f95">   48</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_FLUSH_LSB    _u(0)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a4b2876cfa8a85f471eb1f5137b2eb773">   49</a></span><span class="preprocessor">#define CORESIGHT_TRACE_CTRL_STATUS_TRACE_CAPTURE_FIFO_FLUSH_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Register    : CORESIGHT_TRACE_TRACE_CAPTURE_FIFO</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// Description : FIFO for trace data captured from the TPIU</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a2a529d3735b812560474bcb12e3c881c">   53</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a0258d376ca2bc41c7631d19efceb9d93">   54</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#af685b07f86b1553f1abc45f0943d3939">   55</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Field       : CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_RDATA</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// Description : Read from an 8 x 32-bit FIFO containing trace data captured</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">//               from the TPIU.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">//</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//               Hardware pushes to the FIFO on rising edges of clk_sys, when</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//               either of the following is true:</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//               * TPIU TRACECTL output is low (normal trace data)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//               * TPIU TRACETCL output is high, and TPIU TRACEDATA0 and</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//               TRACEDATA1 are both low (trigger packet)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//               These conditions are in accordance with Arm Coresight</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">//               Architecture Spec v3.0 section D3.3.3: Decoding requirements</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">//               for Trace Capture Devices</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//               The data captured into the FIFO is the full 32-bit TRACEDATA</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">//               bus output by the TPIU. Note that the TPIU is a DDR output at</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//               half of clk_sys, therefore this interface can capture the full</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">//               32-bit TPIU DDR output bandwidth as it samples once per active</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//               edge of the TPIU output clock.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a98d3bf5d32d8097f54d651c00806bb58">   78</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_RDATA_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#ac6c15001473d4a48f56fe01a77a8d6ac">   79</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_RDATA_BITS   _u(0xffffffff)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a0f9256be8ef919db78544b6bcc641431">   80</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_RDATA_MSB    _u(31)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a7a3134b07d142589b071dbf06689858c">   81</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_RDATA_LSB    _u(0)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html#a8ffddf7a083974342e56d048f420f879">   82</a></span><span class="preprocessor">#define CORESIGHT_TRACE_TRACE_CAPTURE_FIFO_RDATA_ACCESS &quot;RF&quot;</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_CORESIGHT_TRACE_H</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="hardware__regs_2include_2hardware_2regs_2coresight__trace_8h.html">coresight_trace.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,39 +1,48 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghilmoprstuvw",
-  1: "rst",
-  2: "bors",
-  3: "cors",
-  4: "abehiprstw",
-  5: "o",
-  6: "o",
-  7: "bfims",
-  8: "chopst"
+  0: "0_abcdefghijklmnopqrstuvwxyz~",
+  1: "_abcdefghijlmnopqrstuvwxy",
+  2: "y",
+  3: "0_abcdefghijklmnopqrstuvwx",
+  4: "_abcdefghijklmnopqrstuvwxy~",
+  5: "_abcdefghiklmnopqrstuvwxyz",
+  6: "_abcdefghiklmoprstuvxy",
+  7: "bcdefghimoprstuv",
+  8: "abcdefghijmnoprstuvwxy",
+  9: "_abcdefghiklmnopqrstuvwxy",
+  10: "abcdefghiklmnpqrstuvw",
+  11: "abcdeimprst"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables",
-  5: "enums",
-  6: "enumvalues",
-  7: "defines",
-  8: "pages"
+  2: "namespaces",
+  3: "files",
+  4: "functions",
+  5: "variables",
+  6: "typedefs",
+  7: "enums",
+  8: "enumvalues",
+  9: "defines",
+  10: "groups",
+  11: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "Tudo",
   1: "Classes",
-  2: "Ficheiros",
-  3: "Funções",
-  4: "Variáveis",
-  5: "Enumerações",
-  6: "Valores de enumerações",
-  7: "Macros",
-  8: "Páginas"
+  2: "Namespaces",
+  3: "Ficheiros",
+  4: "Funções",
+  5: "Variáveis",
+  6: "Definições de tipos",
+  7: "Enumerações",
+  8: "Valores de enumerações",
+  9: "Macros",
+  10: "Grupos",
+  11: "Páginas"
 };
 

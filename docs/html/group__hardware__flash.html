@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: hardware_flash</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__hardware__flash.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">hardware_flash</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Low level flash programming and erase API.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga73bb4b757747bb16efe3e1ad211b6bb3" id="r_ga73bb4b757747bb16efe3e1ad211b6bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga73bb4b757747bb16efe3e1ad211b6bb3">flash_devinfo_get_cs_gpio</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs)</td></tr>
+<tr class="memdesc:ga73bb4b757747bb16efe3e1ad211b6bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the GPIO allocated for each chip select, according to FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga73bb4b757747bb16efe3e1ad211b6bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a6358b716ddf5a83488b80b3b06ca4d" id="r_ga2a6358b716ddf5a83488b80b3b06ca4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bff">flash_devinfo_size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga2a6358b716ddf5a83488b80b3b06ca4d">flash_devinfo_get_cs_size</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs)</td></tr>
+<tr class="memdesc:ga2a6358b716ddf5a83488b80b3b06ca4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the QSPI device attached to chip select cs, according to FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga2a6358b716ddf5a83488b80b3b06ca4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7c9f1af0692f4fea45e5077075501d8" id="r_gad7c9f1af0692f4fea45e5077075501d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#gad7c9f1af0692f4fea45e5077075501d8">flash_devinfo_get_d8h_erase_supported</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gad7c9f1af0692f4fea45e5077075501d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether all attached devices support D8h block erase with 64k size, according to FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:gad7c9f1af0692f4fea45e5077075501d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6d14a5018cc9d9a934c650b29c0e649" id="r_gad6d14a5018cc9d9a934c650b29c0e649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#gad6d14a5018cc9d9a934c650b29c0e649">flash_devinfo_set_cs_gpio</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio)</td></tr>
+<tr class="memdesc:gad6d14a5018cc9d9a934c650b29c0e649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the GPIO allocated for each chip select in the runtime copy of FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:gad6d14a5018cc9d9a934c650b29c0e649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31356cdc4542e13c7ca690ed3a1e49b2" id="r_ga31356cdc4542e13c7ca690ed3a1e49b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga31356cdc4542e13c7ca690ed3a1e49b2">flash_devinfo_set_cs_size</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> cs, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bff">flash_devinfo_size_t</a> size)</td></tr>
+<tr class="memdesc:ga31356cdc4542e13c7ca690ed3a1e49b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the size of the QSPI device attached to chip select cs in the runtime copy of FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga31356cdc4542e13c7ca690ed3a1e49b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e681e2cc33dba8ba6cfab236f9941b5" id="r_ga6e681e2cc33dba8ba6cfab236f9941b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga6e681e2cc33dba8ba6cfab236f9941b5">flash_devinfo_set_d8h_erase_supported</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">supported</a>)</td></tr>
+<tr class="memdesc:ga6e681e2cc33dba8ba6cfab236f9941b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether all attached devices support D8h block erase with 64k size, in the runtime copy of FLASH_DEVINFO.  <br /></td></tr>
+<tr class="separator:ga6e681e2cc33dba8ba6cfab236f9941b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e352de7ea62ffebc579f6449b5b44d3" id="r_ga9e352de7ea62ffebc579f6449b5b44d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga9e352de7ea62ffebc579f6449b5b44d3">flash_do_cmd</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">txbuf</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rxbuf</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga9e352de7ea62ffebc579f6449b5b44d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute bidirectional flash command.  <br /></td></tr>
+<tr class="separator:ga9e352de7ea62ffebc579f6449b5b44d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c6452005ad28f1e444698b0b97194d2" id="r_ga5c6452005ad28f1e444698b0b97194d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga5c6452005ad28f1e444698b0b97194d2">flash_get_unique_id</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">id_out</a>)</td></tr>
+<tr class="memdesc:ga5c6452005ad28f1e444698b0b97194d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get flash unique 64 bit identifier.  <br /></td></tr>
+<tr class="separator:ga5c6452005ad28f1e444698b0b97194d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b88461b126b1c226121146c87d5abe2" id="r_ga5b88461b126b1c226121146c87d5abe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga5b88461b126b1c226121146c87d5abe2">flash_range_erase</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_offs</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga5b88461b126b1c226121146c87d5abe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase areas of flash.  <br /></td></tr>
+<tr class="separator:ga5b88461b126b1c226121146c87d5abe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga345513fba0951661d012fa20a6441c5f" id="r_ga345513fba0951661d012fa20a6441c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#ga345513fba0951661d012fa20a6441c5f">flash_range_program</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_offs</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *data, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga345513fba0951661d012fa20a6441c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program flash.  <br /></td></tr>
+<tr class="separator:ga345513fba0951661d012fa20a6441c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf481d0955483111d1769cb84c8fc0969" id="r_gaf481d0955483111d1769cb84c8fc0969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__flash.html#gaf481d0955483111d1769cb84c8fc0969">flash_start_xip</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gaf481d0955483111d1769cb84c8fc0969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise QSPI interface and external QSPI devices for execute-in-place.  <br /></td></tr>
+<tr class="separator:gaf481d0955483111d1769cb84c8fc0969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Low level flash programming and erase API. </p>
+<p>Note these functions are <em>unsafe</em> if you are using both cores, and the other is executing from flash concurrently with the operation. In this case, you must perform your own synchronisation to make sure that no XIP accesses take place during flash programming. One option is to use the <a class="el" href="group__multicore__lockout.html">lockout</a> functions.</p>
+<p>Likewise they are <em>unsafe</em> if you have interrupt handlers or an interrupt vector table in flash, so you must disable interrupts before calling in this case.</p>
+<p>If PICO_NO_FLASH=1 is not defined (i.e. if the program is built to run from flash) then these functions will make a static copy of the second stage bootloader in SRAM, and use this to reenter execute-in-place mode after programming or erasing flash, so that they can safely be called from flash-resident code.</p>
+<h2><a class="anchor" id="flash_example"></a>
+Example</h2>
+<div class="fragment"></div><!-- fragment --> <h2 class="groupheader">Documentação das funções</h2>
+<a id="ga73bb4b757747bb16efe3e1ad211b6bb3" name="ga73bb4b757747bb16efe3e1ad211b6bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73bb4b757747bb16efe3e1ad211b6bb3">&#9670;&#160;</a></span>flash_devinfo_get_cs_gpio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> flash_devinfo_get_cs_gpio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>cs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the GPIO allocated for each chip select, according to FLASH_DEVINFO. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>Chip select index (only the value 1 is supported on RP2350) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>, <a class="el" href="otp__data_8h.html#a206649ad7281394f13430395b7c76ed6">OTP_DATA_FLASH_DEVINFO_CS1_GPIO_BITS</a> e <a class="el" href="otp__data_8h.html#a79b6cf865b82c5359790609938f45052">OTP_DATA_FLASH_DEVINFO_CS1_GPIO_LSB</a>.</p>
+
+</div>
+</div>
+<a id="ga2a6358b716ddf5a83488b80b3b06ca4d" name="ga2a6358b716ddf5a83488b80b3b06ca4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a6358b716ddf5a83488b80b3b06ca4d">&#9670;&#160;</a></span>flash_devinfo_get_cs_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bff">flash_devinfo_size_t</a> flash_devinfo_get_cs_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>cs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the size of the QSPI device attached to chip select cs, according to FLASH_DEVINFO. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>Chip select index: 0 is QMI chip select 0 (QSPI CS pin), 1 is QMI chip select 1.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The bootrom reads the FLASH_DEVINFO OTP data entry from OTP into boot RAM during startup. This contains basic information about the flash device which can be queried without communicating with the external device.(There are several methods to determine the size of a QSPI device over QSPI, but none are universally supported.)</p>
+<p>Since the FLASH_DEVINFO information is stored in boot RAM at runtime, it can be updated. Updates made in this way persist until the next reboot. The ROM uses this device information to control some low-level flash API behaviour, such as issuing an XIP exit sequence to CS 1 if its size is nonzero.</p>
+<p>If the macro PICO_FLASH_SIZE_BYTES is specified, this overrides the value for chip select 0. This can be specified in a board header if a board is always equipped with the same size of flash. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa4d7bed43de6286d2d47ba88b60f19ce1">FLASH_DEVINFO_SIZE_8K</a>, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffae44210ce4a552e5538d1f845f7f170bb">FLASH_DEVINFO_SIZE_NONE</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>, <a class="el" href="otp__data_8h.html#afc4e312f3e60aa18bb3bbf8e74149bf1">OTP_DATA_FLASH_DEVINFO_CS0_SIZE_BITS</a>, <a class="el" href="otp__data_8h.html#a332437802ce63ef2c76afc2b038d065c">OTP_DATA_FLASH_DEVINFO_CS0_SIZE_LSB</a>, <a class="el" href="otp__data_8h.html#a8aa4ab9c0c2fed7b0cb81fd3c15cb1aa">OTP_DATA_FLASH_DEVINFO_CS1_SIZE_BITS</a>, <a class="el" href="otp__data_8h.html#a25dc1770f3dfe85c2ec54efb084316ea">OTP_DATA_FLASH_DEVINFO_CS1_SIZE_LSB</a> e <a class="el" href="0xcb__helios_8h.html#a7ad5a8273ffcd10db868c3c3e03d5bf0">PICO_FLASH_SIZE_BYTES</a>.</p>
+
+</div>
+</div>
+<a id="gad7c9f1af0692f4fea45e5077075501d8" name="gad7c9f1af0692f4fea45e5077075501d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7c9f1af0692f4fea45e5077075501d8">&#9670;&#160;</a></span>flash_devinfo_get_d8h_erase_supported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> flash_devinfo_get_d8h_erase_supported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether all attached devices support D8h block erase with 64k size, according to FLASH_DEVINFO. </p>
+<p>This controls whether <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">checked_flash_op()</a> ROM API uses D8h 64k block erase where possible, for faster erase times. If not, this ROM API always uses 20h 4k sector erase.</p>
+<p>The bootrom loads this flag from the OTP FLASH_DEVINFO data entry during startup, and stores it in boot RAM. You can update the boot RAM copy based on runtime knowledge of the attached QSPI devices. </p>
+
+<p class="reference">Referências <a class="el" href="otp__data_8h.html#a4c2483e97a23fa230a59a6c332a84a7f">OTP_DATA_FLASH_DEVINFO_D8H_ERASE_SUPPORTED_BITS</a>.</p>
+
+</div>
+</div>
+<a id="gad6d14a5018cc9d9a934c650b29c0e649" name="gad6d14a5018cc9d9a934c650b29c0e649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6d14a5018cc9d9a934c650b29c0e649">&#9670;&#160;</a></span>flash_devinfo_set_cs_gpio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_devinfo_set_cs_gpio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>cs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>gpio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the GPIO allocated for each chip select in the runtime copy of FLASH_DEVINFO. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>Chip select index (only the value 1 is supported on RP2350)</td></tr>
+    <tr><td class="paramname">gpio</td><td>GPIO index (must be less than NUM_BANK0_GPIOS) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>, <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a128611d53fbe9c7d3097530591f87836">NUM_BANK0_GPIOS</a>, <a class="el" href="otp__data_8h.html#a206649ad7281394f13430395b7c76ed6">OTP_DATA_FLASH_DEVINFO_CS1_GPIO_BITS</a> e <a class="el" href="otp__data_8h.html#a79b6cf865b82c5359790609938f45052">OTP_DATA_FLASH_DEVINFO_CS1_GPIO_LSB</a>.</p>
+
+</div>
+</div>
+<a id="ga31356cdc4542e13c7ca690ed3a1e49b2" name="ga31356cdc4542e13c7ca690ed3a1e49b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31356cdc4542e13c7ca690ed3a1e49b2">&#9670;&#160;</a></span>flash_devinfo_set_cs_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_devinfo_set_cs_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>cs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bff">flash_devinfo_size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the size of the QSPI device attached to chip select cs in the runtime copy of FLASH_DEVINFO. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>Chip select index: 0 is QMI chip select 0 (QSPI CS pin), 1 is QMI chip select 1.</td></tr>
+    <tr><td class="paramname">size</td><td>The size of the attached device, or FLASH_DEVINFO_SIZE_NONE if there is none on this chip select.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The bootrom maintains a copy in boot RAM of the FLASH_DEVINFO information read from OTP during startup. This function updates that copy to reflect runtime information about the sizes of attached QSPI devices.</p>
+<p>This controls the behaviour of some ROM flash APIs, such as bounds checking addresses for erase/programming in the <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">checked_flash_op()</a> API, or issuing an XIP exit sequence to CS 1 in <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_exit_xip()</a> if the size is nonzero. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa421d4b69f1baa087c76426ecd27bc6ef">FLASH_DEVINFO_SIZE_MAX</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>, <a class="el" href="otp__data_8h.html#afc4e312f3e60aa18bb3bbf8e74149bf1">OTP_DATA_FLASH_DEVINFO_CS0_SIZE_BITS</a>, <a class="el" href="otp__data_8h.html#a332437802ce63ef2c76afc2b038d065c">OTP_DATA_FLASH_DEVINFO_CS0_SIZE_LSB</a> e <a class="el" href="otp__data_8h.html#a25dc1770f3dfe85c2ec54efb084316ea">OTP_DATA_FLASH_DEVINFO_CS1_SIZE_LSB</a>.</p>
+
+</div>
+</div>
+<a id="ga6e681e2cc33dba8ba6cfab236f9941b5" name="ga6e681e2cc33dba8ba6cfab236f9941b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e681e2cc33dba8ba6cfab236f9941b5">&#9670;&#160;</a></span>flash_devinfo_set_d8h_erase_supported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_devinfo_set_d8h_erase_supported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>supported</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specify whether all attached devices support D8h block erase with 64k size, in the runtime copy of FLASH_DEVINFO. </p>
+<p>This function updates the boot RAM copy of OTP FLASH_DEVINFO. The flag passed here is visible to ROM APIs, and is also returned in the next call to <a class="el" href="group__hardware__flash.html#gad7c9f1af0692f4fea45e5077075501d8" title="Check whether all attached devices support D8h block erase with 64k size, according to FLASH_DEVINFO.">flash_devinfo_get_d8h_erase_supported()</a> </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="otp__data_8h.html#a4c2483e97a23fa230a59a6c332a84a7f">OTP_DATA_FLASH_DEVINFO_D8H_ERASE_SUPPORTED_BITS</a> e <a class="el" href="otp__data_8h.html#ab53e27db35e080a7206058f3d38c154e">OTP_DATA_FLASH_DEVINFO_D8H_ERASE_SUPPORTED_LSB</a>.</p>
+
+</div>
+</div>
+<a id="ga9e352de7ea62ffebc579f6449b5b44d3" name="ga9e352de7ea62ffebc579f6449b5b44d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e352de7ea62ffebc579f6449b5b44d3">&#9670;&#160;</a></span>flash_do_cmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_do_cmd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>txbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>rxbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute bidirectional flash command. </p>
+<p>Low-level function to execute a serial command on a flash device attached to the QSPI interface. Bytes are simultaneously transmitted and received from txbuf and to rxbuf. Therefore, both buffers must be the same length, count, which is the length of the overall transaction. This is useful for reading metadata from the flash chip, such as device ID or SFDP parameters.</p>
+<p>The XIP cache is flushed following each command, in case flash state has been modified. Like other hardware_flash functions, the flash is not accessible for execute-in-place transfers whilst the command is in progress, so entering a flash-resident interrupt handler or executing flash code on the second core concurrently will be fatal. To avoid these pitfalls it is recommended that this function only be used to extract flash metadata during startup, before the main application begins to run: see the implementation of <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pico_get_unique_id()</a> for an example of this.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">txbuf</td><td>Pointer to a byte buffer which will be transmitted to the flash </td></tr>
+    <tr><td class="paramname">rxbuf</td><td>Pointer to a byte buffer where data received from the flash will be written. txbuf and rxbuf may be the same buffer. </td></tr>
+    <tr><td class="paramname">count</td><td>Length in bytes of txbuf and of rxbuf </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a65d4301a9f682549fade9b2486bcfeca">QMI_DIRECT_CSR_EN_BITS</a>, <a class="el" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a475243a2ad79546167a84fb0af8ed84e">QMI_DIRECT_CSR_RXEMPTY_BITS</a>, <a class="el" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a0d8a92a333118d89b171a545fdeceba2">QMI_DIRECT_CSR_TXFULL_BITS</a>, <a class="el" href="hardware__structs_2include_2hardware_2structs_2qmi_8h.html#ae474b86b3705e84261a4db4ef509bab3">qmi_hw</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aaa3f22f89dbc2cdab9883569cc1959df">ROM_FUNC_CONNECT_INTERNAL_FLASH</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a410c479137898d789e9e3dccffb52961">ROM_FUNC_FLASH_EXIT_XIP</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a47512a8bdbf7077085ae63b11af381c0">ROM_FUNC_FLASH_FLUSH_CACHE</a>, <a class="el" href="hardware__structs_2include_2hardware_2structs_2ssi_8h.html#a9b3353b1c5b3a5876c76395a1c2617c4">ssi_hw</a>, <a class="el" href="hardware__regs_2include_2hardware_2regs_2ssi_8h.html#a083493a85b3192a2bd7067fdd2fb6ee2">SSI_SR_RFNE_BITS</a> e <a class="el" href="hardware__regs_2include_2hardware_2regs_2ssi_8h.html#abcc6f8169f8a60767b03acc779746a7a">SSI_SR_TFNF_BITS</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__flash.html#ga5c6452005ad28f1e444698b0b97194d2">flash_get_unique_id()</a>.</p>
+
+</div>
+</div>
+<a id="ga5c6452005ad28f1e444698b0b97194d2" name="ga5c6452005ad28f1e444698b0b97194d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c6452005ad28f1e444698b0b97194d2">&#9670;&#160;</a></span>flash_get_unique_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_get_unique_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>id_out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get flash unique 64 bit identifier. </p>
+<p>Use a standard 4Bh RUID instruction to retrieve the 64 bit unique identifier from a flash device attached to the QSPI interface. Since there is a 1:1 association between the MCU and this flash, this also serves as a unique identifier for the board.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_out</td><td>Pointer to an 8-byte buffer to which the ID will be written </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="group__hardware__flash.html#ga9e352de7ea62ffebc579f6449b5b44d3">flash_do_cmd()</a>, <a class="el" href="hardware__flash_2flash_8c.html#adf736d2e8b4ba912b9d37af98571a1ac">FLASH_RUID_CMD</a>, <a class="el" href="hardware__flash_2flash_8c.html#a2017fe745aba4ab35389a266509442ed">FLASH_RUID_DATA_BYTES</a>, <a class="el" href="hardware__flash_2flash_8c.html#a945b748aea3a10e7e94e0ee38397ae3c">FLASH_RUID_DUMMY_BYTES</a>, <a class="el" href="hardware__flash_2flash_8c.html#aa515dd6012dfee887e1e271a2830e158">FLASH_RUID_TOTAL_BYTES</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+<a id="ga5b88461b126b1c226121146c87d5abe2" name="ga5b88461b126b1c226121146c87d5abe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b88461b126b1c226121146c87d5abe2">&#9670;&#160;</a></span>flash_range_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_range_erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>flash_offs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Erase areas of flash. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flash_offs</td><td>Offset into flash, in bytes, to start the erase. Must be aligned to a 4096-byte flash sector. </td></tr>
+    <tr><td class="paramname">count</td><td>Number of bytes to be erased. Must be a multiple of 4096 bytes (one sector).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>Erasing a flash sector sets all the bits in all the pages in that sector to one. You can then "program" flash pages in the sector to turn some of the bits to zero. Once a bit is set to zero it can only be changed back to one by erasing the whole sector again. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="hardware__flash_2flash_8c.html#a38ffcf8fb18f5bfdb6b7da0f4536681d">FLASH_BLOCK_ERASE_CMD</a>, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#a6afb081a75593f3c034881ada625cf8d">FLASH_BLOCK_SIZE</a>, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#ae9560b79ebc5c7d96bea3c0821a0373a">FLASH_SECTOR_SIZE</a>, <a class="el" href="assert_8h.html#a2f6f3b51fe05f23a19afe439ac623b39">hard_assert</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>, <a class="el" href="0xcb__helios_8h.html#a7ad5a8273ffcd10db868c3c3e03d5bf0">PICO_FLASH_SIZE_BYTES</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aaa3f22f89dbc2cdab9883569cc1959df">ROM_FUNC_CONNECT_INTERNAL_FLASH</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a410c479137898d789e9e3dccffb52961">ROM_FUNC_FLASH_EXIT_XIP</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a47512a8bdbf7077085ae63b11af381c0">ROM_FUNC_FLASH_FLUSH_CACHE</a> e <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aa271fbdae3908c92c6dc294c7362c1f8">ROM_FUNC_FLASH_RANGE_ERASE</a>.</p>
+
+</div>
+</div>
+<a id="ga345513fba0951661d012fa20a6441c5f" name="ga345513fba0951661d012fa20a6441c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga345513fba0951661d012fa20a6441c5f">&#9670;&#160;</a></span>flash_range_program()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_range_program </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>flash_offs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Program flash. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flash_offs</td><td>Flash address of the first byte to be programmed. Must be aligned to a 256-byte flash page. </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the data to program into flash </td></tr>
+    <tr><td class="paramname">count</td><td>Number of bytes to program. Must be a multiple of 256 bytes (one page).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>: Programming a flash page effectively changes some of the bits from one to zero. The only way to change a zero bit back to one is to "erase" the whole sector that the page resides in. So you may need to make sure you have called flash_range_erase before calling flash_range_program. </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="hardware__flash_2include_2hardware_2flash_8h.html#a4cc14e2c99ae7f8e5a8e371d03c8532c">FLASH_PAGE_SIZE</a>, <a class="el" href="assert_8h.html#a2f6f3b51fe05f23a19afe439ac623b39">hard_assert</a>, <a class="el" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>, <a class="el" href="0xcb__helios_8h.html#a7ad5a8273ffcd10db868c3c3e03d5bf0">PICO_FLASH_SIZE_BYTES</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aaa3f22f89dbc2cdab9883569cc1959df">ROM_FUNC_CONNECT_INTERNAL_FLASH</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a410c479137898d789e9e3dccffb52961">ROM_FUNC_FLASH_EXIT_XIP</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a47512a8bdbf7077085ae63b11af381c0">ROM_FUNC_FLASH_FLUSH_CACHE</a> e <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aedf1d12e68202e09f99a259e3bcd6748">ROM_FUNC_FLASH_RANGE_PROGRAM</a>.</p>
+
+</div>
+</div>
+<a id="gaf481d0955483111d1769cb84c8fc0969" name="gaf481d0955483111d1769cb84c8fc0969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf481d0955483111d1769cb84c8fc0969">&#9670;&#160;</a></span>flash_start_xip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> flash_start_xip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise QSPI interface and external QSPI devices for execute-in-place. </p>
+<p>This function performs the same first-time flash setup that would normally occur over the course of the bootrom locating a flash binary and booting it, and that flash binary executing the SDK crt0. Specifically:</p>
+<ul>
+<li>Initialise QSPI pads to their default states, and (non-RP2040) disable pad isolation latches</li>
+<li>Issue a hardcoded sequence to attached QSPI devices to return them to a serial command state</li>
+<li>Flush the XIP cache</li>
+<li>Configure the QSPI interface for low-speed 03h reads</li>
+<li>If this is not a PICO_NO_FLASH=1 binary:<ul>
+<li>(RP2040) load a boot2 stage from the first 256 bytes of RAM and execute it</li>
+<li>(non-RP2040) execute an XIP setup function stored in boot RAM by either the bootrom or by crt0</li>
+</ul>
+</li>
+</ul>
+<p>This is mostly useful for initialising flash on a PICO_NO_FLASH=1 binary. (In spite of the name, this binary type really means "preloaded to RAM" and there may still be a flash device.)</p>
+<p>This function does not preserve the QSPI interface state or pad state. This is in contrast to most other functions in this library, which preserve at least the QSPI pad state. However, on RP2350 it does preserve the QMI window 1 configuration if you have not opted into bootrom CS1 support via FLASH_DEVINFO. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#aaa3f22f89dbc2cdab9883569cc1959df">ROM_FUNC_CONNECT_INTERNAL_FLASH</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a7ceb0a49e53500e9ee282028c24a27a8">ROM_FUNC_FLASH_ENTER_CMD_XIP</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a410c479137898d789e9e3dccffb52961">ROM_FUNC_FLASH_EXIT_XIP</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a47512a8bdbf7077085ae63b11af381c0">ROM_FUNC_FLASH_FLUSH_CACHE</a> e <a class="el" href="group__hardware__xip__cache.html#gab7db8e534f4d6ff4a5fb7b022c3034a4">xip_cache_clean_all()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

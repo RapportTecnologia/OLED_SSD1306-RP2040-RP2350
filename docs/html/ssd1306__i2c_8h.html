@@ -97,18 +97,19 @@ $(document).ready(function(){initNavTree('ssd1306__i2c_8h.html',''); initResizab
   <div class="headertitle"><div class="title">Referência ao ficheiro ssd1306_i2c.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;pico/stdlib.h&quot;</code><br />
-<code>#include &quot;hardware/i2c.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="stdlib_8h_source.html">stdlib.h</a>&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;pico/platform.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__i2c_2include_2hardware_2i2c_8h_source.html">hardware/i2c.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Diagrama de dependências de inclusão para ssd1306_i2c.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ssd1306__i2c_8h__incl.svg" width="351" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ssd1306__i2c_8h__incl.svg" width="1007" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ssd1306__i2c_8h__dep__incl.svg" width="238" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ssd1306__i2c_8h__dep__incl.svg" width="259" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="ssd1306__i2c_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
@@ -122,83 +123,123 @@ Componentes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abe2b8a2431d0df962a7fe66e9281e6f5" id="r_abe2b8a2431d0df962a7fe66e9281e6f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#abe2b8a2431d0df962a7fe66e9281e6f5">max_text_columns</a>&#160;&#160;&#160;17</td></tr>
+<tr class="memitem:a207037691ec423aa2b8d074958dfbc43" id="r_a207037691ec423aa2b8d074958dfbc43"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)&#160;&#160;&#160;(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td></tr>
+<tr class="separator:a207037691ec423aa2b8d074958dfbc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29022c0c92a05cf88ca5046c59d6f629" id="r_a29022c0c92a05cf88ca5046c59d6f629"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a29022c0c92a05cf88ca5046c59d6f629">count_of</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>)&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sizeof</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>) / <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sizeof</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>)[0]))</td></tr>
+<tr class="separator:a29022c0c92a05cf88ca5046c59d6f629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2b8a2431d0df962a7fe66e9281e6f5" id="r_abe2b8a2431d0df962a7fe66e9281e6f5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#abe2b8a2431d0df962a7fe66e9281e6f5">max_text_columns</a>&#160;&#160;&#160;17</td></tr>
 <tr class="separator:abe2b8a2431d0df962a7fe66e9281e6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe0c35b2c6fdd7e94d1e6e0960448d07" id="r_afe0c35b2c6fdd7e94d1e6e0960448d07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#afe0c35b2c6fdd7e94d1e6e0960448d07">max_text_lines</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:afe0c35b2c6fdd7e94d1e6e0960448d07" id="r_afe0c35b2c6fdd7e94d1e6e0960448d07"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#afe0c35b2c6fdd7e94d1e6e0960448d07">max_text_lines</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:afe0c35b2c6fdd7e94d1e6e0960448d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb3f814b2c3fda31b702360a5c278b87" id="r_afb3f814b2c3fda31b702360a5c278b87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87">ssd1306_buffer_length</a>&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#aadcfa88da8330ceca7777702deb90e6a">ssd1306_n_pages</a> * <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>)</td></tr>
+<tr class="memitem:afb3f814b2c3fda31b702360a5c278b87" id="r_afb3f814b2c3fda31b702360a5c278b87"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87">ssd1306_buffer_length</a>&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#aadcfa88da8330ceca7777702deb90e6a">ssd1306_n_pages</a> * <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>)</td></tr>
 <tr class="separator:afb3f814b2c3fda31b702360a5c278b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d80c2cbf27af52df8390e3318c1d00" id="r_a78d80c2cbf27af52df8390e3318c1d00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memitem:a78d80c2cbf27af52df8390e3318c1d00" id="r_a78d80c2cbf27af52df8390e3318c1d00"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:a78d80c2cbf27af52df8390e3318c1d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc498bfdf848a37aa4e54bf5715a8c9f" id="r_abc498bfdf848a37aa4e54bf5715a8c9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#abc498bfdf848a37aa4e54bf5715a8c9f">ssd1306_i2c_address</a>&#160;&#160;&#160;_u(0x3C)</td></tr>
+<tr class="memitem:abc498bfdf848a37aa4e54bf5715a8c9f" id="r_abc498bfdf848a37aa4e54bf5715a8c9f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#abc498bfdf848a37aa4e54bf5715a8c9f">ssd1306_i2c_address</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x3C)</td></tr>
 <tr class="separator:abc498bfdf848a37aa4e54bf5715a8c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64833b2cc1cf64918bed0dcf5bf2c221" id="r_a64833b2cc1cf64918bed0dcf5bf2c221"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a64833b2cc1cf64918bed0dcf5bf2c221">ssd1306_i2c_clock</a>&#160;&#160;&#160;400</td></tr>
+<tr class="memitem:a64833b2cc1cf64918bed0dcf5bf2c221" id="r_a64833b2cc1cf64918bed0dcf5bf2c221"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a64833b2cc1cf64918bed0dcf5bf2c221">ssd1306_i2c_clock</a>&#160;&#160;&#160;400</td></tr>
 <tr class="separator:a64833b2cc1cf64918bed0dcf5bf2c221"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa721492c3a769369602a1f28a82a83fd" id="r_aa721492c3a769369602a1f28a82a83fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aa721492c3a769369602a1f28a82a83fd">ssd1306_line_height</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:aa721492c3a769369602a1f28a82a83fd" id="r_aa721492c3a769369602a1f28a82a83fd"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aa721492c3a769369602a1f28a82a83fd">ssd1306_line_height</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:aa721492c3a769369602a1f28a82a83fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadcfa88da8330ceca7777702deb90e6a" id="r_aadcfa88da8330ceca7777702deb90e6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aadcfa88da8330ceca7777702deb90e6a">ssd1306_n_pages</a>&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> / <a class="el" href="ssd1306__i2c_8h.html#a50611a42e8a2dc4a11631c837f595097">ssd1306_page_height</a>)</td></tr>
+<tr class="memitem:aadcfa88da8330ceca7777702deb90e6a" id="r_aadcfa88da8330ceca7777702deb90e6a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aadcfa88da8330ceca7777702deb90e6a">ssd1306_n_pages</a>&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> / <a class="el" href="ssd1306__i2c_8h.html#a50611a42e8a2dc4a11631c837f595097">ssd1306_page_height</a>)</td></tr>
 <tr class="separator:aadcfa88da8330ceca7777702deb90e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50611a42e8a2dc4a11631c837f595097" id="r_a50611a42e8a2dc4a11631c837f595097"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a50611a42e8a2dc4a11631c837f595097">ssd1306_page_height</a>&#160;&#160;&#160;_u(8)</td></tr>
+<tr class="memitem:a50611a42e8a2dc4a11631c837f595097" id="r_a50611a42e8a2dc4a11631c837f595097"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a50611a42e8a2dc4a11631c837f595097">ssd1306_page_height</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(8)</td></tr>
 <tr class="separator:a50611a42e8a2dc4a11631c837f595097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad93543135f058acb7f42c05e5501e838" id="r_ad93543135f058acb7f42c05e5501e838"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#ad93543135f058acb7f42c05e5501e838">ssd1306_read_mode</a>&#160;&#160;&#160;_u(0xFF)</td></tr>
+<tr class="memitem:ad93543135f058acb7f42c05e5501e838" id="r_ad93543135f058acb7f42c05e5501e838"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#ad93543135f058acb7f42c05e5501e838">ssd1306_read_mode</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xFF)</td></tr>
 <tr class="separator:ad93543135f058acb7f42c05e5501e838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a815f0596fc47020029e7fe21b7a4f3" id="r_a1a815f0596fc47020029e7fe21b7a4f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a1a815f0596fc47020029e7fe21b7a4f3">ssd1306_set_all_on</a>&#160;&#160;&#160;_u(0xA5)</td></tr>
+<tr class="memitem:a1a815f0596fc47020029e7fe21b7a4f3" id="r_a1a815f0596fc47020029e7fe21b7a4f3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a1a815f0596fc47020029e7fe21b7a4f3">ssd1306_set_all_on</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA5)</td></tr>
 <tr class="separator:a1a815f0596fc47020029e7fe21b7a4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a6a2a27e5ca626ea1b3dcdd85b35b6" id="r_a19a6a2a27e5ca626ea1b3dcdd85b35b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a19a6a2a27e5ca626ea1b3dcdd85b35b6">ssd1306_set_charge_pump</a>&#160;&#160;&#160;_u(0x8D)</td></tr>
+<tr class="memitem:a19a6a2a27e5ca626ea1b3dcdd85b35b6" id="r_a19a6a2a27e5ca626ea1b3dcdd85b35b6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a19a6a2a27e5ca626ea1b3dcdd85b35b6">ssd1306_set_charge_pump</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x8D)</td></tr>
 <tr class="separator:a19a6a2a27e5ca626ea1b3dcdd85b35b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0303fcebe87c281a5fda7c7d3b32fa6f" id="r_a0303fcebe87c281a5fda7c7d3b32fa6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a0303fcebe87c281a5fda7c7d3b32fa6f">ssd1306_set_column_address</a>&#160;&#160;&#160;_u(0x21)</td></tr>
+<tr class="memitem:a0303fcebe87c281a5fda7c7d3b32fa6f" id="r_a0303fcebe87c281a5fda7c7d3b32fa6f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a0303fcebe87c281a5fda7c7d3b32fa6f">ssd1306_set_column_address</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x21)</td></tr>
 <tr class="separator:a0303fcebe87c281a5fda7c7d3b32fa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490a9ba971406881908a0a9b27eb2c27" id="r_a490a9ba971406881908a0a9b27eb2c27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a490a9ba971406881908a0a9b27eb2c27">ssd1306_set_common_output_direction</a>&#160;&#160;&#160;_u(0xC0)</td></tr>
+<tr class="memitem:a490a9ba971406881908a0a9b27eb2c27" id="r_a490a9ba971406881908a0a9b27eb2c27"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a490a9ba971406881908a0a9b27eb2c27">ssd1306_set_common_output_direction</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xC0)</td></tr>
 <tr class="separator:a490a9ba971406881908a0a9b27eb2c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0acd3aaba3672401b2c398da17039a" id="r_adb0acd3aaba3672401b2c398da17039a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#adb0acd3aaba3672401b2c398da17039a">ssd1306_set_common_output_direction_flip</a>&#160;&#160;&#160;_u(0xC0)</td></tr>
+<tr class="memitem:adb0acd3aaba3672401b2c398da17039a" id="r_adb0acd3aaba3672401b2c398da17039a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#adb0acd3aaba3672401b2c398da17039a">ssd1306_set_common_output_direction_flip</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xC0)</td></tr>
 <tr class="separator:adb0acd3aaba3672401b2c398da17039a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c08312f217eff5d6246d6e745bc5df3" id="r_a2c08312f217eff5d6246d6e745bc5df3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a2c08312f217eff5d6246d6e745bc5df3">ssd1306_set_common_pin_configuration</a>&#160;&#160;&#160;_u(0xDA)</td></tr>
+<tr class="memitem:a2c08312f217eff5d6246d6e745bc5df3" id="r_a2c08312f217eff5d6246d6e745bc5df3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a2c08312f217eff5d6246d6e745bc5df3">ssd1306_set_common_pin_configuration</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xDA)</td></tr>
 <tr class="separator:a2c08312f217eff5d6246d6e745bc5df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82687bd9bf6397529ab6a2dd7024a991" id="r_a82687bd9bf6397529ab6a2dd7024a991"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a82687bd9bf6397529ab6a2dd7024a991">ssd1306_set_contrast</a>&#160;&#160;&#160;_u(0x81)</td></tr>
+<tr class="memitem:a82687bd9bf6397529ab6a2dd7024a991" id="r_a82687bd9bf6397529ab6a2dd7024a991"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a82687bd9bf6397529ab6a2dd7024a991">ssd1306_set_contrast</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x81)</td></tr>
 <tr class="separator:a82687bd9bf6397529ab6a2dd7024a991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afedba6e77224d394dd08730f51bee586" id="r_afedba6e77224d394dd08730f51bee586"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#afedba6e77224d394dd08730f51bee586">ssd1306_set_display</a>&#160;&#160;&#160;_u(0xAE)</td></tr>
+<tr class="memitem:afedba6e77224d394dd08730f51bee586" id="r_afedba6e77224d394dd08730f51bee586"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#afedba6e77224d394dd08730f51bee586">ssd1306_set_display</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xAE)</td></tr>
 <tr class="separator:afedba6e77224d394dd08730f51bee586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91d9b497cb652b721ca6b16477662c90" id="r_a91d9b497cb652b721ca6b16477662c90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a91d9b497cb652b721ca6b16477662c90">ssd1306_set_display_clock_divide_ratio</a>&#160;&#160;&#160;_u(0xD5)</td></tr>
+<tr class="memitem:a91d9b497cb652b721ca6b16477662c90" id="r_a91d9b497cb652b721ca6b16477662c90"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a91d9b497cb652b721ca6b16477662c90">ssd1306_set_display_clock_divide_ratio</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xD5)</td></tr>
 <tr class="separator:a91d9b497cb652b721ca6b16477662c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8891791ec03d8c5bb43b4a57f4f8f3a8" id="r_a8891791ec03d8c5bb43b4a57f4f8f3a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a8891791ec03d8c5bb43b4a57f4f8f3a8">ssd1306_set_display_offset</a>&#160;&#160;&#160;_u(0xD3)</td></tr>
+<tr class="memitem:a8891791ec03d8c5bb43b4a57f4f8f3a8" id="r_a8891791ec03d8c5bb43b4a57f4f8f3a8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a8891791ec03d8c5bb43b4a57f4f8f3a8">ssd1306_set_display_offset</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xD3)</td></tr>
 <tr class="separator:a8891791ec03d8c5bb43b4a57f4f8f3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ec420da49bc71f7e266b4b6e3a2e27a" id="r_a3ec420da49bc71f7e266b4b6e3a2e27a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a3ec420da49bc71f7e266b4b6e3a2e27a">ssd1306_set_display_start_line</a>&#160;&#160;&#160;_u(0x40)</td></tr>
+<tr class="memitem:a3ec420da49bc71f7e266b4b6e3a2e27a" id="r_a3ec420da49bc71f7e266b4b6e3a2e27a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a3ec420da49bc71f7e266b4b6e3a2e27a">ssd1306_set_display_start_line</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x40)</td></tr>
 <tr class="separator:a3ec420da49bc71f7e266b4b6e3a2e27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177b092bbe234f35539e8570e6d54191" id="r_a177b092bbe234f35539e8570e6d54191"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a177b092bbe234f35539e8570e6d54191">ssd1306_set_entire_on</a>&#160;&#160;&#160;_u(0xA4)</td></tr>
+<tr class="memitem:a177b092bbe234f35539e8570e6d54191" id="r_a177b092bbe234f35539e8570e6d54191"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a177b092bbe234f35539e8570e6d54191">ssd1306_set_entire_on</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA4)</td></tr>
 <tr class="separator:a177b092bbe234f35539e8570e6d54191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb3a6449d3304b53222a3c1a4a6247a0" id="r_aeb3a6449d3304b53222a3c1a4a6247a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aeb3a6449d3304b53222a3c1a4a6247a0">ssd1306_set_horizontal_scroll</a>&#160;&#160;&#160;_u(0x26)</td></tr>
+<tr class="memitem:aeb3a6449d3304b53222a3c1a4a6247a0" id="r_aeb3a6449d3304b53222a3c1a4a6247a0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aeb3a6449d3304b53222a3c1a4a6247a0">ssd1306_set_horizontal_scroll</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x26)</td></tr>
 <tr class="separator:aeb3a6449d3304b53222a3c1a4a6247a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04cce80592063712568ef7bc0f7bf622" id="r_a04cce80592063712568ef7bc0f7bf622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a04cce80592063712568ef7bc0f7bf622">ssd1306_set_inverse_display</a>&#160;&#160;&#160;_u(0xA7)</td></tr>
+<tr class="memitem:a04cce80592063712568ef7bc0f7bf622" id="r_a04cce80592063712568ef7bc0f7bf622"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a04cce80592063712568ef7bc0f7bf622">ssd1306_set_inverse_display</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA7)</td></tr>
 <tr class="separator:a04cce80592063712568ef7bc0f7bf622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f84bdf75dec6d2a57e1afe0d206e7b2" id="r_a5f84bdf75dec6d2a57e1afe0d206e7b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a5f84bdf75dec6d2a57e1afe0d206e7b2">ssd1306_set_memory_mode</a>&#160;&#160;&#160;_u(0x20)</td></tr>
+<tr class="memitem:a5f84bdf75dec6d2a57e1afe0d206e7b2" id="r_a5f84bdf75dec6d2a57e1afe0d206e7b2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a5f84bdf75dec6d2a57e1afe0d206e7b2">ssd1306_set_memory_mode</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x20)</td></tr>
 <tr class="separator:a5f84bdf75dec6d2a57e1afe0d206e7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab660cd23a8bce5310f8822c3060e25d7" id="r_ab660cd23a8bce5310f8822c3060e25d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#ab660cd23a8bce5310f8822c3060e25d7">ssd1306_set_mux_ratio</a>&#160;&#160;&#160;_u(0xA8)</td></tr>
+<tr class="memitem:ab660cd23a8bce5310f8822c3060e25d7" id="r_ab660cd23a8bce5310f8822c3060e25d7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#ab660cd23a8bce5310f8822c3060e25d7">ssd1306_set_mux_ratio</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA8)</td></tr>
 <tr class="separator:ab660cd23a8bce5310f8822c3060e25d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5600fc561e322d05b22af6a60cb3d5fc" id="r_a5600fc561e322d05b22af6a60cb3d5fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a5600fc561e322d05b22af6a60cb3d5fc">ssd1306_set_normal_display</a>&#160;&#160;&#160;_u(0xA6)</td></tr>
+<tr class="memitem:a5600fc561e322d05b22af6a60cb3d5fc" id="r_a5600fc561e322d05b22af6a60cb3d5fc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a5600fc561e322d05b22af6a60cb3d5fc">ssd1306_set_normal_display</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA6)</td></tr>
 <tr class="separator:a5600fc561e322d05b22af6a60cb3d5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e5f46f3207ad67646816fdef6510a1" id="r_a23e5f46f3207ad67646816fdef6510a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a23e5f46f3207ad67646816fdef6510a1">ssd1306_set_page_address</a>&#160;&#160;&#160;_u(0x22)</td></tr>
+<tr class="memitem:a23e5f46f3207ad67646816fdef6510a1" id="r_a23e5f46f3207ad67646816fdef6510a1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a23e5f46f3207ad67646816fdef6510a1">ssd1306_set_page_address</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x22)</td></tr>
 <tr class="separator:a23e5f46f3207ad67646816fdef6510a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a7733b3ef59cf2e50342d871e1fe055" id="r_a0a7733b3ef59cf2e50342d871e1fe055"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a0a7733b3ef59cf2e50342d871e1fe055">ssd1306_set_precharge</a>&#160;&#160;&#160;_u(0xD9)</td></tr>
+<tr class="memitem:a0a7733b3ef59cf2e50342d871e1fe055" id="r_a0a7733b3ef59cf2e50342d871e1fe055"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a0a7733b3ef59cf2e50342d871e1fe055">ssd1306_set_precharge</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xD9)</td></tr>
 <tr class="separator:a0a7733b3ef59cf2e50342d871e1fe055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab209eb357f8898ec2ab2bd99046c408" id="r_aab209eb357f8898ec2ab2bd99046c408"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aab209eb357f8898ec2ab2bd99046c408">ssd1306_set_scroll</a>&#160;&#160;&#160;_u(0x2E)</td></tr>
+<tr class="memitem:aab209eb357f8898ec2ab2bd99046c408" id="r_aab209eb357f8898ec2ab2bd99046c408"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#aab209eb357f8898ec2ab2bd99046c408">ssd1306_set_scroll</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x2E)</td></tr>
 <tr class="separator:aab209eb357f8898ec2ab2bd99046c408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fdfddd37ffafa6624583ddcb3e2c073" id="r_a6fdfddd37ffafa6624583ddcb3e2c073"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a6fdfddd37ffafa6624583ddcb3e2c073">ssd1306_set_segment_remap</a>&#160;&#160;&#160;_u(0xA0)</td></tr>
+<tr class="memitem:a6fdfddd37ffafa6624583ddcb3e2c073" id="r_a6fdfddd37ffafa6624583ddcb3e2c073"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a6fdfddd37ffafa6624583ddcb3e2c073">ssd1306_set_segment_remap</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA0)</td></tr>
 <tr class="separator:a6fdfddd37ffafa6624583ddcb3e2c073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff3c297045c92c2c7041c99cb2700fe" id="r_a6ff3c297045c92c2c7041c99cb2700fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a6ff3c297045c92c2c7041c99cb2700fe">ssd1306_set_vcomh_deselect_level</a>&#160;&#160;&#160;_u(0xDB)</td></tr>
+<tr class="memitem:a6ff3c297045c92c2c7041c99cb2700fe" id="r_a6ff3c297045c92c2c7041c99cb2700fe"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a6ff3c297045c92c2c7041c99cb2700fe">ssd1306_set_vcomh_deselect_level</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xDB)</td></tr>
 <tr class="separator:a6ff3c297045c92c2c7041c99cb2700fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7455ab640aa33266cd38050a5c1fd7d" id="r_ab7455ab640aa33266cd38050a5c1fd7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>&#160;&#160;&#160;128</td></tr>
+<tr class="memitem:ab7455ab640aa33266cd38050a5c1fd7d" id="r_ab7455ab640aa33266cd38050a5c1fd7d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>&#160;&#160;&#160;128</td></tr>
 <tr class="separator:ab7455ab640aa33266cd38050a5c1fd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33550aeb0d947a5626af94b5ec272b57" id="r_a33550aeb0d947a5626af94b5ec272b57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a33550aeb0d947a5626af94b5ec272b57">ssd1306_write_mode</a>&#160;&#160;&#160;_u(0xFE)</td></tr>
+<tr class="memitem:a33550aeb0d947a5626af94b5ec272b57" id="r_a33550aeb0d947a5626af94b5ec272b57"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a33550aeb0d947a5626af94b5ec272b57">ssd1306_write_mode</a>&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xFE)</td></tr>
 <tr class="separator:a33550aeb0d947a5626af94b5ec272b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
-<tr class="memitem:a3f70f573aae30a15bbd91a83017496ba" id="r_a3f70f573aae30a15bbd91a83017496ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a3f70f573aae30a15bbd91a83017496ba">ssd1306_draw_big_char</a> (uint8_t *ssd, int16_t x, int16_t y, uint8_t character)</td></tr>
+<tr class="memitem:a3f70f573aae30a15bbd91a83017496ba" id="r_a3f70f573aae30a15bbd91a83017496ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a3f70f573aae30a15bbd91a83017496ba">ssd1306_draw_big_char</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssd</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">character</a>)</td></tr>
 <tr class="separator:a3f70f573aae30a15bbd91a83017496ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a273c38bc5db3ac5df358ebb34e80c9" id="r_a9a273c38bc5db3ac5df358ebb34e80c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a9a273c38bc5db3ac5df358ebb34e80c9">ssd1306_draw_string</a> (uint8_t *ssd, int16_t x, int16_t y, char *string)</td></tr>
+<tr class="memitem:a9a273c38bc5db3ac5df358ebb34e80c9" id="r_a9a273c38bc5db3ac5df358ebb34e80c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ssd1306__i2c_8h.html#a9a273c38bc5db3ac5df358ebb34e80c9">ssd1306_draw_string</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ssd</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">string</a>)</td></tr>
 <tr class="separator:a9a273c38bc5db3ac5df358ebb34e80c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentação das macros</h2>
+<a id="a207037691ec423aa2b8d074958dfbc43" name="a207037691ec423aa2b8d074958dfbc43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207037691ec423aa2b8d074958dfbc43">&#9670;&#160;</a></span>_u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> _u</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29022c0c92a05cf88ca5046c59d6f629" name="a29022c0c92a05cf88ca5046c59d6f629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29022c0c92a05cf88ca5046c59d6f629">&#9670;&#160;</a></span>count_of</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> count_of</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sizeof</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>) / <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sizeof</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a</a>)[0]))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abe2b8a2431d0df962a7fe66e9281e6f5" name="abe2b8a2431d0df962a7fe66e9281e6f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe2b8a2431d0df962a7fe66e9281e6f5">&#9670;&#160;</a></span>max_text_columns</h2>
 
@@ -206,7 +247,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define max_text_columns&#160;&#160;&#160;17</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> max_text_columns&#160;&#160;&#160;17</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,7 +261,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define max_text_lines&#160;&#160;&#160;8</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> max_text_lines&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -234,7 +275,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_buffer_length&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#aadcfa88da8330ceca7777702deb90e6a">ssd1306_n_pages</a> * <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_buffer_length&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#aadcfa88da8330ceca7777702deb90e6a">ssd1306_n_pages</a> * <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -248,7 +289,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_height&#160;&#160;&#160;64</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_height&#160;&#160;&#160;64</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,7 +303,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_i2c_address&#160;&#160;&#160;_u(0x3C)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_i2c_address&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x3C)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,7 +317,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_i2c_clock&#160;&#160;&#160;400</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_i2c_clock&#160;&#160;&#160;400</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -290,7 +331,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_line_height&#160;&#160;&#160;8</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_line_height&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -304,7 +345,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_n_pages&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> / <a class="el" href="ssd1306__i2c_8h.html#a50611a42e8a2dc4a11631c837f595097">ssd1306_page_height</a>)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_n_pages&#160;&#160;&#160;(<a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> / <a class="el" href="ssd1306__i2c_8h.html#a50611a42e8a2dc4a11631c837f595097">ssd1306_page_height</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -318,7 +359,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_page_height&#160;&#160;&#160;_u(8)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_page_height&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -332,7 +373,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_read_mode&#160;&#160;&#160;_u(0xFF)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_read_mode&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xFF)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -346,7 +387,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_all_on&#160;&#160;&#160;_u(0xA5)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_all_on&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA5)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -360,7 +401,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_charge_pump&#160;&#160;&#160;_u(0x8D)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_charge_pump&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x8D)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -374,7 +415,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_column_address&#160;&#160;&#160;_u(0x21)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_column_address&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x21)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -388,7 +429,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_common_output_direction&#160;&#160;&#160;_u(0xC0)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_common_output_direction&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xC0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -402,7 +443,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_common_output_direction_flip&#160;&#160;&#160;_u(0xC0)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_common_output_direction_flip&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xC0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -416,7 +457,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_common_pin_configuration&#160;&#160;&#160;_u(0xDA)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_common_pin_configuration&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xDA)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -430,7 +471,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_contrast&#160;&#160;&#160;_u(0x81)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_contrast&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x81)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -444,7 +485,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_display&#160;&#160;&#160;_u(0xAE)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_display&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xAE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -458,7 +499,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_display_clock_divide_ratio&#160;&#160;&#160;_u(0xD5)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_display_clock_divide_ratio&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xD5)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -472,7 +513,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_display_offset&#160;&#160;&#160;_u(0xD3)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_display_offset&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xD3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -486,7 +527,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_display_start_line&#160;&#160;&#160;_u(0x40)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_display_start_line&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x40)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -500,7 +541,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_entire_on&#160;&#160;&#160;_u(0xA4)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_entire_on&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA4)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -514,7 +555,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_horizontal_scroll&#160;&#160;&#160;_u(0x26)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_horizontal_scroll&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x26)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -528,7 +569,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_inverse_display&#160;&#160;&#160;_u(0xA7)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_inverse_display&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA7)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -542,7 +583,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_memory_mode&#160;&#160;&#160;_u(0x20)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_memory_mode&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x20)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -556,7 +597,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_mux_ratio&#160;&#160;&#160;_u(0xA8)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_mux_ratio&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -570,7 +611,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_normal_display&#160;&#160;&#160;_u(0xA6)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_normal_display&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA6)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -584,7 +625,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_page_address&#160;&#160;&#160;_u(0x22)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_page_address&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x22)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -598,7 +639,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_precharge&#160;&#160;&#160;_u(0xD9)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_precharge&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xD9)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -612,7 +653,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_scroll&#160;&#160;&#160;_u(0x2E)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_scroll&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0x2E)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -626,7 +667,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_segment_remap&#160;&#160;&#160;_u(0xA0)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_segment_remap&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xA0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -640,7 +681,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_set_vcomh_deselect_level&#160;&#160;&#160;_u(0xDB)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_set_vcomh_deselect_level&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xDB)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -654,7 +695,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_width&#160;&#160;&#160;128</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_width&#160;&#160;&#160;128</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -668,7 +709,7 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ssd1306_write_mode&#160;&#160;&#160;_u(0xFE)</td>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ssd1306_write_mode&#160;&#160;&#160;<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#a207037691ec423aa2b8d074958dfbc43">_u</a>(0xFE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -683,27 +724,27 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ssd1306_draw_big_char </td>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> ssd1306_draw_big_char </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>ssd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;</td>
           <td class="paramname"><em>character</em>&#160;</td>
         </tr>
         <tr>
@@ -714,7 +755,7 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referências <a class="el" href="big__font_8h.html#a0eb2e7bd72a2d4add92c2dc7f3fd293f">BIG_FONT_HEIGHT</a>, <a class="el" href="big__font_8h.html#a9207ebda6462d47d78dba59e6641dfc3">BIG_FONT_PAGES</a>, <a class="el" href="big__font_8h.html#a6e0ebae18338caa3ed064c25641de03b">BIG_FONT_WIDTH</a>, <a class="el" href="ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87">ssd1306_buffer_length</a>, <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a> e <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>.</p>
+<p class="reference">Referências <a class="el" href="big__font_8h.html#a0eb2e7bd72a2d4add92c2dc7f3fd293f">BIG_FONT_HEIGHT</a>, <a class="el" href="big__font_8h.html#a9207ebda6462d47d78dba59e6641dfc3">BIG_FONT_PAGES</a>, <a class="el" href="big__font_8h.html#a6e0ebae18338caa3ed064c25641de03b">BIG_FONT_WIDTH</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87">ssd1306_buffer_length</a>, <a class="el" href="ssd1306__i2c_8h.html#a78d80c2cbf27af52df8390e3318c1d00">ssd1306_height</a>, <a class="el" href="ssd1306__i2c_8h.html#ab7455ab640aa33266cd38050a5c1fd7d">ssd1306_width</a>, <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a> e <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a415290769594460e2e485922904f345d">y</a>.</p>
 
 <p class="reference">Referenciado por <a class="el" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char()</a>.</p>
 
@@ -727,27 +768,27 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ssd1306_draw_string </td>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> ssd1306_draw_string </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>ssd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int16_t</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">char</a> *&#160;</td>
           <td class="paramname"><em>string</em>&#160;</td>
         </tr>
         <tr>
@@ -765,7 +806,7 @@ Funções</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></li>
+    <li class="navelem"><a class="el" href="dir_7689604f4e5a80a43930d0a51b60806a.html">OLED_SSD1306</a></li><li class="navelem"><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></li>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

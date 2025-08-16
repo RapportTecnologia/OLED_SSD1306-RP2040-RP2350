@@ -1,0 +1,846 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura IO_QSPI_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structIO__QSPI__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structIO__QSPI__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura IO_QSPI_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>IO_QSPI (IO_QSPI)  
+ <a href="structIO__QSPI__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para IO_QSPI_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structIO__QSPI__Type__coll__graph.svg" width="206" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ad9848436240da4b037f9e0e79569901d" id="r_ad9848436240da4b037f9e0e79569901d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#ad9848436240da4b037f9e0e79569901d">DORMANT_WAKE_INTE</a></td></tr>
+<tr class="memdesc:ad9848436240da4b037f9e0e79569901d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable for dormant_wake <br  />
+  <br /></td></tr>
+<tr class="separator:ad9848436240da4b037f9e0e79569901d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b74166b1589bdfff7fc97e86c2a2693" id="r_a1b74166b1589bdfff7fc97e86c2a2693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a1b74166b1589bdfff7fc97e86c2a2693">DORMANT_WAKE_INTF</a></td></tr>
+<tr class="memdesc:a1b74166b1589bdfff7fc97e86c2a2693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force for dormant_wake <br  />
+  <br /></td></tr>
+<tr class="separator:a1b74166b1589bdfff7fc97e86c2a2693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe4b1aea50046e60db3702d55856b7c" id="r_a9fe4b1aea50046e60db3702d55856b7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a9fe4b1aea50046e60db3702d55856b7c">DORMANT_WAKE_INTS</a></td></tr>
+<tr class="memdesc:a9fe4b1aea50046e60db3702d55856b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing for dormant_wake <br  />
+  <br /></td></tr>
+<tr class="separator:a9fe4b1aea50046e60db3702d55856b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab692465fe7d012b25ee514f0e5ddf92c" id="r_ab692465fe7d012b25ee514f0e5ddf92c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#ab692465fe7d012b25ee514f0e5ddf92c">GPIO_QSPI_SCLK_CTRL</a></td></tr>
+<tr class="memdesc:ab692465fe7d012b25ee514f0e5ddf92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO control including function select and overrides.  <br /></td></tr>
+<tr class="separator:ab692465fe7d012b25ee514f0e5ddf92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe50b20d4f8e9c95b419453a25d35b0" id="r_affe50b20d4f8e9c95b419453a25d35b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#affe50b20d4f8e9c95b419453a25d35b0">GPIO_QSPI_SCLK_STATUS</a></td></tr>
+<tr class="memdesc:affe50b20d4f8e9c95b419453a25d35b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; IO_QSPI Structure <br  />
+  <br /></td></tr>
+<tr class="separator:affe50b20d4f8e9c95b419453a25d35b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9686aebba7768fa8f23e9e09d98e90" id="r_a9c9686aebba7768fa8f23e9e09d98e90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a9c9686aebba7768fa8f23e9e09d98e90">GPIO_QSPI_SD0_CTRL</a></td></tr>
+<tr class="memdesc:a9c9686aebba7768fa8f23e9e09d98e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO control including function select and overrides.  <br /></td></tr>
+<tr class="separator:a9c9686aebba7768fa8f23e9e09d98e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10b18a8440d93116425cf2977528b95" id="r_ae10b18a8440d93116425cf2977528b95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#ae10b18a8440d93116425cf2977528b95">GPIO_QSPI_SD0_STATUS</a></td></tr>
+<tr class="memdesc:ae10b18a8440d93116425cf2977528b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO status <br  />
+  <br /></td></tr>
+<tr class="separator:ae10b18a8440d93116425cf2977528b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ccb846c6cecda41f6b2e3fec0e9444" id="r_ab6ccb846c6cecda41f6b2e3fec0e9444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#ab6ccb846c6cecda41f6b2e3fec0e9444">GPIO_QSPI_SD1_CTRL</a></td></tr>
+<tr class="memdesc:ab6ccb846c6cecda41f6b2e3fec0e9444"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO control including function select and overrides.  <br /></td></tr>
+<tr class="separator:ab6ccb846c6cecda41f6b2e3fec0e9444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2205cd93b2cd2855250fcbe0698cd5" id="r_aaa2205cd93b2cd2855250fcbe0698cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#aaa2205cd93b2cd2855250fcbe0698cd5">GPIO_QSPI_SD1_STATUS</a></td></tr>
+<tr class="memdesc:aaa2205cd93b2cd2855250fcbe0698cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO status <br  />
+  <br /></td></tr>
+<tr class="separator:aaa2205cd93b2cd2855250fcbe0698cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0515150334fa33af42191d03793a7072" id="r_a0515150334fa33af42191d03793a7072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a0515150334fa33af42191d03793a7072">GPIO_QSPI_SD2_CTRL</a></td></tr>
+<tr class="memdesc:a0515150334fa33af42191d03793a7072"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO control including function select and overrides.  <br /></td></tr>
+<tr class="separator:a0515150334fa33af42191d03793a7072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab7e3da37d9b657c7e221753c306dea" id="r_a1ab7e3da37d9b657c7e221753c306dea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a1ab7e3da37d9b657c7e221753c306dea">GPIO_QSPI_SD2_STATUS</a></td></tr>
+<tr class="memdesc:a1ab7e3da37d9b657c7e221753c306dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO status <br  />
+  <br /></td></tr>
+<tr class="separator:a1ab7e3da37d9b657c7e221753c306dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eedba1e806423f4455bb32816a63661" id="r_a6eedba1e806423f4455bb32816a63661"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a6eedba1e806423f4455bb32816a63661">GPIO_QSPI_SD3_CTRL</a></td></tr>
+<tr class="memdesc:a6eedba1e806423f4455bb32816a63661"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO control including function select and overrides.  <br /></td></tr>
+<tr class="separator:a6eedba1e806423f4455bb32816a63661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d7e436be41f00180bfac93b917bc2a" id="r_a78d7e436be41f00180bfac93b917bc2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a78d7e436be41f00180bfac93b917bc2a">GPIO_QSPI_SD3_STATUS</a></td></tr>
+<tr class="memdesc:a78d7e436be41f00180bfac93b917bc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO status <br  />
+  <br /></td></tr>
+<tr class="separator:a78d7e436be41f00180bfac93b917bc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601d663dac082205dce03d662ab7357c" id="r_a601d663dac082205dce03d662ab7357c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a601d663dac082205dce03d662ab7357c">GPIO_QSPI_SS_CTRL</a></td></tr>
+<tr class="memdesc:a601d663dac082205dce03d662ab7357c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO control including function select and overrides.  <br /></td></tr>
+<tr class="separator:a601d663dac082205dce03d662ab7357c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483090af624ddafba3f3e94346ea21e8" id="r_a483090af624ddafba3f3e94346ea21e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a483090af624ddafba3f3e94346ea21e8">GPIO_QSPI_SS_STATUS</a></td></tr>
+<tr class="memdesc:a483090af624ddafba3f3e94346ea21e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO status <br  />
+  <br /></td></tr>
+<tr class="separator:a483090af624ddafba3f3e94346ea21e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c434cc12f9cd183f5922165e04c5cd7" id="r_a7c434cc12f9cd183f5922165e04c5cd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a7c434cc12f9cd183f5922165e04c5cd7">INTR</a></td></tr>
+<tr class="memdesc:a7c434cc12f9cd183f5922165e04c5cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupts <br  />
+  <br /></td></tr>
+<tr class="separator:a7c434cc12f9cd183f5922165e04c5cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72e8d9c4d019caa247810f5c8186be6" id="r_ac72e8d9c4d019caa247810f5c8186be6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#ac72e8d9c4d019caa247810f5c8186be6">IRQSUMMARY_DORMANT_WAKE_NONSECURE</a></td></tr>
+<tr class="memdesc:ac72e8d9c4d019caa247810f5c8186be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQSUMMARY_DORMANT_WAKE_NONSECURE <br  />
+  <br /></td></tr>
+<tr class="separator:ac72e8d9c4d019caa247810f5c8186be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c391ce0d2c24e616aa4aef6d6e2e07" id="r_a72c391ce0d2c24e616aa4aef6d6e2e07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a72c391ce0d2c24e616aa4aef6d6e2e07">IRQSUMMARY_DORMANT_WAKE_SECURE</a></td></tr>
+<tr class="memdesc:a72c391ce0d2c24e616aa4aef6d6e2e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQSUMMARY_DORMANT_WAKE_SECURE <br  />
+  <br /></td></tr>
+<tr class="separator:a72c391ce0d2c24e616aa4aef6d6e2e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465ffc3b84407f1255f003bbc7d61b89" id="r_a465ffc3b84407f1255f003bbc7d61b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a465ffc3b84407f1255f003bbc7d61b89">IRQSUMMARY_PROC0_NONSECURE</a></td></tr>
+<tr class="memdesc:a465ffc3b84407f1255f003bbc7d61b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQSUMMARY_PROC0_NONSECURE <br  />
+  <br /></td></tr>
+<tr class="separator:a465ffc3b84407f1255f003bbc7d61b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af641f2cedc4952aa99fdab9dd19bc003" id="r_af641f2cedc4952aa99fdab9dd19bc003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#af641f2cedc4952aa99fdab9dd19bc003">IRQSUMMARY_PROC0_SECURE</a></td></tr>
+<tr class="memdesc:af641f2cedc4952aa99fdab9dd19bc003"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQSUMMARY_PROC0_SECURE <br  />
+  <br /></td></tr>
+<tr class="separator:af641f2cedc4952aa99fdab9dd19bc003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d1d5fb3f154dce1b86160d0723abf9" id="r_a96d1d5fb3f154dce1b86160d0723abf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a96d1d5fb3f154dce1b86160d0723abf9">IRQSUMMARY_PROC1_NONSECURE</a></td></tr>
+<tr class="memdesc:a96d1d5fb3f154dce1b86160d0723abf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQSUMMARY_PROC1_NONSECURE <br  />
+  <br /></td></tr>
+<tr class="separator:a96d1d5fb3f154dce1b86160d0723abf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8fc0d8e911b35034243cee5e3548897" id="r_aa8fc0d8e911b35034243cee5e3548897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#aa8fc0d8e911b35034243cee5e3548897">IRQSUMMARY_PROC1_SECURE</a></td></tr>
+<tr class="memdesc:aa8fc0d8e911b35034243cee5e3548897"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQSUMMARY_PROC1_SECURE <br  />
+  <br /></td></tr>
+<tr class="separator:aa8fc0d8e911b35034243cee5e3548897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e33eea52fc14aa860d14037a273c65" id="r_a49e33eea52fc14aa860d14037a273c65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a49e33eea52fc14aa860d14037a273c65">PROC0_INTE</a></td></tr>
+<tr class="memdesc:a49e33eea52fc14aa860d14037a273c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable for proc0 <br  />
+  <br /></td></tr>
+<tr class="separator:a49e33eea52fc14aa860d14037a273c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ce73b0dde9cc4fbdcaa680a1da8db7" id="r_a17ce73b0dde9cc4fbdcaa680a1da8db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a17ce73b0dde9cc4fbdcaa680a1da8db7">PROC0_INTF</a></td></tr>
+<tr class="memdesc:a17ce73b0dde9cc4fbdcaa680a1da8db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force for proc0 <br  />
+  <br /></td></tr>
+<tr class="separator:a17ce73b0dde9cc4fbdcaa680a1da8db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64789ae5c38f464ae20cafcf6db347cf" id="r_a64789ae5c38f464ae20cafcf6db347cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a64789ae5c38f464ae20cafcf6db347cf">PROC0_INTS</a></td></tr>
+<tr class="memdesc:a64789ae5c38f464ae20cafcf6db347cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing for proc0 <br  />
+  <br /></td></tr>
+<tr class="separator:a64789ae5c38f464ae20cafcf6db347cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa9b1274ce398429213b96c600626a4" id="r_abaa9b1274ce398429213b96c600626a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#abaa9b1274ce398429213b96c600626a4">PROC1_INTE</a></td></tr>
+<tr class="memdesc:abaa9b1274ce398429213b96c600626a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable for proc1 <br  />
+  <br /></td></tr>
+<tr class="separator:abaa9b1274ce398429213b96c600626a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e823566fcd6aeac9932422734351e2" id="r_a46e823566fcd6aeac9932422734351e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a46e823566fcd6aeac9932422734351e2">PROC1_INTF</a></td></tr>
+<tr class="memdesc:a46e823566fcd6aeac9932422734351e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force for proc1 <br  />
+  <br /></td></tr>
+<tr class="separator:a46e823566fcd6aeac9932422734351e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efcc63054f53ca4155c00f0f288e4bd" id="r_a7efcc63054f53ca4155c00f0f288e4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a7efcc63054f53ca4155c00f0f288e4bd">PROC1_INTS</a></td></tr>
+<tr class="memdesc:a7efcc63054f53ca4155c00f0f288e4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing for proc1 <br  />
+  <br /></td></tr>
+<tr class="separator:a7efcc63054f53ca4155c00f0f288e4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c31da06063ef4f25289405b6a46b479" id="r_a3c31da06063ef4f25289405b6a46b479"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a3c31da06063ef4f25289405b6a46b479">RESERVED</a> [112]</td></tr>
+<tr class="separator:a3c31da06063ef4f25289405b6a46b479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc4657a4625838e9535f0974201bb26" id="r_a1cc4657a4625838e9535f0974201bb26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a1cc4657a4625838e9535f0974201bb26">USBPHY_DM_CTRL</a></td></tr>
+<tr class="memdesc:a1cc4657a4625838e9535f0974201bb26"><td class="mdescLeft">&#160;</td><td class="mdescRight">USBPHY_DM_CTRL <br  />
+  <br /></td></tr>
+<tr class="separator:a1cc4657a4625838e9535f0974201bb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4764f1a888c0a9d148cf26690e7f1d3f" id="r_a4764f1a888c0a9d148cf26690e7f1d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a4764f1a888c0a9d148cf26690e7f1d3f">USBPHY_DM_STATUS</a></td></tr>
+<tr class="memdesc:a4764f1a888c0a9d148cf26690e7f1d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">USBPHY_DM_STATUS <br  />
+  <br /></td></tr>
+<tr class="separator:a4764f1a888c0a9d148cf26690e7f1d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe976b858b7a90791deae77602fee2dd" id="r_abe976b858b7a90791deae77602fee2dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#abe976b858b7a90791deae77602fee2dd">USBPHY_DP_CTRL</a></td></tr>
+<tr class="memdesc:abe976b858b7a90791deae77602fee2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">USBPHY_DP_CTRL <br  />
+  <br /></td></tr>
+<tr class="separator:abe976b858b7a90791deae77602fee2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17bb111a63517f347915194014995fba" id="r_a17bb111a63517f347915194014995fba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIO__QSPI__Type.html#a17bb111a63517f347915194014995fba">USBPHY_DP_STATUS</a></td></tr>
+<tr class="memdesc:a17bb111a63517f347915194014995fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; IO_QSPI Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a17bb111a63517f347915194014995fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>IO_QSPI (IO_QSPI) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="ad9848436240da4b037f9e0e79569901d" name="ad9848436240da4b037f9e0e79569901d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9848436240da4b037f9e0e79569901d">&#9670;&#160;</a></span>DORMANT_WAKE_INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::DORMANT_WAKE_INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable for dormant_wake <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1b74166b1589bdfff7fc97e86c2a2693" name="a1b74166b1589bdfff7fc97e86c2a2693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b74166b1589bdfff7fc97e86c2a2693">&#9670;&#160;</a></span>DORMANT_WAKE_INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::DORMANT_WAKE_INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force for dormant_wake <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9fe4b1aea50046e60db3702d55856b7c" name="a9fe4b1aea50046e60db3702d55856b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe4b1aea50046e60db3702d55856b7c">&#9670;&#160;</a></span>DORMANT_WAKE_INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::DORMANT_WAKE_INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing for dormant_wake <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab692465fe7d012b25ee514f0e5ddf92c" name="ab692465fe7d012b25ee514f0e5ddf92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab692465fe7d012b25ee514f0e5ddf92c">&#9670;&#160;</a></span>GPIO_QSPI_SCLK_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SCLK_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO control including function select and overrides. </p>
+<p>GPIO_QSPI_SCLK_CTRL <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="affe50b20d4f8e9c95b419453a25d35b0" name="affe50b20d4f8e9c95b419453a25d35b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affe50b20d4f8e9c95b419453a25d35b0">&#9670;&#160;</a></span>GPIO_QSPI_SCLK_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SCLK_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; IO_QSPI Structure <br  />
+ </p>
+<p>GPIO_QSPI_SCLK_STATUS <br  />
+</p>
+<p>GPIO status <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9c9686aebba7768fa8f23e9e09d98e90" name="a9c9686aebba7768fa8f23e9e09d98e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9686aebba7768fa8f23e9e09d98e90">&#9670;&#160;</a></span>GPIO_QSPI_SD0_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD0_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO control including function select and overrides. </p>
+<p>GPIO_QSPI_SD0_CTRL <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ae10b18a8440d93116425cf2977528b95" name="ae10b18a8440d93116425cf2977528b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10b18a8440d93116425cf2977528b95">&#9670;&#160;</a></span>GPIO_QSPI_SD0_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD0_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO status <br  />
+ </p>
+<p>GPIO_QSPI_SD0_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab6ccb846c6cecda41f6b2e3fec0e9444" name="ab6ccb846c6cecda41f6b2e3fec0e9444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ccb846c6cecda41f6b2e3fec0e9444">&#9670;&#160;</a></span>GPIO_QSPI_SD1_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD1_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO control including function select and overrides. </p>
+<p>GPIO_QSPI_SD1_CTRL <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="aaa2205cd93b2cd2855250fcbe0698cd5" name="aaa2205cd93b2cd2855250fcbe0698cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2205cd93b2cd2855250fcbe0698cd5">&#9670;&#160;</a></span>GPIO_QSPI_SD1_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD1_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO status <br  />
+ </p>
+<p>GPIO_QSPI_SD1_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0515150334fa33af42191d03793a7072" name="a0515150334fa33af42191d03793a7072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0515150334fa33af42191d03793a7072">&#9670;&#160;</a></span>GPIO_QSPI_SD2_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD2_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO control including function select and overrides. </p>
+<p>GPIO_QSPI_SD2_CTRL <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a1ab7e3da37d9b657c7e221753c306dea" name="a1ab7e3da37d9b657c7e221753c306dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab7e3da37d9b657c7e221753c306dea">&#9670;&#160;</a></span>GPIO_QSPI_SD2_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD2_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO status <br  />
+ </p>
+<p>GPIO_QSPI_SD2_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6eedba1e806423f4455bb32816a63661" name="a6eedba1e806423f4455bb32816a63661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eedba1e806423f4455bb32816a63661">&#9670;&#160;</a></span>GPIO_QSPI_SD3_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD3_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO control including function select and overrides. </p>
+<p>GPIO_QSPI_SD3_CTRL <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a78d7e436be41f00180bfac93b917bc2a" name="a78d7e436be41f00180bfac93b917bc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d7e436be41f00180bfac93b917bc2a">&#9670;&#160;</a></span>GPIO_QSPI_SD3_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SD3_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO status <br  />
+ </p>
+<p>GPIO_QSPI_SD3_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="a601d663dac082205dce03d662ab7357c" name="a601d663dac082205dce03d662ab7357c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601d663dac082205dce03d662ab7357c">&#9670;&#160;</a></span>GPIO_QSPI_SS_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SS_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO control including function select and overrides. </p>
+<p>GPIO_QSPI_SS_CTRL <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a483090af624ddafba3f3e94346ea21e8" name="a483090af624ddafba3f3e94346ea21e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483090af624ddafba3f3e94346ea21e8">&#9670;&#160;</a></span>GPIO_QSPI_SS_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::GPIO_QSPI_SS_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO status <br  />
+ </p>
+<p>GPIO_QSPI_SS_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7c434cc12f9cd183f5922165e04c5cd7" name="a7c434cc12f9cd183f5922165e04c5cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c434cc12f9cd183f5922165e04c5cd7">&#9670;&#160;</a></span>INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupts <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac72e8d9c4d019caa247810f5c8186be6" name="ac72e8d9c4d019caa247810f5c8186be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72e8d9c4d019caa247810f5c8186be6">&#9670;&#160;</a></span>IRQSUMMARY_DORMANT_WAKE_NONSECURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::IRQSUMMARY_DORMANT_WAKE_NONSECURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRQSUMMARY_DORMANT_WAKE_NONSECURE <br  />
+ </p>
+
+</div>
+</div>
+<a id="a72c391ce0d2c24e616aa4aef6d6e2e07" name="a72c391ce0d2c24e616aa4aef6d6e2e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72c391ce0d2c24e616aa4aef6d6e2e07">&#9670;&#160;</a></span>IRQSUMMARY_DORMANT_WAKE_SECURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::IRQSUMMARY_DORMANT_WAKE_SECURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRQSUMMARY_DORMANT_WAKE_SECURE <br  />
+ </p>
+
+</div>
+</div>
+<a id="a465ffc3b84407f1255f003bbc7d61b89" name="a465ffc3b84407f1255f003bbc7d61b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465ffc3b84407f1255f003bbc7d61b89">&#9670;&#160;</a></span>IRQSUMMARY_PROC0_NONSECURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::IRQSUMMARY_PROC0_NONSECURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRQSUMMARY_PROC0_NONSECURE <br  />
+ </p>
+
+</div>
+</div>
+<a id="af641f2cedc4952aa99fdab9dd19bc003" name="af641f2cedc4952aa99fdab9dd19bc003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af641f2cedc4952aa99fdab9dd19bc003">&#9670;&#160;</a></span>IRQSUMMARY_PROC0_SECURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::IRQSUMMARY_PROC0_SECURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRQSUMMARY_PROC0_SECURE <br  />
+ </p>
+
+</div>
+</div>
+<a id="a96d1d5fb3f154dce1b86160d0723abf9" name="a96d1d5fb3f154dce1b86160d0723abf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d1d5fb3f154dce1b86160d0723abf9">&#9670;&#160;</a></span>IRQSUMMARY_PROC1_NONSECURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::IRQSUMMARY_PROC1_NONSECURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRQSUMMARY_PROC1_NONSECURE <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa8fc0d8e911b35034243cee5e3548897" name="aa8fc0d8e911b35034243cee5e3548897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fc0d8e911b35034243cee5e3548897">&#9670;&#160;</a></span>IRQSUMMARY_PROC1_SECURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::IRQSUMMARY_PROC1_SECURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRQSUMMARY_PROC1_SECURE <br  />
+ </p>
+
+</div>
+</div>
+<a id="a49e33eea52fc14aa860d14037a273c65" name="a49e33eea52fc14aa860d14037a273c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e33eea52fc14aa860d14037a273c65">&#9670;&#160;</a></span>PROC0_INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::PROC0_INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable for proc0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a17ce73b0dde9cc4fbdcaa680a1da8db7" name="a17ce73b0dde9cc4fbdcaa680a1da8db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ce73b0dde9cc4fbdcaa680a1da8db7">&#9670;&#160;</a></span>PROC0_INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::PROC0_INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force for proc0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a64789ae5c38f464ae20cafcf6db347cf" name="a64789ae5c38f464ae20cafcf6db347cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64789ae5c38f464ae20cafcf6db347cf">&#9670;&#160;</a></span>PROC0_INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::PROC0_INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing for proc0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="abaa9b1274ce398429213b96c600626a4" name="abaa9b1274ce398429213b96c600626a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa9b1274ce398429213b96c600626a4">&#9670;&#160;</a></span>PROC1_INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::PROC1_INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable for proc1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a46e823566fcd6aeac9932422734351e2" name="a46e823566fcd6aeac9932422734351e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e823566fcd6aeac9932422734351e2">&#9670;&#160;</a></span>PROC1_INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::PROC1_INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force for proc1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7efcc63054f53ca4155c00f0f288e4bd" name="a7efcc63054f53ca4155c00f0f288e4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efcc63054f53ca4155c00f0f288e4bd">&#9670;&#160;</a></span>PROC1_INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::PROC1_INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing for proc1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a3c31da06063ef4f25289405b6a46b479" name="a3c31da06063ef4f25289405b6a46b479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c31da06063ef4f25289405b6a46b479">&#9670;&#160;</a></span>RESERVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::RESERVED[112]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cc4657a4625838e9535f0974201bb26" name="a1cc4657a4625838e9535f0974201bb26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc4657a4625838e9535f0974201bb26">&#9670;&#160;</a></span>USBPHY_DM_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::USBPHY_DM_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USBPHY_DM_CTRL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4764f1a888c0a9d148cf26690e7f1d3f" name="a4764f1a888c0a9d148cf26690e7f1d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4764f1a888c0a9d148cf26690e7f1d3f">&#9670;&#160;</a></span>USBPHY_DM_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::USBPHY_DM_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USBPHY_DM_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<a id="abe976b858b7a90791deae77602fee2dd" name="abe976b858b7a90791deae77602fee2dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe976b858b7a90791deae77602fee2dd">&#9670;&#160;</a></span>USBPHY_DP_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::USBPHY_DP_CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USBPHY_DP_CTRL <br  />
+ </p>
+
+</div>
+</div>
+<a id="a17bb111a63517f347915194014995fba" name="a17bb111a63517f347915194014995fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17bb111a63517f347915194014995fba">&#9670;&#160;</a></span>USBPHY_DP_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> IO_QSPI_Type::USBPHY_DP_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; IO_QSPI Structure <br  />
+ </p>
+<p>USBPHY_DP_STATUS <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structIO__QSPI__Type.html">IO_QSPI_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

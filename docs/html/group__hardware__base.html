@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: hardware_base</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__hardware__base.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_base</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Low-level types and (atomic) accessors for memory-mapped hardware registers.  
+<a href="#details">Mais...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Low-level types and (atomic) accessors for memory-mapped hardware registers. </p>
+<p><code>hardware_base</code> defines the low level types and access functions for memory mapped hardware registers. It is included by default by all other hardware libraries.</p>
+<p>The following register access typedefs codify the access type (read/write) and the bus size (8/16/32) of the hardware register. The register type names are formed by concatenating one from each of the 3 parts A, B, C</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">A   </th><th class="markdownTableHeadNone">B   </th><th class="markdownTableHeadNone">C   </th><th class="markdownTableHeadNone">Meaning    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">io_   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">A Memory mapped IO register    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&#160;   </td><td class="markdownTableBodyNone">ro_   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">read-only access    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">&#160;   </td><td class="markdownTableBodyNone">rw_   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">read-write access    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&#160;   </td><td class="markdownTableBodyNone">wo_   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">write-only access (can't actually be enforced via C API)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">&#160;   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">8-bit wide access    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&#160;   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">16   </td><td class="markdownTableBodyNone">16-bit wide access    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">&#160;   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">32   </td><td class="markdownTableBodyNone">32-bit wide access   </td></tr>
+</table>
+<p>When dealing with these types, you will always use a pointer, i.e. <code>io_rw_32 *some_reg</code> is a pointer to a read/write 32 bit register that you can write with <code>*some_reg = value</code>, or read with <code>value = *some_reg</code>.</p>
+<p>RP-series hardware is also aliased to provide atomic setting, clear or flipping of a subset of the bits within a hardware register so that concurrent access by two cores is always consistent with one atomic operation being performed first, followed by the second.</p>
+<p>See hw_set_bits(), hw_clear_bits() and hw_xor_bits() provide for atomic access via a pointer to a 32 bit register</p>
+<p>Additionally given a pointer to a structure representing a piece of hardware (e.g. <code><a class="el" href="structdma__hw__t.html">dma_hw_t</a> *dma_hw</code> for the DMA controller), you can get an alias to the entire structure such that writing any member (register) within the structure is equivalent to an atomic operation via <a class="el" href="address__mapped_8h.html#a9205f11baca80bc0aa1435f9ce3864e0">hw_set_alias()</a>, <a class="el" href="address__mapped_8h.html#a14dfbc3e74dadf8a94253d8cf0853d8d">hw_clear_alias()</a> or <a class="el" href="address__mapped_8h.html#a667f72e45df0515a9d37daea5121927c">hw_xor_alias()</a>...</p>
+<p>For example <code><a class="el" href="address__mapped_8h.html#a9205f11baca80bc0aa1435f9ce3864e0">hw_set_alias(dma_hw)</a>-&gt;inte1 = 0x80;</code> will set bit 7 of the INTE1 register of the DMA controller, leaving the other bits unchanged. </p>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

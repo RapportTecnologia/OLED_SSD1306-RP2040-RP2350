@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro aon_timer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('aon__timer_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro aon_timer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico.h&quot;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="datetime_8h_source.html">pico/util/datetime.h</a>&quot;</code><br />
+<code>#include &quot;hardware/regs/intctrl.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para aon_timer.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="aon__timer_8h__incl.svg" width="508" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="aon__timer_8h__dep__incl.svg" width="111" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="aon__timer_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:a9f54d081a58f284678b04e910e11842b" id="r_a9f54d081a58f284678b04e910e11842b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aon__timer_8h.html#a9f54d081a58f284678b04e910e11842b">aon_timer_alarm_handler_t</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a9f54d081a58f284678b04e910e11842b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga20cda0289aab2eb5fda914704a1fc2a7" id="r_ga20cda0289aab2eb5fda914704a1fc2a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga20cda0289aab2eb5fda914704a1fc2a7">aon_timer_disable_alarm</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga20cda0289aab2eb5fda914704a1fc2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the currently enabled AON timer alarm if any.  <br /></td></tr>
+<tr class="separator:ga20cda0289aab2eb5fda914704a1fc2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39dab1da58c2f8178024b233e335d059" id="r_ga39dab1da58c2f8178024b233e335d059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aon__timer_8h.html#a9f54d081a58f284678b04e910e11842b">aon_timer_alarm_handler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga39dab1da58c2f8178024b233e335d059">aon_timer_enable_alarm</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timespec</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ts</a>, <a class="el" href="aon__timer_8h.html#a9f54d081a58f284678b04e910e11842b">aon_timer_alarm_handler_t</a> handler, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">wakeup_from_low_power</a>)</td></tr>
+<tr class="memdesc:ga39dab1da58c2f8178024b233e335d059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable an AON timer alarm for a specified time.  <br /></td></tr>
+<tr class="separator:ga39dab1da58c2f8178024b233e335d059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfecbe6df690a2a10194920ba7db8d3f" id="r_gabfecbe6df690a2a10194920ba7db8d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="aon__timer_8h.html#a9f54d081a58f284678b04e910e11842b">aon_timer_alarm_handler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#gabfecbe6df690a2a10194920ba7db8d3f">aon_timer_enable_alarm_calendar</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a>, <a class="el" href="aon__timer_8h.html#a9f54d081a58f284678b04e910e11842b">aon_timer_alarm_handler_t</a> handler, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">wakeup_from_low_power</a>)</td></tr>
+<tr class="memdesc:gabfecbe6df690a2a10194920ba7db8d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable an AON timer alarm for a specified calendar date/time.  <br /></td></tr>
+<tr class="separator:gabfecbe6df690a2a10194920ba7db8d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e17d6adde0e3b25c70c04970116ccb8" id="r_ga6e17d6adde0e3b25c70c04970116ccb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga6e17d6adde0e3b25c70c04970116ccb8">aon_timer_get_resolution</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timespec</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ts</a>)</td></tr>
+<tr class="memdesc:ga6e17d6adde0e3b25c70c04970116ccb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the resolution of the AON timer.  <br /></td></tr>
+<tr class="separator:ga6e17d6adde0e3b25c70c04970116ccb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48246c7cd89f2f599f9d3405d1b62185" id="r_ga48246c7cd89f2f599f9d3405d1b62185"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga48246c7cd89f2f599f9d3405d1b62185">aon_timer_get_time</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timespec</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ts</a>)</td></tr>
+<tr class="memdesc:ga48246c7cd89f2f599f9d3405d1b62185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current time of the AON timer.  <br /></td></tr>
+<tr class="separator:ga48246c7cd89f2f599f9d3405d1b62185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ed3f772e4fcab66dadb7654f1fa47ef" id="r_ga5ed3f772e4fcab66dadb7654f1fa47ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga5ed3f772e4fcab66dadb7654f1fa47ef">aon_timer_get_time_calendar</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a>)</td></tr>
+<tr class="memdesc:ga5ed3f772e4fcab66dadb7654f1fa47ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current time of the AON timer as a calendar date/time.  <br /></td></tr>
+<tr class="separator:ga5ed3f772e4fcab66dadb7654f1fa47ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga134ec8ae2a5f2a9b29b9bc4fb6c87493" id="r_ga134ec8ae2a5f2a9b29b9bc4fb6c87493"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga134ec8ae2a5f2a9b29b9bc4fb6c87493">aon_timer_is_running</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga134ec8ae2a5f2a9b29b9bc4fb6c87493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the AON timer is running.  <br /></td></tr>
+<tr class="separator:ga134ec8ae2a5f2a9b29b9bc4fb6c87493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9503489fbd3c6afc1d4e67e3c3ae1dc" id="r_gaa9503489fbd3c6afc1d4e67e3c3ae1dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#gaa9503489fbd3c6afc1d4e67e3c3ae1dc">aon_timer_set_time</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timespec</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ts</a>)</td></tr>
+<tr class="memdesc:gaa9503489fbd3c6afc1d4e67e3c3ae1dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current time of the AON timer.  <br /></td></tr>
+<tr class="separator:gaa9503489fbd3c6afc1d4e67e3c3ae1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3b326fe02569768b09f37080f0d85e3" id="r_gae3b326fe02569768b09f37080f0d85e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#gae3b326fe02569768b09f37080f0d85e3">aon_timer_set_time_calendar</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a>)</td></tr>
+<tr class="memdesc:gae3b326fe02569768b09f37080f0d85e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current time of the AON timer to the given calendar date/time.  <br /></td></tr>
+<tr class="separator:gae3b326fe02569768b09f37080f0d85e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d9876f6ebad5960e8d7928b87d6b8ca" id="r_ga1d9876f6ebad5960e8d7928b87d6b8ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga1d9876f6ebad5960e8d7928b87d6b8ca">aon_timer_start</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">timespec</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ts</a>)</td></tr>
+<tr class="memdesc:ga1d9876f6ebad5960e8d7928b87d6b8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the AON timer running using the specified timespec as the current time.  <br /></td></tr>
+<tr class="separator:ga1d9876f6ebad5960e8d7928b87d6b8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25e4ac9d9553d35646af544277ca9e4e" id="r_ga25e4ac9d9553d35646af544277ca9e4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga25e4ac9d9553d35646af544277ca9e4e">aon_timer_start_calendar</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tm</a>)</td></tr>
+<tr class="memdesc:ga25e4ac9d9553d35646af544277ca9e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the AON timer running using the specified calendar date/time as the current time.  <br /></td></tr>
+<tr class="separator:ga25e4ac9d9553d35646af544277ca9e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32e4d69ae8c5b2048af84cf706b8b997" id="r_ga32e4d69ae8c5b2048af84cf706b8b997"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#ga32e4d69ae8c5b2048af84cf706b8b997">aon_timer_start_with_timeofday</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga32e4d69ae8c5b2048af84cf706b8b997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the AON timer running using the result from the <a class="el" href="rp2__common_2pico__clib__interface_2include_2llvm__libc_2sys_2time_8h.html#aad10206227978f5f97dcc812289a758f">gettimeofday()</a> function as the current time.  <br /></td></tr>
+<tr class="separator:ga32e4d69ae8c5b2048af84cf706b8b997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad98990deb5ce061e3cac6ef7cc69fc5" id="r_gaad98990deb5ce061e3cac6ef7cc69fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__aon__timer.html#gaad98990deb5ce061e3cac6ef7cc69fc5">aon_timer_stop</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gaad98990deb5ce061e3cac6ef7cc69fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the AON timer.  <br /></td></tr>
+<tr class="separator:gaad98990deb5ce061e3cac6ef7cc69fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="a9f54d081a58f284678b04e910e11842b" name="a9f54d081a58f284678b04e910e11842b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f54d081a58f284678b04e910e11842b">&#9670;&#160;</a></span>aon_timer_alarm_handler_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* aon_timer_alarm_handler_t) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_27f34e078ae06cf2eb72d256dc720ae6.html">pico_aon_timer</a></li><li class="navelem"><a class="el" href="dir_af54019ee33ecd32f38f6582896eb599.html">include</a></li><li class="navelem"><a class="el" href="dir_25ab084db178c9cbfd0adcae43e27a73.html">pico</a></li><li class="navelem"><a class="el" href="aon__timer_8h.html">aon_timer.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

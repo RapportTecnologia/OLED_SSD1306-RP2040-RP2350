@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura DWT_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structDWT__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structDWT__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura DWT_Type<div class="ingroups"><a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &#124; <a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &raquo; <a class="el" href="group__CMSIS__SCnSCB.html">System Controls not in SCB (SCnSCB)</a> &raquo; <a class="el" href="group__CMSIS__SysTick.html">System Tick Timer (SysTick)</a> &raquo; <a class="el" href="group__CMSIS__ITM.html">Instrumentation Trace Macrocell (ITM)</a> &raquo; <a class="el" href="group__CMSIS__DWT.html">Data Watchpoint and Trace (DWT)</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Structure type to access the Data Watchpoint and Trace Register (DWT).  
+ <a href="structDWT__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="core__cm33_8h_source.html">core_cm33.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para DWT_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structDWT__Type__coll__graph.svg" width="116" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ga61c2965af5bc0643f9af65620b0e67c9" id="r_ga61c2965af5bc0643f9af65620b0e67c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga61c2965af5bc0643f9af65620b0e67c9">COMP0</a></td></tr>
+<tr class="memdesc:ga61c2965af5bc0643f9af65620b0e67c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x020 (R/W) Comparator Register 0.  <br /></td></tr>
+<tr class="separator:ga61c2965af5bc0643f9af65620b0e67c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38714af6b7fa7c64d68f5e1efbe7a931" id="r_ga38714af6b7fa7c64d68f5e1efbe7a931"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga38714af6b7fa7c64d68f5e1efbe7a931">COMP1</a></td></tr>
+<tr class="memdesc:ga38714af6b7fa7c64d68f5e1efbe7a931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x030 (R/W) Comparator Register 1.  <br /></td></tr>
+<tr class="separator:ga38714af6b7fa7c64d68f5e1efbe7a931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ae6dde39989f27bae90afc2347deb46" id="r_ga5ae6dde39989f27bae90afc2347deb46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga5ae6dde39989f27bae90afc2347deb46">COMP2</a></td></tr>
+<tr class="memdesc:ga5ae6dde39989f27bae90afc2347deb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x040 (R/W) Comparator Register 2.  <br /></td></tr>
+<tr class="separator:ga5ae6dde39989f27bae90afc2347deb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85eb73d1848ac3f82d39d6c3e8910847" id="r_ga85eb73d1848ac3f82d39d6c3e8910847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga85eb73d1848ac3f82d39d6c3e8910847">COMP3</a></td></tr>
+<tr class="memdesc:ga85eb73d1848ac3f82d39d6c3e8910847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x050 (R/W) Comparator Register 3.  <br /></td></tr>
+<tr class="separator:ga85eb73d1848ac3f82d39d6c3e8910847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c08096c82abe245c0fa97badc458154" id="r_ga2c08096c82abe245c0fa97badc458154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga2c08096c82abe245c0fa97badc458154">CPICNT</a></td></tr>
+<tr class="memdesc:ga2c08096c82abe245c0fa97badc458154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x008 (R/W) CPI Count Register.  <br /></td></tr>
+<tr class="separator:ga2c08096c82abe245c0fa97badc458154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd790c53410023b3b581919bb681fe2a" id="r_gadd790c53410023b3b581919bb681fe2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gadd790c53410023b3b581919bb681fe2a">CTRL</a></td></tr>
+<tr class="memdesc:gadd790c53410023b3b581919bb681fe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x000 (R/W) Control Register.  <br /></td></tr>
+<tr class="separator:gadd790c53410023b3b581919bb681fe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga102eaa529d9098242851cb57c52b42d9" id="r_ga102eaa529d9098242851cb57c52b42d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga102eaa529d9098242851cb57c52b42d9">CYCCNT</a></td></tr>
+<tr class="memdesc:ga102eaa529d9098242851cb57c52b42d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x004 (R/W) Cycle Count Register.  <br /></td></tr>
+<tr class="separator:ga102eaa529d9098242851cb57c52b42d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae60dbff3143d15cd04ac984084d8fbc7" id="r_gae60dbff3143d15cd04ac984084d8fbc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gae60dbff3143d15cd04ac984084d8fbc7">DEVARCH</a></td></tr>
+<tr class="memdesc:gae60dbff3143d15cd04ac984084d8fbc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xFBC (R/ ) Device Type Architecture Register.  <br /></td></tr>
+<tr class="separator:gae60dbff3143d15cd04ac984084d8fbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b56831e6eacbf93af51fd922dd5bb39" id="r_ga5b56831e6eacbf93af51fd922dd5bb39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga5b56831e6eacbf93af51fd922dd5bb39">DEVTYPE</a></td></tr>
+<tr class="memdesc:ga5b56831e6eacbf93af51fd922dd5bb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0xFCC (R/ ) Device Type Identifier Register.  <br /></td></tr>
+<tr class="separator:ga5b56831e6eacbf93af51fd922dd5bb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fe20c16c5167ca61486caf6832686d1" id="r_ga9fe20c16c5167ca61486caf6832686d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga9fe20c16c5167ca61486caf6832686d1">EXCCNT</a></td></tr>
+<tr class="memdesc:ga9fe20c16c5167ca61486caf6832686d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x00C (R/W) Exception Overhead Count Register.  <br /></td></tr>
+<tr class="separator:ga9fe20c16c5167ca61486caf6832686d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cfc48384ebd8fd8fb7e5d955aae6c97" id="r_ga1cfc48384ebd8fd8fb7e5d955aae6c97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga1cfc48384ebd8fd8fb7e5d955aae6c97">FOLDCNT</a></td></tr>
+<tr class="memdesc:ga1cfc48384ebd8fd8fb7e5d955aae6c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x018 (R/W) Folded-instruction Count Register.  <br /></td></tr>
+<tr class="separator:ga1cfc48384ebd8fd8fb7e5d955aae6c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga579ae082f58a0317b7ef029b20f52889" id="r_ga579ae082f58a0317b7ef029b20f52889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga579ae082f58a0317b7ef029b20f52889">FUNCTION0</a></td></tr>
+<tr class="memdesc:ga579ae082f58a0317b7ef029b20f52889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x028 (R/W) Function Register 0.  <br /></td></tr>
+<tr class="separator:ga579ae082f58a0317b7ef029b20f52889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8dfcf25675f9606aa305c46e85182e4e" id="r_ga8dfcf25675f9606aa305c46e85182e4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga8dfcf25675f9606aa305c46e85182e4e">FUNCTION1</a></td></tr>
+<tr class="memdesc:ga8dfcf25675f9606aa305c46e85182e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x038 (R/W) Function Register 1.  <br /></td></tr>
+<tr class="separator:ga8dfcf25675f9606aa305c46e85182e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1b60d6600c38abae515bab8e86a188f" id="r_gab1b60d6600c38abae515bab8e86a188f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gab1b60d6600c38abae515bab8e86a188f">FUNCTION2</a></td></tr>
+<tr class="memdesc:gab1b60d6600c38abae515bab8e86a188f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x048 (R/W) Function Register 2.  <br /></td></tr>
+<tr class="separator:gab1b60d6600c38abae515bab8e86a188f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52d4ff278fae6f9216c63b74ce328841" id="r_ga52d4ff278fae6f9216c63b74ce328841"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga52d4ff278fae6f9216c63b74ce328841">FUNCTION3</a></td></tr>
+<tr class="memdesc:ga52d4ff278fae6f9216c63b74ce328841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x058 (R/W) Function Register 3.  <br /></td></tr>
+<tr class="separator:ga52d4ff278fae6f9216c63b74ce328841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc05d89bdb1b4fe2fa499920ec02d0b1" id="r_gacc05d89bdb1b4fe2fa499920ec02d0b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gacc05d89bdb1b4fe2fa499920ec02d0b1">LSUCNT</a></td></tr>
+<tr class="memdesc:gacc05d89bdb1b4fe2fa499920ec02d0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x014 (R/W) LSU Count Register.  <br /></td></tr>
+<tr class="separator:gacc05d89bdb1b4fe2fa499920ec02d0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6353ca1d1ad9bc1be05d3b5632960113" id="r_ga6353ca1d1ad9bc1be05d3b5632960113"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#a4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga6353ca1d1ad9bc1be05d3b5632960113">PCSR</a></td></tr>
+<tr class="memdesc:ga6353ca1d1ad9bc1be05d3b5632960113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x01C (R/ ) Program Counter Sample Register.  <br /></td></tr>
+<tr class="separator:ga6353ca1d1ad9bc1be05d3b5632960113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26c25475d569904e70e6b03bd1a0ac83" id="r_ga26c25475d569904e70e6b03bd1a0ac83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga26c25475d569904e70e6b03bd1a0ac83">RESERVED1</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga26c25475d569904e70e6b03bd1a0ac83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac493f53876e3f560c1b2f7d3895dac8e" id="r_gac493f53876e3f560c1b2f7d3895dac8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gac493f53876e3f560c1b2f7d3895dac8e">RESERVED14</a> [984<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:gac493f53876e3f560c1b2f7d3895dac8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d1280f76997911b207560f1b1011e51" id="r_ga7d1280f76997911b207560f1b1011e51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga7d1280f76997911b207560f1b1011e51">RESERVED15</a> [3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga7d1280f76997911b207560f1b1011e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3412a23e092a8802f00b432b1ac711e" id="r_gab3412a23e092a8802f00b432b1ac711e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gab3412a23e092a8802f00b432b1ac711e">RESERVED2</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:gab3412a23e092a8802f00b432b1ac711e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga814e1ac41b7e35167c51f6467a756b8c" id="r_ga814e1ac41b7e35167c51f6467a756b8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga814e1ac41b7e35167c51f6467a756b8c">RESERVED3</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga814e1ac41b7e35167c51f6467a756b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84754823b11acf672a3f2569cff4dff5" id="r_ga84754823b11acf672a3f2569cff4dff5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga84754823b11acf672a3f2569cff4dff5">RESERVED4</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga84754823b11acf672a3f2569cff4dff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f1b1a226562b2bc95961ed85a171137" id="r_ga1f1b1a226562b2bc95961ed85a171137"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga1f1b1a226562b2bc95961ed85a171137">RESERVED5</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:ga1f1b1a226562b2bc95961ed85a171137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd9e3f795e14ea4d185de05382e71d2e" id="r_gabd9e3f795e14ea4d185de05382e71d2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gabd9e3f795e14ea4d185de05382e71d2e">RESERVED6</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:gabd9e3f795e14ea4d185de05382e71d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd358793f092282dd134dabd8e111b26" id="r_gabd358793f092282dd134dabd8e111b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#gabd358793f092282dd134dabd8e111b26">RESERVED7</a> [1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a>]</td></tr>
+<tr class="separator:gabd358793f092282dd134dabd8e111b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga416a54e2084ce66e5ca74f152a5ecc70" id="r_ga416a54e2084ce66e5ca74f152a5ecc70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core__cm33_8h.html#ab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__core__DebugFunctions.html#ga416a54e2084ce66e5ca74f152a5ecc70">SLEEPCNT</a></td></tr>
+<tr class="memdesc:ga416a54e2084ce66e5ca74f152a5ecc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset: 0x010 (R/W) Sleep Count Register.  <br /></td></tr>
+<tr class="separator:ga416a54e2084ce66e5ca74f152a5ecc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Structure type to access the Data Watchpoint and Trace Register (DWT). </p>
+</div><hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="core__cm33_8h_source.html">core_cm33.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structDWT__Type.html">DWT_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

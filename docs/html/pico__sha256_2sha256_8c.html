@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro sha256.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('pico__sha256_2sha256_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro sha256.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;inttypes.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__sha256_2include_2hardware_2sha256_8h_source.html">hardware/sha256.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lock_8h_source.html">pico/bootrom/lock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2pico__sha256_2include_2pico_2sha256_8h_source.html">pico/sha256.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_2pico__time_2include_2pico_2time_8h_source.html">pico/time.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para pico_sha256/sha256.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="pico__sha256_2sha256_8c__incl.svg" width="1759" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1d15f2cbeb873b3d16237831c358f3d1" id="r_a1d15f2cbeb873b3d16237831c358f3d1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pico__sha256_2sha256_8c.html#a1d15f2cbeb873b3d16237831c358f3d1">SHA256_BLOCK_SIZE_BYTES</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a1d15f2cbeb873b3d16237831c358f3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606fba34c40ed1d4b064441a4940deed" id="r_a606fba34c40ed1d4b064441a4940deed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pico__sha256_2sha256_8c.html#a606fba34c40ed1d4b064441a4940deed">SHA256_PADDING_DATA_BYTES</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a606fba34c40ed1d4b064441a4940deed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gadcd9545907188bf72482308ea459036f" id="r_gadcd9545907188bf72482308ea459036f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__sha256.html#gadcd9545907188bf72482308ea459036f">pico_sha256_cleanup</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state)</td></tr>
+<tr class="memdesc:gadcd9545907188bf72482308ea459036f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the internal lock on the SHA-256 hardware.  <br /></td></tr>
+<tr class="separator:gadcd9545907188bf72482308ea459036f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4eac54bf699dba0067a22ae3ef5ae121" id="r_ga4eac54bf699dba0067a22ae3ef5ae121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__sha256.html#ga4eac54bf699dba0067a22ae3ef5ae121">pico_sha256_finish</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state, <a class="el" href="unionsha256__result__t.html">sha256_result_t</a> *<a class="el" href="pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275">out</a>)</td></tr>
+<tr class="memdesc:ga4eac54bf699dba0067a22ae3ef5ae121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish the SHA-256 calculation and return the result.  <br /></td></tr>
+<tr class="separator:ga4eac54bf699dba0067a22ae3ef5ae121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8a9d7765e24ca02cc8c20937fadbed" id="r_a4a8a9d7765e24ca02cc8c20937fadbed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pico__sha256_2sha256_8c.html#a4a8a9d7765e24ca02cc8c20937fadbed">pico_sha256_lock</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state)</td></tr>
+<tr class="separator:a4a8a9d7765e24ca02cc8c20937fadbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e6d3e0a3cb87e32a73757bcda88ebc1" id="r_ga6e6d3e0a3cb87e32a73757bcda88ebc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__sha256.html#ga6e6d3e0a3cb87e32a73757bcda88ebc1">pico_sha256_start_blocking_until</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="group__hardware__sha256.html#gaaf3089af3667088256de5d352973d5e6">sha256_endianness</a> endianness, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">use_dma</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>)</td></tr>
+<tr class="memdesc:ga6e6d3e0a3cb87e32a73757bcda88ebc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a SHA-256 calculation waiting for a defined period for the SHA-256 hardware to be available.  <br /></td></tr>
+<tr class="separator:ga6e6d3e0a3cb87e32a73757bcda88ebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56a125e51ec616f61082cc63c8599dcb" id="r_ga56a125e51ec616f61082cc63c8599dcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__sha256.html#ga56a125e51ec616f61082cc63c8599dcb">pico_sha256_try_start</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a> <a class="el" href="group__hardware__sha256.html#gaaf3089af3667088256de5d352973d5e6">sha256_endianness</a> endianness, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">use_dma</a>)</td></tr>
+<tr class="memdesc:ga56a125e51ec616f61082cc63c8599dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a SHA-256 calculation returning immediately with an error if the SHA-256 hardware is not available.  <br /></td></tr>
+<tr class="separator:ga56a125e51ec616f61082cc63c8599dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66db16daca7471c44257a72e3b9b75ac" id="r_a66db16daca7471c44257a72e3b9b75ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pico__sha256_2sha256_8c.html#a66db16daca7471c44257a72e3b9b75ac">pico_sha256_unlock</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state)</td></tr>
+<tr class="separator:a66db16daca7471c44257a72e3b9b75ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43c112e22aea468ce0551c5078e155cd" id="r_ga43c112e22aea468ce0551c5078e155cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__sha256.html#ga43c112e22aea468ce0551c5078e155cd">pico_sha256_update</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *data, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">data_size_bytes</a>)</td></tr>
+<tr class="memdesc:ga43c112e22aea468ce0551c5078e155cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add byte data to be SHA-256 calculation.  <br /></td></tr>
+<tr class="separator:ga43c112e22aea468ce0551c5078e155cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bf8472019386229c3ba3b6d169b9656" id="r_ga9bf8472019386229c3ba3b6d169b9656"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__sha256.html#ga9bf8472019386229c3ba3b6d169b9656">pico_sha256_update_blocking</a> (<a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *state, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *data, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">data_size_bytes</a>)</td></tr>
+<tr class="memdesc:ga9bf8472019386229c3ba3b6d169b9656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add byte data to be SHA-256 calculation.  <br /></td></tr>
+<tr class="separator:ga9bf8472019386229c3ba3b6d169b9656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a1d15f2cbeb873b3d16237831c358f3d1" name="a1d15f2cbeb873b3d16237831c358f3d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d15f2cbeb873b3d16237831c358f3d1">&#9670;&#160;</a></span>SHA256_BLOCK_SIZE_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SHA256_BLOCK_SIZE_BYTES&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a606fba34c40ed1d4b064441a4940deed" name="a606fba34c40ed1d4b064441a4940deed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606fba34c40ed1d4b064441a4940deed">&#9670;&#160;</a></span>SHA256_PADDING_DATA_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> SHA256_PADDING_DATA_BYTES&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a4a8a9d7765e24ca02cc8c20937fadbed" name="a4a8a9d7765e24ca02cc8c20937fadbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8a9d7765e24ca02cc8c20937fadbed">&#9670;&#160;</a></span>pico_sha256_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> pico_sha256_lock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8fe63b9bde4f9060c59956df65b57941">BOOTROM_LOCK_SHA_256</a> e <a class="el" href="structpico__sha256__state.html#aa40bf7e4fc010b27895a9a841c45b553">pico_sha256_state::locked</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__sha256.html#ga56a125e51ec616f61082cc63c8599dcb">pico_sha256_try_start()</a>.</p>
+
+</div>
+</div>
+<a id="a66db16daca7471c44257a72e3b9b75ac" name="a66db16daca7471c44257a72e3b9b75ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66db16daca7471c44257a72e3b9b75ac">&#9670;&#160;</a></span>pico_sha256_unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> pico_sha256_unlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__pico__sha256.html#gadb68f9eb89ce1a5b795463cd083a30a0">pico_sha256_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8fe63b9bde4f9060c59956df65b57941">BOOTROM_LOCK_SHA_256</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="structpico__sha256__state.html#aa40bf7e4fc010b27895a9a841c45b553">pico_sha256_state::locked</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__sha256.html#gadcd9545907188bf72482308ea459036f">pico_sha256_cleanup()</a>, <a class="el" href="group__pico__sha256.html#ga4eac54bf699dba0067a22ae3ef5ae121">pico_sha256_finish()</a> e <a class="el" href="group__pico__sha256.html#ga56a125e51ec616f61082cc63c8599dcb">pico_sha256_try_start()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_683e644fc9d49de2f438cddd40154917.html">pico_sha256</a></li><li class="navelem"><a class="el" href="pico__sha256_2sha256_8c.html">sha256.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -2,6 +2,8 @@ var ssd1306__i2c_8h =
 [
     [ "render_area", "structrender__area.html", "structrender__area" ],
     [ "ssd1306_t", "structssd1306__t.html", "structssd1306__t" ],
+    [ "_u", "ssd1306__i2c_8h.html#a207037691ec423aa2b8d074958dfbc43", null ],
+    [ "count_of", "ssd1306__i2c_8h.html#a29022c0c92a05cf88ca5046c59d6f629", null ],
     [ "max_text_columns", "ssd1306__i2c_8h.html#abe2b8a2431d0df962a7fe66e9281e6f5", null ],
     [ "max_text_lines", "ssd1306__i2c_8h.html#afe0c35b2c6fdd7e94d1e6e0960448d07", null ],
     [ "ssd1306_buffer_length", "ssd1306__i2c_8h.html#afb3f814b2c3fda31b702360a5c278b87", null ],

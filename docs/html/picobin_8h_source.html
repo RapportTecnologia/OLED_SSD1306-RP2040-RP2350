@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de picobin.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('picobin_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">picobin.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="picobin_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _BOOT_PICOBIN_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _BOOT_PICOBIN_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef NO_PICO_PLATFORM</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;pico/platform.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef _u</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __ASSEMBLER__</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _u(x) x</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define _u(x) x ## u</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// these are designed to not look like (likely) 16/32-bit ARM or RISC-V instructions or look like valid pointers</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="picobin_8h.html#a3fe3d373f32007d1ed6950a6c3b4fa94">   29</a></span><span class="preprocessor">#define PICOBIN_BLOCK_MARKER_START _u(0xffffded3)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="picobin_8h.html#aa1a10acfb8587b44ce4d89da1949f500">   30</a></span><span class="preprocessor">#define PICOBIN_BLOCK_MARKER_END   _u(0xab123579)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="picobin_8h.html#a767f359d3a4fa48e5b3fcf48a1047ac1">   32</a></span><span class="preprocessor">#define PICOBIN_MAX_BLOCK_SIZE _u(0x280)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="picobin_8h.html#ab616bf0222252c7edbfe69fb77bf36dd">   33</a></span><span class="preprocessor">#define PICOBIN_MAX_IMAGE_DEF_BLOCK_SIZE _u(0x180)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="picobin_8h.html#a6b6a7c3869458f06657ac6d107673331">   34</a></span><span class="preprocessor">#define PICOBIN_MAX_PARTITION_TABLE_BLOCK_SIZE _u(0x280)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// note bit 6 is used to make parity even</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="picobin_8h.html#a70e8262db151a9dccd5904ccafb23103">   37</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_1BS_NEXT_BLOCK_OFFSET        _u(0x41)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="picobin_8h.html#aa35830b99760f3c744650facb042dd8d">   38</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_1BS_IMAGE_TYPE               _u(0x42)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="picobin_8h.html#ad3a93e5ac4e764d28e77b2ebf05ab315">   39</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_1BS_VECTOR_TABLE             _u(0x03)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="picobin_8h.html#a7cf267df83f8cc4d91e63588f3626ca5">   40</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_1BS_ENTRY_POINT              _u(0x44)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="picobin_8h.html#a23cd8b1f2cff509cce30dcc693542c7e">   41</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_1BS_ROLLING_WINDOW_DELTA     _u(0x05)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="picobin_8h.html#afd17ff044cf37a1253ab8fe4fec848d8">   42</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_LOAD_MAP                     _u(0x06)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="picobin_8h.html#ae8aa5dd104a0634bf0f772f4a8073eb0">   43</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_1BS_HASH_DEF                 _u(0x47)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="picobin_8h.html#ab9183c66346af3bbb38e204a5fcfc72e">   44</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_1BS_VERSION                  _u(0x48)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="picobin_8h.html#af89c8aba80d9abef0c13817473c578a9">   45</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_SIGNATURE                    _u(0x09)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="picobin_8h.html#ab160d4d50db452496eb4b0b36f1adc06">   46</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_PARTITION_TABLE              _u(0x0a)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="picobin_8h.html#a722bda87c729ec0437e9382a05574176">   47</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_HASH_VALUE                   _u(0x4b)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="picobin_8h.html#a4cb09aaeff0ba1fefa576edbec13650e">   48</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_SALT                         _u(0x0c)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="picobin_8h.html#ad3111fa3ac4585d9aa93e95cb2e7974e">   50</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_2BS_IGNORED          (_u(0x80) | _u(0x7e))</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="picobin_8h.html#a48f60da09180c8025d621f20495cc84b">   51</a></span><span class="preprocessor">#define PICOBIN_BLOCK_ITEM_2BS_LAST             (_u(0x80) | _u(0x7f))</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// ----</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="picobin_8h.html#abcd3ab723bb4e124385fb7eb3fd43a12">   55</a></span><span class="preprocessor">#define _PICOBIN_INDEX_TO_BITS(y, x) (y ## x &lt;&lt; y ## _LSB)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="picobin_8h.html#a35b3785e2f68456d518ef5803ad47592">   56</a></span><span class="preprocessor">#define PICOBIN_INDEX_TO_BITS(y, x) (y ## _ ## x &lt;&lt; y ## _LSB)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="picobin_8h.html#af0de5fb4c17976652176d905201d5ea5">   58</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_IMAGE_TYPE_LSB            _u(0)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="picobin_8h.html#aabdaab5f14b45c3ee38516a0b5d2f78c">   59</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_IMAGE_TYPE_BITS           _u(0x000f)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="picobin_8h.html#ac890dd236e3b0189991f44d90511bc1e">   60</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_IMAGE_TYPE_INVALID        _u(0x0)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="picobin_8h.html#acb41fb6a94bee46249876c22b48f6a05">   61</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_IMAGE_TYPE_EXE            _u(0x1)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="picobin_8h.html#a87c949bffd2c5bb437c878e37b1fd695">   62</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_IMAGE_TYPE_DATA           _u(0x2)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="picobin_8h.html#a41192735e5b950738799d7fc691820c2">   63</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_IMAGE_TYPE_AS_BITS(x) _PICOBIN_INDEX_TO_BITS(PICOBIN_IMAGE_TYPE_IMAGE_TYPE, _ ## x)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="picobin_8h.html#ad4feff349ad987185ffcb650866872ad">   65</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_SECURITY_LSB          _u(4)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="picobin_8h.html#a9742a81121aae2fa4234b18e312ab952">   66</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_SECURITY_BITS         _u(0x0030)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="picobin_8h.html#ab94c5394c8d31d77521cd1dab171183c">   67</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_SECURITY_UNSPECIFIED  _u(0x0)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="picobin_8h.html#abbc56faddf154604108b2e2e96de7616">   68</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_SECURITY_NS           _u(0x1)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="picobin_8h.html#a68dd3a5dd7322edeae017dfc3f5702dd">   69</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_SECURITY_S            _u(0x2)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="picobin_8h.html#a5a92ab21aff26e5449ee40449bd3f7d2">   70</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_SECURITY_AS_BITS(x) _PICOBIN_INDEX_TO_BITS(PICOBIN_IMAGE_TYPE_EXE_SECURITY, _ ## x)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="picobin_8h.html#a9004f5172dff477ac7bf4cbf0c38a188">   72</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CPU_LSB               _u(8)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="picobin_8h.html#adc9e85a7eef6698e9d09fb4515c01a9d">   73</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CPU_BITS              _u(0x0700)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="picobin_8h.html#a406e117c0407b64b9801ffe8b796878b">   74</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CPU_ARM               _u(0)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="picobin_8h.html#acab30c742111187ba96a90b4e91bb581">   75</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CPU_RISCV             _u(1)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="picobin_8h.html#a16a64e5c39f1df124afddec7d042c3ce">   76</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CPU_VARMULET          _u(2)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="picobin_8h.html#ad536e40b323203cff8aef582773c736e">   77</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CPU_AS_BITS(x) _PICOBIN_INDEX_TO_BITS(PICOBIN_IMAGE_TYPE_EXE_CPU, _ ## x)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="picobin_8h.html#a7e7fc0e0e5a187786b19fc5fe21d2994">   79</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_LSB    _u(11)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="picobin_8h.html#a5f998334f0f6513db9842da5e5e3e6a2">   80</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_EXTRA_SECURITY_BITS   _u(0x0800)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="picobin_8h.html#a2043bf993c564faca1959417f8ea8a15">   82</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CHIP_LSB              _u(12)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="picobin_8h.html#af1393f4da28bd735d2fa5ade65fa77cb">   83</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CHIP_BITS             _u(0x7000)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="picobin_8h.html#a00bc63d844df82156206736bfd04eb96">   84</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2040           _u(0)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="picobin_8h.html#a0589a8f44f408a7b5577614c903cb973">   85</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CHIP_RP2350           _u(1)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="picobin_8h.html#ad414b1fb0b2f0294cdb1cc46e037731b">   86</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_CHIP_AS_BITS(x) _PICOBIN_INDEX_TO_BITS(PICOBIN_IMAGE_TYPE_EXE_CHIP, _ ## x)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="picobin_8h.html#ab1249c7781a60c19a8ccb5f97b27c450">   88</a></span><span class="preprocessor">#define PICOBIN_IMAGE_TYPE_EXE_TBYB_BITS             _u(0x8000)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// todo assert no overlap ^</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="picobin_8h.html#a3812f52ee5646c6b7b691e8024026e62">   92</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSIONS_LSB                                   _u(26)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="picobin_8h.html#adadf95880a7b8bb10d6f59683c587068">   93</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSIONS_BITS                                  _u(0xfc000000)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="picobin_8h.html#ac6a6b54706cc331ca6fde23eac0176ed">   95</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSION_S_R_BITS                               _u(0x04000000)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="picobin_8h.html#abd285df91a674957fc4aa2886fd8fa4c">   96</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSION_S_W_BITS                               _u(0x08000000)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="picobin_8h.html#a1989cf9234b170eb34b071a13c673dc0">   97</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSION_NS_R_BITS                              _u(0x10000000)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="picobin_8h.html#a733d929f9e0d8b56ec0c150d6cd14da6">   98</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSION_NS_W_BITS                              _u(0x20000000)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="picobin_8h.html#a93e0f361a940109b1cb1999e984f5446">   99</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSION_NSBOOT_R_BITS                          _u(0x40000000)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="picobin_8h.html#a52d065089ab5d23d5ae4a920914d3b2e">  100</a></span><span class="preprocessor">#define PICOBIN_PARTITION_PERMISSION_NSBOOT_W_BITS                          _u(0x80000000)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="picobin_8h.html#af7b7562c9f74f15861a4e1cb42217989">  102</a></span><span class="preprocessor">#define PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_LSB                         _u(0)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="picobin_8h.html#aed4628b45d5f9f7adfb2f794095298f3">  103</a></span><span class="preprocessor">#define PICOBIN_PARTITION_LOCATION_FIRST_SECTOR_BITS                        _u(0x00001fff)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="picobin_8h.html#a60e7df3ef5fc30da91dec392d3cd1aa1">  104</a></span><span class="preprocessor">#define PICOBIN_PARTITION_LOCATION_LAST_SECTOR_LSB                          _u(13)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="picobin_8h.html#a2801b4212f2273df1d6b395365da0581">  105</a></span><span class="preprocessor">#define PICOBIN_PARTITION_LOCATION_LAST_SECTOR_BITS                         _u(0x03ffe000)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="picobin_8h.html#a91d9bb20c28559303fd5bb3db7c49413">  107</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_HAS_ID_BITS                                 _u(0x00000001)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="picobin_8h.html#a26674de8ed5fa532e3bd1da6fe3c6a7b">  108</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_TYPE_LSB                               _u(1)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="picobin_8h.html#ad5c04b322d4f71fc0a0343599f04d7c2">  109</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_TYPE_BITS                              _u(0x00000006)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="picobin_8h.html#a6417e49577724de0d355e8d4957fb434">  110</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_VALUE_LSB                              _u(3)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="picobin_8h.html#a4df765cf60b2fd7ac150c5d72d1f8942">  111</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_VALUE_BITS                             _u(0x00000078)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="picobin_8h.html#af34cef162156bf5c23813aeee9221b67">  113</a></span><span class="preprocessor">#define PICOBIN_PARTITION_MAX_EXTRA_FAMILIES                                _u(3)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="picobin_8h.html#afc9cb37fc38cb0cea627c6b38476c6b6">  114</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_LSB              _u(7)</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="picobin_8h.html#a5fedd6c7fd7ab054750a36c7f8033ced">  115</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_NUM_EXTRA_FAMILIES_BITS             _u(0x00000180)</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// these are an optimization when booting in either ARM or RISC-V, to avoid looking at partitions</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// which are known not to contain the right sort of binary, OR as a way to prevent</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">// auto-architecture-switch. NOTE: the first partition that can be booted, will be,</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// so if you have a RISC-V binary in the first partition, and auto-arhcitecture-switch enabled, then</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// even if booting under ARM, with an ARM binary in a later partition, the RISC-V binary</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">// will be booted by default; setting PICOBIN_PARTITION_FLAGS_IGNORED_DURING_ARM_BOOT_BITS</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">// on the partition, will have the RISC-V binary containing partition ignored under ARM</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">// boot</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="picobin_8h.html#aea65528bc21481ebf78fb4589bd71e21">  124</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_IGNORED_DURING_ARM_BOOT_BITS                _u(0x00000200)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="picobin_8h.html#a08ddfc7a59fd0052aaf1c785729ab0f0">  125</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_IGNORED_DURING_RISCV_BOOT_BITS              _u(0x00000400)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="picobin_8h.html#ae24621f70f1d158af4f0779eb33c9cd0">  126</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_AB_NON_BOOTABLE_OWNER_AFFINITY _u(0x00000800)</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="picobin_8h.html#a31023f50394b5703275be1e493eabb71">  127</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_HAS_NAME_BITS                               _u(0x00001000)</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="picobin_8h.html#af3a269a3c624161adfe85c4e917bbee4">  128</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_UF2_DOWNLOAD_NO_REBOOT_BITS                 _u(0x00002000)</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// we have a bit for each well known family-id .. note we expect there to be more in the future with new chips,</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// but we have plenty of space for now.</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="picobin_8h.html#a0e64ff3fc4c7396ddefb7778b324e1be">  131</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILIES_LSB                _u(14)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="picobin_8h.html#ac45bcf5acd2c479fd9b58316e315102a">  132</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2040_BITS          _u(0x00004000)</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="picobin_8h.html#af9af2136a2bee512e4bcfecc23fea7e4">  133</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_ABSOLUTE_BITS        _u(0x00008000)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="picobin_8h.html#a42146522df9ed97e6bd8cb3ce4a35615">  134</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_DATA_BITS            _u(0x00010000)</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="picobin_8h.html#ae4eff43fafd4804c0deac93957cb1925">  135</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_S_BITS    _u(0x00020000)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="picobin_8h.html#ac5e742336693649272d710cd61c0bdc4">  136</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_RISCV_BITS    _u(0x00040000)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="picobin_8h.html#af9358f6c09dcf29f39a9d5b36dec51d9">  137</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_ACCEPTS_DEFAULT_FAMILY_RP2350_ARM_NS_BITS   _u(0x00080000)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="picobin_8h.html#a20bc368e9391180ab63266e5dc91ed8b">  139</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_TYPE_NONE                        _u(0)</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="picobin_8h.html#afe3dac703a5772ee9efc12c8df5854a4">  140</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_TYPE_A_PARTITION                 _u(1)</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="picobin_8h.html#a67fba2c18134e9fdb0c36a2d863ccb30">  141</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_TYPE_OWNER_PARTITION             _u(2)</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="picobin_8h.html#a99386530689e72fc1119f8317c0047de">  142</a></span><span class="preprocessor">#define PICOBIN_PARTITION_FLAGS_LINK_TYPE_AS_BITS(x) _PICOBIN_INDEX_TO_BITS(PICOBIN_PARTITION_FLAGS_LINK_TYPE, _ ## x)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="picobin_8h.html#a381613075fe7bbd0f8b364f139566e35">  145</a></span><span class="preprocessor">#define PICOBIN_HASH_SHA256                    _u(0x01)</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="picobin_8h.html#ada029406b4f98f02675e6d23c3b35e9c">  147</a></span><span class="preprocessor">#define PICOBIN_SIGNATURE_SECP256K1            _u(0x01)</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#ifndef __ASSEMBLER__</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="};">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="structpicobin__load__map__entry.html">  153</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="comment">// these must all be word aligned</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="structpicobin__load__map__entry.html#acbbf6b9175c3bbf54d65768267db4764">  155</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structpicobin__load__map__entry.html#acbbf6b9175c3bbf54d65768267db4764">storage_address_rel</a>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="structpicobin__load__map__entry.html#a18410afe1e3fd9fc9e1fd5001c5b1234">  156</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structpicobin__load__map__entry.html#a18410afe1e3fd9fc9e1fd5001c5b1234">runtime_address</a>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="structpicobin__load__map__entry.html#a924fa452d90cc6ec26fc560f7bb53216">  157</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structpicobin__load__map__entry.html#a924fa452d90cc6ec26fc560f7bb53216">size</a>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>} <a class="code hl_struct" href="structpicobin__load__map__entry.html">picobin_load_map_entry</a>;</div>
+</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="};">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="structpicobin__load__map.html">  160</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="structpicobin__load__map.html#afda9639805e6ee6055b7a183f4ec94f6">  161</a></span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="structpicobin__load__map.html#afda9639805e6ee6055b7a183f4ec94f6">header</a>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="structpicobin__load__map.html#ad4dcd30f0d38f945cbb8c63e5e8b9096">  162</a></span>    <a class="code hl_struct" href="structpicobin__load__map__entry.html">picobin_load_map_entry</a> entries[];</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>} <a class="code hl_struct" href="structpicobin__load__map.html">picobin_load_map</a>;</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> picobin_load_map_entry_count(<span class="keyword">const</span> <a class="code hl_struct" href="structpicobin__load__map.html">picobin_load_map</a> *lm) {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> (lm-&gt;<a class="code hl_variable" href="structpicobin__load__map.html#afda9639805e6ee6055b7a183f4ec94f6">header</a> &lt;&lt; 1) &gt;&gt; 25;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> picobin_load_map_is_relative(<span class="keyword">const</span> <a class="code hl_struct" href="structpicobin__load__map.html">picobin_load_map</a> *lm) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">return</span> (int32_t)lm-&gt;<a class="code hl_variable" href="structpicobin__load__map.html#afda9639805e6ee6055b7a183f4ec94f6">header</a> &gt;= 0;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="astructpicobin__load__map__entry_html"><div class="ttname"><a href="structpicobin__load__map__entry.html">picobin_load_map_entry</a></div><div class="ttdef"><b>Definição</b> picobin.h:153</div></div>
+<div class="ttc" id="astructpicobin__load__map__entry_html_a18410afe1e3fd9fc9e1fd5001c5b1234"><div class="ttname"><a href="structpicobin__load__map__entry.html#a18410afe1e3fd9fc9e1fd5001c5b1234">picobin_load_map_entry::runtime_address</a></div><div class="ttdeci">uint32_t runtime_address</div><div class="ttdef"><b>Definição</b> picobin.h:156</div></div>
+<div class="ttc" id="astructpicobin__load__map__entry_html_a924fa452d90cc6ec26fc560f7bb53216"><div class="ttname"><a href="structpicobin__load__map__entry.html#a924fa452d90cc6ec26fc560f7bb53216">picobin_load_map_entry::size</a></div><div class="ttdeci">uint32_t size</div><div class="ttdef"><b>Definição</b> picobin.h:157</div></div>
+<div class="ttc" id="astructpicobin__load__map__entry_html_acbbf6b9175c3bbf54d65768267db4764"><div class="ttname"><a href="structpicobin__load__map__entry.html#acbbf6b9175c3bbf54d65768267db4764">picobin_load_map_entry::storage_address_rel</a></div><div class="ttdeci">uint32_t storage_address_rel</div><div class="ttdef"><b>Definição</b> picobin.h:155</div></div>
+<div class="ttc" id="astructpicobin__load__map_html"><div class="ttname"><a href="structpicobin__load__map.html">picobin_load_map</a></div><div class="ttdef"><b>Definição</b> picobin.h:160</div></div>
+<div class="ttc" id="astructpicobin__load__map_html_afda9639805e6ee6055b7a183f4ec94f6"><div class="ttname"><a href="structpicobin__load__map.html#afda9639805e6ee6055b7a183f4ec94f6">picobin_load_map::header</a></div><div class="ttdeci">uint32_t header</div><div class="ttdef"><b>Definição</b> picobin.h:161</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_afd6173fcc80f68f3e45820d53e5d728.html">common</a></li><li class="navelem"><a class="el" href="dir_89d175adaed816e4e820f58512b3e2cc.html">boot_picobin_headers</a></li><li class="navelem"><a class="el" href="dir_e8f4bac374ac261e5b336390f6f66678.html">include</a></li><li class="navelem"><a class="el" href="dir_600c1d2ab65b91d023a515c59005b1d2.html">boot</a></li><li class="navelem"><a class="el" href="picobin_8h.html">picobin.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

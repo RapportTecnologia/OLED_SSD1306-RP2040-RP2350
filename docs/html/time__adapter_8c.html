@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro time_adapter.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('time__adapter_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro time_adapter.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="common_2pico__time_2include_2pico_2time_8h_source.html">pico/time.h</a>&quot;</code><br />
+<code>#include &quot;pico/time_adapter.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para time_adapter.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="time__adapter_8c__incl.svg" width="327" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a35734ab97a4ddc517e1ad06b7d4bbbc1" id="r_a35734ab97a4ddc517e1ad06b7d4bbbc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a35734ab97a4ddc517e1ad06b7d4bbbc1">PICO_WEAK_FUNCTION_DEF</a> (<a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4b867eddde1b04df6450a3bd77438ce5">ta_default_timer_instance</a>)</td></tr>
+<tr class="separator:a35734ab97a4ddc517e1ad06b7d4bbbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced411e02a17c110afb715837d63fd10" id="r_aced411e02a17c110afb715837d63fd10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#aced411e02a17c110afb715837d63fd10">PICO_WEAK_FUNCTION_DEF</a> (<a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a952988b7cf659173ac54ead9bba12a38">ta_from_current_irq</a>)</td></tr>
+<tr class="separator:aced411e02a17c110afb715837d63fd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb6a096a297ac8e636fc6c8abcd0252" id="r_abeb6a096a297ac8e636fc6c8abcd0252"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#abeb6a096a297ac8e636fc6c8abcd0252">PICO_WEAK_FUNCTION_DEF</a> (<a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#aae874d1ba22ba6e725411466be0d3a03">ta_timer_instance</a>)</td></tr>
+<tr class="separator:abeb6a096a297ac8e636fc6c8abcd0252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3d97ab6ef2f4b285816b9e10e582ad" id="r_a1c3d97ab6ef2f4b285816b9e10e582ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a1c3d97ab6ef2f4b285816b9e10e582ad">PICO_WEAK_FUNCTION_DEF</a> (<a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4b27ef8c8be3422f253f8f364644387a">ta_timer_num</a>)</td></tr>
+<tr class="separator:a1c3d97ab6ef2f4b285816b9e10e582ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3a1c1d5f34f6e28aebd77ef45e8a16" id="r_a9a3a1c1d5f34f6e28aebd77ef45e8a16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a9a3a1c1d5f34f6e28aebd77ef45e8a16">ta_clear_force_irq</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alarm_num</a>)</td></tr>
+<tr class="separator:a9a3a1c1d5f34f6e28aebd77ef45e8a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9d8f5968652616eca85479eaad80ef" id="r_a7a9d8f5968652616eca85479eaad80ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a7a9d8f5968652616eca85479eaad80ef">ta_clear_irq</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alarm_num</a>)</td></tr>
+<tr class="separator:a7a9d8f5968652616eca85479eaad80ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b867eddde1b04df6450a3bd77438ce5" id="r_a4b867eddde1b04df6450a3bd77438ce5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a4b867eddde1b04df6450a3bd77438ce5">ta_default_timer_instance</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a4b867eddde1b04df6450a3bd77438ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a55b8feb2e6f40ebcb1714c58bbb51" id="r_aa4a55b8feb2e6f40ebcb1714c58bbb51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#aa4a55b8feb2e6f40ebcb1714c58bbb51">ta_disable_irq_handler</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alarm_num</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_handler</a>)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>))</td></tr>
+<tr class="separator:aa4a55b8feb2e6f40ebcb1714c58bbb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0513ccd0084aa7247a4e5c4c9ada2ba2" id="r_a0513ccd0084aa7247a4e5c4c9ada2ba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a0513ccd0084aa7247a4e5c4c9ada2ba2">ta_enable_irq_handler</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alarm_num</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_handler</a>)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>))</td></tr>
+<tr class="separator:a0513ccd0084aa7247a4e5c4c9ada2ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fed37bea056fc117b759f0590f221de" id="r_a7fed37bea056fc117b759f0590f221de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a7fed37bea056fc117b759f0590f221de">ta_force_irq</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alarm_num</a>)</td></tr>
+<tr class="separator:a7fed37bea056fc117b759f0590f221de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529cb5c00a5a06bf0fa21fc71559a623" id="r_a529cb5c00a5a06bf0fa21fc71559a623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a529cb5c00a5a06bf0fa21fc71559a623">ta_from_current_irq</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">alarm_num</a>)</td></tr>
+<tr class="separator:a529cb5c00a5a06bf0fa21fc71559a623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ba4e53b177ebe5f9fe998313b84100" id="r_a79ba4e53b177ebe5f9fe998313b84100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a79ba4e53b177ebe5f9fe998313b84100">ta_get_handler_hardware_alarm_num</a> ()</td></tr>
+<tr class="separator:a79ba4e53b177ebe5f9fe998313b84100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76d1091f558777d09ce0084e12cbc34" id="r_ac76d1091f558777d09ce0084e12cbc34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#ac76d1091f558777d09ce0084e12cbc34">ta_hardware_alarm_claim</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alaram_num</a>)</td></tr>
+<tr class="separator:ac76d1091f558777d09ce0084e12cbc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2bf0063ac8e30511593ea0c457ec430" id="r_ad2bf0063ac8e30511593ea0c457ec430"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#ad2bf0063ac8e30511593ea0c457ec430">ta_hardware_alarm_claim_unused</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>)</td></tr>
+<tr class="separator:ad2bf0063ac8e30511593ea0c457ec430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcef71310b1761986fb9f0b8af1f230" id="r_a4bcef71310b1761986fb9f0b8af1f230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a4bcef71310b1761986fb9f0b8af1f230">ta_set_timeout</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alarm_num</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a> target)</td></tr>
+<tr class="separator:a4bcef71310b1761986fb9f0b8af1f230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae874d1ba22ba6e725411466be0d3a03" id="r_aae874d1ba22ba6e725411466be0d3a03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#aae874d1ba22ba6e725411466be0d3a03">ta_timer_instance</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">instance_num</a>)</td></tr>
+<tr class="separator:aae874d1ba22ba6e725411466be0d3a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b27ef8c8be3422f253f8f364644387a" id="r_a4b27ef8c8be3422f253f8f364644387a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a4b27ef8c8be3422f253f8f364644387a">ta_timer_num</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer)</td></tr>
+<tr class="separator:a4b27ef8c8be3422f253f8f364644387a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3598a9571c1b65faab58416a1a92320a" id="r_a3598a9571c1b65faab58416a1a92320a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__adapter_8c.html#a3598a9571c1b65faab58416a1a92320a">ta_wakes_up_on_or_before</a> (<a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *timer, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_alarm_num</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a> target)</td></tr>
+<tr class="separator:a3598a9571c1b65faab58416a1a92320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a35734ab97a4ddc517e1ad06b7d4bbbc1" name="a35734ab97a4ddc517e1ad06b7d4bbbc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35734ab97a4ddc517e1ad06b7d4bbbc1">&#9670;&#160;</a></span>PICO_WEAK_FUNCTION_DEF() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_WEAK_FUNCTION_DEF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4b867eddde1b04df6450a3bd77438ce5">ta_default_timer_instance</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aced411e02a17c110afb715837d63fd10" name="aced411e02a17c110afb715837d63fd10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced411e02a17c110afb715837d63fd10">&#9670;&#160;</a></span>PICO_WEAK_FUNCTION_DEF() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_WEAK_FUNCTION_DEF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a952988b7cf659173ac54ead9bba12a38">ta_from_current_irq</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abeb6a096a297ac8e636fc6c8abcd0252" name="abeb6a096a297ac8e636fc6c8abcd0252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb6a096a297ac8e636fc6c8abcd0252">&#9670;&#160;</a></span>PICO_WEAK_FUNCTION_DEF() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_WEAK_FUNCTION_DEF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#aae874d1ba22ba6e725411466be0d3a03">ta_timer_instance</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c3d97ab6ef2f4b285816b9e10e582ad" name="a1c3d97ab6ef2f4b285816b9e10e582ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3d97ab6ef2f4b285816b9e10e582ad">&#9670;&#160;</a></span>PICO_WEAK_FUNCTION_DEF() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_WEAK_FUNCTION_DEF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__time__adapter_2include_2pico_2time__adapter_8h.html#a4b27ef8c8be3422f253f8f364644387a">ta_timer_num</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a3a1c1d5f34f6e28aebd77ef45e8a16" name="a9a3a1c1d5f34f6e28aebd77ef45e8a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a3a1c1d5f34f6e28aebd77ef45e8a16">&#9670;&#160;</a></span>ta_clear_force_irq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_clear_force_irq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alarm_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+<a id="a7a9d8f5968652616eca85479eaad80ef" name="a7a9d8f5968652616eca85479eaad80ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a9d8f5968652616eca85479eaad80ef">&#9670;&#160;</a></span>ta_clear_irq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_clear_irq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alarm_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+<a id="a4b867eddde1b04df6450a3bd77438ce5" name="a4b867eddde1b04df6450a3bd77438ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b867eddde1b04df6450a3bd77438ce5">&#9670;&#160;</a></span>ta_default_timer_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> * ta_default_timer_instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#aebcd017af7a402fca20f1163039c71cd">alarm_pool_get_default_timer()</a>.</p>
+
+</div>
+</div>
+<a id="aa4a55b8feb2e6f40ebcb1714c58bbb51" name="aa4a55b8feb2e6f40ebcb1714c58bbb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a55b8feb2e6f40ebcb1714c58bbb51">&#9670;&#160;</a></span>ta_disable_irq_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_disable_irq_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alarm_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)&#160;</td>
+          <td class="paramname"><em>irq_handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#gae7536c4d34088a2d19b2da92b87cbb4e">alarm_pool_destroy()</a>.</p>
+
+</div>
+</div>
+<a id="a0513ccd0084aa7247a4e5c4c9ada2ba2" name="a0513ccd0084aa7247a4e5c4c9ada2ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0513ccd0084aa7247a4e5c4c9ada2ba2">&#9670;&#160;</a></span>ta_enable_irq_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_enable_irq_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alarm_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)&#160;</td>
+          <td class="paramname"><em>irq_handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+<a id="a7fed37bea056fc117b759f0590f221de" name="a7fed37bea056fc117b759f0590f221de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fed37bea056fc117b759f0590f221de">&#9670;&#160;</a></span>ta_force_irq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_force_irq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alarm_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#ga72bfc8c2dd5bf334cd68af2e349a1b37">alarm_pool_add_alarm_at_force_in_context()</a> e <a class="el" href="group__alarm.html#ga02cc23b4a3109fb8c2d57e24981f2932">alarm_pool_cancel_alarm()</a>.</p>
+
+</div>
+</div>
+<a id="a529cb5c00a5a06bf0fa21fc71559a623" name="a529cb5c00a5a06bf0fa21fc71559a623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529cb5c00a5a06bf0fa21fc71559a623">&#9670;&#160;</a></span>ta_from_current_irq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_from_current_irq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *&#160;</td>
+          <td class="paramname"><em>alarm_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+<a id="a79ba4e53b177ebe5f9fe998313b84100" name="a79ba4e53b177ebe5f9fe998313b84100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ba4e53b177ebe5f9fe998313b84100">&#9670;&#160;</a></span>ta_get_handler_hardware_alarm_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_get_handler_hardware_alarm_num </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+<a id="ac76d1091f558777d09ce0084e12cbc34" name="ac76d1091f558777d09ce0084e12cbc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac76d1091f558777d09ce0084e12cbc34">&#9670;&#160;</a></span>ta_hardware_alarm_claim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_hardware_alarm_claim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alaram_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a078624fb8eadf3e5f7f6ec7608aad94f">alarm_pool_create_on_timer()</a> e <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a12957d00680c6c5737ec7f57f509d73d">runtime_init_default_alarm_pool()</a>.</p>
+
+</div>
+</div>
+<a id="ad2bf0063ac8e30511593ea0c457ec430" name="ad2bf0063ac8e30511593ea0c457ec430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2bf0063ac8e30511593ea0c457ec430">&#9670;&#160;</a></span>ta_hardware_alarm_claim_unused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_hardware_alarm_claim_unused </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>required</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#ab2774c4d9347961d09ff7d05cdaa4809">alarm_pool_create_on_timer_with_unused_hardware_alarm()</a>.</p>
+
+</div>
+</div>
+<a id="a4bcef71310b1761986fb9f0b8af1f230" name="a4bcef71310b1761986fb9f0b8af1f230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bcef71310b1761986fb9f0b8af1f230">&#9670;&#160;</a></span>ta_set_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_set_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alarm_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a>&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+</div>
+</div>
+<a id="aae874d1ba22ba6e725411466be0d3a03" name="aae874d1ba22ba6e725411466be0d3a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae874d1ba22ba6e725411466be0d3a03">&#9670;&#160;</a></span>ta_timer_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> * ta_timer_instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>instance_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#ac3e274fab187713f3faa70e7472b0676">alarm_pool_timer_for_timer_num()</a>.</p>
+
+</div>
+</div>
+<a id="a4b27ef8c8be3422f253f8f364644387a" name="a4b27ef8c8be3422f253f8f364644387a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b27ef8c8be3422f253f8f364644387a">&#9670;&#160;</a></span>ta_timer_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> ta_timer_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#gae7536c4d34088a2d19b2da92b87cbb4e">alarm_pool_destroy()</a>.</p>
+
+</div>
+</div>
+<a id="a3598a9571c1b65faab58416a1a92320a" name="a3598a9571c1b65faab58416a1a92320a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3598a9571c1b65faab58416a1a92320a">&#9670;&#160;</a></span>ta_wakes_up_on_or_before()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a1f9d23cabd4f293b15763dfc0808f75c">PICO_WEAK_FUNCTION_IMPL_NAME</a>() ta_wakes_up_on_or_before </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a91425ae7f3d1d490003cd9396702d4a3">alarm_pool_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>hardware_alarm_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int64_t</a>&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3f5611d44c539e721af06fbad7d1312a">panic_unsupported()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__sleep.html#gaedc0ed51a5e908ddd660a5d279009abc">best_effort_wfe_or_timeout()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_807b6346a9c18472135e047d65c02b1e.html">host</a></li><li class="navelem"><a class="el" href="dir_03232d78dc4f2770404c0f80c47c2fec.html">pico_time_adapter</a></li><li class="navelem"><a class="el" href="time__adapter_8c.html">time_adapter.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

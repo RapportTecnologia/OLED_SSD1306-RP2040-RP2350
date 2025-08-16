@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de ticks.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2350_2hardware__structs_2include_2hardware_2structs_2ticks_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2350/hardware_structs/include/hardware/structs/ticks.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2350_2hardware__structs_2include_2hardware_2structs_2ticks_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _HARDWARE_STRUCTS_TICKS_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _HARDWARE_STRUCTS_TICKS_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html">hardware/regs/ticks.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Reference to datasheet: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf#tab-registerlist_ticks</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// The _REG_ macro is intended to help make the register navigable in your IDE (for example, using the &quot;Go to Definition&quot; feature)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// _REG_(x) will link to the corresponding register in hardware/regs/ticks.h.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Bit-field descriptions are of the form:</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// BITMASK [BITRANGE] FIELDNAME (RESETVALUE) DESCRIPTION</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#ga7c007d63cabddadd107f9b597278c32e">   29</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="group__hardware__ticks.html#ga7c007d63cabddadd107f9b597278c32e">tick_gen_num_rp2350</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32eab31898d6285a7c4bc73ff0ef9ee919b5">   30</a></span>    <a class="code hl_enumvalue" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32eab31898d6285a7c4bc73ff0ef9ee919b5">TICK_PROC0</a> = 0,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea4b9a0872f6cd7eb7dcb7a56b67716629">   31</a></span>    <a class="code hl_enumvalue" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea4b9a0872f6cd7eb7dcb7a56b67716629">TICK_PROC1</a> = 1,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea60666323b699ca9778c558723e1b77ac">   32</a></span>    <a class="code hl_enumvalue" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea60666323b699ca9778c558723e1b77ac">TICK_TIMER0</a> = 2,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea691754430394f77b889182c77c69a3c6">   33</a></span>    <a class="code hl_enumvalue" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea691754430394f77b889182c77c69a3c6">TICK_TIMER1</a> = 3,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32eae5a832897214be2a21eb29b5801ddd15">   34</a></span>    <a class="code hl_enumvalue" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32eae5a832897214be2a21eb29b5801ddd15">TICK_WATCHDOG</a> = 4,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea4e9a2aa41da8f73814e606d7ed70f9c7">   35</a></span>    <a class="code hl_enumvalue" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea4e9a2aa41da8f73814e606d7ed70f9c7">TICK_RISCV</a> = 5,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_enumvalue" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea3188da38e653ab4c640bb45c309d5346">TICK_COUNT</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea3188da38e653ab4c640bb45c309d5346">   37</a></span>} <a class="code hl_typedef" href="group__hardware__ticks.html#gaea457044b65d6af680787206c06faa39">tick_gen_num_t</a>;</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structticks__slice__hw__t.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a737158a2f0d52834623065296367b027">TICKS_PROC0_CTRL_OFFSET</a>) <span class="comment">// TICKS_PROC0_CTRL</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// Controls the tick generator</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// 0x00000002 [1]     RUNNING      (-) Is the tick generator running?</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// 0x00000001 [0]     ENABLE       (0) start / stop tick generation</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structticks__slice__hw__t.html#a64a98f2d78a7f220c776bbb4fe66f998">   44</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> ctrl;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a41e89ca590f2be57b130558842800ed8">TICKS_PROC0_CYCLES_OFFSET</a>) <span class="comment">// TICKS_PROC0_CYCLES</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// 0x000001ff [8:0]   PROC0_CYCLES (0x000) Total number of clk_tick cycles before the next tick</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structticks__slice__hw__t.html#a5ce68f9a1e09e110c15b8a63bff7239c">   48</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> cycles;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac4857c874d2dcc90a3be5556e8f3a88f">TICKS_PROC0_COUNT_OFFSET</a>) <span class="comment">// TICKS_PROC0_COUNT</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// 0x000001ff [8:0]   PROC0_COUNT  (-) Count down timer: the remaining number clk_tick cycles...</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structticks__slice__hw__t.html#a930a8bc3e5191c939205a101b1868c13">   52</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>} <a class="code hl_struct" href="structticks__slice__hw__t.html">ticks_slice_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structticks__hw__t.html">   55</a></span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structticks__hw__t.html#a8c8600e2ab6784c5d1e2c77b04181b12">   56</a></span>    <a class="code hl_struct" href="structticks__slice__hw__t.html">ticks_slice_hw_t</a> ticks[6];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <a class="code hl_struct" href="structticks__hw__t.html">ticks_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="rp2350_2hardware__structs_2include_2hardware_2structs_2ticks_8h.html#a54e0a1225a1d4a2b4a1295b7e3b81ce4">   59</a></span><span class="preprocessor">#define ticks_hw ((ticks_hw_t *)TICKS_BASE)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span> (<a class="code hl_struct" href="structticks__hw__t.html">ticks_hw_t</a>) == 0x0048, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_STRUCTS_TICKS_H</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_a5e9dd65c504214b8530a3ce63adf8375"><div class="ttname"><a href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a></div><div class="ttdeci">#define _REG_(x)</div><div class="ttdef"><b>Definição</b> address_mapped.h:84</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ab87d9fde36e04e9e65c9f16f56982eeb"><div class="ttname"><a href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a></div><div class="ttdeci">const volatile uint32_t io_ro_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:67</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ae7a3903ffe232108a65efc85970a5fdb"><div class="ttname"><a href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a></div><div class="ttdeci">volatile uint32_t io_rw_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:66</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_ga7c007d63cabddadd107f9b597278c32e"><div class="ttname"><a href="group__hardware__ticks.html#ga7c007d63cabddadd107f9b597278c32e">tick_gen_num_rp2350</a></div><div class="ttdeci">tick_gen_num_rp2350</div><div class="ttdoc">Tick generator numbers on RP2350 (used as typedef tick_gen_num_t)</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:29</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gaea457044b65d6af680787206c06faa39"><div class="ttname"><a href="group__hardware__ticks.html#gaea457044b65d6af680787206c06faa39">tick_gen_num_t</a></div><div class="ttdeci">enum tick_gen_num_rp2350 tick_gen_num_t</div><div class="ttdoc">Tick generator numbers on RP2350 (used as typedef tick_gen_num_t)</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gga7c007d63cabddadd107f9b597278c32ea3188da38e653ab4c640bb45c309d5346"><div class="ttname"><a href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea3188da38e653ab4c640bb45c309d5346">TICK_COUNT</a></div><div class="ttdeci">@ TICK_COUNT</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:36</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gga7c007d63cabddadd107f9b597278c32ea4b9a0872f6cd7eb7dcb7a56b67716629"><div class="ttname"><a href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea4b9a0872f6cd7eb7dcb7a56b67716629">TICK_PROC1</a></div><div class="ttdeci">@ TICK_PROC1</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:31</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gga7c007d63cabddadd107f9b597278c32ea4e9a2aa41da8f73814e606d7ed70f9c7"><div class="ttname"><a href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea4e9a2aa41da8f73814e606d7ed70f9c7">TICK_RISCV</a></div><div class="ttdeci">@ TICK_RISCV</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:35</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gga7c007d63cabddadd107f9b597278c32ea60666323b699ca9778c558723e1b77ac"><div class="ttname"><a href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea60666323b699ca9778c558723e1b77ac">TICK_TIMER0</a></div><div class="ttdeci">@ TICK_TIMER0</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:32</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gga7c007d63cabddadd107f9b597278c32ea691754430394f77b889182c77c69a3c6"><div class="ttname"><a href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32ea691754430394f77b889182c77c69a3c6">TICK_TIMER1</a></div><div class="ttdeci">@ TICK_TIMER1</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:33</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gga7c007d63cabddadd107f9b597278c32eab31898d6285a7c4bc73ff0ef9ee919b5"><div class="ttname"><a href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32eab31898d6285a7c4bc73ff0ef9ee919b5">TICK_PROC0</a></div><div class="ttdeci">@ TICK_PROC0</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:30</div></div>
+<div class="ttc" id="agroup__hardware__ticks_html_gga7c007d63cabddadd107f9b597278c32eae5a832897214be2a21eb29b5801ddd15"><div class="ttname"><a href="group__hardware__ticks.html#gga7c007d63cabddadd107f9b597278c32eae5a832897214be2a21eb29b5801ddd15">TICK_WATCHDOG</a></div><div class="ttdeci">@ TICK_WATCHDOG</div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:34</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h_html"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html">ticks.h</a></div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h_html_a41e89ca590f2be57b130558842800ed8"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a41e89ca590f2be57b130558842800ed8">TICKS_PROC0_CYCLES_OFFSET</a></div><div class="ttdeci">#define TICKS_PROC0_CYCLES_OFFSET</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/ticks.h:40</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h_html_a737158a2f0d52834623065296367b027"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#a737158a2f0d52834623065296367b027">TICKS_PROC0_CTRL_OFFSET</a></div><div class="ttdeci">#define TICKS_PROC0_CTRL_OFFSET</div><div class="ttdoc">Copyright (c) 2024 Raspberry Pi Ltd.</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/ticks.h:18</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h_html_ac4857c874d2dcc90a3be5556e8f3a88f"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2ticks_8h.html#ac4857c874d2dcc90a3be5556e8f3a88f">TICKS_PROC0_COUNT_OFFSET</a></div><div class="ttdeci">#define TICKS_PROC0_COUNT_OFFSET</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/ticks.h:50</div></div>
+<div class="ttc" id="astructticks__hw__t_html"><div class="ttname"><a href="structticks__hw__t.html">ticks_hw_t</a></div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:55</div></div>
+<div class="ttc" id="astructticks__slice__hw__t_html"><div class="ttname"><a href="structticks__slice__hw__t.html">ticks_slice_hw_t</a></div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/ticks.h:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_a4ed9f159ff82891f8d9c6442d59a09f.html">hardware_structs</a></li><li class="navelem"><a class="el" href="dir_644b18fc6729bbffe612edd11fd9bb60.html">include</a></li><li class="navelem"><a class="el" href="dir_00f006c97f93acb2044a3e94d70d66ca.html">hardware</a></li><li class="navelem"><a class="el" href="dir_e7a506f13e8b3ea148c60a9313519183.html">structs</a></li><li class="navelem"><a class="el" href="rp2350_2hardware__structs_2include_2hardware_2structs_2ticks_8h.html">ticks.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

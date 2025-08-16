@@ -1,0 +1,27 @@
+var structTPIU__Type =
+[
+    [ "ACPR", "group__CMSIS__core__DebugFunctions.html#ga7d6b32aac67b18ded927392a83245ace", null ],
+    [ "CLAIMCLR", "group__CMSIS__core__DebugFunctions.html#ga65a5db46df2d49e4b7d0cb2a91f362fc", null ],
+    [ "CLAIMSET", "group__CMSIS__core__DebugFunctions.html#gacc42ffa5fe661df6339dc3e9a61f57d7", null ],
+    [ "CSPSR", "group__CMSIS__core__DebugFunctions.html#ga6362b723d89dd97aa71d72e3ce94465b", null ],
+    [ "DEVID", "group__CMSIS__core__DebugFunctions.html#gafc5d82ae575c1437b46d7b3928357dc3", null ],
+    [ "DEVTYPE", "group__CMSIS__core__DebugFunctions.html#ga06cd44ff1439b93aff76a8d155d7b465", null ],
+    [ "FFCR", "group__CMSIS__core__DebugFunctions.html#gaa151f4dedec63032b8d66830529bdbd4", null ],
+    [ "FFSR", "group__CMSIS__core__DebugFunctions.html#ga72599d9a15ce1965a2df71d10817f5f8", null ],
+    [ "ITATBCTR0", "group__CMSIS__core__DebugFunctions.html#gaa5ad72117900f908adc6191a50b473c4", null ],
+    [ "ITATBCTR2", "group__CMSIS__core__DebugFunctions.html#ga1d495c1cb0f507038115b139395f35fe", null ],
+    [ "ITCTRL", "group__CMSIS__core__DebugFunctions.html#ga2b5bae5fdb65f5a9a40277872b140199", null ],
+    [ "ITFTTD0", "group__CMSIS__core__DebugFunctions.html#gacdb69ed78bf360ce7107d359a1e35e8b", null ],
+    [ "ITFTTD1", "group__CMSIS__core__DebugFunctions.html#gad465e0badea7361203f064b371739361", null ],
+    [ "PSCR", "group__CMSIS__core__DebugFunctions.html#ga5cafe63493a980fb3fefef896aa0e848", null ],
+    [ "RESERVED0", "group__CMSIS__core__DebugFunctions.html#ga70abb89e600402930c23eb197e6f4518", null ],
+    [ "RESERVED1", "group__CMSIS__core__DebugFunctions.html#ga42643a53c204f16069bfed67492ed29b", null ],
+    [ "RESERVED2", "group__CMSIS__core__DebugFunctions.html#ga99f2ef462b2d3e2ce59e43912e166d93", null ],
+    [ "RESERVED3", "group__CMSIS__core__DebugFunctions.html#gaa05105de13f1bd5f1ff66a84634d78b9", null ],
+    [ "RESERVED4", "group__CMSIS__core__DebugFunctions.html#gaa53baac8b1f1f14a39ef815e1d9204ba", null ],
+    [ "RESERVED5", "group__CMSIS__core__DebugFunctions.html#gaa4eb69fd981546b176a6eb9d5ec90ae2", null ],
+    [ "RESERVED7", "group__CMSIS__core__DebugFunctions.html#ga1e47dd6e693bf72d6d901ea67d881540", null ],
+    [ "SPPR", "group__CMSIS__core__DebugFunctions.html#ga7a1690d4e23b47430627cae1fdc73e5a", null ],
+    [ "SSPSR", "group__CMSIS__core__DebugFunctions.html#ga75e749410e0a7213aed9249ec44f31bb", null ],
+    [ "TRIGGER", "group__CMSIS__core__DebugFunctions.html#ga2b6dc203a24b2d2ce46935cec1b073ec", null ]
+];

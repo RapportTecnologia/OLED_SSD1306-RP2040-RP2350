@@ -1,0 +1,27 @@
+var structpio__hw__t =
+[
+    [ "ctrl", "structpio__hw__t.html#a4685250a77ae6fa7da4a7cd5a8a8dd5a", null ],
+    [ "dbg_cfginfo", "structpio__hw__t.html#a358b811a5ea0373374d537c3f7194d1d", null ],
+    [ "dbg_padoe", "structpio__hw__t.html#ae766a4db9bd9a9880dece407e90425c5", null ],
+    [ "dbg_padout", "structpio__hw__t.html#ae021c24a86a0a5fdd6676da41fa3b357", null ],
+    [ "fdebug", "structpio__hw__t.html#aeb6ced11a9b38dde787d283b1a7e0ae8", null ],
+    [ "flevel", "structpio__hw__t.html#a93cf7edbbfdab3afec4eb386b7178cad", null ],
+    [ "fstat", "structpio__hw__t.html#a24429b6046816c6711085be9f9df4fb8", null ],
+    [ "gpiobase", "structpio__hw__t.html#ac021e97520504bbb1c3c508118f85209", null ],
+    [ "input_sync_bypass", "structpio__hw__t.html#a96ff5dfd3cebbe91e89c652d1a0b05d9", null ],
+    [ "instr_mem", "structpio__hw__t.html#a99ba79d6c961d2c73789ce3f68dee264", null ],
+    [ "inte0", "structpio__hw__t.html#a49116b26cbac5064c5459a1ba3521617", null ],
+    [ "inte1", "structpio__hw__t.html#a75851a02e2c016f8db3db75e65c23eb9", null ],
+    [ "intf0", "structpio__hw__t.html#ad7ef8231db56cd34b4dc407c529b51dd", null ],
+    [ "intf1", "structpio__hw__t.html#a0691c1936d70c168f5147d46b069d4d3", null ],
+    [ "intr", "structpio__hw__t.html#a5ee3d635eb44113a11fd06ae42fb3d04", null ],
+    [ "ints0", "structpio__hw__t.html#a00322f3c6bda7e88135f534a082cf37f", null ],
+    [ "ints1", "structpio__hw__t.html#a054922ede266daa338e2a1f29e7aebcf", null ],
+    [ "irq", "structpio__hw__t.html#a729ddcf26c251138f88a5118f0711bd5", null ],
+    [ "irq_ctrl", "structpio__hw__t.html#a18c635663847d03187f66b0295dbb8ab", null ],
+    [ "irq_force", "structpio__hw__t.html#a096b6642d63bed0275f309784352633a", null ],
+    [ "rxf", "structpio__hw__t.html#af0ce73865483b7d85d31db630de0fa67", null ],
+    [ "rxf_putget", "structpio__hw__t.html#a0d69688d56a2c65ed4e2ac4b7a63b165", null ],
+    [ "sm", "structpio__hw__t.html#a9838a92529fec2cf86f22e0438ed1678", null ],
+    [ "txf", "structpio__hw__t.html#a53133beee92a4b9e4c80b965c7cd9d13", null ]
+];

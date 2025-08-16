@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura TIMER0_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structTIMER0__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structTIMER0__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura TIMER0_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Controls time and alarms.  
+ <a href="structTIMER0__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2350_8h_source.html">RP2350.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para TIMER0_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structTIMER0__Type__coll__graph.svg" width="112" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a71115f3d4715e0cdf97b3d70f175c81c" id="r_a71115f3d4715e0cdf97b3d70f175c81c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a71115f3d4715e0cdf97b3d70f175c81c">ALARM0</a></td></tr>
+<tr class="memdesc:a71115f3d4715e0cdf97b3d70f175c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arm alarm 0, and configure the time it will fire.  <br /></td></tr>
+<tr class="separator:a71115f3d4715e0cdf97b3d70f175c81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ceb09d6cecb333ac862eb18aeea52b" id="r_ac2ceb09d6cecb333ac862eb18aeea52b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#ac2ceb09d6cecb333ac862eb18aeea52b">ALARM1</a></td></tr>
+<tr class="memdesc:ac2ceb09d6cecb333ac862eb18aeea52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arm alarm 1, and configure the time it will fire.  <br /></td></tr>
+<tr class="separator:ac2ceb09d6cecb333ac862eb18aeea52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52555ecc3982088588fe7280684fb768" id="r_a52555ecc3982088588fe7280684fb768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a52555ecc3982088588fe7280684fb768">ALARM2</a></td></tr>
+<tr class="memdesc:a52555ecc3982088588fe7280684fb768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arm alarm 2, and configure the time it will fire.  <br /></td></tr>
+<tr class="separator:a52555ecc3982088588fe7280684fb768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606715114d167989b311aff4569633cf" id="r_a606715114d167989b311aff4569633cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a606715114d167989b311aff4569633cf">ALARM3</a></td></tr>
+<tr class="memdesc:a606715114d167989b311aff4569633cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arm alarm 3, and configure the time it will fire.  <br /></td></tr>
+<tr class="separator:a606715114d167989b311aff4569633cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c211012566e1864bfc92e4b552201e1" id="r_a6c211012566e1864bfc92e4b552201e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a6c211012566e1864bfc92e4b552201e1">ARMED</a></td></tr>
+<tr class="memdesc:a6c211012566e1864bfc92e4b552201e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the armed/disarmed status of each alarm.  <br /></td></tr>
+<tr class="separator:a6c211012566e1864bfc92e4b552201e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e237a10a74f5bd244fd228c5bc5ca2" id="r_a65e237a10a74f5bd244fd228c5bc5ca2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a65e237a10a74f5bd244fd228c5bc5ca2">DBGPAUSE</a></td></tr>
+<tr class="memdesc:a65e237a10a74f5bd244fd228c5bc5ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bits high to enable pause when the corresponding debug ports are active <br  />
+  <br /></td></tr>
+<tr class="separator:a65e237a10a74f5bd244fd228c5bc5ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdaae7917a7e32984db94701f1e958e" id="r_aabdaae7917a7e32984db94701f1e958e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#aabdaae7917a7e32984db94701f1e958e">INTE</a></td></tr>
+<tr class="memdesc:aabdaae7917a7e32984db94701f1e958e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable <br  />
+  <br /></td></tr>
+<tr class="separator:aabdaae7917a7e32984db94701f1e958e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4022855748663840610f5a366acd1b" id="r_a9e4022855748663840610f5a366acd1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a9e4022855748663840610f5a366acd1b">INTF</a></td></tr>
+<tr class="memdesc:a9e4022855748663840610f5a366acd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force <br  />
+  <br /></td></tr>
+<tr class="separator:a9e4022855748663840610f5a366acd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabcf6ade318dcdaf0f34947118f7a58" id="r_acabcf6ade318dcdaf0f34947118f7a58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#acabcf6ade318dcdaf0f34947118f7a58">INTR</a></td></tr>
+<tr class="memdesc:acabcf6ade318dcdaf0f34947118f7a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupts <br  />
+  <br /></td></tr>
+<tr class="separator:acabcf6ade318dcdaf0f34947118f7a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1e9e27f5991d7ef08df0354d3bdf8b" id="r_a9f1e9e27f5991d7ef08df0354d3bdf8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a9f1e9e27f5991d7ef08df0354d3bdf8b">INTS</a></td></tr>
+<tr class="memdesc:a9f1e9e27f5991d7ef08df0354d3bdf8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing <br  />
+  <br /></td></tr>
+<tr class="separator:a9f1e9e27f5991d7ef08df0354d3bdf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352e2b0f95760404958f6d6b3365a358" id="r_a352e2b0f95760404958f6d6b3365a358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a352e2b0f95760404958f6d6b3365a358">LOCKED</a></td></tr>
+<tr class="memdesc:a352e2b0f95760404958f6d6b3365a358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set locked bit to disable write access to timer Once set, cannot be cleared (without a reset) <br  />
+  <br /></td></tr>
+<tr class="separator:a352e2b0f95760404958f6d6b3365a358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f91908c9171a7d4007c9ae50be4e20" id="r_a67f91908c9171a7d4007c9ae50be4e20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a67f91908c9171a7d4007c9ae50be4e20">PAUSE</a></td></tr>
+<tr class="memdesc:a67f91908c9171a7d4007c9ae50be4e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set high to pause the timer <br  />
+  <br /></td></tr>
+<tr class="separator:a67f91908c9171a7d4007c9ae50be4e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b8676135322ba8b72cd020ec915983" id="r_a30b8676135322ba8b72cd020ec915983"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a30b8676135322ba8b72cd020ec915983">SOURCE</a></td></tr>
+<tr class="memdesc:a30b8676135322ba8b72cd020ec915983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the source for the timer.  <br /></td></tr>
+<tr class="separator:a30b8676135322ba8b72cd020ec915983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae609aa76111eb8216b98fce4bcdf12b5" id="r_ae609aa76111eb8216b98fce4bcdf12b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#ae609aa76111eb8216b98fce4bcdf12b5">TIMEHR</a></td></tr>
+<tr class="memdesc:ae609aa76111eb8216b98fce4bcdf12b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from bits 63:32 of time always read timelr before timehr <br  />
+  <br /></td></tr>
+<tr class="separator:ae609aa76111eb8216b98fce4bcdf12b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a14f73b546eded1e56def164732111" id="r_a78a14f73b546eded1e56def164732111"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a78a14f73b546eded1e56def164732111">TIMEHW</a></td></tr>
+<tr class="memdesc:a78a14f73b546eded1e56def164732111"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; TIMER0 Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a78a14f73b546eded1e56def164732111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4042359332b21e2edfb8c5428d365cc" id="r_aa4042359332b21e2edfb8c5428d365cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#aa4042359332b21e2edfb8c5428d365cc">TIMELR</a></td></tr>
+<tr class="memdesc:aa4042359332b21e2edfb8c5428d365cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from bits 31:0 of time <br  />
+  <br /></td></tr>
+<tr class="separator:aa4042359332b21e2edfb8c5428d365cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3728e5f915959c23d204ee30a15c0d" id="r_a5c3728e5f915959c23d204ee30a15c0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a5c3728e5f915959c23d204ee30a15c0d">TIMELW</a></td></tr>
+<tr class="memdesc:a5c3728e5f915959c23d204ee30a15c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to bits 31:0 of time writes do not get copied to time until timehw is written <br  />
+  <br /></td></tr>
+<tr class="separator:a5c3728e5f915959c23d204ee30a15c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb771b079c3daa156f2068a1386a52f" id="r_a4cb771b079c3daa156f2068a1386a52f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a4cb771b079c3daa156f2068a1386a52f">TIMERAWH</a></td></tr>
+<tr class="memdesc:a4cb771b079c3daa156f2068a1386a52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw read from bits 63:32 of time (no side effects) <br  />
+  <br /></td></tr>
+<tr class="separator:a4cb771b079c3daa156f2068a1386a52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284b7516059e41af3ef3f0b0fb5cc777" id="r_a284b7516059e41af3ef3f0b0fb5cc777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTIMER0__Type.html#a284b7516059e41af3ef3f0b0fb5cc777">TIMERAWL</a></td></tr>
+<tr class="memdesc:a284b7516059e41af3ef3f0b0fb5cc777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw read from bits 31:0 of time (no side effects) <br  />
+  <br /></td></tr>
+<tr class="separator:a284b7516059e41af3ef3f0b0fb5cc777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Controls time and alarms. </p>
+<pre class="fragment">    time is a 64 bit value indicating the time since power-on
+
+    timeh is the top 32 bits of time &amp; timel is the bottom 32 bits to change time write to timelw before timehw to read time read from timelr before timehr
+
+    An alarm is set by setting alarm_enable and writing to the corresponding alarm register When an alarm is pending, the corresponding alarm_running signal will be high An alarm can be cancelled before it has finished by clearing the alarm_enable When an alarm fires, the corresponding alarm_irq is set and alarm_running is cleared To clear the interrupt write a 1 to the corresponding alarm_irq The timer can be locked to prevent writing (TIMER0)
+</pre> </div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a71115f3d4715e0cdf97b3d70f175c81c" name="a71115f3d4715e0cdf97b3d70f175c81c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71115f3d4715e0cdf97b3d70f175c81c">&#9670;&#160;</a></span>ALARM0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::ALARM0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Arm alarm 0, and configure the time it will fire. </p>
+<p>Once armed, the alarm fires when TIMER_ALARM0 == TIMELR. The alarm will disarm itself once it fires, and can be disarmed early using the ARMED status register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac2ceb09d6cecb333ac862eb18aeea52b" name="ac2ceb09d6cecb333ac862eb18aeea52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ceb09d6cecb333ac862eb18aeea52b">&#9670;&#160;</a></span>ALARM1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::ALARM1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Arm alarm 1, and configure the time it will fire. </p>
+<p>Once armed, the alarm fires when TIMER_ALARM1 == TIMELR. The alarm will disarm itself once it fires, and can be disarmed early using the ARMED status register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a52555ecc3982088588fe7280684fb768" name="a52555ecc3982088588fe7280684fb768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52555ecc3982088588fe7280684fb768">&#9670;&#160;</a></span>ALARM2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::ALARM2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Arm alarm 2, and configure the time it will fire. </p>
+<p>Once armed, the alarm fires when TIMER_ALARM2 == TIMELR. The alarm will disarm itself once it fires, and can be disarmed early using the ARMED status register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a606715114d167989b311aff4569633cf" name="a606715114d167989b311aff4569633cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606715114d167989b311aff4569633cf">&#9670;&#160;</a></span>ALARM3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::ALARM3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Arm alarm 3, and configure the time it will fire. </p>
+<p>Once armed, the alarm fires when TIMER_ALARM3 == TIMELR. The alarm will disarm itself once it fires, and can be disarmed early using the ARMED status register. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6c211012566e1864bfc92e4b552201e1" name="a6c211012566e1864bfc92e4b552201e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c211012566e1864bfc92e4b552201e1">&#9670;&#160;</a></span>ARMED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::ARMED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates the armed/disarmed status of each alarm. </p>
+<p>A write to the corresponding ALARMx register arms the alarm. Alarms automatically disarm upon firing, but writing ones here will disarm immediately without waiting to fire. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a65e237a10a74f5bd244fd228c5bc5ca2" name="a65e237a10a74f5bd244fd228c5bc5ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e237a10a74f5bd244fd228c5bc5ca2">&#9670;&#160;</a></span>DBGPAUSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::DBGPAUSE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set bits high to enable pause when the corresponding debug ports are active <br  />
+ </p>
+
+</div>
+</div>
+<a id="aabdaae7917a7e32984db94701f1e958e" name="aabdaae7917a7e32984db94701f1e958e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabdaae7917a7e32984db94701f1e958e">&#9670;&#160;</a></span>INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9e4022855748663840610f5a366acd1b" name="a9e4022855748663840610f5a366acd1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4022855748663840610f5a366acd1b">&#9670;&#160;</a></span>INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force <br  />
+ </p>
+
+</div>
+</div>
+<a id="acabcf6ade318dcdaf0f34947118f7a58" name="acabcf6ade318dcdaf0f34947118f7a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabcf6ade318dcdaf0f34947118f7a58">&#9670;&#160;</a></span>INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupts <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9f1e9e27f5991d7ef08df0354d3bdf8b" name="a9f1e9e27f5991d7ef08df0354d3bdf8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1e9e27f5991d7ef08df0354d3bdf8b">&#9670;&#160;</a></span>INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing <br  />
+ </p>
+
+</div>
+</div>
+<a id="a352e2b0f95760404958f6d6b3365a358" name="a352e2b0f95760404958f6d6b3365a358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352e2b0f95760404958f6d6b3365a358">&#9670;&#160;</a></span>LOCKED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::LOCKED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set locked bit to disable write access to timer Once set, cannot be cleared (without a reset) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a67f91908c9171a7d4007c9ae50be4e20" name="a67f91908c9171a7d4007c9ae50be4e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f91908c9171a7d4007c9ae50be4e20">&#9670;&#160;</a></span>PAUSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::PAUSE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set high to pause the timer <br  />
+ </p>
+
+</div>
+</div>
+<a id="a30b8676135322ba8b72cd020ec915983" name="a30b8676135322ba8b72cd020ec915983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b8676135322ba8b72cd020ec915983">&#9670;&#160;</a></span>SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::SOURCE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects the source for the timer. </p>
+<p>Defaults to the normal tick configured in the ticks block (typically configured to 1 microsecond). Writing to 1 will ignore the tick and count clk_sys cycles instead. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae609aa76111eb8216b98fce4bcdf12b5" name="ae609aa76111eb8216b98fce4bcdf12b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae609aa76111eb8216b98fce4bcdf12b5">&#9670;&#160;</a></span>TIMEHR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::TIMEHR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read from bits 63:32 of time always read timelr before timehr <br  />
+ </p>
+
+</div>
+</div>
+<a id="a78a14f73b546eded1e56def164732111" name="a78a14f73b546eded1e56def164732111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a14f73b546eded1e56def164732111">&#9670;&#160;</a></span>TIMEHW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::TIMEHW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; TIMER0 Structure <br  />
+ </p>
+<p>Write to bits 63:32 of time always write timelw before timehw <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa4042359332b21e2edfb8c5428d365cc" name="aa4042359332b21e2edfb8c5428d365cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4042359332b21e2edfb8c5428d365cc">&#9670;&#160;</a></span>TIMELR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::TIMELR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read from bits 31:0 of time <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5c3728e5f915959c23d204ee30a15c0d" name="a5c3728e5f915959c23d204ee30a15c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3728e5f915959c23d204ee30a15c0d">&#9670;&#160;</a></span>TIMELW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::TIMELW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write to bits 31:0 of time writes do not get copied to time until timehw is written <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4cb771b079c3daa156f2068a1386a52f" name="a4cb771b079c3daa156f2068a1386a52f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb771b079c3daa156f2068a1386a52f">&#9670;&#160;</a></span>TIMERAWH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::TIMERAWH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw read from bits 63:32 of time (no side effects) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a284b7516059e41af3ef3f0b0fb5cc777" name="a284b7516059e41af3ef3f0b0fb5cc777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a284b7516059e41af3ef3f0b0fb5cc777">&#9670;&#160;</a></span>TIMERAWL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> TIMER0_Type::TIMERAWL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw read from bits 31:0 of time (no side effects) <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structTIMER0__Type.html">TIMER0_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

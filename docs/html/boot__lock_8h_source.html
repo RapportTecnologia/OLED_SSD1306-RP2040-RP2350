@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de boot_lock.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('boot__lock_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">boot_lock.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="boot__lock_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2024 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _HARDWARE_BOOT_LOCK_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _HARDWARE_BOOT_LOCK_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;pico.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// PICO_CONFIG: PARAM_ASSERTIONS_ENABLED_HARDWARE_BOOT_LOCK, Enable/disable assertions in the hardware_boot_lock module, type=bool, default=0, group=hardware_boot_lock</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef PARAM_ASSERTIONS_ENABLED_HARDWARE_BOOT_LOCK</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="boot__lock_8h.html#ae10ddcc73be6ba2b739f7ec6c07cb0bc">   18</a></span><span class="preprocessor">#define PARAM_ASSERTIONS_ENABLED_HARDWARE_BOOT_LOCK 0</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#if NUM_BOOT_LOCKS &gt; 0</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;hardware/sync.h&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="hardware__structs_2include_2hardware_2structs_2bootram_8h.html">hardware/structs/bootram.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keyword">static</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_instance</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_define" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">HARDWARE_BOOT_LOCK</a>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a> &gt;= <a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2platform__defs_8h.html#a6dcef386928df8a459d67bdf013b71da">NUM_BOOT_LOCKS</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *) (<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">BOOTRAM_BASE</a> + <a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#aeb0761cb46939770b67d1decbc806a16">BOOTRAM_BOOTLOCK0_OFFSET</a> + <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a> * 4);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keyword">static</span> <a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_get_num</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *lock) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_define" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">HARDWARE_BOOT_LOCK</a>, (<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>) lock &lt; <a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">BOOTRAM_BASE</a> + <a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#aeb0761cb46939770b67d1decbc806a16">BOOTRAM_BOOTLOCK0_OFFSET</a> ||</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                            (<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>) lock &gt;= <a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2platform__defs_8h.html#a6dcef386928df8a459d67bdf013b71da">NUM_BOOT_LOCKS</a> * <span class="keyword">sizeof</span>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a>) + <a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">BOOTRAM_BASE</a> + <a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#aeb0761cb46939770b67d1decbc806a16">BOOTRAM_BOOTLOCK0_OFFSET</a> ||</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                            ((<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>) lock - <a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">BOOTRAM_BASE</a> + <a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#aeb0761cb46939770b67d1decbc806a16">BOOTRAM_BOOTLOCK0_OFFSET</a>) % <span class="keyword">sizeof</span>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a>) != 0);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>) (lock - (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *) (<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">BOOTRAM_BASE</a> + <a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#aeb0761cb46939770b67d1decbc806a16">BOOTRAM_BOOTLOCK0_OFFSET</a>));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_unsafe_blocking</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *lock) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Note we don&#39;t do a wfe or anything, because by convention these boot_locks are VERY SHORT LIVED and NEVER BLOCK and run</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// with INTERRUPTS disabled (to ensure that)... therefore nothing on our core could be blocking us, so we just need to wait on another core</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// anyway which should be finished soon</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">while</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__builtin_expect</a>(!*lock, 0)) { <span class="comment">// read from bootlock register (tries to acquire the lock)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_function" href="host_2pico__platform_2include_2pico_2platform_8h.html#a4cd2ba8ffa19bec73fe1a54425d8bc03">tight_loop_contents</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    __mem_fence_acquire();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_try_lock_unsafe</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *lock) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span> (*lock) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        __mem_fence_acquire();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_unlock_unsafe</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *lock) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    __mem_fence_release();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    *lock = 0; <span class="comment">// write to bootlock register (release lock)</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keyword">static</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_blocking</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *lock) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save = <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a525f02984c958c6399293cad7cfc170d">save_and_disable_interrupts</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_unsafe_blocking</a>(lock);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> save;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">is_boot_locked</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *lock) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_define" href="address__mapped_8h.html#abec0fe431a5287f57f00d1ad891a9e88">check_hw_size</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a>, 4);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a> = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_get_num</a>(lock);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> 0 != (*(<a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> *) (<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">BOOTRAM_BASE</a> + <a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#ad4c7b43e94bb7c0bf8054fde03389ef9">BOOTRAM_BOOTLOCK_STAT_OFFSET</a>) &amp; (1u &lt;&lt; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>));</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_unlock</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *lock, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">saved_irq</a>) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_unlock_unsafe</a>(lock);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adae7234e92d2a2e025576e9f9dae33d8">restore_interrupts_from_disabled</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">saved_irq</a>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_t</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_lock_init</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">boot_locks_reset</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>}</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ab87d9fde36e04e9e65c9f16f56982eeb"><div class="ttname"><a href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a></div><div class="ttdeci">const volatile uint32_t io_ro_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:67</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_abec0fe431a5287f57f00d1ad891a9e88"><div class="ttname"><a href="address__mapped_8h.html#abec0fe431a5287f57f00d1ad891a9e88">check_hw_size</a></div><div class="ttdeci">#define check_hw_size(type, size)</div><div class="ttdef"><b>Definição</b> address_mapped.h:56</div></div>
+<div class="ttc" id="aassert_8h_html_a6009dd42d6b3cb564a0be8015766e9d5"><div class="ttname"><a href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a></div><div class="ttdeci">#define invalid_params_if(x, test)</div><div class="ttdef"><b>Definição</b> assert.h:34</div></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="acommon_2pico__base__headers_2include_2pico_2types_8h_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definição</b> common/pico_base_headers/include/pico/types.h:18</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2bootram_8h_html_ad4c7b43e94bb7c0bf8054fde03389ef9"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#ad4c7b43e94bb7c0bf8054fde03389ef9">BOOTRAM_BOOTLOCK_STAT_OFFSET</a></div><div class="ttdeci">#define BOOTRAM_BOOTLOCK_STAT_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/bootram.h:42</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2bootram_8h_html_aeb0761cb46939770b67d1decbc806a16"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2bootram_8h.html#aeb0761cb46939770b67d1decbc806a16">BOOTRAM_BOOTLOCK0_OFFSET</a></div><div class="ttdeci">#define BOOTRAM_BOOTLOCK0_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/bootram.h:52</div></div>
+<div class="ttc" id="ahardware__structs_2include_2hardware_2structs_2bootram_8h_html"><div class="ttname"><a href="hardware__structs_2include_2hardware_2structs_2bootram_8h.html">bootram.h</a></div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a525f02984c958c6399293cad7cfc170d"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a525f02984c958c6399293cad7cfc170d">save_and_disable_interrupts</a></div><div class="ttdeci">uint32_t save_and_disable_interrupts()</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:20</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_adae7234e92d2a2e025576e9f9dae33d8"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adae7234e92d2a2e025576e9f9dae33d8">restore_interrupts_from_disabled</a></div><div class="ttdeci">void restore_interrupts_from_disabled(uint32_t status)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:31</div></div>
+<div class="ttc" id="ahost_2pico__platform_2include_2pico_2platform_8h_html_a23eadd8d1642fb8fe4600708c36e116a"><div class="ttname"><a href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a></div><div class="ttdeci">#define __force_inline</div><div class="ttdef"><b>Definição</b> host/pico_platform/include/pico/platform.h:66</div></div>
+<div class="ttc" id="ahost_2pico__platform_2include_2pico_2platform_8h_html_a4cd2ba8ffa19bec73fe1a54425d8bc03"><div class="ttname"><a href="host_2pico__platform_2include_2pico_2platform_8h.html#a4cd2ba8ffa19bec73fe1a54425d8bc03">tight_loop_contents</a></div><div class="ttdeci">void tight_loop_contents()</div><div class="ttdef"><b>Definição</b> platform_base.c:13</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2platform__defs_8h_html_a6dcef386928df8a459d67bdf013b71da"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2platform__defs_8h.html#a6dcef386928df8a459d67bdf013b71da">NUM_BOOT_LOCKS</a></div><div class="ttdeci">#define NUM_BOOT_LOCKS</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/platform_defs.h:63</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h_html_ad513c28c35fc1310aae5bb6c74cf0a4c"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">BOOTRAM_BASE</a></div><div class="ttdeci">#define BOOTRAM_BASE</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/addressmap.h:71</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_7b83c72b2b67f770bba863e2ea48497d.html">hardware_boot_lock</a></li><li class="navelem"><a class="el" href="dir_ceb4aa6bd54a22c0c69280fc05e4b0d2.html">include</a></li><li class="navelem"><a class="el" href="dir_a8e139c14d26629879ff85ee8bc63b31.html">hardware</a></li><li class="navelem"><a class="el" href="boot__lock_8h.html">boot_lock.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

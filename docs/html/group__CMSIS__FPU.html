@@ -1,0 +1,1468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Floating Point Unit (FPU)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__CMSIS__FPU.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Módulos</a> &#124;
+<a href="#nested-classes">Componentes</a>  </div>
+  <div class="headertitle"><div class="title">Floating Point Unit (FPU)<div class="ingroups"><a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &#124; <a class="el" href="group__CMSIS__core__register.html">Defines and Type Definitions</a> &raquo; <a class="el" href="group__CMSIS__CORE.html">Status and Control Registers</a> &raquo; <a class="el" href="group__CMSIS__NVIC.html">Nested Vectored Interrupt Controller (NVIC)</a> &raquo; <a class="el" href="group__CMSIS__SCB.html">System Control Block (SCB)</a> &raquo; <a class="el" href="group__CMSIS__SCnSCB.html">System Controls not in SCB (SCnSCB)</a> &raquo; <a class="el" href="group__CMSIS__SysTick.html">System Tick Timer (SysTick)</a> &raquo; <a class="el" href="group__CMSIS__ITM.html">Instrumentation Trace Macrocell (ITM)</a> &raquo; <a class="el" href="group__CMSIS__DWT.html">Data Watchpoint and Trace (DWT)</a> &raquo; <a class="el" href="group__CMSIS__TPIU.html">Trace Port Interface Unit (TPIU)</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Type definitions for the Floating Point Unit (FPU)  
+<a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para Floating Point Unit (FPU):</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__CMSIS__FPU.svg" width="554" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Módulos</h2></td></tr>
+<tr class="memitem:group__CMSIS__DCB" id="r_group__CMSIS__DCB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__DCB.html">Debug Control Block</a></td></tr>
+<tr class="memdesc:group__CMSIS__DCB"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definitions for the Debug Control Block Registers. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFPU__Type.html">FPU_Type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure type to access the Floating Point Unit (FPU).  <a href="structFPU__Type.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4228a923ddf665f868e56b4b9e9bff7b" id="r_ga4228a923ddf665f868e56b4b9e9bff7b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga4228a923ddf665f868e56b4b9e9bff7b">FPU_FPCCR_ASPEN_Pos</a>&#160;&#160;&#160;31<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga4228a923ddf665f868e56b4b9e9bff7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPU Floating-Point Context Control Register Definitions.  <br /></td></tr>
+<tr class="separator:ga4228a923ddf665f868e56b4b9e9bff7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga309886ff6bbd25cb13c061c6683c6c0c" id="r_ga309886ff6bbd25cb13c061c6683c6c0c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga309886ff6bbd25cb13c061c6683c6c0c">FPU_FPCCR_ASPEN_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga4228a923ddf665f868e56b4b9e9bff7b">FPU_FPCCR_ASPEN_Pos</a>)</td></tr>
+<tr class="memdesc:ga309886ff6bbd25cb13c061c6683c6c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: ASPEN bit Mask.  <br /></td></tr>
+<tr class="separator:ga309886ff6bbd25cb13c061c6683c6c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7d70e051fe759ad8fed83bf5b5aebc1" id="r_gac7d70e051fe759ad8fed83bf5b5aebc1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gac7d70e051fe759ad8fed83bf5b5aebc1">FPU_FPCCR_LSPEN_Pos</a>&#160;&#160;&#160;30U</td></tr>
+<tr class="memdesc:gac7d70e051fe759ad8fed83bf5b5aebc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: LSPEN Position.  <br /></td></tr>
+<tr class="separator:gac7d70e051fe759ad8fed83bf5b5aebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4ab19de45df6522dd882bc116f938e9" id="r_gaf4ab19de45df6522dd882bc116f938e9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaf4ab19de45df6522dd882bc116f938e9">FPU_FPCCR_LSPEN_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac7d70e051fe759ad8fed83bf5b5aebc1">FPU_FPCCR_LSPEN_Pos</a>)</td></tr>
+<tr class="memdesc:gaf4ab19de45df6522dd882bc116f938e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: LSPEN bit Mask.  <br /></td></tr>
+<tr class="separator:gaf4ab19de45df6522dd882bc116f938e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga705368bf3c52b5bb4edfbcb3e2631e1c" id="r_ga705368bf3c52b5bb4edfbcb3e2631e1c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga705368bf3c52b5bb4edfbcb3e2631e1c">FPU_FPCCR_LSPENS_Pos</a>&#160;&#160;&#160;29<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga705368bf3c52b5bb4edfbcb3e2631e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: LSPENS Position.  <br /></td></tr>
+<tr class="separator:ga705368bf3c52b5bb4edfbcb3e2631e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73afcf0fe09c69e9625e11035cabb1c0" id="r_ga73afcf0fe09c69e9625e11035cabb1c0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga73afcf0fe09c69e9625e11035cabb1c0">FPU_FPCCR_LSPENS_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga705368bf3c52b5bb4edfbcb3e2631e1c">FPU_FPCCR_LSPENS_Pos</a>)</td></tr>
+<tr class="memdesc:ga73afcf0fe09c69e9625e11035cabb1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: LSPENS bit Mask.  <br /></td></tr>
+<tr class="separator:ga73afcf0fe09c69e9625e11035cabb1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b97b2fdac794f4fddab1e4342e0c104" id="r_ga0b97b2fdac794f4fddab1e4342e0c104"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga0b97b2fdac794f4fddab1e4342e0c104">FPU_FPCCR_CLRONRET_Pos</a>&#160;&#160;&#160;28<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga0b97b2fdac794f4fddab1e4342e0c104"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: CLRONRET Position.  <br /></td></tr>
+<tr class="separator:ga0b97b2fdac794f4fddab1e4342e0c104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadedc12ec237657721a613c6f47abed6f" id="r_gadedc12ec237657721a613c6f47abed6f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gadedc12ec237657721a613c6f47abed6f">FPU_FPCCR_CLRONRET_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga0b97b2fdac794f4fddab1e4342e0c104">FPU_FPCCR_CLRONRET_Pos</a>)</td></tr>
+<tr class="memdesc:gadedc12ec237657721a613c6f47abed6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: CLRONRET bit Mask.  <br /></td></tr>
+<tr class="separator:gadedc12ec237657721a613c6f47abed6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb18ccf9d1b0a4bef3b0823f18eb96ba" id="r_gabb18ccf9d1b0a4bef3b0823f18eb96ba"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gabb18ccf9d1b0a4bef3b0823f18eb96ba">FPU_FPCCR_CLRONRETS_Pos</a>&#160;&#160;&#160;27<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gabb18ccf9d1b0a4bef3b0823f18eb96ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: CLRONRETS Position.  <br /></td></tr>
+<tr class="separator:gabb18ccf9d1b0a4bef3b0823f18eb96ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga103d932807c15250d96711952878eeb2" id="r_ga103d932807c15250d96711952878eeb2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga103d932807c15250d96711952878eeb2">FPU_FPCCR_CLRONRETS_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gabb18ccf9d1b0a4bef3b0823f18eb96ba">FPU_FPCCR_CLRONRETS_Pos</a>)</td></tr>
+<tr class="memdesc:ga103d932807c15250d96711952878eeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: CLRONRETS bit Mask.  <br /></td></tr>
+<tr class="separator:ga103d932807c15250d96711952878eeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga624474f408fde177df519460775a74a1" id="r_ga624474f408fde177df519460775a74a1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga624474f408fde177df519460775a74a1">FPU_FPCCR_TS_Pos</a>&#160;&#160;&#160;26<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga624474f408fde177df519460775a74a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: TS Position.  <br /></td></tr>
+<tr class="separator:ga624474f408fde177df519460775a74a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1377a5dfb4b9c6b18e379ac15e0dc23e" id="r_ga1377a5dfb4b9c6b18e379ac15e0dc23e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga1377a5dfb4b9c6b18e379ac15e0dc23e">FPU_FPCCR_TS_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga624474f408fde177df519460775a74a1">FPU_FPCCR_TS_Pos</a>)</td></tr>
+<tr class="memdesc:ga1377a5dfb4b9c6b18e379ac15e0dc23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: TS bit Mask.  <br /></td></tr>
+<tr class="separator:ga1377a5dfb4b9c6b18e379ac15e0dc23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac48b42e143b93411977dcb9086a5e4e4" id="r_gac48b42e143b93411977dcb9086a5e4e4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gac48b42e143b93411977dcb9086a5e4e4">FPU_FPCCR_UFRDY_Pos</a>&#160;&#160;&#160;10U</td></tr>
+<tr class="memdesc:gac48b42e143b93411977dcb9086a5e4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: UFRDY Position.  <br /></td></tr>
+<tr class="separator:gac48b42e143b93411977dcb9086a5e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97c610927aab580cac3fb166f080b6a6" id="r_ga97c610927aab580cac3fb166f080b6a6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga97c610927aab580cac3fb166f080b6a6">FPU_FPCCR_UFRDY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac48b42e143b93411977dcb9086a5e4e4">FPU_FPCCR_UFRDY_Pos</a>)</td></tr>
+<tr class="memdesc:ga97c610927aab580cac3fb166f080b6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: UFRDY bit Mask.  <br /></td></tr>
+<tr class="separator:ga97c610927aab580cac3fb166f080b6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac90e551e3cfda27c089bf381acba5aa0" id="r_gac90e551e3cfda27c089bf381acba5aa0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gac90e551e3cfda27c089bf381acba5aa0">FPU_FPCCR_SPLIMVIOL_Pos</a>&#160;&#160;&#160;9<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gac90e551e3cfda27c089bf381acba5aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: SPLIMVIOL Position.  <br /></td></tr>
+<tr class="separator:gac90e551e3cfda27c089bf381acba5aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5e511cae62f922a9a91af0972f7a5e6" id="r_gaa5e511cae62f922a9a91af0972f7a5e6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaa5e511cae62f922a9a91af0972f7a5e6">FPU_FPCCR_SPLIMVIOL_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac90e551e3cfda27c089bf381acba5aa0">FPU_FPCCR_SPLIMVIOL_Pos</a>)</td></tr>
+<tr class="memdesc:gaa5e511cae62f922a9a91af0972f7a5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: SPLIMVIOL bit Mask.  <br /></td></tr>
+<tr class="separator:gaa5e511cae62f922a9a91af0972f7a5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0a4effc79209d821ded517c2be326ba" id="r_gae0a4effc79209d821ded517c2be326ba"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gae0a4effc79209d821ded517c2be326ba">FPU_FPCCR_MONRDY_Pos</a>&#160;&#160;&#160;8<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gae0a4effc79209d821ded517c2be326ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: MONRDY Position.  <br /></td></tr>
+<tr class="separator:gae0a4effc79209d821ded517c2be326ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42067729a887081cf56b8fe1029be7a1" id="r_ga42067729a887081cf56b8fe1029be7a1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga42067729a887081cf56b8fe1029be7a1">FPU_FPCCR_MONRDY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gae0a4effc79209d821ded517c2be326ba">FPU_FPCCR_MONRDY_Pos</a>)</td></tr>
+<tr class="memdesc:ga42067729a887081cf56b8fe1029be7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: MONRDY bit Mask.  <br /></td></tr>
+<tr class="separator:ga42067729a887081cf56b8fe1029be7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga571354f040a9372c0ad0cb87e296ea7d" id="r_ga571354f040a9372c0ad0cb87e296ea7d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga571354f040a9372c0ad0cb87e296ea7d">FPU_FPCCR_SFRDY_Pos</a>&#160;&#160;&#160;7<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga571354f040a9372c0ad0cb87e296ea7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: SFRDY Position.  <br /></td></tr>
+<tr class="separator:ga571354f040a9372c0ad0cb87e296ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga419a1e5609bbedf94f518c72214bddbc" id="r_ga419a1e5609bbedf94f518c72214bddbc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga419a1e5609bbedf94f518c72214bddbc">FPU_FPCCR_SFRDY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga571354f040a9372c0ad0cb87e296ea7d">FPU_FPCCR_SFRDY_Pos</a>)</td></tr>
+<tr class="memdesc:ga419a1e5609bbedf94f518c72214bddbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: SFRDY bit Mask.  <br /></td></tr>
+<tr class="separator:ga419a1e5609bbedf94f518c72214bddbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d633920f92c3ce4133d769701619b17" id="r_ga6d633920f92c3ce4133d769701619b17"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga6d633920f92c3ce4133d769701619b17">FPU_FPCCR_BFRDY_Pos</a>&#160;&#160;&#160;6<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga6d633920f92c3ce4133d769701619b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: BFRDY Position.  <br /></td></tr>
+<tr class="separator:ga6d633920f92c3ce4133d769701619b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad349eb1323d8399d54a04c0bfd520cb2" id="r_gad349eb1323d8399d54a04c0bfd520cb2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gad349eb1323d8399d54a04c0bfd520cb2">FPU_FPCCR_BFRDY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga6d633920f92c3ce4133d769701619b17">FPU_FPCCR_BFRDY_Pos</a>)</td></tr>
+<tr class="memdesc:gad349eb1323d8399d54a04c0bfd520cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: BFRDY bit Mask.  <br /></td></tr>
+<tr class="separator:gad349eb1323d8399d54a04c0bfd520cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccdb481211629f9440431439231187f1" id="r_gaccdb481211629f9440431439231187f1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaccdb481211629f9440431439231187f1">FPU_FPCCR_MMRDY_Pos</a>&#160;&#160;&#160;5<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gaccdb481211629f9440431439231187f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: MMRDY Position.  <br /></td></tr>
+<tr class="separator:gaccdb481211629f9440431439231187f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadedfaec9fdd07261573e823a4dcfb5c4" id="r_gadedfaec9fdd07261573e823a4dcfb5c4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gadedfaec9fdd07261573e823a4dcfb5c4">FPU_FPCCR_MMRDY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaccdb481211629f9440431439231187f1">FPU_FPCCR_MMRDY_Pos</a>)</td></tr>
+<tr class="memdesc:gadedfaec9fdd07261573e823a4dcfb5c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: MMRDY bit Mask.  <br /></td></tr>
+<tr class="separator:gadedfaec9fdd07261573e823a4dcfb5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab12733991487acc2da41ca300fe36fb6" id="r_gab12733991487acc2da41ca300fe36fb6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gab12733991487acc2da41ca300fe36fb6">FPU_FPCCR_HFRDY_Pos</a>&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gab12733991487acc2da41ca300fe36fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: HFRDY Position.  <br /></td></tr>
+<tr class="separator:gab12733991487acc2da41ca300fe36fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4beaa279abff34828344bd594fff8a1" id="r_gaf4beaa279abff34828344bd594fff8a1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaf4beaa279abff34828344bd594fff8a1">FPU_FPCCR_HFRDY_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gab12733991487acc2da41ca300fe36fb6">FPU_FPCCR_HFRDY_Pos</a>)</td></tr>
+<tr class="memdesc:gaf4beaa279abff34828344bd594fff8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: HFRDY bit Mask.  <br /></td></tr>
+<tr class="separator:gaf4beaa279abff34828344bd594fff8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0937d64c42374200af44b22e5b49fd26" id="r_ga0937d64c42374200af44b22e5b49fd26"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga0937d64c42374200af44b22e5b49fd26">FPU_FPCCR_THREAD_Pos</a>&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga0937d64c42374200af44b22e5b49fd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: processor mode bit Position.  <br /></td></tr>
+<tr class="separator:ga0937d64c42374200af44b22e5b49fd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d18cd88336d63d4b1810383aa8da700" id="r_ga8d18cd88336d63d4b1810383aa8da700"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga8d18cd88336d63d4b1810383aa8da700">FPU_FPCCR_THREAD_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga0937d64c42374200af44b22e5b49fd26">FPU_FPCCR_THREAD_Pos</a>)</td></tr>
+<tr class="memdesc:ga8d18cd88336d63d4b1810383aa8da700"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: processor mode active bit Mask.  <br /></td></tr>
+<tr class="separator:ga8d18cd88336d63d4b1810383aa8da700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4123d3881e5342251f559cec19e23b4e" id="r_ga4123d3881e5342251f559cec19e23b4e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga4123d3881e5342251f559cec19e23b4e">FPU_FPCCR_S_Pos</a>&#160;&#160;&#160;2<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga4123d3881e5342251f559cec19e23b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: Security status of the FP context bit Position.  <br /></td></tr>
+<tr class="separator:ga4123d3881e5342251f559cec19e23b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47d3d3b29514c7d7581cfcc304368cea" id="r_ga47d3d3b29514c7d7581cfcc304368cea"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga47d3d3b29514c7d7581cfcc304368cea">FPU_FPCCR_S_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga4123d3881e5342251f559cec19e23b4e">FPU_FPCCR_S_Pos</a>)</td></tr>
+<tr class="memdesc:ga47d3d3b29514c7d7581cfcc304368cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: Security status of the FP context bit Mask.  <br /></td></tr>
+<tr class="separator:ga47d3d3b29514c7d7581cfcc304368cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea663104375ce6be15470e3db294c92d" id="r_gaea663104375ce6be15470e3db294c92d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaea663104375ce6be15470e3db294c92d">FPU_FPCCR_USER_Pos</a>&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gaea663104375ce6be15470e3db294c92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: privilege level bit Position.  <br /></td></tr>
+<tr class="separator:gaea663104375ce6be15470e3db294c92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2eb70427eeaa7344196219cf5a8620a4" id="r_ga2eb70427eeaa7344196219cf5a8620a4"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga2eb70427eeaa7344196219cf5a8620a4">FPU_FPCCR_USER_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaea663104375ce6be15470e3db294c92d">FPU_FPCCR_USER_Pos</a>)</td></tr>
+<tr class="memdesc:ga2eb70427eeaa7344196219cf5a8620a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: privilege level bit Mask.  <br /></td></tr>
+<tr class="separator:ga2eb70427eeaa7344196219cf5a8620a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga803bf3f6d15b04deaad0801bee5b35ed" id="r_ga803bf3f6d15b04deaad0801bee5b35ed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga803bf3f6d15b04deaad0801bee5b35ed">FPU_FPCCR_LSPACT_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga803bf3f6d15b04deaad0801bee5b35ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: Lazy state preservation active bit Position.  <br /></td></tr>
+<tr class="separator:ga803bf3f6d15b04deaad0801bee5b35ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86e7c2fa52ba65c3b535dfa33f2586eb" id="r_ga86e7c2fa52ba65c3b535dfa33f2586eb"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga86e7c2fa52ba65c3b535dfa33f2586eb">FPU_FPCCR_LSPACT_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga803bf3f6d15b04deaad0801bee5b35ed">FPU_FPCCR_LSPACT_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga86e7c2fa52ba65c3b535dfa33f2586eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCCR: Lazy state preservation active bit Mask.  <br /></td></tr>
+<tr class="separator:ga86e7c2fa52ba65c3b535dfa33f2586eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf45377b7e45be8517ddbcf2028b80ae7" id="r_gaf45377b7e45be8517ddbcf2028b80ae7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaf45377b7e45be8517ddbcf2028b80ae7">FPU_FPCAR_ADDRESS_Pos</a>&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gaf45377b7e45be8517ddbcf2028b80ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPU Floating-Point Context Address Register Definitions.  <br /></td></tr>
+<tr class="separator:gaf45377b7e45be8517ddbcf2028b80ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga517d89370c81325c5387b9c3085ac554" id="r_ga517d89370c81325c5387b9c3085ac554"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga517d89370c81325c5387b9c3085ac554">FPU_FPCAR_ADDRESS_Msk</a>&#160;&#160;&#160;(0x1FFFFFFFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaf45377b7e45be8517ddbcf2028b80ae7">FPU_FPCAR_ADDRESS_Pos</a>)</td></tr>
+<tr class="memdesc:ga517d89370c81325c5387b9c3085ac554"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPCAR: ADDRESS bit Mask.  <br /></td></tr>
+<tr class="separator:ga517d89370c81325c5387b9c3085ac554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga138f54bc002629ab3e4de814c58abb29" id="r_ga138f54bc002629ab3e4de814c58abb29"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga138f54bc002629ab3e4de814c58abb29">FPU_FPDSCR_AHP_Pos</a>&#160;&#160;&#160;26<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga138f54bc002629ab3e4de814c58abb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPU Floating-Point Default Status Control Register Definitions.  <br /></td></tr>
+<tr class="separator:ga138f54bc002629ab3e4de814c58abb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2789cebebda5fda8c4e9d87e24f32be" id="r_gab2789cebebda5fda8c4e9d87e24f32be"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gab2789cebebda5fda8c4e9d87e24f32be">FPU_FPDSCR_AHP_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga138f54bc002629ab3e4de814c58abb29">FPU_FPDSCR_AHP_Pos</a>)</td></tr>
+<tr class="memdesc:gab2789cebebda5fda8c4e9d87e24f32be"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPDSCR: AHP bit Mask.  <br /></td></tr>
+<tr class="separator:gab2789cebebda5fda8c4e9d87e24f32be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41776b80fa450ef2ea6d3fee89aa35f2" id="r_ga41776b80fa450ef2ea6d3fee89aa35f2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga41776b80fa450ef2ea6d3fee89aa35f2">FPU_FPDSCR_DN_Pos</a>&#160;&#160;&#160;25<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga41776b80fa450ef2ea6d3fee89aa35f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPDSCR: DN bit Position.  <br /></td></tr>
+<tr class="separator:ga41776b80fa450ef2ea6d3fee89aa35f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40c2d4a297ca2ceffe174703a4ad17f6" id="r_ga40c2d4a297ca2ceffe174703a4ad17f6"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga40c2d4a297ca2ceffe174703a4ad17f6">FPU_FPDSCR_DN_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga41776b80fa450ef2ea6d3fee89aa35f2">FPU_FPDSCR_DN_Pos</a>)</td></tr>
+<tr class="memdesc:ga40c2d4a297ca2ceffe174703a4ad17f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPDSCR: DN bit Mask.  <br /></td></tr>
+<tr class="separator:ga40c2d4a297ca2ceffe174703a4ad17f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3c2fc96e312ba47b902d5f80d9b8575" id="r_gab3c2fc96e312ba47b902d5f80d9b8575"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gab3c2fc96e312ba47b902d5f80d9b8575">FPU_FPDSCR_FZ_Pos</a>&#160;&#160;&#160;24<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gab3c2fc96e312ba47b902d5f80d9b8575"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPDSCR: FZ bit Position.  <br /></td></tr>
+<tr class="separator:gab3c2fc96e312ba47b902d5f80d9b8575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae7d901442d4af97c6d22939cffc8ad9" id="r_gaae7d901442d4af97c6d22939cffc8ad9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaae7d901442d4af97c6d22939cffc8ad9">FPU_FPDSCR_FZ_Msk</a>&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gab3c2fc96e312ba47b902d5f80d9b8575">FPU_FPDSCR_FZ_Pos</a>)</td></tr>
+<tr class="memdesc:gaae7d901442d4af97c6d22939cffc8ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPDSCR: FZ bit Mask.  <br /></td></tr>
+<tr class="separator:gaae7d901442d4af97c6d22939cffc8ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7aeedf36be8f170dd3e276028e8e29ed" id="r_ga7aeedf36be8f170dd3e276028e8e29ed"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga7aeedf36be8f170dd3e276028e8e29ed">FPU_FPDSCR_RMode_Pos</a>&#160;&#160;&#160;22<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga7aeedf36be8f170dd3e276028e8e29ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPDSCR: RMode bit Position.  <br /></td></tr>
+<tr class="separator:ga7aeedf36be8f170dd3e276028e8e29ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga449beb50211f8e97df6b2640c82c4741" id="r_ga449beb50211f8e97df6b2640c82c4741"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga449beb50211f8e97df6b2640c82c4741">FPU_FPDSCR_RMode_Msk</a>&#160;&#160;&#160;(3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga7aeedf36be8f170dd3e276028e8e29ed">FPU_FPDSCR_RMode_Pos</a>)</td></tr>
+<tr class="memdesc:ga449beb50211f8e97df6b2640c82c4741"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPDSCR: RMode bit Mask.  <br /></td></tr>
+<tr class="separator:ga449beb50211f8e97df6b2640c82c4741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga247360c4a57e24aed05414d82b61680c" id="r_ga247360c4a57e24aed05414d82b61680c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga247360c4a57e24aed05414d82b61680c">FPU_MVFR0_FPRound_Pos</a>&#160;&#160;&#160;28<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga247360c4a57e24aed05414d82b61680c"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPU Media and VFP Feature Register 0 Definitions.  <br /></td></tr>
+<tr class="separator:ga247360c4a57e24aed05414d82b61680c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga722289c6fa4a28dbcd5b3abb29cc280c" id="r_ga722289c6fa4a28dbcd5b3abb29cc280c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga722289c6fa4a28dbcd5b3abb29cc280c">FPU_MVFR0_FPRound_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga247360c4a57e24aed05414d82b61680c">FPU_MVFR0_FPRound_Pos</a>)</td></tr>
+<tr class="memdesc:ga722289c6fa4a28dbcd5b3abb29cc280c"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Rounding modes bits Mask.  <br /></td></tr>
+<tr class="separator:ga722289c6fa4a28dbcd5b3abb29cc280c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga334648e9b634806f41ec250f67212de1" id="r_ga334648e9b634806f41ec250f67212de1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga334648e9b634806f41ec250f67212de1">FPU_MVFR0_FPShortvec_Pos</a>&#160;&#160;&#160;24<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga334648e9b634806f41ec250f67212de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Short vectors bits Position.  <br /></td></tr>
+<tr class="separator:ga334648e9b634806f41ec250f67212de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac528a54477d0387c20a418bd69fdaa0a" id="r_gac528a54477d0387c20a418bd69fdaa0a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gac528a54477d0387c20a418bd69fdaa0a">FPU_MVFR0_FPShortvec_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga334648e9b634806f41ec250f67212de1">FPU_MVFR0_FPShortvec_Pos</a>)</td></tr>
+<tr class="memdesc:gac528a54477d0387c20a418bd69fdaa0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Short vectors bits Mask.  <br /></td></tr>
+<tr class="separator:gac528a54477d0387c20a418bd69fdaa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bc5461b9b64a3e825b15a3ae15b078d" id="r_ga7bc5461b9b64a3e825b15a3ae15b078d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga7bc5461b9b64a3e825b15a3ae15b078d">FPU_MVFR0_FPSqrt_Pos</a>&#160;&#160;&#160;20U</td></tr>
+<tr class="memdesc:ga7bc5461b9b64a3e825b15a3ae15b078d"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Square root bits Position.  <br /></td></tr>
+<tr class="separator:ga7bc5461b9b64a3e825b15a3ae15b078d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga157024ef09ecc735285b63ce49e51115" id="r_ga157024ef09ecc735285b63ce49e51115"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga157024ef09ecc735285b63ce49e51115">FPU_MVFR0_FPSqrt_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga7bc5461b9b64a3e825b15a3ae15b078d">FPU_MVFR0_FPSqrt_Pos</a>)</td></tr>
+<tr class="memdesc:ga157024ef09ecc735285b63ce49e51115"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Square root bits Mask.  <br /></td></tr>
+<tr class="separator:ga157024ef09ecc735285b63ce49e51115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac438ab10e9bd59d808dc53d731bd63cf" id="r_gac438ab10e9bd59d808dc53d731bd63cf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gac438ab10e9bd59d808dc53d731bd63cf">FPU_MVFR0_FPDivide_Pos</a>&#160;&#160;&#160;16<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gac438ab10e9bd59d808dc53d731bd63cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Divide bits Position.  <br /></td></tr>
+<tr class="separator:gac438ab10e9bd59d808dc53d731bd63cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa242bea2b0f8fa1bb6af3d73e2486feb" id="r_gaa242bea2b0f8fa1bb6af3d73e2486feb"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaa242bea2b0f8fa1bb6af3d73e2486feb">FPU_MVFR0_FPDivide_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac438ab10e9bd59d808dc53d731bd63cf">FPU_MVFR0_FPDivide_Pos</a>)</td></tr>
+<tr class="memdesc:gaa242bea2b0f8fa1bb6af3d73e2486feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Divide bits Mask.  <br /></td></tr>
+<tr class="separator:gaa242bea2b0f8fa1bb6af3d73e2486feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1836a796129d00e3304a48b99fad72b" id="r_gac1836a796129d00e3304a48b99fad72b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gac1836a796129d00e3304a48b99fad72b">FPU_MVFR0_FPExceptrap_Pos</a>&#160;&#160;&#160;12<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gac1836a796129d00e3304a48b99fad72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Exception trapping bits Position.  <br /></td></tr>
+<tr class="separator:gac1836a796129d00e3304a48b99fad72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e8571dfc7e99d0b7cc6cad992d680fe" id="r_ga7e8571dfc7e99d0b7cc6cad992d680fe"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga7e8571dfc7e99d0b7cc6cad992d680fe">FPU_MVFR0_FPExceptrap_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac1836a796129d00e3304a48b99fad72b">FPU_MVFR0_FPExceptrap_Pos</a>)</td></tr>
+<tr class="memdesc:ga7e8571dfc7e99d0b7cc6cad992d680fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Exception trapping bits Mask.  <br /></td></tr>
+<tr class="separator:ga7e8571dfc7e99d0b7cc6cad992d680fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d2d47712d133345a8209425c7565b85" id="r_ga4d2d47712d133345a8209425c7565b85"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga4d2d47712d133345a8209425c7565b85">FPU_MVFR0_FPDP_Pos</a>&#160;&#160;&#160;8<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga4d2d47712d133345a8209425c7565b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Double-precision bits Position.  <br /></td></tr>
+<tr class="separator:ga4d2d47712d133345a8209425c7565b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga252e67777339a86a87e401f5faf4931f" id="r_ga252e67777339a86a87e401f5faf4931f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga252e67777339a86a87e401f5faf4931f">FPU_MVFR0_FPDP_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga4d2d47712d133345a8209425c7565b85">FPU_MVFR0_FPDP_Pos</a>)</td></tr>
+<tr class="memdesc:ga252e67777339a86a87e401f5faf4931f"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Double-precision bits Mask.  <br /></td></tr>
+<tr class="separator:ga252e67777339a86a87e401f5faf4931f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0f4839c1064f2a368c30e197e2fabd7" id="r_gae0f4839c1064f2a368c30e197e2fabd7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gae0f4839c1064f2a368c30e197e2fabd7">FPU_MVFR0_FPSP_Pos</a>&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gae0f4839c1064f2a368c30e197e2fabd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Single-precision bits Position.  <br /></td></tr>
+<tr class="separator:gae0f4839c1064f2a368c30e197e2fabd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa21854cf4bc343f8be949c353ac87f2" id="r_gafa21854cf4bc343f8be949c353ac87f2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gafa21854cf4bc343f8be949c353ac87f2">FPU_MVFR0_FPSP_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gae0f4839c1064f2a368c30e197e2fabd7">FPU_MVFR0_FPSP_Pos</a>)</td></tr>
+<tr class="memdesc:gafa21854cf4bc343f8be949c353ac87f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: Single-precision bits Mask.  <br /></td></tr>
+<tr class="separator:gafa21854cf4bc343f8be949c353ac87f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga843737b56734d14bbf6cadbfe9497199" id="r_ga843737b56734d14bbf6cadbfe9497199"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga843737b56734d14bbf6cadbfe9497199">FPU_MVFR0_SIMDReg_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga843737b56734d14bbf6cadbfe9497199"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: SIMD registers bits Position.  <br /></td></tr>
+<tr class="separator:ga843737b56734d14bbf6cadbfe9497199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf4dcbad1945d48a399f28f75d1f1933" id="r_gaaf4dcbad1945d48a399f28f75d1f1933"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaaf4dcbad1945d48a399f28f75d1f1933">FPU_MVFR0_SIMDReg_Msk</a>&#160;&#160;&#160;(0xFUL /*&lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga843737b56734d14bbf6cadbfe9497199">FPU_MVFR0_SIMDReg_Pos</a>*/)</td></tr>
+<tr class="memdesc:gaaf4dcbad1945d48a399f28f75d1f1933"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR0: SIMD registers bits Mask.  <br /></td></tr>
+<tr class="separator:gaaf4dcbad1945d48a399f28f75d1f1933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61ea5a229566b868aff940160b35bd30" id="r_ga61ea5a229566b868aff940160b35bd30"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga61ea5a229566b868aff940160b35bd30">FPU_MVFR1_FMAC_Pos</a>&#160;&#160;&#160;28<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga61ea5a229566b868aff940160b35bd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPU Media and VFP Feature Register 1 Definitions.  <br /></td></tr>
+<tr class="separator:ga61ea5a229566b868aff940160b35bd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89bb6ea5ef65195e4f6481f729dae424" id="r_ga89bb6ea5ef65195e4f6481f729dae424"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga89bb6ea5ef65195e4f6481f729dae424">FPU_MVFR1_FMAC_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga61ea5a229566b868aff940160b35bd30">FPU_MVFR1_FMAC_Pos</a>)</td></tr>
+<tr class="memdesc:ga89bb6ea5ef65195e4f6481f729dae424"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR1: Fused MAC bits Mask.  <br /></td></tr>
+<tr class="separator:ga89bb6ea5ef65195e4f6481f729dae424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf02fb0af7d3b3ccac4e06443c0c4ec21" id="r_gaf02fb0af7d3b3ccac4e06443c0c4ec21"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gaf02fb0af7d3b3ccac4e06443c0c4ec21">FPU_MVFR1_FPHP_Pos</a>&#160;&#160;&#160;24<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gaf02fb0af7d3b3ccac4e06443c0c4ec21"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR1: FP HPFP bits Position.  <br /></td></tr>
+<tr class="separator:gaf02fb0af7d3b3ccac4e06443c0c4ec21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1155cd1522413aee221b80ab2b762da5" id="r_ga1155cd1522413aee221b80ab2b762da5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga1155cd1522413aee221b80ab2b762da5">FPU_MVFR1_FPHP_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaf02fb0af7d3b3ccac4e06443c0c4ec21">FPU_MVFR1_FPHP_Pos</a>)</td></tr>
+<tr class="memdesc:ga1155cd1522413aee221b80ab2b762da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR1: FP HPFP bits Mask.  <br /></td></tr>
+<tr class="separator:ga1155cd1522413aee221b80ab2b762da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01000f706f4624a56eaa4a92b94a70f3" id="r_ga01000f706f4624a56eaa4a92b94a70f3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga01000f706f4624a56eaa4a92b94a70f3">FPU_MVFR1_FPDNaN_Pos</a>&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:ga01000f706f4624a56eaa4a92b94a70f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR1: D_NaN mode bits Position.  <br /></td></tr>
+<tr class="separator:ga01000f706f4624a56eaa4a92b94a70f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14f8084eeb7d805bb6215d6ca2f086a7" id="r_ga14f8084eeb7d805bb6215d6ca2f086a7"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga14f8084eeb7d805bb6215d6ca2f086a7">FPU_MVFR1_FPDNaN_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga01000f706f4624a56eaa4a92b94a70f3">FPU_MVFR1_FPDNaN_Pos</a>)</td></tr>
+<tr class="memdesc:ga14f8084eeb7d805bb6215d6ca2f086a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR1: D_NaN mode bits Mask.  <br /></td></tr>
+<tr class="separator:ga14f8084eeb7d805bb6215d6ca2f086a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04ee8591dc12d01ef3b2bf831341e0c8" id="r_ga04ee8591dc12d01ef3b2bf831341e0c8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga04ee8591dc12d01ef3b2bf831341e0c8">FPU_MVFR1_FPFtZ_Pos</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga04ee8591dc12d01ef3b2bf831341e0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR1: FtZ mode bits Position.  <br /></td></tr>
+<tr class="separator:ga04ee8591dc12d01ef3b2bf831341e0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40240598e0a2dc7714d652ce495c9dab" id="r_ga40240598e0a2dc7714d652ce495c9dab"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga40240598e0a2dc7714d652ce495c9dab">FPU_MVFR1_FPFtZ_Msk</a>&#160;&#160;&#160;(0xFUL /*&lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga04ee8591dc12d01ef3b2bf831341e0c8">FPU_MVFR1_FPFtZ_Pos</a>*/)</td></tr>
+<tr class="memdesc:ga40240598e0a2dc7714d652ce495c9dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR1: FtZ mode bits Mask.  <br /></td></tr>
+<tr class="separator:ga40240598e0a2dc7714d652ce495c9dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4637d3ad5f0110b806f0de22471f8e3" id="r_gab4637d3ad5f0110b806f0de22471f8e3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#gab4637d3ad5f0110b806f0de22471f8e3">FPU_MVFR2_FPMisc_Pos</a>&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td></tr>
+<tr class="memdesc:gab4637d3ad5f0110b806f0de22471f8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">FPU Media and VFP Feature Register 2 Definitions.  <br /></td></tr>
+<tr class="separator:gab4637d3ad5f0110b806f0de22471f8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga896448d6f41eab9971050e8a1820839b" id="r_ga896448d6f41eab9971050e8a1820839b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMSIS__FPU.html#ga896448d6f41eab9971050e8a1820839b">FPU_MVFR2_FPMisc_Msk</a>&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gab4637d3ad5f0110b806f0de22471f8e3">FPU_MVFR2_FPMisc_Pos</a>)</td></tr>
+<tr class="memdesc:ga896448d6f41eab9971050e8a1820839b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVFR2: VFP Misc bits Mask.  <br /></td></tr>
+<tr class="separator:ga896448d6f41eab9971050e8a1820839b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Type definitions for the Floating Point Unit (FPU) </p>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ga517d89370c81325c5387b9c3085ac554" name="ga517d89370c81325c5387b9c3085ac554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga517d89370c81325c5387b9c3085ac554">&#9670;&#160;</a></span>FPU_FPCAR_ADDRESS_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCAR_ADDRESS_Msk&#160;&#160;&#160;(0x1FFFFFFFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaf45377b7e45be8517ddbcf2028b80ae7">FPU_FPCAR_ADDRESS_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCAR: ADDRESS bit Mask. </p>
+
+</div>
+</div>
+<a id="gaf45377b7e45be8517ddbcf2028b80ae7" name="gaf45377b7e45be8517ddbcf2028b80ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf45377b7e45be8517ddbcf2028b80ae7">&#9670;&#160;</a></span>FPU_FPCAR_ADDRESS_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCAR_ADDRESS_Pos&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPU Floating-Point Context Address Register Definitions. </p>
+<p>FPCAR: ADDRESS bit Position </p>
+
+</div>
+</div>
+<a id="ga309886ff6bbd25cb13c061c6683c6c0c" name="ga309886ff6bbd25cb13c061c6683c6c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga309886ff6bbd25cb13c061c6683c6c0c">&#9670;&#160;</a></span>FPU_FPCCR_ASPEN_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_ASPEN_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga4228a923ddf665f868e56b4b9e9bff7b">FPU_FPCCR_ASPEN_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: ASPEN bit Mask. </p>
+
+</div>
+</div>
+<a id="ga4228a923ddf665f868e56b4b9e9bff7b" name="ga4228a923ddf665f868e56b4b9e9bff7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4228a923ddf665f868e56b4b9e9bff7b">&#9670;&#160;</a></span>FPU_FPCCR_ASPEN_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_ASPEN_Pos&#160;&#160;&#160;31<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPU Floating-Point Context Control Register Definitions. </p>
+<p>FPCCR: ASPEN bit Position </p>
+
+</div>
+</div>
+<a id="gad349eb1323d8399d54a04c0bfd520cb2" name="gad349eb1323d8399d54a04c0bfd520cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad349eb1323d8399d54a04c0bfd520cb2">&#9670;&#160;</a></span>FPU_FPCCR_BFRDY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_BFRDY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga6d633920f92c3ce4133d769701619b17">FPU_FPCCR_BFRDY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: BFRDY bit Mask. </p>
+
+</div>
+</div>
+<a id="ga6d633920f92c3ce4133d769701619b17" name="ga6d633920f92c3ce4133d769701619b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d633920f92c3ce4133d769701619b17">&#9670;&#160;</a></span>FPU_FPCCR_BFRDY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_BFRDY_Pos&#160;&#160;&#160;6<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: BFRDY Position. </p>
+
+</div>
+</div>
+<a id="gadedc12ec237657721a613c6f47abed6f" name="gadedc12ec237657721a613c6f47abed6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadedc12ec237657721a613c6f47abed6f">&#9670;&#160;</a></span>FPU_FPCCR_CLRONRET_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_CLRONRET_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga0b97b2fdac794f4fddab1e4342e0c104">FPU_FPCCR_CLRONRET_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: CLRONRET bit Mask. </p>
+
+</div>
+</div>
+<a id="ga0b97b2fdac794f4fddab1e4342e0c104" name="ga0b97b2fdac794f4fddab1e4342e0c104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b97b2fdac794f4fddab1e4342e0c104">&#9670;&#160;</a></span>FPU_FPCCR_CLRONRET_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_CLRONRET_Pos&#160;&#160;&#160;28<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: CLRONRET Position. </p>
+
+</div>
+</div>
+<a id="ga103d932807c15250d96711952878eeb2" name="ga103d932807c15250d96711952878eeb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga103d932807c15250d96711952878eeb2">&#9670;&#160;</a></span>FPU_FPCCR_CLRONRETS_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_CLRONRETS_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gabb18ccf9d1b0a4bef3b0823f18eb96ba">FPU_FPCCR_CLRONRETS_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: CLRONRETS bit Mask. </p>
+
+</div>
+</div>
+<a id="gabb18ccf9d1b0a4bef3b0823f18eb96ba" name="gabb18ccf9d1b0a4bef3b0823f18eb96ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb18ccf9d1b0a4bef3b0823f18eb96ba">&#9670;&#160;</a></span>FPU_FPCCR_CLRONRETS_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_CLRONRETS_Pos&#160;&#160;&#160;27<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: CLRONRETS Position. </p>
+
+</div>
+</div>
+<a id="gaf4beaa279abff34828344bd594fff8a1" name="gaf4beaa279abff34828344bd594fff8a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4beaa279abff34828344bd594fff8a1">&#9670;&#160;</a></span>FPU_FPCCR_HFRDY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_HFRDY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gab12733991487acc2da41ca300fe36fb6">FPU_FPCCR_HFRDY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: HFRDY bit Mask. </p>
+
+</div>
+</div>
+<a id="gab12733991487acc2da41ca300fe36fb6" name="gab12733991487acc2da41ca300fe36fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab12733991487acc2da41ca300fe36fb6">&#9670;&#160;</a></span>FPU_FPCCR_HFRDY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_HFRDY_Pos&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: HFRDY Position. </p>
+
+</div>
+</div>
+<a id="ga86e7c2fa52ba65c3b535dfa33f2586eb" name="ga86e7c2fa52ba65c3b535dfa33f2586eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86e7c2fa52ba65c3b535dfa33f2586eb">&#9670;&#160;</a></span>FPU_FPCCR_LSPACT_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_LSPACT_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> /*&lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga803bf3f6d15b04deaad0801bee5b35ed">FPU_FPCCR_LSPACT_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: Lazy state preservation active bit Mask. </p>
+
+</div>
+</div>
+<a id="ga803bf3f6d15b04deaad0801bee5b35ed" name="ga803bf3f6d15b04deaad0801bee5b35ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga803bf3f6d15b04deaad0801bee5b35ed">&#9670;&#160;</a></span>FPU_FPCCR_LSPACT_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_LSPACT_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: Lazy state preservation active bit Position. </p>
+
+</div>
+</div>
+<a id="gaf4ab19de45df6522dd882bc116f938e9" name="gaf4ab19de45df6522dd882bc116f938e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4ab19de45df6522dd882bc116f938e9">&#9670;&#160;</a></span>FPU_FPCCR_LSPEN_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_LSPEN_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac7d70e051fe759ad8fed83bf5b5aebc1">FPU_FPCCR_LSPEN_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: LSPEN bit Mask. </p>
+
+</div>
+</div>
+<a id="gac7d70e051fe759ad8fed83bf5b5aebc1" name="gac7d70e051fe759ad8fed83bf5b5aebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7d70e051fe759ad8fed83bf5b5aebc1">&#9670;&#160;</a></span>FPU_FPCCR_LSPEN_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_LSPEN_Pos&#160;&#160;&#160;30U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: LSPEN Position. </p>
+
+</div>
+</div>
+<a id="ga73afcf0fe09c69e9625e11035cabb1c0" name="ga73afcf0fe09c69e9625e11035cabb1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73afcf0fe09c69e9625e11035cabb1c0">&#9670;&#160;</a></span>FPU_FPCCR_LSPENS_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_LSPENS_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga705368bf3c52b5bb4edfbcb3e2631e1c">FPU_FPCCR_LSPENS_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: LSPENS bit Mask. </p>
+
+</div>
+</div>
+<a id="ga705368bf3c52b5bb4edfbcb3e2631e1c" name="ga705368bf3c52b5bb4edfbcb3e2631e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga705368bf3c52b5bb4edfbcb3e2631e1c">&#9670;&#160;</a></span>FPU_FPCCR_LSPENS_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_LSPENS_Pos&#160;&#160;&#160;29<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: LSPENS Position. </p>
+
+</div>
+</div>
+<a id="gadedfaec9fdd07261573e823a4dcfb5c4" name="gadedfaec9fdd07261573e823a4dcfb5c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadedfaec9fdd07261573e823a4dcfb5c4">&#9670;&#160;</a></span>FPU_FPCCR_MMRDY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_MMRDY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaccdb481211629f9440431439231187f1">FPU_FPCCR_MMRDY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: MMRDY bit Mask. </p>
+
+</div>
+</div>
+<a id="gaccdb481211629f9440431439231187f1" name="gaccdb481211629f9440431439231187f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccdb481211629f9440431439231187f1">&#9670;&#160;</a></span>FPU_FPCCR_MMRDY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_MMRDY_Pos&#160;&#160;&#160;5<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: MMRDY Position. </p>
+
+</div>
+</div>
+<a id="ga42067729a887081cf56b8fe1029be7a1" name="ga42067729a887081cf56b8fe1029be7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42067729a887081cf56b8fe1029be7a1">&#9670;&#160;</a></span>FPU_FPCCR_MONRDY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_MONRDY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gae0a4effc79209d821ded517c2be326ba">FPU_FPCCR_MONRDY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: MONRDY bit Mask. </p>
+
+</div>
+</div>
+<a id="gae0a4effc79209d821ded517c2be326ba" name="gae0a4effc79209d821ded517c2be326ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0a4effc79209d821ded517c2be326ba">&#9670;&#160;</a></span>FPU_FPCCR_MONRDY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_MONRDY_Pos&#160;&#160;&#160;8<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: MONRDY Position. </p>
+
+</div>
+</div>
+<a id="ga47d3d3b29514c7d7581cfcc304368cea" name="ga47d3d3b29514c7d7581cfcc304368cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47d3d3b29514c7d7581cfcc304368cea">&#9670;&#160;</a></span>FPU_FPCCR_S_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_S_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga4123d3881e5342251f559cec19e23b4e">FPU_FPCCR_S_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: Security status of the FP context bit Mask. </p>
+
+</div>
+</div>
+<a id="ga4123d3881e5342251f559cec19e23b4e" name="ga4123d3881e5342251f559cec19e23b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4123d3881e5342251f559cec19e23b4e">&#9670;&#160;</a></span>FPU_FPCCR_S_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_S_Pos&#160;&#160;&#160;2<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: Security status of the FP context bit Position. </p>
+
+</div>
+</div>
+<a id="ga419a1e5609bbedf94f518c72214bddbc" name="ga419a1e5609bbedf94f518c72214bddbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga419a1e5609bbedf94f518c72214bddbc">&#9670;&#160;</a></span>FPU_FPCCR_SFRDY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_SFRDY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga571354f040a9372c0ad0cb87e296ea7d">FPU_FPCCR_SFRDY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: SFRDY bit Mask. </p>
+
+</div>
+</div>
+<a id="ga571354f040a9372c0ad0cb87e296ea7d" name="ga571354f040a9372c0ad0cb87e296ea7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga571354f040a9372c0ad0cb87e296ea7d">&#9670;&#160;</a></span>FPU_FPCCR_SFRDY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_SFRDY_Pos&#160;&#160;&#160;7<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: SFRDY Position. </p>
+
+</div>
+</div>
+<a id="gaa5e511cae62f922a9a91af0972f7a5e6" name="gaa5e511cae62f922a9a91af0972f7a5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5e511cae62f922a9a91af0972f7a5e6">&#9670;&#160;</a></span>FPU_FPCCR_SPLIMVIOL_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_SPLIMVIOL_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac90e551e3cfda27c089bf381acba5aa0">FPU_FPCCR_SPLIMVIOL_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: SPLIMVIOL bit Mask. </p>
+
+</div>
+</div>
+<a id="gac90e551e3cfda27c089bf381acba5aa0" name="gac90e551e3cfda27c089bf381acba5aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac90e551e3cfda27c089bf381acba5aa0">&#9670;&#160;</a></span>FPU_FPCCR_SPLIMVIOL_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_SPLIMVIOL_Pos&#160;&#160;&#160;9<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: SPLIMVIOL Position. </p>
+
+</div>
+</div>
+<a id="ga8d18cd88336d63d4b1810383aa8da700" name="ga8d18cd88336d63d4b1810383aa8da700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d18cd88336d63d4b1810383aa8da700">&#9670;&#160;</a></span>FPU_FPCCR_THREAD_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_THREAD_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga0937d64c42374200af44b22e5b49fd26">FPU_FPCCR_THREAD_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: processor mode active bit Mask. </p>
+
+</div>
+</div>
+<a id="ga0937d64c42374200af44b22e5b49fd26" name="ga0937d64c42374200af44b22e5b49fd26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0937d64c42374200af44b22e5b49fd26">&#9670;&#160;</a></span>FPU_FPCCR_THREAD_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_THREAD_Pos&#160;&#160;&#160;3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: processor mode bit Position. </p>
+
+</div>
+</div>
+<a id="ga1377a5dfb4b9c6b18e379ac15e0dc23e" name="ga1377a5dfb4b9c6b18e379ac15e0dc23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1377a5dfb4b9c6b18e379ac15e0dc23e">&#9670;&#160;</a></span>FPU_FPCCR_TS_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_TS_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga624474f408fde177df519460775a74a1">FPU_FPCCR_TS_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: TS bit Mask. </p>
+
+</div>
+</div>
+<a id="ga624474f408fde177df519460775a74a1" name="ga624474f408fde177df519460775a74a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga624474f408fde177df519460775a74a1">&#9670;&#160;</a></span>FPU_FPCCR_TS_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_TS_Pos&#160;&#160;&#160;26<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: TS Position. </p>
+
+</div>
+</div>
+<a id="ga97c610927aab580cac3fb166f080b6a6" name="ga97c610927aab580cac3fb166f080b6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97c610927aab580cac3fb166f080b6a6">&#9670;&#160;</a></span>FPU_FPCCR_UFRDY_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_UFRDY_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac48b42e143b93411977dcb9086a5e4e4">FPU_FPCCR_UFRDY_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: UFRDY bit Mask. </p>
+
+</div>
+</div>
+<a id="gac48b42e143b93411977dcb9086a5e4e4" name="gac48b42e143b93411977dcb9086a5e4e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac48b42e143b93411977dcb9086a5e4e4">&#9670;&#160;</a></span>FPU_FPCCR_UFRDY_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_UFRDY_Pos&#160;&#160;&#160;10U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: UFRDY Position. </p>
+
+</div>
+</div>
+<a id="ga2eb70427eeaa7344196219cf5a8620a4" name="ga2eb70427eeaa7344196219cf5a8620a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2eb70427eeaa7344196219cf5a8620a4">&#9670;&#160;</a></span>FPU_FPCCR_USER_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_USER_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaea663104375ce6be15470e3db294c92d">FPU_FPCCR_USER_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: privilege level bit Mask. </p>
+
+</div>
+</div>
+<a id="gaea663104375ce6be15470e3db294c92d" name="gaea663104375ce6be15470e3db294c92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea663104375ce6be15470e3db294c92d">&#9670;&#160;</a></span>FPU_FPCCR_USER_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPCCR_USER_Pos&#160;&#160;&#160;1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPCCR: privilege level bit Position. </p>
+
+</div>
+</div>
+<a id="gab2789cebebda5fda8c4e9d87e24f32be" name="gab2789cebebda5fda8c4e9d87e24f32be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2789cebebda5fda8c4e9d87e24f32be">&#9670;&#160;</a></span>FPU_FPDSCR_AHP_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_AHP_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga138f54bc002629ab3e4de814c58abb29">FPU_FPDSCR_AHP_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPDSCR: AHP bit Mask. </p>
+
+</div>
+</div>
+<a id="ga138f54bc002629ab3e4de814c58abb29" name="ga138f54bc002629ab3e4de814c58abb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga138f54bc002629ab3e4de814c58abb29">&#9670;&#160;</a></span>FPU_FPDSCR_AHP_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_AHP_Pos&#160;&#160;&#160;26<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPU Floating-Point Default Status Control Register Definitions. </p>
+<p>FPDSCR: AHP bit Position </p>
+
+</div>
+</div>
+<a id="ga40c2d4a297ca2ceffe174703a4ad17f6" name="ga40c2d4a297ca2ceffe174703a4ad17f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40c2d4a297ca2ceffe174703a4ad17f6">&#9670;&#160;</a></span>FPU_FPDSCR_DN_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_DN_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga41776b80fa450ef2ea6d3fee89aa35f2">FPU_FPDSCR_DN_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPDSCR: DN bit Mask. </p>
+
+</div>
+</div>
+<a id="ga41776b80fa450ef2ea6d3fee89aa35f2" name="ga41776b80fa450ef2ea6d3fee89aa35f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga41776b80fa450ef2ea6d3fee89aa35f2">&#9670;&#160;</a></span>FPU_FPDSCR_DN_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_DN_Pos&#160;&#160;&#160;25<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPDSCR: DN bit Position. </p>
+
+</div>
+</div>
+<a id="gaae7d901442d4af97c6d22939cffc8ad9" name="gaae7d901442d4af97c6d22939cffc8ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae7d901442d4af97c6d22939cffc8ad9">&#9670;&#160;</a></span>FPU_FPDSCR_FZ_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_FZ_Msk&#160;&#160;&#160;(1<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gab3c2fc96e312ba47b902d5f80d9b8575">FPU_FPDSCR_FZ_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPDSCR: FZ bit Mask. </p>
+
+</div>
+</div>
+<a id="gab3c2fc96e312ba47b902d5f80d9b8575" name="gab3c2fc96e312ba47b902d5f80d9b8575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3c2fc96e312ba47b902d5f80d9b8575">&#9670;&#160;</a></span>FPU_FPDSCR_FZ_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_FZ_Pos&#160;&#160;&#160;24<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPDSCR: FZ bit Position. </p>
+
+</div>
+</div>
+<a id="ga449beb50211f8e97df6b2640c82c4741" name="ga449beb50211f8e97df6b2640c82c4741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga449beb50211f8e97df6b2640c82c4741">&#9670;&#160;</a></span>FPU_FPDSCR_RMode_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_RMode_Msk&#160;&#160;&#160;(3<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">UL</a> &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga7aeedf36be8f170dd3e276028e8e29ed">FPU_FPDSCR_RMode_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPDSCR: RMode bit Mask. </p>
+
+</div>
+</div>
+<a id="ga7aeedf36be8f170dd3e276028e8e29ed" name="ga7aeedf36be8f170dd3e276028e8e29ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7aeedf36be8f170dd3e276028e8e29ed">&#9670;&#160;</a></span>FPU_FPDSCR_RMode_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_FPDSCR_RMode_Pos&#160;&#160;&#160;22<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPDSCR: RMode bit Position. </p>
+
+</div>
+</div>
+<a id="gaa242bea2b0f8fa1bb6af3d73e2486feb" name="gaa242bea2b0f8fa1bb6af3d73e2486feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa242bea2b0f8fa1bb6af3d73e2486feb">&#9670;&#160;</a></span>FPU_MVFR0_FPDivide_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPDivide_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac438ab10e9bd59d808dc53d731bd63cf">FPU_MVFR0_FPDivide_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Divide bits Mask. </p>
+
+</div>
+</div>
+<a id="gac438ab10e9bd59d808dc53d731bd63cf" name="gac438ab10e9bd59d808dc53d731bd63cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac438ab10e9bd59d808dc53d731bd63cf">&#9670;&#160;</a></span>FPU_MVFR0_FPDivide_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPDivide_Pos&#160;&#160;&#160;16<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Divide bits Position. </p>
+
+</div>
+</div>
+<a id="ga252e67777339a86a87e401f5faf4931f" name="ga252e67777339a86a87e401f5faf4931f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga252e67777339a86a87e401f5faf4931f">&#9670;&#160;</a></span>FPU_MVFR0_FPDP_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPDP_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga4d2d47712d133345a8209425c7565b85">FPU_MVFR0_FPDP_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Double-precision bits Mask. </p>
+
+</div>
+</div>
+<a id="ga4d2d47712d133345a8209425c7565b85" name="ga4d2d47712d133345a8209425c7565b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d2d47712d133345a8209425c7565b85">&#9670;&#160;</a></span>FPU_MVFR0_FPDP_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPDP_Pos&#160;&#160;&#160;8<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Double-precision bits Position. </p>
+
+</div>
+</div>
+<a id="ga7e8571dfc7e99d0b7cc6cad992d680fe" name="ga7e8571dfc7e99d0b7cc6cad992d680fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e8571dfc7e99d0b7cc6cad992d680fe">&#9670;&#160;</a></span>FPU_MVFR0_FPExceptrap_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPExceptrap_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gac1836a796129d00e3304a48b99fad72b">FPU_MVFR0_FPExceptrap_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Exception trapping bits Mask. </p>
+
+</div>
+</div>
+<a id="gac1836a796129d00e3304a48b99fad72b" name="gac1836a796129d00e3304a48b99fad72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1836a796129d00e3304a48b99fad72b">&#9670;&#160;</a></span>FPU_MVFR0_FPExceptrap_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPExceptrap_Pos&#160;&#160;&#160;12<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Exception trapping bits Position. </p>
+
+</div>
+</div>
+<a id="ga722289c6fa4a28dbcd5b3abb29cc280c" name="ga722289c6fa4a28dbcd5b3abb29cc280c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga722289c6fa4a28dbcd5b3abb29cc280c">&#9670;&#160;</a></span>FPU_MVFR0_FPRound_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPRound_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga247360c4a57e24aed05414d82b61680c">FPU_MVFR0_FPRound_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Rounding modes bits Mask. </p>
+
+</div>
+</div>
+<a id="ga247360c4a57e24aed05414d82b61680c" name="ga247360c4a57e24aed05414d82b61680c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga247360c4a57e24aed05414d82b61680c">&#9670;&#160;</a></span>FPU_MVFR0_FPRound_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPRound_Pos&#160;&#160;&#160;28<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPU Media and VFP Feature Register 0 Definitions. </p>
+<p>MVFR0: Rounding modes bits Position </p>
+
+</div>
+</div>
+<a id="gac528a54477d0387c20a418bd69fdaa0a" name="gac528a54477d0387c20a418bd69fdaa0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac528a54477d0387c20a418bd69fdaa0a">&#9670;&#160;</a></span>FPU_MVFR0_FPShortvec_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPShortvec_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga334648e9b634806f41ec250f67212de1">FPU_MVFR0_FPShortvec_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Short vectors bits Mask. </p>
+
+</div>
+</div>
+<a id="ga334648e9b634806f41ec250f67212de1" name="ga334648e9b634806f41ec250f67212de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga334648e9b634806f41ec250f67212de1">&#9670;&#160;</a></span>FPU_MVFR0_FPShortvec_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPShortvec_Pos&#160;&#160;&#160;24<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Short vectors bits Position. </p>
+
+</div>
+</div>
+<a id="gafa21854cf4bc343f8be949c353ac87f2" name="gafa21854cf4bc343f8be949c353ac87f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa21854cf4bc343f8be949c353ac87f2">&#9670;&#160;</a></span>FPU_MVFR0_FPSP_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPSP_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gae0f4839c1064f2a368c30e197e2fabd7">FPU_MVFR0_FPSP_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Single-precision bits Mask. </p>
+
+</div>
+</div>
+<a id="gae0f4839c1064f2a368c30e197e2fabd7" name="gae0f4839c1064f2a368c30e197e2fabd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0f4839c1064f2a368c30e197e2fabd7">&#9670;&#160;</a></span>FPU_MVFR0_FPSP_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPSP_Pos&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Single-precision bits Position. </p>
+
+</div>
+</div>
+<a id="ga157024ef09ecc735285b63ce49e51115" name="ga157024ef09ecc735285b63ce49e51115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga157024ef09ecc735285b63ce49e51115">&#9670;&#160;</a></span>FPU_MVFR0_FPSqrt_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPSqrt_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga7bc5461b9b64a3e825b15a3ae15b078d">FPU_MVFR0_FPSqrt_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Square root bits Mask. </p>
+
+</div>
+</div>
+<a id="ga7bc5461b9b64a3e825b15a3ae15b078d" name="ga7bc5461b9b64a3e825b15a3ae15b078d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7bc5461b9b64a3e825b15a3ae15b078d">&#9670;&#160;</a></span>FPU_MVFR0_FPSqrt_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_FPSqrt_Pos&#160;&#160;&#160;20U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: Square root bits Position. </p>
+
+</div>
+</div>
+<a id="gaaf4dcbad1945d48a399f28f75d1f1933" name="gaaf4dcbad1945d48a399f28f75d1f1933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf4dcbad1945d48a399f28f75d1f1933">&#9670;&#160;</a></span>FPU_MVFR0_SIMDReg_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_SIMDReg_Msk&#160;&#160;&#160;(0xFUL /*&lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga843737b56734d14bbf6cadbfe9497199">FPU_MVFR0_SIMDReg_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: SIMD registers bits Mask. </p>
+
+</div>
+</div>
+<a id="ga843737b56734d14bbf6cadbfe9497199" name="ga843737b56734d14bbf6cadbfe9497199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga843737b56734d14bbf6cadbfe9497199">&#9670;&#160;</a></span>FPU_MVFR0_SIMDReg_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR0_SIMDReg_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR0: SIMD registers bits Position. </p>
+
+</div>
+</div>
+<a id="ga89bb6ea5ef65195e4f6481f729dae424" name="ga89bb6ea5ef65195e4f6481f729dae424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89bb6ea5ef65195e4f6481f729dae424">&#9670;&#160;</a></span>FPU_MVFR1_FMAC_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FMAC_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga61ea5a229566b868aff940160b35bd30">FPU_MVFR1_FMAC_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR1: Fused MAC bits Mask. </p>
+
+</div>
+</div>
+<a id="ga61ea5a229566b868aff940160b35bd30" name="ga61ea5a229566b868aff940160b35bd30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61ea5a229566b868aff940160b35bd30">&#9670;&#160;</a></span>FPU_MVFR1_FMAC_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FMAC_Pos&#160;&#160;&#160;28<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPU Media and VFP Feature Register 1 Definitions. </p>
+<p>MVFR1: Fused MAC bits Position </p>
+
+</div>
+</div>
+<a id="ga14f8084eeb7d805bb6215d6ca2f086a7" name="ga14f8084eeb7d805bb6215d6ca2f086a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14f8084eeb7d805bb6215d6ca2f086a7">&#9670;&#160;</a></span>FPU_MVFR1_FPDNaN_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FPDNaN_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga01000f706f4624a56eaa4a92b94a70f3">FPU_MVFR1_FPDNaN_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR1: D_NaN mode bits Mask. </p>
+
+</div>
+</div>
+<a id="ga01000f706f4624a56eaa4a92b94a70f3" name="ga01000f706f4624a56eaa4a92b94a70f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01000f706f4624a56eaa4a92b94a70f3">&#9670;&#160;</a></span>FPU_MVFR1_FPDNaN_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FPDNaN_Pos&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR1: D_NaN mode bits Position. </p>
+
+</div>
+</div>
+<a id="ga40240598e0a2dc7714d652ce495c9dab" name="ga40240598e0a2dc7714d652ce495c9dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40240598e0a2dc7714d652ce495c9dab">&#9670;&#160;</a></span>FPU_MVFR1_FPFtZ_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FPFtZ_Msk&#160;&#160;&#160;(0xFUL /*&lt;&lt; <a class="el" href="group__CMSIS__FPU.html#ga04ee8591dc12d01ef3b2bf831341e0c8">FPU_MVFR1_FPFtZ_Pos</a>*/)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR1: FtZ mode bits Mask. </p>
+
+</div>
+</div>
+<a id="ga04ee8591dc12d01ef3b2bf831341e0c8" name="ga04ee8591dc12d01ef3b2bf831341e0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04ee8591dc12d01ef3b2bf831341e0c8">&#9670;&#160;</a></span>FPU_MVFR1_FPFtZ_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FPFtZ_Pos&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR1: FtZ mode bits Position. </p>
+
+</div>
+</div>
+<a id="ga1155cd1522413aee221b80ab2b762da5" name="ga1155cd1522413aee221b80ab2b762da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1155cd1522413aee221b80ab2b762da5">&#9670;&#160;</a></span>FPU_MVFR1_FPHP_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FPHP_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gaf02fb0af7d3b3ccac4e06443c0c4ec21">FPU_MVFR1_FPHP_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR1: FP HPFP bits Mask. </p>
+
+</div>
+</div>
+<a id="gaf02fb0af7d3b3ccac4e06443c0c4ec21" name="gaf02fb0af7d3b3ccac4e06443c0c4ec21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf02fb0af7d3b3ccac4e06443c0c4ec21">&#9670;&#160;</a></span>FPU_MVFR1_FPHP_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR1_FPHP_Pos&#160;&#160;&#160;24<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR1: FP HPFP bits Position. </p>
+
+</div>
+</div>
+<a id="ga896448d6f41eab9971050e8a1820839b" name="ga896448d6f41eab9971050e8a1820839b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga896448d6f41eab9971050e8a1820839b">&#9670;&#160;</a></span>FPU_MVFR2_FPMisc_Msk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR2_FPMisc_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <a class="el" href="group__CMSIS__FPU.html#gab4637d3ad5f0110b806f0de22471f8e3">FPU_MVFR2_FPMisc_Pos</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MVFR2: VFP Misc bits Mask. </p>
+
+</div>
+</div>
+<a id="gab4637d3ad5f0110b806f0de22471f8e3" name="gab4637d3ad5f0110b806f0de22471f8e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4637d3ad5f0110b806f0de22471f8e3">&#9670;&#160;</a></span>FPU_MVFR2_FPMisc_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> FPU_MVFR2_FPMisc_Pos&#160;&#160;&#160;4<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FPU Media and VFP Feature Register 2 Definitions. </p>
+<p>MVFR2: VFP Misc bits Position </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

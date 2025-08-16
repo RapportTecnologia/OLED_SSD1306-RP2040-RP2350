@@ -1,0 +1,28 @@
+var structUART0__Type =
+[
+    [ "RESERVED", "structUART0__Type.html#a10de78e4caa33eca21496acff2aaf159", null ],
+    [ "RESERVED1", "structUART0__Type.html#a10f8bece55f56b775b9e38c42a94b9c4", null ],
+    [ "RESERVED2", "structUART0__Type.html#a72ba0e8f1703d453ea04397c77656260", null ],
+    [ "UARTCR", "structUART0__Type.html#a9b9a82c306b9f45ace824bd11533a09f", null ],
+    [ "UARTDMACR", "structUART0__Type.html#ab411ba4b2ec0b1b3a25a63bfeebdee3b", null ],
+    [ "UARTDR", "structUART0__Type.html#a2638d161684543a64e8933d4a9eb0a32", null ],
+    [ "UARTFBRD", "structUART0__Type.html#a4b73e0b5f0ef2f9ec079e5e4f935b54a", null ],
+    [ "UARTFR", "structUART0__Type.html#a02683cfdc2776a3ee3d91936b560ccc1", null ],
+    [ "UARTIBRD", "structUART0__Type.html#a4eef57a858537ab324fe064f73b81307", null ],
+    [ "UARTICR", "structUART0__Type.html#a9afc18c5a8f96319a9c00feffc7e9420", null ],
+    [ "UARTIFLS", "structUART0__Type.html#a637ad4aff634195927b26980926d9887", null ],
+    [ "UARTILPR", "structUART0__Type.html#aea5969efc760b25a317d7af12e28d7ae", null ],
+    [ "UARTIMSC", "structUART0__Type.html#a193010ab09e59d2f5cf9e6ecb18c4553", null ],
+    [ "UARTLCR_H", "structUART0__Type.html#af3b4b4a76706f91a6b4f9fcb5754f230", null ],
+    [ "UARTMIS", "structUART0__Type.html#a99707163129b60259c4a1a183a03de58", null ],
+    [ "UARTPCELLID0", "structUART0__Type.html#afdf5c2ca766d6b2c43c7cbe561362ebb", null ],
+    [ "UARTPCELLID1", "structUART0__Type.html#ad822f9a373456f864b2b90a7b510e39f", null ],
+    [ "UARTPCELLID2", "structUART0__Type.html#a56475cf1643eecfcb5da153a1a07b994", null ],
+    [ "UARTPCELLID3", "structUART0__Type.html#aa24d7aadcf5b6ff7439e9571408e2eea", null ],
+    [ "UARTPERIPHID0", "structUART0__Type.html#a89e2f37f3abc3a9defb66fc04f23a7b2", null ],
+    [ "UARTPERIPHID1", "structUART0__Type.html#a5c17dab2647ded53b73f66b5a0513247", null ],
+    [ "UARTPERIPHID2", "structUART0__Type.html#abd13d344ca5a2be5d4342a3c7ecf74a2", null ],
+    [ "UARTPERIPHID3", "structUART0__Type.html#a2c2c8691feace756582623f35af2db04", null ],
+    [ "UARTRIS", "structUART0__Type.html#a7bc1bb2dfb483538d5b20a6029592800", null ],
+    [ "UARTRSR", "structUART0__Type.html#a8a0515aefa52401490cbed65b8ca8ede", null ]
+];

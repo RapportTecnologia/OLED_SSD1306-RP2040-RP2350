@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: pico_status_led</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__pico__status__led.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">pico_status_led</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Enables access to the on-board status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a>  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga317f0094c514dd73d42a91fe24c5edbf" id="r_ga317f0094c514dd73d42a91fe24c5edbf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga317f0094c514dd73d42a91fe24c5edbf">PICO_COLORED_STATUS_LED_COLOR_FROM_RGB</a>(r,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>,  <a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>)&#160;&#160;&#160;(((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td></tr>
+<tr class="memdesc:ga317f0094c514dd73d42a91fe24c5edbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an RGB color value for /ref colored_status_led_set_on_with_color.  <br /></td></tr>
+<tr class="separator:ga317f0094c514dd73d42a91fe24c5edbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga317f0094c514dd73d42a91fe24c5edbf" id="r_ga317f0094c514dd73d42a91fe24c5edbf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga317f0094c514dd73d42a91fe24c5edbf">PICO_COLORED_STATUS_LED_COLOR_FROM_RGB</a>(r,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>,  <a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>)&#160;&#160;&#160;(((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td></tr>
+<tr class="memdesc:ga317f0094c514dd73d42a91fe24c5edbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an RGB color value for /ref colored_status_led_set_on_with_color.  <br /></td></tr>
+<tr class="separator:ga317f0094c514dd73d42a91fe24c5edbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ba3f9311d86f5d6cbcaa9b9579df4bf" id="r_ga9ba3f9311d86f5d6cbcaa9b9579df4bf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga9ba3f9311d86f5d6cbcaa9b9579df4bf">PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB</a>(w,  r,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>,  <a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>)&#160;&#160;&#160;(((w) &lt;&lt; 24) | ((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td></tr>
+<tr class="memdesc:ga9ba3f9311d86f5d6cbcaa9b9579df4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an WRGB color value for <a class="el" href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color</a>.  <br /></td></tr>
+<tr class="separator:ga9ba3f9311d86f5d6cbcaa9b9579df4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ba3f9311d86f5d6cbcaa9b9579df4bf" id="r_ga9ba3f9311d86f5d6cbcaa9b9579df4bf"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga9ba3f9311d86f5d6cbcaa9b9579df4bf">PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB</a>(w,  r,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>,  <a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>)&#160;&#160;&#160;(((w) &lt;&lt; 24) | ((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td></tr>
+<tr class="memdesc:ga9ba3f9311d86f5d6cbcaa9b9579df4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an WRGB color value for <a class="el" href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color</a>.  <br /></td></tr>
+<tr class="separator:ga9ba3f9311d86f5d6cbcaa9b9579df4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gaba8869081421633d90752f7d442739fd" id="r_gaba8869081421633d90752f7d442739fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#gaba8869081421633d90752f7d442739fd">colored_status_led_get_on_color</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gaba8869081421633d90752f7d442739fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the color used for the status LED value when it is on.  <br /></td></tr>
+<tr class="separator:gaba8869081421633d90752f7d442739fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba07b23be96d82a76c17539e91bf1a34" id="r_gaba07b23be96d82a76c17539e91bf1a34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#gaba07b23be96d82a76c17539e91bf1a34">colored_status_led_get_state</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gaba07b23be96d82a76c17539e91bf1a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of the colored status LED.  <br /></td></tr>
+<tr class="separator:gaba07b23be96d82a76c17539e91bf1a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3225d411a023e2457e58492b6d1ff077" id="r_ga3225d411a023e2457e58492b6d1ff077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">color</a>)</td></tr>
+<tr class="memdesc:ga3225d411a023e2457e58492b6d1ff077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure the colored status LED is on, with the specified color.  <br /></td></tr>
+<tr class="separator:ga3225d411a023e2457e58492b6d1ff077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc18b1a2e5fcc3177ace62efd2030bdc" id="r_gadc18b1a2e5fcc3177ace62efd2030bdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#gadc18b1a2e5fcc3177ace62efd2030bdc">colored_status_led_set_state</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">led_on</a>)</td></tr>
+<tr class="memdesc:gadc18b1a2e5fcc3177ace62efd2030bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the colored status LED on or off.  <br /></td></tr>
+<tr class="separator:gadc18b1a2e5fcc3177ace62efd2030bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b64077fe31d7cfa4ac682ca54a946e3" id="r_ga8b64077fe31d7cfa4ac682ca54a946e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga8b64077fe31d7cfa4ac682ca54a946e3">status_led_deinit</a> ()</td></tr>
+<tr class="memdesc:ga8b64077fe31d7cfa4ac682ca54a946e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a>  <br /></td></tr>
+<tr class="separator:ga8b64077fe31d7cfa4ac682ca54a946e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80ac058adc18717ba786d09c266d77cc" id="r_ga80ac058adc18717ba786d09c266d77cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga80ac058adc18717ba786d09c266d77cc">status_led_get_state</a> ()</td></tr>
+<tr class="memdesc:ga80ac058adc18717ba786d09c266d77cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of the status LED.  <br /></td></tr>
+<tr class="separator:ga80ac058adc18717ba786d09c266d77cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf83057f40dddf57bbaa9845c2c56201c" id="r_gaf83057f40dddf57bbaa9845c2c56201c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#gaf83057f40dddf57bbaa9845c2c56201c">status_led_init</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:gaf83057f40dddf57bbaa9845c2c56201c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a>  <br /></td></tr>
+<tr class="separator:gaf83057f40dddf57bbaa9845c2c56201c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d39f6237f4c2eb0b7d89938f379bd41" id="r_ga1d39f6237f4c2eb0b7d89938f379bd41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga1d39f6237f4c2eb0b7d89938f379bd41">status_led_init_with_context</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structasync__context.html">async_context</a> *context)</td></tr>
+<tr class="memdesc:ga1d39f6237f4c2eb0b7d89938f379bd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a>  <br /></td></tr>
+<tr class="separator:ga1d39f6237f4c2eb0b7d89938f379bd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18658cb07e5bce8ecc0fd8afdaa22a0c" id="r_ga18658cb07e5bce8ecc0fd8afdaa22a0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__status__led.html#ga18658cb07e5bce8ecc0fd8afdaa22a0c">status_led_set_state</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">led_on</a>)</td></tr>
+<tr class="memdesc:ga18658cb07e5bce8ecc0fd8afdaa22a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the status LED on or off.  <br /></td></tr>
+<tr class="separator:ga18658cb07e5bce8ecc0fd8afdaa22a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Enables access to the on-board status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a> </p>
+<p>Boards usually have access to one or two on-board status LEDs which are configured via the board header (PICO_DEFAULT_LED_PIN, CYW43_WL_GPIO_LED_PIN and/or PICO_DEFAULT_WS2812_PIN). This library hides the low-level details so you can use the status LEDs for all boards without changing your code. </p><dl class="section note"><dt>Nota</dt><dd>If your board has both a single-color LED and a colored LED, you can independently control the single-color LED with the <code>status_led_</code> APIs, and the colored LED with the <code>colored_status_led_</code> APIs </dd></dl>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ga317f0094c514dd73d42a91fe24c5edbf" name="ga317f0094c514dd73d42a91fe24c5edbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga317f0094c514dd73d42a91fe24c5edbf">&#9670;&#160;</a></span>PICO_COLORED_STATUS_LED_COLOR_FROM_RGB <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_COLORED_STATUS_LED_COLOR_FROM_RGB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate an RGB color value for /ref colored_status_led_set_on_with_color. </p>
+
+</div>
+</div>
+<a id="ga317f0094c514dd73d42a91fe24c5edbf" name="ga317f0094c514dd73d42a91fe24c5edbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga317f0094c514dd73d42a91fe24c5edbf">&#9670;&#160;</a></span>PICO_COLORED_STATUS_LED_COLOR_FROM_RGB <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_COLORED_STATUS_LED_COLOR_FROM_RGB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate an RGB color value for /ref colored_status_led_set_on_with_color. </p>
+
+</div>
+</div>
+<a id="ga9ba3f9311d86f5d6cbcaa9b9579df4bf" name="ga9ba3f9311d86f5d6cbcaa9b9579df4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ba3f9311d86f5d6cbcaa9b9579df4bf">&#9670;&#160;</a></span>PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">w, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((w) &lt;&lt; 24) | ((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate an WRGB color value for <a class="el" href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color</a>. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a white pixel, the white component is ignored </dd></dl>
+
+</div>
+</div>
+<a id="ga9ba3f9311d86f5d6cbcaa9b9579df4bf" name="ga9ba3f9311d86f5d6cbcaa9b9579df4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ba3f9311d86f5d6cbcaa9b9579df4bf">&#9670;&#160;</a></span>PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">w, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">r, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((w) &lt;&lt; 24) | ((r) &lt;&lt; 16) | ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">g</a>) &lt;&lt; 8) | (<a class="el" href="call__apsr_8h.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate an WRGB color value for <a class="el" href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color</a>. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a white pixel, the white component is ignored </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="gaba8869081421633d90752f7d442739fd" name="gaba8869081421633d90752f7d442739fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba8869081421633d90752f7d442739fd">&#9670;&#160;</a></span>colored_status_led_get_on_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> colored_status_led_get_on_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the color used for the status LED value when it is on. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a colored status LED (PICO_DEFAULT_WS2812_PIN), this function always returns 0x0.</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>The color used for the colored status LED when it is on, in 0xWWRRGGBB format </dd></dl>
+
+</div>
+</div>
+<a id="gaba07b23be96d82a76c17539e91bf1a34" name="gaba07b23be96d82a76c17539e91bf1a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba07b23be96d82a76c17539e91bf1a34">&#9670;&#160;</a></span>colored_status_led_get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> colored_status_led_get_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the state of the colored status LED. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a colored status LED (PICO_DEFAULT_WS2812_PIN), this function returns false.</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the colored status LED is on, or false if the colored status LED is off </dd></dl>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__status__led.html#ga80ac058adc18717ba786d09c266d77cc">status_led_get_state()</a>.</p>
+
+</div>
+</div>
+<a id="ga3225d411a023e2457e58492b6d1ff077" name="ga3225d411a023e2457e58492b6d1ff077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3225d411a023e2457e58492b6d1ff077">&#9670;&#160;</a></span>colored_status_led_set_on_with_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> colored_status_led_set_on_with_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ensure the colored status LED is on, with the specified color. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a colored status LED (PICO_DEFAULT_WS2812_PIN), this function does nothing and returns false.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The color to use for the colored status LED when it is on, in 0xWWRRGGBB format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the colored status LED could be set, otherwise false on failure </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__pico__status__led.html#gadc18b1a2e5fcc3177ace62efd2030bdc">colored_status_led_set_state()</a> e <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="gadc18b1a2e5fcc3177ace62efd2030bdc" name="gadc18b1a2e5fcc3177ace62efd2030bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc18b1a2e5fcc3177ace62efd2030bdc">&#9670;&#160;</a></span>colored_status_led_set_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> colored_status_led_set_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>led_on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the colored status LED on or off. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a colored status LED (PICO_DEFAULT_WS2812_PIN), this function does nothing and returns false.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led_on</td><td>true to turn the colored LED on. Pass false to turn the colored LED off </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the colored status LED could be set, otherwise false </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color()</a> e <a class="el" href="group__pico__status__led.html#ga18658cb07e5bce8ecc0fd8afdaa22a0c">status_led_set_state()</a>.</p>
+
+</div>
+</div>
+<a id="ga8b64077fe31d7cfa4ac682ca54a946e3" name="ga8b64077fe31d7cfa4ac682ca54a946e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b64077fe31d7cfa4ac682ca54a946e3">&#9670;&#160;</a></span>status_led_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> status_led_deinit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-initialize the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a> </p>
+<p>De-initializes the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a> when they are no longer needed. </p>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="group__pico__cyw43__driver.html#gaf7f9ad52479938f40ae6b1f8c9ef80c3">cyw43_driver_deinit()</a>, <a class="el" href="group__hardware__gpio.html#ga4df18d737955c17a65c5a94412826674">gpio_deinit()</a>, <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a72e0e5a775ad5000ac2dd6ff2e3284d9">gpio_put()</a>, <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="0xcb__helios_8h.html#a4a29698db5ef031543df84d51da3e16a">PICO_DEFAULT_LED_PIN</a>, <a class="el" href="adafruit__itsybitsy__rp2040_8h.html#a6ba40c96309525aeed7c5aeacf5f6ad5">PICO_DEFAULT_WS2812_POWER_PIN</a> e <a class="el" href="group__hardware__pio.html#gaa8178ef68166e58260da3989bc5f06bd">pio_remove_program_and_unclaim_sm()</a>.</p>
+
+</div>
+</div>
+<a id="ga80ac058adc18717ba786d09c266d77cc" name="ga80ac058adc18717ba786d09c266d77cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80ac058adc18717ba786d09c266d77cc">&#9670;&#160;</a></span>status_led_get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> status_led_get_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the state of the status LED. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a status LED, this function always returns false.</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the status LED is on, or false if the status LED is off </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__pico__status__led.html#gaba07b23be96d82a76c17539e91bf1a34">colored_status_led_get_state()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="pico2__w_8h.html#a262b0f6d29997ff2cc228f6f92867dcd">CYW43_WL_GPIO_LED_PIN</a>, <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a4776c26adad638f463e843c2f60563d3">gpio_get()</a> e <a class="el" href="0xcb__helios_8h.html#a4a29698db5ef031543df84d51da3e16a">PICO_DEFAULT_LED_PIN</a>.</p>
+
+</div>
+</div>
+<a id="gaf83057f40dddf57bbaa9845c2c56201c" name="gaf83057f40dddf57bbaa9845c2c56201c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf83057f40dddf57bbaa9845c2c56201c">&#9670;&#160;</a></span>status_led_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> status_led_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a> </p>
+<p>Initialize the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a> and the resources they need before use. On some devices (e.g. Pico W, Pico 2 W) accessing the status LED requires talking to the WiFi chip, which requires an <a class="el" href="structasync__context.html">async_context</a>. This method will create an <a class="el" href="structasync__context.html" title="Base structure type of all async_contexts.">async_context</a> for you.</p>
+<p>However an application should only use a single <a class="el" href="structasync__context.html">async_context</a> instance to talk to the WiFi chip. If the application already has an async context (e.g. created by cyw43_arch_init) you should use <a class="el" href="group__pico__status__led.html#ga1d39f6237f4c2eb0b7d89938f379bd41">status_led_init_with_context</a> instead and pass it the <a class="el" href="structasync__context.html">async_context</a> already created by your application</p>
+<dl class="section note"><dt>Nota</dt><dd>You must call this function (or <a class="el" href="group__pico__status__led.html#ga1d39f6237f4c2eb0b7d89938f379bd41">status_led_init_with_context</a>) before using any other pico_status_led functions.</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Returns true if the LED was initialized successfully, otherwise false on failure </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__pico__status__led.html#ga1d39f6237f4c2eb0b7d89938f379bd41" title="Initialise the status LED(s)">status_led_init_with_context</a> </dd></dl>
+
+<p class="reference">Referências <a class="el" href="SEGGER__RTT_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>.</p>
+
+</div>
+</div>
+<a id="ga1d39f6237f4c2eb0b7d89938f379bd41" name="ga1d39f6237f4c2eb0b7d89938f379bd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d39f6237f4c2eb0b7d89938f379bd41">&#9670;&#160;</a></span>status_led_init_with_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> status_led_init_with_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> <a class="el" href="structasync__context.html">async_context</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a> </p>
+<p>Initialize the status <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">LED(s)</a> and the resources they need before use.</p>
+<dl class="section note"><dt>Nota</dt><dd>You must call this function (or <a class="el" href="group__pico__status__led.html#gaf83057f40dddf57bbaa9845c2c56201c">status_led_init</a>) before using any other pico_status_led functions.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>An <a class="el" href="structasync__context.html">async_context</a> used to communicate with the status LED (e.g. on Pico W or Pico 2 W) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Returns true if the LED was initialized successfully, otherwise false on failure </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="group__pico__status__led.html#ga1d39f6237f4c2eb0b7d89938f379bd41" title="Initialise the status LED(s)">status_led_init_with_context</a> </dd></dl>
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="ga18658cb07e5bce8ecc0fd8afdaa22a0c" name="ga18658cb07e5bce8ecc0fd8afdaa22a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18658cb07e5bce8ecc0fd8afdaa22a0c">&#9670;&#160;</a></span>status_led_set_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">static</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> status_led_set_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>led_on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the status LED on or off. </p>
+<dl class="section note"><dt>Nota</dt><dd>If your hardware does not support a status LED, this function does nothing and returns false.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led_on</td><td>true to turn the LED on. Pass false to turn the LED off </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the status LED could be set, otherwise false </dd></dl>
+
+<p class="reference">Referências <a class="el" href="group__pico__status__led.html#gadc18b1a2e5fcc3177ace62efd2030bdc">colored_status_led_set_state()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="pico2__w_8h.html#a262b0f6d29997ff2cc228f6f92867dcd">CYW43_WL_GPIO_LED_PIN</a>, <a class="el" href="host_2hardware__gpio_2gpio_8c.html#a72e0e5a775ad5000ac2dd6ff2e3284d9">gpio_put()</a> e <a class="el" href="0xcb__helios_8h.html#a4a29698db5ef031543df84d51da3e16a">PICO_DEFAULT_LED_PIN</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

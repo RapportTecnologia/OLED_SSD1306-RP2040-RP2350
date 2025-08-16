@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RP2040 OLED SSD1306: OLED SSD1306 (Proxy &lt;tt&gt;oled.h/.c&lt;/tt&gt;)</title>
+<title>RP2040 OLED SSD1306: Bazel build</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,193 +90,77 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">OLED SSD1306 (Proxy <code><a class="el" href="oled_8h.html">oled.h</a>/.c</code>) </div></div>
+  <div class="headertitle"><div class="title">Bazel build </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> Projeto para uso do display OLED SSD1306 via I2C no Raspberry Pi Pico (ou compatíveis), oferecendo uma camada de alto nível (proxy/fachada) em <code><a class="el" href="oled_8h.html">oled.h</a></code>/<code><a class="el" href="oled_8c.html">oled.c</a></code> sobre o driver de baixo nível em <code>ssd1306_*</code>. Essa camada simplifica operações comuns como inicialização, limpeza, desenho de pixels/linhas, e renderização de textos (com alinhamento e fonte grande).</p>
+<div class="textblock"><p><a class="anchor" id="md_build_2__deps_2pico__sdk-src_2bazel_2README"></a> </p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Visão Geral</h1>
-<ul>
-<li><b>Objetivo</b>: disponibilizar uma API simples para desenhar e compor telas sem lidar diretamente com comandos do SSD1306.</li>
-<li><b>Abordagem</b>: o proxy mantém um buffer de vídeo em RAM e só envia ao display quando você chama <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a></code> (ou utiliza <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code> para o modo de texto).</li>
-<li><b>Display suportado</b>: 128x64, I2C endereço padrão <code>0x3C</code>.</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Estrutura do Projeto</h1>
-<ul>
-<li><code><a class="el" href="oled_8h.html">oled.h</a></code> / <code><a class="el" href="oled_8c.html">oled.c</a></code>: proxy/fachada de alto nível (API pública recomendada).</li>
-<li><code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code> / <code><a class="el" href="ssd1306__i2c_8c.html">ssd1306_i2c.c</a></code>: driver e primitivas de desenho/transferência I2C.</li>
-<li><code><a class="el" href="ssd1306_8h.html">ssd1306.h</a></code>: protótipos e integração com o driver.</li>
-<li><code><a class="el" href="ssd1306__font_8h.html">ssd1306_font.h</a></code>: fonte padrão (8x8) e utilitários.</li>
-<li><code><a class="el" href="big__font_8h.html">big_font.h</a></code>: fonte grande para números e caracteres destacados.</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
-Requisitos e Hardware</h1>
-<ul>
-<li><b>SDK</b>: Raspberry Pi Pico SDK (Pico SDK) e toolchain C/C++ configurados.</li>
-<li><b>I2C</b>: clock padrão 400 kHz (<code>ssd1306_i2c_clock 400</code>).</li>
-<li><b>Pinos I2C padrão</b> (podem ser alterados em <code><a class="el" href="oled_8h.html">oled.h</a></code>):<ul>
-<li><code>I2C_SDA</code> = 14</li>
-<li><code>I2C_SCL</code> = 15</li>
-</ul>
-</li>
-<li><b>Endereço I2C</b>: <code>0x3C</code> (definido em <code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code> como <code>ssd1306_i2c_address</code>).</li>
-</ul>
-<p>Faça a ligação do módulo OLED (VCC, GND, SDA, SCL) aos pinos I2C do Pico. Se utilizar outros pinos, ajuste os <code>#define</code> em <code><a class="el" href="oled_8h.html">oled.h</a></code>.</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
-API do Proxy (&lt;tt&gt;oled.h&lt;/tt&gt;)</h1>
-<ul>
-<li><code>void <a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb" title="Initialize the OLED display.">oled_init(void)</a>;</code><ul>
-<li>Inicializa I2C, configura o SSD1306 e limpa o buffer interno.</li>
-</ul>
-</li>
-<li><code>void <a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c" title="Clear the display buffer and refresh.">oled_clear(void)</a>;</code><ul>
-<li>Limpa o buffer de vídeo em RAM e atualiza o display imediatamente.</li>
-</ul>
-</li>
-<li><code>void <a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render(void)</a>;</code><ul>
-<li>Envia o conteúdo do buffer atual ao display (uso após desenhar).</li>
-</ul>
-</li>
-<li><code>void <a class="el" href="oled_8c.html#a06e013499ceeb5183e46d95b0ab49c3f" title="Set a pixel at (x,y) on or off.">oled_set_pixel(int x, int y, bool on)</a>;</code><ul>
-<li>Define um pixel no buffer (não envia automaticamente ao display).</li>
-</ul>
-</li>
-<li><code>void <a class="el" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268" title="Draw a line from (x0,y0) to (x1,y1)">oled_draw_line(int x0, int y0, int x1, int y1, bool on)</a>;</code><ul>
-<li>Desenha uma linha no buffer.</li>
-</ul>
-</li>
-<li><code>void <a class="el" href="oled_8c.html#ae6e6696f947ba345d0a95ae94ce4b3df" title="Draw a single character at (x,y)">oled_draw_char(int x, int y, char c)</a>;</code><ul>
-<li>Desenha um caractere (fonte padrão, largura 8).</li>
-</ul>
-</li>
-<li><code>void <a class="el" href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be" title="Draw a string at (x,y)">oled_draw_string(int x, int y, const char *str)</a>;</code><ul>
-<li>Desenha uma string (fonte padrão). Altura de linha: <code>ssd1306_line_height</code> (8 px).</li>
-</ul>
-</li>
-<li><code>void <a class="el" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char(int x, int y, char c)</a>;</code><ul>
-<li>Desenha caractere usando a fonte grande (<code><a class="el" href="big__font_8h.html">big_font.h</a></code>).</li>
-</ul>
-</li>
-<li>Modo de “buffer de texto” (linhas lógicas):<ul>
-<li><code>typedef enum { OLED_ALIGN_LEFT, OLED_ALIGN_CENTER, OLED_ALIGN_RIGHT, OLED_ALIGN_JUSTIFY } oled_text_alignment_t;</code></li>
-<li><code>void <a class="el" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec" title="Set a single line of text in the internal text buffer.">oled_set_text_line(uint8_t line, const char *text, oled_text_alignment_t alignment)</a>;</code></li>
-<li><code>void <a class="el" href="oled_8c.html#ac533da08441193dc1c6274e58348feb5" title="Clear a single line of text in the internal text buffer.">oled_clear_text_line(uint8_t line)</a>;</code></li>
-<li><code>void <a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text(void)</a>;</code></li>
-</ul>
-</li>
-</ul>
-<p>Parâmetros relevantes (em <code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code>):</p>
-<ul>
-<li><code>ssd1306_width = 128</code>, <code>ssd1306_height = 64</code>.</li>
-<li><code>ssd1306_line_height = 8</code>.</li>
-<li><code>max_text_lines = 8</code> e <code>max_text_columns = 17</code> (para o modo de texto do proxy).</li>
-<li><code>font_width = 8</code> (padrão, pode ser redefinido antes de incluir <code><a class="el" href="oled_8h.html">oled.h</a></code>).</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Fluxo de Uso Recomendado</h1>
-<ol type="1">
-<li><b>Inicialize</b>: <code><a class="el" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb" title="Initialize the OLED display.">oled_init()</a>;</code></li>
-<li><b>Desenhe no buffer</b>: use <code>oled_set_pixel</code>, <code>oled_draw_line</code>, <code>oled_draw_char</code>/<code>oled_draw_string</code>.</li>
-<li><b>Renderize</b>: chame <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a>;</code> para enviar ao display.</li>
-</ol>
-<p>Para o modo de texto por linhas:</p>
-<ol type="1">
-<li>Chame <code>oled_set_text_line(line, "texto", OLED_ALIGN_...);</code> para cada linha desejada (0 a <code>max_text_lines-1</code>).</li>
-<li>Chame uma única vez <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a>;</code> para compor e enviar o conteúdo.</li>
-</ol>
-<h1><a class="anchor" id="autotoc_md6"></a>
-Exemplo Rápido (Desenho livre)</h1>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="oled_8h.html">oled.h</a>&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main() {</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a>();</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Limpa tela</span></div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear</a>();</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Desenha uma moldura</span></div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(0, 0, 127, 0, <span class="keyword">true</span>);</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(0, 63, 127, 63, <span class="keyword">true</span>);</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(0, 0, 0, 63, <span class="keyword">true</span>);</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a>(127, 0, 127, 63, <span class="keyword">true</span>);</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Escreve um texto</span></div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be">oled_draw_string</a>(8, 8, <span class="stringliteral">&quot;OLED SSD1306&quot;</span>);</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Renderiza</span></div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render</a>();</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">while</span> (1) { <span class="comment">/* loop */</span> }</div>
-<div class="line">}</div>
-<div class="ttc" id="aoled_8c_html_a34f1c4779a919ec1623b7b5147c0c5be"><div class="ttname"><a href="oled_8c.html#a34f1c4779a919ec1623b7b5147c0c5be">oled_draw_string</a></div><div class="ttdeci">void oled_draw_string(int x, int y, const char *str)</div><div class="ttdoc">Draw a string at (x,y)</div><div class="ttdef"><b>Definição</b> oled.c:60</div></div>
-<div class="ttc" id="aoled_8c_html_a4a95395ba3445d3d5a9ba41324f9b5b4"><div class="ttname"><a href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render</a></div><div class="ttdeci">void oled_render(void)</div><div class="ttdoc">Render the current buffer to the display.</div><div class="ttdef"><b>Definição</b> oled.c:44</div></div>
-<div class="ttc" id="aoled_8c_html_a66cdd05fb3a765535af54825cb9eb26c"><div class="ttname"><a href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear</a></div><div class="ttdeci">void oled_clear(void)</div><div class="ttdoc">Clear the display buffer and refresh.</div><div class="ttdef"><b>Definição</b> oled.c:39</div></div>
-<div class="ttc" id="aoled_8c_html_ac284f0bd4fdf2dd11175524b8d78b268"><div class="ttname"><a href="oled_8c.html#ac284f0bd4fdf2dd11175524b8d78b268">oled_draw_line</a></div><div class="ttdeci">void oled_draw_line(int x0, int y0, int x1, int y1, bool on)</div><div class="ttdoc">Draw a line from (x0,y0) to (x1,y1)</div><div class="ttdef"><b>Definição</b> oled.c:52</div></div>
-<div class="ttc" id="aoled_8c_html_ad95f850c4c6d949229270c8da88c02cb"><div class="ttname"><a href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a></div><div class="ttdeci">void oled_init(void)</div><div class="ttdoc">Initialize the OLED display.</div><div class="ttdef"><b>Definição</b> oled.c:25</div></div>
-<div class="ttc" id="aoled_8h_html"><div class="ttname"><a href="oled_8h.html">oled.h</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
-Exemplo (Modo de texto com alinhamento)</h1>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="oled_8h.html">oled.h</a>&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main() {</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a>();</div>
-<div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(0, <span class="stringliteral">&quot;Sistema&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b">OLED_ALIGN_LEFT</a>);</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(1, <span class="stringliteral">&quot;Pico + OLED&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5">OLED_ALIGN_CENTER</a>);</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(2, <span class="stringliteral">&quot;Status: OK&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831">OLED_ALIGN_RIGHT</a>);</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Justify é tratado como LEFT no momento</span></div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a>(3, <span class="stringliteral">&quot;Justify demo&quot;</span>, <a class="code hl_enumvalue" href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb">OLED_ALIGN_JUSTIFY</a>);</div>
-<div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text</a>();</div>
-<div class="line">    <span class="keywordflow">while</span> (1) {}</div>
-<div class="line">}</div>
-<div class="ttc" id="aoled_8c_html_a112b0ae9dc37e4d52be0acfacbd37689"><div class="ttname"><a href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689">oled_render_text</a></div><div class="ttdeci">void oled_render_text(void)</div><div class="ttdoc">Render the internal text buffer lines to the display.</div><div class="ttdef"><b>Definição</b> oled.c:89</div></div>
-<div class="ttc" id="aoled_8c_html_aa415fc483d7246dd7d28a32a69f7a6ec"><div class="ttname"><a href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec">oled_set_text_line</a></div><div class="ttdeci">void oled_set_text_line(uint8_t line, const char *text, oled_text_alignment_t alignment)</div><div class="ttdoc">Set a single line of text in the internal text buffer.</div><div class="ttdef"><b>Definição</b> oled.c:71</div></div>
-<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a0624096fda265605e8184332b89a92e5">OLED_ALIGN_CENTER</a></div><div class="ttdeci">@ OLED_ALIGN_CENTER</div><div class="ttdef"><b>Definição</b> oled.h:35</div></div>
-<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a2244fad6ab4b90d322ba86e1a465389b">OLED_ALIGN_LEFT</a></div><div class="ttdeci">@ OLED_ALIGN_LEFT</div><div class="ttdef"><b>Definição</b> oled.h:34</div></div>
-<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a6888801430083a067d4b540aa9ea6831">OLED_ALIGN_RIGHT</a></div><div class="ttdeci">@ OLED_ALIGN_RIGHT</div><div class="ttdef"><b>Definição</b> oled.h:36</div></div>
-<div class="ttc" id="aoled_8h_html_a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb"><div class="ttname"><a href="oled_8h.html#a04a84354bf88235d62f600ab4ab6d9f6a89089defb95e906c7912fdf05f12b1bb">OLED_ALIGN_JUSTIFY</a></div><div class="ttdeci">@ OLED_ALIGN_JUSTIFY</div><div class="ttdef"><b>Definição</b> oled.h:37</div></div>
+Using the Pico SDK in a Bazel project.</h1>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Add pico-sdk as a dependency</h2>
+<p>First, in your <code>MODULE.bazel</code> file, add a dependency on the Pico SDK and <code>rules_cc</code>: </p><div class="fragment"><div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bazel_dep</a>(name = <span class="stringliteral">&quot;pico-sdk&quot;</span>, version = <span class="stringliteral">&quot;2.1.0&quot;</span>)</div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3"></a>
+Register toolchains</h2>
+<p>These toolchains tell Bazel how to compile for ARM cores. Add the following to the <code>MODULE.bazel</code> for your project: </p><div class="fragment"><div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">register_toolchains</a>(</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:linux-x86_64-rp2040&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:linux-x86_64-rp2350&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:win-x86_64-rp2040&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:win-x86_64-rp2350&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:mac-x86_64-rp2040&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:mac-x86_64-rp2350&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:mac-aarch64-rp2040&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@pico-sdk//bazel/toolchain:mac-aarch64-rp2350&quot;</span>,</div>
+<div class="line">)</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
+Ready to build!</h2>
+<p>You're now ready to start building Pico Projects in Bazel! When building, don't forget to specify <code>--platforms</code> so Bazel knows you're targeting the Raspberry Pi Pico: </p><div class="fragment"><div class="line">$ bazelisk build --platforms=@pico-sdk//bazel/platform:rp2040 //...</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+SDK configuration</h1>
+<p>An exhaustive list of build system configuration options is available in <code>//bazel/config:BUILD.bazel</code>.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Selecting a different board</h2>
+<p>A different board can be selected specifying <code>--@pico-sdk//bazel/config:PICO_BOARD</code>: </p><div class="fragment"><div class="line">$ bazelisk build --platforms=//bazel/platform:rp2040 --@pico-sdk//bazel/config:PICO_BOARD=pico_w //...</div>
+</div><!-- fragment --><p>If you have a bespoke board definition, you can configure the Pico SDK to use it by pointing <code>--@pico-sdk//bazel/config:PICO_CONFIG_HEADER</code> to a <code>cc_library</code> that defines <code>PICO_BOARD</code> and either a <code>PICO_CONFIG_HEADER</code> define or a <code>pico/config_autogen.h</code> header. Make sure any required <code>includes</code>, <code>hdrs</code>, and <code>deps</code> are also provided.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Generating UF2 firmware images</h1>
+<p>Creation of UF2 images can be done as explicit build steps on a per-binary rule basis, or through an aspect. Running a wildcard build with the <code>pico_uf2_aspect</code> enabled is the easiest way to create a UF2 for every ELF firmware image.</p>
+<div class="fragment"><div class="line">$ bazelisk build --platforms=@pico-sdk//bazel/platform:rp2040 \</div>
+<div class="line">    --aspects @pico-sdk//tools:uf2_aspect.bzl%pico_uf2_aspect \</div>
+<div class="line">    --output_groups=+pico_uf2_files \</div>
+<div class="line">    //...</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
-Exemplo (Fonte grande)</h1>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="oled_8h.html">oled.h</a>&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main() {</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#ad95f850c4c6d949229270c8da88c02cb">oled_init</a>();</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c">oled_clear</a>();</div>
-<div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a>(0, 0, <span class="charliteral">&#39;2&#39;</span>);</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a>(20, 0, <span class="charliteral">&#39;5&#39;</span>);</div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a>(40, 0, <span class="charliteral">&#39;C&#39;</span>);</div>
-<div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4">oled_render</a>();</div>
-<div class="line">    <span class="keywordflow">while</span> (1) {}</div>
-<div class="line">}</div>
-<div class="ttc" id="aoled_8c_html_aef19becab190e4a63b3ea566b8932996"><div class="ttname"><a href="oled_8c.html#aef19becab190e4a63b3ea566b8932996">oled_draw_big_char</a></div><div class="ttdeci">void oled_draw_big_char(int x, int y, char c)</div><div class="ttdef"><b>Definição</b> oled.c:64</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
-Boas Práticas para Melhor Resultado com o Proxy</h1>
+Building the Pico SDK itself</h1>
+<h2><a class="anchor" id="autotoc_md9"></a>
+First time setup</h2>
+<p>You'll need Bazel (v7.0.0 or higher) or Bazelisk (a self-updating Bazel launcher) to build the Pico SDK.</p>
+<p>We strongly recommend you set up <a href="https://bazel.build/install/bazelisk">Bazelisk</a>.</p>
+<p>You will also need a working compiler configured if you wish to build Picotool or pioasm.</p>
 <ul>
-<li><b>Desenhe em lote, renderize uma vez</b>: acumule alterações no buffer e chame <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a></code> no final do quadro/tela. Evite renderizações parciais repetidas.</li>
-<li><b>Use o modo de texto quando fizer sentido</b>: <code><a class="el" href="oled_8c.html#aa415fc483d7246dd7d28a32a69f7a6ec" title="Set a single line of text in the internal text buffer.">oled_set_text_line()</a></code> + <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code> já cuidam do alinhamento e composição vertical por linhas de 8 px.</li>
-<li><b>Valide coordenadas</b>: mantenha <code>x</code> em <code>[0, 127]</code> e <code>y</code> em <code>[0, 63]</code> para evitar recortes inesperados.</li>
-<li><b>Fonte e limites</b>: no modo de texto, <code>max_text_columns</code> controla o truncamento; evite strings maiores que 17 caracteres ou ajuste o valor para seu caso.</li>
-<li><b>I2C estável</b>: mantenha o clock em 400 kHz para boa taxa de atualização. Se houver ruído, revisite fiação e pull-ups (o código aplica <code>gpio_pull_up</code>).</li>
-<li><b>Pinos customizados</b>: altere <code>I2C_SDA</code> e <code>I2C_SCL</code> em <code><a class="el" href="oled_8h.html">oled.h</a></code> conforme seu hardware.</li>
-<li><b>Limpeza eficiente</b>: <code><a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c" title="Clear the display buffer and refresh.">oled_clear()</a></code> zera o buffer e envia ao display; se estiver no modo de texto, <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code> já chama <code><a class="el" href="oled_8c.html#a66cdd05fb3a765535af54825cb9eb26c" title="Clear the display buffer and refresh.">oled_clear()</a></code> internamente antes de compor.</li>
-<li><b>JUSTIFY</b>: atualmente é tratado como LEFT; se precisar de justificação real entre palavras, considere implementar a distribuição de espaços no <code><a class="el" href="oled_8c.html#a112b0ae9dc37e4d52be0acfacbd37689" title="Render the internal text buffer lines to the display.">oled_render_text()</a></code>.</li>
+<li>Linux: <code>sudo apt-get install build-essential</code> or similar.</li>
+<li>macOS: <code>xcode-select --install</code></li>
+<li>Windows: <a href="https://visualstudio.microsoft.com/vs/features/cplusplus/">Install MSVC</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md10"></a>
-Limitações e Observações</h1>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Building</h2>
+<p>To build all of the Pico SDK, run the following command: </p><div class="fragment"><div class="line">$ bazelisk build --platforms=//bazel/platform:rp2040 //...</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md11"></a>
+Known issues and limitations</h1>
+<p>The Bazel build for the Pico SDK is relatively new, but most features and configuration options available in the CMake build are also available in Bazel. You are welcome and encouraged to file issues for any problems and limitations you encounter along the way.</p>
+<p>Currently, the following features are not supported:</p>
 <ul>
-<li>Otimizações de renderização parcial não estão habilitadas; cada <code><a class="el" href="oled_8c.html#a4a95395ba3445d3d5a9ba41324f9b5b4" title="Render the current buffer to the display.">oled_render()</a></code> envia todo o buffer.</li>
-<li>O modo de texto usa <code>font_width = 8</code>. Se alterar a fonte, ajuste alinhamento e limites para evitar cortes.</li>
-<li><code>max_text_lines</code> e <code>max_text_columns</code> são definidos em <code><a class="el" href="ssd1306__i2c_8h.html">ssd1306_i2c.h</a></code>. Ajustes podem exigir revisitar o layout.</li>
+<li>Pico W wireless libraries work, but may not have complete feature parity with the CMake build.</li>
+<li>Bazel does not yet provide RISC-V support for Pico 2/RP2350.</li>
+<li>The pioasm parser cannot be built from source via Bazel.</li>
+<li>Windows MSVC wildcard build (<code>bazel build //...</code>) does not work when targeting host.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md11"></a>
-Licença</h1>
-<p>Consulte <code>LICENSE</code> neste diretório. </p>
-</div></div><!-- PageDoc -->
+<h1><a class="anchor" id="autotoc_md12"></a>
+Contributing</h1>
+<p>When making changes to the Bazel build, please run the Bazel validation script to ensure all supported configurations build properly:</p>
+<div class="fragment"><div class="line">$ ./tools/run_all_bazel_checks.py</div>
+</div><!-- fragment --><p>If you need to check against a local version of Picotool, you can run the script with <code>--picotool-dir</code>:</p>
+<div class="fragment"><div class="line">$ ./tools/run_all_bazel_checks.py --picotool-dir=/path/to/picotool</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

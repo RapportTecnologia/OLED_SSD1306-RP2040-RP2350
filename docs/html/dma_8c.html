@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro dma.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dma_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro dma.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__dma_2include_2hardware_2dma_8h_source.html">hardware/dma.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="claim_8h_source.html">hardware/claim.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para dma.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="dma_8c__incl.svg" width="959" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a343169bce227f70fad42e5553e68ab8c" id="r_a343169bce227f70fad42e5553e68ab8c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#a343169bce227f70fad42e5553e68ab8c">DMA_CHAN_STRIDE</a>&#160;&#160;&#160;(<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#ab69c33269420c8d7f6790f69718d0d9c">DMA_CH1_CTRL_TRIG_OFFSET</a> - <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a8898cfa8a9ec183313db52e46fccf12f">DMA_CH0_CTRL_TRIG_OFFSET</a>)</td></tr>
+<tr class="separator:a343169bce227f70fad42e5553e68ab8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:af9dfd5f8417df3e5c67d6ef3fed59aa1" id="r_af9dfd5f8417df3e5c67d6ef3fed59aa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#af9dfd5f8417df3e5c67d6ef3fed59aa1">check_hw_layout</a> (<a class="el" href="structdma__hw__t.html">dma_hw_t</a>, abort, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a3622574bd7088db159f61145f311dce5">DMA_CHAN_ABORT_OFFSET</a>)</td></tr>
+<tr class="separator:af9dfd5f8417df3e5c67d6ef3fed59aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccef101c948e896f2899840e06adc2b" id="r_a8ccef101c948e896f2899840e06adc2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#a8ccef101c948e896f2899840e06adc2b">check_hw_size</a> (<a class="el" href="structdma__channel__hw__t.html">dma_channel_hw_t</a>, <a class="el" href="dma_8c.html#a343169bce227f70fad42e5553e68ab8c">DMA_CHAN_STRIDE</a>)</td></tr>
+<tr class="separator:a8ccef101c948e896f2899840e06adc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1b3c916746b3d2052f21b7dda34aab9" id="r_gae1b3c916746b3d2052f21b7dda34aab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gae1b3c916746b3d2052f21b7dda34aab9">dma_channel_claim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:gae1b3c916746b3d2052f21b7dda34aab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma channel as used.  <br /></td></tr>
+<tr class="separator:gae1b3c916746b3d2052f21b7dda34aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga655130988c1045bdf711135698adf321" id="r_ga655130988c1045bdf711135698adf321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga655130988c1045bdf711135698adf321">dma_channel_cleanup</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:ga655130988c1045bdf711135698adf321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs DMA channel cleanup after use.  <br /></td></tr>
+<tr class="separator:ga655130988c1045bdf711135698adf321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9aadb81f53b979bde1c1a81164d1eff2" id="r_ga9aadb81f53b979bde1c1a81164d1eff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga9aadb81f53b979bde1c1a81164d1eff2">dma_channel_is_claimed</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:ga9aadb81f53b979bde1c1a81164d1eff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a dma channel is claimed.  <br /></td></tr>
+<tr class="separator:ga9aadb81f53b979bde1c1a81164d1eff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac50200739b88a2fd52316f4150533035" id="r_gac50200739b88a2fd52316f4150533035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gac50200739b88a2fd52316f4150533035">dma_channel_unclaim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> channel)</td></tr>
+<tr class="memdesc:gac50200739b88a2fd52316f4150533035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma channel as no longer used.  <br /></td></tr>
+<tr class="separator:gac50200739b88a2fd52316f4150533035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa430bc53dc2b36d727ad976f6348c8b3" id="r_gaa430bc53dc2b36d727ad976f6348c8b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#gaa430bc53dc2b36d727ad976f6348c8b3">dma_claim_mask</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mask</a>)</td></tr>
+<tr class="memdesc:gaa430bc53dc2b36d727ad976f6348c8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark multiple dma channels as used.  <br /></td></tr>
+<tr class="separator:gaa430bc53dc2b36d727ad976f6348c8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b0a6680795b9c9ed787362a8a057206" id="r_ga4b0a6680795b9c9ed787362a8a057206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga4b0a6680795b9c9ed787362a8a057206">dma_claim_unused_channel</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>)</td></tr>
+<tr class="memdesc:ga4b0a6680795b9c9ed787362a8a057206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a free dma channel.  <br /></td></tr>
+<tr class="separator:ga4b0a6680795b9c9ed787362a8a057206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f218b6acd97e09430afbb74172bd570" id="r_ga2f218b6acd97e09430afbb74172bd570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga2f218b6acd97e09430afbb74172bd570">dma_claim_unused_timer</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>)</td></tr>
+<tr class="memdesc:ga2f218b6acd97e09430afbb74172bd570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim a free dma timer.  <br /></td></tr>
+<tr class="separator:ga2f218b6acd97e09430afbb74172bd570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08fc90c0064510e7a0a2cf8d1cd187bc" id="r_ga08fc90c0064510e7a0a2cf8d1cd187bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga08fc90c0064510e7a0a2cf8d1cd187bc">dma_timer_claim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> timer)</td></tr>
+<tr class="memdesc:ga08fc90c0064510e7a0a2cf8d1cd187bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma timer as used.  <br /></td></tr>
+<tr class="separator:ga08fc90c0064510e7a0a2cf8d1cd187bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b45bfe6985f8c0894d34876eedc3090" id="r_ga9b45bfe6985f8c0894d34876eedc3090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga9b45bfe6985f8c0894d34876eedc3090">dma_timer_is_claimed</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> timer)</td></tr>
+<tr class="memdesc:ga9b45bfe6985f8c0894d34876eedc3090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a dma timer is claimed.  <br /></td></tr>
+<tr class="separator:ga9b45bfe6985f8c0894d34876eedc3090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga890490576d8806b8933aad0e34d09c5e" id="r_ga890490576d8806b8933aad0e34d09c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga890490576d8806b8933aad0e34d09c5e">dma_timer_unclaim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> timer)</td></tr>
+<tr class="memdesc:ga890490576d8806b8933aad0e34d09c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark a dma timer as no longer used.  <br /></td></tr>
+<tr class="separator:ga890490576d8806b8933aad0e34d09c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0211681c906ebe4971d0cded8e98f8b5" id="r_ga0211681c906ebe4971d0cded8e98f8b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__dma.html#ga0211681c906ebe4971d0cded8e98f8b5">dma_unclaim_mask</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mask</a>)</td></tr>
+<tr class="memdesc:ga0211681c906ebe4971d0cded8e98f8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark multiple dma channels as no longer used.  <br /></td></tr>
+<tr class="separator:ga0211681c906ebe4971d0cded8e98f8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cde69b01ff6105d7ac019b7d092329" id="r_ac5cde69b01ff6105d7ac019b7d092329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8c.html#ac5cde69b01ff6105d7ac019b7d092329">print_dma_ctrl</a> (<a class="el" href="structdma__channel__hw__t.html">dma_channel_hw_t</a> *channel)</td></tr>
+<tr class="separator:ac5cde69b01ff6105d7ac019b7d092329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a343169bce227f70fad42e5553e68ab8c" name="a343169bce227f70fad42e5553e68ab8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a343169bce227f70fad42e5553e68ab8c">&#9670;&#160;</a></span>DMA_CHAN_STRIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> DMA_CHAN_STRIDE&#160;&#160;&#160;(<a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#ab69c33269420c8d7f6790f69718d0d9c">DMA_CH1_CTRL_TRIG_OFFSET</a> - <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a8898cfa8a9ec183313db52e46fccf12f">DMA_CH0_CTRL_TRIG_OFFSET</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="af9dfd5f8417df3e5c67d6ef3fed59aa1" name="af9dfd5f8417df3e5c67d6ef3fed59aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9dfd5f8417df3e5c67d6ef3fed59aa1">&#9670;&#160;</a></span>check_hw_layout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdma__hw__t.html">dma_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">abort&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a3622574bd7088db159f61145f311dce5">DMA_CHAN_ABORT_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ccef101c948e896f2899840e06adc2b" name="a8ccef101c948e896f2899840e06adc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ccef101c948e896f2899840e06adc2b">&#9670;&#160;</a></span>check_hw_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdma__channel__hw__t.html">dma_channel_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dma_8c.html#a343169bce227f70fad42e5553e68ab8c">DMA_CHAN_STRIDE</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5cde69b01ff6105d7ac019b7d092329" name="ac5cde69b01ff6105d7ac019b7d092329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5cde69b01ff6105d7ac019b7d092329">&#9670;&#160;</a></span>print_dma_ctrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> print_dma_ctrl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdma__channel__hw__t.html">dma_channel_hw_t</a> *&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="structdma__channel__hw__t.html#ab4ac190b8909662e59e4726a6909f439">dma_channel_hw_t::ctrl_trig</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af75cb82b70ae8e877489b537a94a3819">DMA_CH0_CTRL_TRIG_AHB_ERROR_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a523d68e7c7b52300e196134e56a6c12a">DMA_CH0_CTRL_TRIG_BUSY_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a6ba8901126a998de7971214b37dda28f">DMA_CH0_CTRL_TRIG_CHAIN_TO_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a89b7240f57abde3ac1c476fd3f65e369">DMA_CH0_CTRL_TRIG_CHAIN_TO_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#af4fe8105129e9c35ffd2ec9c74daf311">DMA_CH0_CTRL_TRIG_DATA_SIZE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a721e85b929b6a1edef4ea6ca1607aff2">DMA_CH0_CTRL_TRIG_DATA_SIZE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a9d86911ca6921b1e2d74fc4a450a4266">DMA_CH0_CTRL_TRIG_EN_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a71804e14eceddd980578e49aeb308cd9">DMA_CH0_CTRL_TRIG_HIGH_PRIORITY_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a19eee72d7b0345943e424cd8d1f227e0">DMA_CH0_CTRL_TRIG_INCR_READ_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a10fc0d7dc63479e418fa92a02fd9061d">DMA_CH0_CTRL_TRIG_INCR_WRITE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a386f2ee2e7fb683423385242c048f0ae">DMA_CH0_CTRL_TRIG_READ_ERROR_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#ae99912d9f2e555088bd6bc4f7aebe17f">DMA_CH0_CTRL_TRIG_RING_SEL_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#accad8f7951bc5b05e0c512601c66b240">DMA_CH0_CTRL_TRIG_RING_SIZE_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#afd923e0ff023ee7c090533cac524f30c">DMA_CH0_CTRL_TRIG_RING_SIZE_LSB</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#abb819cea5a2319ad8a86cc54c08b8c5d">DMA_CH0_CTRL_TRIG_TREQ_SEL_BITS</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#a6adcac9ca0a6eccbd469d1854c5adb9b">DMA_CH0_CTRL_TRIG_TREQ_SEL_LSB</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2dma_8h.html#aa3ddbe090c121992731556e8d08edefb">DMA_CH0_CTRL_TRIG_WRITE_ERROR_BITS</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_241308b15ba8dcb979ff4dc1efe465b5.html">hardware_dma</a></li><li class="navelem"><a class="el" href="dma_8c.html">dma.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

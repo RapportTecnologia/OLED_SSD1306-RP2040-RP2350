@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ssd1306_20proxy_20tt_20oled_20h_20c_20tt_0',['OLED SSD1306 (Proxy &lt;tt&gt;oled.h/.c&lt;/tt&gt;)',['../index.html',1,'']]]
+  ['examples_20index_0',['Examples Index',['../examples_page.html',1,'']]],
+  ['exceptions_1',['MISRA-C:2004 Compliance Exceptions',['../CMSIS_MISRA_Exceptions.html',1,'']]]
 ];

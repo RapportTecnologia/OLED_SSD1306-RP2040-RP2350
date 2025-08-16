@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de status_led.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('host_2pico__status__led_2include_2pico_2status__led_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">host/pico_status_led/include/pico/status_led.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="host_2pico__status__led_2include_2pico_2status__led_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2025 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef _PICO_STATUS_LED_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define _PICO_STATUS_LED_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;pico.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// PICO_CONFIG: PICO_STATUS_LED_AVAILABLE, Indicate whether a single-color status LED is available, type=bool, default=1 if PICO_DEFAULT_LED_PIN or CYW43_WL_GPIO_LED_PIN is defined; may be set by the user to 0 to not use either even if they are available, group=pico_status_led</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#ifndef PICO_STATUS_LED_AVAILABLE</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#ad1d4cfb7625b13ff1c3eb3f7278f0e96">   28</a></span><span class="preprocessor">#define PICO_STATUS_LED_AVAILABLE 1</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// PICO_CONFIG: PICO_COLORED_STATUS_LED_AVAILABLE, Indicate whether a colored status LED is available, type=bool, default=1 if PICO_DEFAULT_WS2812_PIN is defined; may be set by the user to 0 to not use the colored status LED even if available, group=pico_status_led</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#ifndef PICO_COLORED_STATUS_LED_AVAILABLE</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#aa27e675be5a7f0f8355da05be5faf80b">   33</a></span><span class="preprocessor">#define PICO_COLORED_STATUS_LED_AVAILABLE 1</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// PICO_CONFIG: PICO_STATUS_LED_VIA_COLORED_STATUS_LED, Indicate if the colored status LED should be used for both status_led and colored_status_led APIs, type=bool, default=1 if PICO_COLORED_STATUS_LED_AVAILABLE is 1 and PICO_STATUS_LED_AVAILABLE is 0, group=pico_status_led</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifndef PICO_STATUS_LED_VIA_COLORED_STATUS_LED</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#ada7b3668c11197b322535e60e92f7366">   38</a></span><span class="preprocessor">#define PICO_STATUS_LED_VIA_COLORED_STATUS_LED (PICO_COLORED_STATUS_LED_AVAILABLE &amp;&amp; !PICO_STATUS_LED_AVAILABLE)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// PICO_CONFIG: PICO_COLORED_STATUS_LED_USES_WRGB, Indicate if the colored status LED supports WRGB, type=bool, default=0, group=pico_status_led</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifndef PICO_COLORED_STATUS_LED_USES_WRGB</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#a27e8d4f6c73d7f8572ce28f88995be8f">   43</a></span><span class="preprocessor">#define PICO_COLORED_STATUS_LED_USES_WRGB 0</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#ifndef PICO_COLORED_STATUS_LED_COLOR_FROM_RGB</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="group__pico__status__led.html#ga317f0094c514dd73d42a91fe24c5edbf">   50</a></span><span class="preprocessor">#define PICO_COLORED_STATUS_LED_COLOR_FROM_RGB(r, g, b) (((r) &lt;&lt; 16) | ((g) &lt;&lt; 8) | (b))</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#ifndef PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="group__pico__status__led.html#ga9ba3f9311d86f5d6cbcaa9b9579df4bf">   59</a></span><span class="preprocessor">#define PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB(w, r, g, b) (((w) &lt;&lt; 24) | ((r) &lt;&lt; 16) | ((g) &lt;&lt; 8) | (b))</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// PICO_CONFIG: PICO_DEFAULT_COLORED_STATUS_LED_ON_COLOR, the default pixel color value of the colored status LED when it is on, type=int, group=pico_status_led</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#ifndef PICO_DEFAULT_COLORED_STATUS_LED_ON_COLOR</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#if PICO_COLORED_STATUS_LED_USES_WRGB</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#define PICO_DEFAULT_COLORED_STATUS_LED_ON_COLOR PICO_COLORED_STATUS_LED_COLOR_FROM_WRGB(0xaa, 0, 0, 0)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#a46d65c43bd76fa8e8e5746239dc0aebf">   67</a></span><span class="preprocessor">#define PICO_DEFAULT_COLORED_STATUS_LED_ON_COLOR PICO_COLORED_STATUS_LED_COLOR_FROM_RGB(0xaa, 0xaa, 0xaa)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">struct </span><a class="code hl_struct" href="structasync__context.html">async_context</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__pico__status__led.html#gaf83057f40dddf57bbaa9845c2c56201c">status_led_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__pico__status__led.html#ga1d39f6237f4c2eb0b7d89938f379bd41">status_led_init_with_context</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structasync__context.html">async_context</a> *context);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> colored_status_led_supported(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#aa27e675be5a7f0f8355da05be5faf80b">PICO_COLORED_STATUS_LED_AVAILABLE</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> status_led_via_colored_status_led(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#ada7b3668c11197b322535e60e92f7366">PICO_STATUS_LED_VIA_COLORED_STATUS_LED</a>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> status_led_supported(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">if</span> (status_led_via_colored_status_led()) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">return</span> colored_status_led_supported();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="host_2pico__status__led_2include_2pico_2status__led_8h.html#ad1d4cfb7625b13ff1c3eb3f7278f0e96">PICO_STATUS_LED_AVAILABLE</a>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__pico__status__led.html#gadc18b1a2e5fcc3177ace62efd2030bdc">colored_status_led_set_state</a>(<span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">led_on</a>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__pico__status__led.html#gaba07b23be96d82a76c17539e91bf1a34">colored_status_led_get_state</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">color</a>);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="group__pico__status__led.html#gaba8869081421633d90752f7d442739fd">colored_status_led_get_on_color</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__pico__status__led.html#ga18658cb07e5bce8ecc0fd8afdaa22a0c">status_led_set_state</a>(<span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">led_on</a>);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__pico__status__led.html#ga80ac058adc18717ba786d09c266d77cc">status_led_get_state</a>();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__pico__status__led.html#ga8b64077fe31d7cfa4ac682ca54a946e3">status_led_deinit</a>();</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_ga18658cb07e5bce8ecc0fd8afdaa22a0c"><div class="ttname"><a href="group__pico__status__led.html#ga18658cb07e5bce8ecc0fd8afdaa22a0c">status_led_set_state</a></div><div class="ttdeci">bool status_led_set_state(bool led_on)</div><div class="ttdoc">Set the status LED on or off.</div><div class="ttdef"><b>Definição</b> rp2_common/pico_status_led/include/pico/status_led.h:196</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_ga1d39f6237f4c2eb0b7d89938f379bd41"><div class="ttname"><a href="group__pico__status__led.html#ga1d39f6237f4c2eb0b7d89938f379bd41">status_led_init_with_context</a></div><div class="ttdeci">bool status_led_init_with_context(struct async_context *context)</div><div class="ttdoc">Initialise the status LED(s)</div><div class="ttdef"><b>Definição</b> rp2_common/pico_status_led/status_led.c:150</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_ga3225d411a023e2457e58492b6d1ff077"><div class="ttname"><a href="group__pico__status__led.html#ga3225d411a023e2457e58492b6d1ff077">colored_status_led_set_on_with_color</a></div><div class="ttdeci">bool colored_status_led_set_on_with_color(uint32_t color)</div><div class="ttdoc">Ensure the colored status LED is on, with the specified color.</div><div class="ttdef"><b>Definição</b> host/pico_status_led/status_led.c:26</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_ga80ac058adc18717ba786d09c266d77cc"><div class="ttname"><a href="group__pico__status__led.html#ga80ac058adc18717ba786d09c266d77cc">status_led_get_state</a></div><div class="ttdeci">bool status_led_get_state()</div><div class="ttdoc">Get the state of the status LED.</div><div class="ttdef"><b>Definição</b> rp2_common/pico_status_led/include/pico/status_led.h:222</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_ga8b64077fe31d7cfa4ac682ca54a946e3"><div class="ttname"><a href="group__pico__status__led.html#ga8b64077fe31d7cfa4ac682ca54a946e3">status_led_deinit</a></div><div class="ttdeci">void status_led_deinit()</div><div class="ttdoc">De-initialize the status LED(s)</div><div class="ttdef"><b>Definição</b> host/pico_status_led/status_led.c:56</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_gaba07b23be96d82a76c17539e91bf1a34"><div class="ttname"><a href="group__pico__status__led.html#gaba07b23be96d82a76c17539e91bf1a34">colored_status_led_get_state</a></div><div class="ttdeci">bool colored_status_led_get_state(void)</div><div class="ttdoc">Get the state of the colored status LED.</div><div class="ttdef"><b>Definição</b> host/pico_status_led/status_led.c:44</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_gaba8869081421633d90752f7d442739fd"><div class="ttname"><a href="group__pico__status__led.html#gaba8869081421633d90752f7d442739fd">colored_status_led_get_on_color</a></div><div class="ttdeci">uint32_t colored_status_led_get_on_color(void)</div><div class="ttdoc">Get the color used for the status LED value when it is on.</div><div class="ttdef"><b>Definição</b> host/pico_status_led/status_led.c:31</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_gadc18b1a2e5fcc3177ace62efd2030bdc"><div class="ttname"><a href="group__pico__status__led.html#gadc18b1a2e5fcc3177ace62efd2030bdc">colored_status_led_set_state</a></div><div class="ttdeci">bool colored_status_led_set_state(bool led_on)</div><div class="ttdoc">Set the colored status LED on or off.</div><div class="ttdef"><b>Definição</b> host/pico_status_led/status_led.c:35</div></div>
+<div class="ttc" id="agroup__pico__status__led_html_gaf83057f40dddf57bbaa9845c2c56201c"><div class="ttname"><a href="group__pico__status__led.html#gaf83057f40dddf57bbaa9845c2c56201c">status_led_init</a></div><div class="ttdeci">bool status_led_init(void)</div><div class="ttdoc">Initialize the status LED(s)</div><div class="ttdef"><b>Definição</b> host/pico_status_led/status_led.c:48</div></div>
+<div class="ttc" id="ahost_2pico__status__led_2include_2pico_2status__led_8h_html_aa27e675be5a7f0f8355da05be5faf80b"><div class="ttname"><a href="host_2pico__status__led_2include_2pico_2status__led_8h.html#aa27e675be5a7f0f8355da05be5faf80b">PICO_COLORED_STATUS_LED_AVAILABLE</a></div><div class="ttdeci">#define PICO_COLORED_STATUS_LED_AVAILABLE</div><div class="ttdef"><b>Definição</b> host/pico_status_led/include/pico/status_led.h:33</div></div>
+<div class="ttc" id="ahost_2pico__status__led_2include_2pico_2status__led_8h_html_ad1d4cfb7625b13ff1c3eb3f7278f0e96"><div class="ttname"><a href="host_2pico__status__led_2include_2pico_2status__led_8h.html#ad1d4cfb7625b13ff1c3eb3f7278f0e96">PICO_STATUS_LED_AVAILABLE</a></div><div class="ttdeci">#define PICO_STATUS_LED_AVAILABLE</div><div class="ttdef"><b>Definição</b> host/pico_status_led/include/pico/status_led.h:28</div></div>
+<div class="ttc" id="ahost_2pico__status__led_2include_2pico_2status__led_8h_html_ada7b3668c11197b322535e60e92f7366"><div class="ttname"><a href="host_2pico__status__led_2include_2pico_2status__led_8h.html#ada7b3668c11197b322535e60e92f7366">PICO_STATUS_LED_VIA_COLORED_STATUS_LED</a></div><div class="ttdeci">#define PICO_STATUS_LED_VIA_COLORED_STATUS_LED</div><div class="ttdef"><b>Definição</b> host/pico_status_led/include/pico/status_led.h:38</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="astructasync__context_html"><div class="ttname"><a href="structasync__context.html">async_context</a></div><div class="ttdoc">Base structure type of all async_contexts.</div><div class="ttdef"><b>Definição</b> async_context.h:179</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_807b6346a9c18472135e047d65c02b1e.html">host</a></li><li class="navelem"><a class="el" href="dir_38a3d06a71e8bfa7de86c5952524ff10.html">pico_status_led</a></li><li class="navelem"><a class="el" href="dir_49d17bcddf2872a7e54798ad1365679c.html">include</a></li><li class="navelem"><a class="el" href="dir_1be6fd1177e303327e5b7ba50ad59bd3.html">pico</a></li><li class="navelem"><a class="el" href="host_2pico__status__led_2include_2pico_2status__led_8h.html">status_led.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

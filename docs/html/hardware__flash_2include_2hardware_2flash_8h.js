@@ -1,0 +1,36 @@
+var hardware__flash_2include_2hardware_2flash_8h =
+[
+    [ "FLASH_BLOCK_SIZE", "hardware__flash_2include_2hardware_2flash_8h.html#a6afb081a75593f3c034881ada625cf8d", null ],
+    [ "FLASH_PAGE_SIZE", "hardware__flash_2include_2hardware_2flash_8h.html#a4cc14e2c99ae7f8e5a8e371d03c8532c", null ],
+    [ "FLASH_SECTOR_SIZE", "hardware__flash_2include_2hardware_2flash_8h.html#ae9560b79ebc5c7d96bea3c0821a0373a", null ],
+    [ "FLASH_UNIQUE_ID_SIZE_BYTES", "hardware__flash_2include_2hardware_2flash_8h.html#a3912c5d8d8f29b4fafd4a45ecf7cfbd6", null ],
+    [ "PARAM_ASSERTIONS_ENABLED_HARDWARE_FLASH", "hardware__flash_2include_2hardware_2flash_8h.html#af2f3b505c7683f423cc48fcb26a2dac8", null ],
+    [ "flash_devinfo_size_t", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bff", [
+      [ "FLASH_DEVINFO_SIZE_NONE", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffae44210ce4a552e5538d1f845f7f170bb", null ],
+      [ "FLASH_DEVINFO_SIZE_8K", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa4d7bed43de6286d2d47ba88b60f19ce1", null ],
+      [ "FLASH_DEVINFO_SIZE_16K", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffab1f3355af111e5ce52aaf355a2900fb8", null ],
+      [ "FLASH_DEVINFO_SIZE_32K", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffaa037a33e774c06c5a86afb20efa4c192", null ],
+      [ "FLASH_DEVINFO_SIZE_64K", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa0033b51bfeafa4700178b0f61c719332", null ],
+      [ "FLASH_DEVINFO_SIZE_128K", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffaac8699e68726b04b047e6bce89e69cfc", null ],
+      [ "FLASH_DEVINFO_SIZE_256K", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa116f11fae851f83e210a635cfc8a7b5c", null ],
+      [ "FLASH_DEVINFO_SIZE_512K", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffab7420ccbe98a85f593d5b3a258db85db", null ],
+      [ "FLASH_DEVINFO_SIZE_1M", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa6ca05dec09318ba299ecc02d879c6832", null ],
+      [ "FLASH_DEVINFO_SIZE_2M", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa19ebcc38e467e00e8f570adc47b5ceee", null ],
+      [ "FLASH_DEVINFO_SIZE_4M", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa1cd58586e0767d6eff0962ca841cc562", null ],
+      [ "FLASH_DEVINFO_SIZE_8M", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffabcc043854c2d1ed0bd992d2c48ccba65", null ],
+      [ "FLASH_DEVINFO_SIZE_16M", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffaf333bca1d6c76b90de5184ca6a895bd1", null ],
+      [ "FLASH_DEVINFO_SIZE_MAX", "hardware__flash_2include_2hardware_2flash_8h.html#aafc3d22cb7c5d18a8f735aa8d2306bffa421d4b69f1baa087c76426ecd27bc6ef", null ]
+    ] ],
+    [ "flash_devinfo_get_cs_gpio", "group__hardware__flash.html#ga73bb4b757747bb16efe3e1ad211b6bb3", null ],
+    [ "flash_devinfo_get_cs_size", "group__hardware__flash.html#ga2a6358b716ddf5a83488b80b3b06ca4d", null ],
+    [ "flash_devinfo_get_d8h_erase_supported", "group__hardware__flash.html#gad7c9f1af0692f4fea45e5077075501d8", null ],
+    [ "flash_devinfo_set_cs_gpio", "group__hardware__flash.html#gad6d14a5018cc9d9a934c650b29c0e649", null ],
+    [ "flash_devinfo_set_cs_size", "group__hardware__flash.html#ga31356cdc4542e13c7ca690ed3a1e49b2", null ],
+    [ "flash_devinfo_set_d8h_erase_supported", "group__hardware__flash.html#ga6e681e2cc33dba8ba6cfab236f9941b5", null ],
+    [ "flash_do_cmd", "group__hardware__flash.html#ga9e352de7ea62ffebc579f6449b5b44d3", null ],
+    [ "flash_flush_cache", "hardware__flash_2include_2hardware_2flash_8h.html#a350a17b57efaa965b18af3d0615f4f40", null ],
+    [ "flash_get_unique_id", "group__hardware__flash.html#ga5c6452005ad28f1e444698b0b97194d2", null ],
+    [ "flash_range_erase", "group__hardware__flash.html#ga5b88461b126b1c226121146c87d5abe2", null ],
+    [ "flash_range_program", "group__hardware__flash.html#ga345513fba0951661d012fa20a6441c5f", null ],
+    [ "flash_start_xip", "group__hardware__flash.html#gaf481d0955483111d1769cb84c8fc0969", null ]
+];

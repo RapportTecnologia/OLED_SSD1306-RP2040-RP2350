@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de sync.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('host_2hardware__sync_2include_2hardware_2sync_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">host/hardware_sync/include/hardware/sync.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="host_2hardware__sync_2include_2hardware_2sync_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _HARDWARE_SYNC_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _HARDWARE_SYNC_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;pico.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef __cplusplus</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#if (__STDC_VERSION__ &gt;= 201112L)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="stdatomic_8h.html">stdatomic.h</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7">   18</a></span>    <a class="code hl_enumvalue" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7">memory_order_acquire</a>, <a class="code hl_enumvalue" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b">memory_order_release</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b">   19</a></span>};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> atomic_thread_fence(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_enumvalue" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">x</a>) {}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_ATOMIC, Spinlock ID for atomics, min=0, max=31, default=8, group=hardware_sync</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_ATOMIC</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ae1c1d9339275a7dbb1fff68839604c19">   31</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_ATOMIC 8</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_IRQ, Spinlock ID for IRQ protection, min=0, max=31, default=9, group=hardware_sync</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_IRQ</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a40c2ccd192cfd2a8bcce7c6827617f49">   36</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_IRQ 9</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_TIMER, Spinlock ID for Timer protection, min=0, max=31, default=10, group=hardware_sync</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_TIMER</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2f99c3b5502ed89fdf16842147342c2e">   41</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_TIMER 10</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_HARDWARE_CLAIM, Spinlock ID for Hardware claim protection, min=0, max=31, default=11, group=hardware_sync</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_HARDWARE_CLAIM</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a4a7a9493ccd69f41411e43b6c1ccab8d">   46</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_HARDWARE_CLAIM 11</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_RAND, Spinlock ID for Random Number Generator, min=0, max=31, default=12, group=hardware_sync</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_RAND</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a28ebba32a07ed4fd5d918ffa847c249f">   51</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_RAND 12</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_OS1, First Spinlock ID reserved for use by low level OS style software, min=0, max=31, default=14, group=hardware_sync</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_OS1</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aad5a0886dc129f84187e7c5034b97364">   56</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_OS1 14</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_OS2, Second Spinlock ID reserved for use by low level OS style software, min=0, max=31, default=15, group=hardware_sync</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_OS2</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a08b04e5c8c37e986579a4b6fc7180f18">   61</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_OS2 15</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_STRIPED_FIRST, Lowest Spinlock ID in the &#39;striped&#39; range, min=0, max=31, default=16, group=hardware_sync</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_STRIPED_FIRST</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a243151570e11a25477e3d9d0676d1bf2">   66</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_STRIPED_FIRST 16</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_STRIPED_LAST, Highest Spinlock ID in the &#39;striped&#39; range, min=0, max=31, default=23, group=hardware_sync</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_STRIPED_LAST</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a95bfa25823b74378a7d53971d0edd23d">   71</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_STRIPED_LAST 23</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_CLAIM_FREE_FIRST, Lowest Spinlock ID in the &#39;claim free&#39; range, min=0, max=31, default=24, group=hardware_sync</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_CLAIM_FREE_FIRST</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a82cb84aa3356da0ee2e1fa85b1448f70">   76</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_CLAIM_FREE_FIRST 24</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#ifdef PICO_SPINLOCK_ID_CLAIM_FREE_END</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#warning PICO_SPINLOCK_ID_CLAIM_FREE_END has been renamed to PICO_SPINLOCK_ID_CLAIM_FREE_LAST</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// PICO_CONFIG: PICO_SPINLOCK_ID_CLAIM_FREE_LAST, Highest Spinlock ID in the &#39;claim free&#39; range, min=0, max=31, default=31, group=hardware_sync</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#ifndef PICO_SPINLOCK_ID_CLAIM_FREE_LAST</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a040b9b5b89d524e0e828e18472dbed24">   85</a></span><span class="preprocessor">#define PICO_SPINLOCK_ID_CLAIM_FREE_LAST 31</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">   88</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>_spin_lock_t <a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> __mem_fence_acquire() {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#ifndef __cplusplus</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    atomic_thread_fence(<a class="code hl_enumvalue" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7">memory_order_acquire</a>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    std::atomic_thread_fence(std::memory_order_acquire);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> __mem_fence_release() {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#ifndef __cplusplus</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    atomic_thread_fence(<a class="code hl_enumvalue" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b">memory_order_release</a>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::atomic_thread_fence(std::memory_order_release);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a6f8ef6ebd0958249cce2f55da582a532">__sev</a>();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a5eb760cd203ea2081dee7c914c899bf7">  112</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a5eb760cd203ea2081dee7c914c899bf7">__wev</a>();</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a24af3fc4ad745cda57d3eb4b9eeec1f1">__wfi</a>();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a1e52626e2b11eb30cf81da1737049526">__wfe</a>();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a525f02984c958c6399293cad7cfc170d">save_and_disable_interrupts</a>();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a4543d5378d2c3a1ed9cfa26fe7f9edaa">restore_interrupts</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_enumvalue" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9acb44549b41563697bb490144ec6258">status</a>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adae7234e92d2a2e025576e9f9dae33d8">restore_interrupts_from_disabled</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_enumvalue" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9acb44549b41563697bb490144ec6258">status</a>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2b17818c7916bc2ff75196ff0627b1e9">disable_interrupts</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a232883ed798bce00a03b09705c67deef">enable_interrupts</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad0ab66f82cdb5148c82f0a8887fdb500">spin_lock_get_num</a>(<a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *<a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a19e225808b9ce7aeafb3b90e8e96754a">spin_lock_instance</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a3f735f58115783cbd45d3e3b8a754925">spin_lock_unsafe_blocking</a>(<a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2c4583e1832628d04d78609580540589">spin_unlock_unsafe</a>(<a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking</a>(<a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keywordtype">bool</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a0483c4096a5da439a458155af84d8229">is_spin_locked</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock</a>(<a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">saved_irq</a>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *<a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad38821cab3d935b009c6551d5ff70c4c">spin_lock_init</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aef634bb4bf560052b5fa7cf48894ff30">clear_spin_locks</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af027db7dbc0c9378e1bc2c0fd89c7f11">  145</a></span><span class="preprocessor">#define spin_locks_reset() clear_spin_locks()</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ada80522f47eff861a28a0c702c55e7b5">next_striped_spin_lock_num</a>();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a50945cb4c33c3263b69e1fce81c474c7">spin_lock_claim</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a41304e0ee0aed1b5c20b0fd8c2adf9e6">spin_lock_claim_mask</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num_mask</a>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a177efc085451e4eabfc726897a59ca57">spin_lock_unclaim</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keywordtype">int</span> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a157bccb525bdfd90255490558cbeb9c0">spin_lock_claim_unused</a>(<span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_function" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ae74bcd0bfa5c6c5575a542d592155a5a">spin_lock_num</a>(<a class="code hl_typedef" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="acommon_2pico__base__headers_2include_2pico_2types_8h_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definição</b> common/pico_base_headers/include/pico/types.h:18</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a0483c4096a5da439a458155af84d8229"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a0483c4096a5da439a458155af84d8229">is_spin_locked</a></div><div class="ttdeci">bool is_spin_locked(const spin_lock_t *lock)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:80</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a157bccb525bdfd90255490558cbeb9c0"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a157bccb525bdfd90255490558cbeb9c0">spin_lock_claim_unused</a></div><div class="ttdeci">int spin_lock_claim_unused(bool required)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:142</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a177efc085451e4eabfc726897a59ca57"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a177efc085451e4eabfc726897a59ca57">spin_lock_unclaim</a></div><div class="ttdeci">void spin_lock_unclaim(uint lock_num)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:138</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a19e225808b9ce7aeafb3b90e8e96754a"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a19e225808b9ce7aeafb3b90e8e96754a">spin_lock_instance</a></div><div class="ttdeci">spin_lock_t * spin_lock_instance(uint lock_num)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:46</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a1e52626e2b11eb30cf81da1737049526"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a1e52626e2b11eb30cf81da1737049526">__wfe</a></div><div class="ttdeci">void __wfe()</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:112</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a232883ed798bce00a03b09705c67deef"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a232883ed798bce00a03b09705c67deef">enable_interrupts</a></div><div class="ttdeci">void enable_interrupts(void)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:41</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a24af3fc4ad745cda57d3eb4b9eeec1f1"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a24af3fc4ad745cda57d3eb4b9eeec1f1">__wfi</a></div><div class="ttdeci">void __wfi()</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:106</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a2b17818c7916bc2ff75196ff0627b1e9"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2b17818c7916bc2ff75196ff0627b1e9">disable_interrupts</a></div><div class="ttdeci">void disable_interrupts(void)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:36</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a2c4583e1832628d04d78609580540589"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2c4583e1832628d04d78609580540589">spin_unlock_unsafe</a></div><div class="ttdeci">void spin_unlock_unsafe(spin_lock_t *lock)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:86</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a3f735f58115783cbd45d3e3b8a754925"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a3f735f58115783cbd45d3e3b8a754925">spin_lock_unsafe_blocking</a></div><div class="ttdeci">void spin_lock_unsafe_blocking(spin_lock_t *lock)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:67</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a41304e0ee0aed1b5c20b0fd8c2adf9e6"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a41304e0ee0aed1b5c20b0fd8c2adf9e6">spin_lock_claim_mask</a></div><div class="ttdeci">void spin_lock_claim_mask(uint32_t lock_num_mask)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:134</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a4543d5378d2c3a1ed9cfa26fe7f9edaa"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a4543d5378d2c3a1ed9cfa26fe7f9edaa">restore_interrupts</a></div><div class="ttdeci">void restore_interrupts(uint32_t status)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:26</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a50945cb4c33c3263b69e1fce81c474c7"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a50945cb4c33c3263b69e1fce81c474c7">spin_lock_claim</a></div><div class="ttdeci">void spin_lock_claim(uint lock_num)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:130</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a525f02984c958c6399293cad7cfc170d"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a525f02984c958c6399293cad7cfc170d">save_and_disable_interrupts</a></div><div class="ttdeci">uint32_t save_and_disable_interrupts()</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:20</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a5eb760cd203ea2081dee7c914c899bf7"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a5eb760cd203ea2081dee7c914c899bf7">__wev</a></div><div class="ttdeci">void __wev()</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a6f8ef6ebd0958249cce2f55da582a532"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a6f8ef6ebd0958249cce2f55da582a532">__sev</a></div><div class="ttdeci">void __sev()</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:100</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a7d2876d2a555a0646b354742db81a519"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking</a></div><div class="ttdeci">uint32_t spin_lock_blocking(spin_lock_t *lock)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:73</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_a96af910e1f1911aa6eb0b9f84410a151"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a></div><div class="ttdeci">struct _spin_lock_t spin_lock_t</div><div class="ttdef"><b>Definição</b> host/hardware_sync/include/hardware/sync.h:88</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_ad0ab66f82cdb5148c82f0a8887fdb500"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad0ab66f82cdb5148c82f0a8887fdb500">spin_lock_get_num</a></div><div class="ttdeci">uint spin_lock_get_num(spin_lock_t *lock)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:53</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_ad38821cab3d935b009c6551d5ff70c4c"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad38821cab3d935b009c6551d5ff70c4c">spin_lock_init</a></div><div class="ttdeci">spin_lock_t * spin_lock_init(uint lock_num)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:59</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_ada80522f47eff861a28a0c702c55e7b5"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ada80522f47eff861a28a0c702c55e7b5">next_striped_spin_lock_num</a></div><div class="ttdeci">uint next_striped_spin_lock_num()</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:125</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_adae7234e92d2a2e025576e9f9dae33d8"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adae7234e92d2a2e025576e9f9dae33d8">restore_interrupts_from_disabled</a></div><div class="ttdeci">void restore_interrupts_from_disabled(uint32_t status)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:31</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b">memory_order_release</a></div><div class="ttdeci">@ memory_order_release</div><div class="ttdef"><b>Definição</b> host/hardware_sync/include/hardware/sync.h:18</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7">memory_order_acquire</a></div><div class="ttdeci">@ memory_order_acquire</div><div class="ttdef"><b>Definição</b> host/hardware_sync/include/hardware/sync.h:18</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_ae74bcd0bfa5c6c5575a542d592155a5a"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ae74bcd0bfa5c6c5575a542d592155a5a">spin_lock_num</a></div><div class="ttdeci">uint spin_lock_num(spin_lock_t *lock)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:147</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_aef634bb4bf560052b5fa7cf48894ff30"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aef634bb4bf560052b5fa7cf48894ff30">clear_spin_locks</a></div><div class="ttdeci">void clear_spin_locks(void)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:118</div></div>
+<div class="ttc" id="ahost_2hardware__sync_2include_2hardware_2sync_8h_html_af4df3e7b60025a90629ee322fec8bc8f"><div class="ttname"><a href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock</a></div><div class="ttdeci">void spin_unlock(spin_lock_t *lock, uint32_t saved_irq)</div><div class="ttdef"><b>Definição</b> sync_core0_only.c:92</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="apio__types_8h_html_a79ae533555e4c4c96a036032b461dd44a9acb44549b41563697bb490144ec6258"><div class="ttname"><a href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9acb44549b41563697bb490144ec6258">mov::status</a></div><div class="ttdeci">@ status</div></div>
+<div class="ttc" id="apio__types_8h_html_a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6"><div class="ttname"><a href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9dd4e461268c8034f5c8564e155c67a6">mov::x</a></div><div class="ttdeci">@ x</div></div>
+<div class="ttc" id="astdatomic_8h_html"><div class="ttname"><a href="stdatomic_8h.html">stdatomic.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_807b6346a9c18472135e047d65c02b1e.html">host</a></li><li class="navelem"><a class="el" href="dir_cd94a18a3a0f384352433a66814257d9.html">hardware_sync</a></li><li class="navelem"><a class="el" href="dir_04ed0e4c5c5e6adcfd4b61e2bb8f55c7.html">include</a></li><li class="navelem"><a class="el" href="dir_7d819c2fe8f4fead41cd689a607da8f2.html">hardware</a></li><li class="navelem"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html">sync.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

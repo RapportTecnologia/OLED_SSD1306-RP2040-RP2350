@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de pll.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2040/hardware_regs/include/hardware/regs/pll.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : PLL</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef _HARDWARE_REGS_PLL_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define _HARDWARE_REGS_PLL_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Register    : PLL_CS</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Description : Control and Status</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//               GENERAL CONSTRAINTS:</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//               Reference clock frequency min=5MHz, max=800MHz</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//               Feedback divider min=16, max=320</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//               VCO frequency min=750MHz, max=1600MHz</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#afdfc62d2546d6545f0b435532c0bb40f">   22</a></span><span class="preprocessor">#define PLL_CS_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aa435ddf3620015bb1b9cb3557c5fd790">   23</a></span><span class="preprocessor">#define PLL_CS_BITS   _u(0x8000013f)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aee6e98bb18253bdf4d62c401391171d8">   24</a></span><span class="preprocessor">#define PLL_CS_RESET  _u(0x00000001)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Field       : PLL_CS_LOCK</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Description : PLL is locked</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a5938e90bad123ef092d6051b9cf1dfd2">   28</a></span><span class="preprocessor">#define PLL_CS_LOCK_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a3ba3bd64d0b6573a858f3443414a41a3">   29</a></span><span class="preprocessor">#define PLL_CS_LOCK_BITS   _u(0x80000000)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a2758c8df43095087d44e7e07e683980e">   30</a></span><span class="preprocessor">#define PLL_CS_LOCK_MSB    _u(31)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aadda60a421e5c6dc36ca29ea68919790">   31</a></span><span class="preprocessor">#define PLL_CS_LOCK_LSB    _u(31)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad7f16dd220a24cf0c93bf51f0ef89438">   32</a></span><span class="preprocessor">#define PLL_CS_LOCK_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// Field       : PLL_CS_BYPASS</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// Description : Passes the reference clock to the output instead of the divided</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//               VCO. The VCO continues to run so the user can switch between</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//               the reference clock and the divided VCO but the output will</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//               glitch when doing so.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a6871a89af90060a4b0ad66afa54f0aec">   39</a></span><span class="preprocessor">#define PLL_CS_BYPASS_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#afe71b901410b5973dcf2fdd4c66f880f">   40</a></span><span class="preprocessor">#define PLL_CS_BYPASS_BITS   _u(0x00000100)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#affe84ca0d1a1ecd07cd321a555c2aaae">   41</a></span><span class="preprocessor">#define PLL_CS_BYPASS_MSB    _u(8)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ac9f48d4c5f10344abdee68a0e991f153">   42</a></span><span class="preprocessor">#define PLL_CS_BYPASS_LSB    _u(8)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a5757887694b9207a2b29ad713a27e4f9">   43</a></span><span class="preprocessor">#define PLL_CS_BYPASS_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// Field       : PLL_CS_REFDIV</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// Description : Divides the PLL input reference clock.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//               Behaviour is undefined for div=0.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//               PLL output will be unpredictable during refdiv changes, wait</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//               for lock=1 before using it.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a13b65bdd6df1900d462fa52aeeac2c45">   50</a></span><span class="preprocessor">#define PLL_CS_REFDIV_RESET  _u(0x01)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a25b3dae48adc3347640801cc1b4712e9">   51</a></span><span class="preprocessor">#define PLL_CS_REFDIV_BITS   _u(0x0000003f)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ac2918325b9317862353e47e80096e073">   52</a></span><span class="preprocessor">#define PLL_CS_REFDIV_MSB    _u(5)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#af7d8b6f5130e8c0f0cbf6b31b8d86d5f">   53</a></span><span class="preprocessor">#define PLL_CS_REFDIV_LSB    _u(0)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a648b7e7080c197d0aaaf3dfa91adece9">   54</a></span><span class="preprocessor">#define PLL_CS_REFDIV_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// Register    : PLL_PWR</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Description : Controls the PLL power modes.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aab665715215a30fd9d91ce73aa3366d5">   58</a></span><span class="preprocessor">#define PLL_PWR_OFFSET _u(0x00000004)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a7441909f7df5d83b3f074b1a30837943">   59</a></span><span class="preprocessor">#define PLL_PWR_BITS   _u(0x0000002d)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a8f20f425af36e59d9d2063b603e6b672">   60</a></span><span class="preprocessor">#define PLL_PWR_RESET  _u(0x0000002d)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// Field       : PLL_PWR_VCOPD</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// Description : PLL VCO powerdown</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//               To save power set high when PLL output not required or</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//               bypass=1.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aced75f57d305f1198f692a1998bb765b">   66</a></span><span class="preprocessor">#define PLL_PWR_VCOPD_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#acc85e6636002baecc6fa5fad56ba8867">   67</a></span><span class="preprocessor">#define PLL_PWR_VCOPD_BITS   _u(0x00000020)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad8f104d8a363c6d42c61632e9c755cc5">   68</a></span><span class="preprocessor">#define PLL_PWR_VCOPD_MSB    _u(5)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a37a24a47d75f7aeb0d15eba650224904">   69</a></span><span class="preprocessor">#define PLL_PWR_VCOPD_LSB    _u(5)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad8513176e396a9514afd23ce205aeda9">   70</a></span><span class="preprocessor">#define PLL_PWR_VCOPD_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// Field       : PLL_PWR_POSTDIVPD</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// Description : PLL post divider powerdown</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">//               To save power set high when PLL output not required or</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//               bypass=1.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad66062d0ba0124b33a6d7f55c805ed32">   76</a></span><span class="preprocessor">#define PLL_PWR_POSTDIVPD_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad93071d5608c0781f605041c304217d2">   77</a></span><span class="preprocessor">#define PLL_PWR_POSTDIVPD_BITS   _u(0x00000008)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aefaa91b8b6ce99e17a9d7c6c496ae22a">   78</a></span><span class="preprocessor">#define PLL_PWR_POSTDIVPD_MSB    _u(3)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a0d23e4bf8f644ac8c8a2b30de3ac41fb">   79</a></span><span class="preprocessor">#define PLL_PWR_POSTDIVPD_LSB    _u(3)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#adec10374275923a24b55462c02a7ae83">   80</a></span><span class="preprocessor">#define PLL_PWR_POSTDIVPD_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// Field       : PLL_PWR_DSMPD</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// Description : PLL DSM powerdown</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">//               Nothing is achieved by setting this low.</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad29813c34b148be8c3f302090bfb3d01">   85</a></span><span class="preprocessor">#define PLL_PWR_DSMPD_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#af9b42e8f7b0173053d4c06f984cc3ee8">   86</a></span><span class="preprocessor">#define PLL_PWR_DSMPD_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a78314cc6f883cb9b21e65c54ff9bdd16">   87</a></span><span class="preprocessor">#define PLL_PWR_DSMPD_MSB    _u(2)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a64b5479beeca23718311ea17cb54b4d9">   88</a></span><span class="preprocessor">#define PLL_PWR_DSMPD_LSB    _u(2)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#af0efdc4b6b24634620a877b9b66f2246">   89</a></span><span class="preprocessor">#define PLL_PWR_DSMPD_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// Field       : PLL_PWR_PD</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// Description : PLL powerdown</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">//               To save power set high when PLL output not required.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a39ab745ee65c4630fa5747eab4d39d64">   94</a></span><span class="preprocessor">#define PLL_PWR_PD_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ac971cfa02f512e53e63f3f125a6f8a4c">   95</a></span><span class="preprocessor">#define PLL_PWR_PD_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aa3c603ece5cfef04c29d91bd2be61b66">   96</a></span><span class="preprocessor">#define PLL_PWR_PD_MSB    _u(0)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#af31844b7a462556a5e572f2e1b1b5083">   97</a></span><span class="preprocessor">#define PLL_PWR_PD_LSB    _u(0)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a8a4a8e66e8a93917cf88e4d77a74854a">   98</a></span><span class="preprocessor">#define PLL_PWR_PD_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// Register    : PLL_FBDIV_INT</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// Description : Feedback divisor</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//               (note: this PLL does not support fractional division)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">//               see ctrl reg description for constraints</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a6831c4584dcaa6e4bf7e669fc1951891">  104</a></span><span class="preprocessor">#define PLL_FBDIV_INT_OFFSET _u(0x00000008)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a1d9a2ada0d3aacf287f2c6c3d53277ec">  105</a></span><span class="preprocessor">#define PLL_FBDIV_INT_BITS   _u(0x00000fff)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a0e3dbc7383ebc346eb3c8c2b5a5e8d20">  106</a></span><span class="preprocessor">#define PLL_FBDIV_INT_RESET  _u(0x00000000)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a03edc31dadce78115b9bd80b6f658576">  107</a></span><span class="preprocessor">#define PLL_FBDIV_INT_MSB    _u(11)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a28c751e0d8fbbbfa5e613b59b0c2cd69">  108</a></span><span class="preprocessor">#define PLL_FBDIV_INT_LSB    _u(0)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ad9bc7e62e7619d68d00f9428e14e9851">  109</a></span><span class="preprocessor">#define PLL_FBDIV_INT_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// Register    : PLL_PRIM</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">// Description : Controls the PLL post dividers for the primary output</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">//               (note: this PLL does not have a secondary output)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">//               the primary output is driven from VCO divided by</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">//               postdiv1*postdiv2</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a37568a2a45e42474c9b6158407e7811f">  116</a></span><span class="preprocessor">#define PLL_PRIM_OFFSET _u(0x0000000c)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ae23b14f0ab706ea9e314bd357b198d31">  117</a></span><span class="preprocessor">#define PLL_PRIM_BITS   _u(0x00077000)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#af74786808b1b8057b57c3fb4f2b6b90e">  118</a></span><span class="preprocessor">#define PLL_PRIM_RESET  _u(0x00077000)</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// Field       : PLL_PRIM_POSTDIV1</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">// Description : divide by 1-7</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a79f5032acf6511eac846aff814751a4f">  122</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV1_RESET  _u(0x7)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a7af43df55e722f3b21ae157fda0f66a0">  123</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV1_BITS   _u(0x00070000)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#aa53eb4375066039134b495261992b3ad">  124</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV1_MSB    _u(18)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a86b5382596b4979d71fb6227c448c71e">  125</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV1_LSB    _u(16)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a6aeb2a46c50ac69c01cb2eba6c291bc9">  126</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV1_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// Field       : PLL_PRIM_POSTDIV2</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// Description : divide by 1-7</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ac8270fc471fd3579ee0aca0c3f92742a">  130</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV2_RESET  _u(0x7)</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ae97ab89f15667a02d62baceef8fc0be2">  131</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV2_BITS   _u(0x00007000)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#ab3bfcf206063e5a75d6c7703d20cb3ed">  132</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV2_MSB    _u(14)</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a625713123638e51760c74c4543d2bb6d">  133</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV2_LSB    _u(12)</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html#a62c5654dadbe45652f8169923e977c1f">  134</a></span><span class="preprocessor">#define PLL_PRIM_POSTDIV2_ACCESS &quot;RW&quot;</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_PLL_H</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_4ac589b440aff5baf23efca9e5fad2db.html">rp2040</a></li><li class="navelem"><a class="el" href="dir_06354e3bf814a9a205e28ace252ee3f5.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_7bd6dad2f73c9497ac05e0910d6eaf47.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe2fde58e5940b473d8ed5d59c5a430.html">hardware</a></li><li class="navelem"><a class="el" href="dir_92a0b393fa4e0be08b4ff2e0195a4834.html">regs</a></li><li class="navelem"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pll_8h.html">pll.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

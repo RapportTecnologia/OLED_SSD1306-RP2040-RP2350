@@ -1,0 +1,25 @@
+var structcompiled__source_1_1program =
+[
+    [ "program", "structcompiled__source_1_1program.html#a4f775650fd7a233535c93ab80c9dce3d", null ],
+    [ "clock_div_frac", "structcompiled__source_1_1program.html#af986e2508c1084ab9297a8c2d5a8f2c0", null ],
+    [ "clock_div_int", "structcompiled__source_1_1program.html#a90687fb25526c514d19589d55a6e1134", null ],
+    [ "code_blocks", "structcompiled__source_1_1program.html#a66e93c0653a332f861af33bb9c3a2a73", null ],
+    [ "fifo", "structcompiled__source_1_1program.html#a18f0bc1c6ac0831274f9d71208c6b70c", null ],
+    [ "in", "structcompiled__source_1_1program.html#abbb52034d13b808f7bb6b72f6e9f1316", null ],
+    [ "instructions", "structcompiled__source_1_1program.html#a4f18ba36462e41f5032a87cf2318aee7", null ],
+    [ "lang_opts", "structcompiled__source_1_1program.html#a167a675fc0ef41bb99f6a9facaf0d762", null ],
+    [ "mov_status_n", "structcompiled__source_1_1program.html#a9325f19df37022b4341c5c1b602637c2", null ],
+    [ "mov_status_type", "structcompiled__source_1_1program.html#a507f2e39e348d80d3f7ecc308acfa951", null ],
+    [ "name", "structcompiled__source_1_1program.html#ac7f1aaaf7c249e1e0c0111beabebbb7f", null ],
+    [ "origin", "structcompiled__source_1_1program.html#a1170befb4900902817c8d51f28b01d6a", null ],
+    [ "out", "structcompiled__source_1_1program.html#a37a13fc8d22024ed2298f40256d41ac8", null ],
+    [ "pio_version", "structcompiled__source_1_1program.html#a87a775ab3a5ef941f1b4316a0a4737c9", null ],
+    [ "set_count", "structcompiled__source_1_1program.html#aab8d567d8709cce3d7307f8f8c7e9367", null ],
+    [ "sideset_bits_including_opt", "structcompiled__source_1_1program.html#ab375674d1d9f3b9fd8c41c81d70a0bed", null ],
+    [ "sideset_opt", "structcompiled__source_1_1program.html#a4c1ed6bb7225c808d91c6173d41a3870", null ],
+    [ "sideset_pindirs", "structcompiled__source_1_1program.html#aaf1dc4b7ef3478f654f9196065c7a79f", null ],
+    [ "symbols", "structcompiled__source_1_1program.html#a92290bcd3bf59e3773474fa4beba1e6f", null ],
+    [ "used_gpio_ranges", "structcompiled__source_1_1program.html#acbd34ad57751c7339d7296168862da61", null ],
+    [ "wrap", "structcompiled__source_1_1program.html#abe7b7091f7ad92ebced770060ceecdaa", null ],
+    [ "wrap_target", "structcompiled__source_1_1program.html#afb36a11be729232094940fe5a031ba46", null ]
+];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['proxy_20tt_20oled_20h_20c_20tt_0',['OLED SSD1306 (Proxy &lt;tt&gt;oled.h/.c&lt;/tt&gt;)',['../index.html',1,'']]]
+  ['datasheets_0',['Documentation and datasheets',['../weblinks_page.html',1,'']]],
+  ['documentation_20and_20datasheets_1',['Documentation and datasheets',['../weblinks_page.html',1,'']]]
 ];

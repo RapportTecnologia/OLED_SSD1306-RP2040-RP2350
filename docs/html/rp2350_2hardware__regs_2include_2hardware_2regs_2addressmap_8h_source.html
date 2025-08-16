@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de addressmap.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2350/hardware_regs/include/hardware/regs/addressmap.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _ADDRESSMAP_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _ADDRESSMAP_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;hardware/platform_defs.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register address offsets for atomic RMW aliases</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a7e692a189365dbc2aa8525953265161b">   18</a></span><span class="preprocessor">#define REG_ALIAS_RW_BITS  (_u(0x0) &lt;&lt; _u(12))</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a5cff092e114afcea50e8b5d707db0b66">   19</a></span><span class="preprocessor">#define REG_ALIAS_XOR_BITS (_u(0x1) &lt;&lt; _u(12))</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ab394f20f11751a98b5a6f788fbc6a2ff">   20</a></span><span class="preprocessor">#define REG_ALIAS_SET_BITS (_u(0x2) &lt;&lt; _u(12))</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a8db0646ea62ef7b1cc8d115c710a7135">   21</a></span><span class="preprocessor">#define REG_ALIAS_CLR_BITS (_u(0x3) &lt;&lt; _u(12))</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a8a652cff0033969443cc2f6f5389fbd9">   23</a></span><span class="preprocessor">#define ROM_BASE _u(0x00000000)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a6eccf1bdd4839aded2d652c234e50ab5">   24</a></span><span class="preprocessor">#define XIP_BASE _u(0x10000000)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#acc2a623424adcbd11be41ad77aa06b37">   25</a></span><span class="preprocessor">#define XIP_SRAM_BASE _u(0x13ffc000)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad9bec61f6efc5f4d7664f8ec24e51dba">   26</a></span><span class="preprocessor">#define XIP_END _u(0x14000000)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a75a5a1b3a03de0db7e67d4518fdafbd6">   27</a></span><span class="preprocessor">#define XIP_NOCACHE_NOALLOC_BASE _u(0x14000000)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a29922816a57691bed82ba4ca25e3c7ef">   28</a></span><span class="preprocessor">#define XIP_SRAM_END _u(0x14000000)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a34534e06a48f33819d7b66a9d032fdb5">   29</a></span><span class="preprocessor">#define XIP_NOCACHE_NOALLOC_END _u(0x18000000)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a47cc030128d435a1c4a8b444a947893b">   30</a></span><span class="preprocessor">#define XIP_MAINTENANCE_BASE _u(0x18000000)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a216e31a297f3bdea43bba5382763fd88">   31</a></span><span class="preprocessor">#define XIP_NOCACHE_NOALLOC_NOTRANSLATE_BASE _u(0x1c000000)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a6723d1d2addbcc45373b908a4a403306">   32</a></span><span class="preprocessor">#define SRAM0_BASE _u(0x20000000)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a5963136c2f7f12dd186f5e5593321018">   33</a></span><span class="preprocessor">#define XIP_NOCACHE_NOALLOC_NOTRANSLATE_END _u(0x20000000)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a05e8f3d2e5868754a7cd88614955aecc">   34</a></span><span class="preprocessor">#define SRAM_BASE _u(0x20000000)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a3303480e7dd4a11a579c238dc1962ce0">   35</a></span><span class="preprocessor">#define SRAM_STRIPED_BASE _u(0x20000000)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a206261008fda8d3bf3b7dd17f8f67862">   36</a></span><span class="preprocessor">#define SRAM4_BASE _u(0x20040000)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a16cfe7b1383332bd5712f9b06e967863">   37</a></span><span class="preprocessor">#define SRAM8_BASE _u(0x20080000)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a9e9bfaa9e1580d39dfc331a21316bc72">   38</a></span><span class="preprocessor">#define SRAM_STRIPED_END _u(0x20080000)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#abd4f27610b207af1bb2775fdcf11b3e4">   39</a></span><span class="preprocessor">#define SRAM_SCRATCH_X_BASE _u(0x20080000)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a03172420ad8549b48228cfc669f517bd">   40</a></span><span class="preprocessor">#define SRAM9_BASE _u(0x20081000)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#afc350d08d7632f2f4d039509723123f8">   41</a></span><span class="preprocessor">#define SRAM_SCRATCH_Y_BASE _u(0x20081000)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ac3854cac0ccb2cba6ae0c184e81f3323">   42</a></span><span class="preprocessor">#define SRAM_END _u(0x20082000)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#aaa99a4472693d0b3dcf1f4f4874c75f5">   43</a></span><span class="preprocessor">#define SYSINFO_BASE _u(0x40000000)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a62246020bf3b34b6a4d8d0e84ec79d3d">   44</a></span><span class="preprocessor">#define SYSCFG_BASE _u(0x40008000)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ac3864814342259f4a2de721263ac47f0">   45</a></span><span class="preprocessor">#define CLOCKS_BASE _u(0x40010000)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a80ae1da038c9a4bc5e4890e2bb7a76ca">   46</a></span><span class="preprocessor">#define PSM_BASE _u(0x40018000)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a19ef4df614ba1b58ce26cebb9ba72966">   47</a></span><span class="preprocessor">#define RESETS_BASE _u(0x40020000)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a5e9a57b169eded8e67fb283a48b59c13">   48</a></span><span class="preprocessor">#define IO_BANK0_BASE _u(0x40028000)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#aa43054556acbdd8f374ee6d2a2a22133">   49</a></span><span class="preprocessor">#define IO_QSPI_BASE _u(0x40030000)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#abd4db2659a94ffd47f6c391f7bb76261">   50</a></span><span class="preprocessor">#define PADS_BANK0_BASE _u(0x40038000)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a9650608f17b520cc7de2c04130ee3cc5">   51</a></span><span class="preprocessor">#define PADS_QSPI_BASE _u(0x40040000)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a915c1905ab3b18abfa755960f7bd9b59">   52</a></span><span class="preprocessor">#define XOSC_BASE _u(0x40048000)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a3cd7d1ad5122fd8f435cea278ac37a34">   53</a></span><span class="preprocessor">#define PLL_SYS_BASE _u(0x40050000)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a366bbc070728b372e3d196ad60743707">   54</a></span><span class="preprocessor">#define PLL_USB_BASE _u(0x40058000)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a76cee5c3f04dfd39e97adcb1a5e9fa15">   55</a></span><span class="preprocessor">#define ACCESSCTRL_BASE _u(0x40060000)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a4f0d93ec2f51aa8d59ef8f07e5ec86a9">   56</a></span><span class="preprocessor">#define BUSCTRL_BASE _u(0x40068000)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a7a07348b4332ff6b88abf6092347deba">   57</a></span><span class="preprocessor">#define UART0_BASE _u(0x40070000)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a383bf0c4670c3a7fa72df80f66331a46">   58</a></span><span class="preprocessor">#define UART1_BASE _u(0x40078000)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#adeaa49ab944c7dcae2a868b0450232c8">   59</a></span><span class="preprocessor">#define SPI0_BASE _u(0x40080000)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a50cd8b47929f18b05efbd0f41253bf8d">   60</a></span><span class="preprocessor">#define SPI1_BASE _u(0x40088000)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#abf0928baf4e4350633ca9050b65d1939">   61</a></span><span class="preprocessor">#define I2C0_BASE _u(0x40090000)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#acd72dbffb1738ca87c838545c4eb85a3">   62</a></span><span class="preprocessor">#define I2C1_BASE _u(0x40098000)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad06cb9e5985bd216a376f26f22303cd6">   63</a></span><span class="preprocessor">#define ADC_BASE _u(0x400a0000)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a1cf172d973c15b32c647a80557010e0c">   64</a></span><span class="preprocessor">#define PWM_BASE _u(0x400a8000)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a7a5c55fc79dee34c91502b0503404375">   65</a></span><span class="preprocessor">#define TIMER0_BASE _u(0x400b0000)</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a7a4bd01d91a70285f0bec70f4e9e88bb">   66</a></span><span class="preprocessor">#define TIMER1_BASE _u(0x400b8000)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad60857774ea70b25f61fb130de1fb7e9">   67</a></span><span class="preprocessor">#define HSTX_CTRL_BASE _u(0x400c0000)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a6d1f2027693fd743036bac877e37c5ff">   68</a></span><span class="preprocessor">#define XIP_CTRL_BASE _u(0x400c8000)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ab18ab7ae70fef074ef053b974b53f82a">   69</a></span><span class="preprocessor">#define XIP_QMI_BASE _u(0x400d0000)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a2b03c881c009285dc481d31c08796df4">   70</a></span><span class="preprocessor">#define WATCHDOG_BASE _u(0x400d8000)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad513c28c35fc1310aae5bb6c74cf0a4c">   71</a></span><span class="preprocessor">#define BOOTRAM_BASE _u(0x400e0000)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad063c7444a2ce996124cb7513bc7d47f">   72</a></span><span class="preprocessor">#define BOOTRAM_END _u(0x400e0400)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a80062ce91aeb3a06da2189bafde5db86">   73</a></span><span class="preprocessor">#define ROSC_BASE _u(0x400e8000)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a8c1248c407a28b1627bffc96e980f4f5">   74</a></span><span class="preprocessor">#define TRNG_BASE _u(0x400f0000)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a0c8573b901c8963c9051d64eedbeec7c">   75</a></span><span class="preprocessor">#define SHA256_BASE _u(0x400f8000)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a27173096093e06b5de85b2ea96568543">   76</a></span><span class="preprocessor">#define POWMAN_BASE _u(0x40100000)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ac696d192621db8a6985f8ae6928d370a">   77</a></span><span class="preprocessor">#define TICKS_BASE _u(0x40108000)</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#aabb8c7806bf828f76b2f6219bac0926e">   78</a></span><span class="preprocessor">#define OTP_BASE _u(0x40120000)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ab3bc15f6be9c49832ea1fb0096c83e32">   79</a></span><span class="preprocessor">#define OTP_DATA_BASE _u(0x40130000)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a09dde50b3eb0993ec9cf77b2ffbbd09a">   80</a></span><span class="preprocessor">#define OTP_DATA_RAW_BASE _u(0x40134000)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a0f0f8e39ca1d90f4765b6632451c5b02">   81</a></span><span class="preprocessor">#define OTP_DATA_GUARDED_BASE _u(0x40138000)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#adf1f6259944b5d843ea054cbbb0f3879">   82</a></span><span class="preprocessor">#define OTP_DATA_RAW_GUARDED_BASE _u(0x4013c000)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a110265cfc4450e99b1ecdb4270227c26">   83</a></span><span class="preprocessor">#define CORESIGHT_PERIPH_BASE _u(0x40140000)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ae6fd39de35fbddf912613a22b8c10668">   84</a></span><span class="preprocessor">#define CORESIGHT_ROMTABLE_BASE _u(0x40140000)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#acf389015a51693b158900afc20ddc262">   85</a></span><span class="preprocessor">#define CORESIGHT_AHB_AP_CORE0_BASE _u(0x40142000)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a0500296200eee502a706b4de5ad18053">   86</a></span><span class="preprocessor">#define CORESIGHT_AHB_AP_CORE1_BASE _u(0x40144000)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#afb043f5c22a043c3ae771244a17bfff3">   87</a></span><span class="preprocessor">#define CORESIGHT_TIMESTAMP_GEN_BASE _u(0x40146000)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#aed79504b9c81342ec1b4a463fe55859c">   88</a></span><span class="preprocessor">#define CORESIGHT_ATB_FUNNEL_BASE _u(0x40147000)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a37456770016e9b9f048f08bef71ae2e5">   89</a></span><span class="preprocessor">#define CORESIGHT_TPIU_BASE _u(0x40148000)</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#aa51e71603df8cd34a44e195d4ead0d3d">   90</a></span><span class="preprocessor">#define CORESIGHT_CTI_BASE _u(0x40149000)</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a1806110fec3648f6a8f406a00ac161b2">   91</a></span><span class="preprocessor">#define CORESIGHT_APB_AP_RISCV_BASE _u(0x4014a000)</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a575a374a054bb949c72e92ad35b96c1e">   92</a></span><span class="preprocessor">#define DFT_BASE _u(0x40150000)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a2849eae4c42be1815fa54fe7f46b4824">   93</a></span><span class="preprocessor">#define GLITCH_DETECTOR_BASE _u(0x40158000)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a282d80f700ae549ad6cd794de08d0478">   94</a></span><span class="preprocessor">#define TBMAN_BASE _u(0x40160000)</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ab04dd812f37907dc8bd6ed82e346b563">   95</a></span><span class="preprocessor">#define DMA_BASE _u(0x50000000)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a352bd70f86318897ef259e840209a580">   96</a></span><span class="preprocessor">#define USBCTRL_BASE _u(0x50100000)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ad36cbc636d0f55fc47a493112b00d1fa">   97</a></span><span class="preprocessor">#define USBCTRL_DPRAM_BASE _u(0x50100000)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a4d2c5da75c7190d1bf60540255554cc7">   98</a></span><span class="preprocessor">#define USBCTRL_REGS_BASE _u(0x50110000)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ace7dc5732c36d5aff3a1ff956dad33f0">   99</a></span><span class="preprocessor">#define PIO0_BASE _u(0x50200000)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#aa8a6c33a6ca0e50f9f5e4363aad32327">  100</a></span><span class="preprocessor">#define PIO1_BASE _u(0x50300000)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a732512e43585e9234b801f2faecbe61d">  101</a></span><span class="preprocessor">#define PIO2_BASE _u(0x50400000)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a09fa5a225eb90dc7357370bc830d7bed">  102</a></span><span class="preprocessor">#define XIP_AUX_BASE _u(0x50500000)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a185c6267840be680c6e7325a72bc2611">  103</a></span><span class="preprocessor">#define HSTX_FIFO_BASE _u(0x50600000)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a7bc644fda40c417a2b1a6aee413908da">  104</a></span><span class="preprocessor">#define CORESIGHT_TRACE_BASE _u(0x50700000)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a38bfed932c123c79f3e982d9af23924a">  105</a></span><span class="preprocessor">#define SIO_BASE _u(0xd0000000)</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a98427b1d4cff91b2e5fc55ea33a02b12">  106</a></span><span class="preprocessor">#define SIO_NONSEC_BASE _u(0xd0020000)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a5b4c870b2ae63f475a0709c13cb0334d">  107</a></span><span class="preprocessor">#define PPB_BASE _u(0xe0000000)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#af3f74ebcb3a284fe2869182f120ec330">  108</a></span><span class="preprocessor">#define PPB_NONSEC_BASE _u(0xe0020000)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#ac73be3926afa7c869780119fb65b7021">  109</a></span><span class="preprocessor">#define EPPB_BASE _u(0xe0080000)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif </span><span class="comment">// _ADDRESSMAP_H</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html">addressmap.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

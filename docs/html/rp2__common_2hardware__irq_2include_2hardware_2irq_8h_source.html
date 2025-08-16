@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de irq.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2__common_2hardware__irq_2include_2hardware_2irq_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2_common/hardware_irq/include/hardware/irq.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _HARDWARE_IRQ_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _HARDWARE_IRQ_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// These two config items are also used by assembler, so keeping separate</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// PICO_CONFIG: PICO_MAX_SHARED_IRQ_HANDLERS, Maximum number of shared IRQ handlers, default=4, advanced=true, group=hardware_irq</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef PICO_MAX_SHARED_IRQ_HANDLERS</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#afcfe7753c83a84ede150f1e882cc6908">   13</a></span><span class="preprocessor">#define PICO_MAX_SHARED_IRQ_HANDLERS 4</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// PICO_CONFIG: PICO_DISABLE_SHARED_IRQ_HANDLERS, Disable shared IRQ handlers, type=bool, default=0, group=hardware_irq</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef PICO_DISABLE_SHARED_IRQ_HANDLERS</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#afb53da31aadb340800a4ff3df30e9aec">   18</a></span><span class="preprocessor">#define PICO_DISABLE_SHARED_IRQ_HANDLERS 0</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// PICO_CONFIG: PICO_VTABLE_PER_CORE, User is using separate vector tables per core, type=bool, default=0, group=hardware_irq</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef PICO_VTABLE_PER_CORE</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a1717e5c13c4bd6aaed091b8cd6655339">   23</a></span><span class="preprocessor">#define PICO_VTABLE_PER_CORE 0</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef __ASSEMBLER__</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;pico.h&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;hardware/regs/intctrl.h&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;pico/platform/cpu_regs.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">// PICO_CONFIG: PICO_DEFAULT_IRQ_PRIORITY, Define the default IRQ priority, default=0x80, group=hardware_irq</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#ifndef PICO_DEFAULT_IRQ_PRIORITY</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a403f63e11c5dd63eb44d126692fad8cb">  163</a></span><span class="preprocessor">#define PICO_DEFAULT_IRQ_PRIORITY 0x80</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#af49152aa8909a5957743872cea415089">  166</a></span><span class="preprocessor">#define PICO_LOWEST_IRQ_PRIORITY 0xff</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a96a97e2446e7256218b9292387ea8591">  167</a></span><span class="preprocessor">#define PICO_HIGHEST_IRQ_PRIORITY 0x00</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// PICO_CONFIG: PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY, Set default shared IRQ order priority, default=0x80, group=hardware_irq</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#ifndef PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a767bbb33ddb413551944b144d1960c77">  171</a></span><span class="preprocessor">#define PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY 0x80</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a71cc3affa66475083e9e2ba462776415">  174</a></span><span class="preprocessor">#define PICO_SHARED_IRQ_HANDLER_HIGHEST_ORDER_PRIORITY 0xff</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a35fae10151154433571c1b149e0b1200">  175</a></span><span class="preprocessor">#define PICO_SHARED_IRQ_HANDLER_LOWEST_ORDER_PRIORITY 0x00</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">// PICO_CONFIG: PARAM_ASSERTIONS_ENABLED_HARDWARE_IRQ, Enable/disable assertions in the hardware_irq module, type=bool, default=0, group=hardware_irq</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">#ifndef PARAM_ASSERTIONS_ENABLED_HARDWARE_IRQ</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">#ifdef PARAM_ASSERTIONS_ENABLED_IRQ </span><span class="comment">// backwards compatibility with SDK &lt; 2.0.0</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">#define PARAM_ASSERTIONS_ENABLED_HARDWARE_IRQ PARAM_ASSERTIONS_ENABLED_IRQ</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a043f6dbb21df0b2e73dad19c502b41f1">  182</a></span><span class="preprocessor">#define PARAM_ASSERTIONS_ENABLED_HARDWARE_IRQ 0</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">  195</a></span><span class="keyword">typedef</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> (*<a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a>)(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> check_irq_param(<a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num) {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_define" href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">HARDWARE_IRQ</a>, num &gt;= <a class="code hl_define" href="common_8h.html#a0901d41cc21984d7ef493d8b77a2b642">PICO_NUM_VTABLE_IRQS</a>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#gad11ea172f11d9763647ac34b366ab3c2">irq_set_priority</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hardware_priority</a>);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_function" href="group__hardware__irq.html#ga6bcde7d99ca71abe8dccfd13b4d80b29">irq_get_priority</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#ga7c7167f643c6898b758340ce59d333d9">irq_set_enabled</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num, <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__hardware__irq.html#ga0c54ae4c0593c2a8596b99cd167584e0">irq_is_enabled</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#gae91340b84a6d70049933af657df93201">irq_set_mask_enabled</a>(<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mask</a>, <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#gae1a927e62e780b2f7dacc3a008ffaf20">irq_set_mask_n_enabled</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> n, <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mask</a>, <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#gafffd448ba2d2eef5b355b88180aefe7f">irq_set_exclusive_handler</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num, <a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> <a class="code hl_function" href="group__hardware__irq.html#ga42e9cdce7b82ef63c7b2416d32a42361">irq_get_exclusive_handler</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num, <a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">order_priority</a>);</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num, <a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__hardware__irq.html#ga9f9eb24fcf966ef5992c3091bf2989c7">irq_has_handler</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num);</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__hardware__irq.html#gae552cab9da1b37a785791f678090f418">irq_has_shared_handler</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num);</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> <a class="code hl_function" href="group__hardware__irq.html#ga4f9772d9d1781c3a28371623886a0310">irq_get_vtable_handler</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num);</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
+<div class="foldopen" id="foldopen00446" data-start="{" data-end="}">
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno"><a class="line" href="group__hardware__irq.html#ga14fa98b8bec09df3e7409a75cf2f5359">  446</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#ga14fa98b8bec09df3e7409a75cf2f5359">irq_clear</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int_num</a>) {</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span><span class="preprocessor">#if PICO_RP2040</span></div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    *((<span class="keyword">volatile</span> <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *) (<a class="code hl_define" href="rp2040_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a5b4c870b2ae63f475a0709c13cb0334d">PPB_BASE</a> + <a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#adec423fce69d1d1dc4afe15453a55a16">M0PLUS_NVIC_ICPR_OFFSET</a>)) = (1u &lt;&lt; ((<a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>) (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int_num</a> &amp; 0x1F)));</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="preprocessor">#elif defined(__riscv)</span></div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    <span class="comment">// External IRQs are not latched, but we should clear the IRQ force bit here</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    <a class="code hl_define" href="hazard3_8h.html#a9424fec1ed71548aef9cefdc6eda62a0">hazard3_irqarray_clear</a>(<a class="code hl_define" href="rvcsr_8h.html#af76479e89e34bae04e8b0b5d08b5412d">RVCSR_MEIFA_OFFSET</a>, <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int_num</a> / 16, 1u &lt;&lt; (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int_num</a> % 16));</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    <a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2nvic_8h.html#a8a3357bf731144b9310f118375ae0911">nvic_hw</a>-&gt;icpr[<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int_num</a>/32] = 1 &lt;&lt; (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int_num</a> % 32);</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>}</div>
+</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#ga36e4b97d3414ce58c3091e63badcf9ce">irq_set_pending</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num);</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> </div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span><span class="keywordtype">void</span> <a class="code hl_function" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a6b1e04e66cf95ecf11a58beda886255d">runtime_init_per_core_irq_priorities</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span> </div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span><span class="keyword">static</span> <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a> <span class="keywordtype">void</span> <a class="code hl_function" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#afdda744330c8b1eab391153c3ce0ef8b">irq_init_priorities</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    <a class="code hl_function" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a6b1e04e66cf95ecf11a58beda886255d">runtime_init_per_core_irq_priorities</a>();</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>}</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span> </div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#gaa52ec9e5f572b3a0ef50707ab37233ef">user_irq_claim</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a>);</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span> </div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hardware__irq.html#ga14c041e05fbd5ee3c0b6b6341073a20a">user_irq_unclaim</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a>);</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__hardware__irq.html#gace889ebb0bde6fc678dee915d4e3537e">user_irq_claim_unused</a>(<span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>);</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="comment">*! \brief Check if a user IRQ is in use on the calling core</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="comment"> *  \ingroup hardware_irq</span></div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="comment"> *  </span></div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="comment"> * User IRQs starting from FIRST_USER_IRQ are not connected to any hardware, but can be triggered by \ref irq_set_pending.</span></div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="comment"> * \note User IRQs are a core local feature; they cannot be used to communicate between cores. Therefore all functions</span></div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="comment"> * dealing with Uer IRQs affect only the calling core</span></div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment"> * \param irq_num the irq irq_num</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment"> * \return true if the irq_num is claimed, false otherwise</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment"> * \sa user_irq_claim</span></div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="comment"> * \sa user_irq_unclaim</span></div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="comment"> * \sa user_irq_claim_unused</span></div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="keywordtype">bool</span> <a class="code hl_function" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#ab908ddbef6c60743c46817c44b0e6008">user_irq_is_claimed</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a>);</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno"><a class="line" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a885faaaaca76aba8551cec66e34a14dc">  539</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a885faaaaca76aba8551cec66e34a14dc">__unhandled_user_irq</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="preprocessor">#ifdef __riscv</span></div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="keyword">enum</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">riscv_vector_num</a> {</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">RISCV_VEC_MACHINE_EXCEPTION</a> = 0,</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">RISCV_VEC_MACHINE_SOFTWARE_IRQ</a> = 3,</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">RISCV_VEC_MACHINE_TIMER_IRQ</a> = 7,</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">RISCV_VEC_MACHINE_EXTERNAL_IRQ</a> = 11,</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>};</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span> </div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_set_riscv_vector_handler</a>(<span class="keyword">enum</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">riscv_vector_num</a> index, <a class="code hl_typedef" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> handler);</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="preprocessor">#if PICO_SECURE</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_assign_to_ns</a>(<a class="code hl_typedef" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a>, <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ns</a>) {</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    check_irq_param(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a>);</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ns</a>) <a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2nvic_8h.html#a8a3357bf731144b9310f118375ae0911">nvic_hw</a>-&gt;itns[<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a> &gt;&gt; 5] |= 1u &lt;&lt; (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a> &amp; 0x1fu);</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <span class="keywordflow">else</span> <a class="code hl_define" href="rp2040_2hardware__structs_2include_2hardware_2structs_2nvic_8h.html#a8a3357bf731144b9310f118375ae0911">nvic_hw</a>-&gt;itns[<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a> &gt;&gt; 5] &amp;= ~(1u &lt;&lt; (<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">irq_num</a> &amp; 0x1fu));</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>}</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>}</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aassert_8h_html_a6009dd42d6b3cb564a0be8015766e9d5"><div class="ttname"><a href="assert_8h.html#a6009dd42d6b3cb564a0be8015766e9d5">invalid_params_if</a></div><div class="ttdeci">#define invalid_params_if(x, test)</div><div class="ttdef"><b>Definição</b> assert.h:34</div></div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="acommon_2pico__base__headers_2include_2pico_2types_8h_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definição</b> common/pico_base_headers/include/pico/types.h:18</div></div>
+<div class="ttc" id="acommon_8h_html_a0901d41cc21984d7ef493d8b77a2b642"><div class="ttname"><a href="common_8h.html#a0901d41cc21984d7ef493d8b77a2b642">PICO_NUM_VTABLE_IRQS</a></div><div class="ttdeci">#define PICO_NUM_VTABLE_IRQS</div><div class="ttdef"><b>Definição</b> common.h:35</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga0c54ae4c0593c2a8596b99cd167584e0"><div class="ttname"><a href="group__hardware__irq.html#ga0c54ae4c0593c2a8596b99cd167584e0">irq_is_enabled</a></div><div class="ttdeci">bool irq_is_enabled(uint num)</div><div class="ttdoc">Determine if a specific interrupt is enabled on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:30</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga14c041e05fbd5ee3c0b6b6341073a20a"><div class="ttname"><a href="group__hardware__irq.html#ga14c041e05fbd5ee3c0b6b6341073a20a">user_irq_unclaim</a></div><div class="ttdeci">void user_irq_unclaim(uint irq_num)</div><div class="ttdoc">Mark a user IRQ as no longer used on the calling core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:111</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga14fa98b8bec09df3e7409a75cf2f5359"><div class="ttname"><a href="group__hardware__irq.html#ga14fa98b8bec09df3e7409a75cf2f5359">irq_clear</a></div><div class="ttdeci">void irq_clear(uint int_num)</div><div class="ttdoc">Clear a specific interrupt on the executing core.</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_irq/include/hardware/irq.h:446</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga36e4b97d3414ce58c3091e63badcf9ce"><div class="ttname"><a href="group__hardware__irq.html#ga36e4b97d3414ce58c3091e63badcf9ce">irq_set_pending</a></div><div class="ttdeci">void irq_set_pending(uint num)</div><div class="ttdoc">Force an interrupt to be pending on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:45</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga42e9cdce7b82ef63c7b2416d32a42361"><div class="ttname"><a href="group__hardware__irq.html#ga42e9cdce7b82ef63c7b2416d32a42361">irq_get_exclusive_handler</a></div><div class="ttdeci">irq_handler_t irq_get_exclusive_handler(uint num)</div><div class="ttdoc">Get the exclusive interrupt handler for an interrupt on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:65</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga4f9772d9d1781c3a28371623886a0310"><div class="ttname"><a href="group__hardware__irq.html#ga4f9772d9d1781c3a28371623886a0310">irq_get_vtable_handler</a></div><div class="ttdeci">irq_handler_t irq_get_vtable_handler(uint num)</div><div class="ttdoc">Get the current IRQ handler for the specified IRQ from the currently installed hardware vector table ...</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:55</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga6bcde7d99ca71abe8dccfd13b4d80b29"><div class="ttname"><a href="group__hardware__irq.html#ga6bcde7d99ca71abe8dccfd13b4d80b29">irq_get_priority</a></div><div class="ttdeci">uint irq_get_priority(uint num)</div><div class="ttdoc">Get specified interrupt's priority.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:85</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga7c7167f643c6898b758340ce59d333d9"><div class="ttname"><a href="group__hardware__irq.html#ga7c7167f643c6898b758340ce59d333d9">irq_set_enabled</a></div><div class="ttdeci">void irq_set_enabled(uint num, bool enabled)</div><div class="ttdoc">Enable or disable a specific interrupt on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:25</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga8478ee26cc144e947ccd75b0169059a6"><div class="ttname"><a href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a></div><div class="ttdeci">void(* irq_handler_t)(void)</div><div class="ttdoc">Interrupt handler function type.</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_irq/include/hardware/irq.h:195</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_ga9f9eb24fcf966ef5992c3091bf2989c7"><div class="ttname"><a href="group__hardware__irq.html#ga9f9eb24fcf966ef5992c3091bf2989c7">irq_has_handler</a></div><div class="ttdeci">bool irq_has_handler(uint num)</div><div class="ttdoc">Determine if there is an installed IRQ handler for the given interrupt number.</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_irq/irq.c:225</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gaa52ec9e5f572b3a0ef50707ab37233ef"><div class="ttname"><a href="group__hardware__irq.html#gaa52ec9e5f572b3a0ef50707ab37233ef">user_irq_claim</a></div><div class="ttdeci">void user_irq_claim(uint irq_num)</div><div class="ttdoc">Claim ownership of a user IRQ on the calling core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:106</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gace889ebb0bde6fc678dee915d4e3537e"><div class="ttname"><a href="group__hardware__irq.html#gace889ebb0bde6fc678dee915d4e3537e">user_irq_claim_unused</a></div><div class="ttdeci">int user_irq_claim_unused(bool required)</div><div class="ttdoc">Claim ownership of a free user IRQ on the calling core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:116</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gad11ea172f11d9763647ac34b366ab3c2"><div class="ttname"><a href="group__hardware__irq.html#gad11ea172f11d9763647ac34b366ab3c2">irq_set_priority</a></div><div class="ttdeci">void irq_set_priority(uint num, uint8_t hardware_priority)</div><div class="ttdoc">Set specified interrupt's priority.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:80</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gadfd3308952d41ee91671ae098b867a90"><div class="ttname"><a href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler</a></div><div class="ttdeci">void irq_remove_handler(uint num, irq_handler_t handler)</div><div class="ttdoc">Remove a specific interrupt handler for the given irq number on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:75</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gae1a927e62e780b2f7dacc3a008ffaf20"><div class="ttname"><a href="group__hardware__irq.html#gae1a927e62e780b2f7dacc3a008ffaf20">irq_set_mask_n_enabled</a></div><div class="ttdeci">void irq_set_mask_n_enabled(uint n, uint32_t mask, bool enabled)</div><div class="ttdoc">Enable/disable multiple interrupts on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:40</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gae552cab9da1b37a785791f678090f418"><div class="ttname"><a href="group__hardware__irq.html#gae552cab9da1b37a785791f678090f418">irq_has_shared_handler</a></div><div class="ttdeci">bool irq_has_shared_handler(uint num)</div><div class="ttdoc">Determine if the current handler for the given number is shared.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:50</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gae91340b84a6d70049933af657df93201"><div class="ttname"><a href="group__hardware__irq.html#gae91340b84a6d70049933af657df93201">irq_set_mask_enabled</a></div><div class="ttdeci">void irq_set_mask_enabled(uint32_t mask, bool enabled)</div><div class="ttdoc">Enable/disable multiple interrupts on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:35</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gaf02f8599896c66f4579c845a96b2126e"><div class="ttname"><a href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler</a></div><div class="ttdeci">void irq_add_shared_handler(uint num, irq_handler_t handler, uint8_t order_priority)</div><div class="ttdoc">Add a shared interrupt handler for an interrupt on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:70</div></div>
+<div class="ttc" id="agroup__hardware__irq_html_gafffd448ba2d2eef5b355b88180aefe7f"><div class="ttname"><a href="group__hardware__irq.html#gafffd448ba2d2eef5b355b88180aefe7f">irq_set_exclusive_handler</a></div><div class="ttdeci">void irq_set_exclusive_handler(uint num, irq_handler_t handler)</div><div class="ttdoc">Set an exclusive interrupt handler for an interrupt on the executing core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:60</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2m0plus_8h_html_adec423fce69d1d1dc4afe15453a55a16"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2m0plus_8h.html#adec423fce69d1d1dc4afe15453a55a16">M0PLUS_NVIC_ICPR_OFFSET</a></div><div class="ttdeci">#define M0PLUS_NVIC_ICPR_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/m0plus.h:221</div></div>
+<div class="ttc" id="ahazard3_8h_html_a9424fec1ed71548aef9cefdc6eda62a0"><div class="ttname"><a href="hazard3_8h.html#a9424fec1ed71548aef9cefdc6eda62a0">hazard3_irqarray_clear</a></div><div class="ttdeci">#define hazard3_irqarray_clear(csr, index, data)</div><div class="ttdef"><b>Definição</b> hazard3.h:53</div></div>
+<div class="ttc" id="ahost_2hardware__irq_2include_2hardware_2irq_8h_html_afdda744330c8b1eab391153c3ce0ef8b"><div class="ttname"><a href="host_2hardware__irq_2include_2hardware_2irq_8h.html#afdda744330c8b1eab391153c3ce0ef8b">irq_init_priorities</a></div><div class="ttdeci">void irq_init_priorities(void)</div><div class="ttdoc">Perform IRQ priority initialization for the current core.</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:95</div></div>
+<div class="ttc" id="ahost_2pico__platform_2include_2pico_2platform_8h_html_a23eadd8d1642fb8fe4600708c36e116a"><div class="ttname"><a href="host_2pico__platform_2include_2pico_2platform_8h.html#a23eadd8d1642fb8fe4600708c36e116a">__force_inline</a></div><div class="ttdeci">#define __force_inline</div><div class="ttdef"><b>Definição</b> host/pico_platform/include/pico/platform.h:66</div></div>
+<div class="ttc" id="ahost_2pico__platform_2include_2pico_2platform_8h_html_a2e3484535ee610c8e19e9859563abe48"><div class="ttname"><a href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a></div><div class="ttdeci">#define __unused</div><div class="ttdef"><b>Definição</b> host/pico_platform/include/pico/platform.h:56</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="arp2040_2hardware__regs_2include_2hardware_2regs_2addressmap_8h_html_a5b4c870b2ae63f475a0709c13cb0334d"><div class="ttname"><a href="rp2040_2hardware__regs_2include_2hardware_2regs_2addressmap_8h.html#a5b4c870b2ae63f475a0709c13cb0334d">PPB_BASE</a></div><div class="ttdeci">#define PPB_BASE</div><div class="ttdef"><b>Definição</b> rp2040/hardware_regs/include/hardware/regs/addressmap.h:78</div></div>
+<div class="ttc" id="arp2040_2hardware__structs_2include_2hardware_2structs_2nvic_8h_html_a8a3357bf731144b9310f118375ae0911"><div class="ttname"><a href="rp2040_2hardware__structs_2include_2hardware_2structs_2nvic_8h.html#a8a3357bf731144b9310f118375ae0911">nvic_hw</a></div><div class="ttdeci">#define nvic_hw</div><div class="ttdef"><b>Definição</b> rp2040/hardware_structs/include/hardware/structs/nvic.h:65</div></div>
+<div class="ttc" id="arp2__common_2hardware__irq_2include_2hardware_2irq_8h_html_a6b1e04e66cf95ecf11a58beda886255d"><div class="ttname"><a href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a6b1e04e66cf95ecf11a58beda886255d">runtime_init_per_core_irq_priorities</a></div><div class="ttdeci">void runtime_init_per_core_irq_priorities(void)</div><div class="ttdoc">Perform IRQ priority initialization for the current core.</div><div class="ttdef"><b>Definição</b> rp2_common/hardware_irq/irq.c:668</div></div>
+<div class="ttc" id="arp2__common_2hardware__irq_2include_2hardware_2irq_8h_html_a885faaaaca76aba8551cec66e34a14dc"><div class="ttname"><a href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a885faaaaca76aba8551cec66e34a14dc">__unhandled_user_irq</a></div><div class="ttdeci">void __unhandled_user_irq(void)</div></div>
+<div class="ttc" id="arp2__common_2hardware__irq_2include_2hardware_2irq_8h_html_ab908ddbef6c60743c46817c44b0e6008"><div class="ttname"><a href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#ab908ddbef6c60743c46817c44b0e6008">user_irq_is_claimed</a></div><div class="ttdeci">bool user_irq_is_claimed(uint irq_num)</div><div class="ttdef"><b>Definição</b> host/hardware_irq/irq.c:123</div></div>
+<div class="ttc" id="arvcsr_8h_html_af76479e89e34bae04e8b0b5d08b5412d"><div class="ttname"><a href="rvcsr_8h.html#af76479e89e34bae04e8b0b5d08b5412d">RVCSR_MEIFA_OFFSET</a></div><div class="ttdeci">#define RVCSR_MEIFA_OFFSET</div><div class="ttdef"><b>Definição</b> rvcsr.h:2795</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_477cdc66bc2c1b24bdaabf8f488e991f.html">hardware_irq</a></li><li class="navelem"><a class="el" href="dir_7a8f717151c1f6f796b89628e2d59823.html">include</a></li><li class="navelem"><a class="el" href="dir_88d4181930f35d7b34d203c68c799e11.html">hardware</a></li><li class="navelem"><a class="el" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html">irq.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

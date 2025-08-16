@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura BUSCTRL_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structBUSCTRL__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structBUSCTRL__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura BUSCTRL_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Register block for busfabric control signals and performance counters (BUSCTRL)  
+ <a href="structBUSCTRL__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para BUSCTRL_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structBUSCTRL__Type__coll__graph.svg" width="168" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ae5f46e5f86b663e3d85918f6f5cd3fe2" id="r_ae5f46e5f86b663e3d85918f6f5cd3fe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#ae5f46e5f86b663e3d85918f6f5cd3fe2">BUS_PRIORITY</a></td></tr>
+<tr class="memdesc:ae5f46e5f86b663e3d85918f6f5cd3fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; BUSCTRL Structure <br  />
+  <br /></td></tr>
+<tr class="separator:ae5f46e5f86b663e3d85918f6f5cd3fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f47e1ec40934d457dd523e5cd3115a" id="r_a74f47e1ec40934d457dd523e5cd3115a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#a74f47e1ec40934d457dd523e5cd3115a">BUS_PRIORITY_ACK</a></td></tr>
+<tr class="memdesc:a74f47e1ec40934d457dd523e5cd3115a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus priority acknowledge <br  />
+  <br /></td></tr>
+<tr class="separator:a74f47e1ec40934d457dd523e5cd3115a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab284b3decaa2c617bfe9931088da9b72" id="r_ab284b3decaa2c617bfe9931088da9b72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#ab284b3decaa2c617bfe9931088da9b72">PERFCTR0</a></td></tr>
+<tr class="memdesc:ab284b3decaa2c617bfe9931088da9b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance counter 0 <br  />
+  <br /></td></tr>
+<tr class="separator:ab284b3decaa2c617bfe9931088da9b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeabe37c527906b82a7415e065a13872" id="r_aaeabe37c527906b82a7415e065a13872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#aaeabe37c527906b82a7415e065a13872">PERFCTR1</a></td></tr>
+<tr class="memdesc:aaeabe37c527906b82a7415e065a13872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance counter 1 <br  />
+  <br /></td></tr>
+<tr class="separator:aaeabe37c527906b82a7415e065a13872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604a244ac869e00d647b351ea07d2b82" id="r_a604a244ac869e00d647b351ea07d2b82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#a604a244ac869e00d647b351ea07d2b82">PERFCTR2</a></td></tr>
+<tr class="memdesc:a604a244ac869e00d647b351ea07d2b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance counter 2 <br  />
+  <br /></td></tr>
+<tr class="separator:a604a244ac869e00d647b351ea07d2b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe63511fe0b33d58c2d8ec8fc4868a6" id="r_afbe63511fe0b33d58c2d8ec8fc4868a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#afbe63511fe0b33d58c2d8ec8fc4868a6">PERFCTR3</a></td></tr>
+<tr class="memdesc:afbe63511fe0b33d58c2d8ec8fc4868a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance counter 3 <br  />
+  <br /></td></tr>
+<tr class="separator:afbe63511fe0b33d58c2d8ec8fc4868a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14c7124b240d3f2874d0e530789967f" id="r_aa14c7124b240d3f2874d0e530789967f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#aa14c7124b240d3f2874d0e530789967f">PERFCTR_EN</a></td></tr>
+<tr class="memdesc:aa14c7124b240d3f2874d0e530789967f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the performance counters.  <br /></td></tr>
+<tr class="separator:aa14c7124b240d3f2874d0e530789967f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac251a0eecb689f5d088bb405366a26" id="r_a4ac251a0eecb689f5d088bb405366a26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#a4ac251a0eecb689f5d088bb405366a26">PERFSEL0</a></td></tr>
+<tr class="memdesc:a4ac251a0eecb689f5d088bb405366a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance event select for PERFCTR0 <br  />
+  <br /></td></tr>
+<tr class="separator:a4ac251a0eecb689f5d088bb405366a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fd7f9bca02272544b5ac08af2bbc18" id="r_a55fd7f9bca02272544b5ac08af2bbc18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#a55fd7f9bca02272544b5ac08af2bbc18">PERFSEL1</a></td></tr>
+<tr class="memdesc:a55fd7f9bca02272544b5ac08af2bbc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance event select for PERFCTR1 <br  />
+  <br /></td></tr>
+<tr class="separator:a55fd7f9bca02272544b5ac08af2bbc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefab1c13e5c06fba5180871ebac60bc2" id="r_aefab1c13e5c06fba5180871ebac60bc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#aefab1c13e5c06fba5180871ebac60bc2">PERFSEL2</a></td></tr>
+<tr class="memdesc:aefab1c13e5c06fba5180871ebac60bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance event select for PERFCTR2 <br  />
+  <br /></td></tr>
+<tr class="separator:aefab1c13e5c06fba5180871ebac60bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7cc256383dff80ae01851ea7c71b85a" id="r_ae7cc256383dff80ae01851ea7c71b85a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBUSCTRL__Type.html#ae7cc256383dff80ae01851ea7c71b85a">PERFSEL3</a></td></tr>
+<tr class="memdesc:ae7cc256383dff80ae01851ea7c71b85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus fabric performance event select for PERFCTR3 <br  />
+  <br /></td></tr>
+<tr class="separator:ae7cc256383dff80ae01851ea7c71b85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Register block for busfabric control signals and performance counters (BUSCTRL) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="ae5f46e5f86b663e3d85918f6f5cd3fe2" name="ae5f46e5f86b663e3d85918f6f5cd3fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f46e5f86b663e3d85918f6f5cd3fe2">&#9670;&#160;</a></span>BUS_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::BUS_PRIORITY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; BUSCTRL Structure <br  />
+ </p>
+<p>Set the priority of each master for bus arbitration. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a74f47e1ec40934d457dd523e5cd3115a" name="a74f47e1ec40934d457dd523e5cd3115a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f47e1ec40934d457dd523e5cd3115a">&#9670;&#160;</a></span>BUS_PRIORITY_ACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::BUS_PRIORITY_ACK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus priority acknowledge <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab284b3decaa2c617bfe9931088da9b72" name="ab284b3decaa2c617bfe9931088da9b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab284b3decaa2c617bfe9931088da9b72">&#9670;&#160;</a></span>PERFCTR0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFCTR0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance counter 0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaeabe37c527906b82a7415e065a13872" name="aaeabe37c527906b82a7415e065a13872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeabe37c527906b82a7415e065a13872">&#9670;&#160;</a></span>PERFCTR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFCTR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance counter 1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a604a244ac869e00d647b351ea07d2b82" name="a604a244ac869e00d647b351ea07d2b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604a244ac869e00d647b351ea07d2b82">&#9670;&#160;</a></span>PERFCTR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFCTR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance counter 2 <br  />
+ </p>
+
+</div>
+</div>
+<a id="afbe63511fe0b33d58c2d8ec8fc4868a6" name="afbe63511fe0b33d58c2d8ec8fc4868a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe63511fe0b33d58c2d8ec8fc4868a6">&#9670;&#160;</a></span>PERFCTR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFCTR3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance counter 3 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa14c7124b240d3f2874d0e530789967f" name="aa14c7124b240d3f2874d0e530789967f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14c7124b240d3f2874d0e530789967f">&#9670;&#160;</a></span>PERFCTR_EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFCTR_EN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the performance counters. </p>
+<p>If 0, the performance counters do not increment. This can be used to precisely start/stop event sampling around the profiled section of code. The performance counters are initially disabled, to save energy. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4ac251a0eecb689f5d088bb405366a26" name="a4ac251a0eecb689f5d088bb405366a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac251a0eecb689f5d088bb405366a26">&#9670;&#160;</a></span>PERFSEL0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFSEL0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance event select for PERFCTR0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a55fd7f9bca02272544b5ac08af2bbc18" name="a55fd7f9bca02272544b5ac08af2bbc18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fd7f9bca02272544b5ac08af2bbc18">&#9670;&#160;</a></span>PERFSEL1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFSEL1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance event select for PERFCTR1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aefab1c13e5c06fba5180871ebac60bc2" name="aefab1c13e5c06fba5180871ebac60bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefab1c13e5c06fba5180871ebac60bc2">&#9670;&#160;</a></span>PERFSEL2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFSEL2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance event select for PERFCTR2 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae7cc256383dff80ae01851ea7c71b85a" name="ae7cc256383dff80ae01851ea7c71b85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7cc256383dff80ae01851ea7c71b85a">&#9670;&#160;</a></span>PERFSEL3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> BUSCTRL_Type::PERFSEL3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bus fabric performance event select for PERFCTR3 <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structBUSCTRL__Type.html">BUSCTRL_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

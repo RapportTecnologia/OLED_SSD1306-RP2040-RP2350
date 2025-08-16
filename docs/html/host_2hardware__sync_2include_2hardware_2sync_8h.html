@@ -1,0 +1,898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro sync.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('host_2hardware__sync_2include_2hardware_2sync_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro sync.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para host/hardware_sync/include/hardware/sync.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="host_2hardware__sync_2include_2hardware_2sync_8h__incl.svg" width="75" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="host_2hardware__sync_2include_2hardware_2sync_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae1c1d9339275a7dbb1fff68839604c19" id="r_ae1c1d9339275a7dbb1fff68839604c19"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ae1c1d9339275a7dbb1fff68839604c19">PICO_SPINLOCK_ID_ATOMIC</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ae1c1d9339275a7dbb1fff68839604c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82cb84aa3356da0ee2e1fa85b1448f70" id="r_a82cb84aa3356da0ee2e1fa85b1448f70"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a82cb84aa3356da0ee2e1fa85b1448f70">PICO_SPINLOCK_ID_CLAIM_FREE_FIRST</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:a82cb84aa3356da0ee2e1fa85b1448f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040b9b5b89d524e0e828e18472dbed24" id="r_a040b9b5b89d524e0e828e18472dbed24"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a040b9b5b89d524e0e828e18472dbed24">PICO_SPINLOCK_ID_CLAIM_FREE_LAST</a>&#160;&#160;&#160;31</td></tr>
+<tr class="separator:a040b9b5b89d524e0e828e18472dbed24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7a9493ccd69f41411e43b6c1ccab8d" id="r_a4a7a9493ccd69f41411e43b6c1ccab8d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a4a7a9493ccd69f41411e43b6c1ccab8d">PICO_SPINLOCK_ID_HARDWARE_CLAIM</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:a4a7a9493ccd69f41411e43b6c1ccab8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c2ccd192cfd2a8bcce7c6827617f49" id="r_a40c2ccd192cfd2a8bcce7c6827617f49"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a40c2ccd192cfd2a8bcce7c6827617f49">PICO_SPINLOCK_ID_IRQ</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a40c2ccd192cfd2a8bcce7c6827617f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5a0886dc129f84187e7c5034b97364" id="r_aad5a0886dc129f84187e7c5034b97364"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aad5a0886dc129f84187e7c5034b97364">PICO_SPINLOCK_ID_OS1</a>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:aad5a0886dc129f84187e7c5034b97364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b04e5c8c37e986579a4b6fc7180f18" id="r_a08b04e5c8c37e986579a4b6fc7180f18"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a08b04e5c8c37e986579a4b6fc7180f18">PICO_SPINLOCK_ID_OS2</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a08b04e5c8c37e986579a4b6fc7180f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ebba32a07ed4fd5d918ffa847c249f" id="r_a28ebba32a07ed4fd5d918ffa847c249f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a28ebba32a07ed4fd5d918ffa847c249f">PICO_SPINLOCK_ID_RAND</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a28ebba32a07ed4fd5d918ffa847c249f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243151570e11a25477e3d9d0676d1bf2" id="r_a243151570e11a25477e3d9d0676d1bf2"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a243151570e11a25477e3d9d0676d1bf2">PICO_SPINLOCK_ID_STRIPED_FIRST</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a243151570e11a25477e3d9d0676d1bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95bfa25823b74378a7d53971d0edd23d" id="r_a95bfa25823b74378a7d53971d0edd23d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a95bfa25823b74378a7d53971d0edd23d">PICO_SPINLOCK_ID_STRIPED_LAST</a>&#160;&#160;&#160;23</td></tr>
+<tr class="separator:a95bfa25823b74378a7d53971d0edd23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f99c3b5502ed89fdf16842147342c2e" id="r_a2f99c3b5502ed89fdf16842147342c2e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2f99c3b5502ed89fdf16842147342c2e">PICO_SPINLOCK_ID_TIMER</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a2f99c3b5502ed89fdf16842147342c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af027db7dbc0c9378e1bc2c0fd89c7f11" id="r_af027db7dbc0c9378e1bc2c0fd89c7f11"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af027db7dbc0c9378e1bc2c0fd89c7f11">spin_locks_reset</a>()&#160;&#160;&#160;<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aef634bb4bf560052b5fa7cf48894ff30">clear_spin_locks</a>()</td></tr>
+<tr class="separator:af027db7dbc0c9378e1bc2c0fd89c7f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:a96af910e1f1911aa6eb0b9f84410a151" id="r_a96af910e1f1911aa6eb0b9f84410a151"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> _spin_lock_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a></td></tr>
+<tr class="separator:a96af910e1f1911aa6eb0b9f84410a151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:adf764cbdea00d65edcd07bb9953ad2b7" id="r_adf764cbdea00d65edcd07bb9953ad2b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7">memory_order_acquire</a>
+, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b">memory_order_release</a>
+ }</td></tr>
+<tr class="separator:adf764cbdea00d65edcd07bb9953ad2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a6f8ef6ebd0958249cce2f55da582a532" id="r_a6f8ef6ebd0958249cce2f55da582a532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a6f8ef6ebd0958249cce2f55da582a532">__sev</a> ()</td></tr>
+<tr class="separator:a6f8ef6ebd0958249cce2f55da582a532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb760cd203ea2081dee7c914c899bf7" id="r_a5eb760cd203ea2081dee7c914c899bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a5eb760cd203ea2081dee7c914c899bf7">__wev</a> ()</td></tr>
+<tr class="separator:a5eb760cd203ea2081dee7c914c899bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e52626e2b11eb30cf81da1737049526" id="r_a1e52626e2b11eb30cf81da1737049526"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a1e52626e2b11eb30cf81da1737049526">__wfe</a> ()</td></tr>
+<tr class="separator:a1e52626e2b11eb30cf81da1737049526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24af3fc4ad745cda57d3eb4b9eeec1f1" id="r_a24af3fc4ad745cda57d3eb4b9eeec1f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a24af3fc4ad745cda57d3eb4b9eeec1f1">__wfi</a> ()</td></tr>
+<tr class="separator:a24af3fc4ad745cda57d3eb4b9eeec1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef634bb4bf560052b5fa7cf48894ff30" id="r_aef634bb4bf560052b5fa7cf48894ff30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aef634bb4bf560052b5fa7cf48894ff30">clear_spin_locks</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:aef634bb4bf560052b5fa7cf48894ff30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b17818c7916bc2ff75196ff0627b1e9" id="r_a2b17818c7916bc2ff75196ff0627b1e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2b17818c7916bc2ff75196ff0627b1e9">disable_interrupts</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a2b17818c7916bc2ff75196ff0627b1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232883ed798bce00a03b09705c67deef" id="r_a232883ed798bce00a03b09705c67deef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a232883ed798bce00a03b09705c67deef">enable_interrupts</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a232883ed798bce00a03b09705c67deef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0483c4096a5da439a458155af84d8229" id="r_a0483c4096a5da439a458155af84d8229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a0483c4096a5da439a458155af84d8229">is_spin_locked</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock)</td></tr>
+<tr class="separator:a0483c4096a5da439a458155af84d8229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada80522f47eff861a28a0c702c55e7b5" id="r_ada80522f47eff861a28a0c702c55e7b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ada80522f47eff861a28a0c702c55e7b5">next_striped_spin_lock_num</a> ()</td></tr>
+<tr class="separator:ada80522f47eff861a28a0c702c55e7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4543d5378d2c3a1ed9cfa26fe7f9edaa" id="r_a4543d5378d2c3a1ed9cfa26fe7f9edaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a4543d5378d2c3a1ed9cfa26fe7f9edaa">restore_interrupts</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9acb44549b41563697bb490144ec6258">status</a>)</td></tr>
+<tr class="separator:a4543d5378d2c3a1ed9cfa26fe7f9edaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae7234e92d2a2e025576e9f9dae33d8" id="r_adae7234e92d2a2e025576e9f9dae33d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#adae7234e92d2a2e025576e9f9dae33d8">restore_interrupts_from_disabled</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pio__types_8h.html#a79ae533555e4c4c96a036032b461dd44a9acb44549b41563697bb490144ec6258">status</a>)</td></tr>
+<tr class="separator:adae7234e92d2a2e025576e9f9dae33d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525f02984c958c6399293cad7cfc170d" id="r_a525f02984c958c6399293cad7cfc170d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a525f02984c958c6399293cad7cfc170d">save_and_disable_interrupts</a> ()</td></tr>
+<tr class="separator:a525f02984c958c6399293cad7cfc170d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2876d2a555a0646b354742db81a519" id="r_a7d2876d2a555a0646b354742db81a519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking</a> (<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock)</td></tr>
+<tr class="separator:a7d2876d2a555a0646b354742db81a519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50945cb4c33c3263b69e1fce81c474c7" id="r_a50945cb4c33c3263b69e1fce81c474c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a50945cb4c33c3263b69e1fce81c474c7">spin_lock_claim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>)</td></tr>
+<tr class="separator:a50945cb4c33c3263b69e1fce81c474c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41304e0ee0aed1b5c20b0fd8c2adf9e6" id="r_a41304e0ee0aed1b5c20b0fd8c2adf9e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a41304e0ee0aed1b5c20b0fd8c2adf9e6">spin_lock_claim_mask</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num_mask</a>)</td></tr>
+<tr class="separator:a41304e0ee0aed1b5c20b0fd8c2adf9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157bccb525bdfd90255490558cbeb9c0" id="r_a157bccb525bdfd90255490558cbeb9c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a157bccb525bdfd90255490558cbeb9c0">spin_lock_claim_unused</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">required</a>)</td></tr>
+<tr class="separator:a157bccb525bdfd90255490558cbeb9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ab66f82cdb5148c82f0a8887fdb500" id="r_ad0ab66f82cdb5148c82f0a8887fdb500"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad0ab66f82cdb5148c82f0a8887fdb500">spin_lock_get_num</a> (<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock)</td></tr>
+<tr class="separator:ad0ab66f82cdb5148c82f0a8887fdb500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38821cab3d935b009c6551d5ff70c4c" id="r_ad38821cab3d935b009c6551d5ff70c4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad38821cab3d935b009c6551d5ff70c4c">spin_lock_init</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>)</td></tr>
+<tr class="separator:ad38821cab3d935b009c6551d5ff70c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e225808b9ce7aeafb3b90e8e96754a" id="r_a19e225808b9ce7aeafb3b90e8e96754a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a19e225808b9ce7aeafb3b90e8e96754a">spin_lock_instance</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>)</td></tr>
+<tr class="separator:a19e225808b9ce7aeafb3b90e8e96754a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74bcd0bfa5c6c5575a542d592155a5a" id="r_ae74bcd0bfa5c6c5575a542d592155a5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ae74bcd0bfa5c6c5575a542d592155a5a">spin_lock_num</a> (<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock)</td></tr>
+<tr class="separator:ae74bcd0bfa5c6c5575a542d592155a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177efc085451e4eabfc726897a59ca57" id="r_a177efc085451e4eabfc726897a59ca57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a177efc085451e4eabfc726897a59ca57">spin_lock_unclaim</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>)</td></tr>
+<tr class="separator:a177efc085451e4eabfc726897a59ca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f735f58115783cbd45d3e3b8a754925" id="r_a3f735f58115783cbd45d3e3b8a754925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a3f735f58115783cbd45d3e3b8a754925">spin_lock_unsafe_blocking</a> (<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock)</td></tr>
+<tr class="separator:a3f735f58115783cbd45d3e3b8a754925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4df3e7b60025a90629ee322fec8bc8f" id="r_af4df3e7b60025a90629ee322fec8bc8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock</a> (<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">saved_irq</a>)</td></tr>
+<tr class="separator:af4df3e7b60025a90629ee322fec8bc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4583e1832628d04d78609580540589" id="r_a2c4583e1832628d04d78609580540589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a2c4583e1832628d04d78609580540589">spin_unlock_unsafe</a> (<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *lock)</td></tr>
+<tr class="separator:a2c4583e1832628d04d78609580540589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ae1c1d9339275a7dbb1fff68839604c19" name="ae1c1d9339275a7dbb1fff68839604c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c1d9339275a7dbb1fff68839604c19">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_ATOMIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_ATOMIC&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82cb84aa3356da0ee2e1fa85b1448f70" name="a82cb84aa3356da0ee2e1fa85b1448f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82cb84aa3356da0ee2e1fa85b1448f70">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_CLAIM_FREE_FIRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_CLAIM_FREE_FIRST&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a040b9b5b89d524e0e828e18472dbed24" name="a040b9b5b89d524e0e828e18472dbed24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040b9b5b89d524e0e828e18472dbed24">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_CLAIM_FREE_LAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_CLAIM_FREE_LAST&#160;&#160;&#160;31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a7a9493ccd69f41411e43b6c1ccab8d" name="a4a7a9493ccd69f41411e43b6c1ccab8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7a9493ccd69f41411e43b6c1ccab8d">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_HARDWARE_CLAIM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_HARDWARE_CLAIM&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40c2ccd192cfd2a8bcce7c6827617f49" name="a40c2ccd192cfd2a8bcce7c6827617f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c2ccd192cfd2a8bcce7c6827617f49">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_IRQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_IRQ&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad5a0886dc129f84187e7c5034b97364" name="aad5a0886dc129f84187e7c5034b97364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5a0886dc129f84187e7c5034b97364">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_OS1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_OS1&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b04e5c8c37e986579a4b6fc7180f18" name="a08b04e5c8c37e986579a4b6fc7180f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b04e5c8c37e986579a4b6fc7180f18">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_OS2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_OS2&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28ebba32a07ed4fd5d918ffa847c249f" name="a28ebba32a07ed4fd5d918ffa847c249f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ebba32a07ed4fd5d918ffa847c249f">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_RAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_RAND&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a243151570e11a25477e3d9d0676d1bf2" name="a243151570e11a25477e3d9d0676d1bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243151570e11a25477e3d9d0676d1bf2">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_STRIPED_FIRST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_STRIPED_FIRST&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95bfa25823b74378a7d53971d0edd23d" name="a95bfa25823b74378a7d53971d0edd23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95bfa25823b74378a7d53971d0edd23d">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_STRIPED_LAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_STRIPED_LAST&#160;&#160;&#160;23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f99c3b5502ed89fdf16842147342c2e" name="a2f99c3b5502ed89fdf16842147342c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f99c3b5502ed89fdf16842147342c2e">&#9670;&#160;</a></span>PICO_SPINLOCK_ID_TIMER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_SPINLOCK_ID_TIMER&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af027db7dbc0c9378e1bc2c0fd89c7f11" name="af027db7dbc0c9378e1bc2c0fd89c7f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af027db7dbc0c9378e1bc2c0fd89c7f11">&#9670;&#160;</a></span>spin_locks_reset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> spin_locks_reset</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aef634bb4bf560052b5fa7cf48894ff30">clear_spin_locks</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="a96af910e1f1911aa6eb0b9f84410a151" name="a96af910e1f1911aa6eb0b9f84410a151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96af910e1f1911aa6eb0b9f84410a151">&#9670;&#160;</a></span>spin_lock_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> _spin_lock_t <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos valores da enumeração</h2>
+<a id="adf764cbdea00d65edcd07bb9953ad2b7" name="adf764cbdea00d65edcd07bb9953ad2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf764cbdea00d65edcd07bb9953ad2b7">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">anonymous</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">enum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumerações</th></tr><tr><td class="fieldname"><a id="adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7" name="adf764cbdea00d65edcd07bb9953ad2b7afb313754331704b978e9a80a933b3da7"></a>memory_order_acquire&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b" name="adf764cbdea00d65edcd07bb9953ad2b7a685a90c8fc516895354973c3918a5f7b"></a>memory_order_release&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a6f8ef6ebd0958249cce2f55da582a532" name="a6f8ef6ebd0958249cce2f55da582a532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8ef6ebd0958249cce2f55da582a532">&#9670;&#160;</a></span>__sev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __sev </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="sync__core0__only_8c.html#a815c7e97f0064713cbce712bb6fc9e69">event_fired</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#a0c32cfcd182d5f1d3a25b6fb503352b7">multicore_fifo_push_timeout_us()</a> e <a class="el" href="host_2pico__multicore_2include_2pico_2multicore_8h.html#ac3a24e275219229de49d1fb32e3c4ef0">multicore_launch_core1_raw()</a>.</p>
+
+</div>
+</div>
+<a id="a5eb760cd203ea2081dee7c914c899bf7" name="a5eb760cd203ea2081dee7c914c899bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb760cd203ea2081dee7c914c899bf7">&#9670;&#160;</a></span>__wev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __wev </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e52626e2b11eb30cf81da1737049526" name="a1e52626e2b11eb30cf81da1737049526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e52626e2b11eb30cf81da1737049526">&#9670;&#160;</a></span>__wfe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __wfe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="sync__core0__only_8c.html#a815c7e97f0064713cbce712bb6fc9e69">event_fired</a> e <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a4cd2ba8ffa19bec73fe1a54425d8bc03">tight_loop_contents()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__sleep.html#gaedc0ed51a5e908ddd660a5d279009abc">best_effort_wfe_or_timeout()</a>.</p>
+
+</div>
+</div>
+<a id="a24af3fc4ad745cda57d3eb4b9eeec1f1" name="a24af3fc4ad745cda57d3eb4b9eeec1f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24af3fc4ad745cda57d3eb4b9eeec1f1">&#9670;&#160;</a></span>__wfi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __wfi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5ab702a49a3a316f49fa93232c54f9b4">panic()</a>.</p>
+
+</div>
+</div>
+<a id="aef634bb4bf560052b5fa7cf48894ff30" name="aef634bb4bf560052b5fa7cf48894ff30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef634bb4bf560052b5fa7cf48894ff30">&#9670;&#160;</a></span>clear_spin_locks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> clear_spin_locks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#ab545136d70754bcfe6c64ed2cf2a78ac">NUM_SPIN_LOCKS</a>, <a class="el" href="sync__core0__only_8c.html#a570e1d9c049ade36ac9b4149cb3f02a2">spin_lock_instance()</a> e <a class="el" href="sync__core0__only_8c.html#af453e216d17861419dc39e2bb1e54623">spin_unlock_unsafe()</a>.</p>
+
+</div>
+</div>
+<a id="a2b17818c7916bc2ff75196ff0627b1e9" name="a2b17818c7916bc2ff75196ff0627b1e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b17818c7916bc2ff75196ff0627b1e9">&#9670;&#160;</a></span>disable_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> disable_interrupts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a232883ed798bce00a03b09705c67deef" name="a232883ed798bce00a03b09705c67deef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232883ed798bce00a03b09705c67deef">&#9670;&#160;</a></span>enable_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> enable_interrupts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="rp2__common_2hardware__irq_2include_2hardware_2irq_8h.html#a6b1e04e66cf95ecf11a58beda886255d">runtime_init_per_core_irq_priorities()</a>.</p>
+
+</div>
+</div>
+<a id="a0483c4096a5da439a458155af84d8229" name="a0483c4096a5da439a458155af84d8229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0483c4096a5da439a458155af84d8229">&#9670;&#160;</a></span>is_spin_locked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> is_spin_locked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada80522f47eff861a28a0c702c55e7b5" name="ada80522f47eff861a28a0c702c55e7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada80522f47eff861a28a0c702c55e7b5">&#9670;&#160;</a></span>next_striped_spin_lock_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> next_striped_spin_lock_num </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__mutex.html#gabe21d7ce624db2df7afe86c4bba400a2">mutex_init()</a>, <a class="el" href="group__mutex.html#ga30d1f9d58564a1799e293451edc2d28e">recursive_mutex_init()</a> e <a class="el" href="group__sem.html#gab4e56b5ccfacafd2fb17765e702a21ba">sem_init()</a>.</p>
+
+</div>
+</div>
+<a id="a4543d5378d2c3a1ed9cfa26fe7f9edaa" name="a4543d5378d2c3a1ed9cfa26fe7f9edaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4543d5378d2c3a1ed9cfa26fe7f9edaa">&#9670;&#160;</a></span>restore_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> restore_interrupts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adae7234e92d2a2e025576e9f9dae33d8" name="adae7234e92d2a2e025576e9f9dae33d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae7234e92d2a2e025576e9f9dae33d8">&#9670;&#160;</a></span>restore_interrupts_from_disabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> restore_interrupts_from_disabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__aon__timer.html#ga39dab1da58c2f8178024b233e335d059">aon_timer_enable_alarm()</a> e <a class="el" href="group__pico__aon__timer.html#gabfecbe6df690a2a10194920ba7db8d3f">aon_timer_enable_alarm_calendar()</a>.</p>
+
+</div>
+</div>
+<a id="a525f02984c958c6399293cad7cfc170d" name="a525f02984c958c6399293cad7cfc170d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525f02984c958c6399293cad7cfc170d">&#9670;&#160;</a></span>save_and_disable_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save_and_disable_interrupts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__pico__aon__timer.html#ga39dab1da58c2f8178024b233e335d059">aon_timer_enable_alarm()</a>, <a class="el" href="group__pico__aon__timer.html#gabfecbe6df690a2a10194920ba7db8d3f">aon_timer_enable_alarm_calendar()</a>, <a class="el" href="group__hardware__exception.html#gabd73e0f58d5d1149a77a521c0dceb9cb">exception_restore_handler()</a> e <a class="el" href="group__hardware__exception.html#ga0c49b97eb751230b3d77459e7bfe98f5">exception_set_exclusive_handler()</a>.</p>
+
+</div>
+</div>
+<a id="a7d2876d2a555a0646b354742db81a519" name="a7d2876d2a555a0646b354742db81a519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2876d2a555a0646b354742db81a519">&#9670;&#160;</a></span>spin_lock_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> spin_lock_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="sync__core0__only_8c.html#abb504613e2e89dae8e264aee5ca91d67">spin_lock_unsafe_blocking()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#ga72bfc8c2dd5bf334cd68af2e349a1b37">alarm_pool_add_alarm_at_force_in_context()</a>, <a class="el" href="group__alarm.html#ga02cc23b4a3109fb8c2d57e24981f2932">alarm_pool_cancel_alarm()</a>, <a class="el" href="group__alarm.html#ga342ebecd5ebc1a39f1da0bac81069712">alarm_pool_remaining_alarm_time_us()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a8b969c22d5e048c64c1261cfc586850b">counter_test_per_core()</a>, <a class="el" href="group__pico__rand.html#ga783185fba81c03eb0c1d687d322b0112">get_rand_64()</a>, <a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95">hw_claim_lock()</a>, <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>, <a class="el" href="rp2__common_2hardware__irq_2irq_8c.html#a6f07b7bb7cde52b312e33355f80da516">irq_add_tail_to_free_list()</a>, <a class="el" href="group__hardware__irq.html#ga42e9cdce7b82ef63c7b2416d32a42361">irq_get_exclusive_handler()</a>, <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a>, <a class="el" href="group__hardware__irq.html#gafffd448ba2d2eef5b355b88180aefe7f">irq_set_exclusive_handler()</a>, <a class="el" href="group__mutex.html#ga69e2f75f0a38378b20c0f2bf9cc7bbe3">mutex_enter_block_until()</a>, <a class="el" href="group__mutex.html#ga65b1c7af0545f478c80b51513d8f6993">mutex_enter_blocking()</a>, <a class="el" href="group__mutex.html#gaf528c8fbb5f4532758859d18e24e1673">mutex_exit()</a>, <a class="el" href="group__mutex.html#gaa116de2f28fd7df8fb78b210e07b1ed4">mutex_try_enter()</a>, <a class="el" href="group__mutex.html#ga6ce3ca26cbce71a3e29396264e00e253">recursive_mutex_enter_block_until()</a>, <a class="el" href="group__mutex.html#gad11f3d954d96cfdc77025735d35983e1">recursive_mutex_enter_blocking()</a>, <a class="el" href="group__mutex.html#ga2f75321a04ba731f5875353fbaebc345">recursive_mutex_exit()</a>, <a class="el" href="group__mutex.html#gae431bbb90e45cf9ae47130a5635aa2b0">recursive_mutex_try_enter()</a>, <a class="el" href="group__sem.html#ga4410f17fc2f35b91e5bcfaf18bcf26ae">sem_acquire_block_until()</a>, <a class="el" href="group__sem.html#gaefa22667355703497ae883f68a87aacf">sem_acquire_blocking()</a>, <a class="el" href="group__sem.html#gaeac89066f5fdbde0c7db2718464dcbde">sem_release()</a>, <a class="el" href="group__sem.html#gab6c128952e4981a95ce2e2d093a8a3ba">sem_reset()</a>, <a class="el" href="group__sem.html#ga25b473ab6f287e4a6a0c9d0288a0a497">sem_try_acquire()</a>, <a class="el" href="group__sleep.html#ga7abed28d3918fe2b15f8007ba6569172">sleep_until()</a>, <a class="el" href="group__hardware__timer.html#gabdb6ba35d83bbf4e3d385821fef7fd05">timer_hardware_alarm_cancel()</a>, <a class="el" href="group__hardware__timer.html#ga638f76034b217ff7f8999ca16b919f63">timer_hardware_alarm_force_irq()</a>, <a class="el" href="group__hardware__timer.html#ga1f7d02607a27915fea3b99a65319d3c1">timer_hardware_alarm_set_callback()</a> e <a class="el" href="group__hardware__timer.html#ga8590dbfd69db9c3da5b628cd81efc22d">timer_hardware_alarm_set_target()</a>.</p>
+
+</div>
+</div>
+<a id="a50945cb4c33c3263b69e1fce81c474c7" name="a50945cb4c33c3263b69e1fce81c474c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50945cb4c33c3263b69e1fce81c474c7">&#9670;&#160;</a></span>spin_lock_claim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> spin_lock_claim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>lock_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41304e0ee0aed1b5c20b0fd8c2adf9e6" name="a41304e0ee0aed1b5c20b0fd8c2adf9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41304e0ee0aed1b5c20b0fd8c2adf9e6">&#9670;&#160;</a></span>spin_lock_claim_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> spin_lock_claim_mask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>lock_num_mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a157bccb525bdfd90255490558cbeb9c0" name="a157bccb525bdfd90255490558cbeb9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157bccb525bdfd90255490558cbeb9c0">&#9670;&#160;</a></span>spin_lock_claim_unused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> spin_lock_claim_unused </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td>
+          <td class="paramname"><em>required</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__critical__section.html#ga22cd2722a96179036820e87b29209cfd">critical_section_init()</a>.</p>
+
+</div>
+</div>
+<a id="ad0ab66f82cdb5148c82f0a8887fdb500" name="ad0ab66f82cdb5148c82f0a8887fdb500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0ab66f82cdb5148c82f0a8887fdb500">&#9670;&#160;</a></span>spin_lock_get_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> spin_lock_get_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__critical__section.html#ga08444ba7879fae8813dd5573a13f0351">critical_section_deinit()</a>.</p>
+
+</div>
+</div>
+<a id="ad38821cab3d935b009c6551d5ff70c4c" name="ad38821cab3d935b009c6551d5ff70c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38821cab3d935b009c6551d5ff70c4c">&#9670;&#160;</a></span>spin_lock_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> * spin_lock_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>lock_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="sync__core0__only_8c.html#a570e1d9c049ade36ac9b4149cb3f02a2">spin_lock_instance()</a> e <a class="el" href="sync__core0__only_8c.html#af453e216d17861419dc39e2bb1e54623">spin_unlock_unsafe()</a>.</p>
+
+</div>
+</div>
+<a id="a19e225808b9ce7aeafb3b90e8e96754a" name="a19e225808b9ce7aeafb3b90e8e96754a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e225808b9ce7aeafb3b90e8e96754a">&#9670;&#160;</a></span>spin_lock_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> * spin_lock_instance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>lock_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a> e <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#ab545136d70754bcfe6c64ed2cf2a78ac">NUM_SPIN_LOCKS</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aef634bb4bf560052b5fa7cf48894ff30">clear_spin_locks()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a8b969c22d5e048c64c1261cfc586850b">counter_test_per_core()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a7a4cd3697318cb43a564f8befa340507">counter_try_test_per_core()</a>, <a class="el" href="group__critical__section.html#gae1b4eb5dcab9ac679970ac43d618de2c">critical_section_init_with_lock_num()</a>, <a class="el" href="group__pico__rand.html#ga783185fba81c03eb0c1d687d322b0112">get_rand_64()</a>, <a class="el" href="group__hardware__claim.html#gac322717d266403fac74aed5cef23eb95">hw_claim_lock()</a>, <a class="el" href="group__hardware__claim.html#gae5ebb9e8ede55de49e6296953d731005">hw_claim_unlock()</a>, <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>, <a class="el" href="rp2__common_2hardware__irq_2irq_8c.html#a6f07b7bb7cde52b312e33355f80da516">irq_add_tail_to_free_list()</a>, <a class="el" href="group__hardware__irq.html#ga42e9cdce7b82ef63c7b2416d32a42361">irq_get_exclusive_handler()</a>, <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a>, <a class="el" href="group__hardware__irq.html#gafffd448ba2d2eef5b355b88180aefe7f">irq_set_exclusive_handler()</a>, <a class="el" href="group__lock__core.html#gabc062dfb52c8f7f17ec8427d1c4414d9">lock_init()</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad38821cab3d935b009c6551d5ff70c4c">spin_lock_init()</a>, <a class="el" href="group__hardware__sync.html#ga177efc085451e4eabfc726897a59ca57">spin_lock_unclaim()</a>, <a class="el" href="group__hardware__sync.html#ga667a78000c57bdfb3585cbc56fccbe0b">spin_locks_reset()</a>, <a class="el" href="group__hardware__timer.html#gabdb6ba35d83bbf4e3d385821fef7fd05">timer_hardware_alarm_cancel()</a>, <a class="el" href="group__hardware__timer.html#ga638f76034b217ff7f8999ca16b919f63">timer_hardware_alarm_force_irq()</a>, <a class="el" href="group__hardware__timer.html#ga1f7d02607a27915fea3b99a65319d3c1">timer_hardware_alarm_set_callback()</a> e <a class="el" href="group__hardware__timer.html#ga8590dbfd69db9c3da5b628cd81efc22d">timer_hardware_alarm_set_target()</a>.</p>
+
+</div>
+</div>
+<a id="ae74bcd0bfa5c6c5575a542d592155a5a" name="ae74bcd0bfa5c6c5575a542d592155a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74bcd0bfa5c6c5575a542d592155a5a">&#9670;&#160;</a></span>spin_lock_num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> spin_lock_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a177efc085451e4eabfc726897a59ca57" name="a177efc085451e4eabfc726897a59ca57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177efc085451e4eabfc726897a59ca57">&#9670;&#160;</a></span>spin_lock_unclaim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> spin_lock_unclaim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>lock_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__critical__section.html#ga08444ba7879fae8813dd5573a13f0351">critical_section_deinit()</a>.</p>
+
+</div>
+</div>
+<a id="a3f735f58115783cbd45d3e3b8a754925" name="a3f735f58115783cbd45d3e3b8a754925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f735f58115783cbd45d3e3b8a754925">&#9670;&#160;</a></span>spin_lock_unsafe_blocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> spin_lock_unsafe_blocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a7d2876d2a555a0646b354742db81a519">spin_lock_blocking()</a>.</p>
+
+</div>
+</div>
+<a id="af4df3e7b60025a90629ee322fec8bc8f" name="af4df3e7b60025a90629ee322fec8bc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4df3e7b60025a90629ee322fec8bc8f">&#9670;&#160;</a></span>spin_unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> spin_unlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td>
+          <td class="paramname"><em>lock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>saved_irq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="sync__core0__only_8c.html#af453e216d17861419dc39e2bb1e54623">spin_unlock_unsafe()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__alarm.html#ga72bfc8c2dd5bf334cd68af2e349a1b37">alarm_pool_add_alarm_at_force_in_context()</a>, <a class="el" href="group__alarm.html#ga02cc23b4a3109fb8c2d57e24981f2932">alarm_pool_cancel_alarm()</a>, <a class="el" href="group__alarm.html#ga342ebecd5ebc1a39f1da0bac81069712">alarm_pool_remaining_alarm_time_us()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a8b969c22d5e048c64c1261cfc586850b">counter_test_per_core()</a>, <a class="el" href="group__pico__rand.html#ga783185fba81c03eb0c1d687d322b0112">get_rand_64()</a>, <a class="el" href="group__hardware__claim.html#gae5ebb9e8ede55de49e6296953d731005">hw_claim_unlock()</a>, <a class="el" href="rp2__common_2hardware__irq_2irq_8c.html#a6f07b7bb7cde52b312e33355f80da516">irq_add_tail_to_free_list()</a>, <a class="el" href="group__hardware__irq.html#ga42e9cdce7b82ef63c7b2416d32a42361">irq_get_exclusive_handler()</a>, <a class="el" href="group__mutex.html#ga69e2f75f0a38378b20c0f2bf9cc7bbe3">mutex_enter_block_until()</a>, <a class="el" href="group__mutex.html#ga65b1c7af0545f478c80b51513d8f6993">mutex_enter_blocking()</a>, <a class="el" href="group__mutex.html#gaa116de2f28fd7df8fb78b210e07b1ed4">mutex_try_enter()</a>, <a class="el" href="group__mutex.html#ga6ce3ca26cbce71a3e29396264e00e253">recursive_mutex_enter_block_until()</a>, <a class="el" href="group__mutex.html#gad11f3d954d96cfdc77025735d35983e1">recursive_mutex_enter_blocking()</a>, <a class="el" href="group__mutex.html#ga2f75321a04ba731f5875353fbaebc345">recursive_mutex_exit()</a>, <a class="el" href="group__mutex.html#gae431bbb90e45cf9ae47130a5635aa2b0">recursive_mutex_try_enter()</a>, <a class="el" href="group__sem.html#ga4410f17fc2f35b91e5bcfaf18bcf26ae">sem_acquire_block_until()</a>, <a class="el" href="group__sem.html#gaefa22667355703497ae883f68a87aacf">sem_acquire_blocking()</a>, <a class="el" href="group__sem.html#gaeac89066f5fdbde0c7db2718464dcbde">sem_release()</a>, <a class="el" href="group__sem.html#gab6c128952e4981a95ce2e2d093a8a3ba">sem_reset()</a>, <a class="el" href="group__sem.html#ga25b473ab6f287e4a6a0c9d0288a0a497">sem_try_acquire()</a>, <a class="el" href="group__hardware__timer.html#gabdb6ba35d83bbf4e3d385821fef7fd05">timer_hardware_alarm_cancel()</a>, <a class="el" href="group__hardware__timer.html#ga638f76034b217ff7f8999ca16b919f63">timer_hardware_alarm_force_irq()</a>, <a class="el" href="group__hardware__timer.html#ga1f7d02607a27915fea3b99a65319d3c1">timer_hardware_alarm_set_callback()</a> e <a class="el" href="group__hardware__timer.html#ga8590dbfd69db9c3da5b628cd81efc22d">timer_hardware_alarm_set_target()</a>.</p>
+
+</div>
+</div>
+<a id="a2c4583e1832628d04d78609580540589" name="a2c4583e1832628d04d78609580540589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4583e1832628d04d78609580540589">&#9670;&#160;</a></span>spin_unlock_unsafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> spin_unlock_unsafe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a96af910e1f1911aa6eb0b9f84410a151">spin_lock_t</a> *&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#aef634bb4bf560052b5fa7cf48894ff30">clear_spin_locks()</a>, <a class="el" href="hardware__sync__spin__lock__test_8c.html#a7a4cd3697318cb43a564f8befa340507">counter_try_test_per_core()</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#ad38821cab3d935b009c6551d5ff70c4c">spin_lock_init()</a>, <a class="el" href="group__hardware__sync.html#ga177efc085451e4eabfc726897a59ca57">spin_lock_unclaim()</a>, <a class="el" href="group__hardware__sync.html#ga667a78000c57bdfb3585cbc56fccbe0b">spin_locks_reset()</a> e <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_807b6346a9c18472135e047d65c02b1e.html">host</a></li><li class="navelem"><a class="el" href="dir_cd94a18a3a0f384352433a66814257d9.html">hardware_sync</a></li><li class="navelem"><a class="el" href="dir_04ed0e4c5c5e6adcfd4b61e2bb8f55c7.html">include</a></li><li class="navelem"><a class="el" href="dir_7d819c2fe8f4fead41cd689a607da8f2.html">hardware</a></li><li class="navelem"><a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html">sync.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

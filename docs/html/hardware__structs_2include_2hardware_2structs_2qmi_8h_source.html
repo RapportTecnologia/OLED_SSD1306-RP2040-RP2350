@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de qmi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('hardware__structs_2include_2hardware_2structs_2qmi_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hardware_structs/include/hardware/structs/qmi.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hardware__structs_2include_2hardware_2structs_2qmi_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _HARDWARE_STRUCTS_QMI_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _HARDWARE_STRUCTS_QMI_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html">hardware/regs/qmi.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Reference to datasheet: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf#tab-registerlist_qmi</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// The _REG_ macro is intended to help make the register navigable in your IDE (for example, using the &quot;Go to Definition&quot; feature)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// _REG_(x) will link to the corresponding register in hardware/regs/qmi.h.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Bit-field descriptions are of the form:</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// BITMASK [BITRANGE] FIELDNAME (RESETVALUE) DESCRIPTION</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structqmi__mem__hw__t.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a354826cbdb9d2e0dcae28f9a2fe50dd1">QMI_M0_TIMING_OFFSET</a>) <span class="comment">// QMI_M0_TIMING</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Timing configuration register for memory address window 0</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// 0xc0000000 [31:30] COOLDOWN     (0x1) Chip select cooldown period</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// 0x30000000 [29:28] PAGEBREAK    (0x0) When page break is enabled, chip select will...</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// 0x02000000 [25]    SELECT_SETUP (0) Add up to one additional system clock cycle of setup...</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// 0x01800000 [24:23] SELECT_HOLD  (0x0) Add up to three additional system clock cycles of active...</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// 0x007e0000 [22:17] MAX_SELECT   (0x00) Enforce a maximum assertion duration for this window&#39;s...</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// 0x0001f000 [16:12] MIN_DESELECT (0x00) After this window&#39;s chip select is deasserted, it...</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// 0x00000700 [10:8]  RXDELAY      (0x0) Delay the read data sample timing, in units of one half...</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// 0x000000ff [7:0]   CLKDIV       (0x04) Clock divisor</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structqmi__mem__hw__t.html#a9c9032c9ea18eb20546f919146f56ad3">   37</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> timing;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#ae5b7919d1531e6da1f2ba25f8f80ac1f">QMI_M0_RFMT_OFFSET</a>) <span class="comment">// QMI_M0_RFMT</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// Read transfer format configuration for memory address window 0.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// 0x10000000 [28]    DTR          (0) Enable double transfer rate (DTR) for read commands:...</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// 0x00070000 [18:16] DUMMY_LEN    (0x0) Length of dummy phase between command suffix and data...</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// 0x0000c000 [15:14] SUFFIX_LEN   (0x0) Length of post-address command suffix, in units of 4 bits</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// 0x00001000 [12]    PREFIX_LEN   (1) Length of command prefix, in units of 8 bits</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// 0x00000300 [9:8]   DATA_WIDTH   (0x0) The width used for the data transfer</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// 0x000000c0 [7:6]   DUMMY_WIDTH  (0x0) The width used for the dummy phase, if any</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// 0x00000030 [5:4]   SUFFIX_WIDTH (0x0) The width used for the post-address command suffix, if any</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// 0x0000000c [3:2]   ADDR_WIDTH   (0x0) The transfer width used for the address</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// 0x00000003 [1:0]   PREFIX_WIDTH (0x0) The transfer width used for the command prefix, if any</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structqmi__mem__hw__t.html#afc8262c532daf8ef1e44e236b13f7bc6">   50</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> rfmt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#ae7c1b76998977e8d3f46d8771df6f8d5">QMI_M0_RCMD_OFFSET</a>) <span class="comment">// QMI_M0_RCMD</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// Command constants used for reads from memory address window 0.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// 0x0000ff00 [15:8]  SUFFIX       (0xa0) The command suffix bits following the address, if...</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// 0x000000ff [7:0]   PREFIX       (0x03) The command prefix bits to prepend on each new transfer,...</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structqmi__mem__hw__t.html#a08fec4a91dacca446b5cce22cdb786c5">   56</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> rcmd;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a34a14512bd8faaf3d15ff49329d55e33">QMI_M0_WFMT_OFFSET</a>) <span class="comment">// QMI_M0_WFMT</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// Write transfer format configuration for memory address window 0.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// 0x10000000 [28]    DTR          (0) Enable double transfer rate (DTR) for write commands:...</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// 0x00070000 [18:16] DUMMY_LEN    (0x0) Length of dummy phase between command suffix and data...</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// 0x0000c000 [15:14] SUFFIX_LEN   (0x0) Length of post-address command suffix, in units of 4 bits</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// 0x00001000 [12]    PREFIX_LEN   (1) Length of command prefix, in units of 8 bits</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// 0x00000300 [9:8]   DATA_WIDTH   (0x0) The width used for the data transfer</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// 0x000000c0 [7:6]   DUMMY_WIDTH  (0x0) The width used for the dummy phase, if any</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// 0x00000030 [5:4]   SUFFIX_WIDTH (0x0) The width used for the post-address command suffix, if any</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// 0x0000000c [3:2]   ADDR_WIDTH   (0x0) The transfer width used for the address</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// 0x00000003 [1:0]   PREFIX_WIDTH (0x0) The transfer width used for the command prefix, if any</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structqmi__mem__hw__t.html#adcd1220eaa95e745a0890415042534e2">   69</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> wfmt;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#ab17281e0f7d7fd388cc2ac32ad94eeec">QMI_M0_WCMD_OFFSET</a>) <span class="comment">// QMI_M0_WCMD</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// Command constants used for writes to memory address window 0.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// 0x0000ff00 [15:8]  SUFFIX       (0xa0) The command suffix bits following the address, if...</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// 0x000000ff [7:0]   PREFIX       (0x02) The command prefix bits to prepend on each new transfer,...</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structqmi__mem__hw__t.html#a58d46cb554de67b75054a48240f69bb8">   75</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> wcmd;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>} <a class="code hl_struct" href="structqmi__mem__hw__t.html">qmi_mem_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="};">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structqmi__hw__t.html">   78</a></span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">struct</a> {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a5841ed2cb3d0bba97a62c1d9a37c0e27">QMI_DIRECT_CSR_OFFSET</a>) <span class="comment">// QMI_DIRECT_CSR</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// Control and status for direct serial mode</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// 0xc0000000 [31:30] RXDELAY      (0x0) Delay the read data sample timing, in units of one half...</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// 0x3fc00000 [29:22] CLKDIV       (0x06) Clock divisor for direct serial mode</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// 0x001c0000 [20:18] RXLEVEL      (0x0) Current level of DIRECT_RX FIFO</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// 0x00020000 [17]    RXFULL       (0) When 1, the DIRECT_RX FIFO is currently full</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// 0x00010000 [16]    RXEMPTY      (0) When 1, the DIRECT_RX FIFO is currently empty</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// 0x00007000 [14:12] TXLEVEL      (0x0) Current level of DIRECT_TX FIFO</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// 0x00000800 [11]    TXEMPTY      (0) When 1, the DIRECT_TX FIFO is currently empty</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="comment">// 0x00000400 [10]    TXFULL       (0) When 1, the DIRECT_TX FIFO is currently full</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// 0x00000080 [7]     AUTO_CS1N    (0) When 1, automatically assert the CS1n chip select line...</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// 0x00000040 [6]     AUTO_CS0N    (0) When 1, automatically assert the CS0n chip select line...</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// 0x00000008 [3]     ASSERT_CS1N  (0) When 1, assert (i</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// 0x00000004 [2]     ASSERT_CS0N  (0) When 1, assert (i</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">// 0x00000002 [1]     BUSY         (0) Direct mode busy flag</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// 0x00000001 [0]     EN           (0) Enable direct mode</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structqmi__hw__t.html#a78f764a60ee3cdcd37c66cb2a0591e67">   95</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> direct_csr;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#adb8d68e8a6e348a49fb46a0c1c9db4e7">QMI_DIRECT_TX_OFFSET</a>) <span class="comment">// QMI_DIRECT_TX</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// Transmit FIFO for direct mode</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// 0x00100000 [20]    NOPUSH       (0) Inhibit the RX FIFO push that would correspond to this...</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// 0x00080000 [19]    OE           (0) Output enable (active-high)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// 0x00040000 [18]    DWIDTH       (0) Data width</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// 0x00030000 [17:16] IWIDTH       (0x0) Configure whether this FIFO record is transferred with...</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// 0x0000ffff [15:0]  DATA         (0x0000) Data pushed here will be clocked out falling edges of...</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="structqmi__hw__t.html#ae9b767961c3c1fcd6e6da525af9ac59f">  104</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#aec2e26f447787f282e83a0c3f135b28d">io_wo_32</a> direct_tx;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#aaff80ddfa2eec0439d09ab7a1bb6fcbd">QMI_DIRECT_RX_OFFSET</a>) <span class="comment">// QMI_DIRECT_RX</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">// Receive FIFO for direct mode</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// 0x0000ffff [15:0]  DIRECT_RX    (0x0000) With each byte clocked out on the serial interface, one...</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structqmi__hw__t.html#a965a2cac64c1aa6396e1ede94037e9dd">  109</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> direct_rx;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="structqmi__hw__t.html#a105183915bca08630711e86d2fe5a423">  111</a></span>    <a class="code hl_struct" href="structqmi__mem__hw__t.html">qmi_mem_hw_t</a> m[2];</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// (Description copied from array index 0 register QMI_ATRANS0 applies similarly to other array indexes)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a1e989c8e2fac867048ecd0c81f27b1c4">QMI_ATRANS0_OFFSET</a>) <span class="comment">// QMI_ATRANS0</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// Configure address translation for XIP virtual addresses 0x000000 through 0x3fffff (a 4 MiB window starting at +0 MiB).</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">// 0x07ff0000 [26:16] SIZE         (0x400) Translation aperture size for this virtual address...</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// 0x00000fff [11:0]  BASE         (0x000) Physical address base for this virtual address range, in...</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="structqmi__hw__t.html#a1d8f10c5784f9034d4951b6b101f3390">  118</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> atrans[8];</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>} <a class="code hl_struct" href="structqmi__hw__t.html">qmi_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="hardware__structs_2include_2hardware_2structs_2qmi_8h.html#ae474b86b3705e84261a4db4ef509bab3">  121</a></span><span class="preprocessor">#define qmi_hw ((qmi_hw_t *)XIP_QMI_BASE)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span> (<a class="code hl_struct" href="structqmi__hw__t.html">qmi_hw_t</a>) == 0x0054, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_STRUCTS_QMI_H</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_a5e9dd65c504214b8530a3ce63adf8375"><div class="ttname"><a href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a></div><div class="ttdeci">#define _REG_(x)</div><div class="ttdef"><b>Definição</b> address_mapped.h:84</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ab87d9fde36e04e9e65c9f16f56982eeb"><div class="ttname"><a href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a></div><div class="ttdeci">const volatile uint32_t io_ro_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:67</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ae7a3903ffe232108a65efc85970a5fdb"><div class="ttname"><a href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a></div><div class="ttdeci">volatile uint32_t io_rw_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:66</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_aec2e26f447787f282e83a0c3f135b28d"><div class="ttname"><a href="address__mapped_8h.html#aec2e26f447787f282e83a0c3f135b28d">io_wo_32</a></div><div class="ttdeci">volatile uint32_t io_wo_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:68</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html">qmi.h</a></div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_a1e989c8e2fac867048ecd0c81f27b1c4"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a1e989c8e2fac867048ecd0c81f27b1c4">QMI_ATRANS0_OFFSET</a></div><div class="ttdeci">#define QMI_ATRANS0_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:1423</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_a34a14512bd8faaf3d15ff49329d55e33"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a34a14512bd8faaf3d15ff49329d55e33">QMI_M0_WFMT_OFFSET</a></div><div class="ttdeci">#define QMI_M0_WFMT_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:666</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_a354826cbdb9d2e0dcae28f9a2fe50dd1"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a354826cbdb9d2e0dcae28f9a2fe50dd1">QMI_M0_TIMING_OFFSET</a></div><div class="ttdeci">#define QMI_M0_TIMING_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:284</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_a5841ed2cb3d0bba97a62c1d9a37c0e27"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#a5841ed2cb3d0bba97a62c1d9a37c0e27">QMI_DIRECT_CSR_OFFSET</a></div><div class="ttdeci">#define QMI_DIRECT_CSR_OFFSET</div><div class="ttdoc">Copyright (c) 2024 Raspberry Pi Ltd.</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:29</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_aaff80ddfa2eec0439d09ab7a1bb6fcbd"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#aaff80ddfa2eec0439d09ab7a1bb6fcbd">QMI_DIRECT_RX_OFFSET</a></div><div class="ttdeci">#define QMI_DIRECT_RX_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:275</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_ab17281e0f7d7fd388cc2ac32ad94eeec"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#ab17281e0f7d7fd388cc2ac32ad94eeec">QMI_M0_WCMD_OFFSET</a></div><div class="ttdeci">#define QMI_M0_WCMD_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:823</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_adb8d68e8a6e348a49fb46a0c1c9db4e7"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#adb8d68e8a6e348a49fb46a0c1c9db4e7">QMI_DIRECT_TX_OFFSET</a></div><div class="ttdeci">#define QMI_DIRECT_TX_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:191</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_ae5b7919d1531e6da1f2ba25f8f80ac1f"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#ae5b7919d1531e6da1f2ba25f8f80ac1f">QMI_M0_RFMT_OFFSET</a></div><div class="ttdeci">#define QMI_M0_RFMT_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:474</div></div>
+<div class="ttc" id="ahardware__regs_2include_2hardware_2regs_2qmi_8h_html_ae7c1b76998977e8d3f46d8771df6f8d5"><div class="ttname"><a href="hardware__regs_2include_2hardware_2regs_2qmi_8h.html#ae7c1b76998977e8d3f46d8771df6f8d5">QMI_M0_RCMD_OFFSET</a></div><div class="ttdeci">#define QMI_M0_RCMD_OFFSET</div><div class="ttdef"><b>Definição</b> hardware_regs/include/hardware/regs/qmi.h:631</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+<div class="ttc" id="astructqmi__hw__t_html"><div class="ttname"><a href="structqmi__hw__t.html">qmi_hw_t</a></div><div class="ttdef"><b>Definição</b> hardware_structs/include/hardware/structs/qmi.h:78</div></div>
+<div class="ttc" id="astructqmi__mem__hw__t_html"><div class="ttname"><a href="structqmi__mem__hw__t.html">qmi_mem_hw_t</a></div><div class="ttdef"><b>Definição</b> hardware_structs/include/hardware/structs/qmi.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_a4ed9f159ff82891f8d9c6442d59a09f.html">hardware_structs</a></li><li class="navelem"><a class="el" href="dir_644b18fc6729bbffe612edd11fd9bb60.html">include</a></li><li class="navelem"><a class="el" href="dir_00f006c97f93acb2044a3e94d70d66ca.html">hardware</a></li><li class="navelem"><a class="el" href="dir_e7a506f13e8b3ea148c60a9313519183.html">structs</a></li><li class="navelem"><a class="el" href="hardware__structs_2include_2hardware_2structs_2qmi_8h.html">qmi.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

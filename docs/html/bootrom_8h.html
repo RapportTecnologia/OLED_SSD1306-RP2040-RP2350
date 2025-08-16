@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro bootrom.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('bootrom_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Definições de tipos</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro bootrom.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="pico__bootrom_2include_2pico_2bootrom__constants_8h_source.html">pico/bootrom_constants.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="lock_8h_source.html">pico/bootrom/lock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pico__flash_2include_2pico_2flash_8h_source.html">pico/flash.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para bootrom.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="bootrom_8h__incl.svg" width="527" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="bootrom_8h__dep__incl.svg" width="1571" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="bootrom_8h_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboot__info__t.html">boot_info_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrom__helper__explicit__buy__params__t.html">rom_helper_explicit_buy_params_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrom__helper__flash__op__params__t.html">rom_helper_flash_op_params_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a82e476c2814e0d0290930d5326cf6cb8" id="r_a82e476c2814e0d0290930d5326cf6cb8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a82e476c2814e0d0290930d5326cf6cb8">BOOT_TYPE_BOOTSEL</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a82e476c2814e0d0290930d5326cf6cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d113ea578876bc8c3753053149f9050" id="r_a2d113ea578876bc8c3753053149f9050"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a2d113ea578876bc8c3753053149f9050">BOOT_TYPE_CHAINED_FLAG</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:a2d113ea578876bc8c3753053149f9050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9355fbf10d7b05d5f010aa98892b5f" id="r_a3f9355fbf10d7b05d5f010aa98892b5f"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a3f9355fbf10d7b05d5f010aa98892b5f">BOOT_TYPE_FLASH_UPDATE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a3f9355fbf10d7b05d5f010aa98892b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e81e5e2d9b0e0ad5f1df84d7ece0493" id="r_a1e81e5e2d9b0e0ad5f1df84d7ece0493"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a1e81e5e2d9b0e0ad5f1df84d7ece0493">BOOT_TYPE_NORMAL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a1e81e5e2d9b0e0ad5f1df84d7ece0493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acf1a838404ca09352a485677988633" id="r_a8acf1a838404ca09352a485677988633"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a8acf1a838404ca09352a485677988633">BOOT_TYPE_PC_SP</a>&#160;&#160;&#160;0xd</td></tr>
+<tr class="separator:a8acf1a838404ca09352a485677988633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad772406af7a567b30bcef53939c3cc83" id="r_ad772406af7a567b30bcef53939c3cc83"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#ad772406af7a567b30bcef53939c3cc83">BOOT_TYPE_RAM_IMAGE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ad772406af7a567b30bcef53939c3cc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3bd02fe3045994527f18c1326e4600" id="r_a7e3bd02fe3045994527f18c1326e4600"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a7e3bd02fe3045994527f18c1326e4600">rom_hword_as_ptr</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_address</a>)&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a>)(*(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> *)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a>)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_address</a>))</td></tr>
+<tr class="separator:a7e3bd02fe3045994527f18c1326e4600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de tipos</h2></td></tr>
+<tr class="memitem:gaa0d8e5afb2db73425ff3ce85ee0bdbdc" id="r_gaa0d8e5afb2db73425ff3ce85ee0bdbdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#gaa0d8e5afb2db73425ff3ce85ee0bdbdc">__attribute__</a>((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">noreturn</a>)) <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_reset_usb_boot</a>(<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">usb_activity_gpio_pin_mask</a></td></tr>
+<tr class="memdesc:gaa0d8e5afb2db73425ff3ce85ee0bdbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reboot the device into BOOTSEL mode.  <br /></td></tr>
+<tr class="separator:gaa0d8e5afb2db73425ff3ce85ee0bdbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02170ec388e65f3996e6748bb5db3346" id="r_a02170ec388e65f3996e6748bb5db3346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_reset_usb_boot_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a02170ec388e65f3996e6748bb5db3346">reset_usb_boot_fn</a></td></tr>
+<tr class="separator:a02170ec388e65f3996e6748bb5db3346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a143bc74678dff43c1a5a2c4ddfa34" id="r_af9a143bc74678dff43c1a5a2c4ddfa34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#af9a143bc74678dff43c1a5a2c4ddfa34">rom_bootrom_state_reset_fn</a>) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> flags)</td></tr>
+<tr class="separator:af9a143bc74678dff43c1a5a2c4ddfa34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd9e3a58253e56132bd8b8ae1cafa55" id="r_a1cd9e3a58253e56132bd8b8ae1cafa55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a1cd9e3a58253e56132bd8b8ae1cafa55">rom_chain_image_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">window_base</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">window_size</a>)</td></tr>
+<tr class="separator:a1cd9e3a58253e56132bd8b8ae1cafa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e3fdfe532a5f4fd578b8939381d70a" id="r_a15e3fdfe532a5f4fd578b8939381d70a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a15e3fdfe532a5f4fd578b8939381d70a">rom_connect_internal_flash_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a15e3fdfe532a5f4fd578b8939381d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b2ae0e5005d263abc309206aac53b5" id="r_ae6b2ae0e5005d263abc309206aac53b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#ae6b2ae0e5005d263abc309206aac53b5">rom_explicit_buy_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *buffer, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> buffer_size)</td></tr>
+<tr class="separator:ae6b2ae0e5005d263abc309206aac53b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebcd5fa2bab910974a9ae70cf3ab55e" id="r_a2ebcd5fa2bab910974a9ae70cf3ab55e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a2ebcd5fa2bab910974a9ae70cf3ab55e">rom_flash_enter_cmd_xip_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a2ebcd5fa2bab910974a9ae70cf3ab55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d52f8355a29d9afd179c854c8ade7a5" id="r_a8d52f8355a29d9afd179c854c8ade7a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a8d52f8355a29d9afd179c854c8ade7a5">rom_flash_exit_xip_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a8d52f8355a29d9afd179c854c8ade7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712456b0aa1c7e2b146982d88ca60909" id="r_a712456b0aa1c7e2b146982d88ca60909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a712456b0aa1c7e2b146982d88ca60909">rom_flash_flush_cache_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a712456b0aa1c7e2b146982d88ca60909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef27b9a5e00f98fa437f711af062f9c5" id="r_aef27b9a5e00f98fa437f711af062f9c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#aef27b9a5e00f98fa437f711af062f9c5">rom_flash_op_fn</a>) (<a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2cde0ba3f85e7e696109ba06ee0eb3c6">cflash_flags_t</a> flags, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a> addr, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> size_bytes, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *buf)</td></tr>
+<tr class="separator:aef27b9a5e00f98fa437f711af062f9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5919321cfb15400379ea0cb1178393be" id="r_a5919321cfb15400379ea0cb1178393be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a5919321cfb15400379ea0cb1178393be">rom_flash_range_erase_fn</a>) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>)</td></tr>
+<tr class="separator:a5919321cfb15400379ea0cb1178393be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d69ddc3795b7c2a710273c895d258c" id="r_a64d69ddc3795b7c2a710273c895d258c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a64d69ddc3795b7c2a710273c895d258c">rom_flash_range_program_fn</a>) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>)</td></tr>
+<tr class="separator:a64d69ddc3795b7c2a710273c895d258c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384316d05532fae74f2020f4d28bac9a" id="r_a384316d05532fae74f2020f4d28bac9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a384316d05532fae74f2020f4d28bac9a">rom_flash_reset_address_trans_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a384316d05532fae74f2020f4d28bac9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c55f770a2a751ca4405849e676b8870" id="r_a4c55f770a2a751ca4405849e676b8870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">intptr_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a4c55f770a2a751ca4405849e676b8870">rom_flash_runtime_to_storage_addr_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_runtime_addr</a>)</td></tr>
+<tr class="separator:a4c55f770a2a751ca4405849e676b8870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4a67ac298edc8313b79dd20c52cb80" id="r_a2d4a67ac298edc8313b79dd20c52cb80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a2d4a67ac298edc8313b79dd20c52cb80">rom_flash_select_xip_read_mode_fn</a>) (<a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2">bootrom_xip_mode_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mode</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> clkdiv)</td></tr>
+<tr class="separator:a2d4a67ac298edc8313b79dd20c52cb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5be21f2c9d84ece732c1b7be9d70ee" id="r_a4d5be21f2c9d84ece732c1b7be9d70ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a4d5be21f2c9d84ece732c1b7be9d70ee">rom_func_otp_access_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *buf, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">buf_len</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#acbef05ca63bca46b1e7fc4ca8ddff4cb">otp_cmd_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">cmd</a>)</td></tr>
+<tr class="separator:a4d5be21f2c9d84ece732c1b7be9d70ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042106c7e535f8749857930810ecbde5" id="r_a042106c7e535f8749857930810ecbde5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a042106c7e535f8749857930810ecbde5">rom_func_secure_call</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a0</a>,...)</td></tr>
+<tr class="memdesc:a042106c7e535f8749857930810ecbde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note this is not strictly a C function; you must pass the function you are calling in r4.  <br /></td></tr>
+<tr class="separator:a042106c7e535f8749857930810ecbde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afa7b7f5bbf589162ab1ae0f2c2d5b1" id="r_a8afa7b7f5bbf589162ab1ae0f2c2d5b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a8afa7b7f5bbf589162ab1ae0f2c2d5b1">rom_get_b_partition_fn</a>) (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pi_a</a>)</td></tr>
+<tr class="separator:a8afa7b7f5bbf589162ab1ae0f2c2d5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3e5ccc80d2c3c9abbd2cd73b3d1e5a" id="r_a8e3e5ccc80d2c3c9abbd2cd73b3d1e5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a8e3e5ccc80d2c3c9abbd2cd73b3d1e5a">rom_get_partition_table_info_fn</a>) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer_word_size</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_and_flags</a>)</td></tr>
+<tr class="separator:a8e3e5ccc80d2c3c9abbd2cd73b3d1e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6aeea15f2da4d141b2c6b48f3213b9" id="r_a1e6aeea15f2da4d141b2c6b48f3213b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a1e6aeea15f2da4d141b2c6b48f3213b9">rom_get_sys_info_fn</a>) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer_word_size</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> flags)</td></tr>
+<tr class="separator:a1e6aeea15f2da4d141b2c6b48f3213b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c97ed31ef690c508e68f2b169c092a" id="r_a56c97ed31ef690c508e68f2b169c092a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a56c97ed31ef690c508e68f2b169c092a">rom_get_uf2_target_partition_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">family_id</a>, <a class="el" href="structresident__partition__t.html">resident_partition_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_out</a>)</td></tr>
+<tr class="separator:a56c97ed31ef690c508e68f2b169c092a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98da7ec9ce8151f280e0d169e658287" id="r_aa98da7ec9ce8151f280e0d169e658287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#aa98da7ec9ce8151f280e0d169e658287">rom_load_partition_table_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">force_reload</a>)</td></tr>
+<tr class="separator:aa98da7ec9ce8151f280e0d169e658287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0438d3c7cddcfe47e2b555b93ee6b3" id="r_a7a0438d3c7cddcfe47e2b555b93ee6b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a7a0438d3c7cddcfe47e2b555b93ee6b3">rom_pick_ab_partition_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_a_num</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_update_boot_window_base</a>)</td></tr>
+<tr class="separator:a7a0438d3c7cddcfe47e2b555b93ee6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35469e54295b01063a6cc4a7a0fe753d" id="r_a35469e54295b01063a6cc4a7a0fe753d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a35469e54295b01063a6cc4a7a0fe753d">rom_reboot_fn</a>) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> flags, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">delay_ms</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> p0, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> p1)</td></tr>
+<tr class="separator:a35469e54295b01063a6cc4a7a0fe753d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0727868dc29e9073ec292e6b87c6a6e0" id="r_a0727868dc29e9073ec292e6b87c6a6e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a0727868dc29e9073ec292e6b87c6a6e0">rom_set_ns_api_permission_fn</a>) (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ns_api_num</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">allowed</a>)</td></tr>
+<tr class="separator:a0727868dc29e9073ec292e6b87c6a6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f39bb34ecd1f271da8508e625927b2" id="r_ac6f39bb34ecd1f271da8508e625927b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">intptr_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#ac6f39bb34ecd1f271da8508e625927b2">rom_set_rom_callback_fn</a>) (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">callback_num</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a81809b31a1db642562f19b2bdf1a3c78">bootrom_api_callback_generic_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">funcptr</a>)</td></tr>
+<tr class="separator:ac6f39bb34ecd1f271da8508e625927b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496e4396170cff73b3a4c8037b684969" id="r_a496e4396170cff73b3a4c8037b684969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a496e4396170cff73b3a4c8037b684969">rom_table_lookup_fn</a>) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">code</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mask</a>)</td></tr>
+<tr class="separator:a496e4396170cff73b3a4c8037b684969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0c8992c31e641bad703d4111ad23a0" id="r_a3f0c8992c31e641bad703d4111ad23a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#a3f0c8992c31e641bad703d4111ad23a0">rom_validate_ns_buffer_fn</a>) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *addr, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">write</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ok</a>)</td></tr>
+<tr class="separator:a3f0c8992c31e641bad703d4111ad23a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4191163d43ca89913bb54da45cbbc8" id="r_aeb4191163d43ca89913bb54da45cbbc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></td></tr>
+<tr class="separator:aeb4191163d43ca89913bb54da45cbbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga17b99a409a7c1d595c202d0fa0d98c6e" id="r_ga17b99a409a7c1d595c202d0fa0d98c6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#ga17b99a409a7c1d595c202d0fa0d98c6e">rom_add_flash_runtime_partition</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">start_offset</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">permissions</a>)</td></tr>
+<tr class="memdesc:ga17b99a409a7c1d595c202d0fa0d98c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a runtime partition to the partition table to specify flash permissions.  <br /></td></tr>
+<tr class="separator:ga17b99a409a7c1d595c202d0fa0d98c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3e66e7bcbf0448a0a63cf37dfb4b53c" id="r_gad3e66e7bcbf0448a0a63cf37dfb4b53c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#gad3e66e7bcbf0448a0a63cf37dfb4b53c">rom_data_lookup</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">code</a>)</td></tr>
+<tr class="memdesc:gad3e66e7bcbf0448a0a63cf37dfb4b53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup a bootrom data address by its code.  <br /></td></tr>
+<tr class="separator:gad3e66e7bcbf0448a0a63cf37dfb4b53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaaf61234f389da6444b6479f29616d7d" id="r_gaaaf61234f389da6444b6479f29616d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#gaaaf61234f389da6444b6479f29616d7d">rom_func_lookup</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">code</a>)</td></tr>
+<tr class="memdesc:gaaaf61234f389da6444b6479f29616d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup a bootrom function by its code.  <br /></td></tr>
+<tr class="separator:gaaaf61234f389da6444b6479f29616d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31965209f0ddaeaecaeb3c516abda04d" id="r_ga31965209f0ddaeaecaeb3c516abda04d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#ga31965209f0ddaeaecaeb3c516abda04d">rom_funcs_lookup</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">table</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">unsigned</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>)</td></tr>
+<tr class="memdesc:ga31965209f0ddaeaecaeb3c516abda04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to lookup the addresses of multiple bootrom functions.  <br /></td></tr>
+<tr class="separator:ga31965209f0ddaeaecaeb3c516abda04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0ac554145d66038fdc1906c0f7ebfb" id="r_abf0ac554145d66038fdc1906c0f7ebfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#abf0ac554145d66038fdc1906c0f7ebfb">rom_get_boot_random</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275">out</a>[4])</td></tr>
+<tr class="separator:abf0ac554145d66038fdc1906c0f7ebfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d90d68d70435f3ecdaaa5f68b142c4f" id="r_ga1d90d68d70435f3ecdaaa5f68b142c4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pico__bootrom.html#ga1d90d68d70435f3ecdaaa5f68b142c4f">rom_pick_ab_partition_during_update</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_a_num</a>)</td></tr>
+<tr class="memdesc:ga1d90d68d70435f3ecdaaa5f68b142c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick A/B partition without disturbing any in progress Flash Update boot or TBYB boot.  <br /></td></tr>
+<tr class="separator:ga1d90d68d70435f3ecdaaa5f68b142c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:aa1e1afdc67311afa70c77c895aa63de5" id="r_aa1e1afdc67311afa70c77c895aa63de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#aa1e1afdc67311afa70c77c895aa63de5">disable_interface_mask</a></td></tr>
+<tr class="separator:aa1e1afdc67311afa70c77c895aa63de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae721eed67be910ddab10c22458e4cfac" id="r_ae721eed67be910ddab10c22458e4cfac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bootrom_8h.html#ae721eed67be910ddab10c22458e4cfac">usb_activity_gpio_pin_active_low</a></td></tr>
+<tr class="separator:ae721eed67be910ddab10c22458e4cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a82e476c2814e0d0290930d5326cf6cb8" name="a82e476c2814e0d0290930d5326cf6cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e476c2814e0d0290930d5326cf6cb8">&#9670;&#160;</a></span>BOOT_TYPE_BOOTSEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> BOOT_TYPE_BOOTSEL&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d113ea578876bc8c3753053149f9050" name="a2d113ea578876bc8c3753053149f9050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d113ea578876bc8c3753053149f9050">&#9670;&#160;</a></span>BOOT_TYPE_CHAINED_FLAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> BOOT_TYPE_CHAINED_FLAG&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f9355fbf10d7b05d5f010aa98892b5f" name="a3f9355fbf10d7b05d5f010aa98892b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9355fbf10d7b05d5f010aa98892b5f">&#9670;&#160;</a></span>BOOT_TYPE_FLASH_UPDATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> BOOT_TYPE_FLASH_UPDATE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e81e5e2d9b0e0ad5f1df84d7ece0493" name="a1e81e5e2d9b0e0ad5f1df84d7ece0493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e81e5e2d9b0e0ad5f1df84d7ece0493">&#9670;&#160;</a></span>BOOT_TYPE_NORMAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> BOOT_TYPE_NORMAL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8acf1a838404ca09352a485677988633" name="a8acf1a838404ca09352a485677988633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8acf1a838404ca09352a485677988633">&#9670;&#160;</a></span>BOOT_TYPE_PC_SP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> BOOT_TYPE_PC_SP&#160;&#160;&#160;0xd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad772406af7a567b30bcef53939c3cc83" name="ad772406af7a567b30bcef53939c3cc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad772406af7a567b30bcef53939c3cc83">&#9670;&#160;</a></span>BOOT_TYPE_RAM_IMAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> BOOT_TYPE_RAM_IMAGE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e3bd02fe3045994527f18c1326e4600" name="a7e3bd02fe3045994527f18c1326e4600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3bd02fe3045994527f18c1326e4600">&#9670;&#160;</a></span>rom_hword_as_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> rom_hword_as_ptr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_address</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a>)(*(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> *)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a>)(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_address</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos tipos</h2>
+<a id="a02170ec388e65f3996e6748bb5db3346" name="a02170ec388e65f3996e6748bb5db3346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02170ec388e65f3996e6748bb5db3346">&#9670;&#160;</a></span>reset_usb_boot_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_reset_usb_boot_fn</a> <a class="el" href="bootrom_8h.html#a02170ec388e65f3996e6748bb5db3346">reset_usb_boot_fn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9a143bc74678dff43c1a5a2c4ddfa34" name="af9a143bc74678dff43c1a5a2c4ddfa34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a143bc74678dff43c1a5a2c4ddfa34">&#9670;&#160;</a></span>rom_bootrom_state_reset_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_bootrom_state_reset_fn) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> flags)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cd9e3a58253e56132bd8b8ae1cafa55" name="a1cd9e3a58253e56132bd8b8ae1cafa55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd9e3a58253e56132bd8b8ae1cafa55">&#9670;&#160;</a></span>rom_chain_image_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_chain_image_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">window_base</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">window_size</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15e3fdfe532a5f4fd578b8939381d70a" name="a15e3fdfe532a5f4fd578b8939381d70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e3fdfe532a5f4fd578b8939381d70a">&#9670;&#160;</a></span>rom_connect_internal_flash_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_connect_internal_flash_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6b2ae0e5005d263abc309206aac53b5" name="ae6b2ae0e5005d263abc309206aac53b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b2ae0e5005d263abc309206aac53b5">&#9670;&#160;</a></span>rom_explicit_buy_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_explicit_buy_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *buffer, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> buffer_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ebcd5fa2bab910974a9ae70cf3ab55e" name="a2ebcd5fa2bab910974a9ae70cf3ab55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebcd5fa2bab910974a9ae70cf3ab55e">&#9670;&#160;</a></span>rom_flash_enter_cmd_xip_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_flash_enter_cmd_xip_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d52f8355a29d9afd179c854c8ade7a5" name="a8d52f8355a29d9afd179c854c8ade7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d52f8355a29d9afd179c854c8ade7a5">&#9670;&#160;</a></span>rom_flash_exit_xip_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_flash_exit_xip_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a712456b0aa1c7e2b146982d88ca60909" name="a712456b0aa1c7e2b146982d88ca60909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712456b0aa1c7e2b146982d88ca60909">&#9670;&#160;</a></span>rom_flash_flush_cache_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_flash_flush_cache_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef27b9a5e00f98fa437f711af062f9c5" name="aef27b9a5e00f98fa437f711af062f9c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef27b9a5e00f98fa437f711af062f9c5">&#9670;&#160;</a></span>rom_flash_op_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_flash_op_fn) (<a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a2cde0ba3f85e7e696109ba06ee0eb3c6">cflash_flags_t</a> flags, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a> addr, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> size_bytes, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *buf)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5919321cfb15400379ea0cb1178393be" name="a5919321cfb15400379ea0cb1178393be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5919321cfb15400379ea0cb1178393be">&#9670;&#160;</a></span>rom_flash_range_erase_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_flash_range_erase_fn) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64d69ddc3795b7c2a710273c895d258c" name="a64d69ddc3795b7c2a710273c895d258c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d69ddc3795b7c2a710273c895d258c">&#9670;&#160;</a></span>rom_flash_range_program_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_flash_range_program_fn) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a384316d05532fae74f2020f4d28bac9a" name="a384316d05532fae74f2020f4d28bac9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a384316d05532fae74f2020f4d28bac9a">&#9670;&#160;</a></span>rom_flash_reset_address_trans_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_flash_reset_address_trans_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c55f770a2a751ca4405849e676b8870" name="a4c55f770a2a751ca4405849e676b8870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c55f770a2a751ca4405849e676b8870">&#9670;&#160;</a></span>rom_flash_runtime_to_storage_addr_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">intptr_t</a>(* rom_flash_runtime_to_storage_addr_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_runtime_addr</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d4a67ac298edc8313b79dd20c52cb80" name="a2d4a67ac298edc8313b79dd20c52cb80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4a67ac298edc8313b79dd20c52cb80">&#9670;&#160;</a></span>rom_flash_select_xip_read_mode_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>(* rom_flash_select_xip_read_mode_fn) (<a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a6fdc0b7ed628547b2c63aea7c84ae5d2">bootrom_xip_mode_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mode</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> clkdiv)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d5be21f2c9d84ece732c1b7be9d70ee" name="a4d5be21f2c9d84ece732c1b7be9d70ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5be21f2c9d84ece732c1b7be9d70ee">&#9670;&#160;</a></span>rom_func_otp_access_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_func_otp_access_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *buf, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">buf_len</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#acbef05ca63bca46b1e7fc4ca8ddff4cb">otp_cmd_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">cmd</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a042106c7e535f8749857930810ecbde5" name="a042106c7e535f8749857930810ecbde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042106c7e535f8749857930810ecbde5">&#9670;&#160;</a></span>rom_func_secure_call</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_func_secure_call) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uintptr_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">a0</a>,...)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Note this is not strictly a C function; you must pass the function you are calling in r4. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_r4</td><td><code>0b0xxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx</code> - a "well known" function selector; do not use for your own methods <code>0b10xx xxxx xxxx xxxx xxxx xxxx xxxx xxxx</code> - a "unique" function selector intended to be unlikely to clash with others'. The lower 30 bits should be chosen at random <code>0b11xx xxxx xxxx xxxx xxxx xxxx xxxx xxxx</code> - a "private" function selector intended for use by tightly coupled NS and S code</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>whatever the secure call returns BOOTROM_ERROR_INVALID_STATE if no secure handler has been set from the secure side via <a class="el" href="bootrom_8h.html#ac6f39bb34ecd1f271da8508e625927b2">rom_set_rom_callback_fn(BOOTROM_API_CALLBACK_secure_call, ...)</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8afa7b7f5bbf589162ab1ae0f2c2d5b1" name="a8afa7b7f5bbf589162ab1ae0f2c2d5b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8afa7b7f5bbf589162ab1ae0f2c2d5b1">&#9670;&#160;</a></span>rom_get_b_partition_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_get_b_partition_fn) (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">pi_a</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e3e5ccc80d2c3c9abbd2cd73b3d1e5a" name="a8e3e5ccc80d2c3c9abbd2cd73b3d1e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3e5ccc80d2c3c9abbd2cd73b3d1e5a">&#9670;&#160;</a></span>rom_get_partition_table_info_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_get_partition_table_info_fn) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer_word_size</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_and_flags</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e6aeea15f2da4d141b2c6b48f3213b9" name="a1e6aeea15f2da4d141b2c6b48f3213b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6aeea15f2da4d141b2c6b48f3213b9">&#9670;&#160;</a></span>rom_get_sys_info_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_get_sys_info_fn) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">out_buffer_word_size</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> flags)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56c97ed31ef690c508e68f2b169c092a" name="a56c97ed31ef690c508e68f2b169c092a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c97ed31ef690c508e68f2b169c092a">&#9670;&#160;</a></span>rom_get_uf2_target_partition_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_get_uf2_target_partition_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">family_id</a>, <a class="el" href="structresident__partition__t.html">resident_partition_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_out</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa98da7ec9ce8151f280e0d169e658287" name="aa98da7ec9ce8151f280e0d169e658287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98da7ec9ce8151f280e0d169e658287">&#9670;&#160;</a></span>rom_load_partition_table_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_load_partition_table_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">force_reload</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a0438d3c7cddcfe47e2b555b93ee6b3" name="a7a0438d3c7cddcfe47e2b555b93ee6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0438d3c7cddcfe47e2b555b93ee6b3">&#9670;&#160;</a></span>rom_pick_ab_partition_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_pick_ab_partition_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> *workarea_base, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> workarea_size, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">partition_a_num</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">flash_update_boot_window_base</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35469e54295b01063a6cc4a7a0fe753d" name="a35469e54295b01063a6cc4a7a0fe753d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35469e54295b01063a6cc4a7a0fe753d">&#9670;&#160;</a></span>rom_reboot_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_reboot_fn) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> flags, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">delay_ms</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> p0, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> p1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0727868dc29e9073ec292e6b87c6a6e0" name="a0727868dc29e9073ec292e6b87c6a6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0727868dc29e9073ec292e6b87c6a6e0">&#9670;&#160;</a></span>rom_set_ns_api_permission_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>(* rom_set_ns_api_permission_fn) (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ns_api_num</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">allowed</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6f39bb34ecd1f271da8508e625927b2" name="ac6f39bb34ecd1f271da8508e625927b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f39bb34ecd1f271da8508e625927b2">&#9670;&#160;</a></span>rom_set_rom_callback_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">intptr_t</a>(* rom_set_rom_callback_fn) (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">callback_num</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a81809b31a1db642562f19b2bdf1a3c78">bootrom_api_callback_generic_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">funcptr</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>BOOTROM_OK if successful BOOTROM_ERROR_INVALID_ARG if ns_api_num is out of range </dd></dl>
+
+</div>
+</div>
+<a id="a496e4396170cff73b3a4c8037b684969" name="a496e4396170cff73b3a4c8037b684969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496e4396170cff73b3a4c8037b684969">&#9670;&#160;</a></span>rom_table_lookup_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *(* rom_table_lookup_fn) (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">code</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">mask</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f0c8992c31e641bad703d4111ad23a0" name="a3f0c8992c31e641bad703d4111ad23a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0c8992c31e641bad703d4111ad23a0">&#9670;&#160;</a></span>rom_validate_ns_buffer_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *(* rom_validate_ns_buffer_fn) (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *addr, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> size, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">write</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ok</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb4191163d43ca89913bb54da45cbbc8" name="aeb4191163d43ca89913bb54da45cbbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4191163d43ca89913bb54da45cbbc8">&#9670;&#160;</a></span>uint32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">typedef</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="abf0ac554145d66038fdc1906c0f7ebfb" name="abf0ac554145d66038fdc1906c0f7ebfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0ac554145d66038fdc1906c0f7ebfb">&#9670;&#160;</a></span>rom_get_boot_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> rom_get_boot_random </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>out</em>[4]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a29022c0c92a05cf88ca5046c59d6f629">count_of</a>, <a class="el" href="pio__types_8h.html#ac78bdf3e73cf9c21a952bedd064dcb17ac68271a63ddbc431c307beb7d2918275">out</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a777ea842f3395f3631f05f65f96eb50f">ROM_FUNC_GET_SYS_INFO</a> e <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a61bb5835fbaaf04a2b82a4ddb6f65934">SYS_INFO_BOOT_RANDOM</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="aa1e1afdc67311afa70c77c895aa63de5" name="aa1e1afdc67311afa70c77c895aa63de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e1afdc67311afa70c77c895aa63de5">&#9670;&#160;</a></span>disable_interface_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> disable_interface_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">rom_reset_usb_boot</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">usb_activity_gpio_pin_mask</a>, <a class="code hl_variable" href="bootrom_8h.html#aa1e1afdc67311afa70c77c895aa63de5">disable_interface_mask</a>)</div>
+<div class="ttc" id="abootrom_8h_html_aa1e1afdc67311afa70c77c895aa63de5"><div class="ttname"><a href="bootrom_8h.html#aa1e1afdc67311afa70c77c895aa63de5">disable_interface_mask</a></div><div class="ttdeci">void uint32_t disable_interface_mask</div><div class="ttdef"><b>Definição</b> bootrom.h:261</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+</div><!-- fragment -->
+<p class="reference">Referenciado por <a class="el" href="bootrom_8c.html#a93b9cf91f7623d6d8b100a3693d6d5e4">__attribute__()</a>.</p>
+
+</div>
+</div>
+<a id="ae721eed67be910ddab10c22458e4cfac" name="ae721eed67be910ddab10c22458e4cfac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae721eed67be910ddab10c22458e4cfac">&#9670;&#160;</a></span>usb_activity_gpio_pin_active_low</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> usb_activity_gpio_pin_active_low</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_1686c45b041666fce3b490096f338b4d.html">pico_bootrom</a></li><li class="navelem"><a class="el" href="dir_e1b8500c7e2c0bc439ffdfc512d41e52.html">include</a></li><li class="navelem"><a class="el" href="dir_eddf11deabc7d493b55f5e5b53aad316.html">pico</a></li><li class="navelem"><a class="el" href="bootrom_8h.html">bootrom.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura WATCHDOG_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structWATCHDOG__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structWATCHDOG__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura WATCHDOG_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>WATCHDOG (WATCHDOG)  
+ <a href="structWATCHDOG__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para WATCHDOG_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structWATCHDOG__Type__coll__graph.svg" width="139" height="296"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a78578d454afbf2681c6984577535013f" id="r_a78578d454afbf2681c6984577535013f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a78578d454afbf2681c6984577535013f">CTRL</a></td></tr>
+<tr class="memdesc:a78578d454afbf2681c6984577535013f"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; WATCHDOG Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a78578d454afbf2681c6984577535013f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157edafbfe4da556cfe83c5c27200e3b" id="r_a157edafbfe4da556cfe83c5c27200e3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a157edafbfe4da556cfe83c5c27200e3b">LOAD</a></td></tr>
+<tr class="memdesc:a157edafbfe4da556cfe83c5c27200e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the watchdog timer.  <br /></td></tr>
+<tr class="separator:a157edafbfe4da556cfe83c5c27200e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffddfa4a172fff73b6735b40a2e6635" id="r_acffddfa4a172fff73b6735b40a2e6635"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#acffddfa4a172fff73b6735b40a2e6635">REASON</a></td></tr>
+<tr class="memdesc:acffddfa4a172fff73b6735b40a2e6635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the reason for the last reset.  <br /></td></tr>
+<tr class="separator:acffddfa4a172fff73b6735b40a2e6635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105267f57cb9cf0a34f1b27dc5e4c28a" id="r_a105267f57cb9cf0a34f1b27dc5e4c28a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a105267f57cb9cf0a34f1b27dc5e4c28a">SCRATCH0</a></td></tr>
+<tr class="memdesc:a105267f57cb9cf0a34f1b27dc5e4c28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a105267f57cb9cf0a34f1b27dc5e4c28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b327e9923e0edeb55e9108c3bca0be6" id="r_a4b327e9923e0edeb55e9108c3bca0be6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a4b327e9923e0edeb55e9108c3bca0be6">SCRATCH1</a></td></tr>
+<tr class="memdesc:a4b327e9923e0edeb55e9108c3bca0be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a4b327e9923e0edeb55e9108c3bca0be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff820440aaa41a7a852d2965d445d99" id="r_afff820440aaa41a7a852d2965d445d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#afff820440aaa41a7a852d2965d445d99">SCRATCH2</a></td></tr>
+<tr class="memdesc:afff820440aaa41a7a852d2965d445d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:afff820440aaa41a7a852d2965d445d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e8e857234b77aab54ef50eb22f6244" id="r_ad3e8e857234b77aab54ef50eb22f6244"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#ad3e8e857234b77aab54ef50eb22f6244">SCRATCH3</a></td></tr>
+<tr class="memdesc:ad3e8e857234b77aab54ef50eb22f6244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:ad3e8e857234b77aab54ef50eb22f6244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22851bb10f803d67540ed2742b931f5c" id="r_a22851bb10f803d67540ed2742b931f5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a22851bb10f803d67540ed2742b931f5c">SCRATCH4</a></td></tr>
+<tr class="memdesc:a22851bb10f803d67540ed2742b931f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a22851bb10f803d67540ed2742b931f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fffb7a2e516aef9272d6252a33bfccc" id="r_a9fffb7a2e516aef9272d6252a33bfccc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a9fffb7a2e516aef9272d6252a33bfccc">SCRATCH5</a></td></tr>
+<tr class="memdesc:a9fffb7a2e516aef9272d6252a33bfccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a9fffb7a2e516aef9272d6252a33bfccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5a1cc762c58fae72d8b42e331bc5f2" id="r_afb5a1cc762c58fae72d8b42e331bc5f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#afb5a1cc762c58fae72d8b42e331bc5f2">SCRATCH6</a></td></tr>
+<tr class="memdesc:afb5a1cc762c58fae72d8b42e331bc5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:afb5a1cc762c58fae72d8b42e331bc5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed3885af8904193cdd68e18e9ad2e23" id="r_a9ed3885af8904193cdd68e18e9ad2e23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a9ed3885af8904193cdd68e18e9ad2e23">SCRATCH7</a></td></tr>
+<tr class="memdesc:a9ed3885af8904193cdd68e18e9ad2e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scratch register.  <br /></td></tr>
+<tr class="separator:a9ed3885af8904193cdd68e18e9ad2e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bcfcfb15bb64b0b6cb08815908e178" id="r_a28bcfcfb15bb64b0b6cb08815908e178"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWATCHDOG__Type.html#a28bcfcfb15bb64b0b6cb08815908e178">TICK</a></td></tr>
+<tr class="memdesc:a28bcfcfb15bb64b0b6cb08815908e178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls the tick generator <br  />
+  <br /></td></tr>
+<tr class="separator:a28bcfcfb15bb64b0b6cb08815908e178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>WATCHDOG (WATCHDOG) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a78578d454afbf2681c6984577535013f" name="a78578d454afbf2681c6984577535013f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78578d454afbf2681c6984577535013f">&#9670;&#160;</a></span>CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; WATCHDOG Structure <br  />
+ </p>
+<p>Watchdog control The rst_wdsel register determines which subsystems are reset when the watchdog is triggered. The watchdog can be triggered in software. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a157edafbfe4da556cfe83c5c27200e3b" name="a157edafbfe4da556cfe83c5c27200e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157edafbfe4da556cfe83c5c27200e3b">&#9670;&#160;</a></span>LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::LOAD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load the watchdog timer. </p>
+<p>The maximum setting is 0xffffff which corresponds to 0xffffff / 2 ticks before triggering a watchdog reset (see errata RP2040-E1). <br  />
+</p>
+<p>The maximum setting is 0xffffff which corresponds to approximately 16 seconds. <br  />
+ </p>
+
+</div>
+</div>
+<a id="acffddfa4a172fff73b6735b40a2e6635" name="acffddfa4a172fff73b6735b40a2e6635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffddfa4a172fff73b6735b40a2e6635">&#9670;&#160;</a></span>REASON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::REASON</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs the reason for the last reset. </p>
+<p>Both bits are zero for the case of a hardware reset. <br  />
+</p>
+<p>Both bits are zero for the case of a hardware reset. Additionally, as of RP2350, a debugger warm reset of either core (SYSRESETREQ or hartreset) will also clear the watchdog reason register, so that software loaded under the debugger following a watchdog timeout will not continue to see the timeout condition. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a105267f57cb9cf0a34f1b27dc5e4c28a" name="a105267f57cb9cf0a34f1b27dc5e4c28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105267f57cb9cf0a34f1b27dc5e4c28a">&#9670;&#160;</a></span>SCRATCH0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4b327e9923e0edeb55e9108c3bca0be6" name="a4b327e9923e0edeb55e9108c3bca0be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b327e9923e0edeb55e9108c3bca0be6">&#9670;&#160;</a></span>SCRATCH1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="afff820440aaa41a7a852d2965d445d99" name="afff820440aaa41a7a852d2965d445d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff820440aaa41a7a852d2965d445d99">&#9670;&#160;</a></span>SCRATCH2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad3e8e857234b77aab54ef50eb22f6244" name="ad3e8e857234b77aab54ef50eb22f6244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e8e857234b77aab54ef50eb22f6244">&#9670;&#160;</a></span>SCRATCH3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a22851bb10f803d67540ed2742b931f5c" name="a22851bb10f803d67540ed2742b931f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22851bb10f803d67540ed2742b931f5c">&#9670;&#160;</a></span>SCRATCH4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9fffb7a2e516aef9272d6252a33bfccc" name="a9fffb7a2e516aef9272d6252a33bfccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fffb7a2e516aef9272d6252a33bfccc">&#9670;&#160;</a></span>SCRATCH5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="afb5a1cc762c58fae72d8b42e331bc5f2" name="afb5a1cc762c58fae72d8b42e331bc5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5a1cc762c58fae72d8b42e331bc5f2">&#9670;&#160;</a></span>SCRATCH6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9ed3885af8904193cdd68e18e9ad2e23" name="a9ed3885af8904193cdd68e18e9ad2e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed3885af8904193cdd68e18e9ad2e23">&#9670;&#160;</a></span>SCRATCH7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::SCRATCH7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scratch register. </p>
+<p>Information persists through soft reset of the chip. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a28bcfcfb15bb64b0b6cb08815908e178" name="a28bcfcfb15bb64b0b6cb08815908e178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bcfcfb15bb64b0b6cb08815908e178">&#9670;&#160;</a></span>TICK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> WATCHDOG_Type::TICK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Controls the tick generator <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structWATCHDOG__Type.html">WATCHDOG_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

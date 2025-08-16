@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro clocks.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('clocks_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro clocks.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico.h&quot;</code><br />
+<code>#include &quot;hardware/regs/clocks.h&quot;</code><br />
+<code>#include &quot;hardware/platform_defs.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h_source.html">hardware/clocks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__pll_2include_2hardware_2pll_8h_source.html">hardware/pll.h</a>&quot;</code><br />
+<code>#include &quot;hardware/irq.h&quot;</code><br />
+<code>#include &quot;hardware/gpio.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para clocks.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="clocks_8c__incl.svg" width="1067" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a178595f8a8fb13b6a05d86c3a6d227a9" id="r_a178595f8a8fb13b6a05d86c3a6d227a9"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clocks_8c.html#a178595f8a8fb13b6a05d86c3a6d227a9">PICO_CLOCK_ADJUST_PERI_CLOCK_WITH_SYS_CLOCK</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a178595f8a8fb13b6a05d86c3a6d227a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a6740bee05b89b1b16439404243a4f3c3" id="r_a6740bee05b89b1b16439404243a4f3c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clocks_8c.html#a6740bee05b89b1b16439404243a4f3c3">check_hw_layout</a> (<a class="el" href="structclocks__hw__t.html">clocks_hw_t</a>, clk[<a class="el" href="group__hardware__clocks.html#ggacf8c8ac7970cacdec6c5f62a62926644afb4bd0bf16d8916c4cb56fa77b4f0b0d">clk_adc</a>].selected, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2clocks_8h.html#a7cb2c84dc823804c1dd1b3ab025106e7">CLOCKS_CLK_ADC_SELECTED_OFFSET</a>)</td></tr>
+<tr class="separator:a6740bee05b89b1b16439404243a4f3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec59a5053d450865d788cf981704c9c8" id="r_aec59a5053d450865d788cf981704c9c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clocks_8c.html#aec59a5053d450865d788cf981704c9c8">check_hw_layout</a> (<a class="el" href="structclocks__hw__t.html">clocks_hw_t</a>, fc0.result, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2clocks_8h.html#ac78b8a8ca7e8beb6d7c5b579a59af7c2">CLOCKS_FC0_RESULT_OFFSET</a>)</td></tr>
+<tr class="separator:aec59a5053d450865d788cf981704c9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e280b652a52c3914f94a2db668800ab" id="r_a4e280b652a52c3914f94a2db668800ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clocks_8c.html#a4e280b652a52c3914f94a2db668800ab">check_hw_layout</a> (<a class="el" href="structclocks__hw__t.html">clocks_hw_t</a>, ints, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2clocks_8h.html#aa55cdf26399909969ef28a985b70a0b0">CLOCKS_INTS_OFFSET</a>)</td></tr>
+<tr class="separator:a4e280b652a52c3914f94a2db668800ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa509e1c42d351a21ac87a790d7c37e0" id="r_gafa509e1c42d351a21ac87a790d7c37e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#gafa509e1c42d351a21ac87a790d7c37e0">check_sys_clock_hz</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">freq_hz</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">vco_out</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">postdiv1_out</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">postdiv2_out</a>)</td></tr>
+<tr class="memdesc:gafa509e1c42d351a21ac87a790d7c37e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a given system clock frequency is valid/attainable.  <br /></td></tr>
+<tr class="separator:gafa509e1c42d351a21ac87a790d7c37e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8553a9d91b581e0d3dbccd8d83b1a1b9" id="r_ga8553a9d91b581e0d3dbccd8d83b1a1b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga8553a9d91b581e0d3dbccd8d83b1a1b9">check_sys_clock_khz</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">freq_khz</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">vco_out</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">postdiv1_out</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">postdiv2_out</a>)</td></tr>
+<tr class="memdesc:ga8553a9d91b581e0d3dbccd8d83b1a1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a given system clock frequency is valid/attainable.  <br /></td></tr>
+<tr class="separator:ga8553a9d91b581e0d3dbccd8d83b1a1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4da87f338212a24bbebce4dd570b81bb" id="r_ga4da87f338212a24bbebce4dd570b81bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga4da87f338212a24bbebce4dd570b81bb">clock_configure</a> (<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h.html#aee6055b5fa72e4f9fcbf00b2364f5c41">clock_handle_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">clock</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> src, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auxsrc</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">src_freq</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">freq</a>)</td></tr>
+<tr class="memdesc:ga4da87f338212a24bbebce4dd570b81bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the specified clock with automatic clock divisor setup.  <br /></td></tr>
+<tr class="separator:ga4da87f338212a24bbebce4dd570b81bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae15228c0d8298d19d883a453334a4d40" id="r_gae15228c0d8298d19d883a453334a4d40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#gae15228c0d8298d19d883a453334a4d40">clock_configure_gpin</a> (<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h.html#aee6055b5fa72e4f9fcbf00b2364f5c41">clock_handle_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">clock</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">src_freq</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">freq</a>)</td></tr>
+<tr class="memdesc:gae15228c0d8298d19d883a453334a4d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a clock to come from a gpio input.  <br /></td></tr>
+<tr class="separator:gae15228c0d8298d19d883a453334a4d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga097a126a24cec137d4cc6c01a388f8a5" id="r_ga097a126a24cec137d4cc6c01a388f8a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga097a126a24cec137d4cc6c01a388f8a5">clock_configure_int_divider</a> (<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h.html#aee6055b5fa72e4f9fcbf00b2364f5c41">clock_handle_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">clock</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> src, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auxsrc</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">src_freq</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int_divider</a>)</td></tr>
+<tr class="memdesc:ga097a126a24cec137d4cc6c01a388f8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the specified clock to use the undivided input source.  <br /></td></tr>
+<tr class="separator:ga097a126a24cec137d4cc6c01a388f8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b3cc59b3628108d77b2b1b548ec8053" id="r_ga6b3cc59b3628108d77b2b1b548ec8053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga6b3cc59b3628108d77b2b1b548ec8053">clock_configure_undivided</a> (<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h.html#aee6055b5fa72e4f9fcbf00b2364f5c41">clock_handle_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">clock</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> src, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">auxsrc</a>, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">src_freq</a>)</td></tr>
+<tr class="memdesc:ga6b3cc59b3628108d77b2b1b548ec8053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the specified clock to use the undivided input source.  <br /></td></tr>
+<tr class="separator:ga6b3cc59b3628108d77b2b1b548ec8053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2e43d722ca3375f53cb65513275a625" id="r_gaa2e43d722ca3375f53cb65513275a625"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#gaa2e43d722ca3375f53cb65513275a625">clock_get_hz</a> (<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h.html#aee6055b5fa72e4f9fcbf00b2364f5c41">clock_handle_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">clock</a>)</td></tr>
+<tr class="memdesc:gaa2e43d722ca3375f53cb65513275a625"><td class="mdescLeft">&#160;</td><td class="mdescRight">\end<a class="el" href="group__hardware__clocks.html#ga4da87f338212a24bbebce4dd570b81bb" title="Configure the specified clock with automatic clock divisor setup.">clock_configure</a>[]  <br /></td></tr>
+<tr class="separator:gaa2e43d722ca3375f53cb65513275a625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0a3891d48e37432740607ed66873c6d" id="r_gab0a3891d48e37432740607ed66873c6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#gab0a3891d48e37432740607ed66873c6d">clock_gpio_init_int_frac16</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> gpio, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> src, <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">div_int</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">div_frac16</a>)</td></tr>
+<tr class="memdesc:gab0a3891d48e37432740607ed66873c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output an optionally divided clock to the specified gpio pin.  <br /></td></tr>
+<tr class="separator:gab0a3891d48e37432740607ed66873c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a8d16dd4e2afa2dbb6fc3d884c2269c" id="r_ga9a8d16dd4e2afa2dbb6fc3d884c2269c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga9a8d16dd4e2afa2dbb6fc3d884c2269c">clock_set_reported_hz</a> (<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h.html#aee6055b5fa72e4f9fcbf00b2364f5c41">clock_handle_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">clock</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">hz</a>)</td></tr>
+<tr class="memdesc:ga9a8d16dd4e2afa2dbb6fc3d884c2269c"><td class="mdescLeft">&#160;</td><td class="mdescRight">\end<a class="el" href="group__hardware__clocks.html#gaa2e43d722ca3375f53cb65513275a625" title="\endclock_configure[]">clock_get_hz</a>[]  <br /></td></tr>
+<tr class="separator:ga9a8d16dd4e2afa2dbb6fc3d884c2269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33862124558abcae451a0607df8d19bc" id="r_ga33862124558abcae451a0607df8d19bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga33862124558abcae451a0607df8d19bc">clock_stop</a> (<a class="el" href="rp2__common_2hardware__clocks_2include_2hardware_2clocks_8h.html#aee6055b5fa72e4f9fcbf00b2364f5c41">clock_handle_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">clock</a>)</td></tr>
+<tr class="memdesc:ga33862124558abcae451a0607df8d19bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the specified clock.  <br /></td></tr>
+<tr class="separator:ga33862124558abcae451a0607df8d19bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga614700afaa5ee6767ef2cf662e63f84c" id="r_ga614700afaa5ee6767ef2cf662e63f84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga614700afaa5ee6767ef2cf662e63f84c">clocks_enable_resus</a> (<a class="el" href="group__hardware__clocks.html#ga60fddc9bfe13c979c8e3a777d0d89037">resus_callback_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">resus_callback</a>)</td></tr>
+<tr class="memdesc:ga614700afaa5ee6767ef2cf662e63f84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the resus function.  <br /></td></tr>
+<tr class="separator:ga614700afaa5ee6767ef2cf662e63f84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb4a4f07e66523304837a6498276dd53" id="r_gaeb4a4f07e66523304837a6498276dd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#gaeb4a4f07e66523304837a6498276dd53">frequency_count_khz</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> src)</td></tr>
+<tr class="memdesc:gaeb4a4f07e66523304837a6498276dd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">\tag<a class="el" href="group__hardware__clocks.html#gaeb4a4f07e66523304837a6498276dd53" title="\tagfrequency_count_khz[]">frequency_count_khz</a>[]  <br /></td></tr>
+<tr class="separator:gaeb4a4f07e66523304837a6498276dd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89efe34eab0b8b96954eb0e19a38c8be" id="r_ga89efe34eab0b8b96954eb0e19a38c8be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga89efe34eab0b8b96954eb0e19a38c8be">set_sys_clock_48mhz</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="memdesc:ga89efe34eab0b8b96954eb0e19a38c8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the system clock to 48MHz.  <br /></td></tr>
+<tr class="separator:ga89efe34eab0b8b96954eb0e19a38c8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44d5e0845d4f75f3b0c97c733e39f4c8" id="r_ga44d5e0845d4f75f3b0c97c733e39f4c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hardware__clocks.html#ga44d5e0845d4f75f3b0c97c733e39f4c8">set_sys_clock_pll</a> (<a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">vco_freq</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">post_div1</a>, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">post_div2</a>)</td></tr>
+<tr class="memdesc:ga44d5e0845d4f75f3b0c97c733e39f4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the system clock.  <br /></td></tr>
+<tr class="separator:ga44d5e0845d4f75f3b0c97c733e39f4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="a178595f8a8fb13b6a05d86c3a6d227a9" name="a178595f8a8fb13b6a05d86c3a6d227a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178595f8a8fb13b6a05d86c3a6d227a9">&#9670;&#160;</a></span>PICO_CLOCK_ADJUST_PERI_CLOCK_WITH_SYS_CLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_CLOCK_ADJUST_PERI_CLOCK_WITH_SYS_CLOCK&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a6740bee05b89b1b16439404243a4f3c3" name="a6740bee05b89b1b16439404243a4f3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6740bee05b89b1b16439404243a4f3c3">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structclocks__hw__t.html">clocks_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">clk.&#160;</td>
+          <td class="paramname"><em>selected</em>[clk_adc], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2clocks_8h.html#a7cb2c84dc823804c1dd1b3ab025106e7">CLOCKS_CLK_ADC_SELECTED_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec59a5053d450865d788cf981704c9c8" name="aec59a5053d450865d788cf981704c9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec59a5053d450865d788cf981704c9c8">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structclocks__hw__t.html">clocks_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fc0.&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2clocks_8h.html#ac78b8a8ca7e8beb6d7c5b579a59af7c2">CLOCKS_FC0_RESULT_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e280b652a52c3914f94a2db668800ab" name="a4e280b652a52c3914f94a2db668800ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e280b652a52c3914f94a2db668800ab">&#9670;&#160;</a></span>check_hw_layout() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">check_hw_layout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structclocks__hw__t.html">clocks_hw_t</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ints&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2clocks_8h.html#aa55cdf26399909969ef28a985b70a0b0">CLOCKS_INTS_OFFSET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_09eb891803a953f86028aa29a6822298.html">hardware_clocks</a></li><li class="navelem"><a class="el" href="clocks_8c.html">clocks.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

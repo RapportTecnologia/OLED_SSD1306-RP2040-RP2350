@@ -1,0 +1,642 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura UART0_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structUART0__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structUART0__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura UART0_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>UART0 (UART0)  
+ <a href="structUART0__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para UART0_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structUART0__Type__coll__graph.svg" width="124" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a10de78e4caa33eca21496acff2aaf159" id="r_a10de78e4caa33eca21496acff2aaf159"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a10de78e4caa33eca21496acff2aaf159">RESERVED</a> [4]</td></tr>
+<tr class="separator:a10de78e4caa33eca21496acff2aaf159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f8bece55f56b775b9e38c42a94b9c4" id="r_a10f8bece55f56b775b9e38c42a94b9c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a10f8bece55f56b775b9e38c42a94b9c4">RESERVED1</a></td></tr>
+<tr class="separator:a10f8bece55f56b775b9e38c42a94b9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ba0e8f1703d453ea04397c77656260" id="r_a72ba0e8f1703d453ea04397c77656260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a72ba0e8f1703d453ea04397c77656260">RESERVED2</a> [997]</td></tr>
+<tr class="separator:a72ba0e8f1703d453ea04397c77656260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9a82c306b9f45ace824bd11533a09f" id="r_a9b9a82c306b9f45ace824bd11533a09f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a9b9a82c306b9f45ace824bd11533a09f">UARTCR</a></td></tr>
+<tr class="memdesc:a9b9a82c306b9f45ace824bd11533a09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control Register, UARTCR <br  />
+  <br /></td></tr>
+<tr class="separator:a9b9a82c306b9f45ace824bd11533a09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab411ba4b2ec0b1b3a25a63bfeebdee3b" id="r_ab411ba4b2ec0b1b3a25a63bfeebdee3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#ab411ba4b2ec0b1b3a25a63bfeebdee3b">UARTDMACR</a></td></tr>
+<tr class="memdesc:ab411ba4b2ec0b1b3a25a63bfeebdee3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA Control Register, UARTDMACR <br  />
+  <br /></td></tr>
+<tr class="separator:ab411ba4b2ec0b1b3a25a63bfeebdee3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2638d161684543a64e8933d4a9eb0a32" id="r_a2638d161684543a64e8933d4a9eb0a32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a2638d161684543a64e8933d4a9eb0a32">UARTDR</a></td></tr>
+<tr class="memdesc:a2638d161684543a64e8933d4a9eb0a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; UART0 Structure <br  />
+  <br /></td></tr>
+<tr class="separator:a2638d161684543a64e8933d4a9eb0a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b73e0b5f0ef2f9ec079e5e4f935b54a" id="r_a4b73e0b5f0ef2f9ec079e5e4f935b54a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a4b73e0b5f0ef2f9ec079e5e4f935b54a">UARTFBRD</a></td></tr>
+<tr class="memdesc:a4b73e0b5f0ef2f9ec079e5e4f935b54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fractional Baud Rate Register, UARTFBRD <br  />
+  <br /></td></tr>
+<tr class="separator:a4b73e0b5f0ef2f9ec079e5e4f935b54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02683cfdc2776a3ee3d91936b560ccc1" id="r_a02683cfdc2776a3ee3d91936b560ccc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a02683cfdc2776a3ee3d91936b560ccc1">UARTFR</a></td></tr>
+<tr class="memdesc:a02683cfdc2776a3ee3d91936b560ccc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag Register, UARTFR <br  />
+  <br /></td></tr>
+<tr class="separator:a02683cfdc2776a3ee3d91936b560ccc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eef57a858537ab324fe064f73b81307" id="r_a4eef57a858537ab324fe064f73b81307"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a4eef57a858537ab324fe064f73b81307">UARTIBRD</a></td></tr>
+<tr class="memdesc:a4eef57a858537ab324fe064f73b81307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer Baud Rate Register, UARTIBRD <br  />
+  <br /></td></tr>
+<tr class="separator:a4eef57a858537ab324fe064f73b81307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9afc18c5a8f96319a9c00feffc7e9420" id="r_a9afc18c5a8f96319a9c00feffc7e9420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a9afc18c5a8f96319a9c00feffc7e9420">UARTICR</a></td></tr>
+<tr class="memdesc:a9afc18c5a8f96319a9c00feffc7e9420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Clear Register, UARTICR <br  />
+  <br /></td></tr>
+<tr class="separator:a9afc18c5a8f96319a9c00feffc7e9420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637ad4aff634195927b26980926d9887" id="r_a637ad4aff634195927b26980926d9887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a637ad4aff634195927b26980926d9887">UARTIFLS</a></td></tr>
+<tr class="memdesc:a637ad4aff634195927b26980926d9887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt FIFO Level Select Register, UARTIFLS <br  />
+  <br /></td></tr>
+<tr class="separator:a637ad4aff634195927b26980926d9887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5969efc760b25a317d7af12e28d7ae" id="r_aea5969efc760b25a317d7af12e28d7ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#aea5969efc760b25a317d7af12e28d7ae">UARTILPR</a></td></tr>
+<tr class="memdesc:aea5969efc760b25a317d7af12e28d7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">IrDA Low-Power Counter Register, UARTILPR <br  />
+  <br /></td></tr>
+<tr class="separator:aea5969efc760b25a317d7af12e28d7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193010ab09e59d2f5cf9e6ecb18c4553" id="r_a193010ab09e59d2f5cf9e6ecb18c4553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a193010ab09e59d2f5cf9e6ecb18c4553">UARTIMSC</a></td></tr>
+<tr class="memdesc:a193010ab09e59d2f5cf9e6ecb18c4553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Mask Set/Clear Register, UARTIMSC <br  />
+  <br /></td></tr>
+<tr class="separator:a193010ab09e59d2f5cf9e6ecb18c4553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b4b4a76706f91a6b4f9fcb5754f230" id="r_af3b4b4a76706f91a6b4f9fcb5754f230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#af3b4b4a76706f91a6b4f9fcb5754f230">UARTLCR_H</a></td></tr>
+<tr class="memdesc:af3b4b4a76706f91a6b4f9fcb5754f230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line Control Register, UARTLCR_H <br  />
+  <br /></td></tr>
+<tr class="separator:af3b4b4a76706f91a6b4f9fcb5754f230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99707163129b60259c4a1a183a03de58" id="r_a99707163129b60259c4a1a183a03de58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a99707163129b60259c4a1a183a03de58">UARTMIS</a></td></tr>
+<tr class="memdesc:a99707163129b60259c4a1a183a03de58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masked Interrupt Status Register, UARTMIS <br  />
+  <br /></td></tr>
+<tr class="separator:a99707163129b60259c4a1a183a03de58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf5c2ca766d6b2c43c7cbe561362ebb" id="r_afdf5c2ca766d6b2c43c7cbe561362ebb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#afdf5c2ca766d6b2c43c7cbe561362ebb">UARTPCELLID0</a></td></tr>
+<tr class="memdesc:afdf5c2ca766d6b2c43c7cbe561362ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPCellID0 Register <br  />
+  <br /></td></tr>
+<tr class="separator:afdf5c2ca766d6b2c43c7cbe561362ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad822f9a373456f864b2b90a7b510e39f" id="r_ad822f9a373456f864b2b90a7b510e39f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#ad822f9a373456f864b2b90a7b510e39f">UARTPCELLID1</a></td></tr>
+<tr class="memdesc:ad822f9a373456f864b2b90a7b510e39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPCellID1 Register <br  />
+  <br /></td></tr>
+<tr class="separator:ad822f9a373456f864b2b90a7b510e39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56475cf1643eecfcb5da153a1a07b994" id="r_a56475cf1643eecfcb5da153a1a07b994"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a56475cf1643eecfcb5da153a1a07b994">UARTPCELLID2</a></td></tr>
+<tr class="memdesc:a56475cf1643eecfcb5da153a1a07b994"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPCellID2 Register <br  />
+  <br /></td></tr>
+<tr class="separator:a56475cf1643eecfcb5da153a1a07b994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24d7aadcf5b6ff7439e9571408e2eea" id="r_aa24d7aadcf5b6ff7439e9571408e2eea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#aa24d7aadcf5b6ff7439e9571408e2eea">UARTPCELLID3</a></td></tr>
+<tr class="memdesc:aa24d7aadcf5b6ff7439e9571408e2eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPCellID3 Register <br  />
+  <br /></td></tr>
+<tr class="separator:aa24d7aadcf5b6ff7439e9571408e2eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e2f37f3abc3a9defb66fc04f23a7b2" id="r_a89e2f37f3abc3a9defb66fc04f23a7b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a89e2f37f3abc3a9defb66fc04f23a7b2">UARTPERIPHID0</a></td></tr>
+<tr class="memdesc:a89e2f37f3abc3a9defb66fc04f23a7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPeriphID0 Register <br  />
+  <br /></td></tr>
+<tr class="separator:a89e2f37f3abc3a9defb66fc04f23a7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c17dab2647ded53b73f66b5a0513247" id="r_a5c17dab2647ded53b73f66b5a0513247"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a5c17dab2647ded53b73f66b5a0513247">UARTPERIPHID1</a></td></tr>
+<tr class="memdesc:a5c17dab2647ded53b73f66b5a0513247"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPeriphID1 Register <br  />
+  <br /></td></tr>
+<tr class="separator:a5c17dab2647ded53b73f66b5a0513247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd13d344ca5a2be5d4342a3c7ecf74a2" id="r_abd13d344ca5a2be5d4342a3c7ecf74a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#abd13d344ca5a2be5d4342a3c7ecf74a2">UARTPERIPHID2</a></td></tr>
+<tr class="memdesc:abd13d344ca5a2be5d4342a3c7ecf74a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPeriphID2 Register <br  />
+  <br /></td></tr>
+<tr class="separator:abd13d344ca5a2be5d4342a3c7ecf74a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2c8691feace756582623f35af2db04" id="r_a2c2c8691feace756582623f35af2db04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a2c2c8691feace756582623f35af2db04">UARTPERIPHID3</a></td></tr>
+<tr class="memdesc:a2c2c8691feace756582623f35af2db04"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTPeriphID3 Register <br  />
+  <br /></td></tr>
+<tr class="separator:a2c2c8691feace756582623f35af2db04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc1bb2dfb483538d5b20a6029592800" id="r_a7bc1bb2dfb483538d5b20a6029592800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a7bc1bb2dfb483538d5b20a6029592800">UARTRIS</a></td></tr>
+<tr class="memdesc:a7bc1bb2dfb483538d5b20a6029592800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupt Status Register, UARTRIS <br  />
+  <br /></td></tr>
+<tr class="separator:a7bc1bb2dfb483538d5b20a6029592800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0515aefa52401490cbed65b8ca8ede" id="r_a8a0515aefa52401490cbed65b8ca8ede"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUART0__Type.html#a8a0515aefa52401490cbed65b8ca8ede">UARTRSR</a></td></tr>
+<tr class="memdesc:a8a0515aefa52401490cbed65b8ca8ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive Status Register/Error Clear Register, UARTRSR/UARTECR <br  />
+  <br /></td></tr>
+<tr class="separator:a8a0515aefa52401490cbed65b8ca8ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>UART0 (UART0) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a10de78e4caa33eca21496acff2aaf159" name="a10de78e4caa33eca21496acff2aaf159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10de78e4caa33eca21496acff2aaf159">&#9670;&#160;</a></span>RESERVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::RESERVED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10f8bece55f56b775b9e38c42a94b9c4" name="a10f8bece55f56b775b9e38c42a94b9c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f8bece55f56b775b9e38c42a94b9c4">&#9670;&#160;</a></span>RESERVED1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::RESERVED1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72ba0e8f1703d453ea04397c77656260" name="a72ba0e8f1703d453ea04397c77656260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ba0e8f1703d453ea04397c77656260">&#9670;&#160;</a></span>RESERVED2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::RESERVED2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b9a82c306b9f45ace824bd11533a09f" name="a9b9a82c306b9f45ace824bd11533a09f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9a82c306b9f45ace824bd11533a09f">&#9670;&#160;</a></span>UARTCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTCR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control Register, UARTCR <br  />
+ </p>
+
+</div>
+</div>
+<a id="ab411ba4b2ec0b1b3a25a63bfeebdee3b" name="ab411ba4b2ec0b1b3a25a63bfeebdee3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab411ba4b2ec0b1b3a25a63bfeebdee3b">&#9670;&#160;</a></span>UARTDMACR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTDMACR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA Control Register, UARTDMACR <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2638d161684543a64e8933d4a9eb0a32" name="a2638d161684543a64e8933d4a9eb0a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2638d161684543a64e8933d4a9eb0a32">&#9670;&#160;</a></span>UARTDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; UART0 Structure <br  />
+ </p>
+<p>Data Register, UARTDR <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4b73e0b5f0ef2f9ec079e5e4f935b54a" name="a4b73e0b5f0ef2f9ec079e5e4f935b54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b73e0b5f0ef2f9ec079e5e4f935b54a">&#9670;&#160;</a></span>UARTFBRD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTFBRD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fractional Baud Rate Register, UARTFBRD <br  />
+ </p>
+
+</div>
+</div>
+<a id="a02683cfdc2776a3ee3d91936b560ccc1" name="a02683cfdc2776a3ee3d91936b560ccc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02683cfdc2776a3ee3d91936b560ccc1">&#9670;&#160;</a></span>UARTFR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTFR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flag Register, UARTFR <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4eef57a858537ab324fe064f73b81307" name="a4eef57a858537ab324fe064f73b81307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eef57a858537ab324fe064f73b81307">&#9670;&#160;</a></span>UARTIBRD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTIBRD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Integer Baud Rate Register, UARTIBRD <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9afc18c5a8f96319a9c00feffc7e9420" name="a9afc18c5a8f96319a9c00feffc7e9420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afc18c5a8f96319a9c00feffc7e9420">&#9670;&#160;</a></span>UARTICR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTICR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Clear Register, UARTICR <br  />
+ </p>
+
+</div>
+</div>
+<a id="a637ad4aff634195927b26980926d9887" name="a637ad4aff634195927b26980926d9887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637ad4aff634195927b26980926d9887">&#9670;&#160;</a></span>UARTIFLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTIFLS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt FIFO Level Select Register, UARTIFLS <br  />
+ </p>
+
+</div>
+</div>
+<a id="aea5969efc760b25a317d7af12e28d7ae" name="aea5969efc760b25a317d7af12e28d7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5969efc760b25a317d7af12e28d7ae">&#9670;&#160;</a></span>UARTILPR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTILPR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IrDA Low-Power Counter Register, UARTILPR <br  />
+ </p>
+
+</div>
+</div>
+<a id="a193010ab09e59d2f5cf9e6ecb18c4553" name="a193010ab09e59d2f5cf9e6ecb18c4553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193010ab09e59d2f5cf9e6ecb18c4553">&#9670;&#160;</a></span>UARTIMSC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTIMSC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Mask Set/Clear Register, UARTIMSC <br  />
+ </p>
+
+</div>
+</div>
+<a id="af3b4b4a76706f91a6b4f9fcb5754f230" name="af3b4b4a76706f91a6b4f9fcb5754f230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b4b4a76706f91a6b4f9fcb5754f230">&#9670;&#160;</a></span>UARTLCR_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTLCR_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Line Control Register, UARTLCR_H <br  />
+ </p>
+
+</div>
+</div>
+<a id="a99707163129b60259c4a1a183a03de58" name="a99707163129b60259c4a1a183a03de58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99707163129b60259c4a1a183a03de58">&#9670;&#160;</a></span>UARTMIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTMIS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Masked Interrupt Status Register, UARTMIS <br  />
+ </p>
+
+</div>
+</div>
+<a id="afdf5c2ca766d6b2c43c7cbe561362ebb" name="afdf5c2ca766d6b2c43c7cbe561362ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf5c2ca766d6b2c43c7cbe561362ebb">&#9670;&#160;</a></span>UARTPCELLID0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPCELLID0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPCellID0 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad822f9a373456f864b2b90a7b510e39f" name="ad822f9a373456f864b2b90a7b510e39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad822f9a373456f864b2b90a7b510e39f">&#9670;&#160;</a></span>UARTPCELLID1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPCELLID1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPCellID1 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a56475cf1643eecfcb5da153a1a07b994" name="a56475cf1643eecfcb5da153a1a07b994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56475cf1643eecfcb5da153a1a07b994">&#9670;&#160;</a></span>UARTPCELLID2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPCELLID2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPCellID2 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa24d7aadcf5b6ff7439e9571408e2eea" name="aa24d7aadcf5b6ff7439e9571408e2eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24d7aadcf5b6ff7439e9571408e2eea">&#9670;&#160;</a></span>UARTPCELLID3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPCELLID3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPCellID3 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a89e2f37f3abc3a9defb66fc04f23a7b2" name="a89e2f37f3abc3a9defb66fc04f23a7b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e2f37f3abc3a9defb66fc04f23a7b2">&#9670;&#160;</a></span>UARTPERIPHID0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPERIPHID0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPeriphID0 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5c17dab2647ded53b73f66b5a0513247" name="a5c17dab2647ded53b73f66b5a0513247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c17dab2647ded53b73f66b5a0513247">&#9670;&#160;</a></span>UARTPERIPHID1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPERIPHID1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPeriphID1 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="abd13d344ca5a2be5d4342a3c7ecf74a2" name="abd13d344ca5a2be5d4342a3c7ecf74a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd13d344ca5a2be5d4342a3c7ecf74a2">&#9670;&#160;</a></span>UARTPERIPHID2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPERIPHID2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPeriphID2 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2c2c8691feace756582623f35af2db04" name="a2c2c8691feace756582623f35af2db04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2c8691feace756582623f35af2db04">&#9670;&#160;</a></span>UARTPERIPHID3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTPERIPHID3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTPeriphID3 Register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7bc1bb2dfb483538d5b20a6029592800" name="a7bc1bb2dfb483538d5b20a6029592800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc1bb2dfb483538d5b20a6029592800">&#9670;&#160;</a></span>UARTRIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTRIS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupt Status Register, UARTRIS <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8a0515aefa52401490cbed65b8ca8ede" name="a8a0515aefa52401490cbed65b8ca8ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0515aefa52401490cbed65b8ca8ede">&#9670;&#160;</a></span>UARTRSR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> UART0_Type::UARTRSR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive Status Register/Error Clear Register, UARTRSR/UARTECR <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structUART0__Type.html">UART0_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de sha256.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2350_2hardware__structs_2include_2hardware_2structs_2sha256_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2350/hardware_structs/include/hardware/structs/sha256.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2350_2hardware__structs_2include_2hardware_2structs_2sha256_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef _HARDWARE_STRUCTS_SHA256_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _HARDWARE_STRUCTS_SHA256_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="address__mapped_8h.html">hardware/address_mapped.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html">hardware/regs/sha256.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Reference to datasheet: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf#tab-registerlist_sha256</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// The _REG_ macro is intended to help make the register navigable in your IDE (for example, using the &quot;Go to Definition&quot; feature)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// _REG_(x) will link to the corresponding register in hardware/regs/sha256.h.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Bit-field descriptions are of the form:</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// BITMASK [BITRANGE] FIELDNAME (RESETVALUE) DESCRIPTION</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structsha256__hw__t.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html#ad9fab02e755413c7b030a481a6da3c97">SHA256_CSR_OFFSET</a>) <span class="comment">// SHA256_CSR</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Control and status register</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// 0x00001000 [12]    BSWAP        (1) Enable byte swapping of 32-bit values at the point they...</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// 0x00000300 [9:8]   DMA_SIZE     (0x2) Configure DREQ logic for the correct DMA data size</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// 0x00000010 [4]     ERR_WDATA_NOT_RDY (0) Set when a write occurs whilst the SHA-256 core is not...</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// 0x00000004 [2]     SUM_VLD      (1) If 1, the SHA-256 checksum presented in registers SUM0...</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// 0x00000002 [1]     WDATA_RDY    (1) If 1, the SHA-256 core is ready to accept more data...</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// 0x00000001 [0]     START        (0) Write 1 to prepare the SHA-256 core for a new checksum</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structsha256__hw__t.html#a998c125d253ad64900d104cc6bc9a7ca">   35</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a> csr;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html#a6a664eb73d62c2f6c2deaa4ab17be85d">SHA256_WDATA_OFFSET</a>) <span class="comment">// SHA256_WDATA</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// Write data register</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// 0xffffffff [31:0]  WDATA        (0x00000000) After pulsing START and writing 16 words of data to this...</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structsha256__hw__t.html#a8db651361937b022f9d6ce81d2dc0c5e">   40</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#aec2e26f447787f282e83a0c3f135b28d">io_wo_32</a> wdata;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// (Description copied from array index 0 register SHA256_SUM0 applies similarly to other array indexes)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_define" href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a>(<a class="code hl_define" href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html#a17b634c61b6717b0697ea3290bcf05cf">SHA256_SUM0_OFFSET</a>) <span class="comment">// SHA256_SUM0</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// 256-bit checksum result</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// 0xffffffff [31:0]  SUM0         (0x00000000) </span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structsha256__hw__t.html#a61be437f468e3d2f98e4357c7b249618">   46</a></span>    <a class="code hl_typedef" href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a> sum[8];</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <a class="code hl_struct" href="structsha256__hw__t.html">sha256_hw_t</a>;</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="rp2350_2hardware__structs_2include_2hardware_2structs_2sha256_8h.html#a42da9f084afd0b1182d2a1ee42f61446">   49</a></span><span class="preprocessor">#define sha256_hw ((sha256_hw_t *)SHA256_BASE)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span> (<a class="code hl_struct" href="structsha256__hw__t.html">sha256_hw_t</a>) == 0x0028, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_STRUCTS_SHA256_H</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="ttc" id="aaddress__mapped_8h_html"><div class="ttname"><a href="address__mapped_8h.html">address_mapped.h</a></div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_a5e9dd65c504214b8530a3ce63adf8375"><div class="ttname"><a href="address__mapped_8h.html#a5e9dd65c504214b8530a3ce63adf8375">_REG_</a></div><div class="ttdeci">#define _REG_(x)</div><div class="ttdef"><b>Definição</b> address_mapped.h:84</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ab87d9fde36e04e9e65c9f16f56982eeb"><div class="ttname"><a href="address__mapped_8h.html#ab87d9fde36e04e9e65c9f16f56982eeb">io_ro_32</a></div><div class="ttdeci">const volatile uint32_t io_ro_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:67</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_ae7a3903ffe232108a65efc85970a5fdb"><div class="ttname"><a href="address__mapped_8h.html#ae7a3903ffe232108a65efc85970a5fdb">io_rw_32</a></div><div class="ttdeci">volatile uint32_t io_rw_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:66</div></div>
+<div class="ttc" id="aaddress__mapped_8h_html_aec2e26f447787f282e83a0c3f135b28d"><div class="ttname"><a href="address__mapped_8h.html#aec2e26f447787f282e83a0c3f135b28d">io_wo_32</a></div><div class="ttdeci">volatile uint32_t io_wo_32</div><div class="ttdef"><b>Definição</b> address_mapped.h:68</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h_html"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html">sha256.h</a></div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h_html_a17b634c61b6717b0697ea3290bcf05cf"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html#a17b634c61b6717b0697ea3290bcf05cf">SHA256_SUM0_OFFSET</a></div><div class="ttdeci">#define SHA256_SUM0_OFFSET</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/sha256.h:150</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h_html_a6a664eb73d62c2f6c2deaa4ab17be85d"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html#a6a664eb73d62c2f6c2deaa4ab17be85d">SHA256_WDATA_OFFSET</a></div><div class="ttdeci">#define SHA256_WDATA_OFFSET</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/sha256.h:140</div></div>
+<div class="ttc" id="arp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h_html_ad9fab02e755413c7b030a481a6da3c97"><div class="ttname"><a href="rp2350_2hardware__regs_2include_2hardware_2regs_2sha256_8h.html#ad9fab02e755413c7b030a481a6da3c97">SHA256_CSR_OFFSET</a></div><div class="ttdeci">#define SHA256_CSR_OFFSET</div><div class="ttdoc">Copyright (c) 2024 Raspberry Pi Ltd.</div><div class="ttdef"><b>Definição</b> rp2350/hardware_regs/include/hardware/regs/sha256.h:19</div></div>
+<div class="ttc" id="astructsha256__hw__t_html"><div class="ttname"><a href="structsha256__hw__t.html">sha256_hw_t</a></div><div class="ttdef"><b>Definição</b> rp2350/hardware_structs/include/hardware/structs/sha256.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_a4ed9f159ff82891f8d9c6442d59a09f.html">hardware_structs</a></li><li class="navelem"><a class="el" href="dir_644b18fc6729bbffe612edd11fd9bb60.html">include</a></li><li class="navelem"><a class="el" href="dir_00f006c97f93acb2044a3e94d70d66ca.html">hardware</a></li><li class="navelem"><a class="el" href="dir_e7a506f13e8b3ea148c60a9313519183.html">structs</a></li><li class="navelem"><a class="el" href="rp2350_2hardware__structs_2include_2hardware_2structs_2sha256_8h.html">sha256.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

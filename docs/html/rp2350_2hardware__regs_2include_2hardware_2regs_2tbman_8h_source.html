@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Código-Fonte de tbman.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rp2350/hardware_regs/include/hardware/regs/tbman.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// THIS HEADER FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Register block : TBMAN</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Version        : 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Bus type       : apb</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Description    : For managing simulation testbenches</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _HARDWARE_REGS_TBMAN_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _HARDWARE_REGS_TBMAN_H</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Register    : TBMAN_PLATFORM</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Description : Indicates the type of platform in use</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a845418af423ce20e4f8c41020778016c">   19</a></span><span class="preprocessor">#define TBMAN_PLATFORM_OFFSET _u(0x00000000)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#ad0d4afc64d4e477fa3edfc54639b3d6b">   20</a></span><span class="preprocessor">#define TBMAN_PLATFORM_BITS   _u(0x00000007)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a23c5be9519326181cec1675afab8a643">   21</a></span><span class="preprocessor">#define TBMAN_PLATFORM_RESET  _u(0x00000001)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Field       : TBMAN_PLATFORM_HDLSIM</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Description : Indicates the platform is a simulation</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a913172440d7dc993058add3a5315b0c9">   25</a></span><span class="preprocessor">#define TBMAN_PLATFORM_HDLSIM_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a74ebed7af68c3f4e0092f89a6dbf5e93">   26</a></span><span class="preprocessor">#define TBMAN_PLATFORM_HDLSIM_BITS   _u(0x00000004)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a816ce0384ea182b5c2b43230e56f8513">   27</a></span><span class="preprocessor">#define TBMAN_PLATFORM_HDLSIM_MSB    _u(2)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#acea801ee5a1a3236369b0a5ab89f6b90">   28</a></span><span class="preprocessor">#define TBMAN_PLATFORM_HDLSIM_LSB    _u(2)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a3078e9ec3f8fd6c89990cf5137106aa5">   29</a></span><span class="preprocessor">#define TBMAN_PLATFORM_HDLSIM_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Field       : TBMAN_PLATFORM_FPGA</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// Description : Indicates the platform is an FPGA</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a0e15d4b88b1693a3a98ab93f1d94674f">   33</a></span><span class="preprocessor">#define TBMAN_PLATFORM_FPGA_RESET  _u(0x0)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a9cac34ed1812796b74782b513aa2a30d">   34</a></span><span class="preprocessor">#define TBMAN_PLATFORM_FPGA_BITS   _u(0x00000002)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#accf843018bd3fc08b4017384e86021bf">   35</a></span><span class="preprocessor">#define TBMAN_PLATFORM_FPGA_MSB    _u(1)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a2683b5809431db0867dbaae8e0fd8dfd">   36</a></span><span class="preprocessor">#define TBMAN_PLATFORM_FPGA_LSB    _u(1)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a47e76f6593edf060b7b9238f25944d44">   37</a></span><span class="preprocessor">#define TBMAN_PLATFORM_FPGA_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// Field       : TBMAN_PLATFORM_ASIC</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Description : Indicates the platform is an ASIC</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a58be64495668c4bc48702a92a469e83d">   41</a></span><span class="preprocessor">#define TBMAN_PLATFORM_ASIC_RESET  _u(0x1)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a18fa156821828f91877e73e83676d3c4">   42</a></span><span class="preprocessor">#define TBMAN_PLATFORM_ASIC_BITS   _u(0x00000001)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a6d3fc5af3281e99578e93882f53c3d32">   43</a></span><span class="preprocessor">#define TBMAN_PLATFORM_ASIC_MSB    _u(0)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a2a3edac2f8b98d585593365f6ca484ea">   44</a></span><span class="preprocessor">#define TBMAN_PLATFORM_ASIC_LSB    _u(0)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html#a81d9eeb832dacab3f02064e52707acd3">   45</a></span><span class="preprocessor">#define TBMAN_PLATFORM_ASIC_ACCESS &quot;RO&quot;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// =============================================================================</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">// _HARDWARE_REGS_TBMAN_H</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_c20cf07c74f8c11629d6d184d929685a.html">rp2350</a></li><li class="navelem"><a class="el" href="dir_7593c0a7689797976df9ac5167c06f9c.html">hardware_regs</a></li><li class="navelem"><a class="el" href="dir_df2b2bb0441eed18ad584d80d5bba470.html">include</a></li><li class="navelem"><a class="el" href="dir_2db4aeb58b3771a2be98660263d68c8b.html">hardware</a></li><li class="navelem"><a class="el" href="dir_ed155ad4b56137aea12b45f699429a2f.html">regs</a></li><li class="navelem"><a class="el" href="rp2350_2hardware__regs_2include_2hardware_2regs_2tbman_8h.html">tbman.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

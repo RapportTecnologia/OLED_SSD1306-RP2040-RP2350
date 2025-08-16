@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro runtime_init.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('runtime__init_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro runtime_init.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;pico/runtime_init.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="bootrom_8h_source.html">pico/bootrom.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rp2__common_2hardware__resets_2include_2hardware_2resets_8h_source.html">hardware/resets.h</a>&quot;</code><br />
+<code>#include &quot;hardware/structs/usb.h&quot;</code><br />
+<code>#include &quot;hardware/gpio.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="hardware__structs_2include_2hardware_2structs_2m33_8h_source.html">hardware/structs/m33.h</a>&quot;</code><br />
+<code>#include &quot;hardware/structs/pads_bank0.h&quot;</code><br />
+<code>#include &quot;hardware/sync.h&quot;</code><br />
+<code>#include &quot;hardware/structs/scb.h&quot;</code><br />
+<code>#include &quot;hardware/irq.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para runtime_init.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="runtime__init_8c__incl.svg" width="1895" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac584db181e2719dad4a15f65012f899c" id="r_ac584db181e2719dad4a15f65012f899c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ac584db181e2719dad4a15f65012f899c">PICO_RAM_VECTOR_TABLE_SIZE</a>&#160;&#160;&#160;(<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#ace0ee762a2cd56e76294cecb7de3ccc2">VTABLE_FIRST_IRQ</a> + <a class="el" href="common_8h.html#a0901d41cc21984d7ef493d8b77a2b642">PICO_NUM_VTABLE_IRQS</a>)</td></tr>
+<tr class="separator:ac584db181e2719dad4a15f65012f899c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a3cfd63f61edd41cb02057a9bc5edf95e" id="r_a3cfd63f61edd41cb02057a9bc5edf95e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a3cfd63f61edd41cb02057a9bc5edf95e">__attribute__</a> ((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">section</a>(&quot;.ram_vector_table&quot;)))</td></tr>
+<tr class="separator:a3cfd63f61edd41cb02057a9bc5edf95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49616017f26b684e74b0cfd960dd16ee" id="r_a49616017f26b684e74b0cfd960dd16ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a49616017f26b684e74b0cfd960dd16ee">PICO_RUNTIME_INIT_FUNC_HW</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a3dd167ac601a4057aca2cc514795d7bf">runtime_init_clocks</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a245e439d95566c4fd8c5bf36dd51a4ca">PICO_RUNTIME_INIT_CLOCKS</a>)</td></tr>
+<tr class="separator:a49616017f26b684e74b0cfd960dd16ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755d38c38fa366b02c46cb7e30dc686b" id="r_a755d38c38fa366b02c46cb7e30dc686b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a755d38c38fa366b02c46cb7e30dc686b">PICO_RUNTIME_INIT_FUNC_HW</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a62d8fe88d934e3d51dad5b899f6346de">runtime_init_early_resets</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a18ec60253f9b4cbae655b2477239358f">PICO_RUNTIME_INIT_EARLY_RESETS</a>)</td></tr>
+<tr class="separator:a755d38c38fa366b02c46cb7e30dc686b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cd4115806b57d2386eb33ddd338fe6" id="r_a38cd4115806b57d2386eb33ddd338fe6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a38cd4115806b57d2386eb33ddd338fe6">PICO_RUNTIME_INIT_FUNC_HW</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a007bf0c1cc83c2417a256b81d393c2cb">runtime_init_post_clock_resets</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#ab6558e8768e8a3e21573821465b9235e">PICO_RUNTIME_INIT_POST_CLOCK_RESETS</a>)</td></tr>
+<tr class="separator:a38cd4115806b57d2386eb33ddd338fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad826e6a1fcc8672bb659620a785480f2" id="r_ad826e6a1fcc8672bb659620a785480f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ad826e6a1fcc8672bb659620a785480f2">PICO_RUNTIME_INIT_FUNC_HW</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a42e84477540d60a6320ef06bfce43678">runtime_init_rp2040_gpio_ie_disable</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a970bf5cb9aaf6d671d2db25f5aeea86b">PICO_RUNTIME_INIT_RP2040_GPIO_IE_DISABLE</a>)</td></tr>
+<tr class="separator:ad826e6a1fcc8672bb659620a785480f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26e5c46fc3a14992cb54216a4b0de91" id="r_ab26e5c46fc3a14992cb54216a4b0de91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ab26e5c46fc3a14992cb54216a4b0de91">PICO_RUNTIME_INIT_FUNC_HW</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a9697010afb4c8c37d0921f44f7669305">runtime_init_usb_power_down</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a038e8b0f481bbec0acfa4597b8f0088d">PICO_RUNTIME_INIT_USB_POWER_DOWN</a>)</td></tr>
+<tr class="separator:ab26e5c46fc3a14992cb54216a4b0de91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699eae496b203bf0e21543f7844095dd" id="r_a699eae496b203bf0e21543f7844095dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a699eae496b203bf0e21543f7844095dd">PICO_RUNTIME_INIT_FUNC_PER_CORE</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a874afa8499913644fe2ea0b5ab469590">runtime_init_per_core_bootrom_reset</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#aed39f95e9188871143f2e2b695a3fa2d">PICO_RUNTIME_INIT_PER_CORE_BOOTROM_RESET</a>)</td></tr>
+<tr class="separator:a699eae496b203bf0e21543f7844095dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618c4012fe8a3cbfa826c4a7c1bab52a" id="r_a618c4012fe8a3cbfa826c4a7c1bab52a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a618c4012fe8a3cbfa826c4a7c1bab52a">PICO_RUNTIME_INIT_FUNC_PER_CORE</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#add8dd3dc47c3eb65e13a90cf1ebfec8c">runtime_init_per_core_enable_coprocessors</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#aec8b069bfaea64de6e397e6698876f37">PICO_RUNTIME_INIT_PER_CORE_ENABLE_COPROCESSORS</a>)</td></tr>
+<tr class="separator:a618c4012fe8a3cbfa826c4a7c1bab52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8fc315814d7006f9d296d46caa15a5a" id="r_ab8fc315814d7006f9d296d46caa15a5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ab8fc315814d7006f9d296d46caa15a5a">PICO_RUNTIME_INIT_FUNC_PER_CORE</a> (<a class="el" href="runtime__init_8c.html#a6cc0e7e1f9c6c09a2fe3662a7e921942">runtime_init_per_core_h3_irq_registers</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a331e1e1796b9cb10aac3e6c1a3080013">PICO_RUNTIME_INIT_PER_CORE_H3_IRQ_REGISTERS</a>)</td></tr>
+<tr class="separator:ab8fc315814d7006f9d296d46caa15a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb635cbf97349807b2dec0273c674548" id="r_abb635cbf97349807b2dec0273c674548"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#abb635cbf97349807b2dec0273c674548">PICO_RUNTIME_INIT_FUNC_RUNTIME</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a3f250d811afa557a9fd75671263b1544">runtime_init_bootrom_reset</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a788355683fb5f5b09662d3b6b560689f">PICO_RUNTIME_INIT_BOOTROM_RESET</a>)</td></tr>
+<tr class="separator:abb635cbf97349807b2dec0273c674548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d6e2d4f31ac43f6943f2bb2ae1da9d" id="r_ab4d6e2d4f31ac43f6943f2bb2ae1da9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ab4d6e2d4f31ac43f6943f2bb2ae1da9d">PICO_RUNTIME_INIT_FUNC_RUNTIME</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">runtime_init_install_ram_vector_table</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a7542c7cdd3589e830105912a12a50638">PICO_RUNTIME_INIT_INSTALL_RAM_VECTOR_TABLE</a>)</td></tr>
+<tr class="separator:ab4d6e2d4f31ac43f6943f2bb2ae1da9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b50bfada751f6562e98903ab36c13d2" id="r_a8b50bfada751f6562e98903ab36c13d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a8b50bfada751f6562e98903ab36c13d2">PICO_RUNTIME_INIT_FUNC_RUNTIME</a> (<a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a9f6109ba256d4e9f7ff4702e3313c934">runtime_init_spin_locks_reset</a>, <a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#aa052ef47780c21e7910bf0b3a96d6a5e">PICO_RUNTIME_INIT_SPIN_LOCKS_RESET</a>)</td></tr>
+<tr class="separator:a8b50bfada751f6562e98903ab36c13d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57191f849066849dfbba2011a63f28b3" id="r_a57191f849066849dfbba2011a63f28b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a57191f849066849dfbba2011a63f28b3">runtime_init_bootrom_reset</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a57191f849066849dfbba2011a63f28b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20e058b4a491f5a8a695ef81378f906" id="r_ae20e058b4a491f5a8a695ef81378f906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ae20e058b4a491f5a8a695ef81378f906">runtime_init_early_resets</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ae20e058b4a491f5a8a695ef81378f906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bae3cdace29fc33f5b5064cad7c24ba" id="r_a2bae3cdace29fc33f5b5064cad7c24ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a2bae3cdace29fc33f5b5064cad7c24ba">runtime_init_per_core_bootrom_reset</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a2bae3cdace29fc33f5b5064cad7c24ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad794fc9a1c34bdd5538daf99dce64cef" id="r_ad794fc9a1c34bdd5538daf99dce64cef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ad794fc9a1c34bdd5538daf99dce64cef">runtime_init_per_core_enable_coprocessors</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ad794fc9a1c34bdd5538daf99dce64cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc0e7e1f9c6c09a2fe3662a7e921942" id="r_a6cc0e7e1f9c6c09a2fe3662a7e921942"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a6cc0e7e1f9c6c09a2fe3662a7e921942">runtime_init_per_core_h3_irq_registers</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a6cc0e7e1f9c6c09a2fe3662a7e921942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b0aa47d53558ee8f5deec751e2ecdd" id="r_ae6b0aa47d53558ee8f5deec751e2ecdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#ae6b0aa47d53558ee8f5deec751e2ecdd">runtime_init_post_clock_resets</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:ae6b0aa47d53558ee8f5deec751e2ecdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd44bcb32937c20a39e1788c6ec3af4" id="r_a2cd44bcb32937c20a39e1788c6ec3af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a2cd44bcb32937c20a39e1788c6ec3af4">runtime_init_rp2040_gpio_ie_disable</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a2cd44bcb32937c20a39e1788c6ec3af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f8deb31b221ba8e7c533e4eec4b097" id="r_a71f8deb31b221ba8e7c533e4eec4b097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a71f8deb31b221ba8e7c533e4eec4b097">runtime_init_spin_locks_reset</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a71f8deb31b221ba8e7c533e4eec4b097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee9f0dcb1e19174951987ddde233b6a" id="r_a7ee9f0dcb1e19174951987ddde233b6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="runtime__init_8c.html#a7ee9f0dcb1e19174951987ddde233b6a">runtime_init_usb_power_down</a> (<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)</td></tr>
+<tr class="separator:a7ee9f0dcb1e19174951987ddde233b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ac584db181e2719dad4a15f65012f899c" name="ac584db181e2719dad4a15f65012f899c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac584db181e2719dad4a15f65012f899c">&#9670;&#160;</a></span>PICO_RAM_VECTOR_TABLE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> PICO_RAM_VECTOR_TABLE_SIZE&#160;&#160;&#160;(<a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#ace0ee762a2cd56e76294cecb7de3ccc2">VTABLE_FIRST_IRQ</a> + <a class="el" href="common_8h.html#a0901d41cc21984d7ef493d8b77a2b642">PICO_NUM_VTABLE_IRQS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a3cfd63f61edd41cb02057a9bc5edf95e" name="a3cfd63f61edd41cb02057a9bc5edf95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfd63f61edd41cb02057a9bc5edf95e">&#9670;&#160;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">section</a>(&quot;.ram_vector_table&quot;))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2hardware__irq_2include_2hardware_2irq_8h.html#a885faaaaca76aba8551cec66e34a14dc">__unhandled_user_irq()</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a29022c0c92a05cf88ca5046c59d6f629">count_of</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>, <a class="el" href="runtime__init_8c.html#ac584db181e2719dad4a15f65012f899c">PICO_RAM_VECTOR_TABLE_SIZE</a> e <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2scb_8h.html#ab83c7b3ec7dfbbb79815022569f28693">scb_hw</a>.</p>
+
+</div>
+</div>
+<a id="a49616017f26b684e74b0cfd960dd16ee" name="a49616017f26b684e74b0cfd960dd16ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49616017f26b684e74b0cfd960dd16ee">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_HW() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_HW </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a3dd167ac601a4057aca2cc514795d7bf">runtime_init_clocks</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a245e439d95566c4fd8c5bf36dd51a4ca">PICO_RUNTIME_INIT_CLOCKS</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a755d38c38fa366b02c46cb7e30dc686b" name="a755d38c38fa366b02c46cb7e30dc686b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755d38c38fa366b02c46cb7e30dc686b">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_HW() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_HW </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a62d8fe88d934e3d51dad5b899f6346de">runtime_init_early_resets</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a18ec60253f9b4cbae655b2477239358f">PICO_RUNTIME_INIT_EARLY_RESETS</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38cd4115806b57d2386eb33ddd338fe6" name="a38cd4115806b57d2386eb33ddd338fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cd4115806b57d2386eb33ddd338fe6">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_HW() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_HW </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a007bf0c1cc83c2417a256b81d393c2cb">runtime_init_post_clock_resets</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#ab6558e8768e8a3e21573821465b9235e">PICO_RUNTIME_INIT_POST_CLOCK_RESETS</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad826e6a1fcc8672bb659620a785480f2" name="ad826e6a1fcc8672bb659620a785480f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad826e6a1fcc8672bb659620a785480f2">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_HW() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_HW </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a42e84477540d60a6320ef06bfce43678">runtime_init_rp2040_gpio_ie_disable</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a970bf5cb9aaf6d671d2db25f5aeea86b">PICO_RUNTIME_INIT_RP2040_GPIO_IE_DISABLE</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab26e5c46fc3a14992cb54216a4b0de91" name="ab26e5c46fc3a14992cb54216a4b0de91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26e5c46fc3a14992cb54216a4b0de91">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_HW() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_HW </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a9697010afb4c8c37d0921f44f7669305">runtime_init_usb_power_down</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a038e8b0f481bbec0acfa4597b8f0088d">PICO_RUNTIME_INIT_USB_POWER_DOWN</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a699eae496b203bf0e21543f7844095dd" name="a699eae496b203bf0e21543f7844095dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699eae496b203bf0e21543f7844095dd">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_PER_CORE() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_PER_CORE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a874afa8499913644fe2ea0b5ab469590">runtime_init_per_core_bootrom_reset</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#aed39f95e9188871143f2e2b695a3fa2d">PICO_RUNTIME_INIT_PER_CORE_BOOTROM_RESET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a618c4012fe8a3cbfa826c4a7c1bab52a" name="a618c4012fe8a3cbfa826c4a7c1bab52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618c4012fe8a3cbfa826c4a7c1bab52a">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_PER_CORE() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_PER_CORE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#add8dd3dc47c3eb65e13a90cf1ebfec8c">runtime_init_per_core_enable_coprocessors</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#aec8b069bfaea64de6e397e6698876f37">PICO_RUNTIME_INIT_PER_CORE_ENABLE_COPROCESSORS</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8fc315814d7006f9d296d46caa15a5a" name="ab8fc315814d7006f9d296d46caa15a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8fc315814d7006f9d296d46caa15a5a">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_PER_CORE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_PER_CORE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="runtime__init_8c.html#a6cc0e7e1f9c6c09a2fe3662a7e921942">runtime_init_per_core_h3_irq_registers</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a331e1e1796b9cb10aac3e6c1a3080013">PICO_RUNTIME_INIT_PER_CORE_H3_IRQ_REGISTERS</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb635cbf97349807b2dec0273c674548" name="abb635cbf97349807b2dec0273c674548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb635cbf97349807b2dec0273c674548">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_RUNTIME() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_RUNTIME </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a3f250d811afa557a9fd75671263b1544">runtime_init_bootrom_reset</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a788355683fb5f5b09662d3b6b560689f">PICO_RUNTIME_INIT_BOOTROM_RESET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4d6e2d4f31ac43f6943f2bb2ae1da9d" name="ab4d6e2d4f31ac43f6943f2bb2ae1da9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d6e2d4f31ac43f6943f2bb2ae1da9d">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_RUNTIME() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_RUNTIME </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">runtime_init_install_ram_vector_table</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a7542c7cdd3589e830105912a12a50638">PICO_RUNTIME_INIT_INSTALL_RAM_VECTOR_TABLE</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b50bfada751f6562e98903ab36c13d2" name="a8b50bfada751f6562e98903ab36c13d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b50bfada751f6562e98903ab36c13d2">&#9670;&#160;</a></span>PICO_RUNTIME_INIT_FUNC_RUNTIME() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PICO_RUNTIME_INIT_FUNC_RUNTIME </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#a9f6109ba256d4e9f7ff4702e3313c934">runtime_init_spin_locks_reset</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rp2__common_2pico__runtime__init_2include_2pico_2runtime__init_8h.html#aa052ef47780c21e7910bf0b3a96d6a5e">PICO_RUNTIME_INIT_SPIN_LOCKS_RESET</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57191f849066849dfbba2011a63f28b3" name="a57191f849066849dfbba2011a63f28b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57191f849066849dfbba2011a63f28b3">&#9670;&#160;</a></span>runtime_init_bootrom_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_bootrom_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a8935a2e40488262e1878e7c88305c222">BOOTROM_STATE_RESET_GLOBAL_STATE</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a79c978631cee00a5bdea5ab2a1c5fdf0">ROM_FUNC_BOOTROM_STATE_RESET</a> e <a class="el" href="group__pico__bootrom.html#gaaaf61234f389da6444b6479f29616d7d">rom_func_lookup()</a>.</p>
+
+</div>
+</div>
+<a id="ae20e058b4a491f5a8a695ef81378f906" name="ae20e058b4a491f5a8a695ef81378f906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20e058b4a491f5a8a695ef81378f906">&#9670;&#160;</a></span>runtime_init_early_resets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_early_resets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2platform__defs_8h.html#a1a813cb5773d8a477c42e8076ef4e9e4">NUM_RESETS</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455ae878f20914c5790ef9bb04bec2a2ac59">RESET_ADC</a>, <a class="el" href="group__hardware__resets.html#gga73554e9181b313ef85698d4e72087de1a0e1e0ebde4e16a3f44e840fed9dc1a59">RESET_HSTX</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a83acc4b148cb4673de0904563a13b4b7">RESET_IO_QSPI</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a53de8bcb228102bd954ce760d2a6f41d">RESET_PADS_QSPI</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a36df2b483e84bc9d739f91ab2b43c047">RESET_PLL_SYS</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455acccf94dcd0c2910b03f9a0ef09964aac">RESET_PLL_USB</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a645fcc7ced529357ef5ba1e6896f913c">RESET_RTC</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455ac9b783dca9dceec5c12a97d5a613c1c1">RESET_SPI0</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a2f2f8c0767a95f1466922d9fc2f6b048">RESET_SPI1</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a6f1cdaf8c0416d501ff2b09254b879b9">RESET_SYSCFG</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a0e255a2b2d7f5a968f7695305eba58c2">RESET_UART0</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a2ae7a8b115f9402f79b67e7cb10dc87d">RESET_UART1</a>, <a class="el" href="group__hardware__resets.html#gga75518d371584c608bc559b6b6b002455a715e35a773299ae3bc1457a6f4e83f8b">RESET_USBCTRL</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2resets_8h.html#a8ca7233774c629553d6ddc53ef474edd">RESETS_RESET_BITS</a>.</p>
+
+</div>
+</div>
+<a id="a2bae3cdace29fc33f5b5064cad7c24ba" name="a2bae3cdace29fc33f5b5064cad7c24ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bae3cdace29fc33f5b5064cad7c24ba">&#9670;&#160;</a></span>runtime_init_per_core_bootrom_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_per_core_bootrom_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a5c7ca3b2e52879a401770d1c05bf8065">BOOTROM_STATE_RESET_CURRENT_CORE</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="boot__bootrom__headers_2include_2boot_2bootrom__constants_8h.html#a79c978631cee00a5bdea5ab2a1c5fdf0">ROM_FUNC_BOOTROM_STATE_RESET</a> e <a class="el" href="group__pico__bootrom.html#gaaaf61234f389da6444b6479f29616d7d">rom_func_lookup()</a>.</p>
+
+</div>
+</div>
+<a id="ad794fc9a1c34bdd5538daf99dce64cef" name="ad794fc9a1c34bdd5538daf99dce64cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad794fc9a1c34bdd5538daf99dce64cef">&#9670;&#160;</a></span>runtime_init_per_core_enable_coprocessors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_per_core_enable_coprocessors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="rp2040_2pico__platform_2include_2pico_2platform_2cpu__regs_8h.html#a67c5903097d23c49e8621e6c7f564eb0">arm_cpu_hw</a>, <a class="el" href="hardware__regs_2include_2hardware_2regs_2m33_8h.html#a2aa6966f3dcc960ebe5c4e6f64ff2f3e">M33_CPACR_CP0_BITS</a>, <a class="el" href="hardware__regs_2include_2hardware_2regs_2m33_8h.html#a27310ddccdbcb23e7759db769a870ac6">M33_CPACR_CP10_BITS</a> e <a class="el" href="hardware__regs_2include_2hardware_2regs_2m33_8h.html#a6e997cdff5f0e31b216c3f70ac84b54a">M33_CPACR_CP4_BITS</a>.</p>
+
+</div>
+</div>
+<a id="a6cc0e7e1f9c6c09a2fe3662a7e921942" name="a6cc0e7e1f9c6c09a2fe3662a7e921942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc0e7e1f9c6c09a2fe3662a7e921942">&#9670;&#160;</a></span>runtime_init_per_core_h3_irq_registers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> runtime_init_per_core_h3_irq_registers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6b0aa47d53558ee8f5deec751e2ecdd" name="ae6b0aa47d53558ee8f5deec751e2ecdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0aa47d53558ee8f5deec751e2ecdd">&#9670;&#160;</a></span>runtime_init_post_clock_resets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_post_clock_resets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2platform__defs_8h.html#a1a813cb5773d8a477c42e8076ef4e9e4">NUM_RESETS</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2resets_8h.html#a8ca7233774c629553d6ddc53ef474edd">RESETS_RESET_BITS</a>.</p>
+
+</div>
+</div>
+<a id="a2cd44bcb32937c20a39e1788c6ec3af4" name="a2cd44bcb32937c20a39e1788c6ec3af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd44bcb32937c20a39e1788c6ec3af4">&#9670;&#160;</a></span>runtime_init_rp2040_gpio_ie_disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_rp2040_gpio_ie_disable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="address__mapped_8h.html#a0b4df045483c389a11c73ed7b08a871c">hw_clear_alias_untyped</a>, <a class="el" href="structpads__bank0__hw__t.html#ae17f066ac9fc4f06df051df7122becc2">pads_bank0_hw_t::io</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2pads__bank0_8h.html#afc4d9aad7786d1128f34b044def4bad7">PADS_BANK0_GPIO0_IE_BITS</a> e <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2pads__bank0_8h.html#aa827a7ce1883d4d75d9f2a7c230bdf2d">pads_bank0_hw</a>.</p>
+
+</div>
+</div>
+<a id="a71f8deb31b221ba8e7c533e4eec4b097" name="a71f8deb31b221ba8e7c533e4eec4b097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f8deb31b221ba8e7c533e4eec4b097">&#9670;&#160;</a></span>runtime_init_spin_locks_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_spin_locks_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af027db7dbc0c9378e1bc2c0fd89c7f11">spin_locks_reset</a>.</p>
+
+</div>
+</div>
+<a id="a7ee9f0dcb1e19174951987ddde233b6a" name="a7ee9f0dcb1e19174951987ddde233b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee9f0dcb1e19174951987ddde233b6a">&#9670;&#160;</a></span>runtime_init_usb_power_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a5181eb756a197a06d1c4ed1f40a065bc">__weak</a> runtime_init_usb_power_down </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="rp2040_2hardware__structs_2include_2hardware_2structs_2usb_8h.html#a47715874ce8bd1f5438e02d05f906122">usb_hw</a>, <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2usb_8h.html#a982b8580871cec398578846f6c27485b">USB_SIE_CTRL_RESET</a> e <a class="el" href="rp2040_2hardware__regs_2include_2hardware_2regs_2usb_8h.html#a3a872b9e2ed252e2fde65f6f52139c54">USB_SIE_CTRL_TRANSCEIVER_PD_BITS</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_e04b6794f911affb2800e355ac8ad6c6.html">pico_runtime_init</a></li><li class="navelem"><a class="el" href="runtime__init_8c.html">runtime_init.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência ao ficheiro atomic.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('atomic_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro atomic.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="stdatomic_8h_source.html">stdatomic.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="common_2pico__sync_2include_2pico_2sync_8h_source.html">pico/sync.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para atomic.c:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="atomic_8c__incl.svg" width="534" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, add, +)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sub</a>, -)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">and</a>, &amp;)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">or</a>, |)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5030c9ad1fddf27ab9d4330f36d2b37" id="r_ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(n,  type)&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">xor</a>, ^)</td></tr>
+<tr class="separator:ab5030c9ad1fddf27ab9d4330f36d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ae64f035983740094087203d6c7b57" id="r_ab1ae64f035983740094087203d6c7b57"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ab1ae64f035983740094087203d6c7b57">ATOMIC_OPTIMIZED_CASES</a>&#160;&#160;&#160;  <a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(8, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a>)</td></tr>
+<tr class="separator:ab1ae64f035983740094087203d6c7b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109a273c95eec7d67ed809522186afd3" id="r_a109a273c95eec7d67ed809522186afd3"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n,  type,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">opname</a>,  op)</td></tr>
+<tr class="separator:a109a273c95eec7d67ed809522186afd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8226606729bbcb01b5602032d37368" id="r_a5d8226606729bbcb01b5602032d37368"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#a5d8226606729bbcb01b5602032d37368">ATOMIC_RMW_NAND</a>(n,  type)</td></tr>
+<tr class="separator:a5d8226606729bbcb01b5602032d37368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7804c1bd203df33ebf99ffdd999bacb1" id="r_a7804c1bd203df33ebf99ffdd999bacb1"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#a7804c1bd203df33ebf99ffdd999bacb1">memcmp</a>&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__builtin_memcmp</a></td></tr>
+<tr class="separator:a7804c1bd203df33ebf99ffdd999bacb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c75e139b07107ef1c8d3f8490aee7d" id="r_a30c75e139b07107ef1c8d3f8490aee7d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a>&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__builtin_memcpy</a></td></tr>
+<tr class="separator:a30c75e139b07107ef1c8d3f8490aee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ace7c0930a1826714be7f6fda9b7172fb" id="r_ace7c0930a1826714be7f6fda9b7172fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ace7c0930a1826714be7f6fda9b7172fb">__atomic_compare_exchange_c</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> size, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">expected</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">desired</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">success</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">failure</a>)</td></tr>
+<tr class="separator:ace7c0930a1826714be7f6fda9b7172fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad932984e96052d33cc1e9c5b4fab536f" id="r_ad932984e96052d33cc1e9c5b4fab536f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#ad932984e96052d33cc1e9c5b4fab536f">__atomic_exchange_c</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> size, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">old</a>, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">model</a>)</td></tr>
+<tr class="separator:ad932984e96052d33cc1e9c5b4fab536f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b14d1369f908bdbbf55d9218159bdc3" id="r_a4b14d1369f908bdbbf55d9218159bdc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#a4b14d1369f908bdbbf55d9218159bdc3">__atomic_is_lock_free_c</a> (<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a> size, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>)</td></tr>
+<tr class="separator:a4b14d1369f908bdbbf55d9218159bdc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4697fabbab752a8d46a8e1eec3a109" id="r_a2a4697fabbab752a8d46a8e1eec3a109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#a2a4697fabbab752a8d46a8e1eec3a109">__atomic_load_c</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> size, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *src, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *dest, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">model</a>)</td></tr>
+<tr class="separator:a2a4697fabbab752a8d46a8e1eec3a109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa706b4507a7ebf64e508d5aac4967ad6" id="r_aa706b4507a7ebf64e508d5aac4967ad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="atomic_8c.html#aa706b4507a7ebf64e508d5aac4967ad6">__atomic_store_c</a> (<a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> size, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *dest, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *src, <a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">model</a>)</td></tr>
+<tr class="separator:aa706b4507a7ebf64e508d5aac4967ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__atomic_load_</a>##n(<span class="keyword">const</span> <span class="keyword">volatile</span> <span class="keywordtype">void</span> *src, <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">memorder</a>) {   \</div>
+<div class="line">    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save = atomic_lock(src);                                         \</div>
+<div class="line">    type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a> = *(<span class="keyword">const</span> <span class="keyword">volatile</span> type *)src;                                   <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    atomic_unlock</a>(src, save);                                                 \</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>;                                                               \</div>
+<div class="line">  }</div>
+<div class="ttc" id="abootrom_8h_html_aeb4191163d43ca89913bb54da45cbbc8"><div class="ttname"><a href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a></div><div class="ttdeci">void uint32_t</div><div class="ttdef"><b>Definição</b> bootrom.h:36</div></div>
+<div class="ttc" id="ahost_2pico__platform_2include_2pico_2platform_8h_html_a2e3484535ee610c8e19e9859563abe48"><div class="ttname"><a href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a></div><div class="ttdeci">#define __unused</div><div class="ttdef"><b>Definição</b> host/pico_platform/include/pico/platform.h:56</div></div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__atomic_store_</a>##n(<span class="keyword">volatile</span> <span class="keywordtype">void</span> *dest, type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>, <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a>  <span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">model</a>) { \</div>
+<div class="line">    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save = atomic_lock(dest);                                        \</div>
+<div class="line">    *(<span class="keyword">volatile</span> type *)dest = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>;                                             <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    atomic_unlock</a>(dest, save);                                                \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__atomic_compare_exchange_</a>##n(<span class="keyword">volatile</span> <span class="keywordtype">void</span> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, <span class="keywordtype">void</span>  *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">expected</a>, type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">desired</a>, \</div>
+<div class="line">                                     <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <span class="keywordtype">bool</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">weak</a>, <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">success</a>, <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">failure</a>) { \</div>
+<div class="line">    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save = atomic_lock(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>);                                         <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    if</a> (*(<span class="keyword">volatile</span> type *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a> == *(type *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">expected</a>) {                         \</div>
+<div class="line">      *(<span class="keyword">volatile</span> type *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a> = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">desired</a>;                                        <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">      atomic_unlock</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, save);                                               \</div>
+<div class="line">      <span class="keywordflow">return</span> <span class="keyword">true</span>;                                                            \</div>
+<div class="line">    }                                                                         \</div>
+<div class="line">    *(type *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">expected</a> = *(<span class="keyword">volatile</span> type *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>;                                <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    atomic_unlock</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, save);                                                 \</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>;                                                             \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__atomic_exchange_</a>##n(<span class="keyword">volatile</span> <span class="keywordtype">void</span> *dest, type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>, <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">model</a>) { \</div>
+<div class="line">    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save = atomic_lock(dest);                               \</div>
+<div class="line">    type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a> = *(<span class="keyword">volatile</span> type *)dest;                               \</div>
+<div class="line">    *(<span class="keyword">volatile</span> type *)dest = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>;                                    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    atomic_unlock</a>(dest, save);                                       \</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a>;                                                      \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, add, +)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">sub</a>, -)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">and</a>, &amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">or</a>, |)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5030c9ad1fddf27ab9d4330f36d2b37" name="ab5030c9ad1fddf27ab9d4330f36d2b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5030c9ad1fddf27ab9d4330f36d2b37">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASE <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="atomic_8c.html#a109a273c95eec7d67ed809522186afd3">ATOMIC_RMW</a>(n, type, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">xor</a>, ^)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1ae64f035983740094087203d6c7b57" name="ab1ae64f035983740094087203d6c7b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ae64f035983740094087203d6c7b57">&#9670;&#160;</a></span>ATOMIC_OPTIMIZED_CASES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_OPTIMIZED_CASES&#160;&#160;&#160;  <a class="el" href="atomic_8c.html#ab5030c9ad1fddf27ab9d4330f36d2b37">ATOMIC_OPTIMIZED_CASE</a>(8, <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint64_t</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a109a273c95eec7d67ed809522186afd3" name="a109a273c95eec7d67ed809522186afd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a109a273c95eec7d67ed809522186afd3">&#9670;&#160;</a></span>ATOMIC_RMW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_RMW</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">opname</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__atomic_fetch_</a>##<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">opname</a>##<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_</a>##n(<span class="keyword">volatile</span> <span class="keywordtype">void</span> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>, <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">model</a>) { \</div>
+<div class="line">    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save = atomic_lock(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>);                                  \</div>
+<div class="line">    type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a> = *(<span class="keyword">volatile</span> type *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>;                                  \</div>
+<div class="line">    *(<span class="keyword">volatile</span> type *)<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a> = <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a> op <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>;                                <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    atomic_unlock</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, save);                                          \</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a>;                                                        \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5d8226606729bbcb01b5602032d37368" name="a5d8226606729bbcb01b5602032d37368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8226606729bbcb01b5602032d37368">&#9670;&#160;</a></span>ATOMIC_RMW_NAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> ATOMIC_RMW_NAND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">  type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__atomic_fetch_nand_</a>##n(type *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>, <a class="code hl_define" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <span class="keywordtype">int</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">model</a>) { \</div>
+<div class="line">    <a class="code hl_typedef" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> save = atomic_lock(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>);                                \</div>
+<div class="line">    type <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a> = *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>;                                                 \</div>
+<div class="line">    *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a> = ~(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a> &amp; <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">val</a>);                                             <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    atomic_unlock</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ptr</a>, save);                                        \</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">tmp</a>;                                                      \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7804c1bd203df33ebf99ffdd999bacb1" name="a7804c1bd203df33ebf99ffdd999bacb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7804c1bd203df33ebf99ffdd999bacb1">&#9670;&#160;</a></span>memcmp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> memcmp&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__builtin_memcmp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30c75e139b07107ef1c8d3f8490aee7d" name="a30c75e139b07107ef1c8d3f8490aee7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c75e139b07107ef1c8d3f8490aee7d">&#9670;&#160;</a></span>memcpy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> memcpy&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">__builtin_memcpy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ace7c0930a1826714be7f6fda9b7172fb" name="ace7c0930a1826714be7f6fda9b7172fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace7c0930a1826714be7f6fda9b7172fb">&#9670;&#160;</a></span>__atomic_compare_exchange_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">_Bool</a> __atomic_compare_exchange_c </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>desired</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>success</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="atomic_8c.html#a7804c1bd203df33ebf99ffdd999bacb1">memcmp</a>, <a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a> e <a class="el" href="rp2__common_2hardware__sync_2include_2hardware_2sync_8h.html#a38c90374caaf03336146a208546d139a">remove_volatile_cast_no_barrier</a>.</p>
+
+</div>
+</div>
+<a id="ad932984e96052d33cc1e9c5b4fab536f" name="ad932984e96052d33cc1e9c5b4fab536f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad932984e96052d33cc1e9c5b4fab536f">&#9670;&#160;</a></span>__atomic_exchange_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __atomic_exchange_c </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>, <a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a> e <a class="el" href="rp2__common_2hardware__sync_2include_2hardware_2sync_8h.html#a38c90374caaf03336146a208546d139a">remove_volatile_cast_no_barrier</a>.</p>
+
+</div>
+</div>
+<a id="a4b14d1369f908bdbbf55d9218159bdc3" name="a4b14d1369f908bdbbf55d9218159bdc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b14d1369f908bdbbf55d9218159bdc3">&#9670;&#160;</a></span>__atomic_is_lock_free_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">bool</a> __atomic_is_lock_free_c </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a>.</p>
+
+</div>
+</div>
+<a id="a2a4697fabbab752a8d46a8e1eec3a109" name="a2a4697fabbab752a8d46a8e1eec3a109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4697fabbab752a8d46a8e1eec3a109">&#9670;&#160;</a></span>__atomic_load_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __atomic_load_c </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">const</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a> e <a class="el" href="rp2__common_2hardware__sync_2include_2hardware_2sync_8h.html#a38c90374caaf03336146a208546d139a">remove_volatile_cast_no_barrier</a>.</p>
+
+</div>
+</div>
+<a id="aa706b4507a7ebf64e508d5aac4967ad6" name="aa706b4507a7ebf64e508d5aac4967ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa706b4507a7ebf64e508d5aac4967ad6">&#9670;&#160;</a></span>__atomic_store_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> __atomic_store_c </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">volatile</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int</a>&#160;</td>
+          <td class="paramname"><em>model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referências <a class="el" href="atomic_8c.html#a30c75e139b07107ef1c8d3f8490aee7d">memcpy</a> e <a class="el" href="rp2__common_2hardware__sync_2include_2hardware_2sync_8h.html#a38c90374caaf03336146a208546d139a">remove_volatile_cast_no_barrier</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_a57a94e38c03835eed49274b75b0176d.html">_deps</a></li><li class="navelem"><a class="el" href="dir_94ca29bc8fee502b657b271c0f4d7b9f.html">pico_sdk-src</a></li><li class="navelem"><a class="el" href="dir_95c2d016205e82d1735adeeb1baa7b1e.html">src</a></li><li class="navelem"><a class="el" href="dir_436b3088c157a85dc167e6ddffc5dacd.html">rp2_common</a></li><li class="navelem"><a class="el" href="dir_9cc791e09201d115c774623cc32bb29f.html">pico_atomic</a></li><li class="navelem"><a class="el" href="atomic_8c.html">atomic.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

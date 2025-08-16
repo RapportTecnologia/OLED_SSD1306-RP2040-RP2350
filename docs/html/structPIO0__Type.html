@@ -1,0 +1,2192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura PIO0_Type</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structPIO0__Type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structPIO0__Type-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura PIO0_Type<div class="ingroups"><a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2040.html">RP2040</a> &#124; <a class="el" href="group__Raspberry.html">Pi</a> &raquo; <a class="el" href="group__RP2350.html">RP2350</a> &raquo; <a class="el" href="group__Device__Peripheral__peripherals.html">Device_Peripheral_peripherals</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Programmable IO block (PIO0)  
+ <a href="structPIO0__Type.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="RP2040_8h_source.html">RP2040.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para PIO0_Type:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structPIO0__Type__coll__graph.svg" width="179" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:aa472618079acd01501d3493004a48ec8" id="r_aa472618079acd01501d3493004a48ec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa472618079acd01501d3493004a48ec8">CTRL</a></td></tr>
+<tr class="memdesc:aa472618079acd01501d3493004a48ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; PIO0 Structure <br  />
+  <br /></td></tr>
+<tr class="separator:aa472618079acd01501d3493004a48ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c39d436f6d6ef756fdd3d0cb569c9ff" id="r_a9c39d436f6d6ef756fdd3d0cb569c9ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a9c39d436f6d6ef756fdd3d0cb569c9ff">DBG_CFGINFO</a></td></tr>
+<tr class="memdesc:a9c39d436f6d6ef756fdd3d0cb569c9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PIO hardware has some free parameters that may vary between chip products.  <br /></td></tr>
+<tr class="separator:a9c39d436f6d6ef756fdd3d0cb569c9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddd498d29e51083608eafb6769271ac" id="r_a2ddd498d29e51083608eafb6769271ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a2ddd498d29e51083608eafb6769271ac">DBG_PADOE</a></td></tr>
+<tr class="memdesc:a2ddd498d29e51083608eafb6769271ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read to sample the pad output enables (direction) PIO is currently driving to the GPIOs.  <br /></td></tr>
+<tr class="separator:a2ddd498d29e51083608eafb6769271ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cdf43db5d4c9e3cf2fe1f2b9228223" id="r_a71cdf43db5d4c9e3cf2fe1f2b9228223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a71cdf43db5d4c9e3cf2fe1f2b9228223">DBG_PADOUT</a></td></tr>
+<tr class="memdesc:a71cdf43db5d4c9e3cf2fe1f2b9228223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read to sample the pad output values PIO is currently driving to the GPIOs.  <br /></td></tr>
+<tr class="separator:a71cdf43db5d4c9e3cf2fe1f2b9228223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57119068d69987d4f0b39f9d61ebe6a2" id="r_a57119068d69987d4f0b39f9d61ebe6a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a57119068d69987d4f0b39f9d61ebe6a2">FDEBUG</a></td></tr>
+<tr class="memdesc:a57119068d69987d4f0b39f9d61ebe6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO debug register <br  />
+  <br /></td></tr>
+<tr class="separator:a57119068d69987d4f0b39f9d61ebe6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6aa8042bbd8ff8ebe4e864a97617dc" id="r_a6b6aa8042bbd8ff8ebe4e864a97617dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a6b6aa8042bbd8ff8ebe4e864a97617dc">FLEVEL</a></td></tr>
+<tr class="memdesc:a6b6aa8042bbd8ff8ebe4e864a97617dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO levels <br  />
+  <br /></td></tr>
+<tr class="separator:a6b6aa8042bbd8ff8ebe4e864a97617dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b2e453db4d5554dc33cb76cc11ece4" id="r_aa8b2e453db4d5554dc33cb76cc11ece4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa8b2e453db4d5554dc33cb76cc11ece4">FSTAT</a></td></tr>
+<tr class="memdesc:aa8b2e453db4d5554dc33cb76cc11ece4"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO status register <br  />
+  <br /></td></tr>
+<tr class="separator:aa8b2e453db4d5554dc33cb76cc11ece4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b593bf3660f9babe25692a9c11289f" id="r_a35b593bf3660f9babe25692a9c11289f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a35b593bf3660f9babe25692a9c11289f">GPIOBASE</a></td></tr>
+<tr class="memdesc:a35b593bf3660f9babe25692a9c11289f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relocate GPIO 0 (from PIO's point of view) in the system GPIO numbering, to access more than 32 GPIOs from PIO.  <br /></td></tr>
+<tr class="separator:a35b593bf3660f9babe25692a9c11289f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b0d4b9b67c40a5369f215199e2aa4a" id="r_a67b0d4b9b67c40a5369f215199e2aa4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a67b0d4b9b67c40a5369f215199e2aa4a">INPUT_SYNC_BYPASS</a></td></tr>
+<tr class="memdesc:a67b0d4b9b67c40a5369f215199e2aa4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">There is a 2-flipflop synchronizer on each GPIO input, which protects PIO logic from metastabilities.  <br /></td></tr>
+<tr class="separator:a67b0d4b9b67c40a5369f215199e2aa4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4728778055fe1a7e4a318eed15d96d34" id="r_a4728778055fe1a7e4a318eed15d96d34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a4728778055fe1a7e4a318eed15d96d34">INSTR_MEM0</a></td></tr>
+<tr class="memdesc:a4728778055fe1a7e4a318eed15d96d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 0 <br  />
+  <br /></td></tr>
+<tr class="separator:a4728778055fe1a7e4a318eed15d96d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348141c5c17558a175c099fc99e1823d" id="r_a348141c5c17558a175c099fc99e1823d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a348141c5c17558a175c099fc99e1823d">INSTR_MEM1</a></td></tr>
+<tr class="memdesc:a348141c5c17558a175c099fc99e1823d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 1 <br  />
+  <br /></td></tr>
+<tr class="separator:a348141c5c17558a175c099fc99e1823d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19edd28380f47675ffbdf318a40e6439" id="r_a19edd28380f47675ffbdf318a40e6439"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a19edd28380f47675ffbdf318a40e6439">INSTR_MEM10</a></td></tr>
+<tr class="memdesc:a19edd28380f47675ffbdf318a40e6439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 10 <br  />
+  <br /></td></tr>
+<tr class="separator:a19edd28380f47675ffbdf318a40e6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f139d4f819c3b92c2b24be302c1c6b" id="r_ad1f139d4f819c3b92c2b24be302c1c6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ad1f139d4f819c3b92c2b24be302c1c6b">INSTR_MEM11</a></td></tr>
+<tr class="memdesc:ad1f139d4f819c3b92c2b24be302c1c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 11 <br  />
+  <br /></td></tr>
+<tr class="separator:ad1f139d4f819c3b92c2b24be302c1c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240aff590949e373e6eb71c3d9f04fa8" id="r_a240aff590949e373e6eb71c3d9f04fa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a240aff590949e373e6eb71c3d9f04fa8">INSTR_MEM12</a></td></tr>
+<tr class="memdesc:a240aff590949e373e6eb71c3d9f04fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 12 <br  />
+  <br /></td></tr>
+<tr class="separator:a240aff590949e373e6eb71c3d9f04fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c2ae24b645bdc243e099145f3622bd" id="r_a92c2ae24b645bdc243e099145f3622bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a92c2ae24b645bdc243e099145f3622bd">INSTR_MEM13</a></td></tr>
+<tr class="memdesc:a92c2ae24b645bdc243e099145f3622bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 13 <br  />
+  <br /></td></tr>
+<tr class="separator:a92c2ae24b645bdc243e099145f3622bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70f40059472f3a9b3d3b9f74e7aa370" id="r_ad70f40059472f3a9b3d3b9f74e7aa370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ad70f40059472f3a9b3d3b9f74e7aa370">INSTR_MEM14</a></td></tr>
+<tr class="memdesc:ad70f40059472f3a9b3d3b9f74e7aa370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 14 <br  />
+  <br /></td></tr>
+<tr class="separator:ad70f40059472f3a9b3d3b9f74e7aa370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011d3053f7d56271f3e23fe8db252674" id="r_a011d3053f7d56271f3e23fe8db252674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a011d3053f7d56271f3e23fe8db252674">INSTR_MEM15</a></td></tr>
+<tr class="memdesc:a011d3053f7d56271f3e23fe8db252674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 15 <br  />
+  <br /></td></tr>
+<tr class="separator:a011d3053f7d56271f3e23fe8db252674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe49e0cd1b7bee89722cb9819f87a9a" id="r_aebe49e0cd1b7bee89722cb9819f87a9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aebe49e0cd1b7bee89722cb9819f87a9a">INSTR_MEM16</a></td></tr>
+<tr class="memdesc:aebe49e0cd1b7bee89722cb9819f87a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 16 <br  />
+  <br /></td></tr>
+<tr class="separator:aebe49e0cd1b7bee89722cb9819f87a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587633dc9f7603bc9492a5f75073ccdb" id="r_a587633dc9f7603bc9492a5f75073ccdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a587633dc9f7603bc9492a5f75073ccdb">INSTR_MEM17</a></td></tr>
+<tr class="memdesc:a587633dc9f7603bc9492a5f75073ccdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 17 <br  />
+  <br /></td></tr>
+<tr class="separator:a587633dc9f7603bc9492a5f75073ccdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1192c4ff0989156ad52f127db50c88c" id="r_af1192c4ff0989156ad52f127db50c88c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#af1192c4ff0989156ad52f127db50c88c">INSTR_MEM18</a></td></tr>
+<tr class="memdesc:af1192c4ff0989156ad52f127db50c88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 18 <br  />
+  <br /></td></tr>
+<tr class="separator:af1192c4ff0989156ad52f127db50c88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdae4da0296b2c2a5f172f7675e71947" id="r_afdae4da0296b2c2a5f172f7675e71947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#afdae4da0296b2c2a5f172f7675e71947">INSTR_MEM19</a></td></tr>
+<tr class="memdesc:afdae4da0296b2c2a5f172f7675e71947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 19 <br  />
+  <br /></td></tr>
+<tr class="separator:afdae4da0296b2c2a5f172f7675e71947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f6138daa4f5f33bfd5488adc885f49" id="r_a76f6138daa4f5f33bfd5488adc885f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a76f6138daa4f5f33bfd5488adc885f49">INSTR_MEM2</a></td></tr>
+<tr class="memdesc:a76f6138daa4f5f33bfd5488adc885f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 2 <br  />
+  <br /></td></tr>
+<tr class="separator:a76f6138daa4f5f33bfd5488adc885f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cea918c640eec75ac98032fefe5eb0d" id="r_a9cea918c640eec75ac98032fefe5eb0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a9cea918c640eec75ac98032fefe5eb0d">INSTR_MEM20</a></td></tr>
+<tr class="memdesc:a9cea918c640eec75ac98032fefe5eb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 20 <br  />
+  <br /></td></tr>
+<tr class="separator:a9cea918c640eec75ac98032fefe5eb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26eddb1daa893d0f16037e9b181a6040" id="r_a26eddb1daa893d0f16037e9b181a6040"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a26eddb1daa893d0f16037e9b181a6040">INSTR_MEM21</a></td></tr>
+<tr class="memdesc:a26eddb1daa893d0f16037e9b181a6040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 21 <br  />
+  <br /></td></tr>
+<tr class="separator:a26eddb1daa893d0f16037e9b181a6040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61337457f2bff3d0c5ba9858d1fcba4a" id="r_a61337457f2bff3d0c5ba9858d1fcba4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a61337457f2bff3d0c5ba9858d1fcba4a">INSTR_MEM22</a></td></tr>
+<tr class="memdesc:a61337457f2bff3d0c5ba9858d1fcba4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 22 <br  />
+  <br /></td></tr>
+<tr class="separator:a61337457f2bff3d0c5ba9858d1fcba4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab484f3b6a5c47252b5e94d076b1a05" id="r_a5ab484f3b6a5c47252b5e94d076b1a05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a5ab484f3b6a5c47252b5e94d076b1a05">INSTR_MEM23</a></td></tr>
+<tr class="memdesc:a5ab484f3b6a5c47252b5e94d076b1a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 23 <br  />
+  <br /></td></tr>
+<tr class="separator:a5ab484f3b6a5c47252b5e94d076b1a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2db1f2c10b313cc71ac925552266508" id="r_aa2db1f2c10b313cc71ac925552266508"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa2db1f2c10b313cc71ac925552266508">INSTR_MEM24</a></td></tr>
+<tr class="memdesc:aa2db1f2c10b313cc71ac925552266508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 24 <br  />
+  <br /></td></tr>
+<tr class="separator:aa2db1f2c10b313cc71ac925552266508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5472904d358122121552ad15d1a4b01d" id="r_a5472904d358122121552ad15d1a4b01d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a5472904d358122121552ad15d1a4b01d">INSTR_MEM25</a></td></tr>
+<tr class="memdesc:a5472904d358122121552ad15d1a4b01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 25 <br  />
+  <br /></td></tr>
+<tr class="separator:a5472904d358122121552ad15d1a4b01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ed54b2c1166f8c49cc7780606c27a1" id="r_a62ed54b2c1166f8c49cc7780606c27a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a62ed54b2c1166f8c49cc7780606c27a1">INSTR_MEM26</a></td></tr>
+<tr class="memdesc:a62ed54b2c1166f8c49cc7780606c27a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 26 <br  />
+  <br /></td></tr>
+<tr class="separator:a62ed54b2c1166f8c49cc7780606c27a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a0d5c2e14ef90fc8eacd6cba05788f" id="r_aa4a0d5c2e14ef90fc8eacd6cba05788f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa4a0d5c2e14ef90fc8eacd6cba05788f">INSTR_MEM27</a></td></tr>
+<tr class="memdesc:aa4a0d5c2e14ef90fc8eacd6cba05788f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 27 <br  />
+  <br /></td></tr>
+<tr class="separator:aa4a0d5c2e14ef90fc8eacd6cba05788f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4d4fdd672b2bb98bd55a47e7551a90" id="r_aff4d4fdd672b2bb98bd55a47e7551a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aff4d4fdd672b2bb98bd55a47e7551a90">INSTR_MEM28</a></td></tr>
+<tr class="memdesc:aff4d4fdd672b2bb98bd55a47e7551a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 28 <br  />
+  <br /></td></tr>
+<tr class="separator:aff4d4fdd672b2bb98bd55a47e7551a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d27bc825b1367f6c49b0a2e16f4d39e" id="r_a2d27bc825b1367f6c49b0a2e16f4d39e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a2d27bc825b1367f6c49b0a2e16f4d39e">INSTR_MEM29</a></td></tr>
+<tr class="memdesc:a2d27bc825b1367f6c49b0a2e16f4d39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 29 <br  />
+  <br /></td></tr>
+<tr class="separator:a2d27bc825b1367f6c49b0a2e16f4d39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547f02bcc79b5a371b32e365201c3a42" id="r_a547f02bcc79b5a371b32e365201c3a42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a547f02bcc79b5a371b32e365201c3a42">INSTR_MEM3</a></td></tr>
+<tr class="memdesc:a547f02bcc79b5a371b32e365201c3a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 3 <br  />
+  <br /></td></tr>
+<tr class="separator:a547f02bcc79b5a371b32e365201c3a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae979b3f0072267d9bfdc565bacb44ea5" id="r_ae979b3f0072267d9bfdc565bacb44ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ae979b3f0072267d9bfdc565bacb44ea5">INSTR_MEM30</a></td></tr>
+<tr class="memdesc:ae979b3f0072267d9bfdc565bacb44ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 30 <br  />
+  <br /></td></tr>
+<tr class="separator:ae979b3f0072267d9bfdc565bacb44ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429fbf22ca75ddc34789e12c3816fc39" id="r_a429fbf22ca75ddc34789e12c3816fc39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a429fbf22ca75ddc34789e12c3816fc39">INSTR_MEM31</a></td></tr>
+<tr class="memdesc:a429fbf22ca75ddc34789e12c3816fc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 31 <br  />
+  <br /></td></tr>
+<tr class="separator:a429fbf22ca75ddc34789e12c3816fc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020e5620c7441b3cc7f050e215579d11" id="r_a020e5620c7441b3cc7f050e215579d11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a020e5620c7441b3cc7f050e215579d11">INSTR_MEM4</a></td></tr>
+<tr class="memdesc:a020e5620c7441b3cc7f050e215579d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 4 <br  />
+  <br /></td></tr>
+<tr class="separator:a020e5620c7441b3cc7f050e215579d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae18f16672cf784e73259455b2f5904" id="r_aeae18f16672cf784e73259455b2f5904"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aeae18f16672cf784e73259455b2f5904">INSTR_MEM5</a></td></tr>
+<tr class="memdesc:aeae18f16672cf784e73259455b2f5904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 5 <br  />
+  <br /></td></tr>
+<tr class="separator:aeae18f16672cf784e73259455b2f5904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e3f575b40cdfd49ffee742499cc3ea" id="r_a45e3f575b40cdfd49ffee742499cc3ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a45e3f575b40cdfd49ffee742499cc3ea">INSTR_MEM6</a></td></tr>
+<tr class="memdesc:a45e3f575b40cdfd49ffee742499cc3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 6 <br  />
+  <br /></td></tr>
+<tr class="separator:a45e3f575b40cdfd49ffee742499cc3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1278b304622344f4dc8e3a91534d30" id="r_a6c1278b304622344f4dc8e3a91534d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a6c1278b304622344f4dc8e3a91534d30">INSTR_MEM7</a></td></tr>
+<tr class="memdesc:a6c1278b304622344f4dc8e3a91534d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 7 <br  />
+  <br /></td></tr>
+<tr class="separator:a6c1278b304622344f4dc8e3a91534d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae936669709c041d0a8dd6e1ab97962a4" id="r_ae936669709c041d0a8dd6e1ab97962a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ae936669709c041d0a8dd6e1ab97962a4">INSTR_MEM8</a></td></tr>
+<tr class="memdesc:ae936669709c041d0a8dd6e1ab97962a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 8 <br  />
+  <br /></td></tr>
+<tr class="separator:ae936669709c041d0a8dd6e1ab97962a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9a321e8a4a7c87d94bdfe1c3de219a" id="r_a0e9a321e8a4a7c87d94bdfe1c3de219a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a0e9a321e8a4a7c87d94bdfe1c3de219a">INSTR_MEM9</a></td></tr>
+<tr class="memdesc:a0e9a321e8a4a7c87d94bdfe1c3de219a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write-only access to instruction memory location 9 <br  />
+  <br /></td></tr>
+<tr class="separator:a0e9a321e8a4a7c87d94bdfe1c3de219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad753cf9cd071dda14e1a63e678d8be32" id="r_ad753cf9cd071dda14e1a63e678d8be32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ad753cf9cd071dda14e1a63e678d8be32">INTR</a></td></tr>
+<tr class="memdesc:ad753cf9cd071dda14e1a63e678d8be32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw Interrupts <br  />
+  <br /></td></tr>
+<tr class="separator:ad753cf9cd071dda14e1a63e678d8be32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c44d226258cec1c0e888c68f504dd31" id="r_a8c44d226258cec1c0e888c68f504dd31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a8c44d226258cec1c0e888c68f504dd31">IRQ</a></td></tr>
+<tr class="memdesc:a8c44d226258cec1c0e888c68f504dd31"><td class="mdescLeft">&#160;</td><td class="mdescRight">State machine IRQ flags register.  <br /></td></tr>
+<tr class="separator:a8c44d226258cec1c0e888c68f504dd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ca236f124dc5a52c3c26d0fccb9e86" id="r_aa8ca236f124dc5a52c3c26d0fccb9e86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa8ca236f124dc5a52c3c26d0fccb9e86">IRQ0_INTE</a></td></tr>
+<tr class="memdesc:aa8ca236f124dc5a52c3c26d0fccb9e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable for irq0 <br  />
+  <br /></td></tr>
+<tr class="separator:aa8ca236f124dc5a52c3c26d0fccb9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ea3c2f3fdefce1d0794f1b56c99cf6" id="r_ac8ea3c2f3fdefce1d0794f1b56c99cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ac8ea3c2f3fdefce1d0794f1b56c99cf6">IRQ0_INTF</a></td></tr>
+<tr class="memdesc:ac8ea3c2f3fdefce1d0794f1b56c99cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force for irq0 <br  />
+  <br /></td></tr>
+<tr class="separator:ac8ea3c2f3fdefce1d0794f1b56c99cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9fe2ac96fa5a78e361739c6201bb46" id="r_a2b9fe2ac96fa5a78e361739c6201bb46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a2b9fe2ac96fa5a78e361739c6201bb46">IRQ0_INTS</a></td></tr>
+<tr class="memdesc:a2b9fe2ac96fa5a78e361739c6201bb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing for irq0 <br  />
+  <br /></td></tr>
+<tr class="separator:a2b9fe2ac96fa5a78e361739c6201bb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165613afbef8dfc11a52a7c85c3c6e9b" id="r_a165613afbef8dfc11a52a7c85c3c6e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a165613afbef8dfc11a52a7c85c3c6e9b">IRQ1_INTE</a></td></tr>
+<tr class="memdesc:a165613afbef8dfc11a52a7c85c3c6e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Enable for irq1 <br  />
+  <br /></td></tr>
+<tr class="separator:a165613afbef8dfc11a52a7c85c3c6e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14e3164e28006dc3673f76a47b2fd00" id="r_aa14e3164e28006dc3673f76a47b2fd00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa14e3164e28006dc3673f76a47b2fd00">IRQ1_INTF</a></td></tr>
+<tr class="memdesc:aa14e3164e28006dc3673f76a47b2fd00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt Force for irq1 <br  />
+  <br /></td></tr>
+<tr class="separator:aa14e3164e28006dc3673f76a47b2fd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ed34d13d65a8654905e11ca3679e35" id="r_a08ed34d13d65a8654905e11ca3679e35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a08ed34d13d65a8654905e11ca3679e35">IRQ1_INTS</a></td></tr>
+<tr class="memdesc:a08ed34d13d65a8654905e11ca3679e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt status after masking &amp; forcing for irq1 <br  />
+  <br /></td></tr>
+<tr class="separator:a08ed34d13d65a8654905e11ca3679e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ac85bb67995fe525e6898dcfc6746e" id="r_aa3ac85bb67995fe525e6898dcfc6746e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa3ac85bb67995fe525e6898dcfc6746e">IRQ_FORCE</a></td></tr>
+<tr class="memdesc:aa3ac85bb67995fe525e6898dcfc6746e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writing a 1 to each of these bits will forcibly assert the corresponding IRQ.  <br /></td></tr>
+<tr class="separator:aa3ac85bb67995fe525e6898dcfc6746e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839508734fd20e012bb9af2b6549be22" id="r_a839508734fd20e012bb9af2b6549be22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a839508734fd20e012bb9af2b6549be22">RXF0</a></td></tr>
+<tr class="memdesc:a839508734fd20e012bb9af2b6549be22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read access to the RX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:a839508734fd20e012bb9af2b6549be22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00447c0b0c3130415d1cd5f7b9704faf" id="r_a00447c0b0c3130415d1cd5f7b9704faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a00447c0b0c3130415d1cd5f7b9704faf">RXF0_PUTGET0</a></td></tr>
+<tr class="memdesc:a00447c0b0c3130415d1cd5f7b9704faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 0 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a00447c0b0c3130415d1cd5f7b9704faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6aad87ae6e17d15101945d58d52db59" id="r_ab6aad87ae6e17d15101945d58d52db59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ab6aad87ae6e17d15101945d58d52db59">RXF0_PUTGET1</a></td></tr>
+<tr class="memdesc:ab6aad87ae6e17d15101945d58d52db59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 1 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:ab6aad87ae6e17d15101945d58d52db59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd82884e2c843d32d1801af2604cd19c" id="r_abd82884e2c843d32d1801af2604cd19c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#abd82884e2c843d32d1801af2604cd19c">RXF0_PUTGET2</a></td></tr>
+<tr class="memdesc:abd82884e2c843d32d1801af2604cd19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 2 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:abd82884e2c843d32d1801af2604cd19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8510648a649e2f8c73af0f5c123dc5c2" id="r_a8510648a649e2f8c73af0f5c123dc5c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a8510648a649e2f8c73af0f5c123dc5c2">RXF0_PUTGET3</a></td></tr>
+<tr class="memdesc:a8510648a649e2f8c73af0f5c123dc5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 3 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a8510648a649e2f8c73af0f5c123dc5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc7a5e4be6b937225340784f51caf06" id="r_a3bc7a5e4be6b937225340784f51caf06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a3bc7a5e4be6b937225340784f51caf06">RXF1</a></td></tr>
+<tr class="memdesc:a3bc7a5e4be6b937225340784f51caf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read access to the RX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:a3bc7a5e4be6b937225340784f51caf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039dc77722f1a8e62c34027149057567" id="r_a039dc77722f1a8e62c34027149057567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a039dc77722f1a8e62c34027149057567">RXF1_PUTGET0</a></td></tr>
+<tr class="memdesc:a039dc77722f1a8e62c34027149057567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 0 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a039dc77722f1a8e62c34027149057567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77de0be9b3a5ee13e2713ac632f824a0" id="r_a77de0be9b3a5ee13e2713ac632f824a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a77de0be9b3a5ee13e2713ac632f824a0">RXF1_PUTGET1</a></td></tr>
+<tr class="memdesc:a77de0be9b3a5ee13e2713ac632f824a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 1 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a77de0be9b3a5ee13e2713ac632f824a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe59e7b62a77734a1dfe7c99f3129f60" id="r_afe59e7b62a77734a1dfe7c99f3129f60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#afe59e7b62a77734a1dfe7c99f3129f60">RXF1_PUTGET2</a></td></tr>
+<tr class="memdesc:afe59e7b62a77734a1dfe7c99f3129f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 2 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:afe59e7b62a77734a1dfe7c99f3129f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbd809c3d6f4aa005be53a1c9fafc5d" id="r_acdbd809c3d6f4aa005be53a1c9fafc5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#acdbd809c3d6f4aa005be53a1c9fafc5d">RXF1_PUTGET3</a></td></tr>
+<tr class="memdesc:acdbd809c3d6f4aa005be53a1c9fafc5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 3 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:acdbd809c3d6f4aa005be53a1c9fafc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe12a373e48945c805b07c688a8ccfc" id="r_a2fe12a373e48945c805b07c688a8ccfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a2fe12a373e48945c805b07c688a8ccfc">RXF2</a></td></tr>
+<tr class="memdesc:a2fe12a373e48945c805b07c688a8ccfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read access to the RX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:a2fe12a373e48945c805b07c688a8ccfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bf445b3839e2c71f086c10a7c0212b" id="r_af1bf445b3839e2c71f086c10a7c0212b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#af1bf445b3839e2c71f086c10a7c0212b">RXF2_PUTGET0</a></td></tr>
+<tr class="memdesc:af1bf445b3839e2c71f086c10a7c0212b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 0 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:af1bf445b3839e2c71f086c10a7c0212b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94add6a904842f46bb5f10035b3392b6" id="r_a94add6a904842f46bb5f10035b3392b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a94add6a904842f46bb5f10035b3392b6">RXF2_PUTGET1</a></td></tr>
+<tr class="memdesc:a94add6a904842f46bb5f10035b3392b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 1 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a94add6a904842f46bb5f10035b3392b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd2e250c62b5d1f83a6a4a643defa1a" id="r_a9dd2e250c62b5d1f83a6a4a643defa1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a9dd2e250c62b5d1f83a6a4a643defa1a">RXF2_PUTGET2</a></td></tr>
+<tr class="memdesc:a9dd2e250c62b5d1f83a6a4a643defa1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 2 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a9dd2e250c62b5d1f83a6a4a643defa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aeecd482dc88d1a45b31b539de5c03e" id="r_a3aeecd482dc88d1a45b31b539de5c03e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a3aeecd482dc88d1a45b31b539de5c03e">RXF2_PUTGET3</a></td></tr>
+<tr class="memdesc:a3aeecd482dc88d1a45b31b539de5c03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 3 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a3aeecd482dc88d1a45b31b539de5c03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8488bf208da8884d5d7cb1f55897714" id="r_ad8488bf208da8884d5d7cb1f55897714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ad8488bf208da8884d5d7cb1f55897714">RXF3</a></td></tr>
+<tr class="memdesc:ad8488bf208da8884d5d7cb1f55897714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read access to the RX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:ad8488bf208da8884d5d7cb1f55897714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbcb96b96cd72dbea06d8a5015809d4" id="r_a8dbcb96b96cd72dbea06d8a5015809d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a8dbcb96b96cd72dbea06d8a5015809d4">RXF3_PUTGET0</a></td></tr>
+<tr class="memdesc:a8dbcb96b96cd72dbea06d8a5015809d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 0 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a8dbcb96b96cd72dbea06d8a5015809d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c67c2a5ad912d50a96a7298a702b5c" id="r_a68c67c2a5ad912d50a96a7298a702b5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a68c67c2a5ad912d50a96a7298a702b5c">RXF3_PUTGET1</a></td></tr>
+<tr class="memdesc:a68c67c2a5ad912d50a96a7298a702b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 1 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:a68c67c2a5ad912d50a96a7298a702b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc08cb504dbd3f439c9f3cea552cf80c" id="r_afc08cb504dbd3f439c9f3cea552cf80c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#afc08cb504dbd3f439c9f3cea552cf80c">RXF3_PUTGET2</a></td></tr>
+<tr class="memdesc:afc08cb504dbd3f439c9f3cea552cf80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 2 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:afc08cb504dbd3f439c9f3cea552cf80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6a42a06adde87c7ed392b7610abc24" id="r_aef6a42a06adde87c7ed392b7610abc24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aef6a42a06adde87c7ed392b7610abc24">RXF3_PUTGET3</a></td></tr>
+<tr class="memdesc:aef6a42a06adde87c7ed392b7610abc24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct read/write access to entry 3 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set.  <br /></td></tr>
+<tr class="separator:aef6a42a06adde87c7ed392b7610abc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2032c30805420b50f140538aa7f686a" id="r_ae2032c30805420b50f140538aa7f686a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ae2032c30805420b50f140538aa7f686a">SM0_ADDR</a></td></tr>
+<tr class="memdesc:ae2032c30805420b50f140538aa7f686a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current instruction address of state machine 0 <br  />
+  <br /></td></tr>
+<tr class="separator:ae2032c30805420b50f140538aa7f686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6a2426b9b8c0f3eedf64af221f4187" id="r_afa6a2426b9b8c0f3eedf64af221f4187"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#afa6a2426b9b8c0f3eedf64af221f4187">SM0_CLKDIV</a></td></tr>
+<tr class="memdesc:afa6a2426b9b8c0f3eedf64af221f4187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor register for state machine 0 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+  <br /></td></tr>
+<tr class="separator:afa6a2426b9b8c0f3eedf64af221f4187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9faf36c71b3fab8858ec1cf2c8f9e4" id="r_abf9faf36c71b3fab8858ec1cf2c8f9e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#abf9faf36c71b3fab8858ec1cf2c8f9e4">SM0_EXECCTRL</a></td></tr>
+<tr class="memdesc:abf9faf36c71b3fab8858ec1cf2c8f9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution/behavioural settings for state machine 0 <br  />
+  <br /></td></tr>
+<tr class="separator:abf9faf36c71b3fab8858ec1cf2c8f9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae683c9d5a886fe4878747a44cfd1c848" id="r_ae683c9d5a886fe4878747a44cfd1c848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ae683c9d5a886fe4878747a44cfd1c848">SM0_INSTR</a></td></tr>
+<tr class="memdesc:ae683c9d5a886fe4878747a44cfd1c848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read to see the instruction currently addressed by state machine 0's program counter Write to execute an instruction immediately (including jumps) and then resume execution.  <br /></td></tr>
+<tr class="separator:ae683c9d5a886fe4878747a44cfd1c848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8476e54d99b808bf32a72407297852c0" id="r_a8476e54d99b808bf32a72407297852c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a8476e54d99b808bf32a72407297852c0">SM0_PINCTRL</a></td></tr>
+<tr class="memdesc:a8476e54d99b808bf32a72407297852c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">State machine pin control <br  />
+  <br /></td></tr>
+<tr class="separator:a8476e54d99b808bf32a72407297852c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d42e82c9861085b41c88f38d9ff640" id="r_a56d42e82c9861085b41c88f38d9ff640"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a56d42e82c9861085b41c88f38d9ff640">SM0_SHIFTCTRL</a></td></tr>
+<tr class="memdesc:a56d42e82c9861085b41c88f38d9ff640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control behaviour of the input/output shift registers for state machine 0 <br  />
+  <br /></td></tr>
+<tr class="separator:a56d42e82c9861085b41c88f38d9ff640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55654e21f055c9a583eba13f48302a40" id="r_a55654e21f055c9a583eba13f48302a40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a55654e21f055c9a583eba13f48302a40">SM1_ADDR</a></td></tr>
+<tr class="memdesc:a55654e21f055c9a583eba13f48302a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current instruction address of state machine 1 <br  />
+  <br /></td></tr>
+<tr class="separator:a55654e21f055c9a583eba13f48302a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1352dc92a36810d71ceb624ff4f114fc" id="r_a1352dc92a36810d71ceb624ff4f114fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a1352dc92a36810d71ceb624ff4f114fc">SM1_CLKDIV</a></td></tr>
+<tr class="memdesc:a1352dc92a36810d71ceb624ff4f114fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor register for state machine 1 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+  <br /></td></tr>
+<tr class="separator:a1352dc92a36810d71ceb624ff4f114fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d704e5e8f05677e5db488ece821c2e4" id="r_a8d704e5e8f05677e5db488ece821c2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a8d704e5e8f05677e5db488ece821c2e4">SM1_EXECCTRL</a></td></tr>
+<tr class="memdesc:a8d704e5e8f05677e5db488ece821c2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution/behavioural settings for state machine 1 <br  />
+  <br /></td></tr>
+<tr class="separator:a8d704e5e8f05677e5db488ece821c2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c6892ff15767455bbffc80ab7b49ffe" id="r_a7c6892ff15767455bbffc80ab7b49ffe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a7c6892ff15767455bbffc80ab7b49ffe">SM1_INSTR</a></td></tr>
+<tr class="memdesc:a7c6892ff15767455bbffc80ab7b49ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read to see the instruction currently addressed by state machine 1's program counter Write to execute an instruction immediately (including jumps) and then resume execution.  <br /></td></tr>
+<tr class="separator:a7c6892ff15767455bbffc80ab7b49ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae771500e80e596ee5959cfcf9f10e955" id="r_ae771500e80e596ee5959cfcf9f10e955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ae771500e80e596ee5959cfcf9f10e955">SM1_PINCTRL</a></td></tr>
+<tr class="memdesc:ae771500e80e596ee5959cfcf9f10e955"><td class="mdescLeft">&#160;</td><td class="mdescRight">State machine pin control <br  />
+  <br /></td></tr>
+<tr class="separator:ae771500e80e596ee5959cfcf9f10e955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6f60c3f3cc111b720172a53087d3a7" id="r_a1b6f60c3f3cc111b720172a53087d3a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a1b6f60c3f3cc111b720172a53087d3a7">SM1_SHIFTCTRL</a></td></tr>
+<tr class="memdesc:a1b6f60c3f3cc111b720172a53087d3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control behaviour of the input/output shift registers for state machine 1 <br  />
+  <br /></td></tr>
+<tr class="separator:a1b6f60c3f3cc111b720172a53087d3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129004efa2ea6c2fc722543e3c7a4fcc" id="r_a129004efa2ea6c2fc722543e3c7a4fcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a129004efa2ea6c2fc722543e3c7a4fcc">SM2_ADDR</a></td></tr>
+<tr class="memdesc:a129004efa2ea6c2fc722543e3c7a4fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current instruction address of state machine 2 <br  />
+  <br /></td></tr>
+<tr class="separator:a129004efa2ea6c2fc722543e3c7a4fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d4fa9d7eec2c809dd7f28325203936" id="r_a10d4fa9d7eec2c809dd7f28325203936"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a10d4fa9d7eec2c809dd7f28325203936">SM2_CLKDIV</a></td></tr>
+<tr class="memdesc:a10d4fa9d7eec2c809dd7f28325203936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor register for state machine 2 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+  <br /></td></tr>
+<tr class="separator:a10d4fa9d7eec2c809dd7f28325203936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389b736292bc29ed7fdba29a71ac2dcc" id="r_a389b736292bc29ed7fdba29a71ac2dcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a389b736292bc29ed7fdba29a71ac2dcc">SM2_EXECCTRL</a></td></tr>
+<tr class="memdesc:a389b736292bc29ed7fdba29a71ac2dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution/behavioural settings for state machine 2 <br  />
+  <br /></td></tr>
+<tr class="separator:a389b736292bc29ed7fdba29a71ac2dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d27e267b01b57bdbd4afd0c3eab0f3b" id="r_a1d27e267b01b57bdbd4afd0c3eab0f3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a1d27e267b01b57bdbd4afd0c3eab0f3b">SM2_INSTR</a></td></tr>
+<tr class="memdesc:a1d27e267b01b57bdbd4afd0c3eab0f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read to see the instruction currently addressed by state machine 2's program counter Write to execute an instruction immediately (including jumps) and then resume execution.  <br /></td></tr>
+<tr class="separator:a1d27e267b01b57bdbd4afd0c3eab0f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b546ff987d1eb5c1c3e872380af078" id="r_a85b546ff987d1eb5c1c3e872380af078"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a85b546ff987d1eb5c1c3e872380af078">SM2_PINCTRL</a></td></tr>
+<tr class="memdesc:a85b546ff987d1eb5c1c3e872380af078"><td class="mdescLeft">&#160;</td><td class="mdescRight">State machine pin control <br  />
+  <br /></td></tr>
+<tr class="separator:a85b546ff987d1eb5c1c3e872380af078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ea5c9cac0a45e034f1e5654b54a0fa" id="r_aa7ea5c9cac0a45e034f1e5654b54a0fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aa7ea5c9cac0a45e034f1e5654b54a0fa">SM2_SHIFTCTRL</a></td></tr>
+<tr class="memdesc:aa7ea5c9cac0a45e034f1e5654b54a0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control behaviour of the input/output shift registers for state machine 2 <br  />
+  <br /></td></tr>
+<tr class="separator:aa7ea5c9cac0a45e034f1e5654b54a0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c525cf06f079be3cff148aca05f014" id="r_a35c525cf06f079be3cff148aca05f014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a35c525cf06f079be3cff148aca05f014">SM3_ADDR</a></td></tr>
+<tr class="memdesc:a35c525cf06f079be3cff148aca05f014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current instruction address of state machine 3 <br  />
+  <br /></td></tr>
+<tr class="separator:a35c525cf06f079be3cff148aca05f014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad002e445d1619aa4d0a4be58aabe70b2" id="r_ad002e445d1619aa4d0a4be58aabe70b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ad002e445d1619aa4d0a4be58aabe70b2">SM3_CLKDIV</a></td></tr>
+<tr class="memdesc:ad002e445d1619aa4d0a4be58aabe70b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock divisor register for state machine 3 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+  <br /></td></tr>
+<tr class="separator:ad002e445d1619aa4d0a4be58aabe70b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982cea66ecdc9e78aa60c5c1b98dcc8f" id="r_a982cea66ecdc9e78aa60c5c1b98dcc8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a982cea66ecdc9e78aa60c5c1b98dcc8f">SM3_EXECCTRL</a></td></tr>
+<tr class="memdesc:a982cea66ecdc9e78aa60c5c1b98dcc8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution/behavioural settings for state machine 3 <br  />
+  <br /></td></tr>
+<tr class="separator:a982cea66ecdc9e78aa60c5c1b98dcc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af257747f2c295f8546ab42a5c1a5c34a" id="r_af257747f2c295f8546ab42a5c1a5c34a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#af257747f2c295f8546ab42a5c1a5c34a">SM3_INSTR</a></td></tr>
+<tr class="memdesc:af257747f2c295f8546ab42a5c1a5c34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read to see the instruction currently addressed by state machine 3's program counter Write to execute an instruction immediately (including jumps) and then resume execution.  <br /></td></tr>
+<tr class="separator:af257747f2c295f8546ab42a5c1a5c34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d832376d2c735edeafcef04da267b05" id="r_a2d832376d2c735edeafcef04da267b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a2d832376d2c735edeafcef04da267b05">SM3_PINCTRL</a></td></tr>
+<tr class="memdesc:a2d832376d2c735edeafcef04da267b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">State machine pin control <br  />
+  <br /></td></tr>
+<tr class="separator:a2d832376d2c735edeafcef04da267b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830466058a6c36f2725a8704853e7d79" id="r_a830466058a6c36f2725a8704853e7d79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a830466058a6c36f2725a8704853e7d79">SM3_SHIFTCTRL</a></td></tr>
+<tr class="memdesc:a830466058a6c36f2725a8704853e7d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control behaviour of the input/output shift registers for state machine 3 <br  />
+  <br /></td></tr>
+<tr class="separator:a830466058a6c36f2725a8704853e7d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7be72f6b717f2fb9e56d7c153a5057a" id="r_ad7be72f6b717f2fb9e56d7c153a5057a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#ad7be72f6b717f2fb9e56d7c153a5057a">TXF0</a></td></tr>
+<tr class="memdesc:ad7be72f6b717f2fb9e56d7c153a5057a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct write access to the TX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:ad7be72f6b717f2fb9e56d7c153a5057a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a22bcb8b5da3acc10bfb3a56bd7db5" id="r_af9a22bcb8b5da3acc10bfb3a56bd7db5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#af9a22bcb8b5da3acc10bfb3a56bd7db5">TXF1</a></td></tr>
+<tr class="memdesc:af9a22bcb8b5da3acc10bfb3a56bd7db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct write access to the TX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:af9a22bcb8b5da3acc10bfb3a56bd7db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac72a1bbfb3e0873ac1a3dff23fe2339" id="r_aac72a1bbfb3e0873ac1a3dff23fe2339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#aac72a1bbfb3e0873ac1a3dff23fe2339">TXF2</a></td></tr>
+<tr class="memdesc:aac72a1bbfb3e0873ac1a3dff23fe2339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct write access to the TX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:aac72a1bbfb3e0873ac1a3dff23fe2339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28df679243cf98c85f9a2dd14bc7289c" id="r_a28df679243cf98c85f9a2dd14bc7289c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPIO0__Type.html#a28df679243cf98c85f9a2dd14bc7289c">TXF3</a></td></tr>
+<tr class="memdesc:a28df679243cf98c85f9a2dd14bc7289c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct write access to the TX FIFO for this state machine.  <br /></td></tr>
+<tr class="separator:a28df679243cf98c85f9a2dd14bc7289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Programmable IO block (PIO0) </p>
+</div><h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="aa472618079acd01501d3493004a48ec8" name="aa472618079acd01501d3493004a48ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa472618079acd01501d3493004a48ec8">&#9670;&#160;</a></span>CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::CTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; PIO0 Structure <br  />
+ </p>
+<p>PIO control register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9c39d436f6d6ef756fdd3d0cb569c9ff" name="a9c39d436f6d6ef756fdd3d0cb569c9ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c39d436f6d6ef756fdd3d0cb569c9ff">&#9670;&#160;</a></span>DBG_CFGINFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::DBG_CFGINFO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The PIO hardware has some free parameters that may vary between chip products. </p>
+<p>These should be provided in the chip datasheet, but are also exposed here. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2ddd498d29e51083608eafb6769271ac" name="a2ddd498d29e51083608eafb6769271ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddd498d29e51083608eafb6769271ac">&#9670;&#160;</a></span>DBG_PADOE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::DBG_PADOE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read to sample the pad output enables (direction) PIO is currently driving to the GPIOs. </p>
+<p>On RP2040 there are 30 GPIOs, so the two most significant bits are hardwired to 0. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a71cdf43db5d4c9e3cf2fe1f2b9228223" name="a71cdf43db5d4c9e3cf2fe1f2b9228223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cdf43db5d4c9e3cf2fe1f2b9228223">&#9670;&#160;</a></span>DBG_PADOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::DBG_PADOUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read to sample the pad output values PIO is currently driving to the GPIOs. </p>
+<p>On RP2040 there are 30 GPIOs, so the two most significant bits are hardwired to 0. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a57119068d69987d4f0b39f9d61ebe6a2" name="a57119068d69987d4f0b39f9d61ebe6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57119068d69987d4f0b39f9d61ebe6a2">&#9670;&#160;</a></span>FDEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::FDEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FIFO debug register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6b6aa8042bbd8ff8ebe4e864a97617dc" name="a6b6aa8042bbd8ff8ebe4e864a97617dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6aa8042bbd8ff8ebe4e864a97617dc">&#9670;&#160;</a></span>FLEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::FLEVEL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FIFO levels <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa8b2e453db4d5554dc33cb76cc11ece4" name="aa8b2e453db4d5554dc33cb76cc11ece4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b2e453db4d5554dc33cb76cc11ece4">&#9670;&#160;</a></span>FSTAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::FSTAT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FIFO status register <br  />
+ </p>
+
+</div>
+</div>
+<a id="a35b593bf3660f9babe25692a9c11289f" name="a35b593bf3660f9babe25692a9c11289f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b593bf3660f9babe25692a9c11289f">&#9670;&#160;</a></span>GPIOBASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::GPIOBASE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Relocate GPIO 0 (from PIO's point of view) in the system GPIO numbering, to access more than 32 GPIOs from PIO. </p>
+<p>Only the values 0 and 16 are supported (only bit 4 is writable). <br  />
+ </p>
+
+</div>
+</div>
+<a id="a67b0d4b9b67c40a5369f215199e2aa4a" name="a67b0d4b9b67c40a5369f215199e2aa4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b0d4b9b67c40a5369f215199e2aa4a">&#9670;&#160;</a></span>INPUT_SYNC_BYPASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INPUT_SYNC_BYPASS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>There is a 2-flipflop synchronizer on each GPIO input, which protects PIO logic from metastabilities. </p>
+<p>This increases input delay, and for fast synchronous IO (e.g. SPI) these synchronizers may need to be bypassed. Each bit in this register corresponds to one GPIO. 0 -&gt; input is synchronized (default) 1 -&gt; synchronizer is bypassed If in doubt, leave this register as all zeroes. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a4728778055fe1a7e4a318eed15d96d34" name="a4728778055fe1a7e4a318eed15d96d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4728778055fe1a7e4a318eed15d96d34">&#9670;&#160;</a></span>INSTR_MEM0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a348141c5c17558a175c099fc99e1823d" name="a348141c5c17558a175c099fc99e1823d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348141c5c17558a175c099fc99e1823d">&#9670;&#160;</a></span>INSTR_MEM1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a19edd28380f47675ffbdf318a40e6439" name="a19edd28380f47675ffbdf318a40e6439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19edd28380f47675ffbdf318a40e6439">&#9670;&#160;</a></span>INSTR_MEM10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 10 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad1f139d4f819c3b92c2b24be302c1c6b" name="ad1f139d4f819c3b92c2b24be302c1c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f139d4f819c3b92c2b24be302c1c6b">&#9670;&#160;</a></span>INSTR_MEM11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 11 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a240aff590949e373e6eb71c3d9f04fa8" name="a240aff590949e373e6eb71c3d9f04fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240aff590949e373e6eb71c3d9f04fa8">&#9670;&#160;</a></span>INSTR_MEM12</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 12 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a92c2ae24b645bdc243e099145f3622bd" name="a92c2ae24b645bdc243e099145f3622bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c2ae24b645bdc243e099145f3622bd">&#9670;&#160;</a></span>INSTR_MEM13</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 13 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad70f40059472f3a9b3d3b9f74e7aa370" name="ad70f40059472f3a9b3d3b9f74e7aa370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70f40059472f3a9b3d3b9f74e7aa370">&#9670;&#160;</a></span>INSTR_MEM14</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 14 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a011d3053f7d56271f3e23fe8db252674" name="a011d3053f7d56271f3e23fe8db252674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011d3053f7d56271f3e23fe8db252674">&#9670;&#160;</a></span>INSTR_MEM15</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 15 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aebe49e0cd1b7bee89722cb9819f87a9a" name="aebe49e0cd1b7bee89722cb9819f87a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe49e0cd1b7bee89722cb9819f87a9a">&#9670;&#160;</a></span>INSTR_MEM16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 16 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a587633dc9f7603bc9492a5f75073ccdb" name="a587633dc9f7603bc9492a5f75073ccdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587633dc9f7603bc9492a5f75073ccdb">&#9670;&#160;</a></span>INSTR_MEM17</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 17 <br  />
+ </p>
+
+</div>
+</div>
+<a id="af1192c4ff0989156ad52f127db50c88c" name="af1192c4ff0989156ad52f127db50c88c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1192c4ff0989156ad52f127db50c88c">&#9670;&#160;</a></span>INSTR_MEM18</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 18 <br  />
+ </p>
+
+</div>
+</div>
+<a id="afdae4da0296b2c2a5f172f7675e71947" name="afdae4da0296b2c2a5f172f7675e71947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdae4da0296b2c2a5f172f7675e71947">&#9670;&#160;</a></span>INSTR_MEM19</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 19 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a76f6138daa4f5f33bfd5488adc885f49" name="a76f6138daa4f5f33bfd5488adc885f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f6138daa4f5f33bfd5488adc885f49">&#9670;&#160;</a></span>INSTR_MEM2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 2 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a9cea918c640eec75ac98032fefe5eb0d" name="a9cea918c640eec75ac98032fefe5eb0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cea918c640eec75ac98032fefe5eb0d">&#9670;&#160;</a></span>INSTR_MEM20</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 20 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a26eddb1daa893d0f16037e9b181a6040" name="a26eddb1daa893d0f16037e9b181a6040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26eddb1daa893d0f16037e9b181a6040">&#9670;&#160;</a></span>INSTR_MEM21</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 21 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a61337457f2bff3d0c5ba9858d1fcba4a" name="a61337457f2bff3d0c5ba9858d1fcba4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61337457f2bff3d0c5ba9858d1fcba4a">&#9670;&#160;</a></span>INSTR_MEM22</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 22 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5ab484f3b6a5c47252b5e94d076b1a05" name="a5ab484f3b6a5c47252b5e94d076b1a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab484f3b6a5c47252b5e94d076b1a05">&#9670;&#160;</a></span>INSTR_MEM23</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 23 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa2db1f2c10b313cc71ac925552266508" name="aa2db1f2c10b313cc71ac925552266508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2db1f2c10b313cc71ac925552266508">&#9670;&#160;</a></span>INSTR_MEM24</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 24 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a5472904d358122121552ad15d1a4b01d" name="a5472904d358122121552ad15d1a4b01d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5472904d358122121552ad15d1a4b01d">&#9670;&#160;</a></span>INSTR_MEM25</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 25 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a62ed54b2c1166f8c49cc7780606c27a1" name="a62ed54b2c1166f8c49cc7780606c27a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ed54b2c1166f8c49cc7780606c27a1">&#9670;&#160;</a></span>INSTR_MEM26</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 26 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa4a0d5c2e14ef90fc8eacd6cba05788f" name="aa4a0d5c2e14ef90fc8eacd6cba05788f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a0d5c2e14ef90fc8eacd6cba05788f">&#9670;&#160;</a></span>INSTR_MEM27</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 27 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aff4d4fdd672b2bb98bd55a47e7551a90" name="aff4d4fdd672b2bb98bd55a47e7551a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4d4fdd672b2bb98bd55a47e7551a90">&#9670;&#160;</a></span>INSTR_MEM28</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 28 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2d27bc825b1367f6c49b0a2e16f4d39e" name="a2d27bc825b1367f6c49b0a2e16f4d39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d27bc825b1367f6c49b0a2e16f4d39e">&#9670;&#160;</a></span>INSTR_MEM29</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 29 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a547f02bcc79b5a371b32e365201c3a42" name="a547f02bcc79b5a371b32e365201c3a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547f02bcc79b5a371b32e365201c3a42">&#9670;&#160;</a></span>INSTR_MEM3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 3 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae979b3f0072267d9bfdc565bacb44ea5" name="ae979b3f0072267d9bfdc565bacb44ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae979b3f0072267d9bfdc565bacb44ea5">&#9670;&#160;</a></span>INSTR_MEM30</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 30 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a429fbf22ca75ddc34789e12c3816fc39" name="a429fbf22ca75ddc34789e12c3816fc39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429fbf22ca75ddc34789e12c3816fc39">&#9670;&#160;</a></span>INSTR_MEM31</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 31 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a020e5620c7441b3cc7f050e215579d11" name="a020e5620c7441b3cc7f050e215579d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a020e5620c7441b3cc7f050e215579d11">&#9670;&#160;</a></span>INSTR_MEM4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 4 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aeae18f16672cf784e73259455b2f5904" name="aeae18f16672cf784e73259455b2f5904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae18f16672cf784e73259455b2f5904">&#9670;&#160;</a></span>INSTR_MEM5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 5 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a45e3f575b40cdfd49ffee742499cc3ea" name="a45e3f575b40cdfd49ffee742499cc3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e3f575b40cdfd49ffee742499cc3ea">&#9670;&#160;</a></span>INSTR_MEM6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 6 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a6c1278b304622344f4dc8e3a91534d30" name="a6c1278b304622344f4dc8e3a91534d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1278b304622344f4dc8e3a91534d30">&#9670;&#160;</a></span>INSTR_MEM7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 7 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae936669709c041d0a8dd6e1ab97962a4" name="ae936669709c041d0a8dd6e1ab97962a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae936669709c041d0a8dd6e1ab97962a4">&#9670;&#160;</a></span>INSTR_MEM8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 8 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0e9a321e8a4a7c87d94bdfe1c3de219a" name="a0e9a321e8a4a7c87d94bdfe1c3de219a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e9a321e8a4a7c87d94bdfe1c3de219a">&#9670;&#160;</a></span>INSTR_MEM9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INSTR_MEM9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write-only access to instruction memory location 9 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad753cf9cd071dda14e1a63e678d8be32" name="ad753cf9cd071dda14e1a63e678d8be32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad753cf9cd071dda14e1a63e678d8be32">&#9670;&#160;</a></span>INTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::INTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw Interrupts <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8c44d226258cec1c0e888c68f504dd31" name="a8c44d226258cec1c0e888c68f504dd31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c44d226258cec1c0e888c68f504dd31">&#9670;&#160;</a></span>IRQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State machine IRQ flags register. </p>
+<p>Write 1 to clear. There are 8 state machine IRQ flags, which can be set, cleared, and waited on by the state machines. There's no fixed association between flags and state machines &ndash; any state machine can use any flag. Any of the 8 flags can be used for timing synchronisation between state machines, using IRQ and WAIT instructions. The lower four of these flags are also routed out to system-level interrupt requests, alongside FIFO status interrupts &ndash; see e.g. IRQ0_INTE. <br  />
+</p>
+<p>Write 1 to clear. There are eight state machine IRQ flags, which can be set, cleared, and waited on by the state machines. There's no fixed association between flags and state machines &ndash; any state machine can use any flag. Any of the eight flags can be used for timing synchronisation between state machines, using IRQ and WAIT instructions. Any combination of the eight flags can also routed out to either of the two system-level interrupt requests, alongside FIFO status interrupts &ndash; see e.g. IRQ0_INTE. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa8ca236f124dc5a52c3c26d0fccb9e86" name="aa8ca236f124dc5a52c3c26d0fccb9e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ca236f124dc5a52c3c26d0fccb9e86">&#9670;&#160;</a></span>IRQ0_INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ0_INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable for irq0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac8ea3c2f3fdefce1d0794f1b56c99cf6" name="ac8ea3c2f3fdefce1d0794f1b56c99cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ea3c2f3fdefce1d0794f1b56c99cf6">&#9670;&#160;</a></span>IRQ0_INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ0_INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force for irq0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a2b9fe2ac96fa5a78e361739c6201bb46" name="a2b9fe2ac96fa5a78e361739c6201bb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b9fe2ac96fa5a78e361739c6201bb46">&#9670;&#160;</a></span>IRQ0_INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ0_INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing for irq0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a165613afbef8dfc11a52a7c85c3c6e9b" name="a165613afbef8dfc11a52a7c85c3c6e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a165613afbef8dfc11a52a7c85c3c6e9b">&#9670;&#160;</a></span>IRQ1_INTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ1_INTE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Enable for irq1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa14e3164e28006dc3673f76a47b2fd00" name="aa14e3164e28006dc3673f76a47b2fd00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14e3164e28006dc3673f76a47b2fd00">&#9670;&#160;</a></span>IRQ1_INTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ1_INTF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt Force for irq1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a08ed34d13d65a8654905e11ca3679e35" name="a08ed34d13d65a8654905e11ca3679e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ed34d13d65a8654905e11ca3679e35">&#9670;&#160;</a></span>IRQ1_INTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ1_INTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interrupt status after masking &amp; forcing for irq1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa3ac85bb67995fe525e6898dcfc6746e" name="aa3ac85bb67995fe525e6898dcfc6746e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ac85bb67995fe525e6898dcfc6746e">&#9670;&#160;</a></span>IRQ_FORCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::IRQ_FORCE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writing a 1 to each of these bits will forcibly assert the corresponding IRQ. </p>
+<p>Note this is different to the INTF register: writing here affects PIO internal state. INTF just asserts the processor-facing IRQ signal for testing ISRs, and is not visible to the state machines. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a839508734fd20e012bb9af2b6549be22" name="a839508734fd20e012bb9af2b6549be22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839508734fd20e012bb9af2b6549be22">&#9670;&#160;</a></span>RXF0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read access to the RX FIFO for this state machine. </p>
+<p>Each read pops one word from the FIFO. Attempting to read from an empty FIFO has no effect on the FIFO state, and sets the sticky FDEBUG_RXUNDER error flag for this FIFO. The data returned to the system on a read from an empty FIFO is undefined. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a00447c0b0c3130415d1cd5f7b9704faf" name="a00447c0b0c3130415d1cd5f7b9704faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00447c0b0c3130415d1cd5f7b9704faf">&#9670;&#160;</a></span>RXF0_PUTGET0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF0_PUTGET0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 0 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ab6aad87ae6e17d15101945d58d52db59" name="ab6aad87ae6e17d15101945d58d52db59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6aad87ae6e17d15101945d58d52db59">&#9670;&#160;</a></span>RXF0_PUTGET1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF0_PUTGET1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 1 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="abd82884e2c843d32d1801af2604cd19c" name="abd82884e2c843d32d1801af2604cd19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd82884e2c843d32d1801af2604cd19c">&#9670;&#160;</a></span>RXF0_PUTGET2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF0_PUTGET2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 2 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a8510648a649e2f8c73af0f5c123dc5c2" name="a8510648a649e2f8c73af0f5c123dc5c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8510648a649e2f8c73af0f5c123dc5c2">&#9670;&#160;</a></span>RXF0_PUTGET3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF0_PUTGET3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 3 of SM0's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a3bc7a5e4be6b937225340784f51caf06" name="a3bc7a5e4be6b937225340784f51caf06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc7a5e4be6b937225340784f51caf06">&#9670;&#160;</a></span>RXF1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read access to the RX FIFO for this state machine. </p>
+<p>Each read pops one word from the FIFO. Attempting to read from an empty FIFO has no effect on the FIFO state, and sets the sticky FDEBUG_RXUNDER error flag for this FIFO. The data returned to the system on a read from an empty FIFO is undefined. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a039dc77722f1a8e62c34027149057567" name="a039dc77722f1a8e62c34027149057567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039dc77722f1a8e62c34027149057567">&#9670;&#160;</a></span>RXF1_PUTGET0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF1_PUTGET0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 0 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a77de0be9b3a5ee13e2713ac632f824a0" name="a77de0be9b3a5ee13e2713ac632f824a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77de0be9b3a5ee13e2713ac632f824a0">&#9670;&#160;</a></span>RXF1_PUTGET1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF1_PUTGET1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 1 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="afe59e7b62a77734a1dfe7c99f3129f60" name="afe59e7b62a77734a1dfe7c99f3129f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe59e7b62a77734a1dfe7c99f3129f60">&#9670;&#160;</a></span>RXF1_PUTGET2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF1_PUTGET2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 2 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="acdbd809c3d6f4aa005be53a1c9fafc5d" name="acdbd809c3d6f4aa005be53a1c9fafc5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbd809c3d6f4aa005be53a1c9fafc5d">&#9670;&#160;</a></span>RXF1_PUTGET3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF1_PUTGET3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 3 of SM1's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a2fe12a373e48945c805b07c688a8ccfc" name="a2fe12a373e48945c805b07c688a8ccfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe12a373e48945c805b07c688a8ccfc">&#9670;&#160;</a></span>RXF2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read access to the RX FIFO for this state machine. </p>
+<p>Each read pops one word from the FIFO. Attempting to read from an empty FIFO has no effect on the FIFO state, and sets the sticky FDEBUG_RXUNDER error flag for this FIFO. The data returned to the system on a read from an empty FIFO is undefined. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af1bf445b3839e2c71f086c10a7c0212b" name="af1bf445b3839e2c71f086c10a7c0212b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1bf445b3839e2c71f086c10a7c0212b">&#9670;&#160;</a></span>RXF2_PUTGET0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF2_PUTGET0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 0 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a94add6a904842f46bb5f10035b3392b6" name="a94add6a904842f46bb5f10035b3392b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94add6a904842f46bb5f10035b3392b6">&#9670;&#160;</a></span>RXF2_PUTGET1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF2_PUTGET1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 1 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a9dd2e250c62b5d1f83a6a4a643defa1a" name="a9dd2e250c62b5d1f83a6a4a643defa1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd2e250c62b5d1f83a6a4a643defa1a">&#9670;&#160;</a></span>RXF2_PUTGET2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF2_PUTGET2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 2 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a3aeecd482dc88d1a45b31b539de5c03e" name="a3aeecd482dc88d1a45b31b539de5c03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aeecd482dc88d1a45b31b539de5c03e">&#9670;&#160;</a></span>RXF2_PUTGET3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF2_PUTGET3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 3 of SM2's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ad8488bf208da8884d5d7cb1f55897714" name="ad8488bf208da8884d5d7cb1f55897714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8488bf208da8884d5d7cb1f55897714">&#9670;&#160;</a></span>RXF3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read access to the RX FIFO for this state machine. </p>
+<p>Each read pops one word from the FIFO. Attempting to read from an empty FIFO has no effect on the FIFO state, and sets the sticky FDEBUG_RXUNDER error flag for this FIFO. The data returned to the system on a read from an empty FIFO is undefined. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8dbcb96b96cd72dbea06d8a5015809d4" name="a8dbcb96b96cd72dbea06d8a5015809d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dbcb96b96cd72dbea06d8a5015809d4">&#9670;&#160;</a></span>RXF3_PUTGET0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF3_PUTGET0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 0 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a68c67c2a5ad912d50a96a7298a702b5c" name="a68c67c2a5ad912d50a96a7298a702b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c67c2a5ad912d50a96a7298a702b5c">&#9670;&#160;</a></span>RXF3_PUTGET1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF3_PUTGET1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 1 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="afc08cb504dbd3f439c9f3cea552cf80c" name="afc08cb504dbd3f439c9f3cea552cf80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc08cb504dbd3f439c9f3cea552cf80c">&#9670;&#160;</a></span>RXF3_PUTGET2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF3_PUTGET2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 2 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="aef6a42a06adde87c7ed392b7610abc24" name="aef6a42a06adde87c7ed392b7610abc24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6a42a06adde87c7ed392b7610abc24">&#9670;&#160;</a></span>RXF3_PUTGET3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::RXF3_PUTGET3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct read/write access to entry 3 of SM3's RX FIFO, if SHIFTCTRL_FJOIN_RX_PU xor SHIFTCTRL_FJOIN_RX_GET is set. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ae2032c30805420b50f140538aa7f686a" name="ae2032c30805420b50f140538aa7f686a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2032c30805420b50f140538aa7f686a">&#9670;&#160;</a></span>SM0_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM0_ADDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current instruction address of state machine 0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="afa6a2426b9b8c0f3eedf64af221f4187" name="afa6a2426b9b8c0f3eedf64af221f4187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6a2426b9b8c0f3eedf64af221f4187">&#9670;&#160;</a></span>SM0_CLKDIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM0_CLKDIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor register for state machine 0 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+ </p>
+
+</div>
+</div>
+<a id="abf9faf36c71b3fab8858ec1cf2c8f9e4" name="abf9faf36c71b3fab8858ec1cf2c8f9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9faf36c71b3fab8858ec1cf2c8f9e4">&#9670;&#160;</a></span>SM0_EXECCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM0_EXECCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execution/behavioural settings for state machine 0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ae683c9d5a886fe4878747a44cfd1c848" name="ae683c9d5a886fe4878747a44cfd1c848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae683c9d5a886fe4878747a44cfd1c848">&#9670;&#160;</a></span>SM0_INSTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM0_INSTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read to see the instruction currently addressed by state machine 0's program counter Write to execute an instruction immediately (including jumps) and then resume execution. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a8476e54d99b808bf32a72407297852c0" name="a8476e54d99b808bf32a72407297852c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8476e54d99b808bf32a72407297852c0">&#9670;&#160;</a></span>SM0_PINCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM0_PINCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State machine pin control <br  />
+ </p>
+
+</div>
+</div>
+<a id="a56d42e82c9861085b41c88f38d9ff640" name="a56d42e82c9861085b41c88f38d9ff640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d42e82c9861085b41c88f38d9ff640">&#9670;&#160;</a></span>SM0_SHIFTCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM0_SHIFTCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control behaviour of the input/output shift registers for state machine 0 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a55654e21f055c9a583eba13f48302a40" name="a55654e21f055c9a583eba13f48302a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55654e21f055c9a583eba13f48302a40">&#9670;&#160;</a></span>SM1_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM1_ADDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current instruction address of state machine 1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1352dc92a36810d71ceb624ff4f114fc" name="a1352dc92a36810d71ceb624ff4f114fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1352dc92a36810d71ceb624ff4f114fc">&#9670;&#160;</a></span>SM1_CLKDIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM1_CLKDIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor register for state machine 1 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a8d704e5e8f05677e5db488ece821c2e4" name="a8d704e5e8f05677e5db488ece821c2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d704e5e8f05677e5db488ece821c2e4">&#9670;&#160;</a></span>SM1_EXECCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM1_EXECCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execution/behavioural settings for state machine 1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a7c6892ff15767455bbffc80ab7b49ffe" name="a7c6892ff15767455bbffc80ab7b49ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6892ff15767455bbffc80ab7b49ffe">&#9670;&#160;</a></span>SM1_INSTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM1_INSTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read to see the instruction currently addressed by state machine 1's program counter Write to execute an instruction immediately (including jumps) and then resume execution. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ae771500e80e596ee5959cfcf9f10e955" name="ae771500e80e596ee5959cfcf9f10e955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae771500e80e596ee5959cfcf9f10e955">&#9670;&#160;</a></span>SM1_PINCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM1_PINCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State machine pin control <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1b6f60c3f3cc111b720172a53087d3a7" name="a1b6f60c3f3cc111b720172a53087d3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6f60c3f3cc111b720172a53087d3a7">&#9670;&#160;</a></span>SM1_SHIFTCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM1_SHIFTCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control behaviour of the input/output shift registers for state machine 1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a129004efa2ea6c2fc722543e3c7a4fcc" name="a129004efa2ea6c2fc722543e3c7a4fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129004efa2ea6c2fc722543e3c7a4fcc">&#9670;&#160;</a></span>SM2_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM2_ADDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current instruction address of state machine 2 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a10d4fa9d7eec2c809dd7f28325203936" name="a10d4fa9d7eec2c809dd7f28325203936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d4fa9d7eec2c809dd7f28325203936">&#9670;&#160;</a></span>SM2_CLKDIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM2_CLKDIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor register for state machine 2 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a389b736292bc29ed7fdba29a71ac2dcc" name="a389b736292bc29ed7fdba29a71ac2dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389b736292bc29ed7fdba29a71ac2dcc">&#9670;&#160;</a></span>SM2_EXECCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM2_EXECCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execution/behavioural settings for state machine 2 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a1d27e267b01b57bdbd4afd0c3eab0f3b" name="a1d27e267b01b57bdbd4afd0c3eab0f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d27e267b01b57bdbd4afd0c3eab0f3b">&#9670;&#160;</a></span>SM2_INSTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM2_INSTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read to see the instruction currently addressed by state machine 2's program counter Write to execute an instruction immediately (including jumps) and then resume execution. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a85b546ff987d1eb5c1c3e872380af078" name="a85b546ff987d1eb5c1c3e872380af078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b546ff987d1eb5c1c3e872380af078">&#9670;&#160;</a></span>SM2_PINCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM2_PINCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State machine pin control <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa7ea5c9cac0a45e034f1e5654b54a0fa" name="aa7ea5c9cac0a45e034f1e5654b54a0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ea5c9cac0a45e034f1e5654b54a0fa">&#9670;&#160;</a></span>SM2_SHIFTCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM2_SHIFTCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control behaviour of the input/output shift registers for state machine 2 <br  />
+ </p>
+
+</div>
+</div>
+<a id="a35c525cf06f079be3cff148aca05f014" name="a35c525cf06f079be3cff148aca05f014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c525cf06f079be3cff148aca05f014">&#9670;&#160;</a></span>SM3_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM3_ADDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current instruction address of state machine 3 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad002e445d1619aa4d0a4be58aabe70b2" name="ad002e445d1619aa4d0a4be58aabe70b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad002e445d1619aa4d0a4be58aabe70b2">&#9670;&#160;</a></span>SM3_CLKDIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM3_CLKDIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clock divisor register for state machine 3 Frequency = clock freq / (CLKDIV_INT + CLKDIV_FRAC / 256) <br  />
+ </p>
+
+</div>
+</div>
+<a id="a982cea66ecdc9e78aa60c5c1b98dcc8f" name="a982cea66ecdc9e78aa60c5c1b98dcc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982cea66ecdc9e78aa60c5c1b98dcc8f">&#9670;&#160;</a></span>SM3_EXECCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM3_EXECCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execution/behavioural settings for state machine 3 <br  />
+ </p>
+
+</div>
+</div>
+<a id="af257747f2c295f8546ab42a5c1a5c34a" name="af257747f2c295f8546ab42a5c1a5c34a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af257747f2c295f8546ab42a5c1a5c34a">&#9670;&#160;</a></span>SM3_INSTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM3_INSTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read to see the instruction currently addressed by state machine 3's program counter Write to execute an instruction immediately (including jumps) and then resume execution. </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a2d832376d2c735edeafcef04da267b05" name="a2d832376d2c735edeafcef04da267b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d832376d2c735edeafcef04da267b05">&#9670;&#160;</a></span>SM3_PINCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM3_PINCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State machine pin control <br  />
+ </p>
+
+</div>
+</div>
+<a id="a830466058a6c36f2725a8704853e7d79" name="a830466058a6c36f2725a8704853e7d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830466058a6c36f2725a8704853e7d79">&#9670;&#160;</a></span>SM3_SHIFTCTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::SM3_SHIFTCTRL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Control behaviour of the input/output shift registers for state machine 3 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ad7be72f6b717f2fb9e56d7c153a5057a" name="ad7be72f6b717f2fb9e56d7c153a5057a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7be72f6b717f2fb9e56d7c153a5057a">&#9670;&#160;</a></span>TXF0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::TXF0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct write access to the TX FIFO for this state machine. </p>
+<p>Each write pushes one word to the FIFO. Attempting to write to a full FIFO has no effect on the FIFO state or contents, and sets the sticky FDEBUG_TXOVER error flag for this FIFO. <br  />
+ </p>
+
+</div>
+</div>
+<a id="af9a22bcb8b5da3acc10bfb3a56bd7db5" name="af9a22bcb8b5da3acc10bfb3a56bd7db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a22bcb8b5da3acc10bfb3a56bd7db5">&#9670;&#160;</a></span>TXF1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::TXF1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct write access to the TX FIFO for this state machine. </p>
+<p>Each write pushes one word to the FIFO. Attempting to write to a full FIFO has no effect on the FIFO state or contents, and sets the sticky FDEBUG_TXOVER error flag for this FIFO. <br  />
+ </p>
+
+</div>
+</div>
+<a id="aac72a1bbfb3e0873ac1a3dff23fe2339" name="aac72a1bbfb3e0873ac1a3dff23fe2339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac72a1bbfb3e0873ac1a3dff23fe2339">&#9670;&#160;</a></span>TXF2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::TXF2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct write access to the TX FIFO for this state machine. </p>
+<p>Each write pushes one word to the FIFO. Attempting to write to a full FIFO has no effect on the FIFO state or contents, and sets the sticky FDEBUG_TXOVER error flag for this FIFO. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a28df679243cf98c85f9a2dd14bc7289c" name="a28df679243cf98c85f9a2dd14bc7289c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28df679243cf98c85f9a2dd14bc7289c">&#9670;&#160;</a></span>TXF3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__RP2350.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a> <a class="el" href="bootrom_8h.html#aeb4191163d43ca89913bb54da45cbbc8">uint32_t</a> PIO0_Type::TXF3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Direct write access to the TX FIFO for this state machine. </p>
+<p>Each write pushes one word to the FIFO. Attempting to write to a full FIFO has no effect on the FIFO state or contents, and sets the sticky FDEBUG_TXOVER error flag for this FIFO. <br  />
+ </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros:<ul>
+<li><a class="el" href="RP2040_8h_source.html">RP2040.h</a></li>
+<li><a class="el" href="RP2350_8h_source.html">RP2350.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structPIO0__Type.html">PIO0_Type</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

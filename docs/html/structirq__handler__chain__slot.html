@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: Referência à estrutura irq_handler_chain_slot</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structirq__handler__chain__slot.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structirq__handler__chain__slot-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à estrutura irq_handler_chain_slot</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboração para irq_handler_chain_slot:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structirq__handler__chain__slot__coll__graph.svg" width="171" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a3023b8fd9e6a7a324c17b435f161b499" id="r_a3023b8fd9e6a7a324c17b435f161b499"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eecafebb154f768f96fcae022e8a8db" id="r_a1eecafebb154f768f96fcae022e8a8db"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e31c4a2ef51482ab33484224a3ace3" id="r_ae8e31c4a2ef51482ab33484224a3ace3"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int8_t</a>&#160;&#160;&#160;<a class="el" href="structirq__handler__chain__slot.html#ae432e4a6e7fefec87e9ceacb4a5b0240">link</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ae8e31c4a2ef51482ab33484224a3ace3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05af30fdffa677c89f618c9dde645cf0" id="r_a05af30fdffa677c89f618c9dde645cf0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a>&#160;&#160;&#160;<a class="el" href="structirq__handler__chain__slot.html#a6a7e831deef4b114747a8cf1f9350d92">priority</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a05af30fdffa677c89f618c9dde645cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eecafebb154f768f96fcae022e8a8db" id="r_a1eecafebb154f768f96fcae022e8a8db"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a1eecafebb154f768f96fcae022e8a8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2395a5e2fca4506c20b7020c711988ba" id="r_a2395a5e2fca4506c20b7020c711988ba"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a>&#160;&#160;&#160;<a class="el" href="structirq__handler__chain__slot.html#afa2b580397ca74dbe58a632df1d4ef04">inst4</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2395a5e2fca4506c20b7020c711988ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3023b8fd9e6a7a324c17b435f161b499" id="r_a3023b8fd9e6a7a324c17b435f161b499"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3023b8fd9e6a7a324c17b435f161b499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5083a8b06c9cbd2a82550f5598a3773" id="r_ab5083a8b06c9cbd2a82550f5598a3773"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirq__handler__chain__slot.html#ab5083a8b06c9cbd2a82550f5598a3773">handler</a></td></tr>
+<tr class="separator:ab5083a8b06c9cbd2a82550f5598a3773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa530e4c6cb168c841839edbf5bddbb" id="r_a5fa530e4c6cb168c841839edbf5bddbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirq__handler__chain__slot.html#a5fa530e4c6cb168c841839edbf5bddbb">inst1</a></td></tr>
+<tr class="separator:a5fa530e4c6cb168c841839edbf5bddbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83af4515c1e907623e2eca4e7c74a87b" id="r_a83af4515c1e907623e2eca4e7c74a87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirq__handler__chain__slot.html#a83af4515c1e907623e2eca4e7c74a87b">inst2</a></td></tr>
+<tr class="separator:a83af4515c1e907623e2eca4e7c74a87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78635f88336bfe7fcd5d89888a4587cb" id="r_a78635f88336bfe7fcd5d89888a4587cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirq__handler__chain__slot.html#a78635f88336bfe7fcd5d89888a4587cb">inst3</a></td></tr>
+<tr class="separator:a78635f88336bfe7fcd5d89888a4587cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a3023b8fd9e6a7a324c17b435f161b499" name="a3023b8fd9e6a7a324c17b435f161b499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3023b8fd9e6a7a324c17b435f161b499">&#9670;&#160;</a></span>[union]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  <a class="el" href="structirq__handler__chain__slot.html">irq_handler_chain_slot</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5083a8b06c9cbd2a82550f5598a3773" name="ab5083a8b06c9cbd2a82550f5598a3773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5083a8b06c9cbd2a82550f5598a3773">&#9670;&#160;</a></span>handler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hardware__irq.html#ga8478ee26cc144e947ccd75b0169059a6">irq_handler_t</a> irq_handler_chain_slot::handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a> e <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a>.</p>
+
+</div>
+</div>
+<a id="a5fa530e4c6cb168c841839edbf5bddbb" name="a5fa530e4c6cb168c841839edbf5bddbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa530e4c6cb168c841839edbf5bddbb">&#9670;&#160;</a></span>inst1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> irq_handler_chain_slot::inst1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>.</p>
+
+</div>
+</div>
+<a id="a83af4515c1e907623e2eca4e7c74a87b" name="a83af4515c1e907623e2eca4e7c74a87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83af4515c1e907623e2eca4e7c74a87b">&#9670;&#160;</a></span>inst2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> irq_handler_chain_slot::inst2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78635f88336bfe7fcd5d89888a4587cb" name="a78635f88336bfe7fcd5d89888a4587cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78635f88336bfe7fcd5d89888a4587cb">&#9670;&#160;</a></span>inst3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> irq_handler_chain_slot::inst3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a> e <a class="el" href="rp2__common_2hardware__irq_2irq_8c.html#a6f07b7bb7cde52b312e33355f80da516">irq_add_tail_to_free_list()</a>.</p>
+
+</div>
+</div>
+<a id="afa2b580397ca74dbe58a632df1d4ef04" name="afa2b580397ca74dbe58a632df1d4ef04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2b580397ca74dbe58a632df1d4ef04">&#9670;&#160;</a></span>inst4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint16_t</a> irq_handler_chain_slot::inst4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae432e4a6e7fefec87e9ceacb4a5b0240" name="ae432e4a6e7fefec87e9ceacb4a5b0240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae432e4a6e7fefec87e9ceacb4a5b0240">&#9670;&#160;</a></span>link</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int8_t</a> irq_handler_chain_slot::link</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>, <a class="el" href="rp2__common_2hardware__irq_2irq_8c.html#a6f07b7bb7cde52b312e33355f80da516">irq_add_tail_to_free_list()</a> e <a class="el" href="group__hardware__irq.html#gadfd3308952d41ee91671ae098b867a90">irq_remove_handler()</a>.</p>
+
+</div>
+</div>
+<a id="a6a7e831deef4b114747a8cf1f9350d92" name="a6a7e831deef4b114747a8cf1f9350d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7e831deef4b114747a8cf1f9350d92">&#9670;&#160;</a></span>priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">uint8_t</a> irq_handler_chain_slot::priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenciado por <a class="el" href="group__hardware__irq.html#gaf02f8599896c66f4579c845a96b2126e">irq_add_shared_handler()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte ficheiro:<ul>
+<li><a class="el" href="rp2__common_2hardware__irq_2irq_8c.html">rp2_common/hardware_irq/irq.c</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structirq__handler__chain__slot.html">irq_handler_chain_slot</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -95,39 +95,40 @@ $(document).ready(function(){initNavTree('graph_legend.html',''); initResizable(
 <div class="contents">
 <p>Esta página explica como interpretar os grafos gerados pelo doxygen.</p>
 <p>Considere o seguinte exemplo: </p><div class="fragment"><div class="line"><span class="comment">/*! Esta classe vai estar escondida devido à truncação */</span></div>
-<div class="line"><span class="keyword">class </span>Invisible { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Invisible</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Esta classe tem a relação de herança escondida */</span></div>
-<div class="line"><span class="keyword">class </span>Truncated : <span class="keyword">public</span> Invisible { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Truncated</a> : <span class="keyword">public</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Invisible</a> { };</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* Classe não documentada por comentários doxygen */</span></div>
-<div class="line"><span class="keyword">class </span>Undocumented { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Undocumented</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Classe derivada usando derivação pública */</span></div>
-<div class="line"><span class="keyword">class </span>PublicBase : <span class="keyword">public</span> Truncated { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PublicBase</a> : <span class="keyword">public</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Truncated</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! A template class */</span></div>
-<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span>Templ { };</div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Templ</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Classe derivada usando derivação protegida */</span></div>
-<div class="line"><span class="keyword">class </span>ProtectedBase { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProtectedBase</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Classe derivada usando derivação privada */</span></div>
-<div class="line"><span class="keyword">class </span>PrivateBase { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PrivateBase</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Classe usada pela classe Inherited */</span></div>
-<div class="line"><span class="keyword">class </span>Used { };</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Used</a> { };</div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment">/*! Super classe que deriva de várias classes */</span></div>
-<div class="line"><span class="keyword">class </span>Inherited : <span class="keyword">public</span> PublicBase,</div>
-<div class="line">                  <span class="keyword">protected</span> ProtectedBase,</div>
-<div class="line">                  <span class="keyword">private</span> PrivateBase,</div>
-<div class="line">                  <span class="keyword">public</span> Undocumented,</div>
-<div class="line">                  <span class="keyword">public</span> Templ&lt;int&gt;</div>
+<div class="line"><span class="keyword">class </span><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Inherited</a> : <span class="keyword">public</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PublicBase</a>,</div>
+<div class="line">                  <span class="keyword">protected</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">ProtectedBase</a>,</div>
+<div class="line">                  <span class="keyword">private</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">PrivateBase</a>,</div>
+<div class="line">                  <span class="keyword">public</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Undocumented</a>,</div>
+<div class="line">                  <span class="keyword">public</span> <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Templ</a>&lt;int&gt;</div>
 <div class="line">{</div>
 <div class="line">  <span class="keyword">private</span>:</div>
-<div class="line">    Used *m_usedClass;</div>
+<div class="line">    <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">Used</a> *<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">m_usedClass</a>;</div>
 <div class="line">};</div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
 </div><!-- fragment --><p> Isto irá gerar o seguinte gráfo:</p>
 <center><iframe scrolling="no" frameborder="0" src="graph_legend.svg" width="726" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></center> <p>As caixas no grafo anterior têm as seguintes interpretações: </p><ul>
 <li>

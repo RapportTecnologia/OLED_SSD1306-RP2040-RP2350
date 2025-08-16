@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RP2040 OLED SSD1306: lock_core</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RP2040 OLED SSD1306
+   </div>
+   <div id="projectbrief">Driver/Exemplos para display OLED SSD1306 no RP2040</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__lock__core.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#files">Ficheiros</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">lock_core<div class="ingroups"><a class="el" href="group__pico__sync.html">pico_sync</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>base synchronization/lock primitive support.  
+<a href="#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de colaboração para lock_core:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__lock__core.svg" width="230" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
+Ficheiros</h2></td></tr>
+<tr class="memitem:lock__core_8h" id="r_lock__core_8h"><td class="memItemLeft" align="right" valign="top">ficheiro &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lock__core_8h.html">lock_core.h</a></td></tr>
+<tr class="memdesc:lock__core_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base implementation for locking primitives protected by a spin lock. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gae28f1d974cf1f1b973127500a764245c" id="r_gae28f1d974cf1f1b973127500a764245c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#gae28f1d974cf1f1b973127500a764245c">lock_get_caller_owner_id</a>()&#160;&#160;&#160;((<a class="el" href="group__lock__core.html#ga7e5b614312aabaada704b6a2350d39bc">lock_owner_id_t</a>)<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#aa4ca4d30183d0f6248b154c9d12a76a5">get_core_num</a>())</td></tr>
+<tr class="memdesc:gae28f1d974cf1f1b973127500a764245c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the owner id for the caller  <br /></td></tr>
+<tr class="separator:gae28f1d974cf1f1b973127500a764245c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga627a09221ed61634d6dfea6f406e104e" id="r_ga627a09221ed61634d6dfea6f406e104e"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#ga627a09221ed61634d6dfea6f406e104e">lock_internal_spin_unlock_with_best_effort_wait_or_timeout</a>(lock,  save,  <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>)</td></tr>
+<tr class="memdesc:ga627a09221ed61634d6dfea6f406e104e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically unlock the lock's spin lock, and wait for a notification or a timeout.  <br /></td></tr>
+<tr class="separator:ga627a09221ed61634d6dfea6f406e104e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga298f38f465c9115393f0f35f56c13279" id="r_ga298f38f465c9115393f0f35f56c13279"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#ga298f38f465c9115393f0f35f56c13279">lock_internal_spin_unlock_with_notify</a>(lock,  save)&#160;&#160;&#160;<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock</a>((lock)-&gt;spin_lock, save), <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a6f8ef6ebd0958249cce2f55da582a532">__sev</a>()</td></tr>
+<tr class="memdesc:ga298f38f465c9115393f0f35f56c13279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically unlock the lock's spin lock, and send a notification.  <br /></td></tr>
+<tr class="separator:ga298f38f465c9115393f0f35f56c13279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaea64ba43b0ff683739ba136fe5a2b29" id="r_gaaea64ba43b0ff683739ba136fe5a2b29"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#gaaea64ba43b0ff683739ba136fe5a2b29">lock_internal_spin_unlock_with_wait</a>(lock,  save)&#160;&#160;&#160;<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock</a>((lock)-&gt;spin_lock, save), <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a1e52626e2b11eb30cf81da1737049526">__wfe</a>()</td></tr>
+<tr class="memdesc:gaaea64ba43b0ff683739ba136fe5a2b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically unlock the lock's spin lock, and wait for a notification.  <br /></td></tr>
+<tr class="separator:gaaea64ba43b0ff683739ba136fe5a2b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56aa223ceb22fdc4f0a3464fff119e14" id="r_ga56aa223ceb22fdc4f0a3464fff119e14"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#ga56aa223ceb22fdc4f0a3464fff119e14">LOCK_INVALID_OWNER_ID</a>&#160;&#160;&#160;((<a class="el" href="group__lock__core.html#ga7e5b614312aabaada704b6a2350d39bc">lock_owner_id_t</a>)-1)</td></tr>
+<tr class="memdesc:ga56aa223ceb22fdc4f0a3464fff119e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">marker value to use for a lock_owner_id_t which does not refer to any valid owner  <br /></td></tr>
+<tr class="separator:ga56aa223ceb22fdc4f0a3464fff119e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e5b614312aabaada704b6a2350d39bc" id="r_ga7e5b614312aabaada704b6a2350d39bc"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#ga7e5b614312aabaada704b6a2350d39bc">lock_owner_id_t</a>&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int8_t</a></td></tr>
+<tr class="memdesc:ga7e5b614312aabaada704b6a2350d39bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">type to use to store the 'owner' of a lock.  <br /></td></tr>
+<tr class="separator:ga7e5b614312aabaada704b6a2350d39bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga133eb482d67637b8b4e947dee5133513" id="r_ga133eb482d67637b8b4e947dee5133513"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#ga133eb482d67637b8b4e947dee5133513">sync_internal_yield_until_before</a>(<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>)&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td></tr>
+<tr class="memdesc:ga133eb482d67637b8b4e947dee5133513"><td class="mdescLeft">&#160;</td><td class="mdescRight">yield to other processing until some time before the requested time  <br /></td></tr>
+<tr class="separator:ga133eb482d67637b8b4e947dee5133513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gabc062dfb52c8f7f17ec8427d1c4414d9" id="r_gabc062dfb52c8f7f17ec8427d1c4414d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lock__core.html#gabc062dfb52c8f7f17ec8427d1c4414d9">lock_init</a> (<a class="el" href="lock__core_8h.html#a90b364947043d17f922526c661a03a55">lock_core_t</a> *core, <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">lock_num</a>)</td></tr>
+<tr class="memdesc:gabc062dfb52c8f7f17ec8427d1c4414d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise a lock structure.  <br /></td></tr>
+<tr class="separator:gabc062dfb52c8f7f17ec8427d1c4414d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>base synchronization/lock primitive support. </p>
+<p>Most of the pico_sync locking primitives contain a lock_core_t structure member. This currently just holds a spin lock which is used only to protect the contents of the rest of the structure as part of implementing the synchronization primitive. As such, the spin_lock member of lock core is never still held on return from any function for the primitive.</p>
+<p><a class="el" href="group__critical__section.html">critical_section</a> is an exceptional case in that it does not have a lock_core_t and simply wraps a spin lock, providing methods to lock and unlock said spin lock.</p>
+<p><a class="el" href="structlock__core.html">lock_core</a> based structures work by locking the spin lock, checking state, and then deciding whether they additionally need to block or notify when the spin lock is released. In the blocking case, they will wake up again in the future, and try the process again.</p>
+<p>By default the SDK just uses the processors' events via SEV and WEV for notification and blocking as these are sufficient for cross core, and notification from interrupt handlers. However macros are defined in this file that abstract the wait and notify mechanisms to allow the SDK locking functions to effectively be used within an RTOS or other environment.</p>
+<p>When implementing an RTOS, it is desirable for the SDK synchronization primitives that wait, to block the calling task (and immediately yield), and those that notify, to wake a blocked task which isn't on processor. At least the wait macro implementation needs to be atomic with the protecting spin_lock unlock from the callers point of view; i.e. the task should unlock the spin lock when it starts its wait. Such implementation is up to the RTOS integration, however the macros are defined such that such operations are always combined into a single call (so they can be performed atomically) even though the default implementation does not need this, as a WFE which starts following the corresponding SEV is not missed. </p>
+<h2 class="groupheader">Documentação das macros</h2>
+<a id="gae28f1d974cf1f1b973127500a764245c" name="gae28f1d974cf1f1b973127500a764245c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae28f1d974cf1f1b973127500a764245c">&#9670;&#160;</a></span>lock_get_caller_owner_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> lock_get_caller_owner_id</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="group__lock__core.html#ga7e5b614312aabaada704b6a2350d39bc">lock_owner_id_t</a>)<a class="el" href="host_2pico__platform_2include_2pico_2platform_8h.html#aa4ca4d30183d0f6248b154c9d12a76a5">get_core_num</a>())</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the owner id for the caller </p>
+<p>By default this returns the calling core number, but may be overridden (e.g. to return an RTOS task id) </p>
+
+</div>
+</div>
+<a id="ga627a09221ed61634d6dfea6f406e104e" name="ga627a09221ed61634d6dfea6f406e104e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga627a09221ed61634d6dfea6f406e104e">&#9670;&#160;</a></span>lock_internal_spin_unlock_with_best_effort_wait_or_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> lock_internal_spin_unlock_with_best_effort_wait_or_timeout</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lock, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">save, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor:</b><div class="fragment"><div class="line">    ({ <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    spin_unlock</a>((lock)-&gt;spin_lock, save);                                                <a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">\</a></div>
+<div class="line"><a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">    best_effort_wfe_or_timeout</a>(<a class="code hl_variable" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a>);                                                   \</div>
+<div class="line">})</div>
+<div class="ttc" id="apico__divider__nesting__test_8c_html_a0b4d1ad82ace098e820dde96e7e393e2"><div class="ttname"><a href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">count</a></div><div class="ttdeci">volatile uint32_t count[3]</div><div class="ttdef"><b>Definição</b> pico_divider_nesting_test.c:16</div></div>
+</div><!-- fragment -->
+<p>Atomically unlock the lock's spin lock, and wait for a notification or a timeout. </p>
+<p><em>Atomic</em> here refers to the fact that it should not be possible for a concurrent lock_internal_spin_unlock_with_notify to insert itself between the spin unlock and this wait in a way that the wait does not see the notification (i.e. causing a missed notification). In other words this method should always wake up in response to a lock_internal_spin_unlock_with_notify for the same lock, which completes after this call starts.</p>
+<p>In an ideal implementation, this method would return exactly after the corresponding lock_internal_spin_unlock_with_notify has subsequently been called on the same lock instance or the timeout has been reached, however this method is free to return at <em>any</em> point before that; this macro is <em>always</em> used in a loop which locks the spin lock, checks the internal locking primitive state and then waits again if the calling thread should not proceed.</p>
+<p>By default this simply unlocks the spin lock, and then calls <a class="el" href="group__sleep.html#gaedc0ed51a5e908ddd660a5d279009abc">best_effort_wfe_or_timeout</a> but may be overridden (e.g. to actually block the RTOS task with a timeout).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lock</td><td>the <a class="el" href="structlock__core.html">lock_core</a> for the primitive which needs to block </td></tr>
+    <tr><td class="paramname">save</td><td>the uint32_t value that should be passed to spin_unlock when the spin lock is unlocked. (i.e. the PRIMASK state when the spin lock was acquire) </td></tr>
+    <tr><td class="paramname">until</td><td>the <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if the timeout has been reached </dd></dl>
+
+</div>
+</div>
+<a id="ga298f38f465c9115393f0f35f56c13279" name="ga298f38f465c9115393f0f35f56c13279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga298f38f465c9115393f0f35f56c13279">&#9670;&#160;</a></span>lock_internal_spin_unlock_with_notify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> lock_internal_spin_unlock_with_notify</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lock, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">save&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock</a>((lock)-&gt;spin_lock, save), <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a6f8ef6ebd0958249cce2f55da582a532">__sev</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically unlock the lock's spin lock, and send a notification. </p>
+<p><em>Atomic</em> here refers to the fact that it should not be possible for this notification to happen during a lock_internal_spin_unlock_with_wait in a way that that wait does not see the notification (i.e. causing a missed notification). In other words this method should always wake up any lock_internal_spin_unlock_with_wait which started before this call completes.</p>
+<p>In an ideal implementation, this method would wake up only the corresponding lock_internal_spin_unlock_with_wait that has been called on the same lock instance, however it is free to wake up any of them, as they will check their condition and then re-wait if necessary/</p>
+<p>By default this macro simply unlocks the spin lock, and then performs a SEV, but may be overridden (e.g. to actually un-block RTOS <a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">task(s)</a>).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lock</td><td>the <a class="el" href="structlock__core.html">lock_core</a> for the primitive which needs to block </td></tr>
+    <tr><td class="paramname">save</td><td>the uint32_t value that should be passed to spin_unlock when the spin lock is unlocked. (i.e. the PRIMASK state when the spin lock was acquire) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaaea64ba43b0ff683739ba136fe5a2b29" name="gaaea64ba43b0ff683739ba136fe5a2b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaea64ba43b0ff683739ba136fe5a2b29">&#9670;&#160;</a></span>lock_internal_spin_unlock_with_wait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> lock_internal_spin_unlock_with_wait</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lock, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">save&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#af4df3e7b60025a90629ee322fec8bc8f">spin_unlock</a>((lock)-&gt;spin_lock, save), <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a1e52626e2b11eb30cf81da1737049526">__wfe</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically unlock the lock's spin lock, and wait for a notification. </p>
+<p><em>Atomic</em> here refers to the fact that it should not be possible for a concurrent lock_internal_spin_unlock_with_notify to insert itself between the spin unlock and this wait in a way that the wait does not see the notification (i.e. causing a missed notification). In other words this method should always wake up in response to a lock_internal_spin_unlock_with_notify for the same lock, which completes after this call starts.</p>
+<p>In an ideal implementation, this method would return exactly after the corresponding lock_internal_spin_unlock_with_notify has subsequently been called on the same lock instance, however this method is free to return at <em>any</em> point before that; this macro is <em>always</em> used in a loop which locks the spin lock, checks the internal locking primitive state and then waits again if the calling thread should not proceed.</p>
+<p>By default this macro simply unlocks the spin lock, and then performs a WFE, but may be overridden (e.g. to actually block the RTOS task).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lock</td><td>the <a class="el" href="structlock__core.html">lock_core</a> for the primitive which needs to block </td></tr>
+    <tr><td class="paramname">save</td><td>the uint32_t value that should be passed to spin_unlock when the spin lock is unlocked. (i.e. the <code>PRIMASK</code> state when the spin lock was acquire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga56aa223ceb22fdc4f0a3464fff119e14" name="ga56aa223ceb22fdc4f0a3464fff119e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56aa223ceb22fdc4f0a3464fff119e14">&#9670;&#160;</a></span>LOCK_INVALID_OWNER_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> LOCK_INVALID_OWNER_ID&#160;&#160;&#160;((<a class="el" href="group__lock__core.html#ga7e5b614312aabaada704b6a2350d39bc">lock_owner_id_t</a>)-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>marker value to use for a lock_owner_id_t which does not refer to any valid owner </p>
+
+</div>
+</div>
+<a id="ga7e5b614312aabaada704b6a2350d39bc" name="ga7e5b614312aabaada704b6a2350d39bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e5b614312aabaada704b6a2350d39bc">&#9670;&#160;</a></span>lock_owner_id_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> lock_owner_id_t&#160;&#160;&#160;<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">int8_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>type to use to store the 'owner' of a lock. </p>
+<p>By default this is int8_t as it only needs to store the core number or -1, however it may be overridden if a larger type is required (e.g. for an RTOS task id) </p>
+
+</div>
+</div>
+<a id="ga133eb482d67637b8b4e947dee5133513" name="ga133eb482d67637b8b4e947dee5133513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga133eb482d67637b8b4e947dee5133513">&#9670;&#160;</a></span>sync_internal_yield_until_before</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">define</a> sync_internal_yield_until_before</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">until</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a>)0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>yield to other processing until some time before the requested time </p>
+<p>This method is provided for cases where the caller has no useful work to do until the specified time.</p>
+<p>By default this method does nothing, however it can be overridden (for example by an RTOS which is able to block the current task until the scheduler tick before the given time)</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">until</td><td>the <a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#afd2047ec52f48f0e893289f03ec5bf5e">absolute_time_t</a> value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="gabc062dfb52c8f7f17ec8427d1c4414d9" name="gabc062dfb52c8f7f17ec8427d1c4414d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc062dfb52c8f7f17ec8427d1c4414d9">&#9670;&#160;</a></span>lock_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="pico__divider__nesting__test_8c.html#a0b4d1ad82ace098e820dde96e7e393e2">void</a> lock_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lock__core_8h.html#a90b364947043d17f922526c661a03a55">lock_core_t</a> *&#160;</td>
+          <td class="paramname"><em>core</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_2pico__base__headers_2include_2pico_2types_8h.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>lock_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise a lock structure. </p>
+<p>Inititalize a lock structure, providing the spin lock number to use for protecting internal state.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">core</td><td>Pointer to the <a class="el" href="structlock__core.html">lock_core</a> to initialize </td></tr>
+    <tr><td class="paramname">lock_num</td><td>Spin lock number to use for the lock. As the spin lock is only used internally to the locking primitive method implementations, this does not need to be globally unique, however could suffer contention </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referências <a class="el" href="host_2pico__platform_2include_2hardware_2platform__defs_8h.html#ab545136d70754bcfe6c64ed2cf2a78ac">NUM_SPIN_LOCKS</a>, <a class="el" href="structlock__core.html#a02e8b640c69a79995e4a5b39ed457852">spin_lock</a>, <a class="el" href="host_2hardware__sync_2include_2hardware_2sync_8h.html#a19e225808b9ce7aeafb3b90e8e96754a">spin_lock_instance()</a> e <a class="el" href="assert_8h.html#adf669ab8de596b281dcdf29560d10bfa">valid_params_if</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="group__mutex.html#gabe21d7ce624db2df7afe86c4bba400a2">mutex_init()</a>, <a class="el" href="group__queue.html#ga6b379b09df9ac326e3c07a2727b7ca96">queue_init_with_spinlock()</a>, <a class="el" href="group__mutex.html#ga30d1f9d58564a1799e293451edc2d28e">recursive_mutex_init()</a>, <a class="el" href="common_2pico__time_2include_2pico_2time_8h.html#a12957d00680c6c5737ec7f57f509d73d">runtime_init_default_alarm_pool()</a> e <a class="el" href="group__sem.html#gab4e56b5ccfacafd2fb17765e702a21ba">sem_init()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
