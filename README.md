@@ -2,6 +2,22 @@
 
 Projeto para uso do display OLED SSD1306 via I2C no Raspberry Pi Pico (ou compatíveis), oferecendo uma camada de alto nível (proxy/fachada) em `oled.h`/`oled.c` sobre o driver de baixo nível em `ssd1306_*`. Essa camada simplifica operações comuns como inicialização, limpeza, desenho de pixels/linhas, e renderização de textos (com alinhamento e fonte grande).
 
+## Como obter este módulo (via workspace principal)
+
+Para garantir as dependências e caminhos relativos esperados pelos exemplos/projetos (quando usados em conjunto com outros diretórios do workspace), recomenda-se clonar o repositório raiz (monorepo) com submódulos:
+
+```bash
+git clone --recurse-submodules https://github.com/RapportTecnologia/Sensores_e_Atuadores_do_Kit_BitDogLab.git Sensores_e_Atuadores_do_KIT
+cd Sensores_e_Atuadores_do_KIT
+git submodule update --init --recursive
+```
+
+Atualizar submódulos (quando aplicável):
+
+```bash
+git submodule update --remote --merge --recursive
+```
+
 ## Visão Geral
 
 - __Objetivo__: disponibilizar uma API simples para desenhar e compor telas sem lidar diretamente com comandos do SSD1306.
